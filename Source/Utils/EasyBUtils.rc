@@ -1,0 +1,480 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\EasyBUtils.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EasyBUtils DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EasyBUtils\0"
+            VALUE "LegalCopyright", "Copyright ©1997-2002 by Steven Han\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EasyBUtils.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "EasyBUtils Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TIP_OF_THE_DAY DIALOG DISCARDABLE  0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip of the Day"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,221,136,50,14
+    PUSHBUTTON      "Next Tip",ID_NEXT,166,136,50,14
+    CONTROL         "Show tips at startup",IDC_SHOW_AT_STARTUP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,138,78,10
+    PUSHBUTTON      "Previous Tip",ID_PREV,111,136,50,14
+    CONTROL         "",IDC_MESSAGE,"Static",SS_GRAYFRAME | SS_SUNKEN,8,6,263,
+                    122
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 104, 61
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_WELCOME DIALOG DISCARDABLE  0, 0, 180, 80
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,56,60,15,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TIP_OF_THE_DAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TIP_LEFT_PANE       BITMAP  DISCARDABLE     "res\\tip_left.bmp"
+IDB_SPLASH16            BITMAP  DISCARDABLE     "Res\\Splash16.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\splash.bmp"
+IDB_WELCOME_BITMAP_16   BITMAP  DISCARDABLE     "res\\Welcome Scene 16.bmp"
+IDB_WELCOME_BITMAP      BITMAP  DISCARDABLE     "Res\\Welcome Screen.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIP_START           "30000"
+    IDS_TIP_END             "30200"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30000         "! ------------  Introductory Tips ------------"
+    IDS_STRING30001         "You can get help on the program's features at any time by pressing F1."
+    IDS_STRING30002         " "
+    IDS_STRING30003         "You can view this window at any time by clicking the ""Help/Tip of the Day"" menu command."
+    IDS_STRING30004         "The  ""Help/Frequently Asked Questions"" menu command provides you with answers to many common questions."
+    IDS_STRING30005         "You can get a bidding or card play hint by pressing the space bar.  You can then press it a second time to accept the hint."
+    IDS_STRING30006         " "
+    IDS_STRING30007         "You can always obtain the latest version of this program at the Easy Bridge web page:\n\nhttp://www.nyx.net/~shan/EasyBridge.html"
+    IDS_STRING30008         " "
+    IDS_STRING30009         " "
+    IDS_STRING30010         " "
+    IDS_STRING30011         " "
+    IDS_STRING30012         "You can have Easy Bridge deal game or slam hands to North/South or East/West.  You can also specify Major suit, Minor suit, or NT games, as well as small and grand slam deals."
+    IDS_STRING30013         "You can customize the number of points Easy Bridge provides when it deals game and slam hands, as well as the distribution, the number of Aces and Kings dealt, and other settings.  Click on the ""Options/Deal Options"" menu command to perform the customization."
+    IDS_STRING30014         " "
+    IDS_STRING30015         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30016         "! ------------  Display Tips ------------"
+    IDS_STRING30017         "You can choose to automatically show or hide the bidding and play history dialog window during bidding and cardplay.  Click on the ""Options/Display Options"" menu item and select the ""Dialogs"" tab to set the desired behavior."
+    IDS_STRING30018         "The bidding/play history and status windows are both dockable.  To dock them, simply grab the titlebar and drag to an edge of the main program window until the outline changes shape, then release.\n\nTo undock the windows, grab the double bars at the left or top of the windows and drag away from the edge of the main window and release.  The windows will then become free floating."
+    IDS_STRING30019         "You can free up more room for the card display by undocking the bidding/play history window and making it free floating."
+    IDS_STRING30020         "If you find the program window too crowded for your taste, you can click on the ""Options/Display Options"" menu item, then click on the ""Misc"" tab.  There you can select the ""Low Resolution"" option, which substitutes smaller cards and a smaller bidding dialog box."
+    IDS_STRING30021         "Easy Bridge offers several suit orderings for screen display.  The default is Spades/Hearts/Clubs/Diamonds, which avoids putting two red suits next to each other.  However, you can change this ordering by clicking the ""Options/Display Options"" menu command."
+    IDS_STRING30022         "If you like, Easy Bridge can display the dummy's trump suit on the left.  Click the ""Options/Display Options"" menu command to set this option."
+    IDS_STRING30023         " "
+    IDS_STRING30024         "You can select the font used in the various windows.  Simply select the Options/Display Options menu and click the ""Fonts"" tab."
+    IDS_STRING30025         "You can select from a large number of card back designs.  Click on the ""Options/Display Options"" menu command to choose one."
+    IDS_STRING30026         "You can select your favorite Windows bitmap image to display in the background of the main program window.  Click on the ""Options/Select Background Image"" menu comman to choose the image."
+    IDS_STRING30027         "You can adjust or turn off card animation if it's slowing down your system.  Simply click on the ""Options/Display Options"" menu item, then click the ""Cards"" tab.  There you can turn animation on or off, and adjust the level of animation smoothness."
+    IDS_STRING30028         " "
+    IDS_STRING30029         "You can click on the ""Special/Expose All Cards"" menu command to show all four players' cards face up.  Click the command again to turn the cards face down again."
+    IDS_STRING30030         " "
+    IDS_STRING30031         "When a hand is passed out, Easy Bridge will show you all the cards face up and let you rebid the hand if you wish.  If you want to keep from seeing the other hands before you rebid, you can turn off the exposure option.  Simply click on the ""Options/Game Options"" menu item and choose the desired behavior."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIPS_SKIP           "50"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30032         " "
+    IDS_STRING30033         "You can copy the text in the bidding and and history windows to the Windows clipboard by pressing the right mouse button and selecting ""Copy Text"" from the popup menu."
+    IDS_STRING30034         "Easy Bridge can display suit symbols instead of suit letters in the bidding dialog and the history windows.  Simply click the ""Options/Display Options"" menu item and click on the ""Fonts"" tab."
+    IDS_STRING30035         " "
+    IDS_STRING30036         " "
+    IDS_STRING30037         " "
+    IDS_STRING30038         "You can select the ""Special/Show Analysis"" menu command to look into the thought process of the computer players.  There you'll see annotations on every bidding and card play decision the computer players make."
+    IDS_STRING30039         "You can click the ""Special/Show Internal Status"" command to get an idea of what the computer knows and what it's planning as declarer."
+    IDS_STRING30040         "You can turn off the computer players' analyses notes generation to speed up gameplay."
+    IDS_STRING30041         " "
+    IDS_STRING30042         "When the program prompts you to click to proceed to the next trick, you can press <Space> to do the same thing,"
+    IDS_STRING30043         " "
+    IDS_STRING30044         "If you find the program bids too quickly, you can click on the ""Options/Game Options"" menu item and select the ""Interface"" tab and force a delay between computer bids."
+    IDS_STRING30045         " "
+    IDS_STRING30046         "If you have a fast computer, you can slow down the computer players' card play by clicking the Options/Game Options menu item and selecting the ""Interface"" tab."
+    IDS_STRING30047         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30048         "! ------------  Play Tips ------------"
+    IDS_STRING30049         "You can always back up to the start of bidding by pressing <F3>, or to the start of play with <F4>.  This works even when the bidding dialog is open."
+    IDS_STRING30050         "You can back up one or more tricks by pressing <Backspace>."
+    IDS_STRING30051         " "
+    IDS_STRING30052         "You can claim or concede tricks at any time by pressing F5 or F6.  In addition, if you are on the declaring team, you can ""claim the contract"" by pressing Shift+F5 if you believe you have just enough tricks to fulfill the contract."
+    IDS_STRING30053         " "
+    IDS_STRING30054         "Easy Bridge supports suit attitude signals.  When you make the first lead in a suit and your partner likes the suit, it will discard high on the first trick (and low on the second, if you continue high).  Conversely, if partner doesn't like the suit, it will play Lo-Hi."
+    IDS_STRING30055         "Easy Bridge supports suit preference signals in defense.  This is the discard of a high card in a side suit early in the game (i.e., within the first seven tricks).  It indicates that partner should return that suit at the earliest opportunity."
+    IDS_STRING30056         "Easy Bridge supports distribution echoes.  When declarer attacks a suit, Easy Bridge will discard hi then low if it has an even number of cards in the suit, and lo/hi with an odd number.  However, this pattern is reversed if declarer is pulling trumps -- i.e., hi/lo means a odd number, and lo/hi means even."
+    IDS_STRING30057         "If you're curious about how Easy Bridge selects a card to lead in defense, the help file explains the rules used for both suit and notrump contracts."
+    IDS_STRING30058         " "
+    IDS_STRING30059         "You can click the right mouse button in the main program window for a popup menu that provides many commonly used operations."
+    IDS_STRING30060         "You can have Easy Bridge play a card for you by pressing F7, or have it play all the remaining tricks by pressing F8.  You can also have it play out the hand directly to completion by pressing Shift+F7."
+    IDS_STRING30061         "You can use the freeware version of GIB (Goren In a Box, aka Ginsburg's Intelligent Bridgeplayer, the Double-Dummy cardplay program by Matt Ginsburg) as the declarer engine in Easy Bridge.  Click on the ""Options/Play Options"" menu command or see the help file for details."
+    IDS_STRING30062         "You can use the ""Special"" menu to manually play all four positions, or just the defenders.  You can also have Easy Bridge play all four positions automatically"
+    IDS_STRING30063         "You can click the ""Manual Bidding"" button on the secondary toolbar (or select the ""Special/Manual Bidding"" option from the menu) to enter bids for all players."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30064         "! ------------  Bidding Tips ------------"
+    IDS_STRING30065         "Easy Bridge's bidding style prefers major and notrump contracts over minors.  So if you open 1 in a minor suit, Easy Bridge will generally not raise without outstanding suit support.  You might therefore have to bid the minor suit twice if you really want to play in the suit."
+    IDS_STRING30066         "You can change how aggressively the computer players bid.  Simply click the ""Options/Bidding Options"" menu item, then select the ""Config"" tab."
+    IDS_STRING30067         " "
+    IDS_STRING30068         " "
+    IDS_STRING30069         " "
+    IDS_STRING30070         " "
+    IDS_STRING30071         " "
+    IDS_STRING30072         " "
+    IDS_STRING30073         "You can fine-tune how Easy Bridge performs point counts and hand evaluation.  Click on the ""Options/Play Options"" menu command to customize."
+    IDS_STRING30074         "You can tell Easy Bridge which marginal hands are worth opening.  Select the ""Options/Bidding Options"" menu item and click on the ""Opening"" tab for details."
+    IDS_STRING30075         "You can customize the number of points required for 1NT, 2NT, and 2C openings.  Click on the ""Options/Bidding Options"" menu item and customize to your heart's content."
+    IDS_STRING30076         " "
+    IDS_STRING30077         "You can have Easy Bridge perform Duplicate scoring on your practice hands.  Click on the ""Options/Game Options"" menu item and select the ""Scoring"" tab to enable this option."
+    IDS_STRING30078         " "
+    IDS_STRING30079         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30080         "! ------------  I/O Tips ------------"
+    IDS_STRING30081         "You can save the current hands in human-readable format by clicking on the ""File/Save As"" menu command and selecting ""Text"" as the file format."
+    IDS_STRING30082         "You can click the ""Options"" button on the ""File/Save As"" dialog to get more control over how game information is saved."
+    IDS_STRING30083         "You can enter a brief file description in the ""File/Save As"" dialog.  This information will later appear in the ""File/Open"" dialog when you click on the saved file's name."
+    IDS_STRING30084         "You can use the File Comments window to store lengthy free-form text information about the game.  This information is stored in the game file along with the short file description available in the ""File/Save As"" dialog."
+    IDS_STRING30085         "Easy Bridge can read and write the PBN (Portable Bridge Notation) file format, which is a program-independent standard for saving bridge games.  You can also use Easy Bridge as a viewer to step through and review each play in a multi-game PBN file."
+    IDS_STRING30086         "If you finish playing a particularly memorable hand, you can save the game out in PBN format and review it later step by step."
+    IDS_STRING30087         " "
+    IDS_STRING30088         "Easy Bridge supports numbered deals.  You can click on the ""File/Properties"" menu command to obtain the deal number of the current hand.  You can then select the ""Custom/Deal Numberd Hand"" menu command to recall this specific deal at any time."
+    IDS_STRING30089         " "
+    IDS_STRING30090         " "
+    IDS_STRING30091         "You can manually create a set of custom hands at any time by pressing F9."
+    IDS_STRING30092         "If you're playing a hand and want to see what would have happened if a few cards had been located differently, you can press Shift+F9 to edit the players'  hands and start over."
+    IDS_STRING30093         "While manually editing a hand, you can exchange a pair of cards between two hands.  Simply hold down the <Control> key, click on a card in the first hand, then click on a card in the second hand, and the cards will be swapped.  To cancel the operation, press <Esc> or click the first card again."
+    IDS_STRING30094         " "
+    IDS_STRING30095         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30096         " "
+    IDS_STRING30097         " "
+    IDS_STRING30098         " "
+    IDS_STRING30099         " "
+    IDS_STRING30100         " "
+    IDS_STRING30101         " "
+    IDS_STRING30102         " "
+    IDS_STRING30103         " "
+    IDS_STRING30104         " "
+    IDS_STRING30105         " "
+    IDS_STRING30106         " "
+    IDS_STRING30107         " "
+    IDS_STRING30108         " "
+    IDS_STRING30109         " "
+    IDS_STRING30110         " "
+    IDS_STRING30111         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30112         " "
+    IDS_STRING30113         " "
+    IDS_STRING30114         " "
+    IDS_STRING30115         " "
+    IDS_STRING30116         " "
+    IDS_STRING30117         " "
+    IDS_STRING30118         " "
+    IDS_STRING30119         " "
+    IDS_STRING30120         " "
+    IDS_STRING30121         " "
+    IDS_STRING30122         " "
+    IDS_STRING30123         " "
+    IDS_STRING30124         " "
+    IDS_STRING30125         " "
+    IDS_STRING30126         " "
+    IDS_STRING30127         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30128         " "
+    IDS_STRING30129         " "
+    IDS_STRING30130         " "
+    IDS_STRING30131         " "
+    IDS_STRING30132         " "
+    IDS_STRING30133         " "
+    IDS_STRING30134         " "
+    IDS_STRING30135         " "
+    IDS_STRING30136         " "
+    IDS_STRING30137         " "
+    IDS_STRING30138         " "
+    IDS_STRING30139         " "
+    IDS_STRING30140         " "
+    IDS_STRING30141         " "
+    IDS_STRING30142         " "
+    IDS_STRING30143         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30144         " "
+    IDS_STRING30145         " "
+    IDS_STRING30146         " "
+    IDS_STRING30147         " "
+    IDS_STRING30148         " "
+    IDS_STRING30149         " "
+    IDS_STRING30150         " "
+    IDS_STRING30151         "! ------------  Facetious Tips ------------"
+    IDS_STRING30152         " "
+    IDS_STRING30153         " "
+    IDS_STRING30154         " "
+    IDS_STRING30155         " "
+    IDS_STRING30156         " "
+    IDS_STRING30157         " "
+    IDS_STRING30158         " "
+    IDS_STRING30159         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30160         " "
+    IDS_STRING30161         " "
+    IDS_STRING30162         " "
+    IDS_STRING30163         " "
+    IDS_STRING30164         " "
+    IDS_STRING30165         " "
+    IDS_STRING30166         " "
+    IDS_STRING30167         " "
+    IDS_STRING30168         " "
+    IDS_STRING30169         " "
+    IDS_STRING30170         " "
+    IDS_STRING30171         " "
+    IDS_STRING30172         " "
+    IDS_STRING30173         " "
+    IDS_STRING30174         " "
+    IDS_STRING30175         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30176         " "
+    IDS_STRING30177         " "
+    IDS_STRING30178         " "
+    IDS_STRING30179         " "
+    IDS_STRING30180         " "
+    IDS_STRING30181         " "
+    IDS_STRING30182         " "
+    IDS_STRING30183         " "
+    IDS_STRING30184         " "
+    IDS_STRING30185         "The best car in the world is a 1995 Miata M Edition!"
+    IDS_STRING30186         " "
+    IDS_STRING30187         "If you want to be happy for a day, get drunk,\nIf you want to be happy for a week, get married.\nBut if you want to be happy for the rest of your life, learn to fish.\n\n-- Unknown"
+    IDS_STRING30188         " "
+    IDS_STRING30189         "Help, I'm being held prisoner in a tip of the day factory!"
+    IDS_STRING30190         " "
+    IDS_STRING30191         "The four main ingredients in beer are barley, hops, malt, and yeast.  But then you already knew that, didn't you?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING30192         "The best beer in the world is Newcastle's Brown Ale."
+    IDS_STRING30193         "You can't get truly good deep dish pizza outside of Chicago."
+    IDS_STRING30194         "Los Angeles has the best weather on earth."
+    IDS_STRING30195         " "
+    IDS_STRING30196         " "
+    IDS_STRING30197         " "
+    IDS_STRING30198         " "
+    IDS_STRING30199         "The Chicago Cubs will win the World Series -- if not this year, then the next."
+    IDS_STRING30200         "The answer is 42."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\EasyBUtils.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

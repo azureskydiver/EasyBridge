@@ -1,0 +1,1073 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EasyBWizards.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "SteveSoft\0"
+            VALUE "FileDescription", "Easy Bridge Wizards\0"
+            VALUE "FileVersion", "0, 0, 0, 0\0"
+            VALUE "InternalName", "EasyBWizards\0"
+            VALUE "LegalCopyright", "Copyright ©1997-2002 by Steven Han\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EasyBWizards.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "EasyBWizards Dynamic Link Library\0"
+            VALUE "ProductVersion", "4.0.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDW_PROG_CONFIG_BIDDING_STYLE DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bidding Style"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Please indicate your preferred bidding style, if you have one.  Easy Bridge will tailor its bidding to match your preference as closely as possible.  You can always change these settings later.",
+                    IDC_STATIC,128,7,204,27
+    CONTROL         "Natural Bidding -- I do not use any conventions (this option is recommended for absolute beginners)",
+                    IDC_BIDDING1,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE | WS_GROUP | WS_TABSTOP,132,37,200,18
+    CONTROL         "Goren (4-Card Majors, 16-18 Notrump, Strong 2-bids, Strong Jump Overcalls, Stayman, Takeout Doubles, Shutout Bids, Cue Bids, Blackwood, Gerber, etc.)",
+                    IDC_BIDDING2,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE,132,58,200,27
+    CONTROL         "Standard American, Basic (similar to Goren, but with 5-Card Majors, 15-17 Notrump, Jacoby Transfers, Weak 2-bids, Weak Jump Overcalls, Negative Doubles, etc.)",
+                    IDC_BIDDING3,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE,132,87,200,27
+    CONTROL         "Standard American + Common Optional Conventions (Limit Raises, Unusual NT, Michaels, Jacoby 2NT, Drury, Splinters, 4th Suit Forcing, Jacoby Transfers to Minors)",
+                    IDC_BIDDING5,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE,132,117,200,27
+    CONTROL         "ACOL (4-Card Majors, 12-14 Notrump, Strong 2-bids, Strong Jump Overcalls, Michaels Cue Bids, Splinters, Blackwood, Gerber, Takeout Doubles, 4th Suit Forcing, etc.)",
+                    IDC_BIDDING4,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE,132,147,200,27
+    CONTROL         22210,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,113,
+                    164
+END
+
+IDW_PROG_CONFIG_FINISH DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Finish"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Congratulations!  You have successfully configured the program's major options.  If you wish to repeat this process, you can always run the Wizard again from the program's 'Options' menu.",
+                    IDC_STATIC,128,7,204,36
+    LTEXT           "Click the 'Finish' button below to save your changes.",
+                    IDC_STATIC,128,163,172,10
+    CONTROL         22202,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,113,
+                    164
+END
+
+IDW_PROG_CONFIG_HELP_LEVEL DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Help Level"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Please select your level of familiarity with the game of Bridge.  This determines how much help and advice will be presented automatically during the game.",
+                    IDC_STATIC,128,7,204,24
+    CONTROL         "I've never played bridge before -- I need all the instruction and advice I can get.",
+                    IDC_HELP_LEVEL,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE | WS_GROUP | WS_TABSTOP,132,38,180,20
+    CONTROL         "I know the basic rules of Bridge but am a beginner.  Give me recommendations as I play.",
+                    IDC_HELP_LEVEL1,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE,132,62,184,20
+    CONTROL         "I'm already quite comfortable with Bridge, so don't give me any help unless I ask for it.",
+                    IDC_HELP_LEVEL2,"Button",BS_AUTORADIOBUTTON | BS_TOP | 
+                    BS_MULTILINE,132,86,188,20
+    LTEXT           "You can also have Easy Bridge generate comments and annotations on its own bids and plays.  That is, it can show you what it's thinking when it plays.  While this slows down gameplay somewhat, it can be a valuable learning tool for beginners.",
+                    IDC_STATIC,128,123,204,34
+    CONTROL         "Yes, generate and show computer players' analyses.",
+                    IDC_SHOW_ANALYSIS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    132,162,196,10
+    CONTROL         22203,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,113,
+                    164
+END
+
+IDW_PROG_CONFIG_VIEW_SETTING DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "You can choose to have Easy Bridge display the Bidding History during the bidding so you can review what bids were made.  Likewise, you can also choose to see the play history so you can see what cards have been played.",
+                    IDC_STATIC,128,7,204,34
+    LTEXT           "You should note that viewing this information is technically illegal under the rules of bridge.  However, these aids can help you greatly during the learning process.  And besides, who's telling?",
+                    IDC_STATIC,128,45,204,28
+    CONTROL         "Yes, show me the bidding history when I'm bidding.",
+                    IDC_SHOW_BIDDING_HISTORY,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | WS_TABSTOP,132,76,176,10
+    CONTROL         "Yes, show me the play history during cardplay.",
+                    IDC_SHOW_PLAY_HISTORY,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    WS_TABSTOP,132,90,176,10
+    LTEXT           "If English is not your native language, you can choose to have the bidding and play history, as well as the bids in the bid dialog,  displayed using suit symbols instead of suit letters.",
+                    IDC_STATIC,128,131,204,27
+    CONTROL         "Yes, use suit symbols instead of suit letters.",
+                    IDC_USE_SUIT_SYMBOLS,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    WS_TABSTOP,132,162,176,10
+    CONTROL         22205,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,111,
+                    162
+END
+
+IDW_PROG_CONFIG_INTRODUCTION DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Welcome"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Welcome to the Easy Bridge Configuration Wizard. The wizard helps you quickly tailor the program's most important options to suit your experience level and playing style. ",
+                    IDC_STATIC,128,7,204,30
+    LTEXT           "You will be guided through a number of screens where you will be asked questions to determine the best setting for each program option.  In general, you can always accept the default values presented if you are unsure of your answer.",
+                    IDC_STATIC,128,43,204,36
+    LTEXT           "Click the 'Next' button below to begin.",IDC_STATIC,128,
+                    163,172,10
+    LTEXT           "You can cancel this process and exit the wizard at any time.  The settings will not be saved until you click the 'Finish' button on the last screen.  You can always re-run this Wizard later from the program's 'Options' menu.",
+                    IDC_STATIC,128,87,204,34
+    CONTROL         22209,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,113,
+                    164
+END
+
+IDW_PROG_CONFIG_SUITS_DISPLAY DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Suits Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "You can choose the order in which card suits are displayed onscreen.  The logically natural ordering is Spades - Hearts - Diamonds - Clubs, but this would put the two red suits next to each other.  Hence, the default in Easy Bridge is S-H-C-D.",
+                    IDC_STATIC,128,7,204,34
+    CONTROL         "Radio1",IDC_SUIT_ORDER1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_VCENTER | WS_GROUP | WS_TABSTOP,132,46,
+                    200,10
+    CONTROL         "Radio1",IDC_SUIT_ORDER2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_VCENTER,132,60,200,10
+    CONTROL         "Radio1",IDC_SUIT_ORDER3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_VCENTER,132,74,200,10
+    CONTROL         "Radio1",IDC_SUIT_ORDER4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_VCENTER,132,88,200,10
+    CONTROL         "Radio1",IDC_SUIT_ORDER5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_VCENTER,132,102,200,10
+    LTEXT           "Some people also prefer to have the dummy hand's trumps suit on the left.  Click below if you wish to enable this option.",
+                    IDC_STATIC,128,139,204,18
+    CONTROL         "Yes, always show dummy's trumps on the left.",
+                    IDC_DUMMY_TRUMPS_ON_LEFT,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | WS_TABSTOP,132,162,176,10
+    CONTROL         22207,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,111,
+                    162
+END
+
+IDP_GAME_FILES DIALOG DISCARDABLE  0, 0, 192, 103
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Save Intermediate Positions",IDC_SAVE_POSITIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,8,103,10
+    CONTROL         "Show all cards face up when a PBN game is loaded",
+                    IDC_SHOW_PBN_CARDS_FACEUP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,20,179,10
+END
+
+IDP_GAME_MECHANICS DIALOG DISCARDABLE  0, 0, 192, 85
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Mechanics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Automatically start bidding after each deal",
+                    IDC_AUTO_START_BIDDING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,8,148,10
+    CONTROL         "Computer player can claim ",IDC_COMPUTER_CAN_CLAIM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,20,101,10
+    CONTROL         "Enable computer analysis tracing",
+                    IDC_ENABLE_ANALYSIS_TRACING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,57,117,10
+    COMBOBOX        IDC_TRACE_LEVEL,128,56,42,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Display analysis tracing for hints",
+                    IDC_ENABLE_TRACING_DURING_HINTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,70,117,10
+    CONTROL         "Show all the cards when a hand is passed out",
+                    IDC_SHOW_PASSED_HANDS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,44,161,10
+    CONTROL         "Allow rebidding of passed hands",
+                    IDC_ALLOW_REBID_PASSED_HANDS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,32,117,10
+END
+
+IDP_GAME_GIB DIALOG DISCARDABLE  0, 0, 220, 89
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION " GIB"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable GIB for Declarer Play",IDC_ENABLE_GIB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,8,106,10
+    CONTROL         "Enable GIB for Defender Play",IDC_ENABLE_GIB_DEFENDER,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,
+                    108,20,106,10
+    PUSHBUTTON      "Browse...",IDC_BROWSE,162,51,50,14
+    EDITTEXT        IDC_ANALYSIS_TIME,72,69,32,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ANALYSIS_TIME,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,104,69,11,14
+    EDITTEXT        IDC_EDIT_GIB_PATH,8,35,204,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Max Analysis Time:",IDC_STATIC,8,71,61,8
+    LTEXT           "GIB Path:",IDC_STATIC,8,24,32,8
+    LTEXT           "seconds",IDC_STATIC,106,71,28,8
+END
+
+IDP_GAME_COUNTING DIALOG DISCARDABLE  0, 0, 221, 142
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Counting"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Honors Valuation",IDC_STATIC,8,6,204,68
+    CONTROL         "4 - 3 - 2 - 1 (Standard Goren)",IDC_VALUATION1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,18,106,10
+    CONTROL         "4.7 - 3.0 - 1.5 - 0.8 (Ginsburg)",IDC_VALUATION2,"Button",
+                    BS_AUTORADIOBUTTON,16,30,108,10
+    CONTROL         "Custom:",IDC_VALUATION3,"Button",BS_AUTORADIOBUTTON,16,
+                    42,41,10
+    LTEXT           "A:",IDC_STATIC,28,56,8,8
+    EDITTEXT        IDC_VALUE_ACE,38,54,20,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "K:",IDC_STATIC,64,56,8,8
+    EDITTEXT        IDC_VALUE_KING,74,54,20,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Q:",IDC_STATIC,100,56,8,8
+    EDITTEXT        IDC_VALUE_QUEEN,110,54,20,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "J:",IDC_STATIC,136,56,8,8
+    EDITTEXT        IDC_VALUE_JACK,146,54,20,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "T:",IDC_STATIC,172,56,8,8
+    EDITTEXT        IDC_VALUE_TEN,182,54,20,12,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "Point Count Adjustments",IDC_STATIC,8,76,204,62,NOT 
+                    WS_VISIBLE | WS_GROUP
+    CONTROL         "Deduct 1 pt for an Aceless hand",IDC_ACELESS_PENALTY,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,
+                    16,89,118,10
+    CONTROL         "Add 1 pt for holding all 4 Aces",IDC_4ACE_BONUS,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,16,100,110,
+                    10
+    CONTROL         "Penalize unguarded/poorly guarded Honors",
+                    IDC_PENALIZE_UNGUARDED_HONORS,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,16,113,152,10
+    CONTROL         "Count short suit points",IDC_COUNT_SHORT_SUITS,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,16,124,85,
+                    10
+END
+
+IDP_DISP_SUITS DIALOG DISCARDABLE  0, 0, 184, 103
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Suits"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Spades-Hearts-Clubs-Diamonds",IDC_SUIT_DISPLAY_ORDER,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,
+                    18,113,10
+    CONTROL         "Spades-Hearts-Diamonds-Clubs",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,16,30,113,10
+    CONTROL         "Diamonds-Clubs-Hearts-Spades",IDC_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,16,42,113,10
+    CONTROL         "Clubs-Diamonds-Hearts-Spades",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,16,54,113,10
+    CONTROL         "Hearts-Spades-Diamonds-Clubs",IDC_RADIO5,"Button",
+                    BS_AUTORADIOBUTTON,16,66,113,10
+    CONTROL         "Always show dummy's trumps on the left",
+                    IDC_SHOW_DUMMY_TRUMPS_ON_LEFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,86,137,10
+    GROUPBOX        "Suit Display Order",-1,8,6,136,74,WS_GROUP
+END
+
+IDP_DISP_MISC DIALOG DISCARDABLE  0, 0, 252, 125
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Misc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Low Resolution Option",IDC_SHOW_LOW_RES_OPTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,18,95,10
+    CONTROL         "Show Startup Banner",IDC_SHOW_SPLASH_WINDOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,30,95,10
+    CONTROL         "Show Background Bitmap",IDC_SHOW_BACKGROUND_BITMAP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,42,108,10
+    CONTROL         "Tile",IDC_BITMAP_MODE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,28,52,27,10
+    CONTROL         "Center",IDC_BITMAP_MODE2,"Button",BS_AUTORADIOBUTTON,60,
+                    52,37,10
+    CONTROL         "Shrink large bitmaps",IDC_SCALE_LARGE_BITMAPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,28,64,79,10
+    EDITTEXT        IDC_BITMAP_PATH,48,78,136,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,184,78,50,14
+    PUSHBUTTON      "Background Color...",IDC_BACKGROUND_COLOR,8,104,92,14
+    GROUPBOX        "Miscellaneous",IDC_STATIC,8,6,236,92,WS_GROUP
+    CONTROL         "",IDC_COLOR_SWATCH,"Static",SS_BLACKFRAME | SS_SUNKEN,
+                    104,103,44,16
+    LTEXT           "Path:",IDC_STATIC,28,80,18,8
+END
+
+IDP_DISP_FONTS DIALOG DISCARDABLE  0, 0, 252, 117
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Fonts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Auto Hint Dialog Font:",IDC_STATIC,8,4,70,8
+    EDITTEXT        IDC_AUTOHINT_DIALOG_FONT,8,14,136,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change...",IDC_SET_AUTOHINT_DIALOG_FONT,144,14,50,14
+    PUSHBUTTON      "Reset",IDC_RESET_AUTOHINT_DIALOG_FONT,194,14,50,14
+    LTEXT           "&Bid/Play History Dialog Font:",IDC_STATIC,8,36,91,8
+    EDITTEXT        IDC_HISTORY_DIALOG_FONT,8,46,136,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change...",IDC_SET_HISTORY_DIALOG_FONT,144,46,50,14
+    PUSHBUTTON      "Reset",IDC_RESET_HISTORY_DIALOG_FONT,194,46,50,14
+    LTEXT           "A&nalysis Dialog Font:",IDC_STATIC,8,68,66,8
+    EDITTEXT        IDC_ANALYSIS_DIALOG_FONT,8,78,136,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change...",IDC_SET_ANALYSIS_DIALOG_FONT,144,78,50,14
+    PUSHBUTTON      "Reset",IDC_RESET_ANALYSIS_DIALOG_FONT,194,78,50,14
+    CONTROL         "Use suit symbols instead of suit letters",
+                    IDC_USE_SUIT_SYMBOLS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,102,134,10
+END
+
+IDP_DISP_DIALOGS DIALOG DISCARDABLE  0, 0, 204, 114
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Dialogs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Show bid history when bidding",
+                    IDC_AUTO_SHOW_BID_HISTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,18,133,10
+    CONTROL         "Hide bid history during play",IDC_AUTO_HIDE_BID_HISTORY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,30,133,10
+    CONTROL         "Show play history during play",
+                    IDC_AUTO_SHOW_PLAY_HISTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,42,133,10
+    CONTROL         "Hide play history when bidding",
+                    IDC_AUTO_HIDE_PLAY_HISTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,54,133,10
+    CONTROL         "Automatically show neural net output when training",
+                    IDC_AUTOSHOW_NNET,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,16,74,175,10
+    CONTROL         "Show Layout dialog when editing existing hands",
+                    IDC_SHOW_LAYOUT_ON_EDIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,90,167,10
+    GROUPBOX        "Bid / Play Histories",IDC_STATIC,8,6,188,64
+    GROUPBOX        "General",IDC_STATIC,8,78,189,28
+END
+
+IDP_DISP_CARDS DIALOG DISCARDABLE  0, 0, 160, 116
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Cards"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use Triple-Buffering",IDC_TRIPLE_BUFFER,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,16,18,76,10
+    CONTROL         "Animate Cards",IDC_ANIMATE_CARDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,30,58,10
+    CONTROL         "Offset E/W Alternate Suits Display",
+                    IDC_OFFSET_EW_DISPLAY,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,8,100,124,10
+    GROUPBOX        "Card Display",IDC_STATIC,8,6,140,38,WS_GROUP
+    EDITTEXT        IDC_EDIT_GRANULARITY,116,100,28,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN_GRANULARITY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | NOT WS_VISIBLE,144,100,11,12
+    CONTROL         "Slider1",IDC_GRANULARITY,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,16,76,128,22
+    RTEXT           "Static",IDC_TEXT_GRANULARITY,61,66,24,8
+    LTEXT           "Fast",IDC_STATIC,128,66,14,8
+    LTEXT           "Smooth",IDC_STATIC,14,66,25,8
+    GROUPBOX        "Animation Granularity",IDC_STATIC,8,52,140,54
+END
+
+IDP_DISP_CARDBACKS DIALOG DISCARDABLE  0, 0, 259, 89
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Card Backs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_SINGLESEL | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,8,8,244,76
+END
+
+IDP_DEAL_SLAM DIALOG DISCARDABLE  0, 0, 212, 127
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Slam"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "4",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,20,25,10
+    CONTROL         "3",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,42,20,24,10
+    CONTROL         "4",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,56,26,10
+    CONTROL         "3",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,42,56,26,10
+    GROUPBOX        "Generic Slam: Min Aces",IDC_STATIC,8,6,88,30,WS_GROUP
+    GROUPBOX        "Small Slam: Min Aces",IDC_STATIC,8,42,88,30,WS_GROUP
+    GROUPBOX        "Generic Slam: Min Kings",IDC_STATIC,108,6,90,30,
+                    WS_GROUP
+    GROUPBOX        "Small Slam: Min Kings",IDC_STATIC,108,42,90,30,WS_GROUP
+    GROUPBOX        "Grand Slam: Min Kings",IDC_STATIC,108,78,90,30,WS_GROUP
+    CONTROL         "4",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,116,20,26,10
+    CONTROL         "3",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,144,20,24,10
+    CONTROL         "2",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,172,20,24,10
+    CONTROL         "4",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,116,56,24,10
+    CONTROL         "3",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,144,56,24,10
+    CONTROL         "2",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,172,56,22,10
+    CONTROL         "4",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,116,92,24,10
+    CONTROL         "3",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON,144,92,24,10
+END
+
+IDP_DEAL_NOTRUMP DIALOG DISCARDABLE  0, 0, 212, 127
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "NoTrumps"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Both partners need balanced hands",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,20,127,10
+    GROUPBOX        "Team Distribution",-1,8,6,144,30,WS_GROUP
+END
+
+IDP_DEAL_MISC DIALOG DISCARDABLE  0, 0, 207, 97
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Misc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Always give South the best hand of the partnership",
+                    IDC_GIVE_SOUTH_BEST_HAND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,8,176,10
+    CONTROL         "Try to balance out the hands of the partnership",
+                    IDC_BALANCE_HANDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    8,20,165,10
+    CONTROL         "Enable Deal Numbering and Recall",
+                    IDC_ENABLE_DEAL_NUMBERING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,32,165,10
+END
+
+IDP_DEAL_MINORS DIALOG DISCARDABLE  0, 0, 164, 116
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Minors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "7",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,20,25,10
+    CONTROL         "8",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,48,20,25,10
+    CONTROL         "9",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,82,20,27,10
+    CONTROL         "Ace",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,56,31,10
+    CONTROL         "King",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,48,56,32,
+                    10
+    CONTROL         "Queen",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,82,56,38,
+                    10
+    CONTROL         "4/3",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,92,31,10
+    CONTROL         "4/4",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,48,92,31,10
+    CONTROL         "5/3",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,82,92,31,10
+    CONTROL         "5/4",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,116,92,31,
+                    10
+    GROUPBOX        "Minimum Cards Required",IDC_STATIC,8,6,116,30,WS_GROUP
+    GROUPBOX        "Minimum Suit Topper",IDC_STATIC,8,42,116,30,WS_GROUP
+    GROUPBOX        "Minimum Team Distribution",IDC_STATIC,8,78,144,30,
+                    WS_GROUP
+END
+
+IDP_DEAL_MAJORS DIALOG DISCARDABLE  0, 0, 160, 116
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Majors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "7",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,20,24,10
+    CONTROL         "8",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,48,20,25,10
+    CONTROL         "9",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,82,20,24,10
+    CONTROL         "Ace",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,56,33,10
+    CONTROL         "King",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,48,56,32,
+                    10
+    CONTROL         "Queen",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,82,56,39,
+                    10
+    CONTROL         "4/3",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,92,31,10
+    CONTROL         "4/4",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,48,92,31,10
+    CONTROL         "5/3",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,82,92,31,10
+    CONTROL         "5/4",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,116,92,31,
+                    10
+    GROUPBOX        "Minimum Cards Required",IDC_STATIC,8,6,116,30,WS_GROUP
+    GROUPBOX        "Minimum Suit Topper",IDC_STATIC,8,42,116,30,WS_GROUP
+    GROUPBOX        "Minimum Team Distribution",IDC_STATIC,8,78,144,30,
+                    WS_GROUP
+END
+
+IDP_DEAL_POINTS DIALOG DISCARDABLE  0, 0, 207, 172
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Points"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MIN_GAME_PTS,102,20,26,12
+    CONTROL         "Spin1",IDC_SPIN0,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,18,11,16
+    EDITTEXT        IDC_MAX_GAME_PTS,158,20,26,12
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,18,11,16
+    EDITTEXT        IDC_MIN_MAJOR_GAME_PTS,102,36,26,12
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,34,11,16
+    EDITTEXT        IDC_MAX_MAJOR_GAME_PTS,158,36,26,12
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,34,11,16
+    EDITTEXT        IDC_MIN_MINOR_GAME_PTS,102,52,26,12
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,50,11,16
+    EDITTEXT        IDC_MAX_MINOR_GAME_PTS,158,52,26,12
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,50,11,16
+    EDITTEXT        IDC_MIN_NT_GAME_PTS,102,68,26,12
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,66,11,16
+    EDITTEXT        IDC_MAX_NT_GAME_PTS,158,68,26,12
+    CONTROL         "Spin1",IDC_SPIN7,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,66,11,16
+    EDITTEXT        IDC_MIN_SLAM_PTS,102,110,26,12
+    CONTROL         "Spin1",IDC_SPIN8,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,108,11,16
+    EDITTEXT        IDC_MAX_SLAM_PTS,158,110,26,12
+    CONTROL         "Spin1",IDC_SPIN9,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,108,11,16
+    EDITTEXT        IDC_MIN_SMALL_SLAM_PTS,102,126,26,12
+    CONTROL         "Spin1",IDC_SPIN10,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,124,11,16
+    EDITTEXT        IDC_MAX_SMALL_SLAM_PTS,158,126,26,12
+    CONTROL         "Spin1",IDC_SPIN11,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,124,11,16
+    EDITTEXT        IDC_MIN_GRAND_SLAM_PTS,102,142,26,12
+    CONTROL         "Spin1",IDC_SPIN12,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,128,140,11,16
+    EDITTEXT        IDC_MAX_GRAND_SLAM_PTS,158,142,26,12
+    CONTROL         "Spin1",IDC_SPIN13,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,186,140,11,16
+    LTEXT           "Max:",IDC_STATIC,140,22,15,8
+    GROUPBOX        "Minimum Points to Deal for Game",IDC_STATIC,8,6,188,82
+    LTEXT           "Generic Game:",IDC_STATIC,16,22,50,8
+    LTEXT           "Game in Majors:",IDC_STATIC,16,38,54,8
+    LTEXT           "Min:",IDC_STATIC,86,22,13,8
+    LTEXT           "Min:",IDC_STATIC,86,38,13,8
+    LTEXT           "Max:",IDC_STATIC,140,38,15,8
+    LTEXT           "Game in Minors:",IDC_STATIC,16,54,54,8
+    LTEXT           "Min:",IDC_STATIC,86,54,13,8
+    LTEXT           "Max:",IDC_STATIC,140,54,15,8
+    LTEXT           "Game in NoTrumps:",IDC_STATIC,16,70,65,8
+    LTEXT           "Min:",IDC_STATIC,86,70,13,8
+    LTEXT           "Max:",IDC_STATIC,140,70,15,8
+    LTEXT           "Generic Slam:",IDC_STATIC,16,112,65,8
+    LTEXT           "Min:",IDC_STATIC,86,112,13,8
+    LTEXT           "Max:",IDC_STATIC,140,112,15,8
+    LTEXT           "Small Slam:",IDC_STATIC,16,128,65,8
+    LTEXT           "Min:",IDC_STATIC,86,128,13,8
+    LTEXT           "Max:",IDC_STATIC,140,128,15,8
+    LTEXT           "Grand Slam:",IDC_STATIC,16,144,65,8
+    LTEXT           "Min:",IDC_STATIC,86,144,13,8
+    LTEXT           "Max:",IDC_STATIC,140,144,15,8
+    GROUPBOX        "Minimum Points to Deal for Slam",IDC_STATIC,8,96,188,66
+END
+
+IDP_BID_PARAMETERS DIALOG DISCARDABLE  0, 0, 200, 147
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_BIDDING_CONFIGURATION,8,18,184,80,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "Save Configuration",IDC_SAVE_CONFIG,8,34,88,14
+    PUSHBUTTON      "Remove Configuration",IDC_REMOVE_CONFIG,104,34,88,14
+    LTEXT           "Bidding Configuration:",IDC_STATIC,8,6,73,8
+    LTEXT           "Notes:",IDC_STATIC,8,56,23,8
+    EDITTEXT        IDC_DESCRIPTION,8,68,184,72,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDP_BID_OPEN1_VALUES DIALOG DISCARDABLE  0, 0, 212, 130
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Opening"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "11 HCPS with a rebiddable suit && length in the majors",
+                    IDC_10_HCPS_RBS_LM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    16,18,184,10
+    CONTROL         "11 HCPs with 2 Quick Tricks && a six-card suit",
+                    IDC_10_HCPS_6CS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,
+                    30,162,10
+    CONTROL         "14 Total pts (10+ HCPs + Dist), 2 QTs && a good suit",
+                    IDC_14_TPS_GS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,
+                    42,179,10
+    CONTROL         "14 total pts (10+ HCPs + Dist), 2 QTs && a long suit",
+                    IDC_14_TPS_LS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,
+                    54,174,10
+    CONTROL         "13 total pts (10+ HCPs + Dist), 2 QTs && a long suit",
+                    IDC_13_TPS_LS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,
+                    66,174,10
+    GROUPBOX        "Optional Allowable Hands for Opening 1 Bids",-1,8,6,196,
+                    76,WS_GROUP
+END
+
+IDP_BID_NOTRUMPS DIALOG DISCARDABLE  0, 0, 212, 138
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "NT Range"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "1NT Opening Range",IDC_STATIC,8,6,92,52,WS_GROUP
+    CONTROL         "12-14 points (Weak)",IDC_RADIO_1NT_RANGE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,18,77,10
+    CONTROL         "15-17 points",IDC_RADIO99,"Button",BS_AUTORADIOBUTTON,
+                    16,30,52,10
+    CONTROL         "16-18 points",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,16,
+                    42,52,10
+    GROUPBOX        "2NT Opening Range",IDC_STATIC,8,66,92,52,WS_GROUP
+    CONTROL         "20-21 points",IDC_RADIO_2NT_RANGE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,78,52,10
+    CONTROL         "21-22 points",IDC_RADIO_35,"Button",BS_AUTORADIOBUTTON,
+                    16,90,52,10
+    CONTROL         "22-24 points",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,16,
+                    102,52,10
+    GROUPBOX        "3NT Openings",IDC_STATIC,108,6,96,52,WS_GROUP
+    CONTROL         "25-27 points (Natural)",IDC_RADIO_3NT_RANGE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,116,18,83,10
+    CONTROL         "Gambling 3NT",IDC_RADIO_3NT_RANGE1,"Button",
+                    BS_AUTORADIOBUTTON,116,30,66,10
+    CONTROL         "Gambling 3NT (ACOL)",IDC_RADIO_3NT_RANGE2,"Button",
+                    BS_AUTORADIOBUTTON,116,42,86,10
+END
+
+IDP_BID_MISC DIALOG DISCARDABLE  0, 0, 208, 122
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Misc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Advanced",IDC_STATIC,8,6,96,64
+    CONTROL         "Jacoby 2NT",IDC_JACOBY_2NT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,18,55,10
+    CONTROL         "Michaels Cue Bids",IDC_MICHAELS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,30,74,10
+    CONTROL         "Unusual Notrump",IDC_UNUSUAL_NT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,42,71,10
+    CONTROL         "Drury",IDC_DRURY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    16,54,33,10
+    GROUPBOX        "Misc",IDC_STATIC,8,77,96,38
+    CONTROL         "4th Suit Forcing",IDC_4THSUIT_FORCING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,88,65,10
+    CONTROL         "Reverse Restrictions",IDC_STRUCTURED_REVERSES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,100,81,10
+    GROUPBOX        "Jump Overcalls",IDC_STATIC,116,6,84,40,WS_GROUP
+    CONTROL         "Strong",IDC_RADIO_OVERCALLS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,124,18,43,10
+    CONTROL         "Weak",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,124,30,42,
+                    10
+END
+
+IDP_BID_GENERAL DIALOG DISCARDABLE  0, 0, 200, 138
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Majors",IDC_STATIC,8,6,72,40,WS_GROUP
+    CONTROL         "Four-Card",IDC_RADIO_MAJORS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,16,18,44,10
+    CONTROL         "Five-Card",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,16,30,
+                    48,10
+    GROUPBOX        "Slam Conventions",IDC_STATIC,8,54,72,52,WS_GROUP
+    CONTROL         "Blackwood",IDC_BLACKWOOD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,66,47,10
+    CONTROL         "Gerber",IDC_GERBER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,78,47,10
+    CONTROL         "Cue Bids",IDC_CUE_BIDS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,90,48,10
+    GROUPBOX        "After No Trump Opening",IDC_STATIC,92,6,100,52,WS_GROUP
+    CONTROL         "Stayman",IDC_STAYMAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,18,39,10
+    CONTROL         "Jacoby Transfers",IDC_JACOBY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,30,67,10
+    CONTROL         "Enable 4-Suit Transfers",IDC_4SUIT_TRANSFERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,100,42,88,10
+    GROUPBOX        "Misc",IDC_STATIC,92,66,100,64
+    CONTROL         "Limit Raises",IDC_LIMIT_RAISES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,78,50,10
+    CONTROL         "Splinter Bids",IDC_SPLINTER_BIDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,100,90,63,10
+    CONTROL         "Takeout Doubles",IDC_TAKEOUT_DOUBLES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,100,102,79,10
+    CONTROL         "Negative Doubles",IDC_NEGATIVE_DOUBLES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,100,114,73,10
+END
+
+IDP_BID_CONFIG DIALOG DISCARDABLE  0, 0, 212, 132
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Config"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Rule-Based",IDC_BIDDING_ENGINE,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP | 
+                    WS_TABSTOP,16,84,53,10
+    CONTROL         "Neural Network",IDC_BIDDING_ENGINE2,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,96,84,65,10
+    CONTROL         "Slider1",IDC_SLIDER_AGGRESSIVENESS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,30,40,148,22
+    EDITTEXT        IDC_NET_FILE_PATH,16,95,176,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Browse...",IDC_BROWSE,16,111,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "New...",IDC_NEW,68,111,50,14,NOT WS_VISIBLE
+    GROUPBOX        "Bidding Engine",IDC_STATIC,8,72,192,40,NOT WS_VISIBLE
+    GROUPBOX        "Bidding Aggressiveness",IDC_STATIC,8,6,196,62
+    RTEXT           "Least aggressive",IDC_STATIC,16,19,54,8
+    LTEXT           "Most aggressive",IDC_STATIC,144,19,52,8
+    LTEXT           "Normal",IDC_STATIC,94,19,23,8
+    GROUPBOX        "Neural Net File",IDC_STATIC,8,81,191,50,NOT WS_VISIBLE
+    LTEXT           "+3",IDC_STATIC,163,30,9,8
+    LTEXT           "-3",IDC_STATIC,35,30,8,8
+    LTEXT           "0",IDC_STATIC,102,30,8,8
+    LTEXT           "-2",IDC_STATIC,57,30,8,8
+    LTEXT           "-1",IDC_STATIC,79,30,8,8
+    LTEXT           "+1",IDC_STATIC,120,30,8,8
+    LTEXT           "+2",IDC_STATIC,142,30,8,8
+END
+
+IDP_BID_2BIDS DIALOG DISCARDABLE  0, 0, 196, 139
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "2-Bids"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Strong Twos",IDC_RADIO_TWOBIDS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,18,56,10
+    CONTROL         "Weak Twos",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,16,30,
+                    52,10
+    CONTROL         "20+ points",IDC_RADIO_2COPEN20,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,100,19,49,10
+    CONTROL         "21+ points",IDC_RADIO_2COPEN21,"Button",
+                    BS_AUTORADIOBUTTON,100,30,49,10
+    CONTROL         "22+ points",IDC_RADIO_2COPEN22,"Button",
+                    BS_AUTORADIOBUTTON,100,43,49,10
+    CONTROL         "23+ points",IDC_RADIO_2COPEN23,"Button",
+                    BS_AUTORADIOBUTTON,100,54,49,10
+    CONTROL         "RONF",IDC_RADIO_2NT_AFTER_WEAK_2,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP | 
+                    WS_TABSTOP,16,92,31,10
+    CONTROL         "Ogust Convention",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,16,104,69,10
+    GROUPBOX        "Two-Bids",IDC_STATIC,8,6,68,40,WS_GROUP
+    GROUPBOX        "2NT Response to Weak 2",IDC_STATIC,8,80,104,40,NOT 
+                    WS_VISIBLE | WS_GROUP
+    GROUPBOX        "2C Open Values",IDC_STATIC,92,6,68,64,WS_GROUP
+END
+
+IDW_PROG_CONFIG_GAME_MECHANICS DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "While practice hands are normally not scored, you can choose to score them using the rules of using duplicate bridge.  If you have never played duplicate bridge before, you can skip this option.",
+                    IDC_STATIC,128,7,204,24
+    CONTROL         22204,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,113,
+                    164
+    CONTROL         "Yes, score my practice hands using duplicate rules",
+                    IDC_SCORE_DUPLICATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,36,196,10
+    LTEXT           "Some people who play rubber bridge choose to ignore honors bonuses since they are based solely on luck rather than skill.  If you wish to skip honors bonuses, check the box below.",
+                    IDC_STATIC,128,72,204,26
+    CONTROL         "Yes, ignore honors bonuses in rubber play.",
+                    IDC_IGNORE_HONORS_BONUS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,101,196,10
+END
+
+IDW_PROG_CONFIG_PAUSES DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pauses"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         22208,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,113,
+                    164
+    LTEXT           "Easy Bridge normally makes nearly instantaneous bids.  On faster machines, it may make very fast plays as well.  If you are used to the pace of human players, you may find this disconcerting.",
+                    IDC_STATIC,128,7,204,25
+    LTEXT           "therefore, you can choose below to have Easy Bridge artificially insert pauses between bids and card plays to improve pacing.",
+                    IDC_STATIC,128,36,204,16
+    GROUPBOX        "Pause between bids",IDC_STATIC,130,60,88,80
+    CONTROL         "No pauses please",IDC_BID_PAUSE_0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,138,72,73,10
+    CONTROL         "Pause 0.3 second",IDC_BID_PAUSE_1,"Button",
+                    BS_AUTORADIOBUTTON,138,84,73,10
+    CONTROL         "Pause 0.5 second",IDC_BID_PAUSE_2,"Button",
+                    BS_AUTORADIOBUTTON,138,96,73,10
+    CONTROL         "Pause 1 second",IDC_BID_PAUSE_3,"Button",
+                    BS_AUTORADIOBUTTON,138,108,67,10
+    CONTROL         "Pause 2 seconds",IDC_BID_PAUSE_4,"Button",
+                    BS_AUTORADIOBUTTON,138,120,71,10
+    GROUPBOX        "Pause between plays",IDC_STATIC,234,60,88,80
+    CONTROL         "No pauses please",IDC_PLAY_PAUSE_0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,242,72,73,10
+    CONTROL         "Pause 0.3 second",IDC_PLAY_PAUSE_1,"Button",
+                    BS_AUTORADIOBUTTON,242,84,73,10
+    CONTROL         "Pause 0.5 second",IDC_PLAY_PAUSE_2,"Button",
+                    BS_AUTORADIOBUTTON,242,96,73,10
+    CONTROL         "Pause 1 second",IDC_PLAY_PAUSE_3,"Button",
+                    BS_AUTORADIOBUTTON,242,108,67,10
+    CONTROL         "Pause 2 seconds",IDC_PLAY_PAUSE_4,"Button",
+                    BS_AUTORADIOBUTTON,242,120,71,10
+END
+
+IDP_GAME_SCORING DIALOG DISCARDABLE  0, 0, 192, 103
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Scoring"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use Duplicate Scoring",IDC_DUPLICATE_SCORING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,8,87,10
+    CONTROL         "Score Honors Bonuses in Rubber Matches",
+                    IDC_SCORE_HONORS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,
+                    20,151,10
+END
+
+IDP_GAME_INTERFACE DIALOG DISCARDABLE  0, 0, 184, 137
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Interface"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Insert pause between bids of",IDC_ENABLE_BIDDING_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,39,104,10
+    CONTROL         "Enable spoken bids",IDC_SPOKEN_BIDS,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,4,122,91,
+                    10
+    CONTROL         "Insert pause between plays of:",IDC_ENABLE_PLAY_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,84,112,10
+    CONTROL         "Slider1",IDC_PLAY_PAUSE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,16,98,164,21
+    RTEXT           "Static",IDC_TEXT_PLAY_PAUSE,124,84,49,8
+    RTEXT           "Static",IDC_TEXT_BID_PAUSE,120,40,55,8
+    CONTROL         "Slider1",IDC_BID_PAUSE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,16,52,164,21
+    CONTROL         "Automatically jump cursor to player",
+                    IDC_AUTO_JUMP_CURSOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,20,124,10
+    CONTROL         "Automatically play the last card in the suit led",
+                    IDC_AUTOPLAY_LAST_CARD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,8,156,10
+END
+
+IDW_PROG_CONFIG_VIEW_SETTING_OLD DIALOG DISCARDABLE  0, 0, 340, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "You can choose to have Easy Bridge display the Bidding History during the bidding so you can review what bids were made.  Likewise, you can also choose to see the play history so you can see what cards have been played.",
+                    IDC_STATIC,128,7,204,34
+    LTEXT           "You should note that viewing this information is technically illegal under the rules of bridge.  However, these aids can help you greatly during the learning process.  And besides, who's telling?",
+                    IDC_STATIC,128,45,204,28
+    CONTROL         "Yes, show me the bidding history when I'm bidding.",
+                    IDC_SHOW_BIDDING_HISTORY,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | WS_TABSTOP,132,76,176,10
+    CONTROL         "Yes, show me the play history during cardplay.",
+                    IDC_SHOW_PLAY_HISTORY,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    WS_TABSTOP,132,90,176,10
+    LTEXT           "In addition, if you find either the startup baner (the ""splash screen"") or the program window's background image to be distracting, you can turn them off here.",
+                    IDC_STATIC,128,119,204,27
+    CONTROL         "Yes, turn off the program banner.",
+                    IDC_DISABLE_SPLASH_SCREEN,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | WS_TABSTOP,132,148,176,10
+    CONTROL         "Yes, turn off the program background bitmap.",
+                    IDC_DISABLE_BITMAP,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    WS_TABSTOP,132,162,176,10
+    CONTROL         22205,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,8,8,111,
+                    162
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BRIDGE_GG2          BITMAP  DISCARDABLE     "res\\BridgeSceneGG2.bmp"
+IDB_BRIDGE_GG3          BITMAP  DISCARDABLE     "res\\BridgeSceneGG3.bmp"
+IDB_BRIDGE_GG4          BITMAP  DISCARDABLE     "res\\BridgeSceneGG4.bmp"
+IDB_BRIDGE_GG5          BITMAP  DISCARDABLE     "res\\BridgeSceneGG5.bmp"
+IDB_BRIDGE_GG7          BITMAP  DISCARDABLE     "res\\BridgeSceneGG7.bmp"
+IDB_BRIDGE_GG8          BITMAP  DISCARDABLE     "res\\BridgeSceneGG8.bmp"
+IDB_BRIDGE_GG1          BITMAP  DISCARDABLE     "res\\BridgeSceneGG1.bmp"
+IDB_BRIDGE_GG6          BITMAP  DISCARDABLE     "res\\BridgeSceneGG6.bmp"
+IDB_BRIDGE_BB1          BITMAP  DISCARDABLE     "res\\BridgeSceneBB1.bmp"
+IDB_BRIDGE_BB2          BITMAP  DISCARDABLE     "res\\BridgeSceneBB2.bmp"
+IDB_BRIDGE_BB3          BITMAP  DISCARDABLE     "res\\BridgeSceneBB3.bmp"
+IDB_BRIDGE_BB4          BITMAP  DISCARDABLE     "res\\BridgeSceneBB4.bmp"
+IDB_BRIDGE_BB5          BITMAP  DISCARDABLE     "res\\BridgeSceneBB5.bmp"
+IDB_BRIDGE_GG9          BITMAP  DISCARDABLE     "res\\BridgeSceneGG9.bmp"
+IDB_BRIDGE_BB6          BITMAP  DISCARDABLE     "Res\\BridgeSceneBB6.bmp"
+IDB_SUIT_ORDER_1        BITMAP  DISCARDABLE     "res\\Suit_Order_1.bmp"
+IDB_SUIT_ORDER_2        BITMAP  DISCARDABLE     "res\\Suit_Order_2.bmp"
+IDB_SUIT_ORDER_3        BITMAP  DISCARDABLE     "res\\Suit_Order_3.bmp"
+IDB_SUIT_ORDER_4        BITMAP  DISCARDABLE     "res\\Suit_Order_4.bmp"
+IDB_SUIT_ORDER_5        BITMAP  DISCARDABLE     "res\\Suit_Order_5.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDP_DISP_MISC, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 124
+    END
+
+    IDP_DISP_FONTS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDP_GAME_MECHANICS DLGINIT
+BEGIN
+    IDC_TRACE_LEVEL, 0x403, 8, 0
+0x654c, 0x6576, 0x206c, 0x0031, 
+    IDC_TRACE_LEVEL, 0x403, 8, 0
+0x654c, 0x6576, 0x206c, 0x0032, 
+    IDC_TRACE_LEVEL, 0x403, 8, 0
+0x654c, 0x6576, 0x206c, 0x0033, 
+    IDC_TRACE_LEVEL, 0x403, 8, 0
+0x654c, 0x6576, 0x206c, 0x0034, 
+    IDC_TRACE_LEVEL, 0x403, 8, 0
+0x654c, 0x6576, 0x206c, 0x0035, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EasyBWizards.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

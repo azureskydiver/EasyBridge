@@ -1,0 +1,973 @@
+//****************** Copyright 1997-1998 Steven Han ******************************
+//*
+//*  History : 1/16/97 - first created
+//*
+//*  This script is intended to be used with InstallShield 6.0
+//*		
+//*
+//****************************************************************************
+
+//
+// Current program version information
+//
+#define	VERSION_MAJOR			4
+#define	VERSION_MINOR			0
+#define	VERSION_INCREMENT		0
+#define BETA_VERSION			"Beta 3"
+#define DEFAULT_BITMAP			"bridge5.bmp"
+
+// other install info
+#define	MINIMUM_MEGS			5
+#define APP_NAME                "Easy Bridge"
+#define PROGRAM_FOLDER_NAME     "Easy Bridge"
+#define	DEFAULT_PATH			"Games\\Easy Bridge"
+#define EXTRA_BLOCKSPACE		200000
+#define COMPANY_NAME            "Steve's Software"
+#define	PROGRAM_FILE			"Easy Bridge"
+#define	PRODUCT_NAME			"Easy Bridge"
+#define	EXE_NAME				"EasyBridge.exe"
+#define ICON_NAME				"EasyBridge.ico"
+#define PRODUCT_KEY             "EasyBridge.exe"
+#define APPBASE_DIR95           "Program Files"
+#define BASE_REGISTRYNT         "Software\\Microsoft\\Windows NT\\CurrentVersion\\App Paths\\"
+#define BASE_REGISTRY95         "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\"
+#define STR_COMPLETE95 			"by selecting the program icon in the Programs menu.\n\n"
+#define STR_COMPLETENT 			"by selecting the program icon in the program group.\n\n"
+
+#define FONT1					"Monotype.com"
+#define FONT1_FILENAME			"Monotype.TTF"
+
+#define COMUPDATE				"401comupd.exe"
+#define COMCTL32_VERSION		"4.72.3611.1900"
+
+//****************************************************************************
+// component definitions
+
+#define ITEM_PROGRAMFILES       "Easy Bridge Program Files"
+#define ITEM_SAMPLEHANDS		"Sample Hands"
+#define ITEM_BITMAPS			"Background Bitmaps"
+
+//****************************************************************************
+
+#define	MSG_DISKSPACE		1
+#define	MSG_DISPLAY			2
+#define	MSG_DIRECTORY		3
+#define	MSG_COMPLETED		4
+#define	MSG_UNEXPECTED		5
+
+//****************************************************************************
+
+declare
+
+#include "sddialog.h"   // Include script dialog definitions.
+
+	STRING		svFolder, szMsg, szProgram, szIconPath, szComponentList, szPath; 
+	STRING		szVersionName, szMajorVersion, szMinorVersion, szIncrementVersion;
+	STRING		szFileSet, szTemp, szParam;
+	STRING		tgtDirectory;				// program directory
+	STRING		sampleHandsDirectory;		// saved hands directory
+	STRING		bitmapsDirectory;			// bitmaps directory
+
+	STRING		szUninstLogFile;			// Uninstall log
+	STRING		szDir,szCommand,szCmdLine;
+	NUMBER		nResult;
+	NUMBER		nExistingMajorVersion, nExistingMinorVersion, nExistingIncrementVersion;
+	BOOL    	bWinNT, bWin32S, bIsShellExplorer, bUpdateControls;
+	BOOL		bViewREADME, bRunProgram;
+	
+	prototype	DoMessageDlg(SHORT,SHORT);		// Message box handler
+	prototype 	CheckRequirements();
+	prototype 	CheckExistingVersion();
+    prototype 	DetermineComponentInfo(STRING);
+    prototype 	EnoughSpace(STRING, STRING, NUMBER);
+	prototype	PerformFileTransfer(STRING);
+    prototype	SetupFileTransfer(STRING, STRING);
+    prototype 	CreateRegDBEntries(STRING);
+	prototype	InstallCommonControls(BOOL);
+	prototype	InstallFont(STRING, STRING);
+
+	prototype	GDI.AddFontResource(STRING);
+
+	
+//****************************************************************************
+
+program
+
+
+//
+DoSetup:									// Initialize globals
+	Disable(BACKGROUND);					// Hide while drawing
+	Enable(DIALOGCACHE);					// Prevent flashing
+	Enable(INDVFILESTATUS);					// Show each file
+	SetDialogTitle(DLG_MSG_SEVERE,"Setup");			// Replace the silly 
+	SetDialogTitle(DLG_MSG_WARNING,"Setup");		// default message
+	SetDialogTitle(DLG_MSG_INFORMATION,"Setup");	// box captions
+	tgtDirectory = TARGETDISK ^ DEFAULT_PATH;		// Initial target path
+	// compose version string
+	NumToStr(szMajorVersion, VERSION_MAJOR);
+	NumToStr(szMinorVersion, VERSION_MINOR);
+	NumToStr(szIncrementVersion, VERSION_INCREMENT);
+//	szVersionName = szMajorVersion + "." + szMinorVersion + "." + szIncrementVersion;
+	szVersionName = szMajorVersion + "." + szMinorVersion + " " + BETA_VERSION;
+	// and set install info
+	InstallationInfo(COMPANY_NAME,PRODUCT_NAME,szVersionName,PROGRAM_FILE);
+
+
+//
+DoBackdrop:									// Setup blue backdrop
+	Enable(FULLWINDOWMODE);					// Full size with caption
+	Enable(BITMAP256COLORS);				// Use smooth color wash
+	SetColor(BACKGROUND,BK_BLUE);				// Use a blue wash
+//	SetTitle(PRODUCT_NAME+" "+szVersionName+" Setup",0,BACKGROUNDCAPTION);
+	SetTitle("Installing "+PRODUCT_NAME+" "+szVersionName,28,WHITE);		// Show product name
+	Enable(BACKGROUND);					// Now show backdrop
+	Delay(1);							// A brief pause...
+
+//
+InitAllSettings:
+	// set some default options
+
+
+//
+DoWelcomeDlg:							// Show the welcome dlog
+	Disable(BACKBUTTON);				// This is first page
+	Welcome("",0);						// Now show dialog
+	Enable(BACKBUTTON);					// Now we can go back
+	// Test target system for proper configuration.
+    CheckRequirements();
+	// See what's currently installed
+	CheckExistingVersion();
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// get target path
+//
+DoTargetPathDlg:						// Prompt for install path
+	if (AskDestPath("","",tgtDirectory,0) = BACK) then	// Prompt for target
+		goto DoWelcomeDlg;				// ...clicked back
+	endif;
+	if (GetDiskSpace(tgtDirectory) < MINIMUM_MEGS*1000000) then	// Too little space?
+		DoMessageDlg(WARNING,MSG_DISKSPACE);		// ...complain
+		goto DoTargetPathDlg;				// ...and choose again
+	endif;
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// get list of components to install
+//
+GetInstallComponents:
+	// get components to install
+	szComponentList = "FileComponents";
+	DetermineComponentInfo(szComponentList);
+	ComponentSelectItem(szComponentList, ITEM_PROGRAMFILES, TRUE);
+	ComponentSelectItem(szComponentList, ITEM_SAMPLEHANDS, TRUE);
+	ComponentSelectItem(szComponentList, ITEM_BITMAPS, TRUE);
+    nResult = SdComponentDialog("Install Components", "", tgtDirectory,
+                                szComponentList);
+	//
+	if (nResult = BACK) then
+		goto DoTargetPathDlg;
+    endif;
+
+	// Perform space check of target drive.
+    if (EnoughSpace( tgtDirectory,
+                     szComponentList,
+                     EXTRA_BLOCKSPACE ) = FALSE) goto GetInstallComponents;
+
+	// see if the common controls shuold be updated
+	if (ComponentIsItemSelected(szComponentList, ITEM_PROGRAMFILES)) then
+		bUpdateControls = TRUE;
+	else
+		bUpdateControls = FALSE;
+	endif;
+/*	
+	// if not installing proigram files, skip comctl32.dll update
+	if (!ComponentIsItemSelected(szComponentList, ITEM_PROGRAMFILES)) then
+		bUpdateControls = FALSE;
+		goto GetProgramFolderInfo;
+	endif;
+*/
+
+
+/*
+//
+//--------------------------------------------------------------------
+//
+// see whether we should update comctl32.dll
+//
+CheckComCtlUpdate:
+	// see if we have version 3.0 or higher already installed
+	if (nExistingMajorVersion >= 3) then
+		bUpdateControls = FALSE;
+	else
+		bUpdateControls = TRUE;
+	endif;
+	//
+	nResult = AskOptions(NONEXCLUSIVE, 
+						 "Select whether you wish to update the Windows common controls.  This is not necessary if you have previously installed Easy Bridge version 3.0 or later.",
+						 "Update the controls", 
+						 bUpdateControls);
+	//
+	if (nResult = BACK) then
+		goto GetInstallComponents;
+	endif;
+*/
+
+
+//
+//--------------------------------------------------------------------
+//
+// Get program folder name
+//
+GetProgramFolderInfo:
+    svFolder = PROGRAM_FOLDER_NAME;
+    nResult = SdSelectFolder( "Select a Folder", "", svFolder );
+	if (nResult = BACK) then
+		goto GetInstallComponents;
+/*
+		if (!ComponentIsItemSelected(szComponentList, ITEM_PROGRAMFILES)) then
+			goto GetInstallComponents;
+		else
+			goto CheckComCtlUpdate;
+		endif;
+*/
+	endif;
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// Transfer the files
+//
+DoFileTransfer:
+
+	// define subdirectories
+	sampleHandsDirectory = tgtDirectory ^ "Saved Hands";	// set IBEM subdir
+	bitmapsDirectory = tgtDirectory ^ "Bitmaps";			// & OS directory
+ 
+    // Prepare InstallShield to record deinstallation information.
+	DeinstallStart(tgtDirectory,szUninstLogFile, PRODUCT_NAME + "Deinstall",0);	// Create log file
+	RegDBSetItem(REGDB_UNINSTALL_NAME,PRODUCT_NAME);	// Talk to registry
+
+	// set up file set
+    szFileSet = "General";
+    SetupFileTransfer(szComponentList, szFileSet);
+
+	// Set up progress indicator and information gauge.
+    Enable(STATUS);
+    Disable(DIALOGCACHE);
+
+    // Transfer files to the target system.
+    PerformFileTransfer(szFileSet);
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// Create program groups (folders) and icons.
+//
+CreateFolderIcons:
+	//
+    //Disable( STATUS );
+    SetStatusWindow( 95, "Creating Program Folder and Icons...." );
+	Delay(2);
+    Disable( STATUS );
+
+    if ( (bWinNT || bWin32S) && !bIsShellExplorer ) then
+		AppCommand(PROGMAN, CMD_RESTORE);
+		CreateProgramFolder(svFolder);
+		ShowProgramFolder(svFolder, 0);
+		//LongPathToShortPath(tgtDirectory);
+		Delay(1);
+	endif;
+
+    TARGETDIR = tgtDirectory;
+
+	// create an icon for the program
+	if (ComponentIsItemSelected(szComponentList, ITEM_PROGRAMFILES)) then
+		szProgram = TARGETDIR ^ EXE_NAME;
+		if ((bWinNT || bWin32S) && !bIsShellExplorer) then
+			szIconPath = tgtDirectory ^ ICON_NAME;
+			AddFolderIcon(svFolder, APP_NAME, szProgram, tgtDirectory,
+						  szIconPath, 0, "", REPLACE );
+		else
+			LongPathToQuote(szProgram, TRUE);
+			// set folder group to personal
+			if (bWinNT) then
+				ProgDefGroupType(PERSONAL);
+			endif;
+			AddFolderIcon(FOLDER_STARTMENU ^ "Programs" ^ svFolder, // Folder name
+						  APP_NAME,						// Program name
+						  szProgram,					// Program path
+						  tgtDirectory,					// Working directory 
+//						  szProgram,					// Icon path
+						  "",							// Icon path
+						  0,							// Icon ordinal #
+						  "",							// shortcut key
+						  REPLACE );					// flag
+		endif;
+	endif;
+	        
+	Delay( 1 );
+    
+	// create an uninstall icon
+	szProgram = WINDIR ^ "UNINST.EXE";
+    LongPathToShortPath( szProgram );
+    LongPathToShortPath( szUninstLogFile );
+    AddFolderIcon(svFolder, "Uninstall Easy Bridge",
+				  szProgram + " -f" + szUninstLogFile,
+                  WINDIR,
+                  "", 0, "", REPLACE );
+
+
+//
+//--------------------------------------------------------------------
+//
+// Update the System
+//
+DoSysUpdate:
+	//
+//	SetStatusWindow(100,"File transfer complete." );
+	Delay(1);
+	Disable(STATUS);
+	SdShowMsg ("Setup is updating the system...", TRUE);
+	CreateRegDBEntries(szComponentList);
+	InstallFont(FONT1, FONT1_FILENAME);
+	Delay(1);
+
+	//
+	// clear the progress dialog
+	//
+	SdShowMsg ("", FALSE);
+	//Delay(1);
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// Update the common controls
+//
+UpdateControls:
+	//
+	InstallCommonControls(bUpdateControls);
+
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// Might need to reboot
+//
+DoRebootDlg:
+	//
+	bViewREADME = FALSE;
+	bRunProgram = FALSE;
+	// If shared files could not be installed, then users must restart system.
+    if (BATCH_INSTALL = TRUE) then
+
+		//
+		szMsg = "Some files could not be installed because they are "+
+			"currently in use by other programs in the system.  "+
+			"To allow for proper operation of the new program you should restart "+
+			"your system at this time.";
+//		RebootDialog( "Restart Windows", szMsg, SYS_BOOTMACHINE );
+		nResult = SdFinishReboot("Restart Windows",
+								   szMsg,
+								   SYS_BOOTMACHINE,
+								   "Click Finish to complete Setup and restart the machine.",
+								   0);
+		if (nResult = NEXT) then
+			MessageBox("Setup will not be complete until you restart the machine.", WARNING);	// ...complain
+		endif;
+
+	else
+
+		// show the options dialog
+		SdFinish("Install Complete",
+				 "Setup is complete.\n\nSetup can now display the README file and run the program.",
+				 "Click Finish to complete Setup.",
+				 "View the README file now",
+				 "Run Easy Bridge now",
+				 bViewREADME, bRunProgram);
+
+	endif;
+
+	// show README option is selected
+	if (bViewREADME) then
+		if ((bWinNT || bWin32S) && !bIsShellExplorer) then
+			LongPathToShortPath(tgtDirectory);
+			LaunchApp(WINDIR ^ "write.exe", tgtDirectory ^ "readme.doc");
+		else
+			ChangeDirectory(tgtDirectory);
+			LaunchApp("write.exe", "readme.doc");
+		endif;
+	endif;
+
+	// launch program if selected
+	if (bRunProgram) then
+		szProgram = TARGETDIR ^ EXE_NAME;
+		LaunchApp(szProgram, "");
+	endif;
+
+
+
+//
+//--------------------------------------------------------------------
+//
+// All done
+//
+DoWrapup:
+	//
+	//DoMessageDlg(INFORMATION,MSG_COMPLETED);	// this is redundant
+
+exit;
+
+
+
+
+
+
+/***   H E L P E R     F U N C T I O N S   ***/
+
+
+
+//* DO MESSAGE DLG
+//*
+//* This helper function centralises the formatting of warnings and errors.
+//* The style parameter indicates the type of message box to display, while 
+//* the id parameter identifies the message itself.
+
+function DoMessageDlg(type,id)
+	STRING s;
+begin
+
+	switch (id)						// Which message?
+		case MSG_DISKSPACE:
+	             s = "The program s requires at least %u megabytes "
+			 + "of disk space to run correctly. Please free up some space or choose "
+			 + "a different target location.";
+/*
+			Sprintf(s,"%s requires at least %u megabytes "
+					  + "of disk space to run correctly. "
+					  + "Please free up some space or choose "
+					  + "a different target location.",
+					  PRODUCT_NAME,MINIMUM_MEGS);
+*/
+	
+		case MSG_DISPLAY:
+			s = "the program requires at least VGA display hardware "
+			  + "or better. Setup cannot continue.";
+/*
+			Sprintf(s,"%s requires at least VGA display"
+					  + "hardware or better. Setup cannot "
+					  + "continue.",
+					  PRODUCT_NAME);
+*/
+
+		case MSG_DIRECTORY:
+			s = "A directory could not be created in the "
+			  + "target location you have specified. Setup "
+			  + "cannot continue.";
+			  
+		case MSG_COMPLETED:
+			s = "The program is now installed.";
+//			Sprintf(s,"%s is now installed.",PRODUCT_NAME);
+
+		case MSG_UNEXPECTED:
+			s = "An unexpected error occurred. Setup "
+			  + "cannot continue.";
+	endswitch;
+
+	MessageBox(s,type);			// Display the message
+
+end;
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  CheckRequirements
+ *
+ *  Purpose:  This function will check all minimum requirements for the
+ *            application being installed.  If any fail, then the user
+ *            is informed and the installation is terminated.
+ *
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function CheckRequirements()
+          number  nvDx, nvDy;
+          number nvResult;
+          STRING szResult;
+begin
+
+        // Determine target system's operating system.
+        GetSystemInfo( OS, nvResult, szResult );
+        bWinNT  = FALSE;
+        bWin32S = FALSE;
+        if (nvResult = IS_WINDOWSNT) then
+           bWinNT = TRUE;
+
+           // Check to see if NT is using EXPLORER Shell
+           if( QueryShellMgr( szResult ) = 0 ) then
+               if( StrCompare( szResult, "EXPLORER.EXE" ) = 0 ) then
+                   bIsShellExplorer = TRUE;
+               endif;
+           endif;
+
+        elseif (nvResult = IS_WIN32S) then
+           bWin32S = TRUE;
+        endif;
+
+        // Check screen resolution.
+        GetExtents( nvDx, nvDy );
+        if (nvDy < 480) then
+           MessageBox( "This program requires VGA or better resolution.", WARNING );
+           exit;
+        endif;
+		// check for Win32s platform
+        if (bWin32S) then
+           MessageBox( "This program will not run on a Win32s platform.", WARNING );
+           exit;
+        endif;
+
+end;
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  SetupFileTransfer
+ *
+ *  Purpose:  This function defines the file set based on the user's choices
+ *            of components, then it performs the file set.
+ *
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function SetupFileTransfer(szComponentList, szFileSet)
+begin
+
+	// Define the file set.
+	TARGETDIR = tgtDirectory;
+	FileSetBeginDefine(szFileSet);
+
+	// Always include README files, located at the root of the
+	// SETUP.* library file.
+
+	// If program files are selected, then add them (plus support files) to file set.
+	if (ComponentIsItemSelected(szComponentList, ITEM_PROGRAMFILES)) then
+		SetStatusWindow( -1, "Copying Easy Bridge program and support files..." );
+		TARGETDIR = tgtDirectory;
+		CompressGet("SETUP.Z", "ProgramFiles\\*.*", INCLUDE_SUBDIR);
+
+		// Copy shared files to shared directory
+		TARGETDIR = WINSYSDIR;
+		CompressGet("SETUP.Z", "SysFiles\\*.*", COMP_UPDATE_VERSION | SHAREDFILE );
+		//CompressGet("SETUP.Z", "SysFiles\\*.*", COMP_UPDATE_VERSION | LOCKEDFILE );
+    endif;
+
+	// If the sample hands are selected, then add them to the file set.
+    if (ComponentIsItemSelected(szComponentList, ITEM_SAMPLEHANDS)) then
+		SetStatusWindow(-1, "Copying sample hands..." );
+		TARGETDIR = sampleHandsDirectory;
+		CompressGet("SETUP.Z", "SampleHands\\*.*", INCLUDE_SUBDIR);
+	endif;
+
+	// Likewise for the bitmaps
+    if (ComponentIsItemSelected(szComponentList, ITEM_BITMAPS)) then
+		SetStatusWindow(-1, "Copying background bitmaps..." );
+		TARGETDIR = bitmapsDirectory;
+		CompressGet("SETUP.Z", "Bitmaps\\*.*", INCLUDE_SUBDIR);
+	endif;
+
+	FileSetEndDefine(szFileSet);
+
+end;
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  PerformFileTransfer
+ *
+ *  Purpose:  This function will perform the file transfer and handle
+ *            any error that may occur during the file transfer.
+ *
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function PerformFileTransfer( szFileSet )
+begin
+
+        //StatusUpdate(ON, 90);
+        StatusUpdate(ON, 95);
+
+        // Perform the file set.
+        nResult = FileSetPerformEz(szFileSet, 0);
+
+        switch (nResult)
+        case FS_DONE: // Successful completion.
+
+        case FS_CREATEDIR: // Create directory error.
+             MessageBox( "Unable to create a directory under " + TARGETDIR + "."+
+                         "Please check write access to this directory.", SEVERE );
+             exit;
+
+        default: // Group all other errors under default label.
+             NumToStr( szTemp, nResult );
+             MessageBox( "General file transfer error."+
+                          "Please check your target location and try again."+
+                          "\n\n Error Number:"+szTemp, SEVERE );
+
+             exit;
+        endswitch;
+end;
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  DetermineComponentInfo
+ *
+ *  Purpose:  This function will place all the separatly identifable
+ *            file components into a component list. It will also
+ *            set the size the files represent and will by default
+ *            enable each to be selected.
+ *
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function DetermineComponentInfo( szFileList )
+number nvSize, nvSizeSys, nvSizeOCX;
+string svSize;
+begin
+		//
+	nvSize = 0;
+	nvSizeSys = 0;
+        CompressInfo( "SETUP.Z", "ProgramFiles\\*.*",
+                      COMP_INFO_ORIGSIZE | INCLUDE_SUBDIR,
+                      nvSize, svSize );
+        CompressInfo( "SETUP.Z", "SysFiles\\*.*",
+                      COMP_INFO_ORIGSIZE | INCLUDE_SUBDIR,
+                      nvSizeSys, svSize );
+        ComponentAddItem(szFileList, ITEM_PROGRAMFILES, nvSize + nvSizeSys, TRUE );
+
+		//
+        CompressInfo( "SETUP.Z", "SampleHands\\*.*",
+                      COMP_INFO_ORIGSIZE | INCLUDE_SUBDIR,
+                      nvSize, svSize );
+        ComponentAddItem(szFileList, ITEM_SAMPLEHANDS, nvSize, TRUE );
+
+		//
+        CompressInfo( "SETUP.Z", "Bitmaps\\*.*",
+                      COMP_INFO_ORIGSIZE | INCLUDE_SUBDIR,
+                      nvSize, svSize );
+        ComponentAddItem(szFileList, ITEM_BITMAPS, nvSize, TRUE );
+
+end;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  EnoughSpace
+ *
+ *  Purpose:  This function will determine if enough space exists on
+ *            the target drive based on the selection in thge component
+ *            list.
+ *
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+function  EnoughSpace( tgtDirectory, szComponentList, nExtraSpace )
+LIST    list;
+number  nTotal, nvSize, nFreeSpace, nResult;
+string  svComponent;
+begin
+
+        // Get total size of all selected components.
+        list   = ListCreate( STRINGLIST );
+        nTotal = nExtraSpace;
+        ComponentListItems( szComponentList, list );
+
+        nResult = ListGetFirstString( list, svComponent );
+
+        while (nResult = 0)
+           ComponentGetItemSize( szComponentList, svComponent, nvSize );
+           if (ComponentIsItemSelected( szComponentList, svComponent )) then
+             nTotal = nTotal + nvSize;
+           endif;
+           nResult = ListGetNextString( list, svComponent );
+
+        endwhile;
+
+        ListDestroy( list );
+
+        // Determine if target disk has enough space.
+        nFreeSpace = GetDiskSpace( tgtDirectory );
+
+        if (nFreeSpace < nTotal) then
+           szMsg = "There is not enough space available, %ld bytes, on the disk\n" +
+                   "'" + tgtDirectory + "' \n" +
+                   "Please free up some space or change the target location\n" +
+                   "to a different disk";
+           SprintfBox( WARNING, "Setup", szMsg, nTotal );
+           return FALSE;
+        endif;
+
+        return TRUE; // Enough space.
+end;
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  CheckExistingVersion
+ *
+ *  Purpose:  Check to see what version, if any, is currently installed
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function CheckExistingVersion()
+		string szKey[255], szValue;
+		number nvType, nvSize;
+begin
+		// check for evidence of a previous install
+		RegDBSetDefaultRoot( HKEY_CURRENT_USER );
+		szKey = "SOFTWARE\\" + COMPANY_NAME + "\\" + PRODUCT_NAME + "\\Current Version";
+		//
+		if (RegDBKeyExist(szKey)) then
+			// retrieve the values
+	        RegDBGetKeyValueEx( szKey, "Major Version", nvType, szValue, nvSize );
+			StrToNum(nExistingMajorVersion, szValue);
+	        RegDBGetKeyValueEx( szKey, "Minor Version", nvType, szValue, nvSize );
+			StrToNum(nExistingMinorVersion, szValue);
+	        RegDBGetKeyValueEx( szKey, "Increment Version", nvType, szValue, nvSize );
+			StrToNum(nExistingIncrementVersion, szValue);
+		else
+			// doesn't exist
+			nExistingMajorVersion = 0;
+			nExistingMinorVersion = 0;
+			nExistingIncrementVersion = 0;
+		endif;
+end;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  CreateRegDBEntries
+ *
+ *  Purpose:  This function will create necessary keys and values for
+ *            the sample program.
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function CreateRegDBEntries(szComponentList)
+        string szKey[255], szDisplayKey[255], szVersionKey[255], szGameOptionsKey[255];
+		string szPath, szValue, szDemo, szProgram, szDefaultBitmapPath;
+		string szExistingLIB, szExistingTEMP, szLPPath, shortLPPath;
+		number nSize, nType;
+begin
+        RegDBSetDefaultRoot( HKEY_CURRENT_USER );
+
+		// First delete the preexisting registry PRODUCT_KEY if it exists
+        szKey = "SOFTWARE\\" + COMPANY_NAME + "\\" + PRODUCT_NAME;
+        RegDBDeleteKey( szKey );
+	
+        // then create it 
+        RegDBCreateKeyEx( szKey, "" );
+
+		// if bitmaps were selected, enable them
+		if (ComponentIsItemSelected(szComponentList, ITEM_BITMAPS)) then
+			szDisplayKey = szKey + "\\" + "Display Options";
+	        RegDBCreateKeyEx(szDisplayKey, "");
+			szDefaultBitmapPath = bitmapsDirectory + "\\" + DEFAULT_BITMAP;
+	        RegDBSetKeyValueEx(szDisplayKey, "Show Background Bitmap Display", REGDB_NUMBER, "1", -1 );
+	        RegDBSetKeyValueEx(szDisplayKey, "Background Bitmap", REGDB_STRING, szDefaultBitmapPath, -1 );
+	        RegDBSetKeyValueEx(szDisplayKey, "Window Background Color", REGDB_STRING, "0", -1 );
+		endif;
+
+		// record version info
+		if (ComponentIsItemSelected(szComponentList, ITEM_PROGRAMFILES)) then
+			szVersionKey = szKey + "\\" + "Current Version";
+	        RegDBCreateKeyEx(szVersionKey, "");
+	        RegDBSetKeyValueEx(szVersionKey, "Major Version", REGDB_NUMBER, szMajorVersion, -1 );
+	        RegDBSetKeyValueEx(szVersionKey, "Minor Version", REGDB_NUMBER, szMinorVersion, -1 );
+	        RegDBSetKeyValueEx(szVersionKey, "Increment Version", REGDB_NUMBER, szIncrementVersion, -1 );
+		endif;
+
+		// record user
+//		szTemp = "User";
+//      RegDBSetKeyValueEx( szKey, "User", REGDB_STRING, szTemp, -1 );
+
+		// mark first time running
+		szGameOptionsKey = szKey + "\\" + "Game Options";
+        RegDBCreateKeyEx(szGameOptionsKey, "");
+		szTemp = "1";
+        RegDBSetKeyValueEx(szGameOptionsKey, "First Time Running", REGDB_NUMBER, szTemp, -1 );
+end;
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  InstallCommonControls
+ *
+ *  Purpose:  Upgrades the common controls
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function InstallCommonControls(bInstall)
+		string szSrcVersion, szTgtName, szTgtVersion;
+		number nCode;
+begin
+		if (bInstall) then
+
+			// check the existing file version
+			szTgtName = WINSYSDIR ^ "comctl32.dll";
+			VerGetFileVersion(szTgtName, szTgtVersion);
+
+			// compare the versions
+			szSrcVersion = COMCTL32_VERSION;
+			nCode = VerCompare(szSrcVersion, szTgtVersion, VERSION);
+
+			// and install if necessary
+			if (nCode = GREATER_THAN) then 
+				SdShowMsg ("Updating system components...", TRUE);
+				Delay(1);
+				szCmdLine = "/r:n /q:1";
+				LaunchAppAndWait(TARGETDIR ^ COMUPDATE, szCmdLine, WAIT);
+				SdShowMsg ("", FALSE);
+				BATCH_INSTALL = TRUE;
+			endif;
+
+		endif;
+
+		// clean up
+		DeleteFile(COMUPDATE);
+end;
+
+
+
+
+/*---------------------------------------------------------------------------*\
+ *
+ * Function:  InstallFont
+ *
+ *  Purpose:  This function will install the specified font
+ *
+ *    Input:
+ *
+ *  Returns:
+ *
+ * Comments:
+\*---------------------------------------------------------------------------*/
+
+function InstallFont(szFontName, szFontFileName)
+        string szKey, szValue, szName;
+		number nType, nSize;
+begin
+		UseDLL("GDI.DLL");
+
+		//
+        RegDBSetDefaultRoot( HKEY_LOCAL_MACHINE );
+
+        // locate the proper key
+		if (bWinNT) then
+	        szKey = "Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts";
+		else
+			szKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Fonts";
+		endif;
+
+		// get the value associated with the font name 
+		szName = szFontName + " (TrueType)";
+
+		if (RegDBGetKeyValueEx(szKey, szName, nType, szValue, nSize) != 0) then
+			// the specified value does not exist, so install it
+			VarSave(SRCTARGETDIR);
+			// copy font from install dir to WinSysdir
+			SRCDIR = tgtDirectory;
+			TARGETDIR = WINDIR ^ "Fonts";
+			CopyFile(szFontFileName, szFontFileName);
+			// add the font resource
+			AddFontResource(TARGETDIR ^ szFontFileName);
+			// add registry key
+			RegDBSetKeyValueEx(szKey, szName, REGDB_STRING, szFontFileName, -1 );
+			VarRestore(SRCTARGETDIR);
+		endif;
+		
+		// delete the font file
+		DeleteFile(szFontFileName);
+
+		// wrap up
+		UnUseDLL("GDI.DLL");
+
+end;
+
+
+
+#include "sddialog.rul"
+

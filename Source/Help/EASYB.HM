@@ -1,0 +1,113 @@
+// MAKEHELP.BAT generated Help Map file.  Used by EASYB.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_HIDE                                0x10424
+HID_NEXT_SCREEN                         0x18003
+HID_PREV_SCREEN                         0x18004
+HID_ESCALATE                            0x18005
+HID_AUTO_ESCALATE                       0x18006
+HID_COPY_COLUMN                         0x18007
+HID_PASTE_COLUMN                        0x18008
+HID_CLEAR_COLUMN                        0x18009
+HID_NEXT_PLAN                           0x1800A
+HID_PREV_PLAN                           0x1800B
+HID_SCREENLIST                          0x1800C
+HID_PLANLIST                            0x1800D
+HID_FILENAMES                           0x1800E
+HID_DISPLAY_OPTIONS                     0x1800F
+HID_PATHS                               0x18010
+HID_WARNINGS                            0x18011
+HID_VIEW_OUTPUT                         0x18012
+HID_COLORS                              0x18014
+HID_VIEW_INPUT_FILE                     0x18015
+HID_VIEW_REPORT_FILE                    0x18016
+HID_VIEW_ERROR_LOG                      0x18017
+HID_VIEW_RISKMIN_FILE                   0x18018
+HID_LINE_NUMBER                         0x18019
+HID_SHIFT_DATA                          0x1801A
+HID_EDIT_UNDO_SCREEN                    0x1801B
+HID_FONTS                               0x1801C
+HID_FIND                                0x1801D
+HID_REPLACE                             0x1801E
+HID_VIEW_CONTROL_FILE                   0x1801F
+HID_RUN_FINANCE                         0x18020
+HID_RUN_OPTIONS                         0x18021
+HID_RUN_EXCEL                           0x18022
+HID_PRINTER_FONTS                       0x18023
+HID_MIRROR_DISPLAY_FONT                 0x18024
+HID_ADD_PLAN_BEFORE                     0x18025
+HID_ADD_PLAN_AFTER                      0x18026
+HID_DUPLICATE_PLAN                      0x18027
+HID_DELETE_PLAN                         0x18028
+HID_EXTRACT_PLAN                        0x18029
+HID_SMART_PRINT_FORMAT                  0x1802A
+HID_SHOW_FEEDBACK                       0x1802B
+HID_HELP_ERRORS                         0x1802C
+HID_HELP_GLOSSARY                       0x1802D
+HID_HELP_TROUBLE                        0x1802E
+HID_HELP_MISC                           0x1802F
+HID_HELP_SEARCH                         0x18030
+HID_INDICATOR_LINE                      0x1E6FA
+HID_INDICATOR_COL                       0x1E6FB
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20067
+HIDR_FINANCTYPE                         0x20068
+HIDR_GENERIC                            0x20069
+HIDR_EDITORTYPE                         0x2006A
+HIDR_FEEDBACK                           0x202A8
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_FINANCEW_FORM                      0x20078
+HIDD_FILE_INFO                          0x2008C
+HIDD_PLAN_INFO                          0x20096
+HIDD_OUTPUT_OPTIONS                     0x200A0
+HIDD_RADJST_OPTS                        0x200DC
+HIDD_COVG_OPTS                          0x200F0
+HIDD_MISC_OPTS                          0x20104
+HIDD_BEG_LIABS                          0x20122
+HIDD_BEG_ASSETS                         0x20136
+HIDD_BEG_INTREQ                         0x20140
+HIDD_BEG_MISC                           0x2014A
+HIDD_REVENUES                           0x20154
+HIDD_SCREENS                            0x2015E
+HIDD_ESCALATE                           0x2017C
+HIDD_TEMPLATE_4COLS                     0x20186
+HIDD_OPEXP_BRKDN_1                      0x20190
+HIDD_OPEXP_BRKDN_2                      0x2019A
+HIDD_RBASE_BRKDN                        0x201A4
+HIDD_CSDIV_MODE                         0x201AE
+HIDD_FINANCING_CODE                     0x201B8
+HIDD_SINKING_FUND_PLANS                 0x201CC
+HIDD_ITC_INFORMATION                    0x201D6
+HIDD_COST_SVC_INFO_2                    0x201E0
+HIDD_TEMPLATE_5COLS                     0x201EA
+HIDD_TEMPLATE_6COLS                     0x201F4
+HIDD_TEMPLATE_3COLS                     0x201FE
+HIDD_TEMPLATE_3COLS_WIDE                0x20208
+HIDD_TEMPLATE_2COLS                     0x20212
+HIDD_TEMPLATE_1COL                      0x2021C
+HIDD_TEMPLATE_5COLS_CS                  0x20226
+HIDD_AUTO_ESCALATE                      0x20230
+HIDD_SHIFT_DATA                         0x2023A
+HIDD_PROGRAM_PATHS                      0x2024E
+HIDD_DISPLAY_OPTIONS                    0x20258
+HIDD_FILENAMES                          0x20262
+HIDD_PLANS                              0x2026C
+HIDD_RUN                                0x20276
+HIDD_RUN_OPTIONS                        0x20280
+HIDD_PAGE_SETUP                         0x20294
+HIDD_FEEDBACK                           0x2029E
+HIDD_SPLASH                             0x202B2
+HIDD_CAP_RATIOS                         0x202D0
+HIDD_CASH_RQMTS_2                       0x202D1
+HIDD_CASH_RQMTS                         0x202D1
+HIDD_SEARCH                             0x204B0
+HIDD_GREETING                           0x204B1
+ 
+// Frame Controls (IDW_*) 
+HIDW_PLANNO                             0x50065
+HIDW_PLANTEXT                           0x50066
