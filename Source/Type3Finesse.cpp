@@ -156,6 +156,11 @@ PlayResult CType3Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 				}
 				else
 				{
+					//NCR make sure dummy has > 1 card
+					if(dummySuit.GetNumCards() < 2) {
+						m_nStatusCode = PLAY_NOT_VIABLE;
+						return m_nStatusCode;
+					}
 					// finessing from dummy so lead low card of the suit from hand
 					if (playerHand.GetNumCardsInSuit(m_nSuit) > 0)
 					{
@@ -190,7 +195,8 @@ PlayResult CType3Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 				else 
 				{
 					// leading from dummy and finessing in hand, so do it
-					if (dummyHand.GetNumCardsInSuit(m_nSuit) > 0)
+					// NCR also need to have more than 1 card in hand to be able to duck 
+					if ((dummyHand.GetNumCardsInSuit(m_nSuit) > 0) && (playerSuit.GetNumCards() > 1))
 					{
 						pPlayCard = dummyHand.GetSuit(m_nSuit).GetBottomCard();
 						status << "PL3FN22! Lead a low " & STSS(m_nSuit) & 

@@ -5,6 +5,9 @@
 // See the files COPYING and COPYRIGHT for details.
 //
 //----------------------------------------------------------------------------------------
+/*   NCR Changes:
+    Added def for CommandLine and code to parse a /U: parm to id registry for a user
+*/
 
 //
 // EasyB.cpp : Defines the class behaviors for the application.
@@ -110,6 +113,31 @@ double CEasyBApp::m_fHonorValue[] = {
 };
 
 
+// NCR begin addition
+class NormsCommandLineInfo : public CCommandLineInfo
+{
+public:
+	NormsCommandLineInfo() {m_bHaveRegKey = FALSE;}
+	BOOL m_bHaveRegKey;
+	CString m_RegKey;
+	virtual void ParseParam(const char* pszParam,BOOL bFlag,BOOL bLast);
+};
+void NormsCommandLineInfo::ParseParam(const char* pszParam,BOOL bFlag,BOOL bLast){
+	if (bFlag)	{
+		if (pszParam[0] == 'U' && pszParam[1] == ':')		{
+			CString param = pszParam;
+//			AfxMessageBox("param is >" + param + "<");
+			if(param.GetLength() > 2) {
+               // strip off the leading U: and add a leading blank
+			   m_RegKey = " " + param.Right(param.GetLength() -2); // leading blank
+			   m_bHaveRegKey = TRUE;
+			}
+			return;
+		}
+	}
+	CCommandLineInfo::ParseParam(pszParam, bFlag, bLast);
+}
+// NCE end addition
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -363,13 +391,14 @@ void CEasyBApp::Initialize()
 	m_fDefault2LevelPts = atof(GetProfileString(szCountingOptions, sz2LevelPts, FormString("%f", c_tfDefault2LevelPts)));
 	m_fDefaultSlamPts = atof(GetProfileString(szCountingOptions, szSlamPts, FormString("%f", c_tfDefaultSlamPts)));
 	m_fDefaultGrandSlamPts = atof(GetProfileString(szCountingOptions, szGrandSlamPts, FormString("%f", c_tfDefaultGrandSlamPts)));
-/*
+// NCR-249 Reinstated Aceless Penalty
 	m_bAcelessPenalty = GetProfileInt(szCountingOptions, szAcelessPenalty, TRUE);
+/*
 	m_b4AceBonus = GetProfileInt(szCountingOptions, sz4AceBonus, TRUE);
 	m_bPenalizeUGHonors = GetProfileInt(szCountingOptions, szPenalizeUGHonors, FALSE);
 	m_bCountShortSuits = GetProfileInt(szCountingOptions, szCountShortSuits, TRUE);
 */
-	m_bAcelessPenalty = TRUE;
+//NCR	m_bAcelessPenalty = TRUE;
 	m_b4AceBonus = TRUE;
 	m_bPenalizeUGHonors = TRUE;
 	m_bCountShortSuits = TRUE;
@@ -505,8 +534,9 @@ void CEasyBApp::Terminate()
 	WriteProfileString(szCountingOptions, sz2LevelPts, FormString("%f", m_fDefault2LevelPts));
 	WriteProfileString(szCountingOptions, szSlamPts, FormString("%f", m_fDefaultSlamPts));
 	WriteProfileString(szCountingOptions, szGrandSlamPts, FormString("%f", m_fDefaultGrandSlamPts));
-/*
+// NCR-249 reinstated AcelessPenalty
 	WriteProfileInt(szCountingOptions, szAcelessPenalty, m_bAcelessPenalty);
+/*
 	WriteProfileInt(szCountingOptions, sz4AceBonus, m_b4AceBonus);
 	WriteProfileInt(szCountingOptions, szPenalizeUGHonors, m_bPenalizeUGHonors);
 	WriteProfileInt(szCountingOptions, szCountShortSuits, m_bCountShortSuits);
@@ -1564,16 +1594,29 @@ BOOL CEasyBApp::InitInstance()
 	int nIndex = m_strProgPath.ReverseFind('\\');
 	m_strProgDirectory = m_strProgPath.Left(nIndex);
 
+	// NCR added following 2 lines
+	NormsCommandLineInfo cmdInfo;
+	ParseCommandLine(cmdInfo);
+
+
 	// set registry info
-	if (m_bWin32) 
+	if (m_bWin32) { // NCR added {}
 #ifdef RDEBUG
 		SetRegistryKey("Steve's Software (RDebug)");	// ReleaseDebug
 #elif defined _DEBUG
 		SetRegistryKey("Steve's Software (Debug)");		// Debug
+//		freopen("EasyBridge.out", "a+", stdout); // NCR append debug output to a file
+//		printf("\n>>>>>>> Starting EasyBridge <<<<<<\n");  // NCR separator line
 #else
-		SetRegistryKey("Steve's Software");				// Release
+		// NCR changed following lines to append suffix to registry entry
+		CString regKey = "Steve's Software";
+		if(cmdInfo.m_bHaveRegKey) {
+			regKey += cmdInfo.m_RegKey; // add on param value
+        }
+		SetRegistryKey(regKey);				// Release
+//		AfxMessageBox("Regkey is " + regKey); // DEBUG >>>>>>>>>><<<
 #endif
-
+    } 
 	//
 	Enable3dControls();
 
@@ -1661,8 +1704,10 @@ BOOL CEasyBApp::InitInstance()
 //	pMAINFRAME->Initialize();
 
 	// now we can safely open an existing document, if so specified
-	if (m_lpCmdLine[0] != '\0')	
-		OpenDocumentFile(m_lpCmdLine);
+//	if (m_lpCmdLine[0] != '\0')	
+//		OpenDocumentFile(m_lpCmdLine);
+	if(!cmdInfo.m_strFileName.IsEmpty()) // NCR replaced above with this
+		OpenDocumentFile(cmdInfo.m_strFileName);
 
 	// all done
 	return TRUE;
@@ -1957,6 +2002,7 @@ public:
 	//{{AFX_DATA(CAboutDlg)
 	enum { IDD = IDD_ABOUTBOX };
 	CCJHyperLink	m_hyperLinkEMail;
+	CCJHyperLink	m_hyperLinkEMailNorms;
 	CCJHyperLink	m_hyperLinkURL;
 	CString	m_strSecondaryCopyright;
 	CString	m_strEmailAddress;
@@ -1995,6 +2041,7 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 	//{{AFX_DATA_MAP(CAboutDlg)
 	DDX_Text(pDX, IDC_SECONDARY_COPYRIGHT, m_strSecondaryCopyright);
 	DDX_Control(pDX, IDC_EMAIL_ADDRESS, m_hyperLinkEMail);
+	DDX_Control(pDX, IDC_EMAIL_NORMS, m_hyperLinkEMailNorms);
 	DDX_Control(pDX, IDC_HYPERLINK, m_hyperLinkURL);
 	//}}AFX_DATA_MAP
 }
@@ -2007,6 +2054,7 @@ BOOL CAboutDlg::OnInitDialog()
 
 	// init hyperlinks
 	m_hyperLinkEMail.SetURL(_T("mailto:shan@nyx.net"));
+	m_hyperLinkEMailNorms.SetURL(_T("mailto:radder@hotmail.com")); // NCR add our email address
 	m_hyperLinkURL.SetURL(_T("http://www.nyx.net/~shan/EasyBridge.html"));
 	// show copyright info
 	SetDlgItemText(IDC_STATIC_COPYRIGHT, theApp.GetValueString(tstrProgramCopyright));	

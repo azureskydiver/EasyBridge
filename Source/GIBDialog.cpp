@@ -21,7 +21,7 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 // default progress bar time increment
-const DEFAULT_INCREMENT = 250;	// milliseconds between progress ctl updates
+const int DEFAULT_INCREMENT = 250;	// milliseconds between progress ctl updates  NCR added int
 
 
 /////////////////////////////////////////////////////////////////////////////

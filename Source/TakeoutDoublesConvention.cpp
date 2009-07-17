@@ -45,16 +45,19 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 	// 2: partner must not have bid yet, or else passed,
 	// 3: need 12+ HCPs (opening strength),
 	// 4: we must either not have bid yet, or doubled once (e.g., 1H->X->2H->p->X)
+	//    NCR-610 Root & ppavlicek p120 - belated takeout with earlier bid
 	// 5: need at least 3+ cards in all the unbid suits, 
 	// 6: no more than 3 cards in the enemy suit, and
 	// 7: the hand is unsuitable for a 1NT overcall (???)
 
 	// test conditions 1,2, 3, & 4
 	if ( ((bidState.nLHOBid > BID_PASS) || (bidState.nRHOBid > BID_PASS)) &&
+		 // NCR-291 Test if Opponent Redoubled
+		 (bidState.nLHOBid != BID_REDOUBLE) && (bidState.nRHOBid != BID_REDOUBLE) &&
 		 (bidState.nPartnersBid <= BID_PASS) &&
 		 (bidState.fCardPts >= OPEN_PTS(12)) &&
- 		 ((bidState.m_numBidTurns == 0) ||
-		  ((bidState.m_numBidTurns == 1) && (bidState.m_nBid == BID_DOUBLE))) )
+ 		 ((bidState.m_numBidTurns == 0) ||  // NCR-610 Belated takeout after open
+		  ((bidState.m_numBidTurns == 1) /*&& (bidState.m_nBid == BID_DOUBLE)*/)) )
 	{
 		 // passed
 	}
@@ -65,13 +68,15 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 
 	// test condition #5
 	int i,nSuit,nOppSuit,nOppBidLevel;
+	int nOppBid = NONE; // NCR-477
 	int nOppSuit2 = NONE; 
-	BOOL bEnoughLength = TRUE;
-	if (bidState.nLHOBid > BID_PASS)	// get the first enemy suit
+	BOOL bEnoughLength = TRUE;          // NCR-640 Test for Double
+	if (bidState.nLHOBid > BID_PASS && (bidState.nLHOBid != BID_DOUBLE))	// get the first enemy suit
 	{
 		// LHO has bid
 		nOppSuit = bidState.nLHOSuit;
 		nOppBidLevel = bidState.nLHOBidLevel;
+		nOppBid = bidState.nLHOBid; // NCR-477
 		// see if RHO also bid, perhaps using a different suit
 		if ((bidState.nRHOBid > BID_PASS)  && (bidState.nRHOBid < BID_DOUBLE))
 		{
@@ -85,14 +90,21 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 		// only RHO has bid
 		nOppSuit = bidState.nRHOSuit;
 		nOppBidLevel = bidState.nRHOBidLevel;
+		nOppBid = bidState.nRHOBid; // NCR-477
 	}
+	// NCR check that opponent's bid is NOT notrump
+	// NCR-130 require 15 Points to double 1NT               // NCR use Option value vs Hardcoded 15
+	if((nOppSuit == NOTRUMP)) // && (bidState.fCardPts < OPEN_PTS(pCurrConvSet->GetValue(tn1NTRangeMinPts)))) 
+		return FALSE;  // NCR not allow???  NCR-523 No TKO Dbl for NT
 	//
 	for(i=0,nSuit=nOppSuit;i<3;i++)	// and examine the other suits
 	{
 		nSuit = GetNextSuit(nSuit);
 		if ((nSuit != nOppSuit2) && 
 			((bidState.numCardsInSuit[nSuit] < 3) || 
-					(bidState.nSuitStrength[nSuit] < SS_WEAK_SUPPORT)) )
+					(bidState.nSuitStrength[nSuit] < SS_WEAK_SUPPORT))
+            && (bidState.fCardPts < 18) // NCR allow with STRONG hand
+		    )
 		{
 			// violation
 			bEnoughLength = FALSE;
@@ -108,15 +120,18 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 		return FALSE;
 
 	// or if 3-level takeouts are disabled
-	if (!conventions.IsOptionEnabled(tb3LevelTakeouts))
+	if ((nOppBidLevel >= 3) && !conventions.IsOptionEnabled(tb3LevelTakeouts)) // NCR added >3 test
 		return FALSE;
 
-	// if the opponents bid at the 3-level, we need 13+ pts
-	if ((nOppBidLevel == 3) && (bidState.fCardPts < OPEN_PTS(13)))
+	// if the opponents bid at the 3-level, we need 13+ pts 
+	if ((nOppBidLevel == 3)            // NCR-712 13 pts if Minor
+		 && ( ((bidState.fCardPts < OPEN_PTS(13)) && ISMINOR(nOppSuit))
+		    || (bidState.fCardPts < 19) )) // NCR-712 and 19 if major
 		return FALSE;
 
-	// test condition #6
-	if (bidState.numCardsInSuit[nOppSuit] >= 4)
+	// test condition #6                          // NCR-395 allow if balanced 
+	if ((bidState.numCardsInSuit[nOppSuit] >= 4) && !bidState.bBalanced  
+		&& (ISMINOR(nOppSuit) && bidState.fCardPts < 18)) // NCR allow with hi pts
 		return FALSE;
 
 	// if we're doubling a second time, need 14+ HCPs
@@ -125,7 +140,8 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 		 (bidState.GetConventionStatus(this) == CONV_INVOKED))
 	{
 		 // need 14+ HPCs
-		 if (bidState.fCardPts < OPEN_PTS(14))
+		 int nNumPtsNeeded = (nOppBid < BID_2NT ? 14 : 18); // NCR-477 more points at higher bid
+		 if (bidState.fCardPts < OPEN_PTS(nNumPtsNeeded))
 		 {
 			 // spout a message here?
 			return FALSE;
@@ -143,19 +159,22 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 	int n3NTMin = pCurrConvSet->GetNTRangeMin(3);
 	int n3NTMax = pCurrConvSet->GetNTRangeMax(3);
 	double fCardPts = bidState.fCardPts;
-	if ((bidState.bBalanced) && 
-		(((fCardPts >= OPEN_PTS(n1NTMin)) && (fCardPts <= n1NTMax) && (nOppBidLevel == 1)) ||
-		 ((fCardPts >= OPEN_PTS(n2NTMin)) && (fCardPts <= n2NTMax) && (nOppBidLevel <= 2)) ||
-		 ((fCardPts >= OPEN_PTS(n3NTMin)) && (fCardPts <= n3NTMax) && (nOppBidLevel <= 3))) )
-		return FALSE;
+                               // NCR-337 no-op this test if we're doubling NT bid 
+	if (bidState.bBalanced && (bidState.nRHOSuit != NOTRUMP)
+		&& (bidState.numSuitPoints[nOppSuit] > 2) // NCR-395 NT OK if a stopper
+		&& (((fCardPts >= OPEN_PTS(n1NTMin)) && (fCardPts <= n1NTMax) && (nOppBidLevel == 1))
+		    || ((fCardPts >= OPEN_PTS(n2NTMin)) && (fCardPts <= n2NTMax) && (nOppBidLevel <= 2)
+		        && !pCurrConvSet->IsConventionEnabled(tidUnusualNT)) // NCR skip 2NT if Unusual NT enabled 
+		    || ((fCardPts >= OPEN_PTS(n3NTMin)) && (fCardPts <= n3NTMax) && (nOppBidLevel <= 3))) )
+		return FALSE;  // Exit if we can bid NT
 
 	//
 	// we've now jumped through all the hoops and passed the tests
 	// so make the bid
 	//
-	status << "TKOUT! With " & bidState.fPts & "/" & bidState.fPts & 
+	status << "TKOUT! With " & bidState.fCardPts & "/" & bidState.fPts &  // NCR changed first to fCardPts
 			  " points and support for all unbid suits, bid a takeout double" &
-			  (bDoublingTwice? "again" : "") & ".\n";
+			  (bDoublingTwice? " again" : "") & ".\n";
 	int nBid = BID_DOUBLE;
 	bidState.SetBid(nBid);
 	bidState.SetConventionStatus(this, CONV_INVOKED);
@@ -194,8 +213,8 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 	// 4: opponent has not bid after partner's double, satisfied by #3 above
 	// 5: the opponent's bid must be at the 1 or 2 level
 
-	int nBid,nRound = 1;
-	int nPartnersBid = bidState.nPartnersBid;
+	int nBid,nRoundL = 1;
+	const int nPartnersBid = bidState.nPartnersBid;
 	int nLastValidBid = pDOC->GetLastValidBid();
 	int nLastValidBidLevel = BID_LEVEL(nLastValidBid);
 	bool bSecondDouble = (bidState.nPartnersPrevBid == BID_DOUBLE);
@@ -203,7 +222,10 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 
 	// apply tests #1, 2, and 3
 	if ( (nPartnersBid == BID_DOUBLE) && (bidState.nRound <= 2) && 
-		 (bidState.m_nBid <= BID_PASS) && (nLastValidBidLevel <= 3))
+		 (bidState.m_nBid <= BID_PASS) && (nLastValidBidLevel <= 3)
+		 && (bidState.m_numBidsMade == 0) // NCR-191 we haven't bid yet
+		 && !bidState.IsGameBid(nLastValidBid)  // NCR Double of game is NOT Takeout
+		 && (nLastValidBid != BID_1NT) ) // NCR-350 Double of 1NT is NOT Takeout  <<<<<<<<<<<<<<< NOTE
 	{
 		//
 		status << "TKOTR! Partner has doubled for takeout.\n";
@@ -212,7 +234,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		     (nPartnersBid != BID_PASS))
 	{
 		// second bid after partner's takeout
-		nRound = 2;
+		nRoundL = 2;
 		status << "2TKOTRx! Partner bid " & bidState.szPB & " after his takeout and our " &
 				  bidState.szPVB & " response.\n";
 	}
@@ -222,7 +244,9 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 	}
 
 	// see if partner's double for takeout at the 3-level is valid
-	if ((nLastValidBidLevel == 3) && !conventions.IsOptionEnabled(tb3LevelTakeouts))
+	// NCR-493 Did Pard double our LHO's 3 level bid?
+	if ((bidState.nLHOBidLevel == 3) && (nLastValidBidLevel == 3) 
+		&& !conventions.IsOptionEnabled(tb3LevelTakeouts)) 
 	{
 		status << "5TKOTR2! Since 3-level takeouts are not enabled, partner's double here must be for penalties.\n";
 		return FALSE;
@@ -251,7 +275,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		// if partner doubled twice, it indicates more points again
 		if (bSecondDouble)
 		{
-			status << "4TKORT5! Partner's second double in a row indicates extra points.\n";
+			status << "4TKOTR5! Partner's second double in a row indicates extra points.\n";
 			nPartnersPoints += 2;
 		}
 
@@ -261,31 +285,38 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		bidState.m_fMaxTPPoints = bidState.fPts + bidState.m_fPartnersMax;
 		bidState.m_fMinTPCPoints = bidState.fCardPts + bidState.m_fPartnersMin;
 		bidState.m_fMaxTPCPoints = bidState.fCardPts + bidState.m_fPartnersMax;
-		status << "2TKORT8! Partner's takeout indicates " & bidState.m_fPartnersMin & 
+		status << "2TKOTR8! Partner's takeout indicates " & bidState.m_fPartnersMin & 
 				  "+ HCPs, for a total in the partnership of " &
 				  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints & 
 				  " points.\n";
 
 		// see if RHO has redoubled
-		if (bidState.nRHOBid == BID_REDOUBLE)
+/*		if (bidState.nRHOBid == BID_REDOUBLE)   // NCR-491 why ignore? See TKORb42
 		{
 			status << "TKOTR10! Right-hand opponent has redoubled, but ignore it.\n";
 		}
 		// see if RHO has bid something
-		else if (bidState.nRHOBid > BID_PASS)
+		else*/ if (bidState.nRHOBid > BID_PASS)
 		{
 			status << "TKOTR12! But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.\n";
 
+			int nLastValidBid = pDOC->GetLastValidBid();  // NCR-594 
+			int nOldBid = (bidState.nRHOBid == BID_REDOUBLE) ? nLastValidBid : bidState.nRHOBid; // NCR-594
 			// try to compete and outbid RHO, if possible
-			nBid = bidState.GetCheapestShiftBid(bidState.nPrefSuit, bidState.nRHOBid);
+			nBid = bidState.GetCheapestShiftBid(bidState.nPrefSuit, nOldBid);  // NCR-594
 			int nLevel = BID_LEVEL(nBid);
 			// need 18+ total pts at the 1 level, 22+ at the 2 level, 24+ at the 3 level, 
 			// and 26+ at the 4 level (assume partner contributes 12 HCPs)
 			int nPartnersContrib = 12;
-			if ( ((nLevel == 1) && (bidState.fCardPts >= PTS_NT_GAME-7-nPartnersContrib)) ||
-				 ((nLevel == 2) && (bidState.fCardPts >= PTS_NT_GAME-3-nPartnersContrib)) ||
+// 			  double nTestPts =  PTS_NT_GAME-nPartnersContrib; //  DEBUG to see value
+			double testAdjPts = hand.RevalueHand(REVALUE_DECLARER, bidState.nPrefSuit, TRUE);  // NCR-676
+
+			// NCR-291 Can do freebid here with 5 HCPs ???  26 - 2 - 7 - 12 = 5
+			if ( (bidState.fCardPts >= 10 ) &&  // NCR-291 require what pard expects, see TKORb42 below
+				(((nLevel == 1) && (bidState.fCardPts >= PTS_NT_GAME-7-nPartnersContrib)) ||
+				 ((nLevel == 2) && (testAdjPts        >= PTS_NT_GAME-3-nPartnersContrib)) ||  // NCR-676  more liberal ???
 				 ((nLevel == 3) && (bidState.fCardPts >= PTS_NT_GAME-1-nPartnersContrib)) ||
-				 ((nLevel == 4) && (bidState.fCardPts >= PTS_NT_GAME+1-nPartnersContrib)))
+				 ((nLevel == 4) && (bidState.fCardPts >= PTS_NT_GAME+1-nPartnersContrib))) )
 			{
 				status << "TKOTR14! However, assuming partner has 12+ HCPs, that amount combined with our " &
 						  bidState.fCardPts & "/" & bidState.fPts &
@@ -294,6 +325,39 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 				bidState.SetBid(nBid);
 				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
 			}
+			// NCR special case Q&D - seven cards and a void
+			else if((hand.GetSuit(bidState.nPrefSuit).GetNumCards() >= 7)
+				     && (hand.GetNumVoids() > 0) && (theApp.GetBiddingAgressiveness() >= 1))
+			{
+				nBid = bidState.GetGameBid(bidState.nPrefSuit);
+				status << "TKOTR16! And with only " & bidState.fCardPts & "/" & bidState.fPts &
+					", a void, and more than 6 cards in suit, bid a game " & BTS(nBid) & ".\n";		
+
+				bidState.SetBid(nBid);
+				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
+			}
+			// NCR-70 Bid NT if some points and enemy suit stopped
+			else if ((bidState.fCardPts >= OPEN_PTS(6))
+				&& ((BID_SUIT(pDOC->GetLastValidBid()) == NOTRUMP) // Can't test if NT is stopped
+				    || hand.IsSuitStopped(BID_SUIT(pDOC->GetLastValidBid())))
+				&& (pDOC->GetLastValidBid() < BID_1NT))  //NCR can only bid 1NT at one level
+			{
+				nBid = BID_1NT;
+				status << "TKOTR18! With " & bidState.fCardPts & " HCPs and a balanced hand, respond with " &
+						  BTS(nBid) & ".\n";
+				bidState.SetBid(nBid);
+				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
+				return TRUE;
+			}  // NCR-70 end adding 1NT to show pts and suit stopped 
+			// NCR-594 an emergency bid if redoubled
+			else if ((bidState.nRHOBid == BID_REDOUBLE) && ISBID(nBid)  && (nLevel <= 2)
+				     && (hand.GetSuit(bidState.nPrefSuit).GetNumCards() >= 6)
+					 && (hand.GetSuitHCPoints(bidState.nPrefSuit) > 2) )
+			{
+				status << "TKOTR19! Forced by a redouble, we bid our longest suit with " & BTS(nBid) & ".\n";		
+				bidState.SetBid(nBid);
+				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
+			} // end NCR-594
 			else
 			{
 				// forget it; just pass
@@ -307,7 +371,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			}
 			//
 			return TRUE;
-		}
+		} // end RHO did NOT pass
 
 
 		//
@@ -316,15 +380,37 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		int nSuit,nOrigSuit;
 		double fCardPts = bidState.fCardPts;
 		double fPts = bidState.fPts;
-		int nEnemyBid = pDOC->GetLastValidBid();
-		int nEnemyBidLevel = BID_LEVEL(nEnemyBid);
-		int nEnemySuit = BID_SUIT(nEnemyBid);
+		const int nEnemyBid = pDOC->GetLastValidBid();
+		const int nEnemyBidLevel = BID_LEVEL(nEnemyBid);
+		const int nEnemySuit = BID_SUIT(nEnemyBid);
+		// NCR-242 Problem here if opponents have bid two suits ???
+		const int nEnemySuit2 = NOSUIT; // HEARTS; // NCR for testing
 
+		// NCR-648 Pass the double if long suit at level 3
+		// Note: As of 11/3/12 No Menu item available to set tb3LevelTakeouts in registry (set manually)
+		if(((nEnemyBidLevel == 3) && (nLastValidBidLevel == 3)
+			|| (nEnemyBidLevel == 2 && bidState.nPrefSuitStrength >= SS_STRONG_SUPPORT)) // NCR-710
+			&& (bidState.nPrefSuit == nEnemySuit) && (bidState.numPrefSuitCards >= 5) )
+		{
+			status << "TKOTR18! With " & bidState.numPrefSuitCards & " cards in opponents suit,"
+					  " convert partner's double to penalty.\n";
+			bidState.SetBid(BID_PASS);
+			bidState.SetConventionStatus(this, CONV_INACTIVE);
+			return TRUE;
+		} // end NCR-648
 
 		//
 		// with 6-9.5 pts and a balanced hand, bid 1NT
 		//
-		if ((bidState.bBalanced) && (fCardPts >= OPEN_PTS(6)) && (fCardPts < OPEN_PTS(10)))
+		// NCR-89 Check if doubled bid was 1NT
+		// NCR Changed test from bid = 1NT to  suit = NOTRUMP
+		if ((nEnemySuit != NOTRUMP) && bidState.bBalanced && (fCardPts >= OPEN_PTS(6)) 
+			&& (fCardPts < OPEN_PTS(10))
+			&& hand.IsSuitStopped(nEnemySuit) // NCR do we need suit stopped???
+			//  NCR-681 Don't bid NT if have 4 card major headed by Queen or better
+			&& !(ISMAJOR(bidState.nPrefSuit) && (bidState.numPrefSuitCards >= 4)
+			    && (bidState.numPrefSuitPoints >= 2))
+			&& (nEnemyBidLevel == 1))  //NCR can only bid 1NT at one level
 		{
 			nBid = BID_1NT;
 			status << "TKOTR20! With " & fCardPts & " HCPs and a balanced hand, respond with " &
@@ -348,7 +434,8 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 				// find another suit to bid
 				int nAltSuit = hand.GetSuitsByLength(1);
 				// make sure it's got at least 4 cards
-				if (hand.GetSuitLength(nAltSuit) >= 4)
+				if ((hand.GetSuitLength(nAltSuit) >= 3)  // NCR-357 Must bid here. Allow only 3 cards vs 4
+					&& (hand.GetSuitLength(nSuit) < 6) ) // NCR-357 Leave double in with 6+ cards
 				{
 					status << "TKOTR20a! Our longest suit of " & STS(nSuit) & 
 							  " happens to be the enemy suit, so respond in the next-longest suit of " &
@@ -360,7 +447,9 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 					// can't bid at all, with only 9 pts
 					nBid = BID_PASS;
 					status << "TKOTR20c! Our longest suit of " & STS(nSuit) & 
-							  " happens to be the enemy suit, and we don't have a decent alternate suit, nor do we have the 13+ pts required to cue-bid the enemy suit, so we have to pass.\n";
+							  " happens to be the enemy suit, and we don't have a decent alternate suit,"
+							  & " nor do we have the 13+ pts required to cue-bid the enemy suit, so we have to pass.\n";
+					bidState.SetBid(nBid);  // NCR added this line
 					bidState.SetConventionStatus(this, CONV_FINISHED);
 					return TRUE;
 				}
@@ -413,7 +502,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			bidState.SetBid(nBid);
 			bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
 			return TRUE;
-		}
+		} // end fPts < 10 pts
 
 
 		//
@@ -429,7 +518,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		// that we can jump in
 		nSuit = NONE;
 		int nSecondSuit = bidState.GetNextBestSuit(nPrefSuit);
-		int nLength;
+		int nLength = NONE;
 		// make sure we're not bidding the enemy suit unless we have 13+ pts
 		if ( (ISMAJOR(nPrefSuit) && (bidState.numPrefSuitCards >= 5)) &&
 			 ((nPrefSuit != nEnemySuit) || (fPts >= 13)) )
@@ -438,7 +527,8 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			nLength = bidState.numPrefSuitCards;
 		}
 		else if ( (ISMAJOR(nSecondSuit) && (bidState.numCardsInSuit[nSecondSuit] >= 5)) &&
-				  ((nSecondSuit != nEnemySuit) || (fPts >= 13)) )
+			                                       // NCR-242 what if 2 enemy suits?
+				  (((nSecondSuit != nEnemySuit) && (nSecondSuit != nEnemySuit2)) || (fPts >= 13)) )
 		{
 			nSuit = nSecondSuit;
 			nLength = bidState.numCardsInSuit[nSecondSuit];
@@ -449,32 +539,66 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			if (fPts >= OPEN_PTS(13))
 			{
 				nBid = bidState.GetGameBid(nSuit);
-				status << "TKOTR20! With " & fCardPts & "/" & fPts & 
+				status << "TKOTR24! With " & fCardPts & "/" & fPts & 
 						  " pts and a " & nLength & "-card " & STSS(nSuit) & 
 						  " suit, jump to game at " & BTS(nBid)  & ".\n";
 			}
 			else
 			{
-				nBid = MAKEBID(nSuit, 3);
-				status << "TKOTR22! With " & fCardPts & "/" & fPts & 
-						  " pts and a " & nLength & "-card " & STSS(nSuit) & " suit, " & 
-						  ((nEnemyBidLevel < BID_1NT)? " jump to " : " bid ") &
+				// NCR-308 jump is one level higher than needed
+				int bidLvl = nEnemyBidLevel + 1;
+				if((nEnemySuit > nSuit) && (bidLvl <= 2)) // NCR-403 don't jump to 4 lvl with < opening count 
+					bidLvl++;  // up one more
+				nBid = MAKEBID(nSuit, bidLvl);  // NCR-308 computed value vs hardcoded 3
+				status << "TKOTR25! With " & fCardPts & "/" & fPts & 
+						  " pts and a " & nLength & "-card " & STSS(nSuit) & " suit, " &
+						  // NCR changed test for Jump from (nEnemyBidLevel < BID_1NT)
+						  (((nBid - nEnemyBid) > 5)? " jump to " : " bid ") &
 						  BTS(nBid) & ".\n";
 			}
 			bidState.SetBid(nBid);
 			bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
 			return TRUE;
 		}
-
+// * NCR-525 Is the following wrong?  NCR-647 Restored this code.  See NCR-525 in Overcall
+		// NCR-187 See if we have a 5+ suit to bid
+		if(ISMINOR(nPrefSuit) && (bidState.numPrefSuitCards >= 6)
+		   && ((nPrefSuit != nEnemySuit) || (fPts >= OPEN_PTS(13))) )
+		{
+			// NCR-647 Try 3NT or Jump
+			if(nEnemySuit != NOTRUMP && (bidState.numSuitPoints[nEnemySuit] >= ACE_VALUE)) {
+				nBid = BID_3NT;
+			} else {
+				int shftAmt = JUMP_SHIFT_1;        // for case of >= 10 pts
+				if(fPts < 10) {
+					if(bidState.numPrefSuitCards > 5)
+						shftAmt = JUMP_SHIFT_2;   // show long suit, low points
+					else	
+						shftAmt = SHIFT_0;        // otherwise minimum bid
+				}
+				nBid = bidState.GetJumpShiftBid(nPrefSuit, nEnemyBid, shftAmt); 
+			}  // end NCR-647
+//			nBid = bidState.GetCheapestShiftBid(nPrefSuit, nEnemyBid);
+			status << "TKOTR27! With " & fCardPts & "/" & fPts & 
+						  " pts and a " & bidState.numPrefSuitCards & "-card " & STSS(nPrefSuit) &  // NCR
+						  " suit, bid " & BTS(nBid)  & ".\n";
+			bidState.SetBid(nBid);
+			bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
+			return TRUE;
+		} // NCR-187 end
+//  end NCR-525 */
 		//
 		// else see if we can bid 2NT or 3NT
+		// NCR require that the enemy suit is stopped for all NT
 		//
-		if (bidState.bBalanced)
+		if (bidState.bBalanced && ((nEnemySuit != NOTRUMP) && hand.IsSuitStopped(nEnemySuit))) // NCR added Stopped test
 		{
 			// bid 3NT with >= 13 HCPS and all suits stopped, or 2NT otherwise
-			if (fCardPts >= OPEN_PTS(13)) 
+			if ((fCardPts >= OPEN_PTS(13))
+				// NCR-545 Also bid if pard doubled at 3 level and we have 11 pts
+				|| ((nEnemyBidLevel == 3) && (fCardPts >= OPEN_PTS(11))) )
 			{
-				if (hand.IsSuitStopped(nEnemySuit) && (nEnemySuit != NOTRUMP))
+				if ((nEnemySuit != NOTRUMP) && hand.IsSuitStopped(nEnemySuit))  // NCR reversed order of tests
 				{
 					nBid = BID_3NT;
 					status << "TKOTR30! With " & fCardPts & 
@@ -516,16 +640,37 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		{
 			nBid = MAKEBID(nEnemySuit, nEnemyBidLevel+1);
 			status << "TKOTR50! With " & fCardPts & "/" & fPts & 
-					  " pts but without a long suit, make a game-forcing bid by bidding the opponents' suit at " & 
+					  " pts but without a long major suit, make a game-forcing bid by bidding the opponents' suit at " & 
 					  BTS(nBid)  & ".\n";
 		}
 		else
 		{
 			nSuit = hand.GetLongestSuit();
-			nBid = bidState.GetJumpShiftBid(nSuit, nEnemyBid, JUMP_SHIFT_1);
-			status << "TKOTR55! With " & fCardPts & "/" & fPts & 
+			// NCR-263 check if enemy's suit and if we have another of same length
+			if (nSuit == nEnemySuit) 
+			{
+				if(nPrefSuit != nSuit)
+					nSuit = nPrefSuit;  // NCR-263 switch to prefered suit
+			} // NCR-263 end checking for another suit
+			// NCR-208 Don't jump at 3 level
+			bool bMySuitGreater = nSuit > nEnemySuit; // NCR-572 set variable used below
+			                               
+			if ((((nLastValidBidLevel == 1)  // NCR-572 Test if we can jump - consider level and points
+				   && (bMySuitGreater && (fPts >= 10)) || (!bMySuitGreater && (fPts >= OPEN_PTS(12))))
+				  || ((nLastValidBidLevel == 2) 
+				   && (bMySuitGreater && (fPts >= 12)) || (!bMySuitGreater && (fPts >= OPEN_PTS(14)))) ) 
+				|| ((bidState.numCardsInSuit[nSuit] > 5)  // NCR-525 allow jump if have 6 card suit
+				    && (fPts > OPEN_PTS(10))) ) 
+			{
+				nBid = bidState.GetJumpShiftBid(nSuit, nEnemyBid, JUMP_SHIFT_1);
+				status << "TKOTR55! With " & fCardPts & "/" & fPts & 
 					  " pts and no long major suit, jump to " & BTS(nBid) & 
 					  ((nSuit == nEnemySuit)? ", even though it's the enemy suit." : ".") & "\n";
+			} else {
+				nBid = bidState.GetCheapestShiftBid(nSuit, nLastValidBid); 
+				status << "TKOTR56! With " & fCardPts & "/" & fPts & 
+					  " pts and no long major suit, bid " & BTS(nBid) & "\n";
+			}
 		}
 		bidState.SetBid(nBid);
 		bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
@@ -550,9 +695,25 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		if ((nPartnersSuit != nPreviousSuit) && (nPreviousSuit != NOTRUMP))
 		{
 			// partner did indeed shift
-			bidState.m_fPartnersMin = 16;
-			// the most pts partner could have is approx. 40 - our HCPs - opener's HCPs
-			bidState.m_fPartnersMax = MAX(16, 40 - bidState.fCardPts - 12);
+			// NCR-493 What if pard did a Jump shift ie 19+ points. See B3Y00
+			if(bidState.GetBidType(nPartnersBid) & BT_Jump)
+			{
+				bidState.m_fPartnersMin = 19;
+				bidState.m_fPartnersMax = MIN(OPEN_PTS(pCurrConvSet->GetValue(tn2ClubOpeningPoints)), 40 - bidState.fCardPts);
+				double testAdjPts = hand.RevalueHand(REVALUE_DUMMY, nPartnersSuit, TRUE);
+				bidState.fAdjPts = testAdjPts; // NCR-611 change eval to pard's suit
+				// Should this be a FORCE ???
+			} // NCR-493 end partner's Jump shift
+			else
+			{
+				bidState.m_fPartnersMin = 16;
+				// the most pts partner could have is approx. 40 - our HCPs - opener's HCPs
+				// NCR-153 Openers HCPs for weak 2 and preempt
+				int nOpnrHCPs = 12;
+				if(pDOC->GetOpeningBid() > BID_1NT)  // NCR-153 is opening bid right???
+					nOpnrHCPs = 10;
+				bidState.m_fPartnersMax = MAX(16, 40 - bidState.fCardPts - nOpnrHCPs);  // NCR-153
+			}
 			bidState.m_fMinTPPoints = bidState.fAdjPts + bidState.m_fPartnersMin;
 			bidState.m_fMaxTPPoints = bidState.fAdjPts + bidState.m_fPartnersMax;
 			bidState.m_fMinTPCPoints = bidState.fCardPts + bidState.m_fPartnersMin;
@@ -573,7 +734,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			bidState.m_fMaxTPCPoints = bidState.fCardPts + bidState.m_fPartnersMax;
 		}
 		//
-		double fAdjPts = bidState.fAdjPts;
+//NCR		double fAdjPts = bidState.fAdjPts;
 		double fMinTPPoints = bidState.m_fMinTPPoints;
 		double fMaxTPPoints = bidState.m_fMaxTPPoints;
 
@@ -648,6 +809,17 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			//
 			// else partner shifted to a different suit
 			//
+			// NCR-696 check if partner's bid is game and we don't have enough for slam
+			if (bidState.IsGameBid(nPartnersBid) && (fMinTPPoints < PTS_SLAM))
+			{
+				status << "TKOTR75! Partner responded with a game bid of " & 
+						  bidState.szPB & ", so we should pass.\n";
+				nBid = BID_PASS;	
+				bidState.SetBid(nBid);
+				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
+				return TRUE;
+			}  // end NCR-696
+
 			// with 20-24 min total pts, raise partner's suit to 
 			// the 2 or 3-level with 3-card trump support
 			if ( (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_2,PTS_GAME-5,PTS_GAME-3,SUPLEN_3)) ||
@@ -669,10 +841,14 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			}
 
 			// else rebid a 6-card suit with 22-24 pts
+			// NCR-247 Problem here. cheapest bid was 6C, so lets test the level < 5
+			if(bidState.nPartnersBidLevel < 5) 
+			{
 			if (bidState.RebidSuit(SUIT_ANY,REBID_CHEAPEST,PTS_GAME-3,PTS_GAME-1,LENGTH_6))
 			{
 				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
 				return TRUE;
+			}
 			}
 
 			// else with 20-24 min total pts, bid another good suit;
@@ -707,6 +883,20 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 					{
 						bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
 					}
+					// NCR-153 bid game if 2 cards, possible points and agression
+					else if((bidState.numCardsInSuit[nPartnersSuit] > 1) 
+						    && (bidState.m_fMaxTPCPoints > PTS_MINOR_GAME)
+							// NCR-296 Need some HCPs here. Are 8 enough?
+							&& (bidState.fCardPts > 8)
+						    && (theApp.GetBiddingAgressiveness() >= 1)) 
+					{
+						nBid = bidState.GetGameBid(nPartnersSuit);
+						status << "TKOTR69! With " & bidState.fCardPts & "/" & bidState.m_fMaxTPCPoints & 
+						  " pts and at least 2 card support in " & STSS(nPartnersSuit) & 
+						  " suit, bid game at " & BTS(nBid)  & ".\n";
+     					bidState.SetBid(nBid);
+						bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
+					} // NCR-153 end bidding a game
 					else
 					{
 						// gotta pass
@@ -720,13 +910,25 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 					}
 				}
 				return TRUE;
-			}
+			}  // end TP pts < Game
 
 			//
 			//--------------------------------------------------------
 			//
 			// here, we have 26+ min total points, so try to reach game
 			//
+/* NCR-696 Moved up
+			// NCR check if partner's bid is game and we don't have enough for slam
+			if (bidState.IsGameBid(nPartnersBid) && (fMinTPPoints < PTS_SLAM))
+			{
+				status << "TKOTR75! Partner responded with a game bid of " & 
+						  bidState.szPB & ", so we should pass.\n";
+				nBid = BID_PASS;	
+				bidState.SetBid(nBid);
+				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
+				return TRUE;
+			}
+*/
 
 			// raise a major to game with 3-card support & 26+ pts
 			// or with 2-card support & 26+ pts
@@ -794,8 +996,22 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 				return TRUE;
 			}
 
+			// NCR-443 Test if this is as high as we want to go
+			// Pard's suit is a minor, we have good support for it, and not enough points for game
+			                                                         // NCR-580 < vs >=
+			if(ISMINOR(nPartnersSuit) && (bidState.nSuitStrength[nPartnersSuit] < SS_GOOD_SUPPORT)  
+				&& (nLastValidBidLevel >= 4) && (fMinTPPoints < PTS_MINOR_GAME) )
+			{
+				status << "TKOTR84! Partner's bid is as high as we want to go. We Pass.\n";
+				bidState.SetBid(BID_PASS);
+				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
+				return TRUE;
+			}  // NCR-443 end
+
 			// else rebid our suit at the cheapest level
-			else if (fMinTPPoints < PTS_SLAM) 
+			else if ((fMinTPPoints < PTS_SLAM) && ISSUIT(nPreviousSuit)   //???
+				            // NCR-580 require 5 cards to rebid
+				     && (hand.GetSuitLength(nPreviousSuit) > 4)) 
 			{
 				nBid = bidState.GetCheapestShiftBid(nPreviousSuit);
 				status << "TKOTR85! With " & fMinTPPoints & "-" & fMaxTPPoints &
@@ -806,6 +1022,16 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 				bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
 				return TRUE;
 			}
+			else   // NCR-580 What now???
+			{
+				if(fMinTPPoints <= OPEN_PTS(32)) {
+//					ASSERT(FALSE);  // NCR Lets us know if this ever happens
+					status << "TKOTR87! With " & fMinTPPoints & "-" & fMaxTPPoints & " WHat now???\n";
+					bidState.SetBid(BID_PASS);
+					bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);
+					return TRUE;
+}
+			}  // NCRT-580 End of doing something???
 			
 			//
 			// with 32+ min total points, think slam
@@ -870,12 +1096,12 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 	int nPreviousSuit = bidState.nPreviousSuit;
 	BOOL bBalanced = bidState.bBalanced;
 	//
-	int nPartnersBid = bidState.nPartnersBid;
-	int nPartnersBidLevel = bidState.nPartnersBidLevel;
-	int nPartnersSuit = bidState.nPartnersSuit;
-	int nPartnersSuitSupport = bidState.nPartnersSuitSupport;
-	int nPartnersPrevSuit = bidState.nPartnersPrevSuit;
-	int numSupportCards = bidState.numSupportCards;
+	const int nPartnersBid = bidState.nPartnersBid;
+	const int nPartnersBidLevel = bidState.nPartnersBidLevel;
+	const int nPartnersSuit = bidState.nPartnersSuit;
+	const int nPartnersSuitSupport = bidState.nPartnersSuitSupport;
+	const int nPartnersPrevSuit = bidState.nPartnersPrevSuit;
+	const int numSupportCards = bidState.numSupportCards;
 
 	//
 	if (bidState.GetConventionStatus(this) == CONV_INVOKED_ROUND1) 
@@ -908,14 +1134,31 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 
 		// set team point estimates -- be conservative
 		BOOL bPartnerJumped = FALSE;
+		BOOL bPartnerLeaped = FALSE;  // NCR-74 one level more than a jump
 		BOOL bPartnerJumpedToGame = FALSE;
-		int nEnemyBid = pDOC->GetValidBidRecord(0);
-		int nEnemyBidLevel = BID_LEVEL(nEnemyBid);
+		int nEnemyBid = pDOC->GetValidBidRecord(0); //NCR not necessarily 1st bid, could be 3rd!!! ???
+        int idx = (bidState.nRHOBid == BID_DOUBLE ) ? 3 : 1; // NCR-618 skip over RHO's double
+		// NCR find valid(nonPass) bid immediately before Double
+		for(int theIdx = pDOC->GetNumBidsMade() - idx; theIdx >= 0; theIdx--) {
+			if((pDOC->GetBidByIndex(theIdx) == BID_DOUBLE) && (theIdx > 0)) {
+				nEnemyBid = pDOC->GetBidByIndex(theIdx-1);
+				while((nEnemyBid == BID_PASS) && theIdx >=0) {
+					theIdx--;
+					nEnemyBid = pDOC->GetBidByIndex(theIdx); // NCR???
+				}
+				break;
+			}
+		} // end for(theIdx)
+
+//		int nEnemyBidLevel = BID_LEVEL(nEnemyBid);
 		int nEnemySuit = BID_SUIT(nEnemyBid);
 		if ((nPartnersBid - nEnemyBid) > 5)
 			bPartnerJumped = TRUE;
+		if ((nPartnersBid - nEnemyBid) > 10)  // NCR-74 leap indicates long suit in weak hand
+			bPartnerLeaped = TRUE;
 		if (nPartnersBid == bidState.GetGameBid(nPartnersSuit))
-			bPartnerJumpedToGame = TRUE;
+			// NCR-53 Only set TRUE if bid was a jump. The bid could be an overcall
+			bPartnerJumpedToGame = bPartnerJumped; //TRUE;
 		// flag to see if we doubled in preference to an overcall
 		BOOL bWantedToOvercall = FALSE;
 
@@ -976,7 +1219,11 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 			if (bidState.GetConventionStatus(&overcallsConvention) == CONV_SUBSUMED)
 				bWantedToOvercall = TRUE;
 			//
-			if (nPartnersSuit == nEnemySuit)
+			// NCR-216 Same suit matters only if bid before pard's bid
+			// NCR-273 problem here if opponent bid then passed or RHO bid suit earlier
+			if ((nPartnersSuit == nEnemySuit) /* && ((BID_SUIT(bidState.nLHOBid) == nEnemySuit)
+				// NCR-273 allow for pass ???
+				|| (bidState.nLHOBid == BID_PASS))*/ )
 			{
 				// partner bid the enemy suit, showing 13+ pts.
 				status << "TKORb40! Partner has responded in the enemy suit, indicating 13+ pts but no long suits.\n";
@@ -989,19 +1236,20 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 				// partner had 13+ pts & a 5-card major
 				status << "TKORb41! Partner has jumped to game in " & STS(nPartnersSuit) &
 						  ", indicating 13+ pts and a 5+ card suit.\n";
-				bidState.m_fPartnersMin = 30;
+				bidState.m_fPartnersMin = 13;  // NCR replaced: 30;
 				bidState.m_fPartnersMax = MIN(22, 40 - bidState.fCardPts);
 				if (!bWantedToOvercall)
 					bidState.m_nAgreedSuit = nPartnersSuit;
 			}
-			else if (bPartnerJumped)
+			                        // NCR-145 Free bid also means more points
+			else if (bPartnerJumped || (bidState.nLHOBid != BID_PASS))
 			{
 				// partner had 10-12 pts
-				status << "TKORb42! Partner has made a jump response of " & BTS(nPartnersBid) &
+				status << "TKORb42! Partner has made a jump/freebid response of " & BTS(nPartnersBid) &
 						  ", indicating 10-12 pts and a 4-5 card suit.\n";
-				bidState.m_fPartnersMin = 10;
-				bidState.m_fPartnersMax = 12;
-				if (!bWantedToOvercall)
+				bidState.m_fPartnersMin = PTS_FREEBID;
+				bidState.m_fPartnersMax = 12;  // NCR-434 Require some cards in pards suit (see -153)
+				if (!bWantedToOvercall && (bidState.numCardsInSuit[nPartnersSuit] > 2))
 					bidState.m_nAgreedSuit = nPartnersSuit;
 			}
 			else
@@ -1009,11 +1257,14 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 				// partner had <= 9 pts
 				status << "TKORb43! Partner has made a minimum response of " & BTS(nPartnersBid) &
 						  ", indicating no more than 9 points.\n";
-				bidState.m_fPartnersMin = 0;
+				// NCR-90 Set min pts according to agressiveness vs 0
+				bidState.m_fPartnersMin = theApp.GetBiddingAgressiveness() * 2; // NCR-90
 				bidState.m_fPartnersMax = 9;
-				if (!bWantedToOvercall)
+				                          // NCR-153 require some cards in pards suit   
+				if (!bWantedToOvercall && (bidState.numCardsInSuit[nPartnersSuit] > 2))
 					bidState.m_nAgreedSuit = nPartnersSuit;
 			}
+
 			//
 			bidState.m_fMinTPPoints = fAdjPts + bidState.m_fPartnersMin;
 			bidState.m_fMaxTPPoints = fAdjPts + bidState.m_fPartnersMax;
@@ -1048,7 +1299,7 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 		//---------------------------------------------------------------------
 		// see if we have an agreed suit
 		//
-		int nBid;
+		int nBid = BID_NONE;
 		if (bidState.m_nAgreedSuit > NONE)
 		{
 			if (bidState.m_nAgreedSuit == NOTRUMP)
@@ -1083,6 +1334,7 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 							  " suit, so with a team total of " &
 							  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints &
 							  " points, we pass.\n";
+					bidState.SetBid(BID_PASS); // NCR added this
 					bidState.SetConventionStatus(this, CONV_FINISHED);
 					return TRUE;
 				}
@@ -1092,9 +1344,17 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 				// raise a major to game with 24-32 pts and 4 trumps
 				//					  or with 26-32 pts and 3 trumps
 				// or raise to the 3-level with 21-25 pts and 3 trumps
-				if ( (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4,PTS_GAME-2,PTS_SLAM-1,SUPLEN_4)) ||
-				     (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4,PTS_GAME,PTS_SLAM-1,SUPLEN_3)) ||
-					 (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_3,PTS_GAME-5,PTS_GAME-1,SUPLEN_3)))
+				// NCR allow some agression here if we have a strong hand
+				double nMinPts = PTS_GAME-2; // NCR start here
+				if((fAdjPts >= 20.0) && (bidState.m_fPartnersMin == 0.0)) // NCR-15 added = to compare
+					nMinPts -= 4;  // NCR hope pard has at least 6 pts
+
+				if ( (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4,nMinPts,PTS_SLAM-1,SUPLEN_4)) ||
+				     (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4,nMinPts+2,PTS_SLAM-1,SUPLEN_3)) ||
+					 (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_3,PTS_GAME-5,PTS_GAME-1,SUPLEN_3))
+					 // NCR-286 bid on if pard bid at high level and we have points
+					 || ((fAdjPts >= 20) && (bidState.RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4,nMinPts+2,PTS_SLAM-1,SUPLEN_2)))
+				   )
 				{
 					if (!bPartnerJumped)
 						status << "TKRb71a! (we can assume partner has some strength in the " & bidState.szPSS & 
@@ -1102,11 +1362,15 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 					bidState.SetConventionStatus(this, CONV_INVOKED_ROUND2);
 					return TRUE;
 				}
-				// raise a minor to game with 26-32 pts and 4 trumps
+				// raise a minor to game with 26-32 pts and 4 trumps  NCR adjusted by agressiveness: PT_COUNT
 				//                    or with 28-32 pts and 3 trumps
+				// NCR also need to consider number of quick losers. Can't make game if lose the first 3
 				// or raise to the 4-level with 26-27 pts and 3 trumps
 				// or raise to the 3-level with 21-25 pts and 3 trumps
-				if ( (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_5,PTS_MINOR_GAME-3,PTS_SLAM-1,SUPLEN_4)) ||
+				SupportLength supLen = SUPLEN_4;  // NCR-74 Allow shorter support length if partner leaped
+				if(bPartnerLeaped)
+					supLen = SUPLEN_2;
+				if ( (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_5,PT_COUNT(PTS_MINOR_GAME-3),PTS_SLAM-1, supLen)) ||
 					 (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_5,PTS_MINOR_GAME-1,PTS_SLAM-1,SUPLEN_3)) ||
 					 (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_4,PTS_MINOR_GAME-3,PTS_MINOR_GAME-2,SUPLEN_3)) ||
 					 (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_3,PTS_MINOR_GAME-8,PTS_MINOR_GAME-4,SUPLEN_3)) )
@@ -1126,7 +1390,7 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 				}
 				// else pass
 				nBid = BID_PASS;
-				status << "TKRb90! With a total of " &
+				status << "TKRb72! With a total of " &  // NCR changed 90 to 72
 						  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints &
 						  " points in the partnership, we have insufficient strength to raise partner's " &
 						  BTS(nPartnersBid) & " bid, so we have to pass.\n";
@@ -1134,7 +1398,7 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 				bidState.SetConventionStatus(this, CONV_FINISHED);
 				return TRUE;
 			}
-		}
+		} // end having agreed suit
 
 
 		//
@@ -1142,16 +1406,23 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 		// here, we have no suit agreement (e.g., partner bid the opponents' suit)
 		//
 		int nLastBid = pDOC->GetLastValidBid();
-		if (bBalanced)
-		{
+		// NCR-440 Merge these two ifs and get rid of PASS !
+		if ((bBalanced)
 			// try notrumps
-			if ((nEnemySuit != NOTRUMP) && (hand.IsSuitProbablyStopped(nEnemySuit)))
-			{
-				status << "TKRb80! Without clear suit agreement, and holding a blanaced hand, we want to steer towards a contract in No Trump.\n";
-				if (bidState.BidNoTrumpAsAppropriate(FALSE,STOPPED_DONTCARE))
+			&& ((nEnemySuit != NOTRUMP) && (hand.IsSuitProbablyStopped(nEnemySuit))) 
+				// NCR-193 Problem here if bid is 4NT - is it Blackwood???
+				&& (bidState.BidNoTrumpAsAppropriate(FALSE,STOPPED_DONTCARE)) )
 				{
+					status << "TKRb80! Without clear suit agreement, and holding a blanaced hand, we want to steer towards a contract in No Trump.\n";
+					// NCR-193 Don't bid 4NT if Blackwood enabled
+					if(pCurrConvSet->IsConventionEnabled(tidBlackwood) && (bidState.m_nBid == BID_4NT))
+					{
+						bidState.m_nBid = BID_5NT; // NCR-193 change ???
+						status << "TKRb83! Change bid to 5NT because 4NT could be confused with Blackwood.\n";
+					}
 					bidState.SetConventionStatus(this, CONV_INVOKED_ROUND2);
 					return TRUE;
+/*  NCR-440 removed pass
 				}
 			}
 			// else pass
@@ -1159,12 +1430,25 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 			bidState.SetBid(BID_PASS);
 			bidState.SetConventionStatus(this, CONV_FINISHED);
 			return TRUE;
+*/
 		}
 		else if (bidState.numPrefSuitCards >= 5)
 		{
-			// bid the suit
-			nBid = bidState.GetCheapestShiftBid(nPrefSuit, nLastBid);
-			if (bidState.IsBidSafe(nBid, 4))
+			// NCR Jump shift if enough points (??? how much for a void
+			if (((bidState.m_fMinTPPoints + bidState.numVoids*4) > 23) 
+    			// NCR-175 don't jump if at 4 level
+				&& (nLastBid <= BID_3NT)
+				// NCR-216 Need Strong self sufficient suit
+				&& (bidState.numPrefSuitCards >= 6) && (bidState.nPrefSuitStrength >= SS_STRONG))
+			{
+				nBid = bidState.GetJumpShiftBid(nPrefSuit, nLastBid, JUMP_SHIFT_1);
+			}
+			else
+			{
+				// bid the suit
+				nBid = bidState.GetCheapestShiftBid(nPrefSuit, nLastBid);
+			}
+			if (bidState.IsBidSafe(nBid, 4)) // NCR why is adjustment = 4???
 			{
 				if (bWantedToOvercall)
 					status << "TKRb90! Partner's forced response of " & bidState.szPB & 
@@ -1181,6 +1465,44 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 			}
 		}
 
+
+		// NCR-273 Check if we have a forcing bid
+		if (bidState.m_bGameForceActive) 
+		{
+			// Have to bid, so use preferred suit 
+			nBid = bidState.GetCheapestShiftBid(nPrefSuit);
+			status << "TKRb93! In response to partner's game forcing bid, we have no choice but to bid "
+				       & BTS(nBid) & ".\n";
+			bidState.SetBid(nBid);
+			bidState.SetConventionStatus(this, CONV_INVOKED_ROUND2);
+			return TRUE;
+		}  // NCR-273 end making forced bid
+
+		//NCR-522 Can we bid NoTrump?
+		// Balanced hand and stoppers for all suits except what pard has bid
+		if(bidState.bBalanced && hand.AllOtherSuitsStopped(nPartnersSuit))
+		{
+			if (bidState.BidNoTrumpAsAppropriate(FALSE, STOPPED_DONTCARE)) {
+				// NCR_NOTE The above is never true???
+				nBid = bidState.m_nBid;
+				status << "TKRb95! With a total of " & 
+						  bidState.m_fMinTPCPoints & "-" & bidState.m_fMaxTPCPoints & 
+						  " HCPs in the partnership, we can bid " & BTS(nBid) & ".\n";
+			}
+		} // end NCR-522 testing if NT possible
+
+		// NCR-711 Bid NT if we're weak in pard's suit
+		if((nLastBid == bidState.nPartnersBid) && (bidState.nSuitStrength[bidState.nPartnersSuit] < SS_MODERATE_SUPPORT)
+			&& (bidState.numCardsInSuit[bidState.nPartnersSuit] < 3)) 
+		{	
+			nBid = MAKEBID(NOTRUMP, nPartnersBidLevel); 
+			status << "TKRb96! With a total of " & 
+					   bidState.m_fMinTPCPoints & "-" & bidState.m_fMaxTPCPoints & 
+					   " HCPs in the partnership, we have to bid " & BTS(nBid) & ".\n";
+			bidState.SetBid(nBid);
+			bidState.SetConventionStatus(this, CONV_FINISHED);
+			return TRUE;
+		} // end NCR-711
 
 		//
 		//--------------------------------------------------------------------------
@@ -1227,7 +1549,7 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 		double fMaxTPPoints =  bidState.m_fMaxTPPoints;
 		double fMinTPCPoints = bidState.m_fMinTPCPoints;
 		double fMaxTPCPoints = bidState.m_fMaxTPCPoints;
-		int nBid;
+		int nBid = BID_NONE;
 		
 		//
 		// see if we have suit agreement
@@ -1335,14 +1657,43 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 			// bid the 4th suit if we have enough pts
 			//
 			int nSuit = bidState.GetFourthSuit(nPreviousSuit, nPartnersSuit, nPartnersPrevSuit);
+
+			// NCR-629 Check if pard previous bid suit is useable
+			if(ISSUIT(nPartnersPrevSuit) && (bidState.nSuitStrength[nPartnersPrevSuit] > SS_MODERATE_SUPPORT)
+				&& (bidState.numCardsInSuit[nPartnersPrevSuit] > 2) ) 
+			{
+				nSuit = nPartnersPrevSuit; // NCR-629 bid pard's previous suit
+			}
+
 			nBid = bidState.GetCheapestShiftBid(nSuit);
 
-			if ((fMinTPPoints >= PTS_GAME) && (nBid < bidState.GetGameBid(nSuit)))
+			if ((fMinTPPoints >= PTS_GAME) && (nBid < bidState.GetGameBid(nSuit))
+				// NCR-225 Make sure have some cards in this suit
+				&& (bidState.numCardsInSuit[nSuit] > 3)
+				)
 			{
 				status << "TKRc40! With a total of " & 
 						  fMinTPPoints & "-" & fMaxTPPoints & 
 						  " pts in the partnership and no suit agreement, bid another suit (" &
 						  STS(nSuit) & ") at " & BTS(nBid) & ".\n";
+			}
+			// NCR-71 Rebid our preferred suit if strong enough to bid at or below 3 level
+			else if(ISSUIT(nPrefSuit) && (fMinTPPoints > 15) && (bidState.numPrefSuitCards > 5)
+				    && ((nPartnersBidLevel < 3) || ((nPartnersBidLevel == 3) && (nPrefSuit > nPartnersSuit))
+					       // NCR-446 Bid long suit if we can stay at same level
+					    || ((bidState.numPrefSuitCards >= 8) && (nPrefSuit > nPartnersSuit) 
+						    && (bidState.numSupportCards < 3))) )
+			{
+				nBid = bidState.GetCheapestShiftBid(nPrefSuit);
+				status << "TKRc42! Without clear suit agreement, we bid our " &
+						  bidState.numPrefSuitCards & "-card " & STSS(bidState.nPrefSuit) &
+						  " suit at " & BTS(nBid) & ".\n";
+			} // NCR-71 end bidding our long suit
+			// NCR-629 bid pard's previous suit if better than last
+			else if((nSuit == nPartnersPrevSuit) && (bidState.numCardsInSuit[nPartnersSuit] < 3)) 
+			{    
+				status << "TKRc43! Without clear suit agreement, we bid partner's previous " 
+							& STSS(nPartnersPrevSuit) & " suit at " & BTS(nBid) & ".\n";
 			}
 			else
 			{
@@ -1367,7 +1718,7 @@ BOOL CTakeoutDoublesConvention::HandleConventionResponse(const CPlayer& player,
 		bidState.SetBid(nBid);
 		bidState.ClearConventionStatus(this);
 		return TRUE;
-	}
+	} // end responding after partner's second response
 }
 
 

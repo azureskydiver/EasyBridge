@@ -135,8 +135,10 @@ BOOL CGerberConvention::InvokeGerber(CHandHoldings& hand, CBidEngine& bidState, 
 		status << "2GERBY! Unfortunately, since we hold all four aces, Gerber is of little value to us.\n";
 		// bid a grand slam if we have 37+ pts and the trump ace
 		// or a small slam with 32+ points
-		// or make the cheapest shift bid otherwise (D'oh!)
-		if ((fMinTPPoints >= PTS_SLAM+1) && (hand.SuitHasCard(nEventualSuit, ACE)))
+		// or make the cheapest shift bid otherwise (D'oh!)  
+		if ((fMinTPPoints >= PTS_SLAM+1) 
+			    // NCR-324 added NOTRUMP test
+			 && ((nEventualSuit == NOTRUMP) || (hand.SuitHasCard(nEventualSuit, ACE))))
 		{
 			nBid = MAKEBID(nEventualSuit, 7);
 			status << "2GERBY1! so since we have the points for a grand slam, go ahead and bid " & 
@@ -164,7 +166,9 @@ BOOL CGerberConvention::InvokeGerber(CHandHoldings& hand, CBidEngine& bidState, 
 	// so make the bid to ask for aces
 	//
 	int nPartnersbid = bidState.nPartnersBid;
-	if ((nPartnersbid == BID_1NT) || (nPartnersbid == BID_2NT))
+	if ((nPartnersbid == BID_1NT) || (nPartnersbid == BID_2NT) 
+		// NCR-246a Allow Gerber after Stayman 2C
+		|| ((nPartnersbid < BID_3NT) && bidState.nPreviousBid == BID_2C) )
 	{
 		nBid = BID_4C;
 		status << "GERBD! with " & bidState.fCardPts & "/" & bidState.fPts & "/" & bidState.fAdjPts & 
@@ -216,6 +220,7 @@ BOOL CGerberConvention::RespondToConvention(const CPlayer& player,
 	//
 	// first look for a Gerber _Query_ from partner -- 
 	// any 4C in response to a natural NT bid is Gerber
+	// NCR unless partner has bid clubs before
 	//
 	int nGerberStatus = bidState.GetConventionStatus(this);
 	int numAces = bidState.numAces;
@@ -224,8 +229,22 @@ BOOL CGerberConvention::RespondToConvention(const CPlayer& player,
 	int nBid;
 
 	// is partner asking for aces?
-	if ( (bidState.nPartnersBid == BID_4C) && 
-					((nPrevioousBid == BID_1NT) || (nPrevioousBid == BID_2NT)) )
+	if ( (bidState.nPartnersBid == BID_4C) 
+		  // NCR-552 I didn't open 1C
+		  && (bidState.nNextPrevBid != BID_1C) // Or test if CLUBs ???
+		  // NCR-521 4C must be Jump to be Gerber
+          && ((bidState.GetBidType(bidState.nPartnersBid) & (BT_Jump + BT_Leap)) != 0) // NCR-551 Also Leap
+		  && ((nPrevioousBid == BID_1NT) || ((nPrevioousBid == BID_2NT) 
+		                                     // NCR-184 was it Unusual 2NT ? use pts  ???
+		                                     && (bidState.fCardPts >= OPEN_PTS(13)))  // NCR-324 use OPEN_PTS
+/* NCR-466		      || ((nPrevioousBid == BID_3NT) 
+			      // NCR-152 & NCR-170 Check if clubs are partner's suit
+				                                                // NCR-299 Not if I bid clubs
+			       && ((bidState.nPartnersPrevSuit != CLUBS) && (bidState.nNextPrevSuit != CLUBS)) ) */  // NCR-14 After 3NT ???
+                 //NCR-246a Also after Stayman 2C
+			  || ((bidState.nPartnersPrevBid == BID_2C) && (bidState.nNextPrevSuit == NOTRUMP)
+			      // NCR-509 Pard is using Gerber only if I opened NT
+			      && bidState.m_bOpenedBiddingForTeam)	 ) )
 	{
 		// respond
 		if ((numAces == 0) || (numAces == 4))
@@ -235,7 +254,7 @@ BOOL CGerberConvention::RespondToConvention(const CPlayer& player,
 		else if (numAces == 2)
 			nBid = BID_4S;
 		else if (numAces == 3)
-			nBid = BID_5NT;
+			nBid = BID_4NT;  // NCR 4NT NOT 5
 		//
 		status << "GRB10! With " & numAces & " Ace" & ((numAces > 1)? "s," : ",") &
 				  " respond to partner's Gerber inquiry with " & BTS(nBid) & ".\n";
@@ -384,9 +403,14 @@ BOOL CGerberConvention::HandleConventionResponse(const CPlayer& player,
 		{
 			// oops, we don't have all 4 aces, so we gotta stop
 			// if we have 3 or fewer aces and less than 32 pts. then really panic
-			if ((numTotalAces <= 3) && (bidState.m_fMinTPPoints < PTS_SLAM))
+			// NCR-246a Need 3 aces and points to continue
+			if ((numTotalAces < 3) || (bidState.m_fMinTPPoints < PTS_SLAM) || (bidState.m_fMaxTPCPoints < PTS_SLAM) )
 			{
-				int nTestBid = bidState.GetCheapestShiftBid(nAgreedSuit);
+				// NCR-246a See if we need to bid
+				int nTestBid = BID_PASS;  // NCR-246a pass if at game in our suit
+				if(( bidState.nPartnersSuit != nAgreedSuit) || !bidState.IsGameBid(bidState.nPartnersBid)) {
+					nTestBid = bidState.GetCheapestShiftBid(nAgreedSuit);
+                } 
 				if (nTestBid <= BID_5NT)
 				{
 					// if we can return to the trump suit at the 5 level,
@@ -394,16 +418,21 @@ BOOL CGerberConvention::HandleConventionResponse(const CPlayer& player,
 					nBid = nTestBid;
 					status << "GRB34! Oops, we're caught with only " & numTotalAces &
 							  " Aces and as few as " & bidState.m_fMinTPPoints &
-							  " total points, so halt the bidding at the five-level.\n";
+							  " total points, so halt the bidding at the " & BID_LEVEL(nPartnersBid) 
+							  & "-level.\n";  // NCR replaced five with BID_LEVEL()
 				}		
 				else
-				{
+				{  
 					nBid = MAKEBID(nAgreedSuit, 6);
 				}
 			}
 			else
 			{
-				nBid = MAKEBID(nAgreedSuit, 6);
+				if( bidState.numSuitsStopped < 4) // NCR-325 don't try slam without all 4 stopped
+				{
+					nBid = bidState.GetCheapestShiftBid(nAgreedSuit);  //NCR-325 get cheap bid
+				}else
+				    nBid = MAKEBID(nAgreedSuit, 6);
 			}
 			status << "GRB38! Without all four aces we can't proceed to a grand slam, so stop at " & 
 			BTS(nBid) & ".\n";

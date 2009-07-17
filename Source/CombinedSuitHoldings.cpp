@@ -25,7 +25,9 @@
 #include "GuessedCardHoldings.h"
 #include "GuessedSuitHoldings.h"
 #include "GuessedHandHoldings.h"
-
+#ifdef _DEBUG
+#include "PlayerStatusDialog.h"  // NCR-587
+#endif
 
 
 //
@@ -134,7 +136,7 @@ void CCombinedSuitHoldings::FormatHoldingsString()
 		}
 		// then the dummy's & player's respective holdings
 		m_strHoldings += " (";
-		for(int i=0;i<m_dummyCards.GetLength();i++) 
+		for(/* NCR-FFS int*/ i=0;i<m_dummyCards.GetLength();i++) 
 		{
 			wsprintf(sz1,"%c",m_dummyCards[i]->GetCardLetter());
 			m_strHoldings += sz1;
@@ -303,6 +305,7 @@ double CCombinedSuitHoldings::CountPoints(const BOOL bForceCount)
 	// now erase certain inappropriate variables
 	m_nStrength = SS_NONE;
 
+/*  NCR-416 remove here. Missing cards are set in CheckKeyHoldings below 
 	// and form the list of missing cards
 	int i,nIndex,nVal;
 	for(i=0,nIndex=0,nVal=ACE;nVal>=2;nVal--)
@@ -314,9 +317,9 @@ double CCombinedSuitHoldings::CountPoints(const BOOL bForceCount)
 	}
 	m_numOutstandingCards = 13 - m_numCards;
 	VERIFY(nIndex == m_numOutstandingCards);
-
+*/
 	// done
-	return m_numTotalPoints;
+	return m_numTotalPoints; // NCR where is this computed ???
 }
 
 
@@ -343,7 +346,8 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 
 	// reset count of outstanding cards
 	m_numOutstandingCards = 0;
-	for(int i=0;i<13;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<13;i++)
 		m_nMissingCards[i] = NONE;
 	//
 	for(i=ACE;i>=2;i--)
@@ -363,13 +367,16 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 	//
 	m_numLosers = 0;
 	m_numLikelyLosers = 0;
-	m_numOutstandingCards = 13 - m_numCards;
+//NCR-416	m_numOutstandingCards = 13 - m_numCards;   // NCR why change the value here ???
 
 	// use a different algorithm for finding winners here
 	// deduct one winner for each outstanding higher card
 	int numWinners = m_nMaxLength;
 	int nTheirOffset = 0, nOurOffset = 0;
 	int numComparisons = m_nMaxLength;
+	// NCR-587 If we lead, opponent will play his lowest if he can not win
+	// We'll always move to the next lower card
+	// Opponent will move (uses high card) only if he wins, otherwise plays low
 	for(i=0;i<numComparisons;i++)
 	{
 		// see if there are outstanding cards matching up against this one
@@ -381,22 +388,70 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 				// if so, then deduct a winner and compare their next card 
 				// against our current  card
 				numWinners--;
-				nTheirOffset++;
+				nTheirOffset++;  // Opponent only moves if he wins
 			}
-			else
+			else  // NCR-587 If else is commented out then the count is for our leading (a lower value)
 			{
 				// else ours is higher, so compare their card against our next card
+				// NCR-587 We always move to next card
 				nOurOffset++;	// else compare against our next lower card
 			}
 		}
 	}
+
+	int numSureWinners = 0;  // NCR-587 Count winners that can be taken from the top
+	// NCR-240 All are winners if we have more top cards than are out
+	// Below 'Auto Test'ed at 54%
+	if((m_nMaxLength > 0) && ((m_numOutstandingCards < 1) 
+		 || ((m_numOutstandingCards <= m_nMaxLength) 
+		     && (m_cards[m_numOutstandingCards-1]->GetFaceValue() > m_nMissingCards[0]))) ) 
+	{
+		numSureWinners = m_nMaxLength; // NCR-240 set to max length
+	}
+	else
+	{
+		for(int i=0; i < m_nMaxLength; i++) {
+			// Compare our next card to opp's top card
+			if(m_cards[i]->GetFaceValue() < m_nMissingCards[0])
+				break; // exit loop if our card less
+			numSureWinners++; // count our top card as a winner
+		} // end for(i)
+	} // NCR-587 end getting numSureWinners
+	m_numSureWinners = numSureWinners;   // NCR-587 save the count
+
 	m_numWinners = m_numLikelyWinners = numWinners;
-	m_numLosers = m_numLikelyLosers = m_numCards - m_numWinners;
+
+	// NCR-321 numLosers can't be greater than number of outstanding cards
+//NCR-469	int tempNumLosers =  m_numCards - m_numWinners;
+	// NCR-469 Can't have more losers than the longest hand minus number of winners
+	int tempNumLosers =  Max(0, m_nMaxLength - m_numWinners);  // NCR-469 use maxLength vs numCards
+	if(tempNumLosers > m_numOutstandingCards)
+		tempNumLosers = m_numOutstandingCards;  // NCR-321 set to lower
+	m_numLosers = m_numLikelyLosers = tempNumLosers; //m_numCards - m_numWinners;
+	m_numLosers = Min(m_numLosers, m_nMaxLength); // NCR-469 Can't have more losers than cards
+
+//	ASSERT(m_numLosers <= m_nMaxLength); // NCR-469 Can't have more losers than cards?
+	// NCR-469 num losers should be <= num losers in longest hand?
+	/* NCR-469 Num winners should be >= top sequence - unless top cards are missing!!!
+	if(m_numWinners > 0) { 
+		// Following fails for seq2={QJT96} having 2 winners and AK are outstanding
+		ASSERT(GetSequence2(0).GetNumCards() <= m_numWinners); // NCR-469
+	}  */
 
 	// adjust winner counts for declarer/dummy length
 	m_numMaxTopCards = Min(m_numTopCards, m_nMaxLength);
 	m_numMaxWinners = Min(m_numWinners, m_nMaxLength);
 	m_numMaxLikelyWinners = Min(m_numLikelyWinners, m_nMaxLength);
+
+#ifdef _DEBUG_XXX   // NCR-587 Need to get number of sure tricks  ??? Which player???
+	// NOTE need import for this class def
+	CPlayerStatusDialog& status = pDOC->GetPlayer(0)->GetStatusDialog();
+	CString strText;
+	strText.Format("DEBUG3! Suit=%d, m_numWinners=%d,  numO_S_Cards=%d, m_nMaxLength=%d, numSureWinners=%d\n",
+		                       m_nSuit, m_numWinners, m_numOutstandingCards, m_nMaxLength, numSureWinners);
+	status << strText;
+#endif
+
 
 	// clear lists
 	m_winners.Clear();
@@ -409,7 +464,7 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 	// determine declarer's & dummy's winners & losers
 	m_numDeclarerWinners = 0;
 	m_numDummyWinners = 0;
-	for(i=0;i<m_numWinners;i++)
+	for(i=0;i<m_numSureWinners;i++)    // NCR-613 Use only sure winners
 	{
 		m_winners << m_cards[i];
 		if (m_declarerCards.HasCard(m_cards[i]))
@@ -426,6 +481,7 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 	m_numDeclarerLosers = m_nDeclarerLength - m_numDeclarerWinners;
 	m_numDummyLosers = m_nDummyLength - m_numDummyWinners;
 	ASSERT((m_numDeclarerLosers >= 0) && (m_numDummyLosers >= 0));
+//	ASSERT((m_numLosers <= m_numDeclarerLosers) && (m_numLosers <= m_numDummyLosers)); // NCR-469
 
 	// determine excess winners & losers
 	// "excess" winners are winners in one hand where there are no cards
@@ -498,7 +554,11 @@ void CCombinedSuitHoldings::EvaluateHoldings()
 	// adjusted for a combined holding
 	m_numLosers = 0;
 	m_numLikelyLosers = 0;
-	m_numOutstandingCards = 13 - m_numCards;
+//NCR-416	m_numOutstandingCards = 13 - m_numCards; // NCR what about played cards ???
+
+
+	// NCR-416 Check that #OS cards matches what is in the missing cards list
+	ASSERT((m_numOutstandingCards == 0) || (m_nMissingCards[m_numOutstandingCards-1] != NONE)); // NCR-416
 	//
 	if (m_numCards == 0) 
 	{
@@ -599,6 +659,15 @@ void CCombinedSuitHoldings::EvaluateHoldings()
 	m_numMaxWinners = Min(m_numWinners, m_nMaxLength);
 	m_numMaxLikelyWinners = Min(m_numLikelyWinners, m_nMaxLength);
 
+#ifdef _DEBUG_XXX   // NCR-587 Need to get number of sure tricks  ??? Which player???
+	// NOTE need import for this class def
+	CPlayerStatusDialog& status = pDOC->GetPlayer(0)->GetStatusDialog();
+	CString strText;
+	strText.Format("DEBUG4! Suit=%d, m_numWinners=%d,  numO_S_Cards=%d, m_nMaxLength=%d\n",
+		                       m_nSuit, m_numWinners, m_numOutstandingCards, m_nMaxLength);
+	status << strText;
+#endif
+
 	// clear lists
 	m_winners.Clear();
 	m_losers.Clear();
@@ -610,7 +679,8 @@ void CCombinedSuitHoldings::EvaluateHoldings()
 	// determine declarer's & dummy's winners & losers
 	m_numDeclarerWinners = 0;
 	m_numDummyWinners = 0;
-	for(int i=0;i<m_numWinners;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<m_numWinners;i++)
 	{
 		m_winners << m_cards[i];
 		if (m_declarerCards.HasCard(m_cards[i]))

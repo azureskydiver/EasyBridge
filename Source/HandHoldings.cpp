@@ -23,6 +23,8 @@
 #include "bidparams.h"
 #include "handopts.h"
 #include "progopts.h"
+#include "DeclarerPlayEngine.h"  // NCR-448
+
 
 
 
@@ -42,6 +44,7 @@ CHandHoldings::CHandHoldings()
 CHandHoldings::~CHandHoldings()
 {
 }
+
 
 //
 void CHandHoldings::Initialize(CPlayer* pPlayer, CPlayerStatusDialog* pStatusDlg) 
@@ -142,7 +145,8 @@ void CHandHoldings::ClearHand(BOOL bClearInitialHand)
 {
 	CCardHoldings::Clear();
 	m_displayHand.Clear();
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 		m_suit[i].Clear();
 	//
 	if (bClearInitialHand)
@@ -175,8 +179,11 @@ void CHandHoldings::ClearHand(BOOL bClearInitialHand)
 	for(i=0;i<=13;i++)
 		m_numSuitsOfAtLeast[i] = 0;
 	// clear analysis
-	for(i=0;i<4;i++) 
+	for(i=0;i<4;i++)  {
 		m_bRevaluedForSuit[i] = FALSE;
+		m_nRevaluedForPlayer[i] = NONE; // NCR-268
+		m_nAdjPointsBySuit[i] = 0.0;    // NCR-468
+	}
 	//
 	m_bCardsExposed = FALSE;
 }
@@ -201,8 +208,10 @@ void CHandHoldings::ExposeCards(BOOL bExpose)
 void CHandHoldings::RestartBidding()
 {
 	// clear analysis
-	for(int i=0;i<4;i++) 
+	for(int i=0;i<4;i++) {
 		m_bRevaluedForSuit[i] = FALSE;
+		m_nRevaluedForPlayer[i] = NONE; // NCR-268
+	}
 }
 
 
@@ -226,17 +235,18 @@ void CHandHoldings::FormatHoldingsString()
 	{
 		int nSuit = theApp.GetSuitSequence(i);
 		strTemp.Format("%c:",GetSuitLetter(nSuit));
-		if (m_suit[i].GetLength() == 0) 
+		// NCR change [i] to [nSuit] below
+		if (m_suit[nSuit].GetLength() == 0) 
 		{
 			strTemp += "void ";
-			if (i > 0)
+			if (i > 0)  // add blank except for last one
 				strTemp += " ";
 		} 
 		else 
 		{
-			for(int j=0;j<m_suit[i].GetLength();j++) 
+			for(int j=0;j<m_suit[nSuit].GetLength();j++) 
 			{
-				strTemp2.Format("%c",GetCardLetter(m_suit[i][j]->GetFaceValue()));
+				strTemp2.Format("%c",GetCardLetter(m_suit[nSuit][j]->GetFaceValue()));
 				strTemp += strTemp2;
 			}
 			if (i > 0)
@@ -360,8 +370,8 @@ void CHandHoldings::Sort()
 	}
 
 	// and then be sure to sort each of the suits individually
-	for(i=0;i<4;i++) 
-		m_suit[i].Sort();
+	for(int j=0;j<4;j++) 
+		m_suit[j].Sort();
 
 	// and also sort the display hand
 	m_displayHand.Sort();
@@ -393,7 +403,8 @@ void CHandHoldings::Sort()
 void CHandHoldings::CountCards()
 {
 	// check suit length
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 		m_suit[i].CountCards();
 	
 	// init
@@ -490,7 +501,8 @@ double CHandHoldings::CountPoints(const BOOL bForceCount)
 	m_numPenaltyPoints = 0;
 //	m_numTotalPoints = 0;
 	//
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 	{
 		m_suit[i].CountPoints(bForceCount);
 		m_numShortPoints += m_suit[i].GetShortPoints();
@@ -499,8 +511,8 @@ double CHandHoldings::CountPoints(const BOOL bForceCount)
 		m_numPenaltyPoints += m_suit[i].GetPenaltyPoints();
 //		m_numTotalPoints += m_suit[i].GetTotalPoints();
 	}
-//	m_numDistPoints = m_numShortPoints + m_numLongPoints;
-	m_numDistPoints = m_numLongPoints;
+	m_numDistPoints = m_numShortPoints + m_numLongPoints; // NCR uncommented
+//	m_numDistPoints = m_numLongPoints; // NCR commented out
 //	m_numAdjustedPoints = m_numTotalPoints;
 
 	//
@@ -619,7 +631,8 @@ void CHandHoldings::EvaluateHoldings()
 	CPlayerStatusDialog& status = *m_pStatusDlg;
 
 	// clear the hand's analysis info
-	for(int i=0;i<5;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<5;i++) 
 	{
 		m_nMarginalSuitList[i] = NONE;
 		m_nOpenableSuitList[i] = NONE;
@@ -630,9 +643,11 @@ void CHandHoldings::EvaluateHoldings()
 		m_nSuitsByPreference[i] = NONE;
 	}
 	for(i=0;i<4;i++)
-		m_nSuitsByLength[4] = NONE;
-	for(i=0;i<4;i++) 
+		m_nSuitsByLength[i] = NONE;  // NCR changed [4] to [i]
+	for(i=0;i<4;i++) { 
 		m_bRevaluedForSuit[i] = FALSE;
+		m_nRevaluedForPlayer[i] = NONE; // NCR-268
+	}
 
 	// clear hand analysis
 	m_numMarginalSuits = 0;
@@ -853,7 +868,7 @@ void CHandHoldings::EvaluateHoldings()
 		{
 			m_nSolidSuitList[m_numSolidSuits] = i;
 			m_numSolidSuits++;
-			if (i < m_nLowestSolidSuit)
+			if ((i < m_nLowestSolidSuit) || (m_nLowestSolidSuit == NONE)) // NCR added test for NONE
 				m_nLowestSolidSuit = i;
 			if (i > m_nHighestSolidSuit)
 				m_nHighestSolidSuit = i;
@@ -1105,7 +1120,8 @@ void CHandHoldings::ReevaluateHoldings(const CCard* pCard)
 
 	// then re-rank suits by general preference
 	m_nPreferredSuit = RankSuits(4, SP_LAST, CLUBS, DIAMONDS, HEARTS, SPADES, m_nSuitsByPreference);
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 		m_suit[m_nSuitsByPreference[i]].SetRank(i);	
 
 	// then sort the suits by length
@@ -1162,8 +1178,8 @@ void CHandHoldings::RestoreInitialHand()
 		m_suit[i].Clear();
 
 	// and restore the original ones
-	for(i=0;i<m_initialHand.GetNumCards();i++)
-		Add(m_initialHand[i]);
+	for(int j=0;j<m_initialHand.GetNumCards();j++) // NCR-FFS change i to j
+		Add(m_initialHand[j]);
 
 	// then re-initialize
 	InitNewHand();
@@ -1177,7 +1193,8 @@ void CHandHoldings::RestoreInitialHand()
 //
 // revalues a hand's points with respect to a trump suit
 //
-// nOrigin: 0 = player, 1=dummy
+// nOrigin: 0 = player, 1=dummy ???
+// nMode:  1 = dummy, 2 = declarer, 4 = No Penalty for short trump  NCR
 // nSuit = trump suit
 //
 double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL bForceRevalue)
@@ -1196,24 +1213,43 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 	if (nTrumpSuit == NOTRUMP)
 		return m_numHCPoints;
 
+	ASSERT(ISSUIT(nTrumpSuit)); // NCR added this
+
 	// see if the hand has already been revalued
-	if (m_bRevaluedForSuit[nTrumpSuit] && !bForceRevalue)
-		return m_numAdjustedPoints;
-	else
+	//  // NCR-268 added ForPlayer test below and saving farther on
+	if (m_bRevaluedForSuit[nTrumpSuit] && (m_nRevaluedForPlayer[nTrumpSuit] == nMode) && !bForceRevalue) {
+//		return m_numAdjustedPoints;  // NCR ??? How can there only be one value ??? Seems like one for each suit and mode
+//		ASSERT(m_nAdjPointsBySuit[nTrumpSuit] != 0); // This can be < 0 (eg singleton)
+		return m_nAdjPointsBySuit[nTrumpSuit]; // NCR-468
+	}else {
 		m_bRevaluedForSuit[nTrumpSuit] = TRUE;
+		m_nRevaluedForPlayer[nTrumpSuit] = nMode; // NCR-268 remember player also
+	}
 
 	//
 	// first perform basic revaluation
 	//
-	strMessage.Format("3REVAL1: Revaluing hand as %s...\n", ((nMode & REVALUE_DECLARER)? "declarer" : "dummy"));
+	strMessage.Format("3REVAL1: Revaluing hand as %s for %s contract...\n", 
+		        ((nMode & REVALUE_DECLARER)? "declarer" : "dummy"), STSS(nTrumpSuit)); // NCR added suit
 
 	// boost points for trumps and any solid side suits
 	m_numLongPoints = 0;
-	int nMinTrumpLength;
-	if (nMode & REVALUE_DECLARER) 
+	int nMinTrumpLength;  // # cards we need so partnership has 8 in the suit
+	// NCR Following needs to consider if pard's bid was response to a transfer
+	//  If a transfer, the required count is NOT same as if opened. <<<<<<????
+	//  Also need to consider if a minor was bid again meaning at least 5 cards <<<<????
+	if (nMode & REVALUE_DECLARER) {
 		nMinTrumpLength = pCurrConvSet->IsConventionEnabled(tid5CardMajors)? 5 : 4;
-	else
-		nMinTrumpLength = pCurrConvSet->IsConventionEnabled(tid5CardMajors)? 3 : 4;
+	}
+	else   //  Following for play as Dummy
+	{
+		// NCR-60 Need to consider if bid was a Convenient minor - if so, need more
+		if(ISMINOR(nTrumpSuit)) {
+			nMinTrumpLength = 4; // 4 for Diamonds, 5 for Clubs?
+		}else{  // if 5CardMajor, pard has 5 so we only need 3
+			nMinTrumpLength = pCurrConvSet->IsConventionEnabled(tid5CardMajors)? 3 : 4;
+		}
+	}
 	int numTrumps = m_suit[nTrumpSuit].GetLength();
 	//
 	for (i=0;i<4;i++) 
@@ -1265,7 +1301,7 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 			strMessage += strTemp;
 			m_numLongPoints += nSolidPts;
 		}
-	}
+	} // end for(i) thru suits
 
 	// also remove any penalty points in the trump suit
 	// so need to recalc total penalty
@@ -1276,7 +1312,14 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 			m_numPenaltyPoints += m_suit[i].GetPenaltyPoints();
 	}
 
-	// now perform more specific processing for declarer and dummy
+	// NCR-249 -1 pt if hand has no Ace. See CountPoints() also
+	if(theApp.GetValue(tbAcelessPenalty) && (GetNumAces() == 0))
+		m_numPenaltyPoints++;
+
+	//
+	// Now perform more specific processing for declarer and dummy
+	//
+
 	if (nMode & REVALUE_DECLARER) 
 	{
 		// we're declarer; so deduct points if we have poor trump honors 
@@ -1284,18 +1327,22 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 		if (numTrumps > 0)	// should always be true!
 		{
 			if (m_suit[nTrumpSuit].GetAt(0)->GetFaceValue() < KING)
+			{  // NCR add braces to include following 3 statements (2 below were outside)
 				nBonusPts -= (KING - m_suit[nTrumpSuit].GetAt(0)->GetFaceValue());
 			//
-			strTemp.Format("3REVAL8: Since the trump suit is only topped by a %s, deduct %d points.\n", m_suit[i].GetAt(0)->GetFaceName(), -nBonusPts);
+			strTemp.Format("3REVAL8: Since the trump suit is only topped by a %s, deduct %d points.\n", 
+				            m_suit[nTrumpSuit].GetAt(0)->GetFaceName(), -nBonusPts);
 			strMessage += strTemp;
+			} // NCR ending brace
 		}
 
 		// tally points and and store
 //		fAdjPts = m_numHCPoints + m_numBonusPoints - m_numPenaltyPoints +
 //				  nBonusPts + m_numShortPoints + m_numLongPoints;
 		fAdjPts = m_numHCPoints + m_numBonusPoints - m_numPenaltyPoints +
-				  nBonusPts + m_numLongPoints;
+				  nBonusPts + m_numLongPoints + m_numShortPoints;  // NCR-51 add in short points
 		m_numAdjustedPoints = fAdjPts;
+		m_nAdjPointsBySuit[nTrumpSuit] = fAdjPts; // NCR-468
 
 		// and comment if there's a change in pts
 		if (fAdjPts > m_numTotalPoints) 
@@ -1303,7 +1350,9 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 			// long trumps?
 			if ((nTrumpSuit > NONE) && (numTrumps > nMinTrumpLength)) 
 			{
-				strMessage.Format("2REVAL10: (with a %d-card trump suit in %s,", numTrumps, STS(nTrumpSuit));
+				// NCR Should next line format strMessage or strTemp ??? Changed to strTemp
+				strTemp.Format("2REVAL10: (with a %d-card trump suit in %s,", numTrumps, STS(nTrumpSuit));
+				strMessage += strTemp; // NCR add on
 				// with long side suits?
 				if (numLongSuits == 1) 
 				{
@@ -1356,31 +1405,64 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 		}
 		else if (fAdjPts < m_numTotalPoints) 
 		{
-			strTemp.Format("2REVAL18: Declarer's hand is revalued for a suit contract from %.1f %sto %.1f points)\n",
-				m_numTotalPoints, ((fAdjPts < m_numTotalPoints)? "down " : ""), fAdjPts);
+			strTemp.Format("2REVAL18: Declarer's hand is revalued for a suit contract in %s from %.1f %sto %.1f points)\n",
+							STS(nTrumpSuit), m_numTotalPoints, ((fAdjPts < m_numTotalPoints)? "down " : ""), fAdjPts);  // NCR added STS()
+			strMessage += strTemp;
+		}
+		else {  // NCR Msg for no change
+			strTemp.Format("2REVAL19: Declarer's hand is unchanged in value for a suit contract in %s with %.1f points.\n",
+							STS(nTrumpSuit), m_numTotalPoints); 
 			strMessage += strTemp;
 		}
 		//
 		if (bTrace)
 			status << strMessage;
 		m_numAdjustedPoints = fAdjPts;
+		m_nAdjPointsBySuit[nTrumpSuit] = fAdjPts; // NCR-468
 		return fAdjPts;
 
 	} 
-	else 
+	else if(nMode & REVALUE_DUMMY) // NCR add test to make sure
 	{
+		//------------------------------------------------------------------
 		// here we are dummy; boost points for specific support holdings
+		//  NCR-695 Moved following outside the loop
+		// NCR-125 Need to reduce points if honors are singleton or doubleton
+		if((m_numDoubletons > 0) || (m_numSingletons > 0)) 
+		{
+			for(Suit suitX = CLUBS; suitX <= SPADES; GETNEXTSUIT(suitX)) 
+			{
+				if(suitX == nTrumpSuit)
+					continue;				// skip 
+				if((m_suit[suitX].IsDoubleton() 
+					&& ((m_suit[suitX].GetTopCard()->GetFaceValue() >= JACK)  // NCR-248 added = to >=
+						&& !m_suit[suitX].HasAce())) ) // NCR-360 split doubletons from singletons
+				{
+					nBonusPts = nBonusPts - 1;  // deduct  1 // NCR-360 vs 2
+				}
+				else if((m_suit[suitX].IsSingleton() 
+					   && ((m_suit[suitX].GetTopCard()->GetFaceValue() >= JACK) // NCR-248 added = to >=
+						   && !m_suit[suitX].HasAce())) ) 
+				{                            // NCR-360 Deduct full value of card
+					nBonusPts = nBonusPts - (m_suit[suitX].GetTopCard()->GetFaceValue() - TEN);
+				}
+			} // end for(suitX)
+		}  // NCR-125 end deducting pts for unguarded honors
+
 		// but need 3 or 4 trumps before we can count any bonuses
 //		if ( (numTrumps >= 4) || ((numTrumps == 3) && (ISMAJOR(nTrumpSuit))) ) 
 		if (numTrumps >= nMinTrumpLength) 
 		{
 			// add bonus for voids, singletons, & doubletons
-			if (numTrumps >= 4) 
+			// NCR Need more trumps if using "Convenient minor" which goes with 5Card Major
+			int neededNumTrumps = (pCurrConvSet->IsConventionEnabled(tid5CardMajors)
+								   && (nTrumpSuit == CLUBS)) ? 5 : 4;
+			if (numTrumps >= neededNumTrumps) 
 			{
-				// w/ 4+ trumps, void = 5 pts, singleton = 3, & dbouleton = 1
+				// w/ 4+ trumps, void = 5 pts, singleton = 3, & doubleton = 1
 				nShortPts = (m_numVoids * 5) + (m_numSingletons * 3) + (m_numDoubletons * 1);
 			} 
-			else if (numTrumps == 3) 
+			else if (numTrumps == (neededNumTrumps-1)) 
 			{
 				// with only 3 trumps, bonus schedule is 3/2/1
 				nShortPts = (m_numVoids * 3) + (m_numSingletons * 2) + (m_numDoubletons * 1);
@@ -1389,16 +1471,55 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 			// add 1 pt for holding an honor in the trump suit
 			if (m_suit[nTrumpSuit].GetHCPoints() > 0)
 				nBonusPts++;
+/*  NCR-695 Moved outside of if {}s so values available for other code
+			// NCR-125 Need to reduce points if honors are singleton or doubleton
+			if((m_numDoubletons > 0) || (m_numSingletons > 0)) 
+			{
+				for(Suit suitX = CLUBS; suitX <= SPADES; GETNEXTSUIT(suitX)) 
+				{
+					if(suitX == nTrumpSuit)
+						continue;				// skip 
+					if((m_suit[suitX].IsDoubleton() 
+						&& ((m_suit[suitX].GetTopCard()->GetFaceValue() >= JACK)  // NCR-248 added = to >=
+						    && !m_suit[suitX].HasAce())) ) // NCR-360 split doubletons from singletons
+					{
+						nBonusPts = nBonusPts - 1;  // deduct  1 // NCR-360 vs 2
+					}
+					else if((m_suit[suitX].IsSingleton() 
+						   && ((m_suit[suitX].GetTopCard()->GetFaceValue() >= JACK) // NCR-248 added = to >=
+						       && !m_suit[suitX].HasAce())) ) 
+					{                            // NCR-360 Deduct full value of card
+						nBonusPts = nBonusPts - (m_suit[suitX].GetTopCard()->GetFaceValue() - TEN);
+					}
+				} // end for(suitX)
+			}  // NCR-125 end deducting pts for unguarded honors
+*/
+			// NCR report bonus points
+			if((nBonusPts != 0) || (m_numPenaltyPoints != 0))
+			{
+				strTemp.Format("4REVAL21! Adjusting by %d point(s) for bonus points and %d points for penalty.\n", 
+					                nBonusPts, m_numPenaltyPoints);  // NCR show points used
+				strMessage += strTemp;
+			}
 
 			// and tally and store
-			fAdjPts = m_numHCPoints + m_numBonusPoints - m_numPenaltyPoints +
-					   nBonusPts + nShortPts + m_numLongPoints;
+			double MaxAdj = 5 + theApp.GetBiddingAgressiveness()*2;  // NCR-641 Set limit to adj pts
+			double adjPts = m_numBonusPoints - m_numPenaltyPoints    // Sum the adjustments to HCpts
+					     + nBonusPts + nShortPts + m_numLongPoints;
+			if(adjPts > MaxAdj)
+				adjPts = MaxAdj; // NCR-641 reset to the max allowed
+
+			fAdjPts = m_numHCPoints + adjPts;    // NCR-641 add on adjustment
 			m_numAdjustedPoints = fAdjPts;
+			m_nAdjPointsBySuit[nTrumpSuit] = fAdjPts; // NCR-468
 
 			// and comment if there's a change in pts
 			if (fAdjPts > m_numTotalPoints) 
 			{
-				strMessage.Format("2REVAL38! (with %d-card %s trump support", numTrumps, STSS(nTrumpSuit));
+				// NCR Should next line format strMessage or strTemp ??? Changed to strTemp
+				strTemp.Format("2REVAL38! (with %d-card %s trump support", numTrumps, STSS(nTrumpSuit));
+				strMessage += strTemp; // NCR add on
+
 				if (m_suit[nTrumpSuit].GetHCPoints() > 0)
 					strMessage += " including a trump honor";
 
@@ -1417,8 +1538,7 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 					} 
 					else 
 					{
-						strTemp.Format(" & a doubleton in %s",
-											STS(m_nDoubletonSuits[0]));
+						strTemp.Format(" & a doubleton in %s", STS(m_nDoubletonSuits[0]));
 						strMessage += strTemp;
 					}
 					if ((m_numSingletons > 0) || (m_numVoids > 0))
@@ -1467,23 +1587,39 @@ double CHandHoldings::RevalueHand(int nMode, int nTrumpSuit, BOOL bTrace, BOOL b
 					}
 				}
 				//
-				strTemp.Format(", the hand is revalued for a suit contract as dummy from %.1f %sto %.1f points)\n",
+				strTemp.Format(", the hand is revalued for a suit contract as dummy from %.1f %sto %.1f points.\n",
 								m_numTotalPoints, ((fAdjPts < m_numTotalPoints)? "down " : ""), fAdjPts);
 				strMessage += strTemp;
 			}
+			else if (fAdjPts < m_numTotalPoints)  // NCR-695 This else was outside the enclosing {}s. Moved here
+			{
+				strTemp.Format("2REVAL40: Dummy's hand is revalued for a suit contract from %.1f %sto %.1f points.\n", 
+							   m_numTotalPoints, ((fAdjPts < m_numTotalPoints)? "down " : ""), fAdjPts);
+				strMessage += strTemp;
+			}
 		}
-		else if (fAdjPts < m_numTotalPoints) 
+		else  // NCR-695 number of trumps less than min required
 		{
-			strTemp.Format("2REVAL40: Dummy's hand is revalued for a suit contract from %.1f %sto %.1f points)\n", 
-						   m_numTotalPoints, ((fAdjPts < m_numTotalPoints)? "down " : ""), fAdjPts);
+			//  NCR-695 - NEED LOGIC HERE TO Change fAdjPts
+			fAdjPts = m_numHCPoints + nBonusPts - (nMinTrumpLength - numTrumps)/2.0; // A Q&D approximation
+
+			strTemp.Format("2REVAL70: Dummy's hand is revalued for a suit contract from %.1f %sto %.1f points.\n", 
+							   m_numTotalPoints, ((fAdjPts < m_numTotalPoints)? "down " : ""), fAdjPts);
 			strMessage += strTemp;
-		}
+		}  // end changed else clause for NCR-695 
+
 		//
 		if (bTrace)
 			status << strMessage;
 		m_numAdjustedPoints = fAdjPts;
+		m_nAdjPointsBySuit[nTrumpSuit] = fAdjPts; // NCR-468
 		return fAdjPts;
-	} 
+	}
+	else
+	{
+		ASSERT(false);  // NCR this should never happen, but let's make sure
+		return fAdjPts;
+	}
 
 }
 
@@ -1653,6 +1789,20 @@ BOOL CHandHoldings::AllOtherSuitsStopped(int nSuit1, int nSuit2, int nSuit3, BOO
 }
 
 
+// NCR Test for a worthless doubleton - no King or Ace
+bool CHandHoldings::HasWorthlessDoubleton(int exceptSuit) const // NCR-304 added exceptSuit
+{
+	for(int i = 0; i < m_numDoubletons; i++) {
+		int dSuit = m_nDoubletonSuits[i];
+		if (dSuit == exceptSuit)
+			continue; // NCR-304 ignore this suit
+	    const CSuitHoldings& suit = m_suit[dSuit];
+		if(suit.GetTopCard()->GetFaceValue() < KING)
+			return true;		// Worthless if not Ace or King
+	}
+	return false;
+}
+
 // Balanced hand test
 BOOL CHandHoldings::IsBalanced() const
 { 
@@ -1707,6 +1857,17 @@ int	CHandHoldings::GetLongestSuit(int nType) const
 				if (ISMINOR(m_nSuitsByLength[i]))
 					return i;
 			break;
+
+        // NCR-336 Find longest non-trump suit
+		case SUIT_NOTTRUMP:
+			int nTrumpSuit = pDOC->GetTrumpSuit();
+			for(i=0;i<4;i++) {
+				if (m_nSuitsByLength[i] == nTrumpSuit)
+					continue;  // skip trump suit
+				if (ISSUIT(m_nSuitsByLength[i]))
+					return m_nSuitsByLength[i];  // if a suit, return it
+			}
+			return NOSUIT;  //  NCR-336 Indicate no suit found
 	}
 	// should never get here!
 	ASSERT(FALSE);
@@ -1751,7 +1912,8 @@ CCard* CHandHoldings::GetDiscard()
 			// yes indeed, we do have at least one trump left
 			// so return the shortest suit with losers in it
 			// first find the shortest suit with no winners, if there is one
-			for(int i=3;i>=0;i--)
+			int i; // NCR-FFS added here, removed below
+			for(/*int*/ i=3;i>=0;i--)
 			{
 				int nSuit = m_nSuitsByLength[i];
 				// special code -- try to protect high honors, 
@@ -1764,10 +1926,18 @@ CCard* CHandHoldings::GetDiscard()
 					(GetNumCardsInSuit(nSuit) > 0) && 
 					(GetNumWinnersInSuit(nSuit) == 0))
 				{
-					pDiscardSuit = &m_suit[nSuit];
-					break;
+					// NCR-202 set this suit conditionally
+					if(pDiscardSuit == NULL)
+					{
+						pDiscardSuit = &m_suit[nSuit];
+						// NCR test if this suit is hopeless
+						if(pDiscardSuit->GetTopMissingSequence().GetNumCards() > 2)
+							break;   // use this one
+					}
+					else if(pDiscardSuit->GetNumCards() < (&m_suit[nSuit])->GetNumCards())
+							pDiscardSuit = &m_suit[nSuit];  // change to use the longer suit
 				}
-			}
+			} // end for(i) thru suits
 
 			// see if we found one
 			if (pDiscardSuit == NULL)
@@ -1824,17 +1994,29 @@ CCard* CHandHoldings::GetDiscard()
 			// here, we're out of trumps
 			// so just return the bottom card of the worst suit
 			int nSuit;
-			for(int i=3;i>=0;i--)
+			int i; // NCR-FFS added here, removed below
+			for(/*int*/ i=3;i>=0;i--)
 			{
 				nSuit = m_nSuitsByPreference[i];
 				// avoid letting go of winners!
-				if ((m_suit[nSuit].GetNumCards() > 0) && (m_suit[nSuit].GetNumCards() > m_suit[nSuit].GetNumWinners()))
+				if ((m_suit[nSuit].GetNumCards() > 0) 
+					&& (m_suit[nSuit].GetNumCards() > m_suit[nSuit].GetNumWinners()))
 				{
-					pDiscardSuit = &m_suit[nSuit];
-					break;
+					// NCR-202 set this suit conditionally
+					if(pDiscardSuit == NULL)
+					{
+						pDiscardSuit = &m_suit[nSuit];
+						// NCR test if this suit is hopeless
+						if((pDiscardSuit->GetNumMissingSequences() > 0) 
+							&& (pDiscardSuit->GetTopMissingSequence().GetNumCards() > 2))
+							break;   // use this one
+					}
+					else if(pDiscardSuit->GetNumCards() < (&m_suit[nSuit])->GetNumCards())
+							pDiscardSuit = &m_suit[nSuit];  // change to use the longer suit
 				}
 					
-			}
+			} // end for(i) thru suits  by preference
+
 			// if we failed above, try again
 			if (pDiscardSuit == NULL)
 			{
@@ -1847,11 +2029,18 @@ CCard* CHandHoldings::GetDiscard()
 						break;
 					}
 						
-				}
+				}  // end for(i) thru suits by preference
 			}
+
+			// NCR-426 Test if suit is singleton and the card is a winner
+			if(pDiscardSuit->IsSingleton() && (pDiscardSuit->GetNumWinners() == 1)) 
+			{
+				pDiscardSuit = &m_suit[GetSuitsByLength(0)]; // NCR-426 use longest suit
+			}  // end NCR-426 Not discarding singleton winner
+
 			//
 			pCard = pDiscardSuit->GetBottomCard();
-		}
+		} // end We're out of trumps
 	}
 	else
 	{
@@ -1867,7 +2056,8 @@ CCard* CHandHoldings::GetDiscard()
 		{
 			// don't discard from this suit if possible;
 			// try the other suits in descending length
-			for(int i=1;i<4;i++)
+			int i; // NCR-FFS added here, removed below
+			for(/*int*/ i=1;i<4;i++)
 			{
 				// in order of descending length, find a suit that has losers
 				nSuit = m_nSuitsByLength[i];
@@ -1875,15 +2065,30 @@ CCard* CHandHoldings::GetDiscard()
 					break;		// no more non-void suits
 				if (m_suit[nSuit].GetNumLosers() > 0)
 					break;	   // found one
-			}
+			} // end forI9I thru suits by length
+
 			// if no other suits were found to discard from, return to the first one
 			if (!ISSUIT(nSuit) || (i == 4))
 				nSuit = m_nSuitsByLength[0];
 		}
+
+		//NCR-448 If dummy, need to consider the combined hands
+		if(m_pPlayer->IsDummy()) 
+		{
+			CHandHoldings& dclrHand = m_pPlayer->GetPartner()->GetHand();
+		    CDeclarerPlayEngine* dclrPE = dclrHand.m_pPlayer->GetDeclarerEngine();
+			CCombinedHoldings& combinedHands = dclrPE->GetCombinedHand();
+			int x = 0; // 
+		} // NCR-448 end looking at partner's hand
+		else if (m_pPlayer->IsDefending()) {
+			int x = 0; // for debug break point  NEVER CALLED ???
+		}
+
+
 		// return the bottom card of the suit to discard
 		pDiscardSuit = &m_suit[nSuit];
 		pCard = pDiscardSuit->GetBottomCard();
-	}
+	}  //end playing no trumps
 
 	// verify the selected card is OK
 	ASSERT(pCard->IsValid());
@@ -2201,10 +2406,10 @@ int CHandHoldings::SetValuePV(int nItem, LPVOID value, int nIndex1, int nIndex2,
 			m_nSuitsUnstopped[nIndex1] = nVal;
 			break;
 		case tstrSuitsStopped:
-			m_strSuitsStopped = nVal;
+			m_strSuitsStopped = "" + nVal;  // NCR force to String
 			break;
 		case tstrSuitsUnstopped:
-			m_strSuitsUnstopped = nVal;
+			m_strSuitsUnstopped = "" + nVal; // NCR force to String
 			break;
 		//
 		case tnumRebiddableSuits:

@@ -186,7 +186,7 @@ BOOL CMichaelsCueBidConvention::RespondToConvention(const CPlayer& player,
 		// apply tests #1, 2, and 3
 		int nOpeningBid = pDOC->GetOpeningBid();
 		int nOpeningBidder = pDOC->GetOpeningBidder();
-		BOOL bLHOMajor = ISMAJOR(nOpeningBid);
+		BOOL bLHOMajor = ISMAJOR(BID_SUIT(nOpeningBid));  // NCR added BID_SUIT()
 		if (ISBID(nOpeningBid) && (GetPlayerTeam(nOpeningBidder) != player.GetTeam()) &&
 			 ((nOpeningBid >= BID_1C) && (nOpeningBid <= BID_1S)) &&
 			  (nPartnersSuit == bidState.nLHOSuit) && (nPartnersBidLevel == 2) &&
@@ -307,7 +307,7 @@ BOOL CMichaelsCueBidConvention::RespondToConvention(const CPlayer& player,
 		{
 			// respond at the 2-level
 			nBid = bidState.GetCheapestShiftBid(nSuit, nLastValidBid);
-			if (BID_LEVEL(nBid) == 2)
+			if ((BID_LEVEL(nBid) == 2) || (bidState.nRHOBid == BID_PASS))  // NCR-628 test if RHO passed
 			{
 				status << "MCLR20! Given a choice between " & strChoices & 
 						   ", respond to partner's Michaels with the preferred " & 
@@ -431,7 +431,9 @@ BOOL CMichaelsCueBidConvention::RespondToConvention(const CPlayer& player,
 		else
 		{
 			// minor's not so great; select the better of the minor or the major
-			nAgreedSuit = bidState.PickSuperiorSuit(nPartnersSuit, bidState.nPartnersPrevSuit);
+			// NCR-341 Pick other Major for pard's suit
+			int nOtherMajor = (bidState.nPartnersPrevSuit == HEARTS) ? SPADES : HEARTS;
+			nAgreedSuit = bidState.PickSuperiorSuit(nPartnersSuit, nOtherMajor); // NCR-341 use Other Major
 			if (nAgreedSuit == nPartnersSuit)
 				status << "4MCLR42! The " & STSS(nPartnersSuit) & " suit isn't great, but it's better than " &
 						   STS(bidState.nPartnersPrevSuit) & ", so choose that suit for our response.\n";
@@ -473,9 +475,9 @@ BOOL CMichaelsCueBidConvention::RespondToConvention(const CPlayer& player,
 			// sticking with the major (though not a very good one!)
 			// sign off at the 3-level or go to game
 			if (bidState.m_fMinTPPoints < PTS_MAJOR_GAME)	// < 25
-				nBid = MAKEBID(nPartnersBid, 3);
+				nBid = MAKEBID(nAgreedSuit, 3);  // NCR-341 use nAgreedSuit vs nPartnersBid
 			else	
-				nBid = MAKEBID(nPartnersBid, 4);
+				nBid = MAKEBID(nAgreedSuit, 4);  // NCR-341 use nAgreedSuit vs nPartnersBid
 			//
 			if (BID_LEVEL(nBid) == 3)
 				status << "MCLR47! With " & hand.GetNumCardsInSuit(nAgreedSuit) & 

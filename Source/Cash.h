@@ -21,6 +21,15 @@
 //
 class CCash : public CPlay {
 
+	// public data
+public:
+	// NCR-707 add this enum
+	// cash type
+	typedef enum {
+		ORDINARY = 1,
+		FOR_PROMOTION = 2,  // these cashes are for setting up a promotion
+	} Property;
+
 // public routines
 public:
 	// overloadable functions
@@ -32,6 +41,8 @@ public:
 								CPlayerStatusDialog& status, CCard*& pPlayCard);
 	//
 	virtual int		UsesUpEntry();
+	virtual int		GetProperties() const { return m_Properties; }  // NCR-707
+	virtual void    SetProperites(Property prop) {m_Properties = prop;}  // NCR-707
 
 
 // protected routines
@@ -41,6 +52,7 @@ protected:
 // protected data
 protected:
 	int		m_nCardVal;	// 2..14 (deuce through Ace)
+	Property m_Properties;  // NCR-707
 
 // construction/destruction
 public:

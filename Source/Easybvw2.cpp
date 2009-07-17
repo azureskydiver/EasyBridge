@@ -538,6 +538,8 @@ void CEasyBView::ThrowCard(Position nPos, CCard* pCard)
 		if ((pDOC->GetNumTricksPlayed() == 0) &&
 				(pDOC->GetNumCardsPlayedInRound() == 1)) 
 			pDOC->ExposeDummy(TRUE);
+		// NCR-AT be sure to release the DC here !!!
+  		ReleaseDC(pDC);
 		return;
 	}
 
@@ -923,7 +925,9 @@ void CEasyBView::DoOpeningSequence()
 		pCard->MoveTo(pDC, bx, by);
 		pCard->RestoreBackground(pDC);
 		// try to equalize out animation time
-		distance = (int) sqrt(pow(nextPoint.x-bx,2) + pow(nextPoint.y-by,2));
+//		distance = (int) sqrt(pow(nextPoint.x-bx,2) + pow(nextPoint.y-by,2));
+		// NCR removed pow() method and added double cast
+		distance = (int) sqrt((double)(nextPoint.x-bx)*(nextPoint.x-bx)  + (nextPoint.y-by)*(nextPoint.y-by));
 		nGranularity = distance / 5;
 		if (nGranularity < MIN_GRANULARITY)
 			nGranularity = MIN_GRANULARITY;
@@ -1280,7 +1284,7 @@ void CEasyBView::SetViewParameters(int cx, int cy)
 	if (nNorthBottom > m_drawPoint[WEST].y)
 		nVertDummyOffset = (nNorthBottom - m_drawPoint[WEST].y) + (bSmallCards? 8 : 10);
 	else
-		nVertDummyOffset = Max(m_drawPoint[WEST].y - nNorthBottom, 12);
+		nVertDummyOffset = Max((int)(m_drawPoint[WEST].y - nNorthBottom), 12); // NCR force type with (int)
 	m_dummyDrawOffset[WEST].y = m_dummyDrawOffset[EAST].y = nVertDummyOffset;
 	m_dummyDrawOffset[WEST].x = m_dummyDrawOffset[EAST].x =0;
 	//
@@ -1311,7 +1315,8 @@ void CEasyBView::SetViewParameters(int cx, int cy)
 	// adjust table card destinations
 	int nXOffset = dx / 2;
 	int nYOffset = dy / 2;
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 	{
 		if (bSmallCards)
 		{

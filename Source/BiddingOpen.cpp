@@ -91,11 +91,25 @@ int CBidEngine::MakeOpeningBid()
 		}
 
 		// check range for 1NT
-		if ((fCardPts >= OPEN_PTS(NTMin[0])) && (fCardPts <= NTMax[0])) 
+		// NCR-285 Need stopper if opponents have bid!!!
+		BOOL bHaveOppsStopped = TRUE;
+		if ((nRHOBid != BID_PASS) && ISSUIT(nRHOSuit))
+			bHaveOppsStopped = m_pHand->IsSuitStopped(nRHOSuit);  // NCR-285 consider if their suit is stopped
+		else if ((nLHOBid != BID_PASS) && ISSUIT(nLHOSuit))
+			bHaveOppsStopped = m_pHand->IsSuitStopped(nLHOSuit);  // NCR-285 ditto
+
+		if ((fCardPts >= OPEN_PTS(NTMin[0])) && (fCardPts <= NTMax[0]) && bHaveOppsStopped) // NCR-285 added test
 		{
-			// open 1NT
-			m_nBid = BID_1NT;
-			status << "A08! This meet the rqmts for the 1NT opening range (" & NTMin[0] & "-" & NTMax[0] & "), so bid 1NT.\n";
+			// NCR-18 Check if RHO bid NT and double 
+			if(nRHOBid == BID_1NT){
+				m_nBid = BID_DOUBLE;	// NCR-337 Problem here. This is not a Takeout double???
+				status << "A07! This meet the rqmts for the 1NT opening range (" & NTMin[0] & "-" & NTMax[0] 
+						& "), but RHO has bid 1NT, so Double.\n";
+			}else {
+				// open 1NT
+				m_nBid = BID_1NT;
+				status << "A08! This meet the rqmts for the 1NT opening range (" & NTMin[0] & "-" & NTMax[0] & "), so bid 1NT.\n";
+			}
 			return ValidateBid(m_nBid);
 			
 		} 
@@ -107,6 +121,14 @@ int CBidEngine::MakeOpeningBid()
 			{
 				// bid 1 of lowest openable suit
 				m_nBid = GetLowestOpenableBid(SUITS_ANY,OT_OPENER,1);
+				// NCR-335 Don't bid 4 card major with 5CardMajor convention
+				if (ISMAJOR(BID_SUIT(m_nBid)) && pCurrConvSet->IsConventionEnabled(tid5CardMajors)
+					&& (numCardsInSuit[BID_SUIT(m_nBid)] < 5) ) 
+				{
+					// Use Diamonds if 4, else clubs (have balanced hand here)
+					Suit bidThis = numCardsInSuit[DIAMONDS] >= 4 ? DIAMONDS : CLUBS;
+					m_nBid = MAKEBID(bidThis, 1);  // NCR-335 use minor
+                }
 				status << "A10! This exceeds the max pts for a 1NT opening (" & NTMax[0] & 
 								 "), but is less than min pts for 2NT (" & NTMin[1] & 
 								 ").  So bid the lowest openable suit of " & BTS(m_nBid) & 
@@ -131,7 +153,14 @@ int CBidEngine::MakeOpeningBid()
 			return ValidateBid(m_nBid);
 
 		} 
-		else if ((fCardPts >= OPEN_PTS(NTMin[1])) && (fCardPts <= NTMax[1])) 
+		// NCR can't use 2NT if using unusual NT convention
+		else if ((fCardPts >= OPEN_PTS(NTMin[1])) && (fCardPts <= NTMax[1]) 
+//			     && !pCurrConvSet->IsConventionEnabled(tidUnusualNT)  // NCR not relevant for Opening???
+				 // NCR test that hand does NOT have a worthless doubleton
+				 && ((m_pHand->GetNumDoubletons() == 0)  // OK if no doubletons
+				     || (m_pHand->GetNumDoubletons() >= 1) 
+				         && !m_pHand->HasWorthlessDoubleton()) //or if its not worthless
+				) 
 		{
 			// open 2NT
 			m_nBid = BID_2NT;
@@ -140,10 +169,10 @@ int CBidEngine::MakeOpeningBid()
 			return ValidateBid(m_nBid);
 
 		} 
-		else if ((fCardPts >= OPEN_PTS(NTMax[1])) && (NTMin[2] < 0)) 
+		else if ((fCardPts >= OPEN_PTS(NTMax[1])) && (NTMin[2] < 0))  // NCR ??? see next else if
 		{
 
-			// > pts for 2NT, but 3NT opening not allowed
+			// > pts for 2NT, but 3NT opening not allowed  NCR what does not allowed mean???
 			// so bid 2C
 			m_nBid = BID_2C;
 			status << "A30! This exceeds the max pts for a 2NT opening (" & NTMax[1] & 
@@ -178,22 +207,29 @@ int CBidEngine::MakeOpeningBid()
 			return ValidateBid(m_nBid);
 
 		} 
-		else if ((fCardPts >= OPEN_PTS(NTMin[2])) && (fCardPts <= NTMax[2])) 
+		else if ((fCardPts >= OPEN_PTS(NTMin[2])) && (fCardPts <= NTMax[2])
+				 // NCR test that hand does NOT have a worthless doubleton
+				 && ((m_pHand->GetNumDoubletons() == 0)  // OK if no doubletons
+				     || (m_pHand->GetNumDoubletons() >= 1) 
+				         && !m_pHand->HasWorthlessDoubleton()) //or if its not worthless
+
+			     ) 
 		{
 			// open 3NT
 			m_nBid = BID_3NT;
 			status << "A50! Bid 3NT.\n";
 			return ValidateBid(m_nBid);
 		} 
-		else 
+/*  NCR remove falling into a 3NT bid
+		else // if(!pCurrConvSet->IsConventionEnabled(tidUnusualNT)) // NCR added Unusual test??? 
 		{
 			// > 3NT point range? unusual, but open 3NT for now
 			m_nBid = BID_3NT;
-			status << "A60! bid 3NT.\n";
+			status << "A60! bid 3NT with balanced hand and " & fCardPts & " points.\n"; // NCR
 			return ValidateBid(m_nBid);
 		}
-	}
-
+*/
+	}  // end balanced hand with > min pts
 
 escape1:
 
@@ -213,7 +249,7 @@ escape1:
 	//  3:  12+ HCPs with 2 QTs and a rebiddable suit
 	//  4:  12+ HCPs with 2 QTs and a 5-card suit
 	//  5:  12+ HCPs with balanced dist (weak NT mode only)
-	//  6:  10+ HCPs opening in 3rd or 4th seat and a good suit
+	//  6:  10+ HCPs opening in 3rd or 4th seat and a good suit  NCR ???
 	//  7:  15+ Total points with 2 QTs
 	//  8:  14+ Total points with 2 QTs and a rebiddable suit
 	//  9:  13+ Total points with 2 QTs and a rebiddable suit of 6+ cards
@@ -248,7 +284,8 @@ escape1:
 		return ValidateBid(m_nBid);;
 	}
 	// case 3:  12+ HCP's, 2 QT's, & a rebiddable suit
-	if ((fCardPts >= OPEN_PTS(12)) && (numQuickTricks >= 2) && 
+	// NCR-680  reduce QTs
+	if ((fCardPts >= OPEN_PTS(12)) && (numQuickTricks >= PT_COUNT(2)) && 
 								(numRebiddableSuits > 0)) 
 	{
 		m_nBid = MAKEBID(nSuit,1);
@@ -277,9 +314,13 @@ escape1:
 		return ValidateBid(m_nBid);
 	}
 	// case 6:  10+ HCPs opening in 3rd or 4th seat & a good suit
-	if ((fCardPts >= OPEN_PTS(10)) && 
-		((nBiddingOrder == 2) || (nBiddingOrder == 3)) &&
-									(numOpenableSuits > 0)) 
+//	if ((fCardPts >= OPEN_PTS(10)) 
+	if ((fCardPts >= 10)  // NCR-206 Hard 10  and > 4 cards  
+		 && (((nBiddingOrder == 2) && (numCardsInSuit[nSuit] > 4)) 
+		                              // NCR require Having spades to open light in 4th
+		     || ((nBiddingOrder == 3) & (numCardsInSuit[SPADES] > 3))
+		                              && (nSuit == SPADES))
+		 &&	(numOpenableSuits > 0)) 
 	{
 		m_nBid = MAKEBID(nSuit,1);
 		status << "E07! Have " & fCardPts & " points in high cards in " 
@@ -393,12 +434,13 @@ escape1:
 	// and a 6-card suit
 	//
 	if ((nAllowed1Opens & OB_13_TCPS_LS) && 
-		(fPts >= OPEN_PTS(13)) && (fCardPts >= OPEN_PTS(10)) && 
+		      // NCR-390 Add in distribution points here and below in status msg
+		((fPts + fDistPts) >= OPEN_PTS(13)) && (fCardPts >= OPEN_PTS(10)) && 
 		(numQuickTricks >= 2) && 
 		(m_pHand->GetNumSuitsOfAtLeast(6) > 0)) 
 	{
 		m_nBid = MAKEBID(nSuit,1);
-		status << "E25! Have " & fCardPts & "/" & fPts &" total points with " & numQuickTricks &
+		status << "E25! Have " & fCardPts & "/" & (fPts+fDistPts) &" total points with " & numQuickTricks &
 				  " QT's and a " & numCardsInSuit[nSuit] & "-card " & STSS(nSuit) & 
 				  " suit (optional opening condition #5), so bid " & BTS(m_nBid) & ".\n";
 		return ValidateBid(m_nBid);
@@ -413,13 +455,36 @@ escape1:
 		if (fPts >= nRqmt) 
 		{
 			m_nBid = MAKEBID(nSuit,1);
-			status << "E30! Have " & fCardPts & "/" & fPts & 
+			status << "E27! Have " & fCardPts & "/" & fPts & 
 					  " total points; shade opening requirement of 2 QT's and make do with " & numQuickTricks &
-					  " QT'in light of the high total point count; open " & BTS(m_nBid) & ".\n";
+					  " QT's in light of the high total point count; open " & BTS(m_nBid) & ".\n";
 			return ValidateBid(m_nBid);;
 		}
 	}
 */
+	// NCR-356 Loosen up a bit here - bid 5 card major if ...
+	if((fCardPts >= OPEN_PTS(13)) &&  ISMAJOR(nSuit) && (numCardsInSuit[nSuit] >= 5)
+		&& pCurrConvSet->IsConventionEnabled(tid5CardMajors) )
+	{
+		m_nBid = MAKEBID(nSuit,1);
+		status << "E28! Have " & fCardPts & "/" & fPts & 
+				  " total points; shade opening requirement of 2 QT's and make do with " & numQuickTricks &
+				  " QT's; open " & BTS(m_nBid) & ".\n";
+		return ValidateBid(m_nBid);;
+	} // end NCR-356
+
+
+	// NCR Is Convenient minor (goes with 5card Majors) appropriate - 13 HCPs and 3 clubs
+	if((fCardPts >= OPEN_PTS(13)) && pCurrConvSet->IsConventionEnabled(tid5CardMajors)
+		&& (numCardsInSuit[CLUBS] >= 3)) 
+	{
+		m_nBid = BID_1C;
+		if(numCardsInSuit[DIAMONDS] > numCardsInSuit[CLUBS]) // NCR-507 Bid Diamonds if more of them
+			m_nBid = BID_1D;
+		status << "E31! Have " & fCardPts & " points in high cards , so bid a Convenient minor "
+			        & BTS(m_nBid) & ".\n";
+		return ValidateBid(m_nBid);
+	}
 
 	//
 	//--------------------------------------------------------

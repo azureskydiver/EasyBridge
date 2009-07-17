@@ -42,7 +42,8 @@ CNNetConfigDialog::CNNetConfigDialog(CWnd* pParent /*=NULL*/)
 
 	//
 	m_numNNetHiddenLayers = m_numLayersSel + 1;
-	for(int i=0;i<nodeArraySize;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<nodeArraySize;i++)
 	{
 		if (tnumNodesPerLayer[i] == m_numNNetNodesPerHiddenLayer)
 			break;

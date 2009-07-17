@@ -5,6 +5,10 @@
 // See the files COPYING and COPYRIGHT for details.
 //
 //----------------------------------------------------------------------------------------
+/* NCR Changes:
+	19 Apr 09 - Make WeakTwo and Artifical2Club the same
+	30 Apr 09 - Added Roman Key Card Blackwood flag read
+*/
 
 //
 // ConventionSet.cpp
@@ -48,6 +52,9 @@ MINMAX	tnNTRangeTable[3][3] = {
 };
 // default bidding settings
 int tn2ClubOpenTable[4] = { 20, 21, 22, 23, };
+
+// NCR-177 Minimum pts for Strong Two opening
+int tnStrongTwoPts = 21;
 
 
 // central repository for global convention objects
@@ -154,8 +161,12 @@ BOOL CConventionSet::ApplyConventionTests(const CPlayer& player, CHandHoldings& 
 	CConvention* pConvention = m_listConventions.GetNext(pos);
 	while(pConvention)
 	{
-		if (pConvention->ApplyTest(player, *this, hand, cardLocation, ppGuessedHands, bidState, status))
+		if (pConvention->ApplyTest(player, *this, hand, cardLocation, ppGuessedHands, bidState, status)) { // NCR-SCU
+#ifdef _DEBUG
+			CEasyBDoc::m_pDoc->AddSCU(pConvention->m_nID); // NCR-SCU add this convention's id
+#endif
 			return TRUE;
+		} // end NCR-SCU
 		if (pos)
 			pConvention = m_listConventions.GetNext(pos);
 		else
@@ -225,6 +236,7 @@ CConventionSet::~CConventionSet()
 static TCHAR BASED_CODE szBiddingOptions[] = _T("Bidding Conventions");
 static TCHAR BASED_CODE szBiddingStyle[] = _T("Bidding Style");
 static TCHAR BASED_CODE szBlackwood[] = _T("Blackwood");
+static TCHAR BASED_CODE szRKCB[] = _T("Roman Key Card Blackwood"); //NCR
 static TCHAR BASED_CODE szCueBids[] = _T("Cue Bids");
 static TCHAR BASED_CODE szGerber[] = _T("Gerber");
 static TCHAR BASED_CODE sz1NTRange[] = _T("Range of Points for 1NT Bid (0:12-14, 1:15-17, 2:16-18)");
@@ -274,8 +286,9 @@ void CConventionSet::Initialize(LPCTSTR szName)
 	m_nBiddingStyle = theApp.GetProfileInt(strSettingsKey, szBiddingStyle, 2);
 	//
 	m_bFiveCardMajors = theApp.GetProfileInt(strSettingsKey, szFiveCardMajors, 1);
-	m_bArtificial2ClubConvention = theApp.GetProfileInt(strSettingsKey, sz2ClubConvention, 1);
+//NCR	m_bArtificial2ClubConvention = theApp.GetProfileInt(strSettingsKey, sz2ClubConvention, 1);
 	m_bWeakTwoBids = theApp.GetProfileInt(strSettingsKey, szWeakTwoBids, 1);
+    m_bArtificial2ClubConvention = m_bWeakTwoBids; // NCR Must be the same
 	m_bShutoutBids = theApp.GetProfileInt(strSettingsKey, szShutoutBids, TRUE);
 	m_bOgust = FALSE;
 	m_bLimitRaises = theApp.GetProfileInt(strSettingsKey, szLimitRaises, FALSE);
@@ -303,6 +316,7 @@ void CConventionSet::Initialize(LPCTSTR szName)
 	m_b3LevelTakeouts = theApp.GetProfileInt(strSettingsKey, sz3LevelTakeouts, FALSE);
 	m_bWeakJumpOvercalls = theApp.GetProfileInt(strSettingsKey, szWeakJumpOvercalls, 0);
 	m_bBlackwood = theApp.GetProfileInt(strSettingsKey, szBlackwood, 1);
+	m_bRKCB = theApp.GetProfileInt(strSettingsKey, szRKCB, 0); // NCR
 	m_bCueBids = theApp.GetProfileInt(strSettingsKey, szCueBids, TRUE);
 	m_bGerber = theApp.GetProfileInt(strSettingsKey, szGerber, FALSE);
 }
@@ -322,7 +336,8 @@ void CConventionSet::Terminate()
 	theApp.WriteProfileInt(strSettingsKey, szBiddingStyle, m_nBiddingStyle);
 	//
 	theApp.WriteProfileInt(strSettingsKey, szFiveCardMajors, m_bFiveCardMajors);
-	theApp.WriteProfileInt(strSettingsKey, sz2ClubConvention, m_bArtificial2ClubConvention);
+//NCR	theApp.WriteProfileInt(strSettingsKey, sz2ClubConvention, m_bArtificial2ClubConvention);
+	theApp.WriteProfileInt(strSettingsKey, sz2ClubConvention, m_bWeakTwoBids); //NCR make same
 	theApp.WriteProfileInt(strSettingsKey, szWeakTwoBids, m_bWeakTwoBids);
 	theApp.WriteProfileInt(strSettingsKey, szShutoutBids, m_bShutoutBids);
 	theApp.WriteProfileInt(strSettingsKey, szOgustConvention, m_bOgust);
@@ -416,7 +431,7 @@ void CConventionSet::InitConventions()
 	if (m_bStayman)
 		m_listConventions.AddTail(&staymanConvention);
 	//
-	if (m_bArtificial2ClubConvention)
+	if (m_bArtificial2ClubConvention && m_bWeakTwoBids)  //NCR need weak 2 with 2 club
 		m_listConventions.AddTail(&artificial2ClubConvention);
 	//
 	if (m_bShutoutBids)
@@ -650,6 +665,8 @@ int CConventionSet::GetValue(int nItem, int nIndex1, int nIndex2, int nIndex3)
 			return tnNTRangeTable[2][m_nNTRange[2]].max;
 		case tn2ClubOpeningPoints:
 			return tn2ClubOpenTable[m_n2ClubOpenRange];
+		case tnStrong2OpeningPts:   // NCR-177
+			return tnStrongTwoPts;
 		//
 		default:
 			return 0;

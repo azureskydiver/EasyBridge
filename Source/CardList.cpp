@@ -146,7 +146,8 @@ void CCardList::Add(CCard* pCard, const BOOL bSort)
 	{
 		// insert the card in its proper place
 		int nValue = pCard->GetDeckValue();
-		for (int i=0;i<m_numCards;i++)
+		int i; // NCR-FFS added here, removed below
+		for (/*int*/ i=0;i<m_numCards;i++)
 		{
 			if (!m_bReverseSort)
 			{
@@ -180,11 +181,15 @@ void CCardList::Add(CCard* pCard, const BOOL bSort)
 //
 // Merge()
 //
-void CCardList::Merge(const CCardList& srcList) 
+// NCR-488 Added IgnoreDups to allow discarding of duplicates
+void CCardList::Merge(const CCardList& srcList, const bool bIgnoreDups) 
 { 
 	//
-	for(int i=0;i<srcList.GetNumCards();i++) 
+	for(int i=0;i<srcList.GetNumCards();i++) {
+		if(bIgnoreDups && HasCard(srcList[i]))
+			continue; // NCR-488 skip if already in list
 		Add(srcList[i]); 
+	} // end for(i)
 	//
 	Sort(); 
 }
@@ -264,7 +269,8 @@ CCard* CCardList::RemoveByIndex(const int nIndex)
 	// update count
 	m_numCards--;
 	// move other cards over
-	for(int i=nIndex;i<m_numCards;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=nIndex;i<m_numCards;i++) 
 		m_cards[i] = m_cards[i+1];
 	for(;i<MAXHOLDING;i++) 
 		m_cards[i] = NULL;
@@ -718,10 +724,11 @@ int CCardList::GetEquivalentCards(CCard* pCard, CCardList& cardList, const BOOL 
 	// then add lower cards
 	nVal = pCard->GetFaceValue() - 1;
 	nIndex = GetCardIndex(pCard) + 1;
-	for(i=nIndex;i<m_numCards;i++,nVal--)
+	// NCR-FFS changed i to j
+	for(int j=nIndex;j<m_numCards;j++,nVal--)
 	{
-		if (m_cards[i]->GetFaceValue() == nVal)
-			cardList << m_cards[i];
+		if (m_cards[j]->GetFaceValue() == nVal)
+			cardList << m_cards[j];
 		else
 			break;
 	}
@@ -775,7 +782,8 @@ CCard* CCardList::GetHighestEquivalentCard(CCard* pCard)
 	// 
 	int nVal = pCard->GetFaceValue() + 1;
 	int nIndex = GetCardIndex(pCard) - 1;
-	for(int i=nIndex;i>=0;i--,nVal++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=nIndex;i>=0;i--,nVal++)
 	{
 		if (m_cards[i]->GetFaceValue() != nVal)
 			break;
@@ -802,11 +810,61 @@ CCard* CCardList::GetLowestEquivalentCard(CCard* pCard)
 	//
 	int nVal = pCard->GetFaceValue() - 1;
 	int nIndex = GetCardIndex(pCard) + 1;
-	for(int i=nIndex;i<m_numCards;i++,nVal--)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=nIndex;i<m_numCards;i++,nVal--)
 	{
 		if (m_cards[i]->GetFaceValue() != nVal)
 			break;
 	}
 	return m_cards[i-1];
 }
+
+//
+// BeatIfBracketed()
+//
+// - returns card above arg if also have card below arg (ie the two cards bracket the arg)
+//           if none found, returns NULL
+//
+CCard* CCardList::BeatIfBracketed(const CCard* pCard) const {
+	// First check if we have the card above
+	int nCardDV = pCard->GetDeckValue()+1;  // What if -1 returned ???
+	int nCardFV = pCard->GetFaceValue()+1;  // use this to keep in suit
+	if(!ISDECKVAL(nCardDV))
+		return NULL;
+	// scan over played cards
+	while(pDOC->WasCardPlayed(nCardDV)) {
+		nCardDV++;   // continue until NOT played
+		nCardFV++;
+		// check if we crossed over to another suit
+		if(nCardFV > ACE)
+			return NULL;
+	}
+	// Now check if we have this card
+    if(!HasCard(nCardDV))
+		return NULL;
+
+	CCard* pCardToPlay = GetAt(GetCardIndex(nCardDV));   // save the card to be played if ...
+
+	// Now do we have the card below?
+	nCardDV = pCard->GetDeckValue()-1;  // get card below
+	nCardFV = pCard->GetFaceValue()-1;  // use this to keep in suit
+	if(!ISDECKVAL(nCardDV) || (nCardDV == MAKEDECKVALUE(CLUBS, 2)))
+		return NULL;
+	// scan over played cards
+	while(pDOC->WasCardPlayed(nCardDV)) {
+		nCardDV--;   // continue until NOT played
+		nCardFV--;
+		// check if we've crossed over into another suit
+		if(!ISFACEVAL(nCardFV))  // NCR added !
+			return NULL;
+		// Or if we've run out of cards
+		if(!ISDECKVAL(nCardDV))
+			return NULL;
+    }
+    // now we have this card?
+	if(HasCard(nCardDV))
+		return pCardToPlay;  // yes we have it, so return covering card
+	return NULL;  // otherwise we don't	
+}
+
 

@@ -92,18 +92,21 @@ int CBidEngine::MakeRebidAsResponder()
 	//
 	// we can only pass
 	//
-	if (nPartnersBid == BID_PASS) 
+	if ((nPartnersBid == BID_PASS) 
+    	// NCR-149 Also pass if partner doubled for penalty           NCR-191 penalty if we've bid
+		|| ((nPartnersBid == BID_DOUBLE) && (IsGameBid(nOpponentsBid) || (m_numBidsMade > 0))) )
 	{
-
 		//
 		m_nBid = BID_PASS;
-			return ValidateBid(m_nBid);
+		return ValidateBid(m_nBid);
 		
 	}  // end of pass response section
 
 
 
-	
+	// NCR-442 Get some data for use below
+    const int nLastBid = pDOC->GetLastValidBid();
+	const int nCurrBidLevel = BID_LEVEL(nLastBid);
 	
 
 
@@ -114,16 +117,21 @@ int CBidEngine::MakeRebidAsResponder()
 	// e.g., 1h -> 1s -> 2h, showing: 12-16 pts and 6 cards (or maybe 5)
 	//
 	//
-	if ((nPartnersSuit == nPartnersPrevSuit) &&
-					((nPartnersBid - nPartnersPrevBid) <= 5) &&
-		  					(nPartnersSuit != NOTRUMP)) 
+	if ((nPartnersSuit == nPartnersPrevSuit)
+		 && ((GetBidType(nPartnersBid) & BT_Jump) == 0)  // NCR  test NOT jump
+//					((nPartnersBid - nPreviousBid) <= 5) &&  // NCR use previous bid here
+		 &&	(nPartnersSuit != NOTRUMP)) 
 	{
 
 		// check original opening strength
 /*
  * 2-level openings are now handled separately in convention classes
- * 
-		if (nPartnersOpeningBidLevel == 2) 
+ */ 
+		// NCR-177 need to continue bidding if pard opened 2
+		if ((nPartnersOpeningBidLevel == 2) && (m_numPartnerBidsMade == 2)
+			// NCR-186 and bid was not an overcall          or response (NCR-638)
+			&& ((GetBidType(nPartnersOpeningBid) & (BT_Overcall+BT_Response)) == 0)
+			) 
 		{
 			// partner originally bid at the 2-level
 			if (nPartnersOpeningBid == BID_2C) 
@@ -138,9 +146,9 @@ int CBidEngine::MakeRebidAsResponder()
 			} 
 			else if (pCurrConvSet->IsConventionEnabled(tidStrongTwoBids)) 
 			{
-				// playing strong 2s
-				m_fPartnersMin = MAX(m_fPartnersMin, 16);
-				m_fPartnersMax = MAX(m_fPartnersMax, 22);
+				// playing strong 2s                // NCR-177 changed from 16
+				m_fPartnersMin = MAX(m_fPartnersMin, pCurrConvSet->GetValue(tnStrong2OpeningPts)); 
+				m_fPartnersMax = MAX(m_fPartnersMax, 40 - fCardPts);
 				status << "2B4C1! Partner made a minimum rebid of his " & szPSS &
 						  " suit at " & szPB & " after his initial strong " & szPPB & 
 						  " opening, showing " & m_fPartnersMin & "+ points and 5+ trump cards.\n";
@@ -158,10 +166,13 @@ int CBidEngine::MakeRebidAsResponder()
 
 		} 
 		else 
-*/
+//*/
 		{
 			// else a plain old 1-level opening
 			m_fPartnersMin = theApp.GetMinimumOpeningValue(m_pPartner);
+			// NCR-689  Give more points if overcall at higher level
+			if(nCurrBidLevel > 3)
+				m_fPartnersMin = 15;   // Needs more points to overcall at this level
 			m_fPartnersMax = 16;
 			status << "2B4C4! Partner made a minimum rebid of his " & szPSS & 
 					  " suit at " & szPB & ", showing " & m_fPartnersMin & "-" & m_fPartnersMax & 
@@ -169,7 +180,10 @@ int CBidEngine::MakeRebidAsResponder()
 		}
 
 		// get adjusted point count in support of partner
-		fAdjPts = m_pHand->RevalueHand(REVALUE_DUMMY, nPartnersSuit, TRUE);
+		int revalueAs = REVALUE_DUMMY;  // NCR-307 Who bid suit first?
+		if (nNextPrevSuit == nPartnersSuit)
+			revalueAs = REVALUE_DECLARER; // NCR-307 I'll be declarer ??? How is this possible with partners' suit
+		fAdjPts = m_pHand->RevalueHand(revalueAs, nPartnersSuit, TRUE); // NCR-307
 		m_fMinTPPoints = fAdjPts + m_fPartnersMin;
 		m_fMaxTPPoints = fAdjPts + m_fPartnersMax;
 		m_fMinTPCPoints = fCardPts + m_fPartnersMin;
@@ -180,6 +194,7 @@ int CBidEngine::MakeRebidAsResponder()
 		//
 		// pass with <= 20 min total points
 		//
+		double testing = PTS_GAME-6; // = 18 ??? 26 - aggression - 6
 		if (m_fMinTPPoints <= PTS_GAME-6) 
 		{
 			m_nBid = BID_PASS;
@@ -196,18 +211,38 @@ int CBidEngine::MakeRebidAsResponder()
 		// with 21-25 TPs, raise partner with 3 trumps,
 		// rebid a new suit, or bid NT
 		//
-
+		// NCR Are we at game now?
+		if(nPartnersBid >= GetGameBid(nPartnersSuit)) 
+		{
+			m_nBid = BID_PASS;
+			status << "B4C11! Pass since partner has bid game.\n";
+			return ValidateBid(m_nBid);
+		}
 		// raise partner's major to the 3-level with 
-		// 22-25 total pts and 3-card trump support
-		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_ONE, PTS_GAME-4, PTS_GAME-1, SUPLEN_3))
+		// 22-25 total pts and 3-card trump support             NCR-668 removed -1
+		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_ONE, PTS_GAME-4, PTS_GAME/*-1*/, SUPLEN_3))
 			return ValidateBid(m_nBid);
 		// or with a doubleton honor
 		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_ONE, PTS_GAME-4, PTS_GAME-1, SUPLEN_3, SS_ANY, HONORS_1, 1))
 			return ValidateBid(m_nBid);
 
+		// NCR Or if pards bid at 3 level and agressiveness is high and we have at least 2
+		if((nPartnersBidLevel > 2) && (theApp.GetBiddingAgressiveness() >= 2))
+			if (RaisePartnersSuit(SUIT_MAJOR,RAISE_ONE, PTS_GAME-4, PTS_GAME-1, SUPLEN_2))
+				return ValidateBid(m_nBid);
+
 		// with 21-22 TPs, bid a second 5-card suit
 		if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST, PTS_GAME-5, PTS_GAME-4, LENGTH_FIVE))
-			return ValidateBid(m_nBid);
+		{
+			// NCR-513 make sure the suit not bid by opp or is strong enough
+			int bidSuit = BID_SUIT(m_nBid);
+			if(!TestIfOpponentsBidThis(bidSuit) || (nSuitStrength[bidSuit] >= SS_OPENABLE))
+				return ValidateBid(m_nBid);  // Ok to bid this
+			else {
+				m_nBid = BID_NONE;
+			    status << "B4C13! Whoops, cnn't bid " & STS(bidSuit) & ".\n";
+			}
+		} // NCR-513
 
 		// with 21-22 TPs, rebid a good 6-card suit
 		if (RebidSuit(SUIT_ANY,REBID_CHEAPEST, PTS_GAME-5, PTS_GAME-4, LENGTH_6, SS_STRONG|SS_SOLID))
@@ -223,13 +258,41 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 
 		// or rebid a good 6-card minor with 21-25 pts
+		// NCR-250 Don't bid at game level
+		if ((nRHOBid == BID_PASS) || !IsGameBid(nRHOBid)) {
 		if (RebidSuit(SUIT_MINOR,REBID_CHEAPEST, PTS_MINOR_GAME-8, PTS_MINOR_GAME-4, LENGTH_6, SS_STRONG|SS_SOLID))
 			return ValidateBid(m_nBid);
+		}
+
+		// NCR-660 Rebid 5 card suit with enough total points
+		if (RebidSuit(SUIT_ANY,REBID_CHEAPEST, PTS_GAME-3, PTS_GAME, LENGTH_5, SS_OPENABLE))
+			return ValidateBid(m_nBid);
+
+		// NCR-142 do we have a strong/standalone suit we could bid?
+		double test_fAdjPts = ISSUIT(nPreviousSuit) ? m_pHand->RevalueHand(REVALUE_DECLARER, nPreviousSuit, TRUE) : 0.0; // NCR-142
+		if((test_fAdjPts + m_fPartnersMin) >= PTS_GAME)
+		{
+			if (RebidSuit(SUIT_MAJOR, REBID_AT_FOUR, PTS_GAME-3, PTS_GAME-1, LENGTH_7, SS_STRONG))
+				return ValidateBid(m_nBid);
+		}
+		// NCR-470 raise partner's minor to 4 with 3+ trumps and 25-28 pts
+		if(nPartnersBidLevel == 3) {
+			if (RaisePartnersSuit(SUIT_MINOR, RAISE_TO_4, PTS_MINOR_GAME-4, PTS_MINOR_GAME-1, SUPLEN_3))
+				return ValidateBid(m_nBid);
+		}
+		       // NCR-550 Support partner's rebid suit
+		else if((nPartnersBidLevel == 2) && (nPartnersSuit == nPartnersPrevSuit)) {
+			if (RaisePartnersSuit(SUIT_MINOR, RAISE_TO_3, PTS_MINOR_GAME-4, PTS_MINOR_GAME-1, SUPLEN_3))
+				return ValidateBid(m_nBid);
+		}
 
 		// if none of the above apply, escape into NT or pass with <= 25 pts
 		if (m_fMinTPPoints < PTS_GAME)
 		{
-			if ((numSupportCards >= 2) || (nPartnersBidLevel >= 4))
+			// NCR bid on if at 2 level and we have points
+			// NCR-199 Added = to <= below - Maybe should bid pard's suit if we like it ???
+			if ((m_fMinTPPoints <= 23)   // NCR-58 changed fm 22 to 23  How many points here???
+				&& ((numSupportCards >= 2) || (nPartnersBidLevel >= 4)) )
 			{
 				// either partner shut us out, or we can't raise
 				m_nBid = BID_PASS;
@@ -240,17 +303,48 @@ int CBidEngine::MakeRebidAsResponder()
 					status << "B4C18a! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
 							  " pts in the partnership, sign off on partner's " & szPB & " bid.\n";
 			}
-			else
+			// NCR Don't bid NT with void, Worthless doubleton or singleton 
+			// Also should have opponents suit stopped???
+			else if(!m_pHand->HasWorthlessDoubleton() && (m_pHand->GetNumVoids() == 0)
+				    && (nCurrBidLevel < 4)  // NCR-442 Don't want to bid 4NT
+				    && ((m_pHand->GetNumSingletons() == 0) 
+					        // NCR-78 NT Singleton OK if its partner's suit 
+					    || (m_pHand->m_nSingletonSuits[0] == nPartnersSuit)) 
+                      // NCR-470 bid 3NT if ...
+					&& BidNoTrump(LEVEL_3, PTS_GAME-3, PTS_GAME-1, FALSE, STOPPED_OPPBID) ) 
 			{
 				// can't support partner!
-				m_nBid = GetCheapestShiftBid(NOTRUMP);
+				m_nBid = GetCheapestShiftBid(NOTRUMP); // NCR-591 this was commented out ???
 				status << "B4C19! with " &
 						  ((numSupportCards == 1)? "only a single trump" : "zero trump support") &
 						  ", we have to escape from partner's " & szPS & 
 						  " and bid " & BTS(m_nBid) & ".\n";
 			}
+			else  // NCR have > 23 pts - enough to bid at three level
+			{
+				// NCR any other tests here to set the value of m_nBid???
+				if(ISBID(m_nBid)) // != BID_PASS) // NCR-138
+				{   // NCR-442 Need 5 cards to rebid suit
+					int nOurSuit = BID_SUIT(m_nBid);          // Need at least 5 cards
+					if((nOurSuit != NOTRUMP) && (m_pHand->GetSuit(nOurSuit).GetNumCards() > 4))  
+						m_nBid = GetCheapestShiftBid(nOurSuit); // NCR give up and rebid our suit
+
+					// NCR-662 Try to bid something
+					else if(BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST,PTS_GAME-5,PTS_GAME-1,LENGTH_5))
+						return ValidateBid(m_nBid);  // NCR-662 got bid
+
+					else
+						m_nBid = BID_PASS;  
+				}
+				else {
+					m_nBid = BID_PASS; // NCR-591
+				}
+				status << "B4C21! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
+					" pts in the partnership, " & ((m_nBid != BID_PASS) ? "rebid our suit " : "") 
+					& BTS(m_nBid) & ".\n";
+			}
 			return ValidateBid(m_nBid);
-		}
+		} // end having less points than needed for game
 
 		//
 		//---------------------------------------------------------
@@ -269,7 +363,7 @@ int CBidEngine::MakeRebidAsResponder()
 		if (BidNoTrump(LEVEL_3, PTS_NT_GAME, PTS_SLAM-1, FALSE,STOPPED_UNBID))
 			return ValidateBid(m_nBid);
 		// or 2NT without the suits stopped and but 29-32 HCPs
-		if (BidNoTrump(LEVEL_2, PTS_NT_GAME+3, PTS_SLAM-1,  FALSE, STOPPED_DONTCARE))
+		if (BidNoTrump(LEVEL_2, PTS_NT_GAME+3, PTS_SLAM-1,  FALSE, STOPPED_OPPBID)) // NCR-181 changed from STOPPED_DONTCARE))
 			return ValidateBid(m_nBid);
 		
 		// jump to 4 in a self-supporting major 
@@ -277,6 +371,9 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 		// or one with 7+ cards and 3 honors
 		if (RebidSuit(SUIT_MAJOR, REBID_AT_4, PTS_GAME, PTS_SLAM-1, LENGTH_6, SS_STRONG, HONORS_3))
+			return ValidateBid(m_nBid);
+		// NCR-173 or one with 7+ cards and 2 honors
+		if (RebidSuit(SUIT_MAJOR, REBID_AT_4, PTS_GAME, PTS_SLAM-1, LENGTH_7, SS_STRONG, HONORS_2))
 			return ValidateBid(m_nBid);
 
 		// raise partner's minor to game with 29 pts & 4 trumps
@@ -293,8 +390,9 @@ int CBidEngine::MakeRebidAsResponder()
 		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4, PTS_GAME+1, PTS_SLAM-1, SUPLEN_2))
 			return ValidateBid(m_nBid);
 
-		// bid 3NT with 28+ HCPs without all suits stopped
-		if (BidNoTrump(LEVEL_3, PTS_NT_GAME+2, PTS_SLAM-1, FALSE, STOPPED_DONTCARE))
+		// bid 3NT with 28+ HCPs without all suits stopped 
+		if(!m_pHand->HasWorthlessDoubleton(nPartnersSuit)) // NCR add worthless doubleton test! NCR-304 except pards
+		  if (BidNoTrump(LEVEL_3, PTS_NT_GAME+2, PTS_SLAM-1, FALSE, STOPPED_OPPBID)) // NCR-578 changed from STOPPED_DONTCARE))
 			return ValidateBid(m_nBid);
 		// or 2NT with 25-27 HCPs without all suits stopped
 		if (BidNoTrump(LEVEL_2, PTS_NT_GAME-1, PTS_NT_GAME+1, FALSE, STOPPED_DONTCARE))
@@ -303,9 +401,17 @@ int CBidEngine::MakeRebidAsResponder()
 		// if none of the above apply, pass with < 29 pts
 		if (m_fMinTPPoints < PTS_MINOR_GAME)
 		{
+			// NCR-371 if nothing else is available, rebid a decent 5-card suit
+			double nNeededPts = (nPartnersBidLevel < 3) ? PTS_GAME-6 : PTS_GAME-3;  
+			// NCR-371 Rebid level depends on points and current level
+			RebidLevel rebidLvl = ((m_fMinTPPoints < PTS_GAME-3) || (nPartnersBidLevel >= 3))
+				                     ? REBID_CHEAPEST : JUMP_REBID_1; // NCR-371
+			if (RebidSuit(SUIT_ANY, rebidLvl, nNeededPts, 0, LENGTH_5, SS_OPENABLE))
+				return ValidateBid(m_nBid);
+
 			m_nBid = BID_PASS;
 			if (nPartnersBid < GetGameBid(nPartnersSuit))
-				status << "B4C28! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
+				status << "B4C28! With a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
 						  " pts in the partnership but no clear direction in the bidding, pass.\n";
 			else
 				status << "B4C28a! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
@@ -448,8 +554,10 @@ int CBidEngine::MakeRebidAsResponder()
 	//
 	if ( (nPartnersSuit == nPartnersPrevSuit) && 
 						(nPartnersSuit != nPreviousSuit) &&
-						(nPartnersSuit != NOTRUMP) &&
-						((nPartnersBid - nPreviousBid) >5) ) 
+						(nPartnersSuit != NOTRUMP)
+//		  && ((nPreviousBid != BID_PASS) && (nPartnersBid - nPreviousBid) > 5) ) //NCR added pass test
+		  && ((GetBidType(nPartnersBid) & BT_Jump) != 0) ) // NCR-140 Was pard's bid a jump?
+//						((nPartnersBid - nPreviousBid) >5) ) 
 	{
 		//
 		m_fPartnersMin = MAX(m_fPartnersMin, 17);
@@ -572,12 +680,17 @@ int CBidEngine::MakeRebidAsResponder()
 		if (RaisePartnersSuit(SUIT_MINOR, RAISE_TO_4, PTS_MINOR_GAME-4, PTS_MINOR_GAME, SUPLEN_2))
 			return ValidateBid(m_nBid);
 
+		// NCR-328 raise partner's minor to game at the 5-level with 29-31 pts and 4+ card support
+		if (RaisePartnersSuit(SUIT_MINOR,RAISE_TO_5, PTS_MINOR_GAME, PTS_MINOR_GAME+2, SUPLEN_4))
+			return ValidateBid(m_nBid);
+
+
 		// if none of the above apply, pass with < 26 pts
 		if (m_fMinTPPoints < PTS_GAME)
 		{
 			m_nBid = BID_PASS;
 			if (nPartnersBid < GetGameBid(nPartnersSuit))
-				status << "B4D18! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
+				status << "B4D18! With a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
 						  " pts in the partnership but no clear direction in the bidding, pass.\n";
 			else
 				status << "B4D18a! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
@@ -841,7 +954,7 @@ int CBidEngine::MakeRebidAsResponder()
 		//
 		return ValidateBid(m_nBid);
 */
-	}
+	} // end pard rebid original suit
 
 
 
@@ -855,8 +968,8 @@ int CBidEngine::MakeRebidAsResponder()
 	// e.g., 1H -> 1S -> 1NT, showing 12-16 points
 	// (mostly HCPs)
 	//
-	if ((nPartnersBid == BID_1NT) && (nPartnersPrevBid != BID_PASS)) {
-
+	if ((nPartnersBid == BID_1NT) && (nPartnersPrevBid != BID_PASS)) 
+	{
 		//
 		m_fPartnersMin = MAX(m_fPartnersMin, 12);
 		m_fPartnersMax = MAX(m_fPartnersMax, 16);
@@ -942,6 +1055,11 @@ int CBidEngine::MakeRebidAsResponder()
 		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_3,PTS_GAME-1,PTS_GAME+3,SUPLEN_3))
 			return ValidateBid(m_nBid);
 
+		// NCR-112 Raise to game if ...
+		// Note: PTS_GAME is reduced by aggression setting !!!
+		if (RaisePartnersSuit(SUIT_MAJOR, RAISE_TO_4, PTS_GAME-1, PTS_GAME+4, SUPLEN_4))
+			return ValidateBid(m_nBid);
+
 		// or jump to 3 in partner's minor suit with 4 trumps and 25 pts
 		if (RaisePartnersSuit(SUIT_MINOR,RAISE_TO_3,PTS_MINOR_GAME-4,PTS_MINOR_GAME+1,SUPLEN_4))
 			return ValidateBid(m_nBid);
@@ -951,7 +1069,8 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 
 		// else jump to 3 in a new suit (forcing to game) and 25+ pts
-		if (BidNextBestSuit(SUIT_ANY,JUMP_SHIFT_1,PTS_GAME-1,PTS_GAME+4))
+//NCR		if (BidNextBestSuit(SUIT_ANY,JUMP_SHIFT_1,PTS_GAME-1,PTS_GAME+4))
+		if (BidNextBestSuit(SUIT_ANY,JUMP_SHIFT_1,PTS_GAME-1,PTS_GAME+4, LENGTH_4))  // NCR require 4 cards???
 			return ValidateBid(m_nBid);
 
 		// if we still haven't found a bid yet, 
@@ -1049,8 +1168,12 @@ int CBidEngine::MakeRebidAsResponder()
 	//
 	if (nPartnersBid == BID_2NT) 
 	{
+		// NCR-560 Save points for suit so can restore after NT testing
+		// Should we test for intended suit or ??? 
+		double svMinTPPoints = m_fMinTPPoints;
+		double svMaxTPPoints = m_fMaxTPPoints;
 
-		// check point count
+		// check point count 
 		CalcNoTrumpPoints();
 
 
@@ -1059,7 +1182,9 @@ int CBidEngine::MakeRebidAsResponder()
 		//
 		// with < 23 total pts, pass
 		//
-		if (m_fMinTPPoints < PTS_GAME-3) 
+		if ((m_fMinTPPoints < PTS_GAME-3) && (numPrefSuitCards < 5)  // NCR-560 more criteria 
+			// to leave pard in NT
+			 && (m_pHand->m_numVoids == 0) && (m_pHand->m_numSingletons < 1) )
 		{
 			m_nBid = BID_PASS;
 			status << "B4F10! with " & fCardPts & "/" & fPts & 
@@ -1069,18 +1194,26 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 		}
 
+		// NCR-560 restore saved values
+		if(ISSUIT(m_nIntendedSuit)) {
+			m_fMinTPPoints = svMinTPPoints;
+			m_fMaxTPPoints = svMaxTPPoints;
+		}
+
 
 		// with 23-24 total pts and a long suit, rebid it
 		//
-		if (RebidSuit(SUIT_ANY,REBID_CHEAPEST,PTS_GAME-3,PTS_GAME-2,LENGTH_6))
+		// NCR-515 Why limit to 24 pts for good 6 card suit ??? 
+		// Changed following max to 25.5 pts (PTS_GAME-0.5 vs -2)
+		if (RebidSuit(SUIT_ANY,REBID_CHEAPEST,PTS_GAME-3,PTS_GAME-0.5,LENGTH_6)) // NCR-515
 			return ValidateBid(m_nBid);
 		
 		// or with 23-24 total pts, support partner's prev major suit 
 		// at the 3-level with 3 trumps
-		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_3,PTS_GAME-3,PTS_GAME-2,SUPLEN_3))
+		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_3,PTS_GAME-3,PTS_GAME-0.5,SUPLEN_3)) // NCR-515
 			return ValidateBid(m_nBid);
 		// or raise a minor with the same number of pts but with 4 cards
-		if (RaisePartnersSuit(SUIT_MINOR,RAISE_TO_3,PTS_GAME-3,PTS_GAME-2,SUPLEN_4))
+		if (RaisePartnersSuit(SUIT_MINOR,RAISE_TO_3,PTS_GAME-3,PTS_GAME-1,SUPLEN_4)) // NCR-515
 			return ValidateBid(m_nBid);
 
 		// otherwise pass with < 26 pts and no good suit
@@ -1121,9 +1254,13 @@ int CBidEngine::MakeRebidAsResponder()
 		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_TO_4,PTS_GAME-1,PTS_SLAM-1,SUPLEN_3))
 			return ValidateBid(m_nBid);
 
+		// NCR-552 or with 25-32 pts, raise opener's minor  with 4+ trumps
+		if (RaisePartnersSuit(SUIT_PREV_MINOR, RAISE_TO_4, PTS_MINOR_GAME-1, PTS_SLAM-1, SUPLEN_4))
+			return ValidateBid(m_nBid);
+
 		// alternatively with 25-32 pts, bid any another suit
-		// (if partner bid below game level)
-		if (nPartnersBid < GetGameBid(nPartnersSuit))
+		// (if partner bid below game level)              // NCR-552 Only if we have no agreed suit
+		if ((nPartnersBid < GetGameBid(nPartnersSuit)) && (m_nIntendedSuit == NOSUIT))
 			if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST,PTS_GAME-1,PTS_SLAM-1))
 				return ValidateBid(m_nBid);
 
@@ -1132,7 +1269,7 @@ int CBidEngine::MakeRebidAsResponder()
 		{
 			m_nBid = BID_PASS;
 			if (nPartnersBid < GetGameBid(nPartnersSuit))
-				status << "B4D18! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
+				status << "B4D18! With a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
 						  " pts in the partnership but no clear direction in the bidding, pass.\n";
 			else
 				status << "B4D18a! with a total of " & m_fMinTPPoints & "-" & m_fMaxTPPoints & 
@@ -1141,10 +1278,16 @@ int CBidEngine::MakeRebidAsResponder()
 		}
 
 
+		// NCR-324 Try Gerber if there is no agreed suit and NT is possible
+		if ((m_nAgreedSuit == NONE) && (m_fMinTPPoints >= PTS_SLAM)) {
+			if(InvokeGerber(NOTRUMP))
+				return ValidateBid(m_nBid); 
+		}
+
 		//
 		// try bidding NT
 		//
-		if (BidNoTrumpAsAppropriate(TRUE,STOPPED_DONTCARE))
+		if (BidNoTrumpAsAppropriate(TRUE, STOPPED_UNBID)) // NCR-324  STOPPED_DONTCARE))
 			return ValidateBid(m_nBid);
 /*
 		// explore slam with an invitational bid
@@ -1248,7 +1391,9 @@ int CBidEngine::MakeRebidAsResponder()
 		//
 		// with 30-32 points, look into a possible slam
 		//
-		if ((m_fMinTPCPoints >= PTS_SLAM-3) && (PTS_SLAM <= PTS_SLAM-1) &&
+		double getValue = PTS_SLAM; // NCR get value for debug
+		// NCR-329           Changed PTS_SLAM to m_fMinTPCPoints (original never true???)
+		if ((m_fMinTPCPoints >= PTS_SLAM-3) &&  (m_fMinTPCPoints <= PTS_SLAM-1) &&
 								(nPartnersBid <= BID_4NT)) 
 		{
 			if ((nPartnersBid == BID_4NT) && (m_bInvitedToSlam))
@@ -1343,7 +1488,9 @@ int CBidEngine::MakeRebidAsResponder()
 		// e.g., 1C -> 2S -> 3S, or
 		//       1D -> 3C -> 4C
 		if ( ((nPreviousBid - nPartnersPrevBid) > 5) &&
-			 (nPreviousSuit != nPartnersPrevSuit) )
+			 (nPreviousSuit != nPartnersPrevSuit) 
+			     // NCR-387 changed test to be: is Jump vs NOT overcall  
+			 && ((GetBidType(nPreviousBid) & BT_Jump) != 0)) // NCR is Jump (vs Not overcall)
 		{
 			int nSuit;
 			// see whether we prefer our own bid suit or partner's suit
@@ -1356,11 +1503,17 @@ int CBidEngine::MakeRebidAsResponder()
 			//              have < 6 cards in our own suit
 //			if ( (ISMAJOR(nPartnersPrevSuit) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT)) ||
 //				 (ISMINOR(nPartnersPrevSuit) && (nSuitStrength[nPartnersPrevSuit] >= SS_STRONG_SUPPORT)) )
-			if ( (m_nIntendedSuit == nPartnersPrevSuit) || (m_nAgreedSuit == nPartnersPrevSuit) ||
-				 (ISMAJOR(nPartnersPrevSuit) && ISMINOR(nPreviousSuit) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT)) ||
-				 ((nSuitStrength[nPartnersPrevSuit] > nSuitStrength[nPreviousSuit]) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT)) ||
-				 ((numCardsInSuit[nPartnersPrevSuit] >= 4) && (nSuitStrength[nPartnersPrevSuit] >= SS_STRONG_SUPPORT) && (numCardsInSuit[nPartnersPrevSuit] < 6)) ||
-				 ((numCardsInSuit[nPartnersPrevSuit] >= 5) && (nSuitStrength[nPartnersPrevSuit] >= SS_GOOD_SUPPORT) && (numCardsInSuit[nPartnersPrevSuit] < 6)) )
+			// NCR Must be valid suit!!!
+			if (ISSUIT(nPartnersPrevSuit) && (
+				(m_nIntendedSuit == nPartnersPrevSuit) || (m_nAgreedSuit == nPartnersPrevSuit)
+				 || (ISMAJOR(nPartnersPrevSuit) && ISMINOR(nPreviousSuit) 
+				      && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT))
+				 || ((nSuitStrength[nPartnersPrevSuit] > nSuitStrength[nPreviousSuit]) 
+				      && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT))
+				 || ((numCardsInSuit[nPartnersPrevSuit] >= 4) && (nSuitStrength[nPartnersPrevSuit] >= SS_STRONG_SUPPORT) 
+				      && (numCardsInSuit[nPartnersPrevSuit] < 6))
+				 || ((numCardsInSuit[nPartnersPrevSuit] >= 5) && (nSuitStrength[nPartnersPrevSuit] >= SS_GOOD_SUPPORT) 
+				      && (numCardsInSuit[nPartnersPrevSuit] < 6)) ))
 			{
 				// return to partner's previous suit w/ good support
 				nSuit = nPartnersPrevSuit;
@@ -1393,6 +1546,10 @@ int CBidEngine::MakeRebidAsResponder()
 			{
 				if (nPartnersBid < GetGameBid(nSuit))
 				{
+					// NCR-345 Bid NT if we can              // NCR-453 Require balanced???
+					if (BidNoTrump(LEVEL_3, PTS_NT_GAME, PTS_SLAM-1, TRUE, STOPPED_UNBID))
+						return ValidateBid(m_nBid);
+
 					m_nBid = GetGameBid(nSuit);
 					status << "B4H04! Now with " &
 							  m_fMinTPPoints & "-" & m_fMaxTPPoints &
@@ -1410,11 +1567,13 @@ int CBidEngine::MakeRebidAsResponder()
 			}
 			else
 			{
+				// NCR Problem here nSuit was = -99 ???
 				InvokeBlackwood(nSuit);
 			}
 			return ValidateBid(m_nBid);
 		}
-		else
+		// NCR-483 Use our suit only if we don't have an intended suit
+		else if (m_nIntendedSuit != nPartnersPrevSuit)
 		{
 			// else we didn't jump shift last time
 			m_nAgreedSuit = nPreviousSuit;
@@ -1442,7 +1601,7 @@ int CBidEngine::MakeRebidAsResponder()
 		{
 			// 1 -> 2 raise: 12-16 pts
 			m_fPartnersMin = MAX(m_fPartnersMin, 12);
-			m_fPartnersMax = MAX(m_fPartnersMax, 16);
+			m_fPartnersMax = 16; // NCR-347 this is the max !! MAX(m_fPartnersMax, 16); 
 			status << "2B4H11! Partner made a single raise of our " & szPVSS & 
 					  " suit, showing " & m_fPartnersMin & "-" & m_fPartnersMax & 
 					  " points with 3+ trump cards.\n";
@@ -1459,13 +1618,53 @@ int CBidEngine::MakeRebidAsResponder()
 		else 
 		{
 			// 2 -> 3 raise: 12-18 pts
-			m_fPartnersMin = MAX(m_fPartnersMin, 12);
+			// 3 -> 4 raise: 15-18 pts  NCR-486
+			// NCR-489 Problem here if partner openned with a Weak2 and then responded
+			int nPardsMin = (nPartnersBidLevel < 4) ? 12 : 15;  // NCR-486 
+			m_fPartnersMin = MAX(m_fPartnersMin, nPardsMin);  // NCR-486
 			m_fPartnersMax = MAX(m_fPartnersMax, 18);
 			status << "2B4H14! Partner made a single raise of our "& szPVB & 
 					  " bid to " & szPB & ", showing " &
 					  m_fPartnersMin & " -" & m_fPartnersMax &
 					  " points and 3+ trump cards.\n";
 		}
+
+		// NCR-486 Problem here with setting points: Depends on which suit and which player
+		// Define a struct to hold values for as dummy and as declarer
+		struct TotalPoints {
+			double fAdjPts;
+		public:
+			double m_fMinTPPoints;
+			double m_fMaxTPPoints;
+			int    m_nTheSuit;
+			
+			TotalPoints(double pts, int suit) : fAdjPts(pts){
+				m_nTheSuit = suit;  // save the suit being used
+			};
+			void setMin(const double min) {
+				m_fMinTPPoints = min + fAdjPts;
+			}
+			void setMax(const double max) {
+				m_fMaxTPPoints = max + fAdjPts;
+			}
+		};  // end struct	
+
+		double dmyAdjPts = (ISSUIT(nPartnersPrevSuit) || (nPartnersPrevSuit == NOTRUMP))
+			             ? m_pHand->RevalueHand(REVALUE_DUMMY, nPartnersPrevSuit, TRUE) 
+					     : fAdjPts; 
+		TotalPoints AsDummy(dmyAdjPts, nPartnersPrevSuit);
+		AsDummy.setMin(m_fPartnersMin);
+		AsDummy.setMax(m_fPartnersMax);
+		TotalPoints AsDeclarer(m_pHand->RevalueHand(REVALUE_DECLARER, nPreviousSuit, TRUE), nPreviousSuit);
+		AsDeclarer.setMin(m_fPartnersMin);
+		AsDeclarer.setMax(m_fPartnersMax);
+
+		// NCR-347 tally points after changing Partner's value above
+//		m_fMinTPPoints = fAdjPts + m_fPartnersMin;
+//		m_fMaxTPPoints = fAdjPts + m_fPartnersMax;
+		m_fMinTPCPoints = fCardPts + m_fPartnersMin;
+		m_fMaxTPCPoints = fCardPts + m_fPartnersMax;
+
 
 		//
 		//---------------------------------------------------------
@@ -1497,15 +1696,39 @@ int CBidEngine::MakeRebidAsResponder()
 						  " points, a game is unlikely, so pass.\n";								   
 				return ValidateBid(m_nBid);
 			}
-		} 
+
+			// NCR-483 Was our last bid because of "too strong for limit raise"?  See I08
+			if((m_nIntendedSuit == nPartnersPrevSuit) && (nSuitStrength[nPartnersPrevSuit] >= SS_GOOD_SUPPORT) 
+				                //  NCR-668 changed 4 to 3
+				&& (numCardsInSuit[nPartnersPrevSuit] > 3) )
+			{
+				m_nAgreedSuit = nPartnersPrevSuit;  // We liked partner's suit
+				m_nBid = GetCheapestShiftBid(nPartnersPrevSuit);
+				status << "2B4H17! Though partner raised our " & szPVSS & 
+						  " suit, we really want to play in partner's " &
+						  szPPSS & " suit.\n";
+				return ValidateBid(m_nBid);
+			} // end NCR-483
+
+			if(AsDeclarer.m_fMinTPPoints < PTS_GAME)  // NCR-257 invite if we think minPts < game
+			{
+			// NCR-77 If partner has raised our suit to the 2 level, bid 3 as an invitation
+			m_nBid = MAKEBID(nPreviousSuit,3);
+			status << "B4H19! And with " & fCardPts & "/" & fPts & "/" & fAdjPts &
+					  " pts in hand, for a total in the partnership of approx. " &
+					  m_fMinTPPoints & "-" & m_fMaxTPPoints &
+					  " points, invite game by bidding " & BTS(m_nBid) & ".\n";  
+			return ValidateBid(m_nBid);
+			} // NCR-257
+		}  // end pard bid at 2 level 
 		else if (nPartnersBidLevel == 3)
-		{
+		{ 
 			if (nPartnersSuit == nPartnersPrevSuit)
 			{
 				// if partner made an invitational game raise (1->2->3 of a suit)
 				// indicating 16 points, 
 				// bid game with 26 min total pts, or pass otherwise
-				if ((ISMAJOR(nPreviousSuit)) && (m_fMinTPPoints >= PTS_GAME)) 
+				if ((ISMAJOR(nPreviousSuit)) && (AsDeclarer.m_fMinTPPoints >= PTS_GAME)) 
 				{
 					m_nBid = MAKEBID(nPreviousSuit,4);
 					status << "B4H20! And with " & fCardPts & "/" & fPts & "/" & fAdjPts &
@@ -1524,30 +1747,67 @@ int CBidEngine::MakeRebidAsResponder()
 					return ValidateBid(m_nBid);
 				}
 
-			} 
+			}
+			// NCR-583 also test if there is an Intended 	
+			else if ((m_nIntendedSuit == nPartnersPrevSuit) // NCR-687 allow minor ??? && ISMAJOR(nPartnersPrevSuit)
+				   && (AsDummy.m_fMinTPPoints >= PTS_GAME))  // NCR-655 changed to AsDummy
+			{
+					m_nBid = MAKEBID(nPartnersPrevSuit,4);
+					status << "B4H25! And with " & fCardPts & "/" & fPts & "/" & fAdjPts &
+							  " pts in hand, for a total in the partnership of approx. " &
+							  m_fMinTPPoints & "-" & m_fMaxTPPoints &
+							  " points, try for a game by bidding " & BTS(m_nBid) & ".\n";  
+					return ValidateBid(m_nBid);
+			} // end NCR-583
 			else 
 			{
-
 				// else partner raised our 2-bid to 3; pass with < 10 pts
 				// we require a higher minimum here 'cuz we're at a higher
 				// level (3-level instead of 2)
-				if (m_fMinTPPoints < PTS_GAME-3) 
+				if (AsDummy.m_fMinTPPoints < PTS_GAME-3) 
 				{
-					m_nBid = BID_PASS;
-					status << "B4H30! With only " & fCardPts & "/" & fPts & "/" & fAdjPts &
+					// NCR-196 bid pard's previous suit if higher ranking and we have some
+					if((nPartnersSuit < nPartnersPrevSuit) && (numCardsInSuit[nPartnersPrevSuit] >= 4))
+					{
+						m_nBid = MAKEBID(nPartnersPrevSuit,3);
+						status << "B4H29! With only " & fCardPts & "/" & fPts & "/" & fAdjPts &
 							  " pts in hand, for a total in the partnership of " &
 							  m_fMinTPPoints & "-" & m_fMaxTPPoints &
-							  " points, a game is unlikely, so pass.\n"; 
+							  " points, a game is unlikely, so bid " & BTS(m_nBid) & ".\n";
+					}
+					else
+					{
+						m_nBid = BID_PASS;
+						status << "B4H30! With only " & fCardPts & "/" & fPts & "/" & fAdjPts &
+							  " pts in hand, for a total in the partnership of " &
+							  m_fMinTPPoints & "-" & m_fMaxTPPoints &
+							  " points, a game is unlikely, so pass.\n";
+					}
 					return ValidateBid(m_nBid);
 				}
 			}
-		}
+		}  // end pard bid at 3 level
 		else
 		{
+			// NCR-486 Put pard in Game if we earlier didn't use limit bid because 
+			// out hand was "too strong"
+			if(!IsGameBid(nPartnersBid) && ISSUIT(m_nIntendedSuit) 
+				&& (m_nIntendedSuit == nPartnersPrevSuit)
+				&& (nSuitStrength[nPartnersPrevSuit] >= SS_GOOD_SUPPORT) 
+				&& (numCardsInSuit[nPartnersPrevSuit] > 4)) 
+			{
+				m_nAgreedSuit = nPartnersPrevSuit;  // We liked partner's suit
+				m_nBid = GetCheapestShiftBid(nPartnersPrevSuit);
+				status << "2B4H31! Though partner raised our " & szPVSS & 
+						  " suit, we really want to play in partner's " &
+						  szPPSS & " suit.\n";
+				return ValidateBid(m_nBid);
+			} // end NCR-486
+
 			// else partner bid game or higher after our 
 			// invitational double raise
 			// continue on to slam with 33+ pts, or pass otherwise
-			if (m_fMinTPPoints >= PTS_SLAM) 
+			if (AsDeclarer.m_fMinTPPoints >= PTS_SLAM) 
 			{
 				InvokeBlackwood(nPreviousSuit);
 				status << "B4H32! With a total of " &
@@ -1555,7 +1815,7 @@ int CBidEngine::MakeRebidAsResponder()
 						  " points in the partnership and a good trump suit, explore slam possiblities.\n"; 
 				return ValidateBid(m_nBid);
 			}
-			else
+			else if(Max(AsDummy.m_fMinTPPoints, AsDeclarer.m_fMinTPPoints) < PT_COUNT(PTS_MINOR_GAME)) // NCR pass only if not enough pts
 			{
 				m_nBid = BID_PASS;
 				status << "B4H33! With a total of " &
@@ -1565,6 +1825,20 @@ int CBidEngine::MakeRebidAsResponder()
 						  "bid and pass.\n"; 
 				return ValidateBid(m_nBid);
 			}
+
+			// NCR-544 If at 4 level, see if we like pard's previous suit better
+			// This case is handled below if only ....
+			if((AsDummy.m_fMinTPPoints >= PT_COUNT(PTS_GAME)) 
+				&& ((nPartnersSuit < nPartnersPrevSuit) && (numCardsInSuit[nPartnersPrevSuit] >= 4)) )
+			{
+				m_nBid = MAKEBID(nPartnersPrevSuit, 4);
+				status << "B4H34! With " & fCardPts & "/" & fPts & "/" & dmyAdjPts &
+					  " pts in hand, for a total in the partnership of " &
+					  AsDummy.m_fMinTPPoints & "-" & AsDummy.m_fMaxTPPoints &
+					  " points bid " & BTS(m_nBid) & ".\n";
+
+				return ValidateBid(m_nBid);
+			} // end NCR-544
 		}
 
 
@@ -1591,7 +1865,7 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 
 		// 27-32 pts: bid game in a 4-card major
-		if (RebidSuit(SUIT_MAJOR,REBID_AT_4,PTS_GAME+1,PTS_SLAM-1,LENGTH_4,SS_OPENABLE))
+		if (RebidSuit(SUIT_MAJOR,REBID_AT_4,PTS_GAME+1,PTS_SLAM-0.5,LENGTH_4,SS_OPENABLE)) // NCR 306 .5 vs 1
 			return ValidateBid(m_nBid);
 
 		// 23-25 pts: bid 3 in a 5-card minor
@@ -1612,7 +1886,7 @@ int CBidEngine::MakeRebidAsResponder()
 
 		// 23-25 HCPs: bid 2NT 
 		if (nPartnersBidLevel == 2)
-			if (BidNoTrump(LEVEL_2,PTS_NT_GAME-3,PTS_GAME-1,FALSE,STOPPED_DONTCARE))
+			if (BidNoTrump(LEVEL_2,PTS_NT_GAME-3,PTS_GAME-1,FALSE, STOPPED_UNBID)) // NCR-77 STOPPED_DONTCARE))
 				return ValidateBid(m_nBid);
 
 		// 26-32 HCPs: bid 3NT with all suits stopped
@@ -1624,16 +1898,19 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 
 		// 28-32 HCPs: bid 3NT without all stoppers
-		if (BidNoTrump(LEVEL_3,PTS_NT_GAME+2,PTS_SLAM-1,FALSE,STOPPED_DONTCARE))
+		if(!m_pHand->HasWorthlessDoubleton(nPartnersSuit))  // NCR-306 Don't bid 3NT with worthless dblton
+		  if (BidNoTrump(LEVEL_3,PTS_NT_GAME+2,PTS_SLAM-1,FALSE,STOPPED_DONTCARE))
 			return ValidateBid(m_nBid);
 
 		// else pass
 		if (m_fMinTPPoints < PTS_SLAM) 
 		{
+			double xxx = PTS_SLAM; // NCR DEBUG
 			m_nBid = BID_PASS;
 			status << "B4H35! We have a total of approx. " & 
 					  m_fMinTPPoints & "-" & m_fMaxTPPoints &
-					  " in the partnership, but we do not have a rebiddable suit, nor do we have enough stoppers for a NT contract, so we have to sign off on partner's " & szPB & " bid.\n";
+					  " in the partnership, but we do not have a rebiddable suit, nor do we have enough "
+					  & "stoppers for a NT contract, so we have to sign off on partner's " & szPB & " bid.\n";
 			return ValidateBid(m_nBid);
 		}
 
@@ -1663,7 +1940,7 @@ int CBidEngine::MakeRebidAsResponder()
 //		if (BidNextBestSuit(SUIT_ANY))
 			return ValidateBid(m_nBid);
 
-	} // end if single raise section
+	} // end of single raise of our suit section
 
 
 
@@ -1685,6 +1962,17 @@ int CBidEngine::MakeRebidAsResponder()
 			(nPartnersSuit != NOTRUMP) && 
 				(nPartnersBidLevel == nPreviousBidLevel+2)) 
 	{
+		// NCR-692 Check if pard bid game and check for losers before going on
+		if(IsGameBid(nPartnersBid) && (m_pHand->GetNumAces() < 3) && (m_pHand->GetNumVoids() == 0)
+			&& (m_pHand->GetNumSingletons() == 0))
+		{
+			m_nBid = BID_PASS;
+			status << "B4L10! Partner bid game. With only " & m_pHand->GetNumAces()
+					   & " Aces and no voids or singletons, sign off at partner's bid of " 
+					   & szPB & ".\n";
+			return ValidateBid(m_nBid);
+		} // end NCR-692
+
 		// value partner's holdings
 		if (ISMAJOR(nPreviousSuit)) 
 		{
@@ -1705,14 +1993,16 @@ int CBidEngine::MakeRebidAsResponder()
 		// see if we had shifted last time while intending to support partner
 		// or if partner's prev suit is preferable to the one we shifted to 
 		//
-		if ( (m_nIntendedSuit == nPartnersPrevSuit) ||
-			 (ISMAJOR(nPartnersPrevSuit) && ISMINOR(nPreviousSuit) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT)) ||
-			 ((nSuitStrength[nPartnersPrevSuit] > nSuitStrength[nPreviousSuit]) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT) && ISMAJOR(nPartnersPrevSuit)) )
+		if ((ISSUIT(m_nIntendedSuit) || (m_nIntendedSuit == NOTRUMP))  // NCR-486 make sure it's a valid suit
+			&& ((m_nIntendedSuit == nPartnersPrevSuit)
+			    || (ISMAJOR(nPartnersPrevSuit) && ISMINOR(nPreviousSuit) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT))
+			    || ((nSuitStrength[nPartnersPrevSuit] > nSuitStrength[nPreviousSuit]) && (nSuitStrength[nPartnersPrevSuit] >= SS_MODERATE_SUPPORT) 
+			        && ISMAJOR(nPartnersPrevSuit)) ) )
 		{
 			// revalue hand for partner's prev suit
 			m_nAgreedSuit = nPartnersPrevSuit;
-			// this should already have been done
-//			fAdjPts = m_pHand->RevalueHand(REVALUE_DUMMY, nPartnersPrevSuit, TRUE);
+			// this should already have been done  NCR-486 Uncommented following line
+			fAdjPts = m_pHand->RevalueHand(REVALUE_DUMMY, nPartnersPrevSuit, TRUE);
 			status << "B4M02! Though partner raised our " & szPVSS & 
 					  " suit after our shift response, we really want to play in partner's " &
 					  szPPSS & " suit.\n";
@@ -1792,8 +2082,10 @@ int CBidEngine::MakeRebidAsResponder()
 		//
 		if (m_fMinTPPoints < PTS_SLAM) 
 		{
+			// NCR-584 Suit strength requirement depends on total team points
+			int nSuitStrength = (m_fMinTPPoints > PTS_GAME) ? SS_MODERATE_SUPPORT : SS_MARGINAL_OPENER; // NCR-584
 			// bid game with 26-32 TPs and a major
-			if (RebidSuit(MakeDirectSuit(m_nAgreedSuit),REBID_AT_4,PTS_GAME,PTS_SLAM-1,LENGTH_ANY,SS_MARGINAL_OPENER))
+			if (RebidSuit(MakeDirectSuit(m_nAgreedSuit),REBID_AT_4,PTS_GAME,PTS_SLAM-1,LENGTH_ANY, nSuitStrength)) // NCR-584
 				return ValidateBid(m_nBid);
 			// bid game with 29-32 TPs and a minor
 			if (RebidSuit(MakeDirectSuit(m_nAgreedSuit),REBID_AT_5,PTS_MINOR_GAME,PTS_SLAM-1,LENGTH_ANY,SS_MARGINAL_OPENER))
@@ -1820,8 +2112,29 @@ int CBidEngine::MakeRebidAsResponder()
 		//
 		// else with 33+ pts, it's slam time -- bid Blackwood
 		//
-		InvokeBlackwood(m_nAgreedSuit);
-		return ValidateBid(m_nBid);
+		// NCR-543 Test if we're too high for Blackwood
+		if(nLastBid < BID_4NT) {
+			InvokeBlackwood(m_nAgreedSuit);
+			return ValidateBid(m_nBid);
+		}
+		else
+		{
+			// Bid slam
+		   if ((m_fMinTPPoints >= PTS_SMALL_SLAM) && (nPartnersBidLevel <= 6))
+		   {
+				m_nBid = MAKEBID(m_nAgreedSuit, 6);
+				status << "B4M24! With " & m_fMinTPPoints & "-" & m_fMaxTPPoints
+					    &" total partnership points, we can bid a slam at " & BTS(m_nBid) & ".\n";
+				return ValidateBid(m_nBid);
+		   }
+		   else
+		   {
+				m_nBid = MAKEBID(m_nAgreedSuit, 5);
+				status << "B4M25! With " & m_fMinTPPoints & "-" & m_fMaxTPPoints
+					    &" total partnership points, we can bid " & BTS(m_nBid) & ".\n";
+				return ValidateBid(m_nBid);
+		   }
+		} // end NCR-543 too high for Blackwood
 
 	} // end of double raise section
 
@@ -1840,7 +2153,7 @@ int CBidEngine::MakeRebidAsResponder()
 	//
 	//
 	if ((nPartnersSuit == nPreviousSuit) && 
-				(nPartnersBidLevel == nPreviousBidLevel+3)) 
+				(nPartnersBidLevel == nPreviousBidLevel+3))  // NCR default value (NONE) != 0 here ???
 	{
 
 		//
@@ -2003,16 +2316,17 @@ int CBidEngine::MakeRebidAsResponder()
 	// Rebidding after partner bid a new suit after our 
 	// raise of his suit
 	// (i.e., partner made a trial bid, showing a support suit)
+	// OR partner has 2 equal suits and is asking which we prefer  NCR-512
 	//
 	// e.g., 1H -> 2H -> 2S, showing 16-18 pts and < 7 playing tricks
 	//       1H -> 3H -> 4C would be a cue bid, unless we're
 	//                      not playin cue bids
 	//
-	//
-	if ((nPartnersSuit != nPartnersPrevSuit) && 
-				(nPartnersPrevSuit == nPreviousSuit) && 
-					(nPartnersSuit != NOTRUMP) && 
-						((nPartnersBid - nPreviousBid) < 5) ) 
+	//                                            NCR-644 Make sure valid suit
+	if ((nPartnersSuit != nPartnersPrevSuit) &&  ISSUIT(nPartnersPrevSuit)
+		&& (nPartnersPrevSuit == nPreviousSuit) && 
+			 (nPartnersSuit != NOTRUMP) && 
+				((nPartnersBid - nPreviousBid) < 5) ) 
 	{
 
 		//
@@ -2028,11 +2342,57 @@ int CBidEngine::MakeRebidAsResponder()
 				      " after our jump raise, showing " & 
 					  m_fPartnersMin & "-" & m_fPartnersMax & " points.\n";
 
-		// tally totals (keep the adjustments from the prev round)
+		// NCR-512 Get new adjustments for pards new suit and old suit
+		double fAdjPtsNew = m_pHand->RevalueHand(REVALUE_DUMMY, nPartnersSuit, TRUE); // NCR-512
+		double fAdjPtsOld = m_pHand->RevalueHand(REVALUE_DUMMY, nPartnersPrevSuit, TRUE); // NCR-512
+		// NCR-512 see if pard is asking for us to chose
+		if(nPartnersSuit < nPartnersPrevSuit)
+		{
+			bool usePrevSuit = fAdjPtsOld > fAdjPtsNew;
+			if(usePrevSuit) 
+			{
+				fAdjPts = fAdjPtsOld;  // Set for below
+			}else{
+				// Want to support new suit
+				fAdjPts = fAdjPtsNew;
+			}
+		} // NCR-512
+
+		// tally totals (keep the adjustments from the prev round) ???
 		m_fMinTPPoints = fAdjPts + m_fPartnersMin;
 		m_fMaxTPPoints = fAdjPts + m_fPartnersMax;
 		m_fMinTPCPoints = fCardPts + m_fPartnersMin;
 		m_fMaxTPCPoints = fCardPts + m_fPartnersMax;
+
+		// NCR-512 Check if pard could have 2 equal length suits and which one to bid
+		if((nPartnersSuit < nPartnersPrevSuit) && ISMAJOR(nPartnersSuit)
+			// If we have support for new suit: Either raise or leave him there
+			&& (nPartnersSuitSupport >= SS_GOOD_SUPPORT)) 
+		{
+			// raise w/ game pts
+			if (m_fMinTPPoints >= PTS_GAME) 
+			{
+				// raise partner's (new suit) to game
+				m_nBid = MAKEBID(nPartnersSuit, 4);
+				status << "B4O07! With strength in the " & szPSS & 
+						  " suit (holding " & szHP & ") and " & 
+						  m_fMinTPPoints & "-" & m_fMaxTPPoints & 
+						  " points in the partnership, raise partner to game at " & 
+						  BTS(m_nBid) & ".\n";
+				return ValidateBid(m_nBid);
+			} 
+			else 
+			{
+				// otherwise pass
+				m_nBid = BID_PASS;
+				status << "B4O08! With " & fCardPts & "/" & fPts & "/" & fAdjPts &
+						  " points in hand, for a total in partnership of " &
+						  m_fMinTPPoints & "-" & m_fMaxTPPoints &
+						  " points, sign off at partner's bid of " & szPB & ".\n";
+				return ValidateBid(m_nBid);
+			}
+
+		} // end NCR-512 chosing pard's new suit
 
 
 		//
@@ -2087,7 +2447,7 @@ int CBidEngine::MakeRebidAsResponder()
 						  " points in the partnership, sign off at " & BTS(m_nBid) & ".\n";
 				return ValidateBid(m_nBid);
 			}
-		}
+		} // end pard's prev suit is Major
 		
 		//
 		// else we've got a minor suit 
@@ -2165,7 +2525,7 @@ int CBidEngine::MakeRebidAsResponder()
 	//==========================================================
 	//
 	// Rebidding after partner bid a new suit (minimum rebid) 
-	// after our response of a new suit
+	// after our response of a new suit (or pass)
 	// (i.e., partner showed a third suit, possibly a reverse)
 	//
 	// e.g., 1H -> 1S -> 2C, or
@@ -2177,14 +2537,16 @@ int CBidEngine::MakeRebidAsResponder()
 			(nPartnersSuit != nPartnersPrevSuit) && 
 				(nPreviousSuit != nPartnersPrevSuit) && 
 					(nPartnersSuit != NOTRUMP) && 
-						(nPartnersPrevSuit != NOTRUMP) && 
+						(nPartnersPrevSuit != NOTRUMP) 
 //							(nPreviousSuit != NOTRUMP) && 
-								((nPartnersBid - nPreviousBid) < 5) ) 
+//								((nPartnersBid - nPreviousBid) < 5) ) 
+		&&	((GetBidType(nPartnersBid) & BT_Jump) == 0) )  // NCR-140  test NOT jump
 	{
 
 		//
 		// check previous action
-		if (nPartnersOpeningBidLevel == 2) 
+		                                    // NCR-197 check if bid was overcall, NOT 2 level open
+		if ((nPartnersOpeningBidLevel == 2) && ((GetBidType(nPartnersBid) & BT_Overcall) == 0)) 
 		{
 			// partner opened at the 2-level
 			if (nPartnersOpeningBid == BID_2C) 
@@ -2198,8 +2560,8 @@ int CBidEngine::MakeRebidAsResponder()
 			} 
 			else if (pCurrConvSet->IsConventionEnabled(tidStrongTwoBids)) 
 			{
-				m_fPartnersMin = 16;
-				m_fPartnersMax = 22;
+				m_fPartnersMin = pCurrConvSet->GetValue(tnStrong2OpeningPts);  // NCR-177  set higher than 16
+				m_fPartnersMax = 40 - fCardPts; // NCR-177 set higher than 22
 				status << "2B4P01! Partner bid another suit (third suit in partnership) at " & szPB &
 						  " after opening a strong " & szPPB & 
 						  ", indicating " & m_fPartnersMin & "-" & m_fPartnersMax &
@@ -2219,7 +2581,9 @@ int CBidEngine::MakeRebidAsResponder()
 		{
 			// partner previously opened at the 1-level
 			// see if he reversed
-			if ((pCurrConvSet->IsOptionEnabled(tbStructuredReverses)) &&
+			if ((pCurrConvSet->IsOptionEnabled(tbStructuredReverses) 
+				  // NCR-408 Not reverse if pard bid a minor and using 5 card major  See NCR-64
+				 && !(ISMINOR(nPartnersPrevSuit) && pCurrConvSet->IsConventionEnabled(tid5CardMajors)) ) &&
 							(nPartnersPrevSuit != NOTRUMP) && 
 							(nPartnersPrevSuit != NONE) && 
 							(nPartnersSuit > nPartnersPrevSuit) &&
@@ -2246,11 +2610,18 @@ int CBidEngine::MakeRebidAsResponder()
 			{
 				// partner did not reverse, and we didn't bid a neg double last time
 				m_fPartnersMin = 12;
-				m_fPartnersMax = 18;
+				m_fPartnersMax = 18;                        // NCR problem here - we passed last time???  
 				status << "2B4P04! Partner bid another suit (third suit in partnership) at " & szPB & 
 						  " after our " & 
-						  ((nPreviousBidLevel == 1)? "1/1" : (nPreviousBidLevel == 2)? "2/1" : "jump") &
-						  " response, showing " & m_fPartnersMin & "-" & m_fPartnersMax & " points.\n";
+						  ((nPreviousBidLevel == 1)? "1/1" 
+						                           : (nPreviousBidLevel == 2)? "2/1" 
+												                             : (nPreviousBid == BID_PASS) ? "Pass" : "jump")
+						  & " response, showing " & m_fPartnersMin & "-" & m_fPartnersMax & " points.\n";
+				// NCR-674 New suit at 3 level is forcing and requires more points
+				if(nCurrBidLevel >= 3) {
+					m_bRoundForceActive = TRUE; 
+					m_fPartnersMin = 15;        // Need more points at 3 level
+				}
 			}
 		}
 
@@ -2269,9 +2640,19 @@ int CBidEngine::MakeRebidAsResponder()
 		//---------------------------------------------------------
 		//
 		//
+		bool bChoosePrevSuit = false;
+		if((newSuit == nPartnersPrevSuit) 
+			&& ((m_fMinTPPoints >= 16)
+			    || (numCardsInSuit[nPartnersPrevSuit] > 5))  // NCR-143 Bid pard's previous suit if >= 6 cards
+				  // NCR-497 Bid pard's  prev suit if longer and stronger
+				|| ((numCardsInSuit[nPartnersPrevSuit] > numCardsInSuit[nPartnersSuit]) 
+				     && (nSuitStrength[nPartnersPrevSuit] > nSuitStrength[nPartnersSuit])) )
+		{ // NCR if bids: 1H|1S|2D| with a weak hand chose the better fit: H or D ???
+			bChoosePrevSuit = true;
+		}
 
 		// pass with < 18 total minimum pts
-		if (m_fMinTPPoints < 18) 
+		if ((m_fMinTPPoints < 18) && !bChoosePrevSuit)   // NCR added () 
 		{
 			m_nBid = BID_PASS;
 			status << "B4P10! With only " & fCardPts & "/" & fPts  &
@@ -2285,8 +2666,12 @@ int CBidEngine::MakeRebidAsResponder()
 		// second suit, pass, or rebid his first suit
 		if (m_fMinTPPoints <= 19) 
 		{
+			int currBidLevel = ((nRHOBidLevel > nPartnersBidLevel) ? nRHOBidLevel : nPartnersBidLevel); // NCR-352
+
 			// higher ranking suits ==> lower numbers
-			if (m_pHand->GetSuitRank(nPartnersSuit) < m_pHand->GetSuitRank(nPartnersPrevSuit)) 
+			if (!ISSUIT(nPartnersPrevSuit)   // NCR-635 make sure there was one 
+				|| (m_pHand->GetSuitRank(nPartnersSuit) < m_pHand->GetSuitRank(nPartnersPrevSuit))
+				|| ((currBidLevel > 2) && (nRHOBid != BID_PASS)) ) // NCR-352 Pass if at or above 3 level
 			{
 				m_nBid = BID_PASS;
 				status << "B4P14! With " & fCardPts & "/" & fPts  &
@@ -2306,7 +2691,7 @@ int CBidEngine::MakeRebidAsResponder()
 						  BTS(m_nBid) & ".\n";
 				return ValidateBid(m_nBid);
 			}
-		}
+		} // end <= 19 TPPoints
 		
 		//
 		//----------------------------------------------------------
@@ -2316,26 +2701,37 @@ int CBidEngine::MakeRebidAsResponder()
 
 		// with 20-24 min total pts, raise the second suit to 
 		// the 2 or 3-level with 4-card trump support
-		if (RaisePartnersSuit(SUIT_ANY,RAISE_TO_2,PTS_GAME-6,PTS_GAME-4,SUPLEN_4))
+		// NCR-282 Tailor length if 5card major - only need 3 now
+		SupportLength supLen = (ISMAJOR(nPartnersSuit) && (pCurrConvSet->IsConventionEnabled(tid5CardMajors)) ? SUPLEN_3 : SUPLEN_4);  
+		const int nSuitType = bChoosePrevSuit ? SUIT_PREV : SUIT_ANY; // NCR-608 Use chosen suit
+		if (RaisePartnersSuit(nSuitType, RAISE_TO_2,PTS_GAME-6,PTS_GAME-4, supLen))
 			return ValidateBid(m_nBid);
-		if (RaisePartnersSuit(SUIT_ANY,RAISE_TO_3,PTS_GAME-3,PTS_GAME-1,SUPLEN_4))
+		if (RaisePartnersSuit(nSuitType, RAISE_TO_3,PTS_GAME-3,PTS_GAME-1, supLen))
 			return ValidateBid(m_nBid);
 
 		// with 20-24 min total pts and 3-card support for 
 		// the first suit, return to that suit
 //		if (m_suit[nPartnersPrevSuit].GetRank() < m_suit[nPartnersSuit].GetRank())
-		if (numPPrevSuitSupportCards >= 3) 
+		// NCR-102 Num support cards depends on if using convenient minor
+		// then need 5 Clubs or 4 Diamonds
+		int numSupportCardsNeeded =  (PlayingConvention(tid5CardMajors) ? 4 : 3);  
+		if (numPPrevSuitSupportCards >= numSupportCardsNeeded) // NCR-102 use variable
 		{
 			// with 20-22 pts, return to first suit at the lowest level
 			if ((m_fMinTPPoints >= PTS_GAME-6) && (m_fMinTPPoints <= PTS_GAME-4)) 
 			{
 				m_nAgreedSuit = nPartnersPrevSuit;
 				m_nBid = GetCheapestShiftBid(nPartnersPrevSuit);
-				status << "B4P20! With " & fCardPts & "/" & fPts &
+				// NCR-207 Problem here: Can bid without sufficient points ???
+				if (((BID_LEVEL(m_nBid) <= 3) && (m_fMinTPPoints > PTS_GAME-6))
+					|| ((BID_LEVEL(m_nBid) == 4) && (m_fMinTPPoints > PTS_GAME-3)))
+				{
+					status << "B4P20! With " & fCardPts & "/" & fPts &
 						  " points and " & numPPrevSuitSupportCards & 
 						  "-card support for partner's first suit (" & szPPS & 
 						  "), return to it by bidding " & BTS(m_nBid) & ".\n";
-				return ValidateBid(m_nBid);
+					return ValidateBid(m_nBid);
+				}
 			}
 			// with 23-25 min total pts, (jump) shift back to the first suit
 			if ((m_fMinTPPoints >= PTS_GAME-3) && (m_fMinTPPoints < PTS_GAME)) 
@@ -2356,7 +2752,7 @@ int CBidEngine::MakeRebidAsResponder()
 				else 
 				{
 					m_nBid = GetCheapestShiftBid(nPartnersPrevSuit);
-					status << "B4P24! With " & fCardPts & "/" & fPts &
+					status << "B4P24! With " & fCardPts & "/" & fPts & "/" & fAdjPts & // NCR added fAdjPts
 							  " points in hand, for a total in the partnership of " &
 							  m_fMinTPPoints & "-" & m_fMaxTPPoints &
 							  " points, and " & numPPrevSuitSupportCards & 
@@ -2370,7 +2766,7 @@ int CBidEngine::MakeRebidAsResponder()
 		// with 23-25 min tot HCPs, no good suit fit, and 
 		// a stopper in the 4th suit, bid 2NT
 		if ((nPartnersBidLevel == 2) &&
-			(nPrefSuitStrength < SS_STRONG) && 
+			(nPrefSuitStrength <= SS_STRONG) &&    // NCR-615 added =
 			(numSupportCards < 4) && (numPPrevSuitSupportCards < 4))
 			if (BidNoTrump(LEVEL_2,PTS_GAME-3,PTS_GAME-1,FALSE,STOPPED_UNBID))
 				return ValidateBid(m_nBid);
@@ -2378,6 +2774,16 @@ int CBidEngine::MakeRebidAsResponder()
 		// else rebid a 6-card suit with 22-24 pts
 		if (ISSUIT(nPreviousSuit) && RebidSuit(SUIT_PREV,REBID_CHEAPEST,PTS_GAME-4,PTS_GAME-2,LENGTH_6))
 			return ValidateBid(m_nBid);
+		// NCR-615 also test the preferred
+		if (ISSUIT(nPrefSuit) && RebidSuit(SUIT_PREFERRED,REBID_CHEAPEST,PTS_GAME-4,PTS_GAME-2,LENGTH_6))
+			return ValidateBid(m_nBid);
+
+		// NCR-102 Could we try NoTrump?
+		if((m_fMinTPPoints+m_fMaxTPPoints) / 2 >= PTS_GAME) {
+			if (BidNoTrump(LEVEL_3, PTS_NT_GAME, PTS_SLAM-1, TRUE, STOPPED_UNBID))
+				return ValidateBid(m_nBid);
+		} // NCR-102 end
+
 
 		// else with 20-25 min total pts, bid the 3rd/4th suit if we have the strength;
 		// otherwise pass
@@ -2434,9 +2840,14 @@ int CBidEngine::MakeRebidAsResponder()
 						(numPPrevSuitSupportCards >= 4)) 
 		{
 			m_nAgreedSuit = nPartnersPrevSuit;
-			if (nPartnersBid < MAKEBID(nPartnersPrevSuit, 4))
+			// NCR Did partner give us a choice, ie is rank of current bid suit under previous
+			int requiredBidLevel = 4;
+			if(nPartnersPrevSuit > nPartnersSuit) {
+				requiredBidLevel = nPartnersBidLevel; // NCR bid on this level now
+			}
+			if (nPartnersBid < MAKEBID(nPartnersPrevSuit, requiredBidLevel))  // NCR changed from 4
 			{
-				m_nBid = MAKEBID(nPartnersPrevSuit,4);
+				m_nBid = MAKEBID(nPartnersPrevSuit, requiredBidLevel);  // NCR changed from 4
 				status << "B4P40! With " & numPPrevSuitSupportCards & 
 						  "-card support for partner's first suit (" & szPPS &
 						  ", holding " & szHPP & ") and a total of " & 
@@ -2498,8 +2909,8 @@ int CBidEngine::MakeRebidAsResponder()
 		// and the 4th suit stopped
 		if (BidNoTrump(LEVEL_3,PTS_NT_GAME+1,PTS_SLAM-1,TRUE,STOPPED_UNBID))
 			return ValidateBid(m_nBid);
-		// or 2NT without four stoppers (????) && 25+ HCPs
-		if (BidNoTrump(LEVEL_2,PTS_NT_GAME-1,PTS_SLAM-1,TRUE,STOPPED_DONTCARE))
+		// or 2NT without four stoppers (????) && 25+ HCPs  NCR but with Opponents suit stopped!
+		if (BidNoTrump(LEVEL_2,PTS_NT_GAME-1,PTS_SLAM-1,TRUE, STOPPED_OPPBID)) // NCR STOPPED_DONTCARE))
 			return ValidateBid(m_nBid);
 		
 		// raise partner's major to the 3-level with 3 support cards
@@ -2714,6 +3125,9 @@ int CBidEngine::MakeRebidAsResponder()
 			return ValidateBid(m_nBid);
 		if (RaisePartnersSuit(SUIT_ANY,RAISE_TO_3,PTS_GAME-3,PTS_GAME-1,SUPLEN_4))
 			return ValidateBid(m_nBid);
+		// NCR-76 added following 2 lines to try going to 4 level
+		if (RaisePartnersSuit(SUIT_ANY, RAISE_TO_4, PTS_GAME-2, PTS_GAME, SUPLEN_4))
+			return ValidateBid(m_nBid);
 
 		// with 23-25 min HCPs and a stopper in the unbid suits, bid 2NT
 		if (BidNoTrump(LEVEL_2,PTS_NT_GAME-3,PTS_NT_GAME-1,FALSE,STOPPED_UNBID))
@@ -2732,7 +3146,8 @@ int CBidEngine::MakeRebidAsResponder()
 		// else with 21-25 min total pts, bid another suit at the 2-level or pass
 		if (m_fMinTPPoints < PTS_GAME) 
 		{
-			if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST,PTS_GAME-5,PTS_GAME-1))
+			// NCR-76 Following will bid a 3 card major at the 3 level without partner support ???
+			if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST,PTS_GAME-5,PTS_GAME-1,LENGTH_4))  // NCR-76 added LENGTH_4
 			{
 				status << "B4T20! With " & m_fMinTPPoints & "-" & m_fMaxTPPoints &
 						  " points in the partnership but without good support for partner's new " &
@@ -2783,7 +3198,8 @@ int CBidEngine::MakeRebidAsResponder()
 		// else with < 33 min total pts, bid another suit
 		if (m_fMinTPCPoints < PTS_SLAM) 
 		{
-			if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST,PTS_GAME-4,PTS_SLAM-1))
+			// NCR-76 Following will bid a 3 card suit???
+			if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST,PTS_GAME-4,PTS_SLAM-1, LENGTH_4)) // NCR-76 added LENGTH_4
 			{
 				status << "B4T28! With " & m_fMinTPPoints & "-" & m_fMaxTPPoints &
 						  " points in the partnership but without good support for partner's new " &
@@ -2870,11 +3286,12 @@ int CBidEngine::MakeRebidAsResponder()
 	// or    1H -> 1NT -> 3C
 	//
 	//
-	if ((nPartnersSuit != nPreviousSuit) && 
-			(nPartnersSuit != NOTRUMP) && 
-				(ISSUIT(nPartnersPrevSuit)) &&
-					(nPartnersPrevSuit != NOTRUMP) && 
-						((nPartnersBid - nPreviousBid) > 5)) 
+	if ( (nPartnersSuit != nPreviousSuit)
+		 && (nPartnersSuit != NOTRUMP)
+		 && (ISSUIT(nPartnersPrevSuit))
+		 && (nPartnersPrevSuit != NOTRUMP) 
+		 && ((GetBidType(nPartnersBid) & BT_Jump) != 0)  // NCR-119 Test that pard's bid was Jump
+		 && ((nPreviousBid != BID_PASS) && (nPartnersBid - nPreviousBid) > 5) ) //NCR added pass test
 	{
 		// get a new suit / 4th suit
 		int newSuit = PickBestFinalSuit(status);
@@ -2936,9 +3353,12 @@ int CBidEngine::MakeRebidAsResponder()
 					return ValidateBid(m_nBid);
 
 			// rebid NT with stoppers
-			if (nPartnersBidLevel == 3)
-				if (BidNoTrump(LEVEL_3,0,PTS_SLAM-1,FALSE,STOPPED_UNBID))
+			if (nPartnersBidLevel <= 3)  // NCR-485 <= vs ==
+			{
+				bool bMustBeBalanced = (nPartnersBidLevel == 3) ? FALSE : TRUE; // NCR-485
+				if (BidNoTrump(LEVEL_3,0,PTS_SLAM-1, bMustBeBalanced, STOPPED_UNBID))
 					return ValidateBid(m_nBid);
+			}
 
 			// rebid any 6-card suit
 			if (RebidSuit(SUIT_ANY,REBID_CHEAPEST,0,PTS_SLAM-1,LENGTH_6))
@@ -3049,24 +3469,95 @@ int CBidEngine::MakeRebidAsResponder()
 					nSuit = NOTRUMP;
 			}
 		}
+		// NCR-255 problem here if current bid level is above 4NT
+		if(nPartnersBidLevel < 5) {
 		InvokeBlackwood(nSuit);
 		if (nSuit != NOTRUMP)
 			status << "B4Q40! We pick " & STS(nSuit) & 
 					  " for the ultimate slam contract suit.\n";
 		else
 			status << "B4Q41! Since we lack good support for either of partner's suits, the ultimate suit for the slam contract will be No Trump.\n";
+		}
+		else
+		{
+			// NCR-255 what should we do here??
+			m_nBid = MAKEBID(nSuit, 6);  // NCR-255 what to bid here?
+			status << "B4Q43! We pick " & STS(nSuit) & " for the ultimate slam contract suit.\n";
+		} // NCR-255
 		return ValidateBid(m_nBid);
-	
 	} // end jump shift response section
 
+	
+	// NCR-630 What if pard openned and then passed and then bid
+	int nPardsSuit = nPartnersPrevSuit;
+	if((nPartnersOpeningBid != BID_PASS) && ISSUIT(nPartnersOpeningSuit)
+		&& (nPartnersPrevBid == BID_PASS))
+		nPardsSuit = nPartnersOpeningSuit; // NCR-630 set suit to his openning suit
+
+    //
+	// NCR Has partner bid a new suit, lower suit? We have passed
+	// We should chose which suit we prefer: more cards or stronger
+	// If same number of cards, test strength by ???
+	//
+	if(nPardsSuit > nPartnersSuit)  // NCR-630 use nPardsSuit vs nPartnersPrevSuit
+	{
+		if (numCardsInSuit[nPardsSuit] > numCardsInSuit[nPartnersSuit]) // NCR-630 nPardsSuit here
+		{
+			m_nBid = GetCheapestShiftBid(nPardsSuit);  // NCR prefer previous suit NCR-630
+			// Should we use MAKEBID() above ???
+			status << "B4Q42a! We prefer partner's previous suit, so we bid " & BTS(m_nBid) & ".\n";
+			return ValidateBid(m_nBid);
+		}
+		// NCR-1 support pards new suit if we have points and 3 cards with honor
+		else if((numCardsInSuit[nPartnersSuit] >= 3) && (numHonorsInSuit[nPartnersSuit] > 0)
+			                         // NCR-237 Dont bid if high bid level 
+			    && (fAdjPts > 6) && (nPartnersBidLevel < 4))
+		{
+			m_nBid = GetCheapestShiftBid(nPartnersSuit);
+			// Should we use MAKEBID() above ???
+			status << "B4Q42b! We'll support partner's suit, so we bid " & BTS(m_nBid) & ".\n";
+			return ValidateBid(m_nBid);
+		} // end NCR-1
+	}
+
+	// NCR are we in a competitve bidding situation? ie has RHO overcalled partner's bid
+	// and is RHO's suit of less rank than partner's suits?
+	int nPardsLowestSuit = (nPartnersPrevSuit < nPartnersSuit) ? nPartnersPrevSuit : nPartnersSuit;
+	
+	if((nRHOBid != BID_PASS) && ISSUIT(nPardsLowestSuit) && (nRHOSuit < nPardsLowestSuit)) 
+	{
+		// Get longest suit for following
+		int longestSuit = (numCardsInSuit[nPartnersPrevSuit] > numCardsInSuit[nPartnersSuit]) 
+			               ? nPartnersPrevSuit : nPartnersSuit;
+		double	newAdjPts = m_pHand->RevalueHand(REVALUE_DUMMY, longestSuit, TRUE);
+		// Bid pard's suit with 5 or more and some points
+		if((numCardsInSuit[longestSuit] > 4) && (newAdjPts > PT_COUNT(13)))
+		{
+			// Use the longer suit
+			if(longestSuit == nPartnersPrevSuit) {
+				m_nBid = GetCheapestShiftBid(nPartnersPrevSuit);  // NCR prefer previous suit
+			}
+			else 
+			{
+				m_nBid = GetCheapestShiftBid(nPartnersSuit);  // NCR prefer curr suit
+			}
+			status << "B4Q43! We prefer partner's previous suit, so we bid " & BTS(m_nBid) & ".\n";
+			return ValidateBid(m_nBid);
+		}
+	} // end overcalling RHO putting us in a competitive situation
 
 
-
-
-
-
-
-
+	// NCR-517 Did partner open with the Artifical 2Clubs?
+	if ((nPartnersOpeningBid == BID_2C) 
+		&& (pCurrConvSet->IsConventionEnabled(tidArtificial2ClubConvention)) ) 
+	{
+		// Bid something with some points
+		if (RaisePartnersSuit(SUIT_MAJOR,RAISE_ONE, PTS_GAME-3, PTS_GAME-1, SUPLEN_3))
+			return ValidateBid(m_nBid);
+		//  NCR-639 Don't forget the minors                      ????
+		if (RaisePartnersSuit(SUIT_MINOR,RAISE_ONE, PTS_GAME-3, PTS_SLAM, SUPLEN_3))
+			return ValidateBid(m_nBid);
+	}  // end NCR-517
 
 
 	//

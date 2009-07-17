@@ -117,7 +117,8 @@ void CGuessedCardHoldings::Add(CGuessedCard* pCard, BOOL bSort)
 	{
 		// insert the card in its proper place
 		int nValue = pCard->GetDeckValue();
-		for (int i=0;i<m_numTotalCards;i++)
+		int i; // NCR-FFS added here, removed below
+		for (/*int*/ i=0;i<m_numTotalCards;i++)
 		{
 			if (!m_bReverseSort)
 			{
@@ -262,7 +263,8 @@ CGuessedCard* CGuessedCardHoldings::RemoveByIndex(int nIndex)
 */
 
 	// move other cards over
-	for(int i=nIndex;i<m_numTotalCards;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=nIndex;i<m_numTotalCards;i++) 
 		m_cards[i] = m_cards[i+1];
 	for(;i<MAXHOLDING;i++) 
 		m_cards[i] = NULL;

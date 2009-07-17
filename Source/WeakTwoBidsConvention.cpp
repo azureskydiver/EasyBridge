@@ -51,7 +51,9 @@ BOOL CWeakTwoBidsConvention::TryConvention(const CPlayer& player,
 	if ( ((bidState.fPts >= OPEN_PTS(6)) && (bidState.fPts <= OPEN_PTS(11))) &&
 				(ISMAJOR(bidState.nPrefSuit)) &&
 				(bidState.numPrefSuitCards >= 6) && 
-				(bidState.numHonorsInPrefSuit >= 2) && 
+				(bidState.numHonorsInPrefSuit 
+				       // NCR-150 Allow only 1 if aggressive
+				  >= ((theApp.GetBiddingAgressiveness() < 1) ? 2 : 1)) && 
 				(bidState.numPrefSuitPoints >= 4) && 
 //			 	(bidState.numQuickTricks >= 1.5) &&
 			 	(bidState.numCardsInSuit[OTHER_MAJOR(bidState.nPrefSuit)] < 4) &&
@@ -126,7 +128,9 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 		bidState.SetConventionStatus(this, CONV_FINISHED);
 
 		// need to check only if partner responded to our 2NT response
-		if ((nPreviousBid == BID_2NT) && ISBID(nPartnersBid))
+		// NCR 3NT response if partner has 10+ pts and NO feature
+		if ((nPreviousBid == BID_2NT) && (nPartnersBid != BID_3NT) // NCR test if response of 3NT
+			 && ISBID(nPartnersBid))
 		{
 			int nBid;
 			// see if partner bid a suit or bailed out
@@ -199,7 +203,9 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 	int nBid;
 	// revalue our hand as dummy
 	double fPts = bidState.fPts;
-	double fAdjPts = bidState.fAdjPts = hand.RevalueHand(REVALUE_DUMMY, bidState.m_nAgreedSuit, TRUE);
+	double fAdjPts = (ISSUIT(bidState.m_nAgreedSuit) || (bidState.m_nAgreedSuit == NOTRUMP)) // NCR don't get value if No agreed suit
+		             ? bidState.fAdjPts = hand.RevalueHand(REVALUE_DUMMY, bidState.m_nAgreedSuit, TRUE)
+					 : bidState.fCardPts;  //NCR just use card points if No agreed suit
 	double fCardPts = bidState.fCardPts;
 	int nPrefSuit = bidState.nPrefSuit;
 
@@ -247,11 +253,13 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 	//---------------------------------------------------------------------
 	// 6-12 points:  
 	// not enough points for game, so raise or shift
+	// NCR there is a hole between 12 and 13 !!! ->change 12 to 12.9
 	//
 	if ( ((nPartnersSuitSupport < SS_WEAK_SUPPORT) && 
-							(fPts >= OPEN_PTS(6)) && (fPts <= OPEN_PTS(12))) ||
+	                        // NCR-427 changed below to fAdjPts from fPts ???
+							(fAdjPts >= OPEN_PTS(6)) && (fPts <= OPEN_PTS(12.9))) ||     // NCR added .9
 		 ((nPartnersSuitSupport >= SS_WEAK_SUPPORT) && 
-					 		(fAdjPts >= OPEN_PTS(6)) && (fAdjPts <= OPEN_PTS(12))) ) 
+					 		(fAdjPts >= OPEN_PTS(6)) && (fAdjPts <= OPEN_PTS(12.9))) )   // NCR added .9
 	{
 		//
 		status << "RWKT4! We only have " & fCardPts & "/" & fPts & "/" & fAdjPts &
@@ -270,7 +278,9 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 					  " (holding " & bidState.szHP & 
 					  "), make a weak shutout raise of " & BTS(nBid) & ".\n";
 		} 
-		else if ((nPrefSuit != nPartnersSuit) && (bidState.numPrefSuitCards >= 5))
+		else if ((nPrefSuit != nPartnersSuit) && (bidState.numPrefSuitCards >= 6) // NCR 6 cards
+			     && (nPrefSuit > nPartnersSuit)  // NCR-333 Can bid at 2 level if our suit higher
+				 && (bidState.nRHOBid == BID_PASS) ) // NCR-558 Don't overcall RHO
 		{
 			// here we have no more then two low trump cads
 			// since don't like partner's suit, so bid our own
@@ -280,7 +290,8 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 					  "), so shift to our preferred " & bidState.szPrefSS & 
 					  " suit in a bid of " & BTS(nBid) & ".\n";
 		} 
-		else if ((bidState.numVoids == 0) && (bidState.numSingletons == 0))
+		else if ((bidState.numVoids == 0) && (bidState.numSingletons == 0)
+			     && (fPts > 14) )  // NCR 2NT not appropriate here - it's an artifical bid asking opener ...
 		{
 			// bid 2NT if not too unbalanced
 			nBid = BID_2NT;
@@ -312,7 +323,7 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 					 		(fAdjPts >= OPEN_PTS(13)) && (fAdjPts <= PTS_GAME-6)) ) 
 	{
 		//
-		status << "We have " & fCardPts & "/" & fPts & "/" & fAdjPts &
+		status << "RWKT15! We have " & fCardPts & "/" & fPts & "/" & fAdjPts &
 				  " points, for a partnership total of " &
 				  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints &
 				  " points, so we are interested in game if a good fit can be found.\n";
@@ -334,12 +345,14 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 		{
 			nBid = BID_2NT;
 			bidState.SetAgreedSuit(nPartnersSuit);
-			status << "RWKT21! And we like partner's " & bidState.szPSS & 
-					  " suit (holding " & bidState.szHP & " support), but with only " &
-					  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints &
-					  " total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.\n";
+			status << "RWKT21! And we like partner's " & bidState.szPSS 
+					  & " suit (holding " & bidState.szHP & " support), but with only "
+					  & bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints
+					  & " total pts we don't quite have enough for a direct game bid, "
+					  & "so invite partner to show an outside Ace or King with a bid of 2NT.\n";
 		}
-		else if ((bidState.bBalanced) && (bidState.m_fMinTPCPoints >= PTS_GAME-1)) 
+		else if ((bidState.bBalanced || hand.AllOtherSuitsStopped(nPartnersSuit))  // NCR-559 also if other suits stopped 
+			     && (bidState.m_fMinTPCPoints >= PTS_GAME-3))  // NCR-559 -3 vs -1 allows 2NT
 		{
 			// have a balanced hand with all suits stopped?
 			if (hand.AllOtherSuitsStopped(nPartnersSuit)) 
@@ -349,7 +362,9 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 					nBid = BID_3NT;
 				else 
 					nBid = BID_2NT;
-				status << "RWKT22! And since we have a balanced hand with " & fCardPts & 
+				status << "RWKT22! And since we have "
+					      & (bidState.bBalanced ? "a balanced hand with " : "")  // NCR-559 remove balanced
+						  & fCardPts & 
 						  " HCPs, for a total in the partnership of approx. " & 
 						  bidState.m_fMinTPCPoints & "-" & bidState.m_fMaxTPCPoints &
 						  " HCPs, and all" & 
@@ -423,7 +438,9 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 			  " points, so we may be interested in a possible slam.\n";
 
 	// if the trump support is solid, raise to 6 of the suit
-	if (nPartnersSuitSupport >= SS_STRONG_SUPPORT) 
+	if ((nPartnersSuitSupport >= SS_STRONG_SUPPORT) 
+    	// NCR-209 Need stopped suits to go to 6
+		 && hand.AllOtherSuitsStopped(nPartnersSuit))  
 	{
 		nBid = MAKEBID(nPartnersSuit,6);
 		bidState.SetAgreedSuit(nPartnersSuit);
@@ -440,8 +457,10 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 		bidState.InvokeBlackwood(nPartnersSuit);
 		return TRUE;
 	} 
-	else if ((bidState.bBalanced) & 
-				(hand.AllOtherSuitsStopped(nPartnersSuit))) 
+	else if ((bidState.bBalanced)   // NCR second & added here 
+			 // NCR-272 Need some points for slam. How many ???
+			 && (bidState.m_fMaxTPCPoints >= PTS_SLAM-1) 
+			 &&	(hand.AllOtherSuitsStopped(nPartnersSuit))) 
 	{
 		// with a balanced hand & all other suits stopped, 
 		// bid 4NT for Blackwood, intending to go to 6NT or 7NT
@@ -478,7 +497,7 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 // Rebidding as opener after a weak 2-level opening
 //
 //
-CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player, 
+BOOL CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player, // NCR added BOOL
 									  			 const CConventionSet& conventions, 
 												 CHandHoldings& hand, 
 												 CCardLocation& cardLocation, 
@@ -488,7 +507,8 @@ CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 {
 	if (bidState.GetConventionStatus(this) != CONV_INVOKED)
 		return FALSE;
-	bidState.ClearConventionStatus(this);	// no more actions after this round
+	if (!bidState.m_bHintMode) // NCR-381 Don't clear in hint mode???
+		bidState.ClearConventionStatus(this);	// no more actions after this round
 
 	//
 	// estimate partner's strength
@@ -497,14 +517,14 @@ CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 	double fPts = bidState.fPts;
 	double fAdjPts = bidState.fAdjPts;
 	double fCardPts = bidState.fCardPts;
-	int nPrefSuit = bidState.nPrefSuit;
-	int nPrefSuitStrength = bidState.nPrefSuitStrength;
+//	int nPrefSuit = bidState.nPrefSuit;
+//	int nPrefSuitStrength = bidState.nPrefSuitStrength;
 	int nPreviousBid = bidState.nPreviousBid;
 	int nPreviousSuit = bidState.nPreviousSuit;
 	int nPartnersBid = bidState.nPartnersBid;
 	int nPartnersBidLevel = bidState.nPartnersBidLevel;
 	int nPartnersSuit = bidState.nPartnersSuit;
-	int nPartnersSuitSupport = bidState.nPartnersSuitSupport;
+//	int nPartnersSuitSupport = bidState.nPartnersSuitSupport;
 	int numSupportCards = bidState.numSupportCards;
 
 	// estimate partner's pts
@@ -550,9 +570,10 @@ CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 				  " which is forcing for one round, and asks for a raise with 3-card trump support or a doubleton honor.\n";
 
 		// raise with 3-card support or doubleton honors
-		if ((numSupportCards >= 3) || 
-			((numSupportCards == 2) &&
-			 (bidState.numHonorsInPartnersSuit >= 1)) ) {
+		// NCR-489 Need some points to rebid now
+		if ((fCardPts > 9) && ((numSupportCards >= 3) 
+			|| ((numSupportCards == 2) && (bidState.numHonorsInPartnersSuit >= 1))) ) 
+		{
 			nBid = MAKEBID(nPartnersSuit,nPartnersBidLevel+1);
 			status << "HRWT10! And with adequate support for partner's " & bidState.szPS & 
 					  " (holding " & bidState.szHP & 

@@ -222,7 +222,7 @@ void CStatusAnalysesPage::OnRButtonDown(UINT nFlags, CPoint point)
 		m_edit[i].GetWindowRect(&rect);
 		ScreenToClient(&rect);
 		if (rect.PtInRect(point))
-			m_nCurrentChild = m_nWindowOrder[i];
+			m_nCurrentChild = i; //NCR ??? original is off by 1 position  m_nWindowOrder[i];
 	}
 
 	// get actual screen coordinates and show menu
@@ -266,7 +266,8 @@ void CStatusAnalysesPage::OnSize(UINT nType, int cx, int cy)
 
 	// count the # of panels
 	int numPanels = 0;
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 	{
 		if (((CButton*)GetDlgItem(IDC_WEST+i))->GetCheck())
 			numPanels++;
@@ -413,29 +414,29 @@ void CStatusAnalysesPage::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 }
 
 
-
+// NCR changed nPosition comparisons below
 //
 void CStatusAnalysesPage::Clear(int nPosition)
 {
 	if (!m_bInitialized)
 		return;
 	//
-	if ((nPosition == WEST) || (nPosition == -1))
+	if ((nPosition == 0 /*WEST*/) || (nPosition == -1))
 	{
 		PLAYER(WEST).ClearAnalysis();
 		m_edit[0].SetWindowText(_T(""));
 	}
-	if ((nPosition == NORTH) || (nPosition == -1))
+	if ((nPosition == 1/*NORTH*/) || (nPosition == -1))
 	{
 		PLAYER(NORTH).ClearAnalysis();
 		m_edit[1].SetWindowText(_T(""));
 	}
-	if ((nPosition == EAST) || (nPosition == -1))
+	if ((nPosition == 2/*EAST*/) || (nPosition == -1))
 	{
 		PLAYER(EAST).ClearAnalysis();
 		m_edit[2].SetWindowText(_T(""));
 	}
-	if ((nPosition == SOUTH) || (nPosition == -1))
+	if ((nPosition == 3 /*SOUTH*/) || (nPosition == -1))
 	{
 		PLAYER(SOUTH).ClearAnalysis();
 		m_edit[3].SetWindowText(_T(""));

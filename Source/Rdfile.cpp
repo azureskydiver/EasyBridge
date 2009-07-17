@@ -462,7 +462,12 @@ next:		if (nRtnCode == EOF)
 							nLen = string.GetLength();
 							// first read the lead player for the trick
 							partString = string.Mid(nOffset);
-							m_nTrickLead[nIndex] = StringToPosition(partString);
+							// NCR Get index to position
+							int nLeadPos = StringToPosition(partString);
+							// NCR Check if valid and skip if not
+							if (nLeadPos == -1)  // NB -1 returned by StringToPosition
+								break;  // NCR invalid position
+							m_nTrickLead[nIndex] = nLeadPos; // Save
 							nOffset = string.Find(' ');
 							//
 							for(i=0;i<4;i++) 
@@ -622,19 +627,20 @@ next:		if (nRtnCode == EOF)
 	//
 	if (!ISPLAYER(m_nDeclarer))
 		m_nDeclarer = SOUTH;
-	nPos = m_nDeclarer;
+	nPos = m_nDealer; // NCR-101 start at dealer NOT m_nDeclarer;
 	m_nCurrPlayer = nPos;
 	int nTeam = GetPlayerTeam(nPos);
 	nOffset = 0;
 	// 
 	nLen = strBiddingHistory.GetLength();
+
 	for(i=0;;i++) 
 	{
 		// skip leading spaces
 		while((nOffset < nLen) && (strBiddingHistory[nOffset] == ' '))
 			nOffset++;
 		if (nOffset >= nLen)
-			break;
+			break;				// Exit loop when no data left
 		// grab the next bid
 		partString = strBiddingHistory.Mid(nOffset);
 		int nBid = ContractStringToBid(partString);
@@ -642,7 +648,7 @@ next:		if (nRtnCode == EOF)
 		m_nBiddingHistory[m_numBidsMade] = nBid;
 		m_numBidsMade++;
 		m_nCurrPlayer = GetNextPlayer(m_nCurrPlayer);
-		int nBiddingRound = i % 4;
+		int nBiddingRound =  i/4;  // NCR-101 changed from:  i % 4;  
 		m_nBidsByPlayer[nPos][nBiddingRound] = nBid;
 		// see if this is an actual numeric bid
 		if (ISBID(nBid))
@@ -721,6 +727,11 @@ next:		if (nRtnCode == EOF)
 
 	// not reviewing game
 	m_bReviewingGame = FALSE;
+
+	// NCR-GUI1 Set flag for a fully played hand?
+	if(m_numTricksPlayed == 13) {
+		m_nPlayRound = 13;  // NCR can we use this as a flag???
+	} // end NCR-GUI1
 
 	// all done
 	return TRUE;

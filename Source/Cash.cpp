@@ -33,7 +33,8 @@
 
 CCash::CCash(int nTargetHand, int nStartingHand, CCardList* pRequiredPlayedCards, int nSuit, int nCardVal, PlayProspect nProspect, BOOL bOpportunistic) :
 		CPlay(CPlay::CASH, nTargetHand, nSuit, nProspect, bOpportunistic),
-		m_nCardVal(nCardVal)
+		m_nCardVal(nCardVal),
+		m_Properties(ORDINARY) // NCR-707
 {
 	Init();
 	m_nStartingHand = nStartingHand;
@@ -41,11 +42,13 @@ CCash::CCash(int nTargetHand, int nStartingHand, CCardList* pRequiredPlayedCards
 }
 
 CCash::CCash(int nTargetHand, int nStartingHand, CCardList* pRequiredPlayedCards, CCard* pCard, PlayProspect nProspect, BOOL bOpportunistic) :
-		CPlay(CPlay::CASH, nTargetHand, NONE, nProspect, bOpportunistic)
+		CPlay(CPlay::CASH, nTargetHand, NONE, nProspect, bOpportunistic),
+		m_Properties(ORDINARY) // NCR-707
 {
 	VERIFY(pCard);
 	m_nStartingHand = nStartingHand;
 	m_nSuit = pCard->GetSuit();
+	m_nSuit2 = NONE; // NCR-411 clear Suit to underplay
 	m_nCardVal = pCard->GetFaceValue();
 	Init();
 	m_pRequiredPlayedCardsList = pRequiredPlayedCards;
@@ -90,7 +93,7 @@ CString CCash::GetFullDescription()
 {
 	return FormString("Cash the %s in %s.",
 					   m_pConsumedCard->GetFullName(), 
-					   ((m_nTargetHand == 0)? "hand" : "dummy"));
+					   ((m_nTargetHand == IN_HAND)? "hand" : "dummy"));
 }
 
 
@@ -210,7 +213,11 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 								(combinedSuit.GetNumDeclarerLosers() > 0) &&
 								(combinedSuit.GetNumDummyWinners() < declarerSuit.GetNumCards()) &&
 								(*dummySuit[0] > *declarerSuit[0]) &&
-								(declarerEngine.GetNumDeclarerEntries() == 1) )
+								(declarerEngine.GetNumDeclarerEntries() == 1) 
+							  // NCR Special case  if dummy has a singleton honor same value as lead card 	
+							  || (dummySuit.IsSingleton() && combinedSuit.AreEquivalentCards(dummySuit[0], m_pConsumedCard)
+							      // NCR-134 Only get stranded if Dummy card > pConsumedCard
+							      && (dummySuit.GetTopCard()->GetFaceValue() > m_pConsumedCard->GetFaceValue()))	)
 					{
 						// here, nothing but higher winners in dummy, which is shorter than hand
 						status << "5PLCSH02! We could cash the " & m_pConsumedCard->GetName() &
@@ -235,9 +242,11 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						{
 							// lead a low card, but test first
 							pPlayCard = declarerSuit.GetBottomCard();
-							if ( combinedSuit .AreEquivalentCards(pPlayCard, m_pConsumedCard) &&
-//								 (declarerSuit.GetNumCards() > 1) && (ombinedSuit.GetNumDummyLosers() > 0) )
-												 (combinedSuit.GetNumDummyLosers() > 0) )
+							if (combinedSuit.AreEquivalentCards(pPlayCard, m_pConsumedCard)
+//								(declarerSuit.GetNumCards() > 1) && (ombinedSuit.GetNumDummyLosers() > 0) )
+								&& (combinedSuit.GetNumDummyLosers() > 0)
+								// NCR-438 Ignore if flagged as Opportunistic
+								&& !IsOpportunistic() )
 							{
 								// oops, the "low" card is equivalent to the cash card!
 								status << "4PLCSH15! Oops, the lowest card we can lead from hand for the cash is the " & 
@@ -314,9 +323,11 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						if (dummySuit.GetNumCardsBelow(m_pConsumedCard) > 0)
 						{
 							pPlayCard = dummySuit.GetBottomCard();
-							if ( combinedSuit .AreEquivalentCards(pPlayCard, m_pConsumedCard) &&
+							if (combinedSuit.AreEquivalentCards(pPlayCard, m_pConsumedCard)
 //								 (dummySuit.GetNumCards() > 1) && (combinedSuit.GetNumDeclarerLosers() > 0) )
-												(combinedSuit.GetNumDeclarerLosers() > 0) )
+								&& (combinedSuit.GetNumDeclarerLosers() > 0) 
+								// NCR-438 Ignore if flagged as Opportunistic
+								&& !IsOpportunistic() )
 							{
 								// oops, the "low" card is equivalent to the cash card!
 								status << "4PLCSH35! Oops, the lowest card we can lead from dummy for the cash is the " & 
@@ -391,8 +402,11 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					}
 					
 					// also check if partner has nothing but winners in his hand
-					if ( (bPlayingInHand && (dummySuit.GetNumCards() > 0) && (combinedSuit.GetNumDummyLosers() == 0) && (combinedSuit.GetNumDeclarerLosers() > 0)) ||
-						 (!bPlayingInHand && (declarerSuit.GetNumCards() > 0) && (combinedSuit.GetNumDeclarerLosers() == 0) && (combinedSuit.GetNumDummyLosers() > 0)) )
+					if ( (bPlayingInHand && (dummySuit.GetNumCards() > 0) && (combinedSuit.GetNumDummyLosers() == 0) 
+						  && (combinedSuit.GetNumDeclarerLosers() > 0))
+						|| (!bPlayingInHand && (declarerSuit.GetNumCards() > 0) && (combinedSuit.GetNumDeclarerLosers() == 0) 
+						                                                  // NCR-622 Check really have winner
+						     && (combinedSuit.GetNumDummyLosers() > 0) && (*(declarerSuit[0]) > *pCardLed)) )
 					{
 /*
  * ???
@@ -403,7 +417,16 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						m_nStatusCode = PLAY_INACTIVE;
 						return PLAY_POSTPONE;
 					}
-					pPlayCard = m_pConsumedCard;
+					// NCR-620 Check if LHO is void. Only need to cover lead card if so
+					CPlayer* pLHOPlayer = bPlayingInHand ? playEngine.GetLHOpponent() : playEngine.GetRHOpponent();
+	 	            CGuessedHandHoldings* pLHOHand = ppGuessedHands[pLHOPlayer->GetPosition()];
+					if( pLHOHand->IsSuitShownOut(m_nSuit))
+					{
+						CHandHoldings& theHand = bPlayingInHand ? playerHand : dummyHand; 
+						pPlayCard = theHand.GetSuit(m_nSuit).GetLowestCardAbove(pCardLed);
+					}  // end NCR_620 getting lowest card needed to win
+					else
+						pPlayCard = m_pConsumedCard;
 					status << "PLCSH55! The opponents led a " & STSS(m_nSuit) & 
 							  ", so cash the " & pPlayCard->GetFaceName() & " now.\n";
 				}
@@ -430,9 +453,17 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						return PLAY_POSTPONE;
 					}
 
-					// else go ahead and discard
-					pPlayCard = playEngine.GetDiscard();
-					status << "PLCSH56! Discard a " & STSS(m_nSuit) & " from " &
+					// NCR-586 Use discard chosen by analysis (See NCR-411)
+					if(ISSUIT(m_nSuit2) && (dummyHand.GetSuit(m_nSuit2).GetNumCards() > 0) )
+					{
+						CHandHoldings& theHand = bPlayingInHand ? playerHand : dummyHand;  
+						pPlayCard = theHand.GetSuit(m_nSuit2).GetBottomCard();
+					}  // end NCR-586 using chosen suit
+					else {
+						// else go ahead and discard
+						pPlayCard = playEngine.GetDiscard();   // NCR use GetSuit()
+					}
+					status << "PLCSH56! Discard a " & STSS(pPlayCard->GetSuit()) & " from " &
 							  (bPlayingInHand? "hand" : "dummy") &
 							  " in anticipation of cashing the " & 
 							  m_pConsumedCard->GetFaceName() & " in " &
@@ -467,9 +498,11 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 				return PLAY_POSTPONE;
 			}
 			// see if the current top card in the trick is higher than ours
+			// NCR-62 How can TopCard and ConsumedCard be in the same hand???
 			if (*pTopCard > *m_pConsumedCard)
 			{
-				status << "2PLCSH66! the " & m_pConsumedCard->GetName() & " can't beat the " &
+				if(pCardLed != m_pConsumedCard) // NCR this happens
+				   status << "2PLCSH66! the " & m_pConsumedCard->GetName() & " can't beat the " &
 						   pTopCard->GetName() & ", so skip the cash.\n";
 				m_nStatusCode = PLAY_INACTIVE;
 				return PLAY_POSTPONE;
@@ -496,6 +529,19 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					}
 					else
 					{
+						// NCR-275 are we winning trick?  If not try to win
+						if((pCardLed->GetFaceValue() < pTopCard->GetFaceValue())
+							&& !declarerSuit.IsVoid())
+						{
+							pPlayCard = declarerSuit.GetLowestCardAbove(pTopCard);
+							// NCR-ErrFix above can return NULL ???
+							if(pPlayCard == NULL) // NCR-ErrFix
+								pPlayCard = declarerSuit.GetTopCard(); // NCR ??? is this better
+							status << "PLCSH70a! Our cash of the " &
+									  pCardLed->GetName() & " from hand is not holding, so cover with the " &
+									  pPlayCard->GetName() & ".\n";
+}
+						else  // NCR-275 tie into next if
 						// see if we need to win in this hand to cash the remaining winnners
 						if ((dummySuit.GetNumCards() == 0) && (declarerSuit.GetNumCards() > 1) && 
 								(declarerSuit.GetNumLosers() == 0) && (*declarerSuit[0] > *pCardLed))
@@ -507,7 +553,13 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						}
 						else
 						{
-							pPlayCard = playEngine.GetDiscard();
+							// NCR-411 Test and use suit chosen earlier
+							if(ISSUIT(m_nSuit2) && (playerHand.GetSuit(m_nSuit2).GetNumCards() > 0)
+								    // Can't use if player has card of suit led
+								&& (playerHand.GetSuit(pCardLed->GetSuit()).GetNumCards() == 0) )
+								pPlayCard = playerHand.GetSuit(m_nSuit2).GetBottomCard();  // NCR-411 Discard from this one
+							else
+								pPlayCard = playEngine.GetDiscard();
 							status << "PLCSH72! Our cash of the " & pCardLed->GetName() & 
 									  " from dummy is holding, so discard the " & pPlayCard->GetName() & ".\n";
 						}
@@ -531,7 +583,7 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					if (bTrumped)
 					{
 						pPlayCard = playEngine.GetDiscard();
-						status << "2PLCSH76! RHO's trump negates our cash; discard the " &
+						status << "2PLCSH73! RHO's trump negates our cash; discard the " &
 								  pPlayCard->GetName() & ".\n";
 					}
 					else
@@ -545,9 +597,62 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 									  " from hand is holding, but we need to win in dummy to cash the remaining winners, so play the " &
 									  pPlayCard->GetName() & " here.\n";
 						}
+						// NCR-84 need to worry about blocking - if NT and # cards in declarer > # cards in dummy
+						// and there are no other cards out and ...
+						// Play high in short hand unless ...
+						else if((declarerSuit.GetNumCards() >= dummySuit.GetNumCards()) // = because declarer has lead
+							     && ((combinedSuit.GetNumMissingSequences() == 0) 
+								     || (combinedSuit.GetMissingSequence(0).GetTopCard() < dummySuit.GetTopCard())) 
+								 && !combinedSuit.IsVoid() // NCR-604 make sure some
+							     && (combinedSuit.GetSequence2(0).GetNumCards() 
+								      > playEngine.GetNumOutstandingCards(nSuitLed)) )  // NCR-604 Make sure we have enough
+						{
+							pPlayCard = dummySuit.GetTopCard();
+							if(pPlayCard == NULL) {  // How does this happen???
+								m_nStatusCode = PLAY_INACTIVE;
+								return PLAY_POSTPONE;
+							}
+							status << "PLCSH75! Our cash of the " & pCardLed->GetName() 
+								      & " from hand is holding, so unblock the " 
+									  & pPlayCard->GetName() & ".\n";
+						} // NCR-84 end unblocking
+						// NCR-139 Don't give up cheap trick. If RHO covered lead, cover if we can
+						else if((pCardLed->GetFaceValue() < pTopCard->GetFaceValue())
+								&& ((dummySuit.GetNumCardsAbove(pTopCard->GetFaceValue()) > 1)
+								       // NCR-205 Cover if no Outstanding cards greater
+								    || ((combinedSuit.GetNumMissingSequences() > 0) 
+									   && (combinedSuit.GetMissingSequence(0).GetTopCard() < dummySuit.GetTopCard()))) )
+						{
+							pPlayCard = dummySuit.GetLowestCardAbove(pTopCard);
+							// NCR-ErrFix above can return NULL ???
+							if(pPlayCard == NULL) // NCR-ErrFix NCR-604 If no higher card, go low
+								pPlayCard = dummySuit.GetBottomCard(); // NCR ??? is this better
+							status << "PLCSH76! Our cash of the " &
+									  pCardLed->GetName() & " from hand is not holding, so cover with the " &
+									  pPlayCard->GetName() & ".\n";
+						}
+						// NCR-157 Play high to prevent cheap trick if have 2 equal value cards w/only one out greater
+						else if(((dummySuit.GetNumSequence2s() > 0) 
+							      && (dummySuit.GetSequence2(0).GetNumCards() > 1)) 
+							    && ((dummySuit.GetNumMissingSequences() > 0)
+								    && (dummySuit.GetMissingSequence(0).GetNumCards() == 1))
+								&& ((combinedSuit.GetNumMissingSequences() > 0)
+								    && (combinedSuit.GetNumMissingAbove(pCardLed) > 2)) )
+						{
+							pPlayCard = dummySuit.GetSecondHighestCard();
+							status << "PLCSH79! Our cash of the " & pCardLed->GetName() 
+								      & " from hand won't hold, so play the "
+									  & pPlayCard->GetName() & ".\n";
+						}
 						else
 						{
-							pPlayCard = playEngine.GetDiscard();
+							// NCR-411 Test and use suit chosen earlier (this done on 6/7/2013)
+							if(ISSUIT(m_nSuit2) && (dummyHand.GetSuit(m_nSuit2).GetNumCards() > 0)
+								    // Can't use if player has card of suit led
+								&& (dummyHand.GetSuit(pCardLed->GetSuit()).GetNumCards() == 0) )
+								pPlayCard = dummyHand.GetSuit(m_nSuit2).GetBottomCard();  // NCR-411 Discard from this one
+							else
+								pPlayCard = playEngine.GetDiscard();
 							status << "PLCSH78! Our cash of the " &
 									  pCardLed->GetName() & " from hand is holding, so discard the " &
 									  pPlayCard->GetName() & ".\n";

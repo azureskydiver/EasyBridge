@@ -96,7 +96,7 @@ void CBidEngine::Clear()
 	//
 	// clear all internal variables
 	//
-	m_nBid = NONE;
+	m_nBid = BID_NONE;  // NCR changed to BID_NONE vs NONE
 	m_numBidsMade = 0;
 	m_numBidTurns = 0;
 	m_nNextIntendedBid = NIB_NONE;
@@ -111,16 +111,16 @@ void CBidEngine::Clear()
 	m_fPartnersMin = 0;
 	m_fPartnersMax = 0;
 	//
-	nPartnersOpeningBid = NONE;
+	nPartnersOpeningBid = BID_NONE;  // NCR changed to BID_NONE vs NONE
 	nPartnersOpeningBidLevel = 0;
-	nPartnersOpeningSuit = NONE;
-	//
+	nPartnersOpeningSuit = NOSUIT;   // NCR changed to NOSUIT vs NONE 
+ 	//
 	m_nOpeningPosition = -1;
 	m_bOpenedBiddingForTeam = FALSE;
 	m_bPartnerOpenedForTeam = FALSE;
 	m_bPartnerOvercalled = FALSE;
-	m_nAgreedSuit = NONE;
-	m_nIntendedSuit = NONE;
+	m_nAgreedSuit = NOSUIT; // NCR changed to NOSUIT vs NONE
+	m_nIntendedSuit = NOSUIT; // NCR changed to NOSUIT vs NONE
 	m_nIntendedContract = NONE;
 	//
 	m_bRoundForceActive = FALSE;
@@ -361,13 +361,18 @@ int CBidEngine::Bid()
 					// we passed and partner bid, so respond
 					nBid = MakeRespondingBid();
 				}
-				else if (m_numBidsMade == 1) 
+				else if ((m_numBidsMade == 1) && (nPreviousBid != BID_PASS)) // NCR-349 Not response if no bid
 				{
 					// partner bid, we responded, and partner rebid
 					nBid = MakeRebidAsResponder();
 				}
 				else 
 				{
+/*#ifdef _DEBUG   // NCR DEBUG CODE
+					if(m_numBidsMade == 1) { //NCR-369 Debug code
+					     AfxMessageBox("Calling MakeRebidExtended with numBidsMade == 1");
+					}
+#endif */
 					// rebid/respond after the second round
 					nBid = MakeRebidExtended();
 				}
@@ -387,8 +392,8 @@ int CBidEngine::Bid()
 			{
 				// partner passed, so rebid as opener
 				nBid = MakeRebidAsOpener();
-			}
-			else if (m_pPartner->GetNumBidsMade() == 1) 
+			}                                             // NCR-588 Test if partner openned
+			else if (m_pPartner->GetNumBidsMade() == 1 && !m_bPartnerOpenedForTeam) 
 			{
 				// partner reponded, so rebid as opener
 				nBid = MakeRebidAsOpener();
@@ -578,6 +583,54 @@ void CBidEngine::AssessPosition()
 	nBiddingOrder = pDOC->GetNumBidsMade();
 	nLastValidRecordedBid = pDOC->GetLastValidBid();
 
+	// NCR moved this forward so it could be used to check for overcall vs jump
+	// record opponents' info shortcuts
+	nLHOBid = m_pLHOpponent->InquireLastBid();
+	if (nLHOBid != BID_PASS)
+	{
+		nLHOBidLevel = BID_LEVEL(nLHOBid);
+		nLHOSuit = BID_SUIT(nLHOBid);
+	}
+	else
+	{
+		nLHOBidLevel = 0;
+		nLHOSuit = NOSUIT;  // NCR changed NONE to NOSUIT
+	}
+	bLHOPassed = (nLHOBid == BID_PASS)? TRUE: FALSE;
+	bLHOInterfered = !bLHOPassed;
+	nLHONumBidsMade = m_pLHOpponent->GetNumBidsMade();
+	nLHONumBidTurns = m_pLHOpponent->GetNumBidTurns();
+	//
+	nRHOBid = m_pRHOpponent->InquireLastBid();
+	if (nRHOBid != BID_PASS)
+	{
+		nRHOBidLevel = BID_LEVEL(nRHOBid);
+		nRHOSuit = BID_SUIT(nRHOBid);
+	}
+	else
+	{
+		nRHOBidLevel = 0;
+		nRHOSuit = NOSUIT;  // NCR changed NONE to NOSUIT
+	}
+	bRHOPassed = (nRHOBid == BID_PASS)? TRUE: FALSE;
+	bRHOInterfered = !bRHOPassed;
+	nRHONumBidsMade = m_pRHOpponent->GetNumBidsMade();
+	nRHONumBidTurns = m_pRHOpponent->GetNumBidTurns();
+	//
+	if (nRHOBid > nLHOBid) 
+	{
+		nOpponentsBid = nRHOBid;
+		nOpponentsBidLevel = nRHOBidLevel;
+		nOpponentsBidSuit = nRHOSuit;
+	}
+	else
+	{
+		nOpponentsBid = nLHOBid;
+		nOpponentsBidLevel = nLHOBidLevel;
+		nOpponentsBidSuit = nLHOSuit;
+	}
+	// NCR end of moved code
+
 	//
 	// retrieve bidding history info
 	//
@@ -590,7 +643,7 @@ void CBidEngine::AssessPosition()
 	else
 	{
 		nPreviousBidLevel = NONE;
-		nPreviousSuit = NONE;
+		nPreviousSuit = NOSUIT;  // NCR changed NONE to NOSUIT
 	}
 	if (ISSUIT(nPreviousSuit))
 	{
@@ -620,12 +673,12 @@ void CBidEngine::AssessPosition()
 		if (ISBID(nNextPrevBid))
 			nNextPrevSuit = BID_SUIT(nNextPrevBid);
 		else
-			nNextPrevSuit = NONE;
+			nNextPrevSuit = NOSUIT;  // NCR changed NONE to NOSUIT
 	}
 	else
 	{
-		nNextPrevBid = NONE;
-		nNextPrevSuit = NONE;
+		nNextPrevBid = BID_NONE;  // NCR changed NONE to BID_NONE
+		nNextPrevSuit = NOSUIT;  // NCR changed NONE to NOSUIT
 	}
 
 
@@ -639,7 +692,7 @@ void CBidEngine::AssessPosition()
 	else
 	{
 		nFirstRoundBidLevel = NONE;
-		nFirstRoundSuit = NONE;
+		nFirstRoundSuit = NOSUIT;  // NCR changed NONE to NOSUIT
 	}
 	if (ISSUIT(nFirstRoundSuit))
 	{
@@ -683,7 +736,9 @@ void CBidEngine::AssessPosition()
 		nPartnersSuitSupport = m_pHand->GetSuitStrength(nPartnersSuit);
 		numSupportCards = m_pHand->GetSuitLength(nPartnersSuit);
 		numHonorsInPartnersSuit = m_pHand->GetNumHonorsInSuit(nPartnersSuit);
-		bJumpResponseByPartner = ((nPartnersBid - nPreviousBid) > 5)? TRUE :  FALSE;
+		// NCR test for intervening bid. If so, pard's bid was an overcall, NOT a Jump!
+		int nTheBidBeforePards = ISBID(nLHOBid) ? nLHOBid : nPreviousBid;  //NCR use last bid before pards
+		bJumpResponseByPartner = ((nPartnersBid - nTheBidBeforePards) > 5)? TRUE :  FALSE;
 	}
 	else
 	{
@@ -695,7 +750,7 @@ void CBidEngine::AssessPosition()
 	}
 
 	// see if this is partner's opening bid
-	if (nPartnersOpeningBid == NONE)
+	if (nPartnersOpeningBid == BID_NONE)  // NCR changed NONE to BID_NONE
 	{
 		nPartnersOpeningBid = nPartnersBid;
 		nPartnersOpeningBidLevel = nPartnersBidLevel;
@@ -722,10 +777,19 @@ void CBidEngine::AssessPosition()
 		(GetConventionStatus(tidArtificial2ClubConvention) != CONV_INACTIVE))
 	{
 		// replace suit with a fake to prevent responder from trying to raise it
-		nPartnersPrevSuit = NONE;
+		nPartnersPrevSuit = NOSUIT;  // NCR changed NONE to NOSUIT
 		nPPrevSuitSupport = SS_NONE;
 		numPPrevSuitSupportCards = 0;
 	}
+	// NCR-36 also don't save previous bid if partner responding to Jacoby Transfer
+	if(((nFirstRoundBid == BID_1NT) || (nFirstRoundBid == BID_2NT))  // ??? NEED WORK HERE
+		&& (pCurrConvSet->IsConventionEnabled(tidJacobyTransfers)) &&
+		(GetConventionStatus(tidJacobyTransfers) != CONV_INACTIVE))
+	{
+		nPartnersPrevSuit = NOSUIT;  // NCR changed NONE to NOSUIT  // this bid over a NT is not a real bid
+		nPPrevSuitSupport = SS_NONE;
+		numPPrevSuitSupportCards = 0;
+	} // NCR-36 end
 
 	//
 	numSuitsStopped = m_pHand->GetNumSuitsStopped();
@@ -734,9 +798,9 @@ void CBidEngine::AssessPosition()
 	numSingletons = m_pHand->GetNumSingletons();
 	numDoubletons = m_pHand->GetNumDoubletons();
 	numLikelyWinners = m_pHand->GetNumLikelyWinners();
-	numLikelyLosers = m_pHand->GetNumLikelyWinners();
+	numLikelyLosers = m_pHand->GetNumLikelyLosers(); // NCR-260 changed from ...Winners();
 	numWinners = m_pHand->GetNumWinners();
-	numLosers = m_pHand->GetNumWinners();
+	numLosers = m_pHand->GetNumLosers(); // NCR-260 changed from ...Winners();
 	numQuickTricks = m_pHand->GetNumQuickTricks();
 	//
 	numOpenableSuits = m_pHand->GetNumOpenableSuits();
@@ -863,7 +927,7 @@ void CBidEngine::AssessPosition()
 	bBalanced = m_pHand->IsBalanced();
 	bSemiBalanced = m_pHand->IsBalanced() || m_pHand->IsSemiBalanced();
 	bAllSuitsStopped = m_pHand->AllSuitsStopped();
-
+/*  Move following to front of method so can be used to check for overcall
 	// record opponents' info shortcuts
 	nLHOBid = m_pLHOpponent->InquireLastBid();
 	if (nLHOBid != BID_PASS)
@@ -909,8 +973,8 @@ void CBidEngine::AssessPosition()
 		nOpponentsBidLevel = nLHOBidLevel;
 		nOpponentsBidSuit = nLHOSuit;
 	}
-
-}
+*/
+} // end AssessPosition()
 
 
 
@@ -1393,7 +1457,8 @@ void CBidEngine::FillNeuralNetInputs(NVALUE* fInputs, int numInputs)
 	//
 
 	// 248..260: Clubs holdings
-	for(int nPos=0;nPos<13;nPos++)
+	int nPos; // NCR-FFS added here, removed below
+	for(/*int*/ nPos=0;nPos<13;nPos++)
 		fInputs[nIndex++]		= (NVALUE) ((m_pHand->GetNumCardsInSuit(0) > nPos)? m_pHand->GetSuit(0).GetAt(nPos)->GetFaceValue() : 0);
 
 	// 261-273: Diamonds holdings
@@ -1479,7 +1544,7 @@ BOOL CBidEngine::IsSuitOpenable(int nSuit, int nMinStrength)
 //
 // IsSuitShiftable()
 //
-BOOL CBidEngine::IsSuitShiftable(int nSuit, int nMinCards, int nMinStrength)
+BOOL CBidEngine::IsSuitShiftable(int nSuit, int nMinStrength, int nMinCards) // NCR MinCards/MinStrength reversed in definition
 {
 	// sanity check
 	if (!ISSUIT(nSuit))
@@ -1549,8 +1614,8 @@ int CBidEngine::ValidateBid(int& nBid, int nOvercallBid)
 			strTemp.Format("But %s has already been bid, so we have to pass.",
 							BTS(nBid));
 		else if (nBid != BID_PASS)
-			strTemp.Format("But our bid is too low vs. the last bid of of %s, so we have to pass.",
-							BTS(pDOC->GetLastValidBid()));
+			strTemp.Format("But our bid (%s) is too low vs. the last bid of of %s, so we have to pass.",
+							BTS(nBid), BTS(pDOC->GetLastValidBid()));  // NCR showed our bid
 		Trace(strTemp);
 		nBid = BID_PASS;
 	}
@@ -1567,6 +1632,66 @@ int CBidEngine::ValidateBid(int& nBid, int nOvercallBid)
 	return nBid;
 }
 
+
+// NCR GetBidType() 
+// Scan back thru history and determine what kind of bid this is
+//
+BidType CBidEngine::GetBidType(int nBid) {
+	BidType bidType = BT_Open;    // default to open
+	// Search back thru history to nBid
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i = pDOC->GetNumBidsMade(); i >= 0; i--)
+	{
+		int aBid = pDOC->GetBidByIndex(i);
+		if(aBid == nBid)
+			break;  // found bid in question
+	}
+	if(i < 1)
+		return BT_Open;					// nothing prior
+	// have a bid by RHO, get it and check
+	int aBid = pDOC->GetBidByIndex(i-1);
+	if((aBid != BID_PASS) && (aBid != BID_DOUBLE)) // NCR-627 added double
+	{
+		bidType = BT_Overcall;
+	    int gap = nBid - aBid;
+		if(gap > 5 && gap < 10)
+			bidType = (BidType)(bidType | BT_Jump); // add on Jump flag
+		if(gap > 10)
+			bidType = (BidType)(bidType | BT_Leap); // add on Leap flag
+		return bidType;
+	}
+	if(i < 2)			// NCR-92 changed from <= to <		
+		return BT_Open;					// nothing prior
+	aBid = pDOC->GetBidByIndex(i-2);    // get partner's bid
+	if(aBid != BID_PASS)
+	{
+		bidType = BT_Response;
+	    int gap = nBid - aBid;
+		if(gap > 5 && gap < 10)
+			bidType = (BidType)(bidType | BT_Jump);
+		if(gap > 10)
+			bidType = (BidType)(bidType | BT_Leap);
+		return bidType;
+	}
+	// Did LHO bid?
+	if(i < 3)					
+		return BT_Open;					// nothing prior
+	aBid = pDOC->GetBidByIndex(i-3);    // get LHO's bid
+	// NCR-590 Did pard double at 4 level?
+	if((nBid == BID_DOUBLE) && (BID_LEVEL(aBid) >= 4))
+		return BT_PenaltyDouble; // NCR-590
+	if(aBid != BID_PASS)
+	{
+		bidType = BT_Overcall;
+	    int gap = nBid - aBid;
+		if(gap > 5 && gap < 10)
+			bidType = (BidType)(bidType | BT_Jump);
+		if(gap > 10)
+			bidType = (BidType)(bidType | BT_Leap);
+		return bidType;
+	}
+	return bidType;
+}  // NCR end GetBidType()
 
 
 //
@@ -1693,6 +1818,11 @@ void CBidEngine::RecordBid(int nPos, int nBid)
 			strTemp.Format("We pass.");
 			TraceNH(strTemp);
 		}
+		else  // NCR Show our bid
+		{
+			strTemp.Format("We bid %s.",BidToShortString(nBid)); 
+			TraceNH(strTemp);
+		}
 	}
 	TraceNH("--------------------");
 }
@@ -1727,6 +1857,9 @@ void CBidEngine::BiddingFinished()
 //
 int CBidEngine::GetCheapestShiftBid(int nTargetSuit, int nOldBid)
 {
+//	if(!ISSUIT(nTargetSuit)) // NCR-138 removed by NCR-189 THIS disables NT ???
+//		return BID_PASS; // NCR can't compare to non suit
+
 	// sanity check
 	if ((nOldBid == BID_DOUBLE) || (nOldBid == BID_REDOUBLE))
 		return BID_PASS;
@@ -1734,6 +1867,9 @@ int CBidEngine::GetCheapestShiftBid(int nTargetSuit, int nOldBid)
 	if (nOldBid == BID_NONE)
 		nOldBid = nPartnersBid;
 	//
+	// NCR need to test if RHO has bid!!
+	if(ISBID(nRHOBid)) // (nRHOBid != BID_PASS) && (nRHOBid != BID_DOUBLE) && (nRHOBid != BID_REDOUBLE))
+		nOldBid = nRHOBid;    // NCR this is the bid (by RHO) to beat
 	int nOldLevel = ((nOldBid-1) / 5) + 1;
 	int nOldSuit = (nOldBid-1) % 5;
 
@@ -1975,10 +2111,12 @@ int CBidEngine::GetLowestOpenableBid(int nSuitType, int nOpenType, int nLevel)
 				return MAKEBID(HEARTS,nLevel);
 			else if (nSuitStrength[SPADES] >= SS_MARGINAL_OPENER)
 				return MAKEBID(SPADES,nLevel);
-			else if (nSuitStrength[CLUBS] >= SS_MARGINAL_OPENER)
-				return MAKEBID(CLUBS,nLevel);
-			else if (nSuitStrength[DIAMONDS] >= SS_MARGINAL_OPENER)
-				return MAKEBID(DIAMONDS,nLevel);
+			// NCR-326 Open stronger minor vs doing it in reverse order: clubs then diamonds
+			else if ((nSuitStrength[DIAMONDS] >= SS_MARGINAL_OPENER)
+				     && (nSuitStrength[DIAMONDS] >= nSuitStrength[CLUBS])) 
+				return MAKEBID(DIAMONDS, nLevel);
+			else if (nSuitStrength[CLUBS] >= SS_MARGINAL_OPENER) // NCR-326 changed these to CLUBS vs DIAMONDS
+				return MAKEBID(CLUBS, nLevel);
 			else
 				return BID_PASS;
 		} 
@@ -2096,7 +2234,16 @@ int CBidEngine::GetBestOpeningSuit()
 		else 
 		{
 			// return a minor suit
-			return PickSuperiorSuit(CLUBS,DIAMONDS,SP_SECOND);
+			nSuit = PickSuperiorSuit(CLUBS,DIAMONDS,SP_SECOND);
+			// NCR-650 make sure at least 3 cards
+			if(numCardsInSuit[nSuit] > 2)
+				return nSuit;
+            if(numCardsInSuit[CLUBS] > numCardsInSuit[DIAMONDS])  // NCR-650 Assume 2 & 3 cards in minors
+				return CLUBS;
+			else
+				return DIAMONDS;
+			// NCR-650 End ensuring 3 cards
+
 		}
 
 	} else {
@@ -2127,7 +2274,27 @@ int CBidEngine::GetBestOpeningSuit()
 		else 
 		{
 			// else just return the lowest preferred suit
-			return nSuit;
+			// NCR-693 Make sure a major suit has 4 cards
+			if(ISMAJOR(nSuit) && (numCardsInSuit[nSuit] > 3) )
+				return nSuit;
+			// NCR-694 Check if 3 cards and second preferred is 4card major
+			if(numCardsInSuit[nSuit] < 4) {
+				nSuit = nPrefSuitList[1];
+				if(ISMAJOR(nSuit) && (numCardsInSuit[nSuit] > 3) )
+					return nSuit;  // NCR-694 use it
+			} // end NCR-694
+			// NCR-693 find another one
+			for(int i=0; i < 4; i++) {
+				nSuit = m_pHand->GetSuitsByPreference(i);
+				if(ISMAJOR(nSuit) ) {
+					if(numCardsInSuit[nSuit] > 3)
+						return nSuit;
+					continue;    // go to next suit
+				}
+				return nSuit; // NCR-693 return any minor
+			}
+			ASSERT(false);   //  TEST if this ever happens
+			return nSuit;   // Compiler needs this one
 		}
 
 	}
@@ -2541,6 +2708,20 @@ void CBidEngine::CalcNoTrumpPoints()
 	else
 		ASSERT(nPreviousBidLevel < 6);
 */
+	// NCR-671 Test if NT was to keep the bidding open
+	if(((GetBidType(nPreviousBid) & BT_Jump) != 0) && (nPartnersOpeningBid == BID_PASS) ) {
+		m_fPartnersMin = 7;
+		m_fPartnersMax = 9;
+		m_fMinTPPoints = fPts + m_fPartnersMin;
+		m_fMaxTPPoints = fPts + m_fPartnersMax;
+		m_fMinTPCPoints = fCardPts + m_fPartnersMin;
+		m_fMaxTPCPoints = fCardPts + m_fPartnersMax;
+		status << "2NT05! Partner's response of " & szPB & " to our jump to " & szPVB & 
+				  " keeping the bidding open indicates " & m_fPartnersMin &
+				  "+ points, for a total of " & m_fMinTPPoints & 
+				  "+ points in the partnership.\n";
+		return;     // Done
+	} // end NCR-671
 
 	// see if this NT bid was in response to an opening or
 	// responding bid
@@ -2658,7 +2839,8 @@ void CBidEngine::CalcNoTrumpPoints()
 				  "+ HCPs in the partnership" &
 				  ((m_bInvitedToSlam)? " and is invitational to slam." : ".") & "\n";
 	} 
-	else if ((nPartnersBid == BID_2NT) && (nPreviousBidLevel == 1)) 
+	else if ((nPartnersBid == BID_2NT) && (nPreviousBidLevel == 1)
+			  && ((GetBidType(nPartnersBid) & BT_Overcall) == 0) ) // NCR test NOT overcall
 	{
 
 		// 1x -> 2NT jump shift
@@ -2697,7 +2879,8 @@ void CBidEngine::CalcNoTrumpPoints()
 				  "+ points in the partnership, and is forcing to game.\n";
 
 	} 
-	else if ((nPartnersBid == BID_2NT) && (nPreviousBidLevel == 2)) 
+	else if ((nPartnersBid == BID_2NT)  // NCR also if partner overcalled 
+			&& ((nPreviousBidLevel == 2) || ((GetBidType(nPartnersBid) & BT_Overcall) != 0)) ) 
 	{
 
 		// 2x -> 2NT shift
@@ -2718,8 +2901,9 @@ void CBidEngine::CalcNoTrumpPoints()
 		else
 		{
 			// e.g., 1H -> 2S -> 2NT
-			m_fPartnersMin = 15;
-			m_fPartnersMax = 18;
+			// NCR-239 Root pg 50 says 13-16
+			m_fPartnersMin = 13; //15;
+			m_fPartnersMax = 16; //18;
 		}
 		m_fMinTPPoints = fPts + m_fPartnersMin;
 		m_fMaxTPPoints = fPts + m_fPartnersMax;
@@ -2732,7 +2916,8 @@ void CBidEngine::CalcNoTrumpPoints()
 				  "+ points in the partnership.\n";
 
 	} 
-	else if ((nPartnersBid == BID_3NT) && (nPreviousBidLevel == 1)) 
+	else if ((nPartnersBid == BID_3NT)  // NCR-617 also if partner overcalled
+			&& (nPreviousBidLevel == 1) && ((GetBidType(nPartnersBid) & BT_Overcall) == 0) ) 
 	{
 
 		// 1x -> 3NT shift

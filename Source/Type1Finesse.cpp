@@ -311,8 +311,10 @@ PlayResult CType1Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 					if (*pOppCard > *m_pConsumedCard)
 					{
 						// if so, play a cover card
-// ???					pPlayCard = dummySuit.GetLowestCardAbove(pOppCard);
-						pPlayCard = dummySuit.GetTopSequence().GetBottomCard();
+						// NCR-454 Which card to play? Mininum cover or a top sequence card?
+						pPlayCard = dummySuit.GetLowestCardAbove(pOppCard);
+						
+//???NCR-454						pPlayCard = dummySuit.GetTopSequence().GetBottomCard();
 						status << "PL1FN72! LHO has played a higher card (the " & 
 								  pOppCard->GetFaceName() & ") than our intended finesse (the " &
 								  m_pConsumedCard->GetFaceName() & "), so cover with the " &

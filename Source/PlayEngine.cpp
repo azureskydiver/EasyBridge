@@ -104,8 +104,9 @@ void CPlayEngine::Clear()
 	//
 	m_nPrioritySuit = NONE;
 	m_nPartnersPrioritySuit = NONE;
-	for(i=0;i<4;i++)
-		m_nSuitPriorityList[4] = NONE;
+	for(int j=0;j<4;j++)
+		m_nSuitPriorityList[j] = NONE;  // NCR changed [4] to [j]
+
 }
 
 	
@@ -334,7 +335,7 @@ void CPlayEngine::RecordHandComplete(int nResult)
 		status << "3RESULT! " & TeamToString(nTeam) & " made " & 
 				   nResult & " overtrick" & ((nResult > 1)? "s" : "") & ".\n";
 	}
-	else if (nResult < 0)
+	else if (nResult == 0) // nCR changed < to ==
 	{
 		status << "3RESULT! " & TeamToString(nTeam) & " made the contract.\n";
 	}
@@ -465,7 +466,8 @@ void CPlayEngine::AdjustCardCountFromPlay(int nPos, CCard* pCard)
 						for(int i=0;i<4;i++)
 						{
 							// test each suit to see if it's in the list of know suits
-							for(int j=0;j<3;j++)
+							int j; // NCR-FFS added here, removed below
+							for(/*int*/ j=0;j<3;j++)
 							{
 								if (nIdentifiedSuits[j] == i)
 									break;
@@ -977,8 +979,12 @@ CCard* CPlayEngine::PlayBestCard(int nPosition)
 			}
 			else
 			{
+				// NCR-154 check if single card left
+				if(numCardsInSuitLed == 1) {
+					pCard = suit.GetTopCard(); // get only card
+				} 
 				// we don't have a card to top the current high card
-				if (bPartnerHigh)
+				else if (bPartnerHigh)
 				{
 					// but partner's card is high, so we're OK
 					pCard = GetDiscard();
@@ -1017,8 +1023,8 @@ CCard* CPlayEngine::PlayBestCard(int nPosition)
 		else
 		{
 			// here we have zero cards in the suit and in trumps, so we're hosed
-			pCard = GetDiscard();
-			status << "PLAYB52! With no cards in the suit led and no trumps, we discard the " & pCard->GetName() & ".\n";
+ 			pCard = GetDiscard();
+			status << "PLAYB56! With no cards in the suit led and no trumps, we discard the " & pCard->GetName() & ".\n";
 		}
 	}
 	//
@@ -1051,19 +1057,48 @@ CCard* CPlayEngine::GetLeadCard()
 			nSuit = GetNextSuit(nTrumpSuit);
 		else
 			nSuit= CLUBS;	// else start with the club suit
-		//
-		for(int i=0;i<4;i++)
+
+		// NCR  Searches for suit = nSuit (not i suit); i is counter
+		for(int i=0;i<4;i++, nSuit = GetNextSuit(nSuit)) // NCR added nSuit = etc here
 		{
+			// NCR check if dummy is void and has trump
+			CHandHoldings& dummyHand = pDOC->GetDummyPlayer()->GetHand();
+			if (!m_pPlayer->IsDeclarer() &&  //NCR declarer doesn't worry about dummy
+				(nSuit != nTrumpSuit) && (dummyHand.IsSuitVoid(nSuit)) && (dummyHand.GetNumTrumps() > 0)) 
+			{
+				continue;  // skip this suit
+			}
+
+			// NCR check if declarer could be void - and has trumps
+			CGuessedHandHoldings* pDclrHand = m_ppGuessedHands[pDOC->GetDeclarerPosition()];
+			if(ISSUIT(nTrumpSuit) && pDclrHand->IsSuitShownOut(nSuit)  // NCR check there are trump out
+			   && !pDclrHand->IsSuitShownOut(nTrumpSuit) && (GetNumOutstandingCards(nTrumpSuit) != 0) )
+			{
+				continue; // skip suit if declarer could trump it
+			}
 			CSuitHoldings& suit = m_pHand->GetSuit(nSuit);
-			if ((suit.GetNumTopCards() > 0) && (nSuit != nTrumpSuit))
+			if ((suit.GetNumTopCards() > 0) && ((nSuit != nTrumpSuit) ))
+				                                // NCR-313 draw trump if we have all winners ie #winners = #cards
+// NCR-432 replaces this				                               || (suit.GetNumTopCards() >= suit.GetNumWinners())) )
 			{
 				pLeadCard = suit.GetTopSequence().GetBottomCard();
+
+				// NCR-217 Don't cash Ace if Dmy as RHO has King
+				// Need code here to test if our card is only stopper for dummy's high card!
+				if((dummyHand.GetSuit(nSuit).GetNumCards() > 1) // need 2 cards to worry
+					&& (dummyHand.GetSuit(nSuit).GetTopCard()->GetFaceValue() == pLeadCard->GetFaceValue()-1))  // Q&D
+					continue;  // skip this one
+				// NCR-471 Don't lead Ace if there are some missing honors
+				if((pLeadCard->GetFaceValue() == ACE) && (suit.GetNumMissingHonors() > 2)
+					&& (suit.GetSequence2(0).GetNumCards() < 2)) // Use winner if 2 or more
+					continue; // NCR-471 skip this suit
+
 				status << "PLYLDA! With no other obvious plays, cash a winner with the " & pLeadCard->GetName() & ".\n";
 				ASSERT(m_pHand->HasCard(pLeadCard));
 				return pLeadCard;
 			}
 			// else look at the next suit
-			nSuit = GetNextSuit(nSuit);
+//NCR			nSuit = GetNextSuit(nSuit);
 		}
 	}
 
@@ -1074,17 +1109,64 @@ CCard* CPlayEngine::GetLeadCard()
 	{
 		CSuitHoldings& suit = m_pHand->GetSuit(suitsUnbid[i]);
 		if (suit.GetNumCards() > 0)
-		{
-			pLeadCard = suit.GetBottomCard();
-			status << "PLYLDB! With no other clear plays available, lead a card from the unbid " &
+		{		
+			// NCR don't lead a card that will give declarer Ruff and Sluff
+			CCardList outstandingCards;
+			int numOutstandingCards = GetOutstandingCards(suit.GetSuit(), outstandingCards, true);
+			if (ISSUIT(nTrumpSuit) && (numOutstandingCards == 0))  // NCR assume some trump out!!!
+				continue;  // NCR skip this suit if its an orphan
+
+			//NCR Check if dummy has top cards in chosen suit. If so, skip it
+			CSuitHoldings& dummySuit = GetDummySuit(suit.GetSuit()); //NCR get dummy's suit
+			CCard* pTopOutstandingCard = GetHighestOutstandingCard(suit.GetSuit(), true); //NCR look at dummy also
+			//NCR test dummy does NOT have top card and is NOT void
+            if(pTopOutstandingCard == NULL || (!dummySuit.HasCard(pTopOutstandingCard) && !dummySuit.IsVoid()) ) 
+			{ 
+				// NCR following needs work???
+				if(suit.IsDoubleton()) {
+					pLeadCard = suit.GetTopCard();
+					if(*pLeadCard >= QUEEN)
+						continue;	// NCR don't lead a KING or QUEEN from doubleton
+				}
+				else
+				{
+					// NCR check for 3 card sequence and lead top
+					if(suit.GetTopSequence().GetNumCards() > 2)
+						pLeadCard = suit.GetTopSequence().GetTopCard();
+					else if((suit.GetNumSequences() > 1) && (suit.GetSecondSequence().GetNumCards() > 2))
+						pLeadCard = suit.GetSecondSequence().GetTopCard();
+					// NCR If dummy has singleton, beat if if possible, unless its our partner
+					else if(dummySuit.IsSingleton() && (pDOC->GetDummyPlayer() != m_pPartner)) 
+					{
+						pLeadCard = suit.GetLowestCardAbove(dummySuit.GetTopCard());
+						if(pLeadCard == NULL) pLeadCard = suit.GetBottomCard();
+					}
+					// NCR don't unguard an honor
+					else if(((suit.GetTopCard()->GetFaceValue() == QUEEN) && (suit.GetNumCards() <= 3))
+						    || ((suit.GetTopCard()->GetFaceValue() == KING) && (suit.GetNumCards() <= 2)))
+					{
+						continue;  // don't unguard the honor
+					}
+					// NCR-32 lead top of seq if # outstanding winners < sequence length
+					else if(suit.GetSequence2(0).GetNumCards() 
+						    > outstandingCards.GetNumCardsAbove(suit.GetTopCard()))
+					{
+						pLeadCard = suit.GetTopCard();  // top card is top of top sequence
+					}
+					else
+						pLeadCard = suit.GetBottomCard();
+				}
+				ASSERT(m_pHand->HasCard(pLeadCard));
+				status << "PLYLDB! With no other clear plays available, lead a card from the unbid " &
 					  STSS(pLeadCard->GetSuit()) & " suit.\n";
-			ASSERT(m_pHand->HasCard(pLeadCard));
-			return pLeadCard;
-		}
-	}
+				return pLeadCard;
+			} //NCR end checking if dummy has top card
+		} // end have cards in suit
+	} // end for() thru unbid suits
 
 	// no winners in hand, so just lead anything
-	if (ISSUIT(nTrumpSuit))
+	// NCR No outstanding trumps same as NoTrump
+	if (ISSUIT(nTrumpSuit) && (GetNumOutstandingCards(nTrumpSuit, true) != 0)) //NCR added nbr of trumps test
 	{
 		// playing in a suit contract
 		// if we have any trumps left, _and_ have a singleton, then lead it
@@ -1099,7 +1181,10 @@ CCard* CPlayEngine::GetLeadCard()
 				if (m_pHand->GetNumCardsInSuit(nSuit) > 1)
 					break;	// oops, no more singletons
 				// check if this is a non-trump singleton suit
-				if ((m_pHand->GetNumCardsInSuit(nSuit) == 1) && (nSuit != nTrumpSuit))
+				// NCR check that dummy not void
+				if ((m_pHand->GetNumCardsInSuit(nSuit) == 1) && (nSuit != nTrumpSuit)
+					// NCR and dummy NOT void or is void in trump
+					&& !(GetDummySuit(nSuit).IsVoid() && !GetDummySuit(nTrumpSuit).IsVoid()) )
 				{
 					bSuitFound = TRUE;
 					break;
@@ -1110,7 +1195,8 @@ CCard* CPlayEngine::GetLeadCard()
 			{
 				CSuitHoldings& suit = m_pHand->GetSuit(nSuit);
 				pLeadCard = suit[0];
-				status << "PLYLDC! Lead the singleton " & pLeadCard->GetName() & " in the hopes of setting up a ruff later.\n";
+				status << "PLYLDC! Lead the singleton " & pLeadCard->GetName() 
+					      & " in the hopes of setting up a ruff later.\n";
 				ASSERT(m_pHand->HasCard(pLeadCard));
 				return pLeadCard;
 			}
@@ -1118,23 +1204,61 @@ CCard* CPlayEngine::GetLeadCard()
 
 		// else we're stuck -- just lead a card from the worst suit
 		// (i.e., keep the "good" suits alive)
+		// NCR save suit that could be ruffed in case a better one
+		int nMaybeSuit = NONE;
 		for(int i=3;i>=0;i--)
 		{
 			int nSuit = m_pHand->GetSuitsByPreference(i);
 			// avoid leading from the trump suit if we can help it
-			if (nSuit == nTrumpSuit)
+			if ((nSuit == nTrumpSuit) || (m_pHand->GetNumCardsInSuit(nSuit) == 0))
 				continue;
-			// else lead from this suit
-			if (m_pHand->GetNumCardsInSuit(nSuit) > 0)
+			// NCR Skip suit if dummy is void and has trump
+		    if((GetDummySuit(nSuit).IsVoid() && !GetDummySuit(nTrumpSuit).IsVoid())
+				//  NCR-516 Don't lead into Dummy's TenAce
+				|| ((pDOC->GetDummyPlayer() == m_pRHOpponent) && (GetDummySuit(nSuit).HasTenAce())) )
 			{
-				pLeadCard = m_pHand->GetSuit(nSuit).GetBottomCard();
-				ASSERT(m_pHand->HasCard(pLeadCard));
-				return pLeadCard;
+				if(nMaybeSuit == NONE)
+					nMaybeSuit = nSuit; // save in case no others found
+				continue;
+			}
+			// else lead from this suit
+//NCR			if (m_pHand->GetNumCardsInSuit(nSuit) > 0)
+			{
+				nMaybeSuit = nSuit;  // save
 			}
 		}
+		// NCR test if we found something
+		if (nMaybeSuit != NONE)
+		{
+			CSuitHoldings& maybeSuit = m_pHand->GetSuit(nMaybeSuit); // NCR-46 
+			pLeadCard = maybeSuit.GetBottomCard();
+			// NCR-46 don't lead a card below dummy's lowest card if possible
+			CSuitHoldings& dummySuit = GetDummySuit(nMaybeSuit);
+			if(!dummySuit.IsVoid()
+			   && (dummySuit.GetBottomCard()->GetFaceValue() > pLeadCard->GetFaceValue())
+			   && (maybeSuit.GetNumCards() > 2) )  // NCR-46 how many 3 or ???
+			{
+				CCard* testCard = maybeSuit.GetLowestCardAbove(dummySuit.GetBottomCard()); 
+				// NCR-65 Don't lead an honor if sure to lose ??? how to determine if top card is winner?
+				if((testCard != NULL) && (testCard->GetFaceValue() < QUEEN)) 
+					pLeadCard = testCard; // NCR-46 change to a higher card 
+			}  // NCR-574 Lead high if we have the top cards
+			else if(maybeSuit.GetNumTopCards() == dummySuit.GetNumCards()
+				     && (GetNumOutstandingCards(nMaybeSuit) <= maybeSuit.GetNumCards())) {
+				pLeadCard = maybeSuit.GetTopCard(); // NCR-574 Cover dummy to prevent cheap trick
+			}
+			ASSERT(m_pHand->HasCard(pLeadCard));
+			status << "PLYLDD! With no other obvious plays, play " & pLeadCard->GetName() & ".\n"; //NCR
+			return pLeadCard;
+		}
+
 		// else we're stuck with leading a trump
 		if (m_pHand->GetNumTrumps() > 0)
-			return m_pHand->GetSuit(nTrumpSuit).GetAt(0);
+		{
+			pLeadCard = m_pHand->GetSuit(nTrumpSuit).GetAt(0);
+			status << "PLYLDDa! With no other obvious plays, play " & pLeadCard->GetName() & ".\n"; //NCR
+			return pLeadCard;
+		}
 	}
 	else
 	{
@@ -1145,18 +1269,53 @@ CCard* CPlayEngine::GetLeadCard()
 			int nSuit = m_pHand->GetSuitsByPreference(i);
 			if (m_pHand->GetNumCardsInSuit(nSuit) > 0)
 			{
-				pLeadCard = m_pHand->GetSuit(nSuit).GetBottomCard();
-				ASSERT(m_pHand->HasCard(pLeadCard));
-				return pLeadCard;
+				CSuitHoldings& testSuit = m_pHand->GetSuit(nSuit);
+				// NCR check if a sequence and use its top card
+				// Problem: first find used vs testing all suits???
+				if(testSuit.GetTopSequence().GetNumCards() >= 2) {
+					pLeadCard = m_pHand->GetSuit(nSuit).GetTopCard();
+					break;
+				}
+				pLeadCard = testSuit.GetBottomCard();
+				if(*pLeadCard >= QUEEN) {
+					continue;  // NCR leave pointer but hope for another one
+				}
+				else
+				{
+					// NCR-4 Check if lead will be sure loser - there are other higher cards
+					// and partner doesn't have any
+					CCardList cardList;
+					bool bCntDmy = (pDOC->GetDummyPlayer() != GetPartner());
+					CSuitHoldings& dmySuit = pDOC->GetDummyPlayer()->GetHand().GetSuit(nSuit);  //  NCR-699
+					int numCardsOS = GetOutstandingCards(nSuit, cardList,  bCntDmy);
+					if((numCardsOS > 0) 
+					   && (m_ppGuessedHands[GetPartner()->GetPosition()]->IsSuitShownOut(nSuit)
+					       // NCR-43 or does dummy have ALL of the cards outstanding? 
+					       || (dmySuit.GetNumCards() ==  numCardsOS)
+						   // NCR-699 or if dmy has enough winners
+						   || (dmySuit.GetNumWinners() >= (numCardsOS + 1)/2) )
+					   && (pLeadCard->GetFaceValue() < cardList.GetTopCard()->GetFaceValue()) )
+						continue;  // NCR-4 skip this card if sure loser
+					else
+						break;  // if not an honor, use it
+				}
+//				ASSERT(m_pHand->HasCard(pLeadCard));
+//				status << "PLYLDE! With no other obvious plays, play " & pLeadCard->GetName() & ".\n"; //NCR
+//				return pLeadCard;
 			}
-		}
-	}
+		} // end for(i) thru Suits
+
+		// NCR hope that above found something
+		ASSERT(m_pHand->HasCard(pLeadCard));
+		status << "PLYLDE! With no other obvious plays, play " & pLeadCard->GetName() & ".\n"; //NCR
+		return pLeadCard;
+	} // NCR end notrump selection
 
 
 	// we should NEVER get here
 	ASSERT(FALSE);
 	return NULL;
-}
+} // end GetLeadCard()
 
 
 
@@ -1181,29 +1340,72 @@ int CPlayEngine::PickFinalDiscardSuit(CHandHoldings& hand)
 	// they absolutely can't find a card to discard
 	int nDiscardSuit = NONE;
 
-	// this means generally tha twe have no suits with losers, 
+	// this means generally that we have no suits with losers, 
 	// or that the only one with losers in the current hand is the priority suit
 	// so look through suits by preference for one that has losers
+	int nMaybeSuitLen = 0;  // NCR allow > 1 to be found vs first; we'll use the longest or weakest
+	CSuitHoldings* maybeSuit = NULL;
+    int nTrumpSuit = pDOC->GetTrumpSuit();
+
 	for(int i=3;i>=0;i--)
 	{
 		int nSuit = hand.GetSuitsByPreference(i);
+		if(nSuit == nTrumpSuit)
+			continue;		// NCR skip trumps ???
 		CSuitHoldings& testSuit = hand.GetSuit(nSuit);
 		// avoid letting go of winners!
-		if ((testSuit.GetNumCards() > 0) && (testSuit.GetNumCards() > testSuit.GetNumWinners()))
+		if ((testSuit.GetNumCards() > 0) 
+			// NCR Select a suit if it has > 2 winners
+			// NCR or if all suits have winners, select one with most cards ???
+			// NCR what good are winners if there are no entries??? Test if there are outstanding cards
+			&& (((testSuit.GetNumCards() > testSuit.GetNumWinners()) && (GetNumOutstandingCards(nSuit) > 0))  
+			    || testSuit.GetNumCards() >= 2) ) //NCR ??? added = here 5/28/09
 		{
-			nDiscardSuit = nSuit;
-			break;
+			// NCR save it, we'll use the longest one
+			// try to protect an honor by keeping at least one card with it???
+			if((testSuit.GetNumCards() > nMaybeSuitLen) 
+				&& !(testSuit.GetNumCards() == 2 && testSuit.GetTopCard()->GetFaceValue() > JACK))
+			{
+				nDiscardSuit = nSuit;
+				nMaybeSuitLen = testSuit.GetNumCards(); // save length to find longest
+				maybeSuit = &testSuit;
+			}
+			// If the same length, chose weaker suit (or if same randomly choose one)
+			else if((nMaybeSuitLen > 0) && (testSuit.GetNumCards() == nMaybeSuitLen)) 
+			{
+				// NCR what if one suit has sure winners and the other suit has a high
+				// card that needs protection. EG SKQ and CK9 with SA out. SQ is better discard???
+				// If suitA is winner & suitB is not winner and only n-1 cards greater
+				//     discard from suitA  -  protect possible winner in suitB
+				// If suitB is winner & suitA is not winner and only m-1 cards greater
+				//     discard from suitB - protect possible winner in suitA
+				// NCE end This all depends on what has been played!!!
+				if(testSuit.GetTotalPoints() < maybeSuit->GetTotalPoints()) 
+				{
+					nDiscardSuit = nSuit;
+					maybeSuit = &testSuit;
+				}
+				else if(testSuit.GetTotalPoints() == maybeSuit->GetTotalPoints())
+				{
+					nDiscardSuit = (OneIn2() ? nSuit : maybeSuit->GetSuit());
+				}
+
+			}
+//NCR			break;
 		}
 	}			
 	
-	// if we failed above, we aboslutely have no losers anywhere 
+	// if we failed above, we absolutely have no losers anywhere 
 	// so search for a suit that has winners but no outstanding cards
 	// i.e., suits that we may not be able to cash
 	if (!ISSUIT(nDiscardSuit))
 	{
-		for(i=3;i>=0;i--)
+		for(int j=3;j>=0;j--) // NCR-FFS change i to int j
 		{
-			int nSuit = hand.GetSuitsByPreference(i);
+			int nSuit = hand.GetSuitsByPreference(j);
+			if(nSuit == nTrumpSuit)
+				continue;		// NCR skip trumps ???
+
 			// see if we have cards in this suit, and no outstanding cards in the suit
 			if ((hand.GetNumCardsInSuit(nSuit) > 0) && (GetNumOutstandingCards(nSuit) == 0))
 			{
@@ -1213,13 +1415,33 @@ int CPlayEngine::PickFinalDiscardSuit(CHandHoldings& hand)
 				
 		}
 	}
+
+	// NCR If we're here without any suit, pick the longest one
+	if (!ISSUIT(nDiscardSuit))
+ 	{
+		int nLongestSuit = NONE;
+		int nLongestSuitLen = 0;
+		for(Suit nSuit = CLUBS; nSuit <= SPADES; GETNEXTSUIT(nSuit))
+		{
+			if(nSuit == nTrumpSuit)
+				continue;		// NCR skip trumps ???
+			CSuitHoldings& testSuit = hand.GetSuit(nSuit);
+			if (testSuit.GetNumCards() > nLongestSuitLen){
+				nLongestSuitLen = testSuit.GetNumCards();
+				nLongestSuit = nSuit;  // Save longest suit
+			}
+		} // end for(nSuit)
+		if(nLongestSuit != NONE)
+			nDiscardSuit = nLongestSuit;  // Set to longest
+	}  // end looking for longest suit
 	
 	// finally, give up and get any old suit that has cards
 	if (!ISSUIT(nDiscardSuit))
  	{
-		for(i=3;i>=0;i--)
+		//NCR don't discard the top card remaining outstanding
+		for(int j=3;j>=0;j--)  // NCR-FFS changed i to int j
 		{
-			int nSuit = hand.GetSuitsByPreference(i);
+			int nSuit = hand.GetSuitsByPreference(j);
 			if (hand.GetNumCardsInSuit(nSuit) > 0)
 			{
 				nDiscardSuit = nSuit;
@@ -1232,7 +1454,7 @@ int CPlayEngine::PickFinalDiscardSuit(CHandHoldings& hand)
 	ASSERT(ISSUIT(nDiscardSuit));
 	return nDiscardSuit;
 
-}
+} // end PickFinalDiscardSuit()
 
 
 
@@ -1263,7 +1485,8 @@ int	CPlayEngine::GetOutstandingCards(int nSuit, CCardList& cardList, bool bCount
 	VERIFY(ISSUIT(nSuit));
 
 	// first fill the list with all the cards in the suit
-	for(int i=2;i<=ACE;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=2;i<=ACE;i++)
 		cardList << deck.GetSortedCard(MAKEDECKVALUE(nSuit,i));
 	cardList.Sort();
 
@@ -1304,14 +1527,109 @@ int	CPlayEngine::GetOutstandingCards(int nSuit, CCardList& cardList, bool bCount
 }
 
 
+//
+// NCR - GetLowestCardNeededToWin
+//
+// Assumes that dummy is RHOpp.
+// Make list of cards in trick, what's been played, what's in my hand and what's in dummy
+// Select lowest card from my hand needed to win the trick
+// If not able to win the trick, return a low card
+//  Returns NULL if no card found
+//
+CCard* CPlayEngine::GetLowestCardNeededToWin(const CSuitHoldings& mySuit, const CSuitHoldings& dmySuit,
+										     BOOL bPartnerHigh) const
+{
+	if(mySuit.IsVoid())
+		return NULL;          // I have no cards to return 
+	int cardsSeen[ACE+1] = {0};  // hold flags for cards(2-Ace); index with FaceValues
+
+	// Define values for flags
+	const int Played = 11;
+	const int Mine = 22;
+	const int Dummy = 33;
+
+	// Now fill in array with accounted for cards
+	int nTopPos;
+	CCard* pCurrTopCard = pDOC->GetCurrentTrickHighCard(&nTopPos);
+	const int topCardFV = pCurrTopCard->GetFaceValue();
+	cardsSeen[topCardFV] = Played;  // top card only one needed of what's been played
+
+	for(int i=0; i < mySuit.GetNumCards(); i++) {
+		cardsSeen[mySuit.GetAt(i)->GetFaceValue()] = Mine;
+	}
+	for(int j=0; j < dmySuit.GetNumCards(); j++) {
+		cardsSeen[dmySuit.GetAt(j)->GetFaceValue()] = Dummy;
+	}
+	// Now get cards played in this suit???
+	int dv = pCurrTopCard->GetDeckValue()+1;   // get first possible played card
+	if(!ISCARD(dv) || topCardFV == ACE)
+		return mySuit.GetBottomCard();		   // Topcard is Ace
+
+	int fv = topCardFV+1;                      // keep this in sync with the above
+	for(; fv <= ACE; fv++, dv++) {
+   		if(pDOC->WasCardPlayed(dv)) {
+			ASSERT(cardsSeen[fv] == 0);  // NCR the card should not be here
+			cardsSeen[fv] = Played;
+		}
+	}
+
+    // Now start at top look for gap (ie outstanding card)
+	for(int k=ACE; k > topCardFV; k--){
+		if(cardsSeen[k] == 0) {
+			if(k == ACE)
+				return NULL;  // Ace is missing, let caller resolve
+			// k has FaceValue of missing card, return our winner over it
+			return mySuit.GetLowestCardAbove(k);
+		}
+	}
+
+	// if no gap(outstanding card) found then two cases:
+	// If partner high, then play low
+	// if partner not high, the play higher than top card
+	if(bPartnerHigh)
+		return mySuit.GetBottomCard();  //  let pard win it
+	else
+		return mySuit.GetLowestCardAbove(topCardFV);  // beat what's there now
+}  // NCR end GetLowestCardedNeededToWin()
+
+//
+// NCR InSequence()
+// Test if three cards are InSequence considering played cards
+//
+bool CPlayEngine::InSequence(const CCard* pCard1, const CCard* pCard2, const CCard* pCard3) const
+{
+	if(pCard1 == NULL || pCard2 == NULL || pCard3 == NULL)
+		return false;  // all three must be good cards
+
+	// Start at the highest card and work down check for gaps
+	int thisDV = pCard1->GetDeckValue() - 1;
+	const int card2DV = pCard2->GetDeckValue();
+	const int card3DV = pCard3->GetDeckValue();
+	if((thisDV < card2DV) || (card2DV < card3DV))
+		return false;  // not in order
+
+	while(thisDV > card2DV) {
+		if(!pDOC->WasCardPlayed(thisDV))
+			return false;  // gap if card not played
+		thisDV--;  // go down another
+	}
+	thisDV--;  // go below card2
+	while(thisDV > card3DV) {
+		if(!pDOC->WasCardPlayed(thisDV))
+			return false;  // gap if card not played
+		thisDV--;  // go down another
+	}
+    // If we made it here, must NOT be any gaps between the 3 cards
+	return (thisDV == card3DV); // should be true
+}
 
 //
 // GetHighestOutstandingCard()
 //
-CCard* CPlayEngine::GetHighestOutstandingCard(int nSuit) const
+CCard* CPlayEngine::GetHighestOutstandingCard(int nSuit, bool bCountDummy) const  // NCR added bool etc
 {
 	CCardList cardList;
-	int nCount = GetOutstandingCards(nSuit, cardList);
+	int nCount = GetOutstandingCards(nSuit, cardList, bCountDummy);
 	if (nCount > 0)
 		return cardList[0];
 	else
@@ -1323,10 +1641,10 @@ CCard* CPlayEngine::GetHighestOutstandingCard(int nSuit) const
 //
 // GetNumOutstandingCards()
 //
-int CPlayEngine::GetNumOutstandingCards(int nSuit) const
+int CPlayEngine::GetNumOutstandingCards(int nSuit, bool  bCountDummy) const  // NCR added bool
 {
 	CCardList cardList;
-	return GetOutstandingCards(nSuit, cardList);
+	return GetOutstandingCards(nSuit, cardList,  bCountDummy);  // NCR added bCountDummy
 }
 
 
@@ -1341,7 +1659,7 @@ BOOL CPlayEngine::IsCardOutstanding(CCard* pCard) const
 	VERIFY(pCard->IsValid());
 	// get the list of outstanding cards in this suit
 	CCardList cardList;
-	return GetOutstandingCards(pCard->GetSuit(), cardList);
+	/*return*/ GetOutstandingCards(pCard->GetSuit(), cardList);  // NCR removed return here ???
 	// and see if the card is among them
 	return cardList.HasCard(pCard);
 }

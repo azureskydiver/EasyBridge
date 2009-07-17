@@ -42,8 +42,14 @@ BOOL CArtificial2ClubConvention::TryConvention(const CPlayer& player,
 
 	// check for a really strong hand with 23+ high card points 
 	// or 10+ playing tricks 
+	//NCR changed logic to require HCP AND 9+ or 10+ possible tricks
 	double fMinPts = pCurrConvSet->GetValue(tn2ClubOpeningPoints);
-	if ((bidState.fCardPts >= fMinPts) || (bidState.numLikelyWinners >= 10)) 
+	if ((bidState.fCardPts >= fMinPts)
+		|| ((bidState.fCardPts > 17)
+			// NCR-243 Have HCPs OR within one trick of game with a long suit 
+			&& (hand.GetSuitLength(hand.GetLongestSuit()) >= 6)
+		    && ((ISMAJOR(hand.GetLongestSuit()) && (bidState.numLikelyWinners >= 9))  // NCR
+				 || (/*minor && */bidState.numLikelyWinners >= 10))) ) //NCR
 	{
 		int nBid = BID_2C;
 		status << "STR2C! Have " & bidState.fCardPts & "/" & 
@@ -111,10 +117,32 @@ BOOL CArtificial2ClubConvention::RespondToConvention(const CPlayer& player,
 			bidState.m_fMaxTPCPoints = fCardPts + bidState.m_fPartnersMax;
 
 			//
-			if (bidState.m_fMinTPPoints <= PTS_GAME-2)
-			{
+			if( bidState.IsGameBid(nPartnersBid)) { // NCR-259 pass if pard bid game 
 				nBid = BID_PASS;
-				status << "R2CLR10! But with only " & bidState.m_fMinTPPoints & " points in the partnership, we have to pass.\n";
+			    status << "R2CLR8! Partner bid game, we'll pass\n";
+			}
+			else if (/*(bidState.m_fMinTPPoints <= PTS_GAME-2)  // NCR-621 removed following logic
+				// NCR-88 use game points corresponding to suit  // NCR-316 <= to < & removed -2 below
+				|| (ISMINOR(nPartnersSuit) && (bidState.m_fMinTPPoints < PTS_MINOR_GAME)) // NCR-88 need more pts for minor
+				    && */(fCardPts <= 4))  // NCR-601 Keep going if 4 or more pts
+			{
+				// NCR-621 Make a second negative
+				if(nPartnersBid == BID_2S || nPartnersBid == BID_2H)
+					nBid = BID_3C;
+			    else if(nPartnersBid == BID_3C)
+					nBid = BID_3D;
+				else if(nPartnersBid == BID_3D)
+					nBid = BID_3NT;
+				else {
+					nBid = BID_PASS;
+				}
+				if(nBid == BID_PASS)	
+					status << "R2CLR10! But with only " & bidState.m_fMinTPPoints 
+					            & " points in the partnership, we have to pass.\n";
+				else
+					status << "R2CLR11! But with only " & fCardPts 
+					          & " points, make a second negative bid of " & BTS(nBid) & ".\n";
+			     // end NCR-621 
 			}
 			else
 			{
@@ -122,10 +150,12 @@ BOOL CArtificial2ClubConvention::RespondToConvention(const CPlayer& player,
 				if ((nPartnersSuitSupport >= SS_MODERATE_SUPPORT) && (nPartnersBid < bidState.GetGameBid(nPartnersSuit)))
 				{
 					nBid = bidState.GetGameBid(nPartnersSuit);
-					status << "R2CLR20! Raise partner's & " & bidState.szPS &
-							  " to game at "& BTS(nBid) & ".\n";
+					status << "R2CLR20! Raise partner's " & bidState.szPS &
+							  " to game at " & BTS(nBid) & ".\n";
 				}
-				else if (bidState.IsSuitOpenable(bidState.nPrefSuit) && (nPartnersBidLevel <= 3))
+				else if (bidState.IsSuitOpenable(bidState.nPrefSuit) && (nPartnersBidLevel <= 3)
+					// NCR-494 Problem here if out suit is Clubs - its the second negative response
+					&& (bidState.nPrefSuit != CLUBS) )
 				{
 					nBid = bidState.GetCheapestShiftBid(bidState.nPrefSuit);
 					status << "R2CLR22! Bid our own " & bidState.szPrefSS &
@@ -192,12 +222,33 @@ BOOL CArtificial2ClubConvention::RespondToConvention(const CPlayer& player,
 	//
 	bidState.AdjustPartnershipPoints(pCurrConvSet->GetValue(tn2ClubOpeningPoints), 40 - fCardPts);
 
+    // NCR-85 bid a suit if have > 8 HCPs
+	if((fCardPts > 8) && (bidState.m_fMinTPPoints < PTS_SLAM)) {
+		nBid = bidState.GetCheapestShiftBid(nPrefSuit, BID_2C);
+		// NCR-95 Make sure not 2D which is the weak response
+		if(nBid == BID_2D)
+			nBid = BID_3D;  // NCR-95 make a positive response
+		status << "R2C03! With " & fCardPts & "/" & fPts & 
+				  " points we have to respond with our best suit of " & 
+				  bidState.szPrefS & " by bidding " & BTS(nBid) & ".\n";
+		bidState.SetBid(nBid);
+		return TRUE;
+	} // NCR-85 end of bidding a suit with points
+
+
 	// respond negatively (2D) with < 33 points
 	if (bidState.m_fMinTPPoints < PTS_SLAM) 
 	{
-		nBid = BID_2D;
-		status << "R2C04! With only " & fCardPts & "/" & fPts &
+		// NCR-684 Bid something if RHO bid and have some points
+		if((fCardPts > 4) && (bidState.nRHOBid != BID_PASS)) {
+			nBid = bidState.GetCheapestShiftBid(bidState.nPrefSuit);
+			status << "R2C30! With "& fCardPts & " points, we bid " & BTS(nBid)
+					  & " over RHO interference.\n";
+		} else {
+			nBid = BID_2D;
+			status << "R2C04! With only " & fCardPts & "/" & fPts &
 				  " points, we deny interest in slam by making the negative response of " & BTS(nBid) & ".\n";
+		}
 		bidState.SetBid(nBid);
 		return TRUE;
 	}
@@ -448,6 +499,14 @@ BOOL CArtificial2ClubConvention::HandleConventionResponse(const CPlayer& player,
 			bidState.SetBid(nBid);
 			return TRUE;
 		} 
+		// NCR-244 treat 3NT as close out  NCR-548 if less than slam
+		else if((nPartnersBid == BID_3NT) && (bidState.m_fMinTPPoints < PTS_SLAM))
+		{
+			nBid = BID_PASS;
+			status << "CRB26! Partner's " & bidState.szPB & " bid is at game level, so pass.\n";
+			bidState.SetBid(nBid);
+			return TRUE;
+		}
 
 		// raise partner's suit if possible
 		if ((nPartnersSuit != NOTRUMP) && (nPartnersSuitSupport >= SS_GOOD_SUPPORT))
@@ -503,24 +562,56 @@ BOOL CArtificial2ClubConvention::HandleConventionResponse(const CPlayer& player,
 		int nPartnersSuit = bidState.nPartnersSuit;
 		if ((nPartnersSuit != NOTRUMP) && (nPartnersSuit != bidState.nPreviousSuit))
 		{
-			status << "CRB60! Partner bid " & bidState.szPB & " after we bid our " & bidState.szPVS & 
-					  " suit, indicating a strong preference for the " & bidState.szPS & " suit.\n";
-			
+			// NCR-621 Need to test for second negative response here !!!
+			bool bSecondNegative = false;
+			if((bidState.nPartnersPrevBid == BID_2D)
+				&& (((bidState.nPreviousBid == BID_3C) && (nPartnersBid == BID_3D))
+			        || ((nPartnersBid == BID_3C) 
+					    && ((bidState.nPreviousBid == BID_2H) 
+						     || (bidState.nPreviousBid == BID_2S)) )) )
+			{
+				status << "CRB58! Partner bid a second negative with " & bidState.szPB & ".\n";
+				bSecondNegative = true;
+				bidState.m_fPartnersMax = 4;
+				bidState.m_fMaxTPPoints = fAdjPts + bidState.m_fPartnersMax;
+				bidState.m_fMaxTPCPoints = fCardPts + bidState.m_fPartnersMax;
+			}
+			else 
+			{
+				status << "CRB60! Partner bid " & bidState.szPB & " after we bid our " & bidState.szPVS & 
+						  " suit, indicating a strong preference for the " & bidState.szPS & " suit.\n";
+				// NCR-514 Give pard some points now 
+				if(bidState.m_fPartnersMin < 3)
+				{
+					bidState.m_fPartnersMin = 3;
+					bidState.m_fMinTPPoints = fAdjPts + bidState.m_fPartnersMin;
+					bidState.m_fMinTPCPoints = fCardPts + bidState.m_fPartnersMin;
+				} // end NCR-514
+			}
 			// support partner's suit if we have decent holdings, else bid our own suit
 			if (bidState.nPartnersBid < bidState.GetGameBid(nPartnersSuit))
 			{
 				// see if we like partner's suit
-				if (bidState.nPartnersSuitSupport >= SS_GOOD_SUPPORT)
+				if ((bidState.nPartnersSuitSupport >= SS_GOOD_SUPPORT) && !bSecondNegative) // NCR-621
 				{
 					nBid = bidState.GetGameBid(nPartnersSuit);
-					status << "CRB62! So with " & bidState.SLTS(nPartnersSuitSupport) & " support for partner's " &
+					status << "CRB61! So with " & bidState.SLTS(nPartnersSuitSupport) & " support for partner's " &
 							   bidState.szPS & ", raise to game at " & BTS(nBid) & ".\n";
+				}
+				// NCR-494 Bid Game in NT if ...
+				else if (bidState.BidNoTrump(LEVEL_3,PTS_NT_GAME,PTS_SLAM-1,FALSE,STOPPED_ALLOTHER,nPartnersSuit))
+				{
+					nBid = bidState.m_nBid; // Copy for below
 				}
 				else
 				{
 					nBid = bidState.GetCheapestShiftBid(bidState.nPreviousSuit);
-					status << "CRB62! But with only " & bidState.SLTS(nPartnersSuitSupport) & " support for partner's " &
-							   bidState.szPS & ", return to our own suit at " & BTS(nBid) & ".\n";
+					if(bSecondNegative) 
+						status << "CRB64! But with  partner's  second negative bid,"
+						 	   " return to our own suit at " & BTS(nBid) & ".\n";
+					else
+						status << "CRB65! But with only " & bidState.SLTS(nPartnersSuitSupport) & " support for partner's " &
+						 	   bidState.szPS & ", return to our own suit at " & BTS(nBid) & ".\n";
 				}
 			}
 			else

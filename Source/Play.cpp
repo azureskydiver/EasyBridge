@@ -62,6 +62,8 @@ CPlay::CPlay(PlayType nPlayType, int nTargetHand, int nSuit, PlayProspect nPlayP
 	m_pEnemyKeyCardsList = NULL;
 	m_pEnemyOrKeyCardsList = NULL;
 	m_pRequiredPlayedCardsList = NULL;
+	m_nQuality = 0; // NCR-707 
+	m_nSuit2 = NONE; // NCR-411 late change
 }
 
 CPlay::~CPlay() 
@@ -257,7 +259,8 @@ BOOL CPlay::IsPlayUsable(const CCombinedHoldings& combinedHand, const CPlayEngin
 		for(int i=0;i<m_pPrerequisiteList->GetSize();i++)
 		{
 			CPlay* pPlay = m_pPrerequisiteList->GetAt(i);
-			for(int j=0;j<numUsedPlays;j++)
+			int j; // NCR-FFS added here, removed below
+			for(/*int*/ j=0;j<numUsedPlays;j++)
 			{
 				CPlay* pUsedPlay = usedPlays[j];
 				if (pPlay == pUsedPlay)

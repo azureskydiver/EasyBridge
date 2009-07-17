@@ -67,8 +67,8 @@ public:
 
 	// analysis & counting routines
 	virtual int		GetOutstandingCards(int nSuit, CCardList& cardList, bool bCountDummy=false) const;
-	virtual CCard*	GetHighestOutstandingCard(int nSuit) const;
-	virtual int		GetNumOutstandingCards(int nSuit) const;
+	virtual CCard*	GetHighestOutstandingCard(int nSuit, bool bCountDummy=false) const;  //NCR added bool etc
+	virtual int		GetNumOutstandingCards(int nSuit, bool bCountDummy=false) const;  // NCR added bool
 	virtual BOOL	IsCardOutstanding(CCard* pCard) const;
 	virtual BOOL	IsCardOutstanding(int nSuit, int nFaceValue) const;
 	virtual int		GetNumCardsPlayedInSuit(int nPlayer, int nSuit) const;
@@ -76,10 +76,19 @@ public:
 	virtual int		GetMaxCardsInSuit(int nPlayer, int nSuit) const;
 	virtual int		GetMinStartingCardsInSuit(int nPlayer, int nSuit) const;
 	virtual int		GetMaxStartingCardsInSuit(int nPlayer, int nSuit) const;
+	virtual CCard*  GetLowestCardNeededToWin(const CSuitHoldings& mySuit, const CSuitHoldings& dmySuit, 
+											 BOOL bPartnerHigh) const; //NCR
+	virtual bool CPlayEngine::InSequence(const CCard* pCard1, const CCard* pCard2, const CCard* pCard3) const; //NCR
+
 	
 	//
 	virtual void	SetHintMode(bool bMode) { m_bInHintMode = bMode; }
 	virtual bool	GetHintMode() { return m_bInHintMode; }
+
+	//NCR functions to Randomize some of the plays - number out of 12
+	bool OneIn2() { return GetRandomValue(11) > 5;}   // 6 out of 12
+	bool OneIn3() { return GetRandomValue(11) > 7;}   // 4 out of 12
+	bool OneIn4() { return GetRandomValue(11) > 8;}   // 3 out of 12
 
 	//
 	CPlayer* GetPlayer() { return m_pPlayer; }

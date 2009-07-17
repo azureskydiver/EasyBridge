@@ -163,7 +163,8 @@ BOOL CMyCustomDialog::OnInitDialog()
 
 	// assign bitmaps
 	CButton* pButton;
-	for(int i=0;i<m_numButtons;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<m_numButtons;i++)
 	{
 		// set icon
 		if (m_pControlInfo[i].nIconID != 0)

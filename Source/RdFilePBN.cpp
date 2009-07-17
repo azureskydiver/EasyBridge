@@ -4,6 +4,7 @@
 // Use of this file is governed by the GNU General Public License.
 // See the files COPYING and COPYRIGHT for details.
 //
+// NCR-PBNI - Added non-export file logic - min of 4 tags needed
 //----------------------------------------------------------------------------------------
 
 // RdfilePBN.cpp : implementation of PBN file reading
@@ -76,6 +77,8 @@ static CGameRecord* pGameRecord = NULL;
 static CStringArray strLines;
 static int numLines;
 
+static bool isExportFile = true;  // NCR-PGNI  default to export file
+
 
 
 
@@ -97,7 +100,13 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 
 	// preload the file
 	numLines = PreloadPBNFile(ar, strLines);
-
+/*
+	int sizeOf = strLines.GetSize();   // NCR DEBUG ONLY
+	for(int xxx = 0; xxx < sizeOf; xxx++) {
+		CString nxtStr = strLines.GetAt(xxx);
+		ASSERT(!nxtStr.IsEmpty());
+	}
+*/
 	// read in the ines
 	pGameRecord = NULL;
 	m_nLineNumber = 0;
@@ -106,6 +115,7 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 	int numGamesLoaded = 0;
 	int numInvalidGames = 0;
 	int numTagsRead = 0;
+	int numDeclarers = 0;		// NCR use to test reviewable deals ie no Declarer means no review
 
 	//
 	for(;;) 
@@ -128,7 +138,7 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 			if (pGameRecord)
 			{
 				pGameRecord->AnalyzePlayRecord();
-				if (pGameRecord->IsValid())
+				if (pGameRecord->IsValid(isExportFile))   // NCR_PBNI added isExportFile
 				{
 					m_gameRecords.Add(pGameRecord);
 					numGamesLoaded++;
@@ -251,6 +261,10 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 					pGameRecord->m_nVulnerability = EAST_WEST;
 				else if ((strValue.CompareNoCase("All") == 0) || (strValue.CompareNoCase("Both") == 0))
 					pGameRecord->m_nVulnerability = BOTH;
+				else if((strValue.CompareNoCase("None") == 0) || (strValue.CompareNoCase("-") == 0)) // NCR-PBNI
+					pGameRecord->m_nVulnerability = NEITHER;
+				else      // error if not above
+					AfxMessageBox("Invalid Vulnerabliity: " + strValue);
 				break;
 
 			case TAG_DEAL:
@@ -262,8 +276,10 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 				break;
 
 			case TAG_DECLARER:
-				if (!strValue.IsEmpty() && (strValue[0] != '?'))
+				if (!strValue.IsEmpty() && (strValue[0] != '?')) {
 					pGameRecord->m_nDeclarer = CharToPosition(strValue[0]);
+					numDeclarers++;   // NCR count for need to do review
+				}
 				break;
 
 			case TAG_CONTRACT:
@@ -333,7 +349,7 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 			case TAG_TERMINATOR:
 				// ignore for now
 				break;
-		}
+		} // end switch(nLineCode)
 
 		// save this tag
 		nPreviousTag = nLineCode;
@@ -347,14 +363,15 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 				pGameRecord->SetTagValue(strTag, strValue);
 		}
 		
-	} 
+	} // end for(;;) 
 
 	// see if the file ended with no ending empty line
 //	if (nGameIndex == 0 && pGameRecord)
 	if (pGameRecord && (numTagsRead >= 1))
 	{
 		pGameRecord->AnalyzePlayRecord();
-		if (pGameRecord->IsValid())
+
+		if (pGameRecord->IsValid(isExportFile))  // NCR-PBNI added isExportFile
 		{
 			m_gameRecords.Add(pGameRecord);
 			numGamesLoaded++;
@@ -365,7 +382,7 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 	}
 
 	// if the file has > 1 game record, set game review mode
-	if (nGameIndex > 1)
+	if (nGameIndex > 1) 
 	{
 		m_bReviewingGame = TRUE;
 		m_bGameReviewAvailable = TRUE;
@@ -497,8 +514,9 @@ int CEasyBDoc::ParsePlaysPBN(CArchive& ar, const CString& strValue)
 		if (m_nLineNumber >= numLines)
 			break;
 		partString = strLines.GetAt(m_nLineNumber++);
-		if ( !partString.IsEmpty() && 
-			 ((partString[0] == '[') || (partString.Find('*') >= 0)) )
+		if ( (!partString.IsEmpty() && 
+			 ((partString[0] == '[') || (partString.Find('*') >= 0)))
+			 || partString.IsEmpty() )  // NCR allow empty string to end this section
 			break;
 		string += partString + " ";
 	}
@@ -597,15 +615,16 @@ int CEasyBDoc::PreloadPBNFile(CArchive& ar, CStringArray& strLines)
 	int nSize = ar.GetFile()->GetLength();
 	PBYTE pBuf = (PBYTE) strBuf.GetBuffer(nSize);
 	int numBytesRead = ar.Read(pBuf, nSize);
-	ASSERT(numBytesRead = nSize);
+	ASSERT(numBytesRead == nSize);
 	strBuf.ReleaseBuffer(nSize);
 
 	// check for export tag
 	int nPos = strBuf.Find(_T("% EXPORT"));
-	if (nPos < 1)
+	if (nPos < 0)   // NCR_PBNI allow as first line (was < 1)
 	{
 		AfxMessageBox("The Files is not in PBN Export format.");
-		AfxThrowFileException(CFileException::generic);
+//		AfxThrowFileException(CFileException::generic);
+		isExportFile = false;  // NCR_PBNI Not export file - fewer tags required
 	}
 
 	// remove comments
@@ -625,16 +644,19 @@ int CEasyBDoc::PreloadPBNFile(CArchive& ar, CStringArray& strLines)
 		// search for the next nonspace character
 		nEnd++;
 		int nLen = strMid.GetLength();
+		// NCR test if comment at end of file
+		if(nLen == nEnd)
+			break;		// NCR exit if at end
 		while ((nEnd < nLen) && (_istspace(strMid[nEnd])))
 			nEnd++;
 
 		// and trim and re-combine
-		if ((strMid[nEnd] == _T('[')) && !bNewLine)
+		if ((nEnd < nLen) && (strMid[nEnd] == _T('[')) && !bNewLine)
 			strBuf = strBuf.Left(nPos) + _T('\n') + strMid.Mid(nEnd);
 		else
 			strBuf = strBuf.Left(nPos) + strMid.Mid(nEnd);
 		nPos = strBuf.Find(_T('{'));
-	}
+	} // end while() removing comment
 
 	// remove '!' suffixes
 	strBuf.Remove(_T('!'));
@@ -868,3 +890,90 @@ int CEasyBDoc::ParseLinePBN(CString& string, CString& strTag, CString& strValue,
 	return -1;
 }
 
+//------------------------------------------------------------------------
+// NCR Added code here for PLL file
+
+BOOL CEasyBDoc::ReadFilePLL(CArchive& ar) 
+{	
+	const int DealDataLen = 772;   // number of bytes for a deal
+	// read in the file
+	CString strBuf;
+	int nSize = ar.GetFile()->GetLength();
+	PBYTE pBuf = (PBYTE) strBuf.GetBuffer(nSize);
+	int numBytesRead = ar.Read(pBuf, nSize);
+	ASSERT(numBytesRead == nSize);
+
+    // Check first 2 bytes
+	if(pBuf[0] != 0x01 || pBuf[1] != 0x04) {
+		AfxMessageBox("The File is not in PLL format.");
+		AfxThrowFileException(CFileException::generic);
+	}
+
+	int nbrDeals = numBytesRead / DealDataLen;
+	if(nbrDeals > 1) {
+		AfxMessageBox("EasyBridge currently only reads first deal.");
+	}
+	// Ok, now parse the hands - we'll only get the first deal
+	pGameRecord = new CGameRecord;
+	
+	const int FirstByte = 48;  // first byte of hands
+	int dealer = pBuf[FirstByte + 32]; // 0=N, 1=E, 2=S, 3=W
+	const Position PPL2EB[] = {NORTH, EAST, SOUTH, WEST};
+	dealer = PPL2EB[dealer];  // convert
+	pGameRecord->m_nDealer = dealer;  // save
+
+	int vulner = pBuf[FirstByte + 33];
+	CString theDeal[4][4];      // hands and suits
+	const int bb[] = {1,2,4,8,16,32,64,128}; // bit test masks
+	const char * LowFaceValue[] = {"2", "3", "4", "5", "6", "7", "8", "9"};
+	const char * HighFaceValue[] = {"T", "J", "Q", "K", "A"};
+
+	for(int jj = 0; jj < 16; jj++) {
+		char byte1 = pBuf[FirstByte+(jj*2)+1];  // High card flags T-A
+		char byte2 = pBuf[FirstByte+(jj*2)+0];  // Low card flags 2-9 
+		int handIdx = jj / 4;
+		int suitIdx = 3 - (jj % 4);
+		// First get the High cards from byte1
+    	int kk; // NCR-FFS added here, removed below
+		for(/*int*/ kk = 4; kk >=0; kk--) {
+			if((byte1 & bb[kk]) != 0)
+				theDeal[handIdx][suitIdx] += HighFaceValue[kk];
+		} // end for(kk) thru High card byte
+		// now the low cards
+		for(kk = 7; kk >=0; kk--) {
+			if((byte2 & bb[kk]) != 0)
+				theDeal[handIdx][suitIdx] += LowFaceValue[kk];
+		} // end for(kk) thru Low card byte
+
+	} // end jj
+
+	// Now build the deal a la PBN
+	CString aDeal = "N:";
+	for (int i = 0; i < 4; i++) {
+		aDeal += theDeal[i][0] + "." +theDeal[i][1] + "." +theDeal[i][2] + "." +theDeal[i][3] 
+			      + ((i < 3) ? " " : "");  // nothing at the end
+    }
+/*
+	// Hard code for testing
+	pGameRecord->m_nDealer = NORTH; //SOUTH=0, WEST=1, NORTH=2, EAST=3,
+	pGameRecord->m_nVulnerability = EAST_WEST; //NEITHER=-1, NORTH_SOUTH=0, EAST_WEST=1, BOTH=2
+	// Following deal from N-Sbid1H_Make4H.pbn
+	CString aDeal = "S:KQ62.Q97.K765.52 94.AKJ4.Q92.JT97 875.852.AJT3.K63 AJT3.T63.84.AQ84";
+
+	// Following from EasyBridgeGame2.pbn   hand order: W N E S
+//	CString aDeal = "W:6.A852.KT43.Q965 A532.94.AJ85.A74 KQJ87.3.Q62.KT83 T94.KQJT76.97.J2";
+//	pGameRecord->m_nDealer = EAST; //SOUTH=0, WEST=1, NORTH=2, EAST=3,
+*/
+	pGameRecord->SetTagValue("DEAL", aDeal);  //NOTE ALL CAPS for Keys!!! <<<<<<
+	pGameRecord->SetTagValue("BOARD", "1");   // Hardcoded value ???
+
+//	AssignCardsPBN(aDeal);  // use this method
+//	theApp.SetValue(tbGameInProgress, FALSE);
+
+	pGameRecord->AnalyzePlayRecord();
+//	if(pGameRecord->IsValid()) {  // this only for PBN
+		m_gameRecords.Add(pGameRecord);
+//	}
+
+	return TRUE;
+}

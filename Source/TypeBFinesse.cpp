@@ -100,9 +100,8 @@ PlayResult CTypeBFinesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 						   CCardLocation& cardLocation, CGuessedHandHoldings** ppGuessedHands, 
 						   CPlayerStatusDialog& status, CCard*& pPlayCard)
 {
-	// Type A Finesse
-	// - opportunistic play of a non-top card in second position to
-	//   finesse against LHO
+	// Type B Finesse
+	// - opportunistic wait for trick to come to fourth position
 
 	// check which hand this is
 	int nOrdinal = pDOC->GetNumCardsPlayedInRound();
@@ -116,6 +115,7 @@ PlayResult CTypeBFinesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 	int nSuitLed = NONE;
 	if (pCardLed)
 		nSuitLed = pCardLed->GetSuit();
+
 	// see if a trump was played in this round
 	BOOL bTrumped = FALSE;
 	if ((nSuitLed != pDOC->GetTrumpSuit()) && (pDOC->WasTrumpPlayed()))
@@ -124,7 +124,9 @@ PlayResult CTypeBFinesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 	pPlayCard = NULL;
 
 	// test preconditions
-	if (!CPlay::IsPlayUsable(combinedHand, playEngine))
+	if (!CPlay::IsPlayUsable(combinedHand, playEngine) 
+		   // NCR-423 check suit
+		|| (nSuitLed != m_nSuit) || bTrumped)
 	{
 		m_nStatusCode = PLAY_INACTIVE;
 		return PLAY_POSTPONE;
@@ -172,19 +174,37 @@ PlayResult CTypeBFinesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 				return PLAY_POSTPONE;
 			}
 			// in 4th position, win or duck
+
+			// NCR-475 check if pard is winning this trick
+			CCard* pPardsCard = pDOC->GetCurrentTrickCardByOrder(1);
+			bool bPardIsWinning = (pPardsCard == pTopCard); // NCR-475 for below
+
 			// see if we can top the high card
-			if (*m_pConsumedCard > *pTopCard)
+			// NCR-423 Also need to check if partner's card is a winner!!!
+			if (!bPardIsWinning && (*m_pConsumedCard > *pTopCard))
 			{
 				pPlayCard = m_pConsumedCard;
-				status << "PLBFN76! The finesse worked; win with the " & 
-									pPlayCard->GetFaceValue() & ".\n";
+				status << "PLBFN30! The finesse worked; win with the " & 
+									pPlayCard->GetName() & ".\n";
+			}
+			else if(!bPardIsWinning && bPlayingInHand && (playerSuit.GetTopCardVal() > pTopCard->GetFaceValue()) )
+			{
+				pPlayCard = playerSuit.GetLowestCardAbove(pTopCard);
+				status << "PLBFN33! RHO Played high; win with the " 
+						 & pPlayCard->GetName() & ".\n";
+			}
+			else if(!bPardIsWinning && !bPlayingInHand && (dummySuit.GetTopCardVal() > pTopCard->GetFaceValue()) )
+			{
+				pPlayCard = dummySuit.GetLowestCardAbove(pTopCard);
+				status << "PLBFN34! RHO Played high; win with the " 
+						 & pPlayCard->GetName() & ".\n";
 			}
 			else
 			{
 				// discard low here
 				pPlayCard = playEngine.GetDiscard();
-				status << "PLBFN77! West played high, so discard the " &
-					       pPlayCard->GetFaceValue() & ".\n";
+				status << "PLBFN40! " & (bPardIsWinning ? "partner" : "West") & " played high, so discard the " &
+					       pPlayCard->GetName() & ".\n";
 			}
 			m_nStatusCode = PLAY_COMPLETE;
 	}

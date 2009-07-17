@@ -60,6 +60,8 @@ public:
 						return &m_cardBackBitmap[nIndex]; }
 	CImageList& GetCardBackImageList() { return m_imageListCardBacks; }
 
+	CCard*     m_pNoCard; //NCR ptr to NoCard object (vs having NULL card)
+
 // data
 private:
 	CCard*		m_cards[52];

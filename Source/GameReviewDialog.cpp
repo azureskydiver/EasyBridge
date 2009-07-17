@@ -142,7 +142,8 @@ void CGameReviewDialog::Initialize(BOOL bRefresh)
 
 	// fill the games listbox
 	m_listGameIndex.ResetContent();
-	for(int i=0;i<m_numGamesAvailable;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<m_numGamesAvailable;i++)
 		m_listGameIndex.AddString(FormString(i+1));
 	m_nGameIndex = 0;
 	m_strGameInfo.Format("of %d", m_numGamesAvailable);
@@ -633,6 +634,10 @@ void CGameReviewDialog::OnNext()
 		// delay between cards
 		if (i == 0)
 			::Sleep(250);
+		// NCR use the Options delays for these plays also
+		if (theApp.GetValue(tbInsertPlayPause))
+			::Sleep(theApp.GetValue(tnPlayPauseLength)*100);
+
 
 		// advance to the next player
 		nPos = GetNextPlayer(nPos);

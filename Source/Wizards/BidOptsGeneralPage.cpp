@@ -109,6 +109,9 @@ void CBidOptsGeneralPage::Update()
 	m_conventionSet.SetValue(tidGerber, m_bGerber);
 	m_conventionSet.SetValue(tidStayman, m_bStayman);
 	m_conventionSet.SetValue(tidJacobyTransfers, m_bJacobyTransfers);
+	// NCR-126 Turn off 4SuitTransfers if JacobyTransfers are off
+	if(m_bJacobyTransfers == FALSE)
+		m_b4SuitTransfers = FALSE;
 	m_conventionSet.SetValue(tb4SuitTransfers, m_b4SuitTransfers);
 	m_conventionSet.SetValue(tidLimitRaises, m_bLimitRaises);
 	m_conventionSet.SetValue(tidSplinterBids, m_bSplinterBids);

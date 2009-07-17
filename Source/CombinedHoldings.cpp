@@ -19,6 +19,8 @@
 #include "CombinedHoldings.h"
 #include "PlayerStatusDialog.h"
 #include "handopts.h"
+#include "GuessedHandHoldings.h"   // NCR-11
+
 
 
 //
@@ -258,6 +260,7 @@ void CCombinedHoldings::ClearHand()
 	//
 	m_numMaxWinners = 0;
 	m_numMaxLikelyWinners = 0;
+	m_numSureWinners = 0; // NCR-587
 	m_numMaxTopCards = 0;
 	m_numDeclarerWinners = 0;
 	m_numDummyWinners = 0;
@@ -442,7 +445,8 @@ double CCombinedHoldings::CountPoints(const BOOL bForceCount)
 	// count the points for each suit
 	//
 	m_numTotalPoints = 0;
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here and removed below
+	for(/*int*/ i=0;i<4;i++) 
 	{
 		m_pSuit[i]->CountPoints(bForceCount);
 		m_numTotalPoints += m_pSuit[i]->GetHCPoints();
@@ -624,6 +628,7 @@ void CCombinedHoldings::EvaluateHoldings()
 	m_numMaxWinners = 0;
 	m_numMaxTopCards = 0;
 	m_numMaxLikelyWinners = 0;
+	m_numSureWinners = 0;  // NCR-587
 	for(i=0;i<4;i++) 
 	{
 		m_numWinners += m_pSuit[i]->GetNumWinners();
@@ -631,6 +636,7 @@ void CCombinedHoldings::EvaluateHoldings()
 		m_numMaxWinners += m_pSuit[i]->GetNumMaxWinners();
 		m_numMaxLikelyWinners += m_pSuit[i]->GetNumMaxLikelyWinners();
 		m_numMaxTopCards += m_pSuit[i]->GetNumMaxTopCards();
+		m_numSureWinners += m_pSuit[i]->GetNumSureWinners(); // NCR-587
 	}
 	if (m_numWinners > 13)
 		m_numWinners = 13;
@@ -807,7 +813,8 @@ void CCombinedHoldings::ReevaluateHoldings(const CCard* pCard)
 	//
 	// re-sort suits by length (and also by suit rank)
 	//
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 		m_nSuitsByLength[i] = 3-i;	// init, high suit to low suit
 	// 
 	for(i=0;i<4;i++) 
@@ -832,6 +839,7 @@ void CCombinedHoldings::ReevaluateHoldings(const CCard* pCard)
 	m_numMaxWinners = 0;
 	m_numMaxTopCards = 0;
 	m_numMaxLikelyWinners = 0;
+	m_numSureWinners = 0; // NCR-587
 	for(i=0;i<4;i++) 
 	{
 		m_numWinners += m_pSuit[i]->GetNumWinners();
@@ -839,6 +847,7 @@ void CCombinedHoldings::ReevaluateHoldings(const CCard* pCard)
 		m_numMaxWinners += m_pSuit[i]->GetNumMaxWinners();
 		m_numMaxLikelyWinners += m_pSuit[i]->GetNumMaxLikelyWinners();
 		m_numMaxTopCards += m_pSuit[i]->GetNumMaxTopCards();
+		m_numSureWinners += m_pSuit[i]->GetNumSureWinners(); // NCR-587
 	}
 
 	// adjust max winners
@@ -846,8 +855,29 @@ void CCombinedHoldings::ReevaluateHoldings(const CCard* pCard)
 	m_numMaxWinners = Min(m_numMaxWinners, m_numCards);
 
 	//
-	m_numLosers = m_numCards - m_numWinners;
-	m_numLikelyLosers = m_numCards - m_numLikelyWinners;
+	// NCR-11 Losers need to be computed looking at both hands, not individually
+	if((m_numCards > 26))   // We'll do this incrementally starting a the last 12 cards
+	{
+		CCombinedSuitHoldings* pSpades = m_pSuit[SPADES]; // DEBUG CODE
+		CCombinedSuitHoldings* pHearts = m_pSuit[HEARTS]; // DEBUG CODE
+		CCombinedSuitHoldings* pDiamonds = m_pSuit[DIAMONDS]; // DEBUG CODE
+		CCombinedSuitHoldings* pClubs = m_pSuit[CLUBS]; // DEBUG CODE
+		int nSW = pSpades->GetNumWinners();
+		int nSS = pSpades->GetNumSequences(); 
+
+		CGuessedCardHoldings playedCardsList;
+		int numPlayed = pSpades->GetCardsPlayedInSuit(playedCardsList);
+
+		int nHS = pHearts->GetNumSequences(); 
+		int nDS = pDiamonds->GetNumSequences(); 
+		int nCS = pClubs->GetNumSequences(); 
+		int nHW = pHearts->GetNumWinners();
+		playedCardsList.Clear(FALSE);
+	} // NCR-11 end computing number of losers
+
+	int numTricksLeft = (m_numCards+1)/2;   // NCR-11 there are cards for two hands here
+	m_numLosers = numTricksLeft - m_numWinners;
+	m_numLikelyLosers = numTricksLeft - m_numLikelyWinners;
 
 	// determine the declarer/dummy split of winners
 	m_numDeclarerWinners = 0;
@@ -861,7 +891,7 @@ void CCombinedHoldings::ReevaluateHoldings(const CCard* pCard)
 		m_numDeclarerTopCards += m_pSuit[i]->GetNumDeclarerTopCards();
 		m_numDummyTopCards += m_pSuit[i]->GetNumDummyTopCards();
 	}
-	ASSERT((m_numDeclarerWinners+m_numDummyWinners) == m_numWinners);
+	ASSERT((m_numDeclarerWinners+m_numDummyWinners) == m_numSureWinners); // NCR-613 Sure winners
 }
 
 
@@ -1018,15 +1048,33 @@ int	CCombinedHoldings::GetLongestSuit(int nType) const
 //
 LPVOID CCombinedHoldings::GetValuePV(int nItem, int nIndex1, int nIndex2, int nIndex3) const
 {
-/*
+   // NCR-38 Uncommented and Added items to this switch
+
 	switch (nItem)
 	{
+		case tnumSuitsStopped:		
+			return (LPVOID) m_numSuitsStopped;
+		case tnumSuitsProbStopped:	
+			return (LPVOID) m_numSuitsProbStopped;
+		case tnumSuitsUnstopped:
+			return (LPVOID) m_numSuitsUnstopped;
+		case tnStoppedSuits:		// [4]
+			return (LPVOID) m_nSuitsStopped[nIndex1];
+		case tnProbStoppedSuits:	// [4]
+			return (LPVOID) m_nSuitsProbStopped[nIndex1];
+		case tnUnstoppedSuits:	// [4]
+			return (LPVOID) m_nSuitsUnstopped[nIndex1];
+
+		case tstrSuitsStopped:
+			return (LPVOID) (LPCTSTR) m_strSuitsStopped;
+		case tstrSuitsUnstopped:
+			return (LPVOID) (LPCTSTR) m_strSuitsUnstopped;
 		//
 		default:
-			AfxMessageBox("Unhandled Call to CCombinedHoldings::GetValue()");
+			AfxMessageBox("Unhandled Call to CCombinedHoldings::GetValuePV() ");
 			return NULL;
 	}
-*/
+
 	return NULL;
 }
 

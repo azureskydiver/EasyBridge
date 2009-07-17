@@ -62,6 +62,7 @@ public:
 	BOOL AllOtherSuitsStopped(int nSuit1, int nSuit2=NONE, int nSuit3=NONE, BOOL bIncludeProbStoppers=FALSE) const;
 	BOOL IsBalanced() const;
 	BOOL IsSemiBalanced() const;
+	bool HasWorthlessDoubleton(int exceptSuit=NONE) const; // NCR NCR-304
 	//
 	int RankSuits(int numSuits, int nArbitrate, int nSuit1, int nSuit2, 
 								int nSuit3=NONE, int nSuit4=NONE, int* pOrder=NULL);
@@ -262,6 +263,8 @@ private:
 	int			m_numTopCards;			// top cards
 	//
 	BOOL		m_bRevaluedForSuit[4];
+	int         m_nRevaluedForPlayer[4]; // NCR-268 dummy or declarer?
+	double      m_nAdjPointsBySuit[4];   // NCR-468 Adjusted points for each suit
 
 public:
 	CHandHoldings();

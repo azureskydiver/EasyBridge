@@ -26,7 +26,7 @@ public:
 	virtual void Clear();
 	//
 	virtual void Add(CCard* pCard, const BOOL bSort=FALSE);
-	virtual void Merge(const CCardList& srcList);
+	virtual void Merge(const CCardList& srcList, const bool bIgnoreDups=false); // NCR-488
 	virtual void operator<<(CCard* pCard) { Add(pCard); }
 	virtual void operator<<(const CCardList& srcList) { Merge(srcList); }
 	virtual CCard* RemoveByIndex(const int nIndex);	// the main routine
@@ -65,6 +65,7 @@ public:
 	virtual BOOL   AreEquivalentCards(CCard* pCard1, CCard* pCard2);
 	virtual CCard* GetHighestEquivalentCard(CCard* pCard);
 	virtual CCard* GetLowestEquivalentCard(CCard* pCard);
+	virtual CCard* BeatIfBracketed(const CCard* pCard) const; //NCR test and return higher of bracketing cards
 
 	//
 	BOOL   operator==(const CCardList& srcList) const;

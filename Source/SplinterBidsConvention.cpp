@@ -75,7 +75,8 @@ BOOL CSplinterBidsConvention::TryConvention(const CPlayer& player,
 	if (bidState.numVoids >= 1)
 	{
 		// find the lowest void suit
-		for(int i=0;i<4;i++)
+		int i; // NCR-FFS added here, removed below
+		for(/*int*/ i=0;i<4;i++)
 			if (bidState.numCardsInSuit[i] == 0)
 				break;
 		nSuit = i;
@@ -83,7 +84,8 @@ BOOL CSplinterBidsConvention::TryConvention(const CPlayer& player,
 	else
 	{
 		// find the lowest singleton
-		for(int i=0;i<4;i++)
+		int i; // NCR-FFS added here, removed below
+		for(/*int*/ i=0;i<4;i++)
 			if (bidState.numCardsInSuit[i] == 1)
 				break;
 		ASSERT(i < 4);

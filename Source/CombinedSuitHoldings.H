@@ -55,6 +55,7 @@ public:
 	virtual int GetNumOutstandingCards() const { return m_numOutstandingCards; }
 	virtual int GetNumMaxWinners() const { return m_numMaxWinners; }
 	virtual int GetNumMaxLikelyWinners() const { return m_numMaxLikelyWinners; }
+	virtual int GetNumSureWinners() const { return m_numSureWinners; } // NCR-587
 	virtual int GetNumMaxTopCards() const { return m_numMaxTopCards; }
 	virtual int GetNumDeclarerWinners() const { return m_numDeclarerWinners; }
 	virtual int GetNumDummyWinners() const { return m_numDummyWinners; }
@@ -94,6 +95,7 @@ private:
 	CSuitHoldings* m_pLongHand;
 	int		m_numMaxWinners;
 	int		m_numMaxLikelyWinners;
+	int		m_numSureWinners; // NCR-587 These win from the top
 	int		m_numMaxTopCards;
 	int		m_numDeclarerWinners;
 	int		m_numDummyWinners;

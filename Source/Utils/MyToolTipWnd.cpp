@@ -178,8 +178,9 @@ int CMyToolTipWnd::ListControlHitTest(CPoint point, CListCtrl& listCtl, int nCol
 	CRect targetRect;
 //	listCtl.ClientToScreen(&itemRect);
 	targetRect.left = itemRect.left;
-	for(i=0;i<nColumn;i++)
-		targetRect.left += listCtl.GetColumnWidth(i);
+	// NCR-FFS Changed i to j
+	for(int j=0;j<nColumn;j++)
+		targetRect.left += listCtl.GetColumnWidth(j);
 	targetRect.right = targetRect.left + listCtl.GetColumnWidth(nColumn);
 	if ((point.x >= targetRect.left) && (point.x <= targetRect.right))
 	{

@@ -236,7 +236,7 @@ void CPlayer::RecordBid(int nPos, int nBid)
 int CPlayer::InquireLastBid() 
 	{ return m_pBidder->m_nBid; }
 
-int CPlayer::GetNumBidsMade() 
+int CPlayer::GetNumBidsMade() const  // NCR added const
 	{ return m_pBidder->GetNumBidsMade(); }
 
 int CPlayer::GetNumBidTurns() 
@@ -863,7 +863,7 @@ BOOL CPlayer::IsHumanPlayer() const
 
 
 //
-LPVOID CPlayer::GetValuePV(int nItem, int nIndex1, int nIndex2, int nIndex3)
+LPVOID CPlayer::GetValuePV(int nItem, int nIndex1, int nIndex2, int nIndex3) const // NCR
 {
 	switch (nItem)
 	{
@@ -1211,7 +1211,7 @@ void CPlayer::SetValueString(int nItem, LPCTSTR szValue, int nIndex1, int nIndex
 	SetValuePV(nItem, (LPVOID) szValue, nIndex1, nIndex2, nIndex3);
 }
 
-int CPlayer::GetValue(int nItem, int nIndex1, int nIndex2, int nIndex3)
+int CPlayer::GetValue(int nItem, int nIndex1, int nIndex2, int nIndex3) const // NCR added const
 {
 	return (int) GetValuePV(nItem, nIndex1, nIndex2, nIndex3);
 }

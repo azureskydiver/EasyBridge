@@ -5,6 +5,9 @@
 // See the files COPYING and COPYRIGHT for details.
 //
 //----------------------------------------------------------------------------------------
+/*  NCR Changes:
+  08/29/31 - NCR-51 Uncommented computing m_numShortPoints
+*/
 
 //===========================================================
 //
@@ -21,6 +24,9 @@
 #include "GuessedHandHoldings.h"
 #include "progopts.h"
 #include "Player.h"
+#ifdef _DEBUG
+#include "PlayerStatusDialog.h"  // NCR-587
+#endif
 
 
 //
@@ -93,7 +99,8 @@ void CSuitHoldings::Clear()
 	m_nHighestHonor = NONE;
 	m_nLowestHonor = NONE;
 	m_nLowestPseudoHonor = NONE;
-	for(int i=0;i<5;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<5;i++)
 		m_nMissingHonors[i] = NONE;
 	m_numMissingHonors = 0;
 	m_numMissingTopHonors = 0;
@@ -113,6 +120,11 @@ void CSuitHoldings::Clear()
 	for(i=0;i<m_sequenceList.GetSize();i++)
 		delete m_sequenceList[i];
 	m_sequenceList.RemoveAll();
+	// NCR-32 ditto for sequence2
+	m_numSequence2s = 0;
+	for(i=0;i<m_sequence2List.GetSize();i++)
+		delete m_sequence2List[i];
+	m_sequence2List.RemoveAll();
 	//
 	m_numMissingSequences = 0;
 	for(i=0;i<m_missingSequenceList.GetSize();i++)
@@ -266,8 +278,45 @@ CCard* CSuitHoldings::GetLowestCardAbove(CCard* pCard) const
 	return GetLowestCardAbove(pCard->GetFaceValue()); 
 }
 
+// 
+// NCR Get count of cards in missing list vs given card
+//
+
+int CSuitHoldings::GetNumMissingBelow(const CCard* pCard) const
+{
+	return GetNumMissingBelow(pCard->GetFaceValue());
+}
+
+int CSuitHoldings::GetNumMissingBelow(const int nFaceValue) const
+{
+	int nbr = 0;
+	for(int i=0; i < m_numMissingSequences; i++) {
+		CCardList& nxtSeq = *m_missingSequenceList[i];
+		// Check that top card is Below given card value
+		if(nxtSeq.GetTopCard()->GetFaceValue() < nFaceValue)
+			nbr += nxtSeq.GetNumCards();  // add in nbr cards in this 
+	}
+	return nbr;
+}
 
 
+int CSuitHoldings::GetNumMissingAbove(const CCard* pCard) const
+{
+	return GetNumMissingAbove(pCard->GetFaceValue());
+}
+
+int CSuitHoldings::GetNumMissingAbove(const int nFaceValue) const
+{
+	int nbr = 0;
+	for(int i=0; i < m_numMissingSequences; i++) {
+		CCardList& nxtSeq = *m_missingSequenceList[i];
+		// Check that top card is above given card value 
+		if(nxtSeq.GetTopCard()->GetFaceValue() > nFaceValue)
+			nbr += nxtSeq.GetNumCards();  // add in nbr cards in this 
+	}
+	return nbr;
+}
+// NCR end of getting counts of missing cards
 
 
 
@@ -345,10 +394,10 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 	//
 
 	// count short suit points
-/*
+    // NCR-51 uncommented the following to set m_numShortPoints value
 	if (m_numCards <= 2)
-		m_numShortPoints = (3 - m_numCards);
-*/
+		m_numShortPoints = (3 - m_numCards);  // NCR doubleton=1, singleton=2, void=3
+
 
 	// count long points if the suit is good 
 	// i.e., 2+ honors of KJ or better (i.e., 4+ HCPs)
@@ -392,7 +441,7 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 				m_numPenaltyPoints += 0.5;
 		}
 		//
-		if ((m_numCards == 2) && (m_cards[1]->GetFaceValue() < 10))
+		if ((m_numCards == 2) && (m_cards[1]->GetFaceValue() < TEN))
 		{
 			// Qx = -2 pts
 			if (m_cards[0]->GetFaceValue() == QUEEN)
@@ -406,7 +455,7 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 		//
 		if ((m_numCards == 3) && 
 						(m_cards[0]->GetFaceValue() == JACK) &&
-						(m_cards[1]->GetFaceValue() < 10)) 
+						(m_cards[1]->GetFaceValue() < TEN)) 
 		{
 			// Jxx = -1 pts
 //			m_numPenaltyPoints += 1;
@@ -469,10 +518,11 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 		m_bSuitProbablyStopped = TRUE;
 	} 
 	else if ((m_numCards >= 3) && 
-			 (m_cards[0]->GetFaceValue() == QUEEN) && (m_cards[1]->GetFaceValue() == JACK) && (m_cards[2]->GetFaceValue() == 10)) 
+			 (m_cards[0]->GetFaceValue() == QUEEN) && (m_cards[1]->GetFaceValue() == JACK) 
+			 && (m_cards[2]->GetFaceValue() == TEN)) 
 	{
 		// QJT == no quick tricks, but a stopper
-		m_numStoppers = 3;
+		m_numStoppers = 1;  // NCR changed 3 to 1
 		m_bSuitStopped = TRUE;
 		m_bSuitProbablyStopped = TRUE;
 	} 
@@ -484,11 +534,11 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 		m_bSuitProbablyStopped = TRUE;
 	} 
 	else if ((m_numCards >= 4) && 
-			   (m_cards[0]->GetFaceValue() == JACK) && (m_cards[1]->GetFaceValue() == 10) &&
+			   (m_cards[0]->GetFaceValue() == JACK) && (m_cards[1]->GetFaceValue() == TEN) &&
 			   (m_cards[2]->GetFaceValue() == 9) && (m_cards[3]->GetFaceValue() == 8)) 
 	{
 		// JT98 = no QTs, but a stopper
-		m_numStoppers = 4;
+		m_numStoppers = 1;   // NCR changed 4 to 1 
 		m_bSuitStopped = TRUE;
 		m_bSuitProbablyStopped = TRUE;
 	} 
@@ -510,6 +560,7 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 // GetCardsPlayedInSuit()
 //
 // get the list of cards played in this suit
+// NCR-83 This list does NOT include cards on the current trick???
 //
 int CSuitHoldings::GetCardsPlayedInSuit(CGuessedCardHoldings& playedCardsList)
 {
@@ -547,10 +598,16 @@ int CSuitHoldings::CheckKeyHoldings()
 	CountCards();
 
 	// clear existing sequences
-	for(int i=0;i<m_sequenceList.GetSize();i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<m_sequenceList.GetSize();i++)
 		delete m_sequenceList[i];
 	m_sequenceList.RemoveAll();
 	m_numSequences = 0;
+	// NCR-32 ditto for sequence2
+	for(i=0;i<m_sequence2List.GetSize();i++)
+		delete m_sequence2List[i];
+	m_sequence2List.RemoveAll();
+	m_numSequence2s = 0;
 	// and missing sequences as well
 	for(i=0;i<m_missingSequenceList.GetSize();i++)
 		delete m_missingSequenceList[i];
@@ -571,6 +628,7 @@ int CSuitHoldings::CheckKeyHoldings()
 	m_numLikelyLosers = 0;
 	m_numWinners = 0;
 	m_numLosers = 0;
+	m_numTopHonors = 0; // NCR-404 ??? This gets double values some times
 
 	// sort honors & body cards
 //	for(i=0;i<m_numHonors;i++)
@@ -610,10 +668,19 @@ int CSuitHoldings::CheckKeyHoldings()
 		}
 	}
 	//
-	if (m_numCards > 0)
-		m_numMissingTopHonors = Min(5, ACE - m_cards[0]->GetFaceValue());
-	if (m_nLowestPseudoHonor > TEN)
+	if (m_numCards > 0) {
+		// NCR-454 Use Missing honors vs assuming ACE is out
+		if((m_numMissingHonors == 0) || (m_cards[0]->GetFaceValue() > m_nMissingHonors[0]))
+			m_numMissingTopHonors = 0;
+		else
+			m_numMissingTopHonors =  // NCR-454 use top missing card vs ACE  
+//			                        Min(5, (m_nMissingHonors[0] - m_cards[0]->GetFaceValue()));
+									Min(m_numMissingHonors, m_nMissingHonors[0] - Max(10, m_cards[0]->GetFaceValue())); // NCR-701
+	}
+	// NCR-454 test against missingHonors list vs TEN
+	if (m_nLowestPseudoHonor > m_nMissingHonors[m_numMissingHonors-1])
 		m_numMissingBottomHonors = Min(4, m_nLowestPseudoHonor - TEN);
+
 	m_numMissingInternalHonors = m_numMissingHonors - m_numMissingTopHonors - m_numMissingBottomHonors;
 	if (m_numMissingInternalHonors < 0)
 		m_numMissingInternalHonors = 0;
@@ -640,6 +707,10 @@ int CSuitHoldings::CheckKeyHoldings()
 	}
 	ASSERT(m_numTopCards <= m_numCards);
 	m_numSecondaryHonors = m_numPseudoHonors - m_numTopHonors;
+	// NCR debug code
+	if(m_numPseudoHonors < m_numTopHonors) {
+		int x = 0;  // NCR A place to break
+	}
 
 	// build the sequence list
 	for(i=0;i<m_numCards;)
@@ -655,6 +726,32 @@ int CSuitHoldings::CheckKeyHoldings()
 #endif
 	}
 
+	// NCR-32 build the sequence2 list - cards of equivalent values including whats been played
+	// Assumes that m_cards[] sorted in descending FV order
+	for(i=0;i<m_numCards;)
+	{
+		CCardList* pList = new CCardList;
+		m_sequence2List.Add(pList);
+		m_numSequence2s++;
+		bool bSearching = true;
+		int nxtFV = m_cards[i]->GetFaceValue(); // prime the control
+		do {
+			*pList << m_cards[i++];  // save this card
+			if(i >= m_numCards) 
+				break;			// done
+			do{
+				nxtFV--;   // move to previous card
+				if(m_cards[i]->GetFaceValue() == nxtFV)  // in sequence?
+					break;  // yes, go save
+				if(!playedCardsList.HasCardOfFaceValue(nxtFV))  // has card been played?
+					bSearching = false;  // stop search scan if NOT
+			} while(bSearching);
+		} while (bSearching);
+#ifdef _DEBUG
+		pList->FormatHoldingsString();
+#endif
+	} // NCR-32 end for(i) thru cards
+
 	// and form the list of missing card sequences
 	for(i=ACE;i>=2;i--)
 	{
@@ -663,8 +760,8 @@ int CSuitHoldings::CheckKeyHoldings()
 		{
 			CCardList* pList = new CCardList;
 			m_missingSequenceList.Add(pList);
-			m_numMissingSequences++;
-			while ((i>=2) && (!HasCardOfFaceValue(i)))
+			m_numMissingSequences++;                // NCR-79 added below test for played card 
+			while ((i>=2) && !HasCardOfFaceValue(i) && !playedCardsList.HasCardOfFaceValue(i))
 			{
 				*pList << deck.GetCard(m_nSuit, i);
 				i--;
@@ -762,8 +859,10 @@ void CSuitHoldings::EvaluateHoldings()
 			// else with 4-card majors, the suit is nominally 
 			// unusable in the support role unless it has 
 			// >= 2 HCPs (a Queen or better)
-			if (m_numHCPoints >= 2)
-				m_nStrength = SS_WEAK_SUPPORT;			
+			if (m_numHCPoints >= QUEEN_VALUE)  // NCR replaced 2 with QUEEN_VALUE
+				m_nStrength = SS_WEAK_SUPPORT;
+			else if(m_numHCPoints >= JACK_VALUE) // NCR-383 points for 3 cards to Jack
+				m_nStrength = SS_POOR; // NCR-383
 			else
 				m_nStrength = SS_UNUSABLE;			
 		}
@@ -832,7 +931,9 @@ void CSuitHoldings::EvaluateHoldings()
 	
 	// see if the suit is "Solid"
 	// need 3 honors with a minumum of AKQ
-	if ((m_numCards >= 5) && (m_numHCPoints >= 9) &&
+	// NCR Allow fewer for Agressiveness
+	int nReqHCPs = ((theApp.GetBiddingAgressiveness() > 1) ? 7 : 9); // NCR adj for agression
+	if ((m_numCards >= 5) && (m_numHCPoints >= nReqHCPs) &&
 									(m_numHonors >= 3))
 		m_bSolid = TRUE;
 
@@ -958,6 +1059,13 @@ void CSuitHoldings::EvaluateHoldings()
 			{
 				m_numLikelyLosers++;
 			}
+			// NCR-260 this seems too liberal
+			// Must be more losers if ???
+			if((m_numCards < 7) && (GetNumCardsAbove(JACK) <= 2))
+			{
+				if (!HasCardOfFaceValue(JACK))
+					m_numLikelyLosers++;
+			} // NCR-260 end
 		}
 	}
 
@@ -966,10 +1074,24 @@ void CSuitHoldings::EvaluateHoldings()
 	m_numLosers = m_numLikelyLosers;
 	m_numWinners = m_numCards - m_numLosers;
 
+#ifdef _DEBUG_XXX   // NCR-587 Need to get number of sure tricks  ??? Which player???
+	// NOTE need import for this class def
+	CPlayerStatusDialog& status = pDOC->GetPlayer(0)->GetStatusDialog();
+	CString strText;
+	strText.Format("DEBUG2! Suit=%d, m_numWinners=%d = m_numCards=%d - m_numLosers %d\n",
+		                       m_nSuit, m_numWinners, m_numCards, m_numLosers);
+	status << strText;
+#endif
+
+	if(m_numWinners < 0) {
+		m_numWinners = 0;  //NCR-311 How can this go negative???
+    }
+
 	// and for the winners and losers sequences
 	m_likelyWinners.Clear();
 	m_likelyLosers.Clear();
-	for(int i=0;i<m_numLikelyWinners;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<m_numLikelyWinners;i++)
 		m_likelyWinners << m_cards[i];
 	for(;i<m_numCards;i++)
 		m_likelyLosers << m_cards[i];
@@ -1010,6 +1132,24 @@ int CSuitHoldings::GetQualityTest()
 	return m_numCards + m_numHonors;
 }
 
+
+//
+// HasTenAce - test if suit has two honors with gap -  NCR
+//
+BOOL CSuitHoldings::HasTenAce() const {
+	return (GetNumSequence2s() > 1) 
+		    // if second sequence starts with an honor, there is a gap
+		    && IsHonor(GetSequence2(1).GetTopCard()->GetFaceValue());
+}
+
+// GetNumGuardsRequired() - NCR-75
+//
+// Return number higher outstanding cards
+//
+int  CSuitHoldings::GetNumGuardsRequired(const CCard* pCard, const CCardList& cardList) const {
+	// Is there a way to have an optional cardList?
+	return cardList.GetNumCardsAbove(pCard);
+}
 
 /*
 //

@@ -73,11 +73,16 @@ public:
 	int GetDummyDisplayValue() const;
 
 	// overloaded operators
-	BOOL operator>(CCard& compareCard) { return (m_nDeckValue > compareCard.GetDeckValue())? TRUE : FALSE; }
-	BOOL operator<(CCard& compareCard) { return (m_nDeckValue < compareCard.GetDeckValue())? TRUE : FALSE; }
-	BOOL operator==(CCard& compareCard) { return (m_nDeckValue == compareCard.GetDeckValue())? TRUE : FALSE; }
-	BOOL operator>=(CCard& compareCard) { return (m_nDeckValue >= compareCard.GetDeckValue())? TRUE : FALSE; }
-	BOOL operator<=(CCard& compareCard) { return (m_nDeckValue <= compareCard.GetDeckValue())? TRUE : FALSE; }
+	// NCR added ASSERT tests for cards to be in same suit
+	BOOL operator>(CCard& compareCard) {ASSERT(m_nSuit == compareCard.GetSuit()); return (m_nDeckValue > compareCard.GetDeckValue())? TRUE : FALSE; }
+	BOOL operator<(CCard& compareCard) {ASSERT(m_nSuit == compareCard.GetSuit()); return (m_nDeckValue < compareCard.GetDeckValue())? TRUE : FALSE; }
+	// NCR-25 added pointer operator overrides for < & > use FaceValue vs DeckValue // Temp ASSERT to catch usage
+	BOOL operator>(CCard* compareCard) {ASSERT(FALSE); return (m_nFaceValue > compareCard->GetFaceValue())? TRUE : FALSE; }
+	BOOL operator<(CCard* compareCard) {ASSERT(FALSE); return (m_nFaceValue < compareCard->GetFaceValue())? TRUE : FALSE; }
+
+	BOOL operator==(CCard& compareCard) {ASSERT(m_nSuit == compareCard.GetSuit()); return (m_nDeckValue == compareCard.GetDeckValue())? TRUE : FALSE; }
+	BOOL operator>=(CCard& compareCard) {ASSERT(m_nSuit == compareCard.GetSuit()); return (m_nDeckValue >= compareCard.GetDeckValue())? TRUE : FALSE; }
+	BOOL operator<=(CCard& compareCard) {ASSERT(m_nSuit == compareCard.GetSuit()); return (m_nDeckValue <= compareCard.GetDeckValue())? TRUE : FALSE; }
 	BOOL operator>(int nFaceValue) { VERIFY(nFaceValue <= ACE); return (m_nFaceValue > nFaceValue)? TRUE : FALSE; }
 	BOOL operator<(int nFaceValue) { VERIFY(nFaceValue <= ACE); return (m_nFaceValue < nFaceValue)? TRUE : FALSE; }
 	BOOL operator==(int nFaceValue) { VERIFY(nFaceValue <= ACE); return (m_nFaceValue == nFaceValue)? TRUE : FALSE; }
@@ -103,9 +108,9 @@ public:
 	void SetXPosition(int nPos=-1) { m_nPosX = nPos; }
 	void SetYPosition(int nPos=-1) { m_nPosY = nPos; }
 	int GetSuit() const { return m_nSuit; }
-	int GetOwner() const { return m_nOwner; }
-	void SetOwner(int nPlayer) { m_nOwner = nPlayer; 
-								 if (m_nOwner == -1) m_bAssigned = FALSE; }
+	Position GetOwner() const { return m_nOwner; } // NCR-OWN2POS and next line
+	void SetOwner(Position nPlayer) { m_nOwner = nPlayer; if (m_nOwner == UNKNOWN) m_bAssigned = FALSE; }
+	bool SameSuit(const CCard& compareCard) { return m_nSuit == compareCard.GetSuit();} // NCR
 	int GetHandIndex() const { return m_nHandIndex; }
 	void SetHandIndex(int nIndex) { m_nHandIndex = nIndex; }
 	void DecrementHandIndex() { m_nHandIndex--; }
@@ -120,7 +125,8 @@ public:
 private:
 	char	m_szValue[3];
 	CString	m_strName,m_strFaceName,m_strFullName,m_strReverseFullName;
-	int 	m_nPosX,m_nPosY,m_nOwner;
+	int 	m_nPosX,m_nPosY;
+	Position m_nOwner;   // NCR-OWN2POS
 	int 	m_nSuit,m_nFaceValue, m_nDeckValue;
 	int		m_nFaceValueCode;	// 0=loser, 1=maybe, 2=winner
 	int		m_nHandIndex;

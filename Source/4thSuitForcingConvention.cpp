@@ -40,11 +40,30 @@ BOOL C4thSuitForcingConvention::TryConvention(const CPlayer& player,
 	int nPartnersPrevSuit = bidState.nPartnersPrevSuit;
 	int nFirstRoundSuit = bidState.nFirstRoundSuit;
 	int nPreviousSuit = bidState.nPreviousSuit;
-	if ((bidState.m_numBidsMade == 1) && 
+	// NCR-342 Quick test if 4 suits were bid
+	if ((bidState.m_numBidsMade != 2) ||  (bidState.m_numPartnerBidsMade != 2)
+		|| !ISSUIT(nPartnersSuit)  || !ISSUIT(nPartnersPrevSuit)
+		|| !ISSUIT(nFirstRoundSuit) || !ISSUIT(nPreviousSuit) ) 
+	{
+		return FALSE;  // NCR-342 Not possible without these
+	}
+
+/*	//NCR NB- Following logic is weak???
+	if ((bidState.m_numBidsMade == 2) &&   // NCR-334 changed to 2 (was 1)
 		(bidState.m_numPartnerBidsMade == 2) && 
 		(nPartnersSuit != nPartnersPrevSuit) && (nPartnersPrevSuit != NONE) &&
 		(nFirstRoundSuit != nPreviousSuit) && (nFirstRoundSuit != NONE) &&
-		(nPartnersSuit != NOTRUMP)) 
+		(nFirstRoundSuit != NOTRUMP) && // NCR-338 NT not a suit
+		(nPartnersSuit != NOTRUMP)) \
+*/
+	// NCR-342 Now test 4 suits bid
+	bool suitBid[4] = {false, false, false, false};
+	suitBid[nPartnersSuit] = true;
+	suitBid[nPartnersPrevSuit] = true;
+	suitBid[nFirstRoundSuit] = true;
+	suitBid[nPreviousSuit] = true;
+
+	if(suitBid[CLUBS] && suitBid[DIAMONDS] && suitBid[HEARTS] && suitBid[SPADES])
 	{
 		//
 		// since we're playing 4th suit forcing, we can't pass 
@@ -120,7 +139,7 @@ BOOL C4thSuitForcingConvention::TryConvention(const CPlayer& player,
 		if ((bidState.numVoids == 0) && (nPartnersBidLevel <= 2))
 		{
 			nBid = BID_2NT;
-			status << "SF4! With no agreement in suits, but with " & 
+			status << "SF10! With no agreement in suits, but with " &  // NCR changed from 4 to 10
 					  fMinTPCPoints & "-" & fMaxTPCPoints &
 					  " high card points in the partnership and no void suits, bid " &
 					  BTS(nBid) & ".\n";
@@ -172,7 +191,7 @@ BOOL C4thSuitForcingConvention::TryConvention(const CPlayer& player,
 C4thSuitForcingConvention::C4thSuitForcingConvention() 
 {
 	// from ConvCodes.h
-	m_nID = tidWeakTwoBids;
+	m_nID = tid4thSuitForcing; // NCR-334 changed from: tidWeakTwoBids;
 }
 
 C4thSuitForcingConvention::~C4thSuitForcingConvention() 

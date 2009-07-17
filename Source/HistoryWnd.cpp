@@ -671,7 +671,8 @@ void CHistoryWnd::ReplaceSuitSymbols(CRichEditCtrl& edit)
 	format.bPitchAndFamily = DEFAULT_PITCH | FF_DONTCARE;
 
 	//
-	for(int i=0;i<nLen;i++)
+	int i;  // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<nLen;i++)
 	{
 		unsigned char letter = strText[i];
 		if ((letter >= tSuitLetter) && (letter <= tSuitLetter+3))

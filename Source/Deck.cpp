@@ -109,6 +109,8 @@ void CDeck::Initialize()
 	// init bitmaps
 	InitializeBitmaps();
 
+	m_pNoCard = new CCard(); // NCR create NoCard object(used vs NULL)
+
 	// init the deck
 	CDC *pDC = pMAINFRAME->GetDC();
 	CCard* pCard;

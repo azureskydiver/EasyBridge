@@ -85,7 +85,7 @@ static LPCTSTR tszColumnName[] = {
 BOOL CStatusCardLocationsPage::OnInitDialog() 
 {
 	CPropertyPage::OnInitDialog();
-	const tnColSpacer = 14;
+	const int tnColSpacer = 14;    // NCR added int
 
 	// init selections
 	m_cbObserver.SetCurSel(0);

@@ -2699,7 +2699,8 @@ void CEasyBView::OnLayoutCards()
 void CEasyBView::PrepareCardLayout() 
 {
 	// init card layout mode
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 		PLAYER(i).ClearHand();
 	pDOC->PrepForCardLayout();
 	pMAINFRAME->ClearAllIndicators();
@@ -2807,7 +2808,8 @@ void CEasyBView::OnEditExistingHands()
 		pMAINFRAME->DisplayVulnerable(FALSE);
 
 	// turn all cards face up
-	for(int i=0;i<52;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<52;i++) 
 		deck[i]->SetFaceUp();
 	for(i=0;i<4;i++) 
 		PLAYER(i).ExposeCards(TRUE, FALSE);
@@ -2977,7 +2979,13 @@ void CEasyBView::OnBidCurrentHand()
 		pMAINFRAME->GetBidDialog()->InitBiddingSequence();
 		return;
 	}
-
+/*  Following causes skipped bidding ???
+	// NCR-GUI1 Need to refresh when rebidding a fully bid hand
+	if(pDOC->GetPlayRound() == 13) {  // value set in ReadFile
+		pDOC->RestartBidding();
+		pMAINFRAME->GetBidDialog()->InitBiddingSequence();
+	} // end NCR-GUI1
+*/
 	// suppressh multiple updates
 	SuppressRefresh();
 
@@ -3007,7 +3015,9 @@ void CEasyBView::OnBidCurrentHand()
 	}
 
 	// rebidding the hand after game is underway?
-	if (theApp.IsGameInProgress() || (m_nCurrMode == MODE_GAMEREVIEW))
+	if (theApp.IsGameInProgress() || (m_nCurrMode == MODE_GAMEREVIEW)
+		// NCR-GUI1  Need this for Rebid on Hand Finished 
+		|| (m_nCurrMode == MODE_GAMERESTORE))
 	{
 		// if in the midst of game review, hide the game review dialog
 		if (m_nCurrMode == MODE_GAMEREVIEW)

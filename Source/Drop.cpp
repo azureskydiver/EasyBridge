@@ -19,6 +19,7 @@
 #include "Player.h"
 #include "PlayEngine.h"
 #include "CombinedHoldings.h"
+#include "CombinedSuitHoldings.h"   // NCR-490
 #include "CardLocation.h"
 #include "GuessedHandHoldings.h"
 #include "PlayerStatusDialog.h"
@@ -151,8 +152,11 @@ PlayResult CDrop::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 	{
 		case 0:
 			// we're leading, player #0
-			if ( ((bPlayingInHand) && (m_nTargetHand == IN_HAND)) ||
-				 ((!bPlayingInHand) && (m_nTargetHand == IN_DUMMY)) )
+			if ( ((bPlayingInHand) && (m_nTargetHand == IN_HAND)
+				  //NCR Check if suit in other hand not singleton & same value card
+				  && !(dummySuit.IsSingleton() && pDOC->AreSameValue(dummySuit.GetTopCard(), m_pConsumedCard))) 
+			   || ((!bPlayingInHand) && (m_nTargetHand == IN_DUMMY)
+			      && !(playerSuit.IsSingleton() && pDOC->AreSameValue(playerSuit.GetTopCard(), m_pConsumedCard))) )
 			{
 				// leading high from hand
 				pPlayCard = m_pConsumedCard;
@@ -166,6 +170,7 @@ PlayResult CDrop::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						(!bPlayingInHand && dummySuit.IsVoid()) )
 				{
 					// oops, have no card to lead from this hand
+					status << "PLDRP10A: No card to lead from this hand\n"; //NCR
 					m_nStatusCode = PLAY_INACTIVE;
 					return PLAY_POSTPONE;
 				}
@@ -183,7 +188,8 @@ PlayResult CDrop::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 
 		case 1:
 			// playing second -- check if the correct suit was led
-			if (nSuitLed != m_nSuit)
+			// NCR or if our play is not a winner (ie its lower)
+			if ((nSuitLed != m_nSuit) || (*pCardLed > *m_pConsumedCard))
 			{
 				// wrong suit led, so no point here
 				m_nStatusCode = PLAY_INACTIVE;
@@ -216,7 +222,8 @@ PlayResult CDrop::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 				else
 					status << "PLDRP51! " & strLHO & " led the " & pCardLed->GetName() &
 							  "; try to drop the " & m_strDropCards & " from " & strRHO &
-							  "by playing the "& pPlayCard->GetFaceName() & " from " & (bPlayingInHand? "hand" : "dummy") & ".\n";
+							  " by playing the "& pPlayCard->GetFaceName() & " from " & 
+							  (bPlayingInHand ? "hand" : "dummy") & ".\n";
 				m_nStatusCode = PLAY_IN_PROGRESS;
 			}
 			else
@@ -251,17 +258,38 @@ PlayResult CDrop::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 
 			// see if RHO dropped a key card
 			pRHOCard = pDOC->GetCurrentTrickCardByOrder(1);
-			if (m_pEnemyOrKeyCardsList->HasCard(pRHOCard))
+
+ 			if (m_pEnemyOrKeyCardsList->HasCard(pRHOCard))
 				bDropSucceeded = TRUE;
 
 			// check which hand we're plaing in
 			if ( ((bPlayingInHand) && (m_nTargetHand == IN_HAND)) ||
 				 ((!bPlayingInHand) && (m_nTargetHand == IN_DUMMY)) )
 			{
+				// NCR-490 Test if RHO followed suit - if not then:
+				// if only 2 cards out and there is an entry, play lower card
+				if((pRHOCard->GetSuit() != m_nSuit) && (combinedSuit.GetNumOutstandingCards() == 2)
+					&& (combinedSuit.GetSequence2(0).GetNumCards() == 1))
+				{
+					if(combinedSuit.GetMinLength() > 0) {
+						// Get a lower card from whoever has the consumed card
+						if(dummyHand.HasCard(m_pConsumedCard))
+							pPlayCard = dummySuit.GetSecondHighestCard();
+						else if(playerHand.HasCard(m_pConsumedCard))
+							pPlayCard = playerSuit.GetSecondHighestCard();
+						else
+							ASSERT(false); // this should never happen
+						if(pPlayCard) {  // Be sure we got a card
+							m_nStatusCode = PLAY_COMPLETE;
+							break;
+						}
+					}
+				}  // end NCR-490
+
 				// cashing from hand, so do it
 				pPlayCard = m_pConsumedCard;
 				if (bDropSucceeded)
-					status << "PLDRP60! " & strRHO & " drped the " & pRHOCard->GetName() & 
+					status << "PLDRP60! " & strRHO & " dropped the " & pRHOCard->GetName() & 
 							  " under our " & pCardLed->GetFaceName() & " as hoped; rein it in with the " & 
 							  pPlayCard->GetName() & " in " & ((bPlayingInHand)? "hand" : "dummy") & ".\n";
 				else

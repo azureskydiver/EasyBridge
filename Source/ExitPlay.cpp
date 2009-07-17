@@ -31,12 +31,16 @@
 CExitPlay::CExitPlay(CPlayList* pPrerequisites, int nSuit1, int nSuit2) :
 CPlay(CPlay::EXIT, CPlay::IN_EITHER, nSuit1, CPlay::PP_LOSER)
 {
+	// NCR-68 NOTE: m_nSuit1 is NOT used.
 	m_nSuit2 = nSuit2;
 	m_pPrerequisiteList = pPrerequisites;
+	Init();  // NCR-68 go build description string
 }
 
 CExitPlay::~CExitPlay() 
 {
+//	AfxMessageBox("ExitPlay Destructor " + GetFullDescription()); // NCR-28 DEBUG
+	// NCR-28 above called after Dmy led club;  NOT called on Win98 ???
 }
 
 
@@ -103,9 +107,18 @@ PlayResult CExitPlay::Perform(CPlayEngine& playEngine, CCombinedHoldings& combin
 	// perform basic tests
 	if (!CPlay::IsPlayUsable(combinedHand, playEngine))
 	{
+//		status << "PLEXT99! ExitPlay postponing: suit1= " & STSS(m_nSuit) & ".\n"; // NCR-28
 		m_nStatusCode = PLAY_INACTIVE;
 		return PLAY_POSTPONE;
 	}
+	// NCR-68 Should this play be postponed if the wrong suit has been lead???
+	if(nSuitLed != m_nSuit)
+	{
+		status << "PLEXT99! ExitPlay postponing <" & m_strDescription & "> because "
+			        & STSS(nSuitLed) & " led.\n"; // NCR-68
+		m_nStatusCode = PLAY_INACTIVE;
+		return PLAY_POSTPONE;
+	} // NCR-68 end
 
 	//
 	int nOrdinal = pDOC->GetNumCardsPlayedInRound();
@@ -302,6 +315,12 @@ PlayResult CExitPlay::Perform(CPlayEngine& playEngine, CCombinedHoldings& combin
 				//
 				status << "PLEXT21! Complete the exit play by discarding the " & pPlayCard->GetName() &
 						  " from dummy.\n";
+/*				// NCR-28 Special debug code
+				CString aStr;
+				aStr.Format(", %d cards in suit", dummyHand.GetNumCardsInSuit(nSuitLed)); 
+				status << "PLEXT99! ExitPlay: suit1= " & STSS(m_nSuit) & ", suit2= " & STSS(m_nSuit2)
+						  & ", suitLed= " & STSS(nSuitLed) & aStr & ".\n";	
+*/
 			}
 			// mark play status
 			m_nStatusCode = PLAY_COMPLETE;

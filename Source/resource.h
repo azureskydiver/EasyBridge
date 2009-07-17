@@ -401,6 +401,9 @@
 #define IDC_AVG_TIME                    1168
 #define IDC_LABEL_AVGTIME               1169
 #define IDC_DONT_SHOW                   1170
+#define IDC_EMAIL_NORMS                 1171
+#define IDC_SAVEDOWNS_CHECK             1172
+#define IDC_SAVECONVUSED_CHECK          1173
 #define ID_CLEAR_ANALYSIS               2781
 #define IDC_OUTPUT0                     4000
 #define IDC_OUTPUT1                     4001
@@ -1128,9 +1131,9 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
-#define _APS_NEXT_RESOURCE_VALUE        334
+#define _APS_NEXT_RESOURCE_VALUE        336
 #define _APS_NEXT_COMMAND_VALUE         32940
-#define _APS_NEXT_CONTROL_VALUE         1171
+#define _APS_NEXT_CONTROL_VALUE         1173
 #define _APS_NEXT_SYMED_VALUE           102
 #endif
 #endif

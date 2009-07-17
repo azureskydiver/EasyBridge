@@ -162,7 +162,7 @@ BOOL CDruryConvention::RespondToConvention(const CPlayer& player,
 		{
 			// we opened with <= 11 pts (actual, before adjusting for trump fit)
 			nBid = MAKEBID(nSuit, 2);
-			status << "DRUR12! But since we opened light with only " & fCardPts & 
+			status << "DRUR12! But since we opened light with only " & fCardPts
 					  & " HCPs, we have to respond in the original " & STSS(nSuit) & 
 					  " suit at the 2-level and bid " & BTS(nBid) & ".\n";
 		}
@@ -242,7 +242,7 @@ BOOL CDruryConvention::HandleConventionResponse(const CPlayer& player,
 			if (bidState.m_fMinTPPoints >= PTS_MAJOR_GAME)
 			{
 				nBid = MAKEBID(nSuit, 4);
-				status << "DRUR42! And with an adjusted count of " &  &
+				status << "DRUR42! And with an adjusted count of " &
 						  " pts in hand, for a total in the partnership of " &
 						  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints & 
 						  " pts, we can go ahead and bid game at " & BTS(nBid) & ".\n";
@@ -250,7 +250,7 @@ BOOL CDruryConvention::HandleConventionResponse(const CPlayer& player,
 			else if (bidState.m_fMinTPPoints >= PTS_MAJOR_GAME - 3)
 			{
 				nBid = MAKEBID(nSuit, 3);
-				status << "DRUR43! With an adjusted point of " &  &
+				status << "DRUR43! With an adjusted point of " &
 						  " pts in hand, for a total in the partnership of " &
 						  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints & 
 						  " pts, we can push to a bid of " & BTS(nBid) & ".\n";
@@ -258,7 +258,7 @@ BOOL CDruryConvention::HandleConventionResponse(const CPlayer& player,
 			else
 			{
 				nBid = MAKEBID(nSuit, 2);
-				status << "DRUR44! But with an adjusted count of only " &  &
+				status << "DRUR44! But with an adjusted count of only " &
 						  " pts in hand, for a total in the partnership of " &
 						  bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints & 
 						  " pts, we have to stop at " & BTS(nBid) & ".\n";

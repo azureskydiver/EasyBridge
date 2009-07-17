@@ -87,7 +87,7 @@ CString CForce::GetFullDescription()
 {
 	return FormString("Play the %s from %s to force out the opponents' %s.",
 					   CardToString(MAKEDECKVALUE(m_nSuit,m_nCardVal)),
-					   (m_nTargetHand == 0)? "hand" : "dummy",
+					   (m_nTargetHand == IN_HAND)? "hand" : "dummy",
 					   CardValToString(m_nTargetCardVal));
 }
 
@@ -166,6 +166,12 @@ PlayResult CForce::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedH
 				{
 					// play the card necessary to force the opponent
 					pPlayCard = playerSuit.GetHighestCardBelow(m_nTargetCardVal);
+					// NCR check that dummy does not have a singleton honor that's same value as our lead
+					if(dummySuit.IsSingleton() 
+						&& ((dummySuit.GetTopCard()->GetFaceValue() > pPlayCard->GetFaceValue()) // NCR-28
+						    || (combinedHand.AreEquivalentCards(pPlayCard, dummySuit.GetTopCard()))))
+						pPlayCard = playerSuit.GetBottomCard(); // NCR get lowest card
+
 					if (pPlayCard == NULL)
 					{
 						status << "4PLFRC02! Error in force play -- no cards in declarer hand usable in a force play.\n";
@@ -320,6 +326,14 @@ PlayResult CForce::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedH
 					pPlayCard = playerSuit.GetHighestCardBelow(m_nTargetCardVal);
 				else
 					pPlayCard = dummySuit.GetHighestCardBelow(m_nTargetCardVal);
+
+				// NCR check if our card is less than the top card already played
+				if(pPlayCard < pDOC->GetCurrentTrickHighCard())
+				{
+					m_nStatusCode = PLAY_POSTPONE; // or NOT_VIABLE ???
+					return m_nStatusCode;
+				}
+
 
 				// see if we played a card from the other hand that's equivalent 
 				// to this card; if so, discard low

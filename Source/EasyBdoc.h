@@ -20,6 +20,8 @@ class CCard;
 class CGameRecord;
 
 
+#define MaxSCU 20         // NCR-SCU
+
 class CEasyBDoc : public CDocument, public CObjectWithProperties, public CEventProcessor
 {
 public:
@@ -89,6 +91,9 @@ public:
 	CString FormatOriginalHands();
 	CString FormatCurrentHands();
 	CString GetDealIDString();
+	bool WasCardPlayed(const int deckValue) const; //NCR
+	bool AreSameValue(const CCard* pC1, const CCard* pC2) const; //NCR
+	bool AreCardsInSequence(const int card1DV, const int card2DV) const; // NCR
 
 	// inline functions
 	BOOL IsInitialized() { return m_bInitialized; }
@@ -159,7 +164,12 @@ public:
 	// public access points
 	void SaveFile() { OnFileSave(); }
 	void SaveFileAs() { OnFileSaveAs(); }
-
+	BOOL WriteFile(CArchive& ar); // NCR-AT make this public
+	// NCR-SCU Following for Saving Conventions Used
+	void ClearSCU() {m_numSCU = 0;}
+	int GetSCU(int idx) {ASSERT(idx >= 0 && idx < MaxSCU); return m_SCU[idx];}
+	int GetNumSCU() {return m_numSCU;}
+	void AddSCU(int code) {ASSERT(m_numSCU < MaxSCU); m_SCU[m_numSCU++] = code;}
 //
 public:
 	static CEasyBDoc* m_pDoc;
@@ -170,7 +180,7 @@ protected: // create from serialization only
 
 // Attributes
 public:
-	enum { tnEasyBridgeFormat=0, tnPBNFormat=1, tnTextFormat=2 };
+	enum { tnEasyBridgeFormat=0, tnPBNFormat=1, tnTextFormat=2, tnPPLFormat=3 };
 
 private:
 	static BOOL	m_bInitialized;
@@ -290,6 +300,10 @@ private:
 	//
 	CTypedPtrArray<CPtrArray, CGameRecord*>	 m_gameRecords;
 
+	// NCR-SCU Define variables to save what conventions used this hand
+	int m_SCU[MaxSCU];
+	int m_numSCU;
+
 
 // Operations
 private:
@@ -324,6 +338,7 @@ private:
 	BOOL ReadFilePBN(CArchive& ar);
 	int ParseLinePBN(CString& string, CString& strTag, CString& strValue, int nLineLength);
 	int PreloadPBNFile(CArchive& ar, CStringArray& strLines);
+	BOOL ReadFilePLL(CArchive& ar);  // NCR
 	int ReadLine(CArchive&ar, CString& strDest);
 	void AssignCards(CString& str, int nPosition, BOOL bInitialHand=FALSE);
 	int  ParseBidsPBN(CArchive& ar, const CString& strValue);
@@ -331,7 +346,7 @@ private:
 	void AssignCardsPBN(const CString& str);
 	void SaveCurrentGameRecord(BOOL bAllocNew=FALSE);
 	//
-	BOOL WriteFile(CArchive& ar);
+//NCR-AT	BOOL WriteFile(CArchive& ar);
 	BOOL WriteFilePBN(CArchive& ar);
 	BOOL ExportGameInfo(CArchive& ar);
 

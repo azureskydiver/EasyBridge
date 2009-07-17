@@ -41,8 +41,7 @@ RSC=rc.exe
 # PROP Intermediate_Dir "Bin\Debug"
 # PROP Ignore_Export_Lib 0
 # ADD BASE CPP /nologo /MD /W3 /GX /Zi /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR /Yu"stdafx.h" /c
-# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /I "Utils" /I "Wizards" /I "Include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
-# SUBTRACT CPP /Fr
+# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /I "Utils" /I "Wizards" /I "Include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fr /Yu"stdafx.h" /FD /c
 # ADD MTL /mktyplib203
 # ADD BASE RSC /l 0x409 /d "_DEBUG" /d "_AFXDLL"
 # ADD RSC /l 0x409 /d "_DEBUG" /d "_AFXDLL"
@@ -67,8 +66,7 @@ LINK32=link.exe
 # PROP Intermediate_Dir "Bin\Release"
 # PROP Ignore_Export_Lib 0
 # ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR /Yu"stdafx.h" /c
-# ADD CPP /nologo /MD /W3 /GX /Ot /Ob2 /I "Utils" /I "Wizards" /I "Include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Yu"stdafx.h" /FD /c
-# SUBTRACT CPP /Ox /Og /Fr
+# ADD CPP /nologo /MD /W3 /GX /I "Utils" /I "Wizards" /I "Include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR /Yu"stdafx.h" /FD /c
 # ADD MTL /mktyplib203
 # ADD BASE RSC /l 0x409 /d "NDEBUG" /d "_AFXDLL"
 # ADD RSC /l 0x409 /d "NDEBUG" /d "_AFXDLL"
@@ -78,7 +76,7 @@ BSC32=bscmake.exe
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
 # SUBTRACT BASE LINK32 /pdb:none
-# ADD LINK32 version.lib winmm.lib EasyBUtils.lib EasyBWizards.lib /nologo /machine:I386 /out:".Bin\Release/EasyBridge.exe" /libpath:"Lib\Release" /SUBSYSTEM:windows,4.0
+# ADD LINK32 version.lib winmm.lib EasyBUtils.lib EasyBWizards.lib /nologo /machine:I386 /out:"Bin\Release/EasyBridge.exe" /libpath:"Lib\Release" /SUBSYSTEM:windows,4.0
 # SUBTRACT LINK32 /pdb:none
 
 !ENDIF 
@@ -1603,82 +1601,102 @@ SOURCE=.\Res\hidden_toolbar.bmp
 # Begin Source File
 
 SOURCE=.\Res\ICO00001.ICO
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00002.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00003.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00004.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00005.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00006.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00007.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00008.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00009.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00010.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00011.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00012.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00013.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00014.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00015.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00016.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00017.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00018.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00019.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 
 SOURCE=.\Res\ico00020.ico
+# PROP Exclude_From_Build 1
 # End Source File
 # Begin Source File
 

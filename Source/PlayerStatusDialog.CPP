@@ -22,7 +22,8 @@
 #include "AutoHintDialog.h"
 
 //#define _STRIP_HEADERS_
-
+//NCR uncommented following line - Program play seems to take longer now
+// - could use /D_TESTING compiler option also
 //#define _TESTING
 
 
@@ -172,6 +173,7 @@ void CPlayerStatusDialog::Trace(const CString& strText)
 	CString strOutput = strText;
 	if (strOutput.IsEmpty() || m_bSuppressStream)
 		return;
+//	AfxMessageBox(strText); // NCR TESTING SHows many types of messages!!!!!!!!!!!!
 
 	// no analysis if in express autoplay or output is suppressed
 #ifdef _TESTING
@@ -416,7 +418,7 @@ BOOL CPlayerStatusDialog::ConvertNewlines(CString& strOutput, LPCTSTR szInput)
 	if (!theApp.GetValue(tbShowCommentIdentifiers))
 	{
 		TCHAR* pcToken = NULL;
-		if ((pcToken = _tcschr(szInput, _T('!'))) != NULL)
+		if ((pcToken = (TCHAR *)_tcschr(szInput, _T('!'))) != NULL) // NCR added (TCHAR *)
 		{
 			// chop off the header
 			int nOffset = (pcToken - szInput) + 2;

@@ -106,7 +106,8 @@ BOOL CBidDialogLarge::OnInitDialog()
 */
 
 	// subclass and set icons
-	for(int i=0;i<35;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<35;i++)
 	{
 		m_flatButtons[i].SubclassDlgItem(IDC_BID_1C + i, this);
 		m_flatButtons[i].SetIcon(IDI_CONTRACT_1CLUB + i);

@@ -194,6 +194,13 @@ void CMyFileDialog::GetFileDescription(CString& strFileName)
 		m_nFileType = CEasyBDoc::tnEasyBridgeFormat;
 		strKey = "[[File Description]]";
 	}
+	else if(strSuffix.CompareNoCase("ppl") == 0)    // NCR adding PPL
+	{
+		m_nFileType = CEasyBDoc::tnPPLFormat;
+		strKey = "";  // NCR None, file is binary
+		file.Close();
+		return;			// exit early and hope for the best
+	}
 	else
 	{
 		m_nFileType = CEasyBDoc::tnPBNFormat;
@@ -288,6 +295,8 @@ BOOL CMyFileDialog::OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult)
 			m_nFileType = CEasyBDoc::tnTextFormat;
 		else if (lpOFN->nFilterIndex == 2)
 			m_nFileType = CEasyBDoc::tnPBNFormat;
+		else if(lpOFN->nFilterIndex == 4)    // NCR adding PLL
+			m_nFileType = CEasyBDoc::tnPPLFormat;
 		else
 			m_nFileType = CEasyBDoc::tnEasyBridgeFormat;
 		return TRUE;

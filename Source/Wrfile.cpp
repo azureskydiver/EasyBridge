@@ -198,7 +198,7 @@ BOOL CEasyBDoc::WriteFile(CArchive& ar)
 	// declarer & bidding history
 	strTemp.Empty();
 	int nIndex = 0;
-	for(i=0;i<=m_numBidsMade;i++) 
+	for(i=0; i < m_numBidsMade; i++)   // NCR-101 <= changed to <
 	{
 		strTemp += BidToShortString(m_nBiddingHistory[i]);
 		strTemp += " ";
@@ -301,7 +301,7 @@ BOOL CEasyBDoc::WriteFile(CArchive& ar)
 
 		// write out score record
 		int numBonusScoreRecords = m_strArrayBonusPointsRecord.GetSize();
-		for(int i=0;i<numBonusScoreRecords;i++)
+		for(/*NCR-FFS int*/ i=0;i<numBonusScoreRecords;i++)
 			WriteString(ITEM_BONUS_SCORE_RECORD, WrapInQuotes(m_strArrayBonusPointsRecord.GetAt(i)));
 		//
 		int numGameScoreRecords = m_strArrayTrickPointsRecord.GetSize();

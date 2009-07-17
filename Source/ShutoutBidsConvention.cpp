@@ -15,6 +15,7 @@
 #include "EasyBdoc.h"
 #include "PlayerStatusDialog.h"
 #include "ShutoutBidsConvention.h"
+#include "playeropts.h"              // NCR added for tbTeamIsVulnerable
 
 
 
@@ -45,7 +46,8 @@ BOOL CShutoutBidsConvention::TryConvention(const CPlayer& player,
 	//
 	// at the very minimum, should have a 6-card suit
 	//
-	if (hand.GetNumSuitsOfAtLeast(6) < 1)
+	// NCR-72 Don't Preempt with an openning hand
+	if ((hand.GetNumSuitsOfAtLeast(6) < 1) || (hand.GetHCPoints() > 10)) // NCR-72 test HCPs vs total?
 		return FALSE;
 
 	//
@@ -70,14 +72,15 @@ BOOL CShutoutBidsConvention::TryConvention(const CPlayer& player,
 	int numCards = suit.GetNumCards();
 	int numHonors = suit.GetNumHonors();
 	// a 6-card suit needs 3 honors, and a 7+ card suit needs 2
+	int nbrHonorsReq = (player.GetValue(tbTeamIsVulnerable) ? 2 : 1); // NCR fewer if not vulnerable
 	if ( ((numCards == 6) && (numHonors < 3)) ||
-					 ((numCards >= 7) && (numHonors < 2)) )
+					 ((numCards >= 7) && (numHonors < nbrHonorsReq)) ) // NCR use var vs HC 2
 		 return FALSE;
 
 	//
 	// then check for Aces, Kings, or Queens in outside suits
-	int nBid;
-	BOOL bViolation = FALSE;
+	int nBid = BID_NONE;  // NCR init bid for later test!!!
+	int nbrOutsideHonors = 0;  // NCR-67
 	for(int i=0;i<4;i++) 
 	{
 		if (i == nSuit)
@@ -85,20 +88,22 @@ BOOL CShutoutBidsConvention::TryConvention(const CPlayer& player,
 		// a solitary Q is okay for a Shutout bid, but any higher honors
 		// are not
 		CSuitHoldings& suit = hand.GetSuit(i);
-		if (suit.HasAce() || suit.HasKing())
-			return FALSE;
+		if (suit.HasAce() || (suit.HasKing() && !suit.IsSingleton())) // NCR-67 don't count singleton Kings
+			nbrOutsideHonors++;  // NCR-67 count number of outside honors
+//			return FALSE;
 	}
 
 	//
-	if (bidState.numCardsInSuit[nSuit] >= 8) 
+	if ((bidState.numCardsInSuit[nSuit] >= 8) && (nbrOutsideHonors <2)) //NCR-67
 	{
 		nBid = MAKEBID(nSuit,4);
 		status << "D00! Have a " & bidState.numCardsInSuit[nSuit] & 
 				  "-card " & STSS(nSuit) & 
-				  " suit with no tricks outside the suit, so make a shutout bid of " & 
+				  " suit with no/few tricks outside the suit, so make a shutout bid of " & 
 				  BTS(nBid) & ".\n";
 	} 
-	else if (bidState.numCardsInSuit[nSuit] >= 7) 
+	else if ((bidState.numCardsInSuit[nSuit] >= 7) && (nbrOutsideHonors < 2) // NCR-67
+		    && (hand.GetHCPoints() >= OPEN_PTS(6))  )  // NCR-314 Have some HCPs
 	{
 		nBid = MAKEBID(nSuit,3);
 		status << "D04! Have a " & bidState.numCardsInSuit[nSuit] & 
@@ -106,6 +111,9 @@ BOOL CShutoutBidsConvention::TryConvention(const CPlayer& player,
 				  " suit with no tricks outside the suit, so make a shutout bid of " & 
 				  BTS(nBid) & ".\n";
 	}
+	if(nBid == BID_NONE)  // NCR make sure something found!!!
+		return FALSE;
+
 	bidState.SetBid(nBid);
 	bidState.SetConventionStatus(this, CONV_INVOKED);
 	return TRUE;
@@ -151,6 +159,23 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 						(nPartnersSuit != NOTRUMP) &&
 						(bidState.m_bPartnerOpenedForTeam))
 	{
+		// NCR one more test - was pards bid an overcall? eg 3C over a 2S weak
+		BidType bidType = bidState.GetBidType(nPartnersBid);
+/*
+		int nTheBidBeforePards = nPartnersBid;  //NCR use last bid before pards
+		for(int i = pDOC->GetNumBidsMade()-1; i >=0; i--) {
+			int aBid = pDOC->GetBidByIndex(i);
+			if(ISBID(aBid) && aBid != nPartnersBid) {
+				nTheBidBeforePards = aBid;  // save
+				break;  // exit when found
+			}
+		}
+        if((nPartnersBid - nTheBidBeforePards) < 5)
+*/
+		                         // NCR-287 added Response   // NCR-155 and NOT leap
+		if(((bidType & (BT_Overcall + BT_Response)) != 0) && ((bidType & BT_Leap) == 0))  // NCR test if overcall
+			return FALSE;  // Overcall or Response and not Leap
+
 		// okay, met requirements
 	}
 	else
@@ -183,8 +208,8 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 	bidState.m_fMaxTPCPoints = fCardPts + bidState.m_fPartnersMax;
 
 	// raise a 3 bid to game if we have enough to make game
-	// the requiremetns are:
-	// 1: 4 cards in the suit,
+	// the requirements are:
+	// 1: 4 cards in the suit, NCR change to 3
 	// 2: 5 playing tricks for a major suit, or 6 for a minor
 	// 3: 2 QT's, and
 	// 4: >= 26 team pts for a major game, or >= 29 pts for a minor game
@@ -197,9 +222,17 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 	double fMaxTPPoints = bidState.m_fMaxTPPoints;
 	
 	//
-	if ((nPartnersBidLevel == 3) && (ISMAJOR(nPartnersSuit)) &&
-		(numSupportCards >= 4) && (numQuickTricks >= 2) && 
-		(numLikelyWinners >= 5) && (fMinTPPoints >= PTS_GAME)) 
+	// NCR-155 weaken requirements if being agressive
+	int nbrWinnersNeeded = (theApp.GetBiddingAgressiveness() < 1) ? 5 : 4; // NCR-155
+	if ((nPartnersBidLevel == 3) && (ISMAJOR(nPartnersSuit))
+		   // NCR changed 4 to 3       /// NCR-359 allow 2 cards with points
+		&& ((numSupportCards >= 3) || ((numSupportCards >= 2) && (fCardPts >= 13))
+		    || (numSupportCards >= 1 && fCardPts >=19))   // NCR-546 fewer cards with more pts
+		// NCR changed following to allow either tricks or points
+		&& (((numQuickTricks >= 2) && (numLikelyWinners >= nbrWinnersNeeded)) 
+		   // NCR-672 Also if QTs and suit points
+		   || ((numQuickTricks > 3) && (bidState.numSuitPoints[nPartnersSuit] > 4))
+		   || ((fMinTPPoints + fMaxTPPoints)/2 >= PTS_GAME)) )   // NCR-546 average min and max
 	{
 		nBid = MAKEBID(nPartnersSuit,4);
 		status << "SHUTR2! We have " & fCardPts & "/" & fPts & "/" & fAdjPts & 
@@ -207,16 +240,20 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 				  " points in the partnership, strong support for partner's long " &
 				  bidState.szPSS & " suit (holding " & bidState.szHP & 
 				  "), plus " & numQuickTricks & " QTs and " & numLikelyWinners & 
-				  " likely winners, so we can safely bid game at " & BTS(nBid) & ".\n";
+				  " likely winners, so we can " 
+				  & ((nbrWinnersNeeded == 5) ? "safely bid" : "try")  // NCR-155
+				  & " game at " & BTS(nBid) & ".\n";
 		bidState.SetBid(nBid);
 		return TRUE;
 	}
 
 	// raise a minor to game as above, but with 5-card
 	// support && 6+ winners && 28+ TPs
+	nbrWinnersNeeded = (theApp.GetBiddingAgressiveness() < 1) ? 6 : 5; // NCR-281
 	if ((nPartnersBidLevel <= 4)  && (ISMINOR(nPartnersSuit)) &&
-		(numSupportCards >= 5) && (numQuickTricks >= 2) && 
-		(numLikelyWinners >= 6) && (fMinTPPoints >= PTS_MINOR_GAME)) 
+		(numSupportCards >= 3) && (numQuickTricks >= 2)    // NCR changed SupportCards fm 5 to 3
+		// NCR-281 changed to match NCR-155 above. Use var vs HC 6 below
+		&& ((numLikelyWinners >= nbrWinnersNeeded) || (fMinTPPoints >= PTS_MINOR_GAME)) )
 	{
 		nBid = MAKEBID(nPartnersSuit,5);
 		status << "SHUTR4! We have " & fCardPts & "/" & fPts & "/" & fAdjPts & 
@@ -244,6 +281,24 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 		bidState.SetBid(nBid);
 		return TRUE;
 	}
+		
+	// NCR-219 Bid our suit if we have a long suit
+	int nSuit = hand.GetPreferredSuit();
+	CSuitHoldings& suit = hand.GetSuit(nSuit);
+	int numCards = suit.GetNumCards();
+	// NCR-502 Bid our suit if major and there is a possiblity
+	if((numCards > 7) || (ISMAJOR(nSuit) && (numCards > 5) && (fMinTPPoints > PTS_GAME-3) 
+		                   && (numLikelyWinners >= 9)) )
+	{	
+		nBid = MAKEBID(nSuit, 4);
+		status << "SHUTR7! We have " & fCardPts & "/" & fPts & "/" & fAdjPts & 
+				  " points in hand, for a total of " & fMinTPPoints & "-" & fMaxTPPoints &
+				  " points in the partnership, a long " & STS(nSuit) & " suit, "
+				   & numQuickTricks & " QTs and " & numLikelyWinners & 
+				  " likely winners, so we can try " & BTS(nBid) & ".\n";
+		bidState.SetBid(nBid);
+		return TRUE;
+    }
 
 	// else, just pass
 	nBid = BID_PASS;
@@ -269,7 +324,7 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 // Rebidding after an opening shutout bid
 //
 //
-CShutoutBidsConvention::HandleConventionResponse(const CPlayer& player, 
+BOOL CShutoutBidsConvention::HandleConventionResponse(const CPlayer& player,   // NCR added BOOL
 											     const CConventionSet& conventions, 
 											     CHandHoldings& hand, 
 											     CCardLocation& cardLocation, 

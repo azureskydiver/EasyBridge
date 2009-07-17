@@ -21,6 +21,7 @@
 #include "MainFrameopts.h"
 #include "docopts.h"
 #include "mmsystem.h"
+#include "convcodes.h" // NCR-SCU
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -47,6 +48,8 @@ CTestPlayDialog::CTestPlayDialog(CWnd* pParent /*=NULL*/)
 	//
 	m_bPlayActive = FALSE;
 	m_bStopFlag = FALSE;
+	m_bSaveDowns = FALSE;   // NCR-AT turn on/off saving of brds
+	m_bSaveConvUsed = FALSE;  // NCR-SCU turn off saving of brds
 }
 
 
@@ -63,9 +66,11 @@ void CTestPlayDialog::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CTestPlayDialog, CDialog)
 	//{{AFX_MSG_MAP(CTestPlayDialog)
+	ON_BN_CLICKED(ID_START, OnStart)
 	ON_BN_CLICKED(ID_STOP, OnStop)
 	ON_WM_CLOSE()
-	ON_BN_CLICKED(ID_START, OnStart)
+	ON_BN_CLICKED(IDC_SAVEDOWNS_CHECK, OnSavedownsCheck)
+	ON_BN_CLICKED(IDC_SAVECONVUSED_CHECK, OnSaveConvUsedCheck)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -79,8 +84,8 @@ LPCTSTR tszRowTitle[] = {
 	"1-Level", "2-Level", "3-Level", "4-Level", 
 	"5-Level", "6-Level", "7-Level", "Totals",
 };
-LPCTSTR tszColumnName[] = {
-	"Contract", "Clubs  ", "Diams  ", "Hearts ", "Spades", "Notrump", "Doubled", "Redbld", "Totals        "
+LPCTSTR tszColumnName[] = {  // NCR-AT added space to: Clubs, Hearts, Spades and Totals
+	"Contract", "Clubs   ", "Diams  ", "Hearts  ", "Spades ", "Notrump", "Doubled", "Redbld", "Totals         "
 };
 const int tnumColumns = sizeof(tszColumnName) / sizeof(LPCTSTR);
 int nDoubledColumn = 5;
@@ -101,7 +106,8 @@ BOOL CTestPlayDialog::OnInitDialog()
 	const int tnColSpacer = 14;
 
 	// init the list control
-	for(int i=0;i<tnumColumns;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<tnumColumns;i++)
 		m_listResults.InsertColumn(i, tszColumnName[i], LVCFMT_LEFT, m_listResults.GetStringWidth(tszColumnName[i]) + tnColSpacer, i);
 
 	// subclass the list control
@@ -150,7 +156,48 @@ void CTestPlayDialog::OnOK()
 void CTestPlayDialog::OnClose() 
 {
 	// 
-	OnStop();	
+	OnStop();
+	
+#ifdef _DEBUG
+	// NCR Output statistics to a file
+	if(TRUE) {
+		CFile file;
+		CFileException fileException;
+		CString strPath;
+		strPath.Format("%s\\AutoTestStats_%s.txt", theApp.GetValue(tszProgramDirectory),
+						pDOC->GetDealIDString());
+		int nCode = file.Open((LPCTSTR)strPath, 
+							  CFile::modeWrite | CFile::modeCreate | CFile::shareDenyWrite, 
+							  &fileException);
+		CArchive ar(&file, CArchive::store);
+	    CFile* pFile = ar.GetFile();
+		CString header = "Contract    Club         Diamonds     Heart        Spades       NoTrump      Doubled      ReDoubled    Totals\n";
+		pFile->Write(header, header.GetLength());
+
+  		for(int nRow=0; nRow<8; nRow++)
+		{
+			CString rowData;
+			CString strLine;
+			if(nRow < 7)   // 0 to 6 for contract levels 1->7
+			   strLine.Format("Level %d:  ", nRow+1);
+			else
+				strLine =     "Totals:   "; // last line is totals	
+			for(int nCol=0; nCol<8; nCol++) {
+				rowData.Format("%4d /%4d   ",  m_numMade[nRow][nCol], m_numContracts[nRow][nCol]);
+				strLine += rowData;
+			}
+			strLine += "\r\n";
+			pFile->Write((LPCTSTR) strLine, strLine.GetLength());
+		}
+	    double fPercent = m_numMade[nTotalsRow][nTotalsColumn] / (double) m_numContracts[nTotalsRow][nTotalsColumn];
+		CString percent;
+	    percent.Format(_T("Percent made: %.1f%%\r\n"), fPercent * 100);
+		pFile->Write((LPCTSTR) percent, percent.GetLength());
+  		ar.Close();
+		file.Close();
+	} // NCR outputting statistics to file
+#endif
+
 	CDialog::OnClose();
 }
 
@@ -196,6 +243,12 @@ void CTestPlayDialog::Update()
 		m_numContracts[7][nRedoubledColumn]++;
 	}
 
+	// NCR-706  WRite out boards that go down using Cash play
+	BOOL bSaveThisBoard = FALSE;
+	if(theApp.GetValue(tnFileProgramBuildNumber) == 1234) {
+		bSaveThisBoard = TRUE;  // Ask that this board be written
+		theApp.SetValue(tnFileProgramBuildNumber, 1);   // turn off
+    }  // NCR-706 end
 	// also update # contracts made
 	if (numTricksMade >= (nContractLevel+6))
 	{
@@ -214,6 +267,66 @@ void CTestPlayDialog::Update()
 			m_numMade[7][nRedoubledColumn]++;
 		}
 	}
+	// NCR-AT  Save contracts that went down
+	else if (((nContractLevel >= 1) && m_bSaveDowns) || bSaveThisBoard)   //<<<<<<<< NCR changed to 1 vs 4 for NCR-706 testing
+	{
+		int nDownCnt = (nContractLevel+6) - numTricksMade; // show number of tricks down
+		CFile file;
+		CFileException fileException;
+		CString strPath;
+//		CTime time = CTime::GetCurrentTime();
+		strPath.Format("%s\\LostContract_Down_%d_%s.brd",theApp.GetValue(tszProgramDirectory),
+								nDownCnt, pDOC->GetDealIDString());
+//				                (LPCTSTR)time.Format("%X"));
+		int nCode = file.Open((LPCTSTR)strPath, 
+							  CFile::modeWrite | CFile::modeCreate | CFile::shareDenyWrite, 
+							  &fileException);
+		CArchive ar(&file, CArchive::store);
+		pDOC->WriteFile(ar);
+		ar.Close();
+		file.Close();
+	} // NCR-AT end saving lost contracts
+#ifdef _DEBUG
+	// NCR-SCU Save hands that have used conventions
+    //
+	if(m_bSaveConvUsed &&  (pDOC->GetNumSCU() > 0))
+	{
+		CFile file;
+		CFileException fileException;
+		CString strPath;
+		// Build filename from conventions used
+		CString fileNm = "CU";  // Filename prefix
+		const int nInitNameLen = fileNm.GetLength(); // save length for test below
+		bool usedConv[] = {false,false,false,false,false,false,false,false,false,false,
+			               false,false,false,false,false,false,false,false,false,false,
+			               false,false,false,false,false,false,false,false,false,false,
+						   false,false,false,false,false,false,false,false,false,false};
+
+		for(int k = 0; k < pDOC->GetNumSCU(); k++) {
+			int cix = pDOC->GetSCU(k); // get next convention
+			if(cix == tidOvercalls)
+				continue;  // skip saving overcalls
+			if(usedConv[cix])
+				continue;  // skip if seen before
+			usedConv[cix] = true;  // remember that we've use this one
+			fileNm += GetConvName(cix); // add on convention
+		} // end for(k) thru used conventions
+
+		if(fileNm.GetLength() > nInitNameLen) {  // Only write if a convention used
+			// build filename from conventions used
+			strPath.Format("%s\\%s_%s.brd",theApp.GetValue(tszProgramDirectory),
+							fileNm,
+							pDOC->GetDealIDString());
+			int nCode = file.Open((LPCTSTR)strPath, 
+								  CFile::modeWrite | CFile::modeCreate | CFile::shareDenyWrite, 
+								  &fileException);
+			CArchive ar(&file, CArchive::store);
+			pDOC->WriteFile(ar);
+			ar.Close();
+			file.Close();
+		}
+	}  // NCR-SCU end saving hands that used a convention
+#endif
 
 	// and display
 	for(int nRow=0;nRow<8;nRow++)
@@ -237,9 +350,73 @@ void CTestPlayDialog::Update()
 	//
 	m_listResults.UpdateWindow();
 }
+#ifdef _DEBUG
+// NCR-SCU Get name of convention. Have leading _ as separator
+//
+CString CTestPlayDialog::GetConvName(int id)
+{
+	CString convNm = "_";   // prefix with a _
+	switch(id) {
+	case tid5CardMajors:
+		return convNm + "5CardMajor";
+	case tidArtificial2ClubConvention:
+		return convNm + "Strong2Club";
+	case tidWeakTwoBids:
+		return convNm + "WeakTwo";
+	case tidWeakJumpOvercalls:
+		return convNm + "WeakJumpOvercall";
+	case tidStrongTwoBids:
+		return convNm + "Strong2";
+	case tidShutoutBids:
+		return convNm + "Shutout";
+	case tid4thSuitForcing:
+		return convNm + "4thSuitForcing";
+	case tidOgust:
+		return convNm + "Ogust";
+	case tidBlackwood:
+		return convNm + "Blackwood";
+	case tidRKCB:
+		return convNm + "RoyalKeyCardBlackwood";
+	case tidCueBids:
+		return convNm + "Cuebid";
+	case tidGerber:
+		return convNm + "Gerber";
+	case tidStayman:
+		return convNm + "Stayman";
+	case tidJacobyTransfers:
+		return convNm + "JacobyTransfer";
+	case tidLimitRaises:
+		return convNm + "LimitRaise";
+	case tidTakeoutDoubles:
+		return convNm + "TakeoutDouble";
+	case tidNegativeDoubles:
+		return convNm + "NegativeDouble";
+	case tidSplinterBids:
+		return convNm + "SplinterBid";
+	case tidMichaels:
+		return convNm + "Michaels";
+	case tidUnusualNT:
+		return convNm + "UnusualNT";
+	case tidJacoby2NT:
+		return convNm + "Jacoby2NT";
+	case tidGambling3NT:
+		return convNm + "Gambling3NT";
+	case tidDrury:
+		return convNm + "Drury";
+	case tidLebensohl:
+		return convNm + "Lebensohl";
+	case tidDONT:
+		return convNm + "DONT";
+	case tidOvercalls:
+		return convNm + "Overcall";
 
-
-
+	default:
+		CString val;
+		val.Format("_Unkn_%d",id);
+		return val;
+	}
+}
+#endif
 //
 void CTestPlayDialog::OnStart() 
 {
@@ -267,7 +444,7 @@ void CTestPlayDialog::OnStart()
 	pDOC->SuppressPlayHistoryUpdate(TRUE);
 	pMAINFRAME->HideDialog(twBidDialog);
 	pVIEW->ClearDisplay();
-	pVIEW->SuppressRefresh();
+//NCR	pVIEW->SuppressRefresh();   // Dialog box "smears" with this code ???
 	pDOC->ClearAllInfo();
 
 	// save settings
@@ -288,7 +465,6 @@ void CTestPlayDialog::OnStart()
 	double lfTotalTime = 0;
 	long lNumHands = 0;
 	CString strAvgTime;
-
 	// loop 
 	do
 	{
@@ -344,9 +520,10 @@ void CTestPlayDialog::OnStart()
 			{ 
 				::PostQuitMessage(0); 
 				return; 
-			} 
+			}
 		} 
 
+		
 		// reset flags
 		pDOC->SetValue(tbExpressPlayMode, FALSE);
 
@@ -373,7 +550,6 @@ void CTestPlayDialog::OnStart()
 
 		// save results and update the display
 		Update();
-
 	} while (!bBreak);
 
 
@@ -405,3 +581,15 @@ void CTestPlayDialog::OnStart()
 
 
 
+// NCR-AT  Toggle flag to save hands that went down
+void CTestPlayDialog::OnSavedownsCheck() 
+{
+	m_bSaveDowns = !m_bSaveDowns; // toggle 
+	
+}
+// NCR-AT  Toggle flag to save hands that went down
+void CTestPlayDialog::OnSaveConvUsedCheck() 
+{
+	m_bSaveConvUsed = !m_bSaveConvUsed; // toggle 
+	
+}

@@ -54,7 +54,7 @@ CBidDialog::CBidDialog(int nDialogID, CWnd* pParent /*=NULL*/)
 	m_nCurrMode = BD_MODE_NONE;
 //	m_pSubclassButtons = NULL;
 	//
-	m_nComputerBid = NONE;
+	m_nComputerBid = BID_NONE;  // NCR changed NONE to BID_NONE
 	m_bSpeechEnabled = FALSE;
 	m_bTrainingMode = FALSE;
 }
@@ -189,7 +189,8 @@ BOOL CBidDialog::OnInitDialog()
 
 	// populate the control ID -> index map
 	EnableToolTips(TRUE);
-	for(int i=0;i<tnumToolTips;i++)
+	int i; // NCR-FFS added here and removed below
+	for(/*int*/ i=0;i<tnumToolTips;i++)
 		m_mapIDtoIndex.SetAt(tToolTipInfo[i].nControlID, i);
 
 	// subclass flat buttons
@@ -401,7 +402,7 @@ int CBidDialog::EnterPlayerBid(int nBid)
 	PLAYER(nPlayer).EnterHumanBid(nBid);
 	int nCode = pDOC->EnterBid(nPlayer, nBid);
 	if (nPlayer == SOUTH)
-		m_nComputerBid = NONE;
+		m_nComputerBid = BID_NONE;  // NCR changed NONE to BID_NONE
 
 	//
 	ProcessBidReturnCode(nCode);
@@ -656,7 +657,7 @@ void CBidDialog::InitBiddingSequence()
 	CEasyBDoc* pDoc = CEasyBDoc::GetDoc();
 	if (!pDoc || !pDoc->IsInitialized())
 		return;
-	m_nComputerBid = NONE;
+	m_nComputerBid = BID_NONE;  // NCR changed NONE to BID_NONE
 	EnableControls();
 	DisableControls();
 	
@@ -1053,7 +1054,9 @@ void CBidDialog::RepositionWindow()
 	if ((rect.bottom != nYPos) || (rect.left != nXPos))
 	{
 		int dy = rect.bottom - nYPos;
-		MoveWindow(nXPos, rect.top-dy, rect.Width(), rect.Height(), TRUE);
+		int newY = rect.top - dy;  // NCR make sure not less than 0
+		if(newY < 0) newY = 0;
+		MoveWindow(nXPos, /*rect.top-dy*/ newY, rect.Width(), rect.Height(), TRUE);
 	}
 }
 

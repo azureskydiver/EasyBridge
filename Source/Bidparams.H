@@ -68,6 +68,8 @@
 // more generic macro
 #define PT_COUNT(x)  ((double)(x) - (double)theApp.GetBiddingAgressiveness()*0.5)
 
+// NCR-361 Define min points for a free bid
+#define PTS_FREEBID    OPEN_PTS(10) 
 
 
 //
@@ -332,8 +334,20 @@ typedef enum {
 	STOPPED_ALLOTHER	= 2,
 	STOPPED_ONE			= 3,
 	STOPPED_UNBID		= 4,
+	STOPPED_OPPBID      = 5,  // NCR  stop what opponents bid  
 } StoppedCode;
 
+
+// NCR Bid types - masks, set by OR, test by AND
+typedef enum {
+	BT_Open = 1,
+	BT_Overcall = 2,
+	BT_TakeoutDouble = 4,
+	BT_Response = 8,
+	BT_Jump = 16,
+	BT_Leap = 32,
+	BT_PenaltyDouble = 64,
+} BidType;
 
 //
 //----------------------------------------------------------
@@ -410,6 +424,7 @@ const int	SUIT_PREV		= 3;
 const int	SUIT_PREV_MAJOR	= 4;
 const int	SUIT_PREV_MINOR	= 5;
 const int	SUIT_PREFERRED	= 6;
+const int   SUIT_NOTTRUMP   = 7;  // NCR-336 Return suit that is NOT trump
 const int	SUIT_DIRECT		= -10;
 const int	SUIT_CLUBS		= -10;
 const int	SUIT_DIAMONDS	= -11;
@@ -418,10 +433,10 @@ const int	SUIT_SPADES		= -13;
 const int	SUIT_NOTRUMP	= -14;
 inline int MakeDirectSuit(int nSuit) { return SUIT_DIRECT - nSuit; }
 
-// hand revaluation codes
-const int	REVALUE_DUMMY					= 0;
-const int	REVALUE_DECLARER				= 1;
-const int	REVALUE_NOPENALTY_SHORTTRUMP	= 2;
+// hand revaluation codes   
+const int	REVALUE_DUMMY					= 1;  // NCR change these to 1,2,4 from 0,1,2
+const int	REVALUE_DECLARER				= 2;
+const int	REVALUE_NOPENALTY_SHORTTRUMP	= 4;
 
 // Blackwood codes
 const int	BLACKWOOD_ACES		= 0;

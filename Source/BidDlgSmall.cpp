@@ -67,7 +67,8 @@ int CBidDialogSmall::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 
 	// load level button icons
-	for(int i=0;i<7;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<7;i++)
 		m_buttonLevelIcons[i] = (HICON) LoadImage(theApp.m_hInstance, MAKEINTRESOURCE(IDI_LEVEL_1)+i, IMAGE_ICON, 0, 0, LR_DEFAULTCOLOR);
 	
 	// load suit button icons
@@ -112,7 +113,8 @@ BOOL CBidDialogSmall::OnInitDialog()
 */
 
 	// subclass the bid level buttons
-	for(int i=0;i<7;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<7;i++)
 	{
 		m_flatLevelButtons[i].SubclassDlgItem(IDC_BID_LEVEL_1 + i, this);
 		m_flatLevelButtons[i].SetIcon(IDI_LEVEL_1 + i);
@@ -328,7 +330,8 @@ void CBidDialogSmall::RegisterBid(int nBid, BOOL bShowButtonPress)
 void CBidDialogSmall::EnableControls()
 {
 	// enable all controls
-	for(int i=IDC_BID_LEVEL_1;i<=IDC_BID_LEVEL_7;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=IDC_BID_LEVEL_1;i<=IDC_BID_LEVEL_7;i++)
 	{
 		CButton* pButton = (CButton*) GetDlgItem(i);
 		pButton->EnableWindow(TRUE);

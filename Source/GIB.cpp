@@ -498,7 +498,8 @@ BOOL CGIB::CreateGIBInputFile(CFile& file, CPlayer* pPlayer, CHandHoldings* pHan
 	// indicate auction
 	strInput.Empty();
 	int numBids = pDoc->GetNumBidsMade();
-	for(int i=0;i<numBids;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<numBids;i++)
 	{
 		strInput += BidToBriefString(pDoc->GetBidByIndex(i));
 		if (i < numBids)

@@ -33,10 +33,14 @@ const int MAX_CARDBACKS	= 32;
 const int MAXHOLDING	= 26;
 
 // commonly used values
-const int NONE = -1;
+const int NONE = -99;  // NCR changed from -1
 
+// NCR NONE used for MANY enums as undefined value so until all changed, need to have undefined
+//     values set to SAME value as NONE !!!
 // card suits
-enum Suit { ANY=-1, CLUBS=0, DIAMONDS=1, HEARTS=2, SPADES=3, NOTRUMP=4 };
+enum Suit { NOSUIT=-99, ANY=-1, CLUBS=0, DIAMONDS=1, HEARTS=2, SPADES=3, NOTRUMP=4 }; // NCR added NOSUIT
+
+#define GETNEXTSUIT(X) X = Suit(((int)X)+1)  // NCR Converting int to Suit
 
 // majors vs. minors selection
 const int SUITS_ANY	   = 0;
@@ -50,6 +54,8 @@ const int QUEEN = 12;
 const int KING =  13;
 const int ACE =   14;
 
+const int NOTHING = 9;  //NCR define max mothing card
+
 // positions
 enum Position { UNKNOWN=-1, ANY_POS=-1, SOUTH=0, WEST=1, NORTH=2, EAST=3, TABLE=4, };
 
@@ -58,7 +64,7 @@ enum Team { NEITHER=-1, NORTH_SOUTH=0, EAST_WEST=1, BOTH=2 };
 
 // bids
 enum Bids {
-	BID_NONE=-1,
+	BID_NONE=-99,  // NCR changed from -1 (same as NONE for now)
 	BID_PASS=0, 
 	BID_1C= 1, BID_1D= 2, BID_1H= 3, BID_1S= 4, BID_1NT= 5,
 	BID_2C= 6, BID_2D= 7, BID_2H= 8, BID_2S= 9, BID_2NT=10,
@@ -92,8 +98,8 @@ enum Bids {
 #define ISMINOR(x)	(((x == CLUBS) || (x == DIAMONDS))? TRUE: FALSE)
 #define ISNOTRUMP(x)((x == NOTRUMP)? TRUE: FALSE)
 
-#define BID_SUIT(x)  ( ((x <= BID_PASS) || (x >= BID_DOUBLE))? -1 : ((x-1) % 5) )
-#define BID_LEVEL(x) ( ((x <= BID_PASS) || (x >= BID_DOUBLE))? -1 : (((x-1) / 5) + 1) )
+#define BID_SUIT(x)  ( ((x <= BID_PASS) || (x >= BID_DOUBLE))? NOSUIT : ((x-1) % 5) )  // NCR NOSUIT vs -1
+#define BID_LEVEL(x) ( ((x <= BID_PASS) || (x >= BID_DOUBLE))? BID_NONE : (((x-1) / 5) + 1) ) // NCE BID_NONE vs -1
 #define MAKEBID(s,l) (BID_PASS + (l-1)*5 + s + 1)
 
 #define ISBID(x) ((x >= BID_1C) && (x <= BID_7NT))

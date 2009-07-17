@@ -5,7 +5,10 @@
 // See the files COPYING and COPYRIGHT for details.
 //
 //----------------------------------------------------------------------------------------
-
+/* NCR changes:
+  22 aug 2009 - Added Sequence2 - cards of equivalent values considering what has been played
+                EG. KJ are in sequence if Q has been played
+*/
 //
 // CSuitHoldings
 //
@@ -65,9 +68,14 @@ public:
 	int GetNumTopHonors() const { return m_numTopHonors; }
 	int GetNumSecondaryHonors() const { return m_numSecondaryHonors; }
 	int GetNumMissingHonors() const { return m_numMissingHonors; }
+	int GetMissingHonor(const int nIdx) const { VERIFY(nIdx < m_numMissingHonors); return m_nMissingHonors[nIdx]; } // NCR-457
 	int GetNumMissingTopHonors() const { return m_numMissingTopHonors; }
 	int GetNumMissingInternalHonors() const { return m_numMissingInternalHonors; }
 	int GetNumMissingBottomHonors() const { return m_numMissingBottomHonors; }
+	int GetNumMissingBelow(const CCard* pCard) const; // NCR
+	int GetNumMissingBelow(const int nFaceValue) const; // NCR
+	int GetNumMissingAbove(const CCard* pCard) const; // NCR
+	int GetNumMissingAbove(const int nFaceValue) const; // NCR
 	CCard* GetLowestTopHonor() const { return (m_numTopHonors > 0)? m_cards[m_numTopHonors-1] : NULL; }
 	CCard* GetHighestSecondaryHonor() const { return (m_numTopHonors > 0)? m_cards[m_numTopHonors] : NULL; }
 
@@ -76,6 +84,9 @@ public:
 	virtual CCardList& GetSequence(int nIndex) const { VERIFY(nIndex < m_numSequences); return *(m_sequenceList[nIndex]); }
 	virtual CCardList& GetTopSequence() const { VERIFY(m_numSequences >= 1); return *(m_sequenceList[0]); }
 	virtual CCardList& GetSecondSequence() const { VERIFY(m_numSequences > 1); return *(m_sequenceList[1]); }
+	// NCR-32 also for sequence 2
+	virtual int GetNumSequence2s() const { return m_numSequence2s; }
+	virtual CCardList& GetSequence2(int nIndex) const { VERIFY(nIndex < m_numSequence2s); return *(m_sequence2List[nIndex]); }
 	//
 	virtual int GetNumMissingSequences() const { return m_numMissingSequences; }
 	virtual CCardList& GetMissingSequence(int nIndex) const { VERIFY(nIndex < m_numMissingSequences); return *(m_missingSequenceList[nIndex]); }
@@ -100,6 +111,7 @@ public:
 	BOOL HasQueen() const { return HasCard(QUEEN); }
 	BOOL HasJack() const { return HasCard(JACK); }
 	BOOL HasTen() const { return HasCard(TEN); }
+	BOOL HasTenAce() const; //NCR test if this suit has a TenAce(honors with hole)
 	//
 	BOOL IsVoid() const { return (m_numCards == 0)? TRUE : FALSE; }
 	BOOL IsSingleton() const { return (m_numCards == 1)? TRUE : FALSE; }
@@ -121,6 +133,7 @@ public:
 
 	//
 	int  GetCardsPlayedInSuit(CGuessedCardHoldings& playedCardsList);
+	int  GetNumGuardsRequired(const CCard* pCard, const CCardList& cardList) const; // NCR-75
 	
 
 // public data
@@ -153,6 +166,7 @@ protected:
 	int	m_numSecondaryHonors;		// e.g., in AQTx, 2 (the QT)
 	int	m_numTopCards;				// e.g., in AKQJT9, 6
 	int m_numSequences;
+	int m_numSequence2s; // NCR-32
 	int m_numMissingSequences;
 	CCardHoldings m_honors;
 	CCardHoldings m_bodyCards;
@@ -160,6 +174,7 @@ protected:
 	CCardHoldings m_likelyLosers;
 	CTypedPtrArray<CPtrArray, CCardList*> m_sequenceList;
 	CTypedPtrArray<CPtrArray, CCardList*> m_missingSequenceList;
+	CTypedPtrArray<CPtrArray, CCardList*> m_sequence2List;  // NCR-32
 	//
 	BOOL m_bHaveAce;
 	BOOL m_bHaveKing;

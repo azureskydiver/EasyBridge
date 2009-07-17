@@ -50,7 +50,7 @@ public:
 	// class-specific functions
 	virtual int		ReviewBiddingHistory();
 	virtual CCard*	FindLeadCardFromPartnerPreference();
-	virtual CCard*	Get4thBestLeadCard();
+	virtual CCard*	Get4thBestLeadCard(int nMinLen=4);  // NCR added nMinLen
 	virtual CCard*  GetHighDiscard(CSuitHoldings& suit);
 	virtual CCard*	CashWinners();
 
@@ -61,6 +61,9 @@ protected:
 	//
 	virtual void	AssessPosition();
 	virtual BOOL	IsPartnerVoidInSuit(int nSuit);
+	CCard* CheckLeadPartnersSuit(int nPartnersSuit);  //NCR
+	CCard* GetPrevCardPlayedThisSuit(const int nPlayer, const int nSuit, const int nRound) const; // NCR-561
+
 
 
 // public data

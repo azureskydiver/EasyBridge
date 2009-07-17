@@ -6,6 +6,8 @@
 //
 //----------------------------------------------------------------------------------------
 
+// NCR changed minimum pts to 21 from 16
+
 //
 // StrongTwoBidsConvention.cpp
 //
@@ -42,15 +44,21 @@ BOOL CStrongTwoBidsConvention::TryConvention(const CPlayer& player,
 	// To open with a strong two bid, we need either a long, very good suit 
 	// or 2 string suits, with 9+ playing tricks for majors (10+ for minors)
 	// plus 4 quick tricks.
-	// we also need a _minimum_ of 16 HCPs, no matter what
-	if ( ((bidState.numAbsoluteSuits >= 1) || (bidState.numSolidSuits >= 2)) &&
-		  (bidState.numLikelyWinners >= 9) && (bidState.numQuickTricks >= 4) &&
-			  								(bidState.fCardPts >= 16)) 
+	// we also need a _minimum_ of 16/21 HCPs, no matter what
+	if ( ((bidState.numAbsoluteSuits >= 1) || (bidState.numSolidSuits >= 2) 
+          // NCR-177 ignore absolute and solid if agressive
+		  || (theApp.GetBiddingAgressiveness() >= 1))
+		 && (bidState.numLikelyWinners >= 9) && (bidState.numQuickTricks >= 4) &&
+			  								(bidState.fCardPts >= 21)) //NCR changed from 16
 	{
 		// bid 2 of lowest openable solid suit
 		double fPts = bidState.fPts;
 		double fCardPts = bidState.fCardPts;
-		int nBid = bidState.GetLowestOpenableBid(SUITS_ANY, OT_STRONG, 2);
+		int openType = theApp.GetBiddingAgressiveness() < 1 ? OT_STRONG : OT_OPENER; // NCR-177
+		int nBid = bidState.GetLowestOpenableBid(SUITS_MAJORS, openType, 2);  // NCR-177 chngd OT_STRONG to openType
+		if(!ISBID(nBid))
+			nBid = bidState.GetLowestOpenableBid(SUITS_ANY, openType, 2);  // NCR-177 try any if no major
+		// NCR NOTE - above can return 1NT !!!
 		if ((nBid == BID_2C) && (pCurrConvSet->IsConventionEnabled(tidArtificial2ClubConvention)))
 		{
 			// we can't open a strong 2C when playing the 2Club convention,
@@ -88,7 +96,7 @@ BOOL CStrongTwoBidsConvention::TryConvention(const CPlayer& player,
 					  " quick tricks, so bid a strong " & BTS(nBid) & ".\n";
 		}
 		bidState.SetBid(nBid);
-//		bidState.SetConventionStatus(this, CONV_INVOKED);
+		bidState.SetConventionStatus(this, CONV_INVOKED);  // NCR uncommented this???
 		return TRUE;
 	}
 	// failed the test
@@ -136,10 +144,10 @@ BOOL CStrongTwoBidsConvention::RespondToConvention(const CPlayer& player,
 	int numPartnerBidsMade = bidState.m_numPartnerBidsMade;
 	//
 	//
-	// partner must've bid at the 2 level, but not 2C,
+	// partner must've bid at the 2 level, but not 2C, ??? NCR-121 vs 2NT
 	// and partner's bid must have been the first bid made
 	//
-	if ((nPartnersBidLevel == 2) && (nPartnersBid != BID_2C) &&
+	if ((nPartnersBidLevel == 2) && (nPartnersBid != BID_2NT) && // NCR-121 changed 2C to 2NT
 					(bidState.m_bPartnerOpenedForTeam) &&
 					(numPartnerBidsMade == 1) &&
 					(nPartnersBid == pDOC->GetValidBidRecord(0)))
@@ -162,9 +170,10 @@ BOOL CStrongTwoBidsConvention::RespondToConvention(const CPlayer& player,
 	double numQuickTricks = bidState.numQuickTricks;
 
 	// state expectations
-	bidState.m_fPartnersMin = 16;
-	bidState.m_fPartnersMax = 22;
-	status << "RSTRT! Partner made a strong 2-bid, showing a very good suit or two solid suits, 9+ playing tricks, and 4+ quick tricks.  We have to respond positively if interested in slam, or negatively otherwise.\n";
+	bidState.m_fPartnersMin = pCurrConvSet->GetValue(tnStrong2OpeningPts);  // NCR-177 increase strong 2 values
+	bidState.m_fPartnersMax = 40 - fCardPts; // NCR-177
+	status << "RSTRT! Partner made a strong 2-bid, showing a very good suit or two solid suits, 9+ playing tricks," 
+		      & " and 4+ quick tricks.  We have to respond positively if interested in slam, or negatively otherwise.\n";
 
 	// set partnership point count minimums & maximums
 	bidState.m_fMinTPPoints = fAdjPts + bidState.m_fPartnersMin;
@@ -253,7 +262,8 @@ BOOL CStrongTwoBidsConvention::RespondToConvention(const CPlayer& player,
 		nBid = BID_2NT;
 		status << "RSTRT40! But unfortunately we have poor support for partner's " & 
 				  bidState.szPSS & " suit (holding " & bidState.szHP & 
-				  "), no good suit of our own, and an unbalanced hand, so we have to make the negative response of " & BTS(nBid) & ".\n";
+				  "), no good suit of our own, and an unbalanced hand, so we have to make the negative response of "
+				  & BTS(nBid) & ".\n";
 	}
 	//
 	bidState.SetBid(nBid);
@@ -286,7 +296,7 @@ BOOL CStrongTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 	//
 	// estimate partner's strength
 	//
-	int nBid;
+	int nBid = BID_NONE;  // NCR-376 initialize for test below
 	double fPts = bidState.fPts;
 	double fAdjPts = bidState.fAdjPts;
 	double fCardPts = bidState.fCardPts;
@@ -303,14 +313,23 @@ BOOL CStrongTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 	//
 	// did we get a negative response from partner?
 	//
-	if (nPartnersBid == BID_2NT) 
+	if (nPartnersBid == BID_2NT || nPartnersBid == BID_PASS) // NCR-376 allow pass (eg after a double) 
 	{
-		status << "2S2Rb0! After our strong " & bidState.szPVB & 
-			" opening bid, partner's 2NT bid is a negative response, denying slam values (less than 1 Quick Trick).\n";
+		if(nPartnersBid != BID_PASS) { // NCR-376
+			status << "2S2RB0! After our strong " & bidState.szPVB & 
+					" opening bid, partner's 2NT bid is a negative response, denying slam values (less than 1 Quick Trick).\n";
 
-		// estimate points -- 0 to 6 for now
+			// estimate points -- 0 to 6 for now
+			bidState.m_fPartnersMax = 6;
+		}else{  // NCR=376 pard passed
+			status << "2S2RB1! After our strong " & bidState.szPVB & 
+					" opening bid, partner's pas is a negative response.\n";
+
+			// estimate points -- 0 to 3 for now
+			bidState.m_fPartnersMax = 3;  
+		}  // NCR-376 end pard passed
+
 		bidState.m_fPartnersMin = 0;
-		bidState.m_fPartnersMax = 6;
 		bidState.m_fMinTPPoints = fAdjPts + bidState.m_fPartnersMin;
 		bidState.m_fMaxTPPoints = fAdjPts + bidState.m_fPartnersMax;
 		bidState.m_fMinTPCPoints = fCardPts + bidState.m_fPartnersMin;
@@ -321,16 +340,19 @@ BOOL CStrongTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 		if ((bBalanced) && (bidState.m_fMinTPCPoints >= PTS_NT_GAME)) 
 		{
 			nBid = BID_3NT;
-			status << "S2RB1! With a balanced distribution and " &
+			status << "S2RB2! With a balanced distribution and " &
 					  fCardPts & " HCPs in hand, rebid " & BTS(nBid) & ".\n";
 		}
 		// else show a second preferred suit if available
 		if (bidState.numPreferredSuits > 0) 
 		{
 			int nSuit = bidState.GetRebidSuit(nPreviousSuit);
+			if((nSuit != NONE) && (bidState.numCardsInSuit[nSuit] >= 5))  // NCR-376 require 5+ cards
+			{
 			nBid = bidState.GetCheapestShiftBid(nSuit);
 			status << "S2RB4! With a good second suit in " &
 					  STS(nSuit) & ", show it in a rebid of " & BTS(nBid) & ".\n";
+			}
 		}
 		// otherwise rebid our original suit (if not 2C)
 		if (bidState.nPreviousBid == BID_2C) 
@@ -339,23 +361,36 @@ BOOL CStrongTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 			status << "S2RB6! With no other good suits, go ahead and bid our " &
 					  bidState.szPrefS & " suit at " & BTS(nBid) & ".\n";
 		} 
-		else 
+		// NCR-376 don't change bid if we have made one or have at least 5  cards
+		else if((nBid == BID_NONE) && (bidState.numCardsInSuit[nPreviousSuit] >= 5)) 
 		{
 			nBid = bidState.GetCheapestShiftBid(nPreviousSuit);
-			status << "B3E32! With no other good suits, go ahead and rebid our " &
+			status << "S2RB8! With no other good suits, go ahead and rebid our " &
 					  bidState.szPVSS & " suit at " & BTS(nBid) & ".\n";
+		}else { 
+			// NCR-376 what to do now? Double or pass
+			if((bidState.nRHOBidLevel >= 3) && (bidState.fCardPts >= 21)) {
+				nBid = BID_DOUBLE;
+			    status << "S2RB10! With no other good suits, having " & bidState.fCardPts 
+					      & " opponents bidding at the " & bidState.nRHOBidLevel & " level, double.\n";
+			}
+			else if(nBid == BID_NONE) // NCR-649 Added BID_NONE test
+			{
+				nBid = BID_PASS;
+			    status << "S2RB12! With no other good suits, pass.\n";
+			}
 		}
-		//
+
 		bidState.SetBid(nBid);
 		return TRUE;
-	}
+	} // end pard bid 2NT or passed
 	
 	//
 	// otherwise, got a positive response, and partner has shown 
 	// his long suit -- so either raise partner's suit, bid NT, or
 	// rebid our own suit
 	//
-	status << "2S2Rb20! After our strong " & bidState.szPVB &
+	status << "2S2RB20! After our strong " & bidState.szPVB &
 			  " opening bid, partner's " & bidState.szPB & 
 			  " bid was a positive response, indicating 1+ Quick Tricks.\n";
 
@@ -371,7 +406,7 @@ BOOL CStrongTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 	if (bBalanced) 
 	{
 		nBid = BID_3NT;
-		status << "With a balanced hand, bid game at " & BTS(nBid) & ".\n";
+		status << "S2RB22! With a balanced hand, bid game at " & BTS(nBid) & ".\n";
 	} 
 	// see if there's a suit agreement from a strong 2 bid
 	if ((nPreviousSuit == nPartnersSuit) && (bidState.nLastBid != BID_2C)) 
@@ -416,7 +451,8 @@ BOOL CStrongTwoBidsConvention::HandleConventionResponse(const CPlayer& player,
 				  " suit (holding " & bidState.szHP & 
 				  "), and we hold a good second suit in " & STS(nSuit) & 
 				  ", so show it in a rebid of " & BTS(nBid) & ".\n";
-	}
+	} 
+	else  // NCR-376 added else here
 	// otherwise rebid our original suit (if not 2C)
 	if (bidState.nPreviousBid == BID_2C) 
 	{

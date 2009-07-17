@@ -63,6 +63,8 @@ public:
 	//
 	virtual int	 GetNumDeclarerEntries() { return m_numDeclarerEntries; }
 	virtual int	 GetNumDummyEntries() { return m_numDummyEntries; }
+	virtual int	 GetNumDeclarerPossibleEntries() { return m_numDeclarerPossibleEntries; }  // NCR-563
+	virtual int	 GetNumDummyPossibleEntries() { return m_numDummyPossibleEntries; }  // NCR-563
 	virtual int	 GetNumDeclarerRuffingEntries() { return m_numDeclarerRuffingEntries; }
 	virtual int	 GetNumDummyRuffingEntries() { return m_numDummyRuffingEntries; }
 	virtual int	 GetNumDeclarerEntriesInSuit(int nSuit) { return m_numDeclarerEntriesInSuit[nSuit]; }
@@ -108,7 +110,7 @@ private:
 	int		CreateNoTrumpPlayPlan();
 	int		CreateSuitContractPlayPlan();
 	int		FindHoldUpPlays(CPlayList& playList, BOOL bExcludeTrumpSuit=FALSE);
-	int		FindCashingPlays(CPlayList& playList, BOOL bExcludeTrumpSuit=FALSE);
+	int		FindCashingPlays(CPlayList& playList, int& numReqdCards, BOOL bExcludeTrumpSuit=FALSE);
 //	int		FindForcePlays(CPlayList& playList);
 	int		FindRuffingPlays(CPlayList& playList);
 	int		FindDropPlays(CPlayList& playList);
@@ -116,7 +118,7 @@ private:
 	int		FindSuitDevelopmentPlays(CPlayList& forcePlayList, CPlayList& secondaryCashList);
 	int		FindFinessesInSuit(CCombinedSuitHoldings& suit, CPlayList& playList);
 	int		FormTrumpPullingPlan(CPlayList& mainPlayList, CPlayList& trumpPlayList);
-	int		FormTrumpFinessePlan(CPlayList& mainPlayList, CPlayList& trumpPlayList);
+	int		FormTrumpFinessePlan(CPlayList& mainPlayList, CPlayList& trumpPlayList, bool bSafeOnly=true); // NCR-425 added bool
 	int		FilterPlays(CPlayList& playList);
 	int		ScreenIneligiblePlays();
 	void	AdjustPlayCountForDeletedPlay(CPlay* pPlay);
@@ -173,6 +175,8 @@ private:
 	//
 	int		m_numDeclarerEntries;
 	int		m_numDummyEntries;
+	int     m_numDeclarerPossibleEntries;  // NCR-563 Entries after forcing higher card
+	int     m_numDummyPossibleEntries;     // NCR-563
 	int		m_numDeclarerRuffingEntries;
 	int		m_numDummyRuffingEntries;
 	int		m_numDeclarerEntriesInSuit[4];

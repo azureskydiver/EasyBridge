@@ -210,7 +210,7 @@ int CPlayList::MovePlayToEnd(int nIndex)
 	int nSize = m_playList.GetSize();
 	if ((nIndex < 0) || (nIndex >= nSize))
 		return -1;
-	if (nIndex == 0)
+	if (nIndex == nSize-1)  // NCR changed to nSize-1 from 0
 		return 1;
 	//
 	CPlay* pPlay = m_playList.GetAt(nIndex);

@@ -136,7 +136,8 @@ BOOL CBlackwoodConvention::InvokeBlackwood(CHandHoldings& hand, CBidEngine& bidS
 		// bid a grand slam if we have 37+ pts and the trump ace
 		// or a small slam with 33+ points
 		// or make the cheapest shift bid otherwise (D'oh!)
-		if ((fMinTPPoints >= PTS_SLAM+1) && (hand.SuitHasCard(nEventualSuit, ACE)))
+		if ((fMinTPPoints >= PTS_SLAM+1)   //NCR added NOTRUMP test 
+			&& ((nEventualSuit != NOTRUMP) && hand.SuitHasCard(nEventualSuit, ACE)))
 		{
 			nBid = MAKEBID(nEventualSuit, 7);
 			status << "BKWDY1! so since we have the points for a grand slam, go ahead and bid " & 
@@ -171,7 +172,7 @@ BOOL CBlackwoodConvention::InvokeBlackwood(CHandHoldings& hand, CBidEngine& bidS
 				  fMinTPCPoints & "-" & fMaxTPCPoints & " / " &
 				  fMinTPPoints & "-" & fMaxTPPoints & 
 				  " pts in the partnership, explore slam possibilities with Blackwood at " &
-				  BTS(nBid) & ".\n";
+				  BTS(nBid) & ". The eventual contract in " & STSS(nEventualSuit) &".\n";
 	}
 	else
 	{
@@ -222,11 +223,23 @@ BOOL CBlackwoodConvention::RespondToConvention(const CPlayer& player,
 	int nBid;
 
 	// is partner asking for aces?
-	if ((bidState.nPartnersBid == BID_4NT) && 
+	if ((bidState.nPartnersBid == BID_4NT) 
 //					(ISBID(bidState.nPartnersPrevBid)) && 
-					(bidState.nPreviousSuit != NOTRUMP))	
+        // NCR-246 Not Blackwood if we opened NT ??? 
+		// NCR-246a Not Blackwood if 4NT immediately after Stayman or Jacoby transfer
+		// NCR-246a Eg 1NT - 2C - 2D - 4NT => Invitation to Slam ???
+		// NCR-314 Its not Blackwood if pard opened NT unless we have an agreed suit
+	    && ((bidState.nFirstRoundSuit != NOTRUMP) || (bidState.m_nAgreedSuit != NONE)) 	
+        // NCR-309 NT ok if conventional and we have an agreed suit		
+		&& ((bidState.nPreviousSuit != NOTRUMP) || (bidState.m_nAgreedSuit != NONE)) 
+		// NCR-324 Not Blackwood if we bid NT before
+		&& ((bidState.nNextPrevSuit != NOTRUMP) 
+		// NCR-518 Unless it was Jacoby 2NT
+		    || (bidState.nNextPrevBid == BID_2NT) && (bidState.m_nAgreedSuit != NONE))
+		// NCR-368 What if pard wants for force NT?     // NCR-379 Jacoby 2NT would set agreedSuit
+		&& ((bidState.nPartnersPrevSuit != NOTRUMP) || (bidState.m_nAgreedSuit != NONE)) )	
 	{
-		// respond
+		// respond to Blackwood request for Aces
 		if ((numAces == 0) || (numAces == 4))
 			nBid = BID_5C;
 		else if (numAces == 1)
@@ -260,6 +273,15 @@ BOOL CBlackwoodConvention::RespondToConvention(const CPlayer& player,
 		status << "BK12! With " & numKings & " King" & ((numKings > 1)? "s," : ",") &
 				  " respond to partner's Blackwood inquiry with " & BTS(nBid) & ".\n";
 		bidState.SetBid(nBid);
+		bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);	// Blackwood complete
+		return TRUE;
+	}
+
+	// NCR what if partner bails out in a new suit??? 
+	if(nBlackwoodStatus == CONV_RESPONDED_ROUND1) 
+	{
+		status << "BK13! Partner appears to have bailed out, so we'll pass.\n";
+		bidState.SetBid(BID_PASS);
 		bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND2);	// Blackwood complete
 		return TRUE;
 	}
@@ -383,10 +405,13 @@ BOOL CBlackwoodConvention::HandleConventionResponse(const CPlayer& player,
 		{
 			// oops, we don't have all 4 aces, so we gotta stop
 			// if we have fewer then 3 aces or less than 33 pts. then really panic
-			if ((numTotalAces < 3) || (bidState.m_fMinTPPoints < PTS_SLAM))
+			if ((numTotalAces < 3) || (bidState.m_fMinTPPoints < PTS_SLAM)
+				|| hand.HasWorthlessDoubleton()  // NCR can't do slam with worthless doubleton
+				|| (hand.GetNumSuitsStopped() < 4) )  // NCR-344 Don't do slam without stoppers? Use: AllOtherSuitsStopped()???
 			{
 				int nTestBid = bidState.GetCheapestShiftBid(nAgreedSuit);
-				if (nTestBid <= BID_5NT)
+				// NCR-260 Can't do 5NT - pard will think its more Blackwood
+				if (nTestBid < BID_5NT)
 				{
 					// if we can return to the trump suit at the 5 level,
 					// then do so
@@ -397,10 +422,20 @@ BOOL CBlackwoodConvention::HandleConventionResponse(const CPlayer& player,
 					else
 						status << "BK34! Oops, we're caught with as few as " & bidState.m_fMinTPPoints &
 								  " total points, so halt the bidding at the five-level.\n";
-				}		
+				}
+				// NCR-260 bail out with ???
+				else if (nTestBid == BID_5NT)
+				{
+					nBid = bidState.GetCheapestShiftBid(bidState.nPartnersPrevSuit); // NCR-260???
+				}
 				else
 				{
-					nBid = MAKEBID(nAgreedSuit, 6);
+					//NCR Check if the bidsuit is the agreed suit and leave it
+					if(BID_SUIT(nPartnersBid) == nAgreedSuit) {
+						nBid = BID_PASS;  //NCR leave by passing		
+					}else{
+						nBid = MAKEBID(nAgreedSuit, 6);
+					}
 				}
 			}
 			else
@@ -519,6 +554,15 @@ BOOL CBlackwoodConvention::HandleConventionResponse(const CPlayer& player,
 						  " Kings and have a total of only " & fMinTPPoints & "-" & fMaxTPPoints & 
 						  " pts in the partnership, we lack sufficient strength for a grand slam and have to settle for a small slam at " &
 						  BTS(nBid) & ".\n";
+			}
+			// NCR-223 Did pard's bid happen to be what we want?
+			else if(nBid == nPartnersBid)
+			{
+				nBid = BID_PASS;  // leave pard's bid in
+				status << "BK48a! Since we're missing " & (4 - numTotalKings) & 
+						  " Kings and have a total of only " & fMinTPPoints & "-" & fMaxTPPoints & 
+						  " pts in the partnership, we lack sufficient strength for a grand slam and have to settle for a small slam at " &
+						  BTS(nPartnersBid) & ".\n";
 			}
 			else
 			{

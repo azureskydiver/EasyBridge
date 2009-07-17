@@ -29,6 +29,8 @@ int CCard::m_nCardHeight = -1;
 CCard::CCard()
 {	
 	m_pBitmap = NULL;
+	m_nFaceValue = NONE;  // NCR init some more 
+	m_nDeckValue = NONE;
 }
 
 // destructor
@@ -47,7 +49,7 @@ void CCard::Clear()
 	m_bBackgroundSet = FALSE;
 	m_bHLBackgroundSet = FALSE;
 	m_bFaceUp = FALSE;
-	m_nOwner = -1;
+	m_nOwner = UNKNOWN;  //NCR-OWN2POS
 	m_nDisplayPosition = -1;
 	m_nSuitPosition = -1;
 	m_nHandIndex = -1;
@@ -311,6 +313,19 @@ TCHAR CCard::GetSuitLetter() const
 // draw the card at the current location
 void CCard::Draw(CDC* pDC)
 {
+#ifdef _DEBUG   // NCR DEBUG CODE
+	if((m_nPosY > 500) 
+	   || ((m_nPosX > 700) && (m_nPosX < 730))
+	   || (m_nDeckValue == 21)  // show Diamond 10
+	   ) 
+	{  // NCR DEBUG CODE
+		printf("X=%d, Y=%d for card=%s, dv=%d\n", m_nPosX, m_nPosY, m_strFullName, m_nDeckValue);
+	}
+	if((m_nPosX == 507) && (m_nDeckValue == 21)) {  // Trap DT
+		printf("misplaced DT\n");
+	}
+#endif
+
 	CDC cardDC,cacheDC,maskDC;
 	// create DCs
 	cardDC.CreateCompatibleDC(pDC);

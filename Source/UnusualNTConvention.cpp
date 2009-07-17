@@ -148,7 +148,7 @@ BOOL CUnusualNTConvention::RespondToConvention(const CPlayer& player,
 		// apply tests #1, 2, and 3
 		int nOpeningBid = pDOC->GetOpeningBid();
 		int nOpeningBidder = pDOC->GetOpeningBidder();
-		BOOL bOppMajor = ISMAJOR(nOpeningBid);
+		BOOL bOppMajor = ISMAJOR(BID_SUIT(nOpeningBid));    // NCR added BID_SUIT()
 		if (ISBID(nOpeningBid) && (GetPlayerTeam(nOpeningBidder) != player.GetTeam()) &&
 			 ((nOpeningBid >= BID_1C) && (nOpeningBid <= BID_1S)) &&
 			  (nPartnersBid == BID_2NT) && (bidState.m_numBidsMade == 0) )
@@ -247,6 +247,7 @@ BOOL CUnusualNTConvention::RespondToConvention(const CPlayer& player,
 
 		// pick superior suit
 		int nSuit1, nSuit2, nSuperiorSuit;
+		nLHOSuit = BID_SUIT(nOpeningBid);         // NCR-713 Get suit for below 
 		if (nLHOSuit == CLUBS)
 		{
 			nSuit1 = DIAMONDS;
@@ -282,7 +283,7 @@ BOOL CUnusualNTConvention::RespondToConvention(const CPlayer& player,
 				}
 				else
 				{
-					nBid = MAKEBID(BID_LEVEL(nPartnersBid), nSuit2);
+					nBid = MAKEBID(nSuit2, BID_LEVEL(nPartnersBid));   // NCR-713 swapped order of args
 					status << "UNTR42! As a result, we settle for a contract of " & BTS(nBid) & ".\n";
 				}
 				//
@@ -357,6 +358,12 @@ BOOL CUnusualNTConvention::RespondToConvention(const CPlayer& player,
 				nBid = bidState.GetGameBid(nSuit);
 				status << "UNTR72! So go ahead and bid game at " & BTS(nBid) &".\n";
 			}
+			// NCR-293 Bid something if partner has cue-bid
+			else if (nPartnersSuit == nEnemySuit)
+			{	
+				nBid = bidState.GetCheapestShiftBid(nSuit, pDOC->GetLastValidBid());
+				status << "UNTR74! Partner cue-bid, So go ahead and bid something at " & BTS(nBid) &".\n";
+			}
 			else
 			{
 				// else gotta pass
@@ -405,7 +412,7 @@ BOOL CUnusualNTConvention::HandleConventionResponse(const CPlayer& player,
 	//
 	// get some info
 	//
-	int nBid;
+	int nBid = BID_NONE;
 	double fPts = bidState.fPts;
 	double fAdjPts = bidState.fAdjPts;
 	double fCardPts = bidState.fCardPts;

@@ -69,6 +69,7 @@ enum bidconvcodes {
 	tn2NTRangeMaxPts,
 	tn3NTRangeMinPts,
 	tn3NTRangeMaxPts,
+	tnStrong2OpeningPts,  // NCR-177
 };
 
 

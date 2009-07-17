@@ -88,7 +88,7 @@ CString CRuff::GetFullDescription()
 {
 	return FormString("Ruff a %s in %s.",
 					   SuitToSingularString(m_nSuit),
-					   (m_nTargetHand == 0)? "hand" : "dummy");
+					   (m_nTargetHand == IN_HAND)? "hand" : "dummy");
 }
 
 
@@ -133,10 +133,10 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 	CCard* pDeclarerCard = pDOC->GetCurrentTrickCard(playEngine.GetPlayerPosition());
 	CCard* pDummysCard = pDOC->GetCurrentTrickCard(playEngine.GetPartnerPosition());
 	CCard* pPartnersCard = bPlayingInHand? pDummysCard : pDeclarerCard;
-	BOOL bPartnerHigh = (pRoundTopCard == pPartnersCard);
+	const BOOL bPartnerHigh = (pRoundTopCard == pPartnersCard);
 	//
 	BOOL bValid = FALSE;
-
+	int nTopOSCardFV = 0; // NCR-17 FaceValue of top Outstanding card
 
 	// test preconditions
 	if (!CPlay::IsPlayUsable(combinedHand, playEngine))
@@ -156,7 +156,7 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 				if (m_nTargetHand == IN_HAND)
 				{
 					// can't ruff here
-//					status << "4PLRUF02! Can't ruff a card when leading.\n";
+					status << "4PLRUF02! Can't ruff dummy's " & STSS(m_nSuit) & " in hand when leading.\n";
 					m_nStatusCode = PLAY_POSTPONE;
 					return m_nStatusCode;
 				}
@@ -166,6 +166,8 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					if (dummyHand.GetNumCardsInSuit(m_nSuit) > 0)
 					{
 						// can't use this now
+  						status << "4PLRUF03! Can't ruff " & STSS(m_nSuit)
+							    & " in dummy, dummy is not void.\n"; // NCR added
 						m_nStatusCode = PLAY_POSTPONE;
 						return m_nStatusCode;
 					}
@@ -193,7 +195,7 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 				if (m_nTargetHand == IN_DUMMY)
 				{
 					// leading from dummy & ruffing in dummy? no can do
-//					status << "4PLRUF12! Can't lead from dummy and ruff in dummy at the same time.\n";
+					status << "4PLRUF12! Can't lead from dummy and ruff in dummy at the same time.\n";
 					m_nStatusCode = PLAY_POSTPONE;
 					return m_nStatusCode;
 				}
@@ -203,6 +205,8 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					if (playerHand.GetNumCardsInSuit(m_nSuit) > 0)
 					{
 						// can't use this now
+  						status << "4PLRUF13! Can't ruff " & STSS(m_nSuit)
+							       & " in hand, hand is not void.\n"; // NCR added
 						m_nStatusCode = PLAY_POSTPONE;
 						return m_nStatusCode;
 					}
@@ -230,7 +234,8 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 
 		case 1:
 			// playing second -- may be able to ruff here, intended or not
-			if (nSuitLed == nTrumpSuit)
+    		// NCR-468 Check if we're to ruff the suit led. Exit if another suit
+			if ((nSuitLed == nTrumpSuit) || (m_nSuit != nSuitLed))
 			{
 				// but not if a trump was led
 					m_nStatusCode = PLAY_POSTPONE;
@@ -239,8 +244,17 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 
 			// an unintended ruff is OK only if the card led is not a trump card, 
 			// _and_ we have zero cards in the suit in the appropriate hand
-			if ( ((m_nTargetHand == IN_HAND) && (playerHand.GetNumCardsInSuit(nSuitLed) == 0)) ||
-				 ((m_nTargetHand == IN_DUMMY) && (dummyHand.GetNumCardsInSuit(nSuitLed) == 0)) )
+			{  // NCR-17 Get top outstanding card to see if dummy has larger
+			CCardList cardList;
+			int nCnt = playEngine.GetOutstandingCards(nSuitLed, cardList, true);
+			if(nCnt > 0) 
+				nTopOSCardFV = cardList.GetTopCard()->GetFaceValue();
+			}
+			if ( ((m_nTargetHand == IN_HAND) && (playerHand.GetNumCardsInSuit(nSuitLed) == 0)
+				 // NCR-17 Test that dummy doesn't have the top card - save ruff if so
+				 // Also should check if ???
+				 && !dummySuit.IsVoid() && (dummySuit.GetTopCard()->GetFaceValue() > nTopOSCardFV) )
+				|| ((m_nTargetHand == IN_DUMMY) && (dummyHand.GetNumCardsInSuit(nSuitLed) == 0)) )
 			{
 				status << "3PLRUF20! We can ruff in the suit led by the opponent.\n";
 			}
@@ -262,6 +276,11 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					if (playerTrumps.GetNumCards() > 0)
 					{
 						pPlayCard = playerTrumps.GetBottomCard();
+						// NCR-209 Ruff high enough if lots of trumps
+						CCombinedSuitHoldings& combinedTrumps = combinedHand.GetSuit(nTrumpSuit);
+						if(combinedTrumps.GetTopSequence().GetNumCards() > 5)
+							// NCR-209 following might get too high a card ???
+							pPlayCard = playerTrumps.GetTopSequence().GetBottomCard(); // NCR-209 a highcard
 						status << "PLRUF30! Ruff in hand with the " & pPlayCard->GetName() & ".\n";
 					}
 					else
@@ -330,7 +349,8 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 					bValid = TRUE;
 			}
 			//
-			if (bValid)
+    		// NCR-468 Check if we're to ruff the suit led. Exit if another suit
+			if (bValid &&  (m_nSuit == nSuitLed))
 			{
 				// bonanza
 //				status << "3PLRUF50! We can ruff in the suit led by the opponent.\n";
@@ -343,6 +363,8 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 				return m_nStatusCode;
 			}
 
+			// NCR-472 Get RHO's card played
+//			CCard* pRHOCard = pDOC->GetCurrentTrickCard(playEngine.GetRHOpponent()->GetPosition()); // NCR-472
 			// at this point, we MUST be in the proper hand to ruff
 			if (bPlayingInHand) 
 			{
@@ -370,7 +392,10 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 								return m_nStatusCode;
 							}
 						}
-						else if (pPartnersCard == pRoundTopCard)
+						// NCR-171 don't ruff if pard's card is high and (playing last or no > cards out)
+						else if ((pPartnersCard == pRoundTopCard) 
+							     && ((nOrdinal == 3) || (combinedSuit.GetNumMissingAbove(pPartnersCard) == 0)))
+							      
 						{
 							status << "4PLRUF59! Partner'" & pPartnersCard->GetName() & " is high, so don't ruff it.\n";
 							m_nStatusCode = PLAY_POSTPONE;
@@ -420,6 +445,9 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 			}
 			else
 			{
+				// NCR-472 Get card played by LHO to test if he's shown out
+				CCard* pLHOCard = pDOC->GetCurrentTrickCard(playEngine.GetLHOpponent()->GetPosition()); // NCR-472
+				bool bLHOShownOut = pLHOCard->GetSuit() != nSuitLed; // NCR-472
 				// playing second in dummy -- see if we're ruffing here
 				if (m_nTargetHand == IN_DUMMY)
 				{
@@ -444,9 +472,13 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 								return m_nStatusCode;
 							}
 						}
-						else if (pPartnersCard == pRoundTopCard)
+						// NCR ruff a low card (less than Jack) that will probably be too low
+						// unless we're in the last position
+						else if ((pPartnersCard == pRoundTopCard) 
+							     && ((nOrdinal == 3) || (!bLHOShownOut  // NCR-472 ruff only if LHO shown out and higher card out 
+								                         && (combinedSuit.GetMissingCardVal(0) < pPartnersCard->GetFaceValue()) )))
 						{
-							status << "4PLRUF73! Partner'" & pPartnersCard->GetName() & " is high, so don't ruff it.\n";
+							status << "4PLRUF73! Partner's " & pPartnersCard->GetName() & " is high, so don't ruff it.\n";
 							m_nStatusCode = PLAY_POSTPONE;
 							return m_nStatusCode;
 						}
@@ -491,7 +523,7 @@ PlayResult CRuff::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 						return m_nStatusCode;
 					}
 				}
-			}
+			} // end playing in dummy
 			// else all went OK
 			m_nStatusCode = PLAY_COMPLETE;
 			break;

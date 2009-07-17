@@ -27,11 +27,14 @@ public:
 //
 private:
 	void	Update();
+	CString GetConvName(int id);
 
 // Dialog Data
 private:
 	BOOL	m_bPlayActive;
 	BOOL	m_bStopFlag;
+	BOOL    m_bSaveDowns; // NCR-AT Save brds for hands going down
+	BOOL    m_bSaveConvUsed;  // NCR-SCU Save brds for conventions used
 	//
 	int		m_numMade[8][8], m_numContracts[8][8];
 
@@ -63,6 +66,8 @@ protected:
 	virtual BOOL OnInitDialog();
 	virtual void OnOK();
 	afx_msg void OnClose();
+	afx_msg void OnSavedownsCheck();
+	afx_msg void OnSaveConvUsedCheck();  
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };

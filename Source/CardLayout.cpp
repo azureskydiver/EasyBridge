@@ -191,7 +191,7 @@ BOOL CCardLayoutDialog::OnCommand(WPARAM wParam, LPARAM lParam)
 			PLAYER(m_nPlayer).RemoveCardFromHand(pCard);
 			pVIEW->m_layoutDeck[nIndex] = pCard;
 			pVIEW->m_numCardsUnassigned++;
-			pCard->SetOwner(-1);
+			pCard->SetOwner(UNKNOWN);   // NCR-OWN2POS
 			pVIEW->DisplayHand((Position)m_nPlayer);
 			EnableOrDisable();
 			return TRUE;
@@ -371,8 +371,8 @@ void CCardLayoutDialog::OnClear()
 		nIndex = pCard->GetSortedDeckIndex();
 		pVIEW->m_layoutDeck[nIndex] = pCard;
 		pVIEW->m_numCardsUnassigned++;
-		pCard->SetOwner(-1);
-		pCard->ClearAssignment();
+		pCard->SetOwner(UNKNOWN);  // NCR-OWN2POS
+ 		pCard->ClearAssignment();
 		// clear checkbox
 		// get screen order from suit
 		int nSuit = pVIEW->GetSuitToScreenIndex(pCard->GetSuit());

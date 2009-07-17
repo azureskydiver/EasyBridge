@@ -24,7 +24,7 @@ public:
 	//
 	int		DetermineRoundWinner(const int nRound) const;
 	void	AnalyzePlayRecord();
-	bool	IsValid();
+	bool	IsValid(bool isExportFile);  // NCR_PBNI added isExportFile
 	void	SetTagValue(LPCTSTR szTag, LPCTSTR szValue);
 	CString GetTagValue(LPCTSTR szTag) const;
 

@@ -17,12 +17,16 @@
 #include "OvercallsConvention.h"
 #include "HandHoldings.h"
 #include "TakeoutDoublesConvention.h"
+#include "ShutoutBidsConvention.h" // NCR-254
 #include "ConventionSet.h"
 #include "ConvCodes.h"
 
 extern CTakeoutDoublesConvention takeoutDoublesConvention;
 
+extern CShutoutBidsConvention		shutoutBidsConvention;  // NCR-254 for preemptive overcall
 
+
+const int DidJumpShift = 1;  // NCR vs magic '1'
 
 //
 //===============================================================================
@@ -54,19 +58,45 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 		// N/A
 		return FALSE;
 	}
+
+	// NCR-362 Preempt if 7-8 cards and not an opening hand
+    if ((bidState.numPrefSuitCards >= 7) && (bidState.fCardPts > OPEN_PTS(6)) 
+		&& (bidState.fPts <= 11) // raw 11 or OPEN_PTS(11)?
+		&& (bidState.nRHOBidLevel == 1) && (theApp.GetBiddingAgressiveness() >= 1) ) 
+	{
+		int nOCLevel = 3; // overcall level 3 unless 8+ or lowerSuit
+		if (bidState.numPrefSuitCards > 7) //|| (bidState.nPrefSuit < bidState.nRHOSuit))
+			nOCLevel = 4;
+		int nBid = MAKEBID(bidState.nPrefSuit, nOCLevel);
+		status << "OVRCSOa! With " & bidState.fCardPts & "/" & bidState.fPts 
+				  & " points, a " & bidState.numPrefSuitCards
+				  & "-card " & STSS(bidState.nPrefSuit) & " suit, make a preempt overcall to " & BTS(nBid) & ".\n";
+		bidState.SetBid(nBid);
+		// foreign invocation is kludgy, but hey...
+		bidState.SetConventionStatus(this, CONV_SUBSUMED);
+		bidState.SetConventionStatus(&shutoutBidsConvention, CONV_INVOKED);
+		return TRUE;
+	} // end NCR-362 preempting with long suit, weak hand
+
 	
 	// the basic requirements for a simple overcall are:
 	// - a good 5+ card suit,
 	// - 5 playing tricks at the 1-level, or 6 at the 2-level, and
 	// - 8-15 points at the 1-level, or 10-15 at the 2 level (taken care of later)
-	if ( (bidState.fPts >= OPEN_PTS(8)) && (bidState.numLikelyWinners >= 5) )
+	// NCR-319 >=8 pts and 6 card suit
+	// NCR-532 >= 10 pts and a good 5 card suit (same as first ?)
+	if ( ((bidState.fPts >= OPEN_PTS(8)) && ((bidState.numLikelyWinners >= 5)
+		                                    || (bidState.numPrefSuitCards >= 6)) ) // NCR-319
+         || ((bidState.fPts >= OPEN_PTS(10)) && (bidState.numPrefSuitCards >= 5) 
+		     && (bidState.nSuitStrength[bidState.nPrefSuit] >= SS_GOOD_SUPPORT) )   // NCR-532 Open with 10 pts and a good suit
+         || ((bidState.fPts >= OPEN_PTS(13)) && (bidState.numPrefSuitCards >= 5) ) ) // NCR-322 Opening hand w/5 cards 
 	{
 		 // passed the initial tests
 	}
 	else
 	{
 		// can't overcall -- but maybe can make some other bid
-		status << "2OVRCL3! But we lack the strength for a simple overcall.\n";
+		status << "2OVRCL3! But we lack the strength with " & bidState.fPts & " pts for a simple overcall.\n";
 		return FALSE;
 	}
 
@@ -116,12 +146,29 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 		nSuit = hand.GetSuitsByPreference(1);
 		if ((bidState.numCardsInSuit[nSuit] >= 5) && 
 			(ApplySuitStrengthTest(nSuit, nOppBid, bidState)) &&
-			(bidState.nPrefSuit != nOppSuit) && (bidState.nPrefSuit != nOppSuit2))
+			(bidState.nPrefSuit != nOppSuit) && (bidState.nPrefSuit != nOppSuit2)
+			// NCR-645 don't use suit if same as RHO and Michaels
+			&& !((nOppSuit == nSuit) && conventions.IsConventionEnabled(tidMichaels)) )
 		{
 			// we'll use the second suit
 		}
+		// NCR-576 One more chance: 5 cards and points
+		else if((bidState.numCardsInSuit[bidState.nPrefSuit] >= 5) 
+			    && (bidState.fPts > OPEN_PTS(14))
+			    && (bidState.nPrefSuit != nOppSuit) && (bidState.nPrefSuit != nOppSuit2) ) 
+		{
+			// Use it
+			nSuit = bidState.nPrefSuit; // NCR-576
+		}
 		else
 		{
+			// NCR-669 See if we can overcall 1NT
+			bidState.m_fMinTPCPoints = bidState.fAdjPts; // Kludge for BidNoTrump()
+			if (bidState.BidNoTrump(1, OPEN_PTS(pCurrConvSet->GetValue(tn1NTRangeMinPts)), 
+									PTS_NT_GAME-4,FALSE, STOPPED_OPPBID))
+			return TRUE;
+
+
 			// failed to find an appropriate overcall suit
 			int nLevel = (nSuit > BID_SUIT(nOppBid))? BID_LEVEL(nOppBid) : BID_LEVEL(nOppBid) + 1;
 			if (nLevel == 1)
@@ -141,7 +188,15 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 
 	// see if we should bid a jump overcall, strong or weak
 	nBid = bidState.GetJumpShiftBid(nSuit, nOppBid);
-	if (BID_LEVEL(nBid) < 3)
+	int testLvl = 3;  // NCR-125 allow level = 3 for minor
+	if(ISMINOR(nSuit)) {
+		testLvl = 4;  // allow jump shift to level 3 for minors
+	}
+	// NCR-525 Allow bid if opening bid was a weak two
+	bool bOpenWasWeakTwo = (conventions.IsConventionEnabled(tidWeakTwoBids)
+		                    && bidState.nRound == 0 && (nOppBid >= BID_2D || nOppBid <= BID_2S) );  // NCR-525
+
+	if ((BID_LEVEL(nBid) < testLvl) || bOpenWasWeakTwo)  // NCR-125 use var  NCR-525 allow if weaktwo
 	{
 		// see if we can make a weak jump shift
 		if (conventions.IsConventionEnabled(tidWeakJumpOvercalls))
@@ -157,7 +212,7 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 						  "-card " & STSS(nSuit) & " suit, make a weak jump overcall to " & BTS(nBid) & ".\n";
 				bidState.SetBid(nBid);
 				bidState.SetConventionStatus(this, CONV_INVOKED);
-				bidState.SetConventionParameter(this, 1);	// indicate that we jump shifted
+				bidState.SetConventionParameter(this, DidJumpShift);	// indicate that we jump shifted
 				return TRUE;
 			}
 		}
@@ -175,7 +230,7 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 						  " likely winners in the hand, make a strong jump overcall to " & BTS(nBid) & ".\n";
 				bidState.SetBid(nBid);
 				bidState.SetConventionStatus(this, CONV_INVOKED);
-				bidState.SetConventionParameter(this, 1);	// indicate that we jump shifted
+				bidState.SetConventionParameter(this, DidJumpShift);	// indicate that we jump shifted
 				return TRUE;
 			}
 		}
@@ -183,21 +238,27 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 
 	// here, forget about jump overcalls
 	bidState.ClearConventionParameter(this);		// no jump shift
+	bidState.m_bGameForceActive = FALSE;   // NCR-625 No force now
 	nBid = bidState.GetCheapestShiftBid(nSuit, nOppBid);
 	nBidLevel = BID_LEVEL(nBid);
 
 	//
-	if (nBidLevel >= 3)
+	if (nBidLevel >= 3 && !bOpenWasWeakTwo)   // NCR-525 Allow if weaktwo
 		return FALSE;	// can't overcall at the 3 level!
 
 	// see if we meet the rqmts
 	// need 10+ pts and 6 winners to overcall at the 2-level
 	if ((nBidLevel == 2) && 
-		((bidState.fPts < OPEN_PTS(10)) || (bidState.numLikelyWinners < 6)) )
+		(((bidState.fPts < OPEN_PTS(10)) || ((bidState.numLikelyWinners < 6) 
+		                                    && (bidState.fPts < OPEN_PTS(13))))  // NCR-285 open with pts!
+         && (bidState.numPrefSuitCards < 6) ) ) // NCR-319 overcall with 6+ cards
 		return FALSE;
+
 	// need 8+ pts and 5 winners to overcall at the 1-level
-	if ((nBidLevel == 1) && 
-		((bidState.fPts < OPEN_PTS(8)) || (bidState.numLikelyWinners < 5)) )
+	if ((nBidLevel == 1)
+		&& ((bidState.fPts < OPEN_PTS(8))           // NCR-460 Open with points  
+		     || ((bidState.numLikelyWinners < 5) 
+			     && ((bidState.fPts + bidState.fDistPts) < OPEN_PTS(11)))) ) // NCR-532 add in distribution
 		return FALSE;
 
 	// we're normally restricted to overcalling with 17 or fewer points
@@ -221,13 +282,32 @@ BOOL COvercallsConvention::TryConvention(const CPlayer& player,
 		}
 	}
 
+	// NCR-254 Preempt if 7-8 cards and not an opening hand
+    if ((bidState.numCardsInSuit[nSuit] >= 7) && (bidState.fPts > OPEN_PTS(6)) 
+		&& (bidState.fPts <= 11) // raw 11 or OPEN_PTS(11)?
+		&& (nOppBidLevel == 1) ) 
+	{
+		int nOCLevel = 3; // overcall level 3 unless 8+ or lowerSuit
+		if ((bidState.numCardsInSuit[nSuit] > 7) || (nSuit < nOppSuit))
+			nOCLevel = 4;
+		nBid = MAKEBID(nSuit, nOCLevel);
+		status << "OVRCSO! With " & bidState.fCardPts & "/" & bidState.fPts 
+				  & " points, a " & bidState.numCardsInSuit[nSuit]
+				  & "-card " & STSS(nSuit) & " suit, make a preempt overcall to " & BTS(nBid) & ".\n";
+		bidState.SetBid(nBid);
+		// foreign invocation is kludgy, but hey...
+		bidState.SetConventionStatus(this, CONV_SUBSUMED);
+		bidState.SetConventionStatus(&shutoutBidsConvention, CONV_INVOKED);
+		return TRUE;
+	} // end NCR-254 preempting with long suit, weak hand
+
 	//
 	// whew! we've passed all the tests, so bid
 	//
 	CString strOppBid = BTS(nOppBid);
 	status << "OVERCL8! Have a good " & bidState.numCardsInSuit[nSuit] & 
 			  "-card " & STSS(nSuit) & " suit with " & 
-			  bidState.fPts & "/" & bidState.fPts & 
+			  bidState.fCardPts & "/" & bidState.fPts & 
 			  " points and " & bidState.numLikelyWinners & " playing tricks, so overcall the opponents' " & 
 			  (LPCTSTR)strOppBid & " with a bid of " & BTS(nBid) & ".\n";
 	bidState.SetBid(nBid);
@@ -249,7 +329,11 @@ BOOL COvercallsConvention::ApplySuitStrengthTest(int nSuit, int nOppBid, CBidEng
 	// but not KQxxx, AQxxx, AJxxxx, etc.
 	double fCount = bidState.numCardsInSuit[nSuit] + 
 						bidState.numHonorsInSuit[nSuit] +
-								OPEN_PTS(bidState.numSuitPoints[nSuit]);
+								bidState.numSuitPoints[nSuit];  // NCR removed OPEN_PTS
+	// NCR adjust further if number of cards > 5
+	if(bidState.numCardsInSuit[nSuit] > 5)        // NCR-645 #cards > 4
+		fCount += (bidState.numCardsInSuit[nSuit] - 4) * theApp.GetBiddingAgressiveness(); // NCR
+	
 	int nLevel;
 	if (nSuit > BID_SUIT(nOppBid))
 		nLevel = BID_LEVEL(nOppBid);
@@ -258,8 +342,8 @@ BOOL COvercallsConvention::ApplySuitStrengthTest(int nSuit, int nOppBid, CBidEng
 	if (nLevel > 2)
 		return FALSE;	// can't overcall at the 3 level here
 	// need 12 "points" to overcall with the suit at the 1 level, and 14 at the 2 level
-	if ( ((nLevel == 1) && (fCount >= OPEN_PTS(12))) ||
-		 ((nLevel == 2) && (fCount >= OPEN_PTS(14))) )
+	if ( ((nLevel == 1) && (fCount >= OPEN_PTS(10))) ||  // NCR changed 12 to 10
+		 ((nLevel == 2) && (fCount >= OPEN_PTS(12))) )   // NCR changed 14 to 12
 		return TRUE;
 	else
 		return FALSE;
@@ -312,9 +396,11 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 	if ( (bidState.m_bPartnerOpenedForTeam) &&
 //				(numPartnerBidTurns == 1) &&
 				(numPartnerBidsMade == 1) &&
-				(nPartnersBidLevel >= 1) && 
-				(nPartnersBidLevel <= 2) && 
-				(nPartnersSuit != NOTRUMP) && 
+				(nPartnersBidLevel >= 1) 
+				&& ((nPartnersBidLevel <= 2) 
+				    // NCR-131 allow J overcall at 3 level if pard's suit < LHO's
+				    || ((nPartnersBidLevel == 3) && (nPartnersSuit < bidState.nLHOSuit))) 
+				&& (nPartnersSuit != NOTRUMP) && 
 				(nPartnersBid != nFirstBid))
 	{
 		// okay, met requirements
@@ -340,14 +426,16 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 		status << "ROVRC1! Partner overcalled at the 1-level, indicating a good 5+ card "
 				  & STSS(nPartnersSuit) & " suit, 8-15 points, and probably 5+ playing tricks.\n";
 	}
-	else if (nPartnersBidLevel == 2)
+	else if ((nPartnersBidLevel == 2) || (nPartnersBidLevel == 3)) // NCR-131 added level 3
 	{
 		// partner overcalled at the 2-level -- see if it's a jump overcall
-		int nGap = nPartnersBid - bidState.nLHOBid;
-		if (nGap > 5)
+		BidType bidType = bidState.GetBidType(nPartnersBid); // NCR-346
+//		int nGap = nPartnersBid - bidState.nLHOBid;
+//		if (nGap > 5)
+		if(bidType == (BT_Jump + BT_Overcall))  // NCR-346 Test if jump overcall
 		{
 			// this is indeed a jump overcall -- see if it's strong or weak
-			if ((nGap > 5) && conventions.IsConventionEnabled(tidWeakJumpOvercalls))
+			if (/*(nGap > 5) &&*/ conventions.IsConventionEnabled(tidWeakJumpOvercalls))
 			{
 				// this is a weak jump overcall, 6-10 pts
 				bidState.m_fPartnersMin = OPEN_PTS(6);
@@ -404,7 +492,7 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 	//
 	// with < 6 points, pass
 	//
-	if (fPts < 6) 
+	if (fPts < OPEN_PTS(6))  // NCR-61 Added OPEN_PTS() to allow aggression here
 	{
 		status << "ROVRC10! This is not enough to bid any higher, so pass.\n";
 		bidState.SetBid(BID_PASS);
@@ -418,26 +506,32 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 	if (bidState.nPartnersSuitSupport >= SS_WEAK_SUPPORT)
 	{
 		// with < 20 total pts, pass
-		if (fMinTPPoints < PTS_GAME-5) 
+		if ((fMinTPPoints < OPEN_PTS(PTS_GAME-5)) && (nPartnersBid >= BID_1NT))  // NCR ie have to go to 2
 		{
 			status << "ROVRC20! This is insufficient to raise partner, so pass.\n";
 			bidState.SetBid(BID_PASS);
 			return TRUE;
 		}
+
 		// with 20-22 pts and 3 trumps, raise partner to the 2 level
-		if (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_2,PTS_GAME-6,PTS_GAME-4,SUPLEN_3))
+		// NCR-110 Allow Raise to 2 with aggression by using PT_COUNT() below
+		if (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_2, PT_COUNT(PTS_GAME-6), PTS_GAME-4,SUPLEN_3))
 			return TRUE;
-		// with 23-25 pts and 3 trumps, raise partner to the 3 level
-		if (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_3,PTS_GAME-3,PTS_GAME-1,SUPLEN_3))
+		// with 23-25.5 pts and 3 trumps, raise partner to the 3 level
+		// NCR-332 Set min down if MAX high
+		double minPts = (fMaxTPPoints >= PTS_GAME) ? PTS_GAME-4 : PTS_GAME-3; // NCR-600 0.5 vs 1
+		if (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_3, minPts, PTS_GAME-0.5, SUPLEN_3)) // NCR-332 use minPts
 			return TRUE;
-		// with 26-31 pts and 3 trumps, raise partner to the 4 level
-		if (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_4,PTS_GAME,PTS_SLAM-1,SUPLEN_3))
+
+		// with 26-31 pts and 3 trumps, raise partner to the 4 level     NCR-698 0.5 vs 1
+		if (bidState.RaisePartnersSuit(SUIT_ANY,RAISE_TO_4, PTS_GAME, PTS_SLAM-0.5, SUPLEN_3))
 			return TRUE;
-		// or with 29-31 pts and 4 trumps, raise partner's minor to the 5 level
-		if (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_5,PTS_MINOR_GAME,PTS_SLAM-1,SUPLEN_4))
+		// or with 29-31 pts and 4 trumps, raise partner's minor to the 5 level   NCR-698 0.5 vs 1
+		if (bidState.RaisePartnersSuit(SUIT_MINOR,RAISE_TO_5,PTS_MINOR_GAME,PTS_SLAM-0.5,SUPLEN_4))
 			return TRUE;
 		// else we have with 33+ pts, go straight to Blackwood
-		if ((fPts >= PTS_SLAM) && (bidState.numSupportCards >= 3))
+		// NCR-698 Changed below to fMinTPPoints from fPts
+		if ((fMinTPPoints >= PTS_SLAM) && (bidState.numSupportCards >= 3))
 		{
 			bidState.InvokeBlackwood(nPartnersSuit);
 			return TRUE;
@@ -453,9 +547,11 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 	int nLastBid = pDOC->GetLastValidBid();
 	BOOL bJumped = FALSE;
 	//
-	if ((bidState.numPrefSuitCards >= 6) && 
-		(bidState.nPrefSuitStrength >= SS_STRONG) && 
-		(nPrefSuit != nPartnersSuit) &&
+	if ((bidState.numPrefSuitCards >= 6)
+		 && ((bidState.nPrefSuitStrength >= SS_STRONG)
+		     // NCR-136 Allow bid if our suit below partner's 
+		     || ((bidState.nPrefSuitStrength >= SS_OPENABLE) && (nPrefSuit < nPartnersSuit))) 
+		 && (nPrefSuit != nPartnersSuit) &&
 		(nPrefSuit != bidState.nLHOSuit) && (nPrefSuit != bidState.nRHOSuit) )
 	{
 		// got a suit we can bid -- see what level we would be bidding at
@@ -474,7 +570,9 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 				bJumped = TRUE;
 		}
 		//
-		if (!bidState.IsBidSafe(nBid))
+		// NCR-136 Adjust Min points for test according to partner's possible pts
+		const double nAdjMinPts = (bidState.m_fPartnersMax > 12) ? theApp.GetBiddingAgressiveness()*2 : 0;
+		if (!bidState.IsBidSafe(nBid, nAdjMinPts)) // NCR-136 added nAdjMinPts
 		{
 			// cant' do it
 			status << "ROVRC20! And although we want to bid our own " & 
@@ -506,10 +604,13 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 
 	// bid 1NT with 16-22 total HCPs 
 	// (the hand need not be balanced, nor do all suits need to be stopped)
-	if (bidState.BidNoTrump(1,16,PTS_NT_GAME-4,FALSE,STOPPED_DONTCARE))
+	// NCR-110 Need Stoppers to bid 1NT unless agressive
+	StoppedCode stopCode = ( theApp.GetBiddingAgressiveness() < 2) ? STOPPED_ALLOTHER : STOPPED_DONTCARE;
+	// NCR-110 Use sCode from above vs STOPPED_DONTCARE
+	if (bidState.BidNoTrump(1, OPEN_PTS(16), PTS_NT_GAME-4,FALSE, stopCode)) // NCR-69 added OPEN_PTS()
 		return TRUE;
-	// bid 2NT with 23-25 total HCPs and all suits stopped
-	if (bidState.BidNoTrump(2,PTS_NT_GAME-3,PTS_GAME-1,TRUE,STOPPED_ALLOTHER,nPartnersSuit))
+	// bid 2NT with 23-25 total HCPs and all suits stopped  // NCR-612 added .5 to close gap between 22 and 23
+	if (bidState.BidNoTrump(2,PTS_NT_GAME-3.5,PTS_GAME-1,TRUE,STOPPED_ALLOTHER,nPartnersSuit))
 		return TRUE;
 	// bid 3NT with 26-32 total HCPs and all suits stopped
 	if (bidState.BidNoTrump(3,PTS_NT_GAME,PTS_SLAM-1,TRUE,STOPPED_ALLOTHER,nPartnersSuit))
@@ -528,15 +629,22 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 	//
 	if (fPts >= 16)
 	{
-		int nOppSuit = bidState.nLHOSuit;
-		if (nOppSuit == NONE)
-			nOppSuit = bidState.nRHOSuit;
-		nBid = bidState.GetCheapestShiftBid(nOppSuit, nLastBid);
-		status << "ROVRC60! With poor support for partner's " & STS(nPartnersSuit) &
-				  " (holding " & bidState.szHP & 
-				  "), no good 6-card suit of our own to bid, and a hand unsuited for NT, cue bid the opponents' " &
-				  STSS(nOppSuit) & " suit at " & BTS(nBid) & ".  This bid is forcing.\n";
-	}
+		Suit nOppSuit = (Suit)bidState.nLHOSuit;
+		if (nOppSuit == NOSUIT)
+			nOppSuit = (Suit)bidState.nRHOSuit;
+		// NCR-146 Check if this one is OK also
+		if(nOppSuit != NOSUIT)
+		{
+			nBid = bidState.GetCheapestShiftBid(nOppSuit, nLastBid);
+			status << "ROVRC60! With poor support for partner's " & STS(nPartnersSuit) &
+					  " (holding " & bidState.szHP & 
+					  "), no good 6-card suit of our own to bid, and a hand unsuited for NT, cue bid the opponents' " &
+					  STSS(nOppSuit) & " suit at " & BTS(nBid) & ".  This bid is forcing.\n";
+			// NCR-146 Set the bid here and return TRUE
+			bidState.SetBid(nBid);
+			return TRUE;
+		}
+	} // end have > 16 pts
 
 	
 	//
@@ -559,7 +667,7 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 // Rebidding as opener after an overcall
 //
 //
-COvercallsConvention::HandleConventionResponse(const CPlayer& player, 
+BOOL COvercallsConvention::HandleConventionResponse(const CPlayer& player,  // NCR added BOOL
 									  		   const CConventionSet& conventions, 
 											   CHandHoldings& hand, 
 											   CCardLocation& cardLocation, 
@@ -595,7 +703,7 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 		nPresumedPts = 8;
 	else 
 	{
-		if (bidState.GetConventionParameter(this) == 1)
+		if (bidState.GetConventionParameter(this) == DidJumpShift)
 		{
 			// we jump shifted last time
 			if (conventions.IsConventionEnabled(tidWeakJumpOvercalls))
@@ -617,6 +725,17 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 		return CConvention::HandleConventionResponse(player, conventions, hand, cardLocation, ppGuessedHands, bidState, status);
 	}
 
+	// NCR-495 May need to check against earlier opponent bids for cue bid
+	Suit EarlierOpponentSuit = NOSUIT;
+	bool bPartnersBidWasCue = false;
+	if(!ISSUIT(bidState.nLHOSuit) && !ISSUIT(bidState.nRHOSuit) 
+		&& ((bidState.nRHONumBidsMade > 0) ||(bidState.nLHONumBidsMade > 0) ))
+	{
+		CPlayer* pOppBidder = (bidState.nLHONumBidsMade > 0) ? bidState.m_pLHOpponent : bidState.m_pRHOpponent;
+		int oppsBid = pDOC->GetBidByPlayer(pOppBidder->GetPosition(),0);   // Should this look for more than one???
+		EarlierOpponentSuit = Suit(BID_SUIT(oppsBid));
+	} // end NCR-495 check for earlier bids
+
 	// see what partner bid
 	if (nPartnersBid == BID_PASS)
 	{
@@ -629,15 +748,15 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 		// partner raised us
 		if (nPartnersBidLevel == 2)
 		{
-			// 20-22 total pts assumed
-			bidState.m_fPartnersMin = PTS_GAME-6 - nPresumedPts;
-			bidState.m_fPartnersMax = PTS_GAME-4 - nPresumedPts;
+			// 20-22 total pts assumed  NCR-567 Root pg 100 7-11 pts
+			bidState.m_fPartnersMin = 7; //PTS_GAME-6 - nPresumedPts;
+			bidState.m_fPartnersMax = 11; //PTS_GAME-4 - nPresumedPts;
 		}
 		else if (nPartnersBidLevel == 3)
 		{
-			// 23-25 total pts assumed
-			bidState.m_fPartnersMin = PTS_GAME-3 - nPresumedPts;
-			bidState.m_fPartnersMax = PTS_GAME-1 - nPresumedPts;
+			// 23-25 total pts assumed // NCR-567 Root pg 100 12-14
+			bidState.m_fPartnersMin = 12; //PTS_GAME-3 - nPresumedPts;
+			bidState.m_fPartnersMax = 14; //PTS_GAME-1 - nPresumedPts;
 		}
 		else if (nPartnersBidLevel >= 4)
 		{
@@ -653,7 +772,8 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 	else if ((nPartnersSuit != nPreviousSuit) && 
 					(nPartnersSuit != NOTRUMP) &&
 					(nPartnersSuit != bidState.nLHOSuit) && 
-					(nPartnersSuit != bidState.nRHOSuit))
+					(nPartnersSuit != bidState.nRHOSuit)
+					&& (nPartnersSuit != EarlierOpponentSuit) )  // NCR-495
 	{
 		// partner bid a new suit of his own
 		// see if he jumped
@@ -699,14 +819,16 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 		}
 	}
 	else if ((nPartnersSuit != nPreviousSuit) && 
-					((nPartnersSuit == bidState.nLHOSuit) ||
-					(nPartnersSuit == bidState.nRHOSuit)) )
+					((nPartnersSuit == bidState.nLHOSuit)
+					  || (nPartnersSuit == bidState.nRHOSuit) 
+			          || (nPartnersSuit == EarlierOpponentSuit)) ) // NCR-495
 	{
 		// partner cue-bid an enemy suit
+		bPartnersBidWasCue = true;  // NCR-495 remember for below
 		bidState.m_fPartnersMin = 16;
 		bidState.m_fPartnersMax = MIN(22, 40 - bidState.fCardPts);
 		status << "OVRRB30! Partner cue bid the enemy " & bidState.szPS & 
-				  " suit in sresponse to our " & bidState.szPVB & 
+				  " suit in response to our " & bidState.szPVB & 
 				  " overcall, indicating poor trump support but 16+ points.\n";
 	}
 	else if (nPartnersSuit == NOTRUMP)
@@ -736,6 +858,8 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 				  bidState.m_fPartnersMin & "-" & bidState.m_fPartnersMax & 
 				  " HPCs.\n";
 	}
+
+	// Tally up the points team has
 	bidState.m_fMinTPPoints = fAdjPts + bidState.m_fPartnersMin;
 	bidState.m_fMaxTPPoints = fAdjPts + bidState.m_fPartnersMax;
 	bidState.m_fMinTPCPoints = fCardPts + bidState.m_fPartnersMin;
@@ -790,8 +914,10 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 			bidState.InvokeBlackwood(nPrefSuit);
 			nBid = bidState.m_nBid;
 		}
-		else if ( (ISMAJOR(nPartnersSuit) && (fMinTPPoints >= PTS_GAME)) ||
-				  (ISMINOR(nPartnersSuit) && (fMinTPPoints >= PTS_MINOR_GAME)) )
+		else if ( ((ISMAJOR(nPartnersSuit) && (fMinTPPoints >= PTS_GAME)) ||
+				  (ISMINOR(nPartnersSuit) && (fMinTPPoints >= PTS_MINOR_GAME)))
+				  // NCR-369 Don't go to game with worthless doubletons
+				  && (!hand.HasWorthlessDoubleton() && (hand.GetNumDoubletons() < 2)) )
 		{
 			// make a game bid with enuff points
 			nBid = bidState.GetGameBid(nPreviousSuit);
@@ -846,11 +972,19 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 			}
 
 		}
+		// NCR-172 bid game with 8 cards
+		else if ((bidState.numPrefSuitCards >= 8) && (theApp.GetBiddingAgressiveness() >= 1))
+		{
+			nBid = bidState.GetGameBid(nPrefSuit);
+			status << "OVRRB75! We don't have a balanced hand, but do have a " &
+						  bidState.numPrefSuitCards & "-card " & bidState.szPVSS & 
+						  " suit, so bid game at " & BTS(nBid) & ".\n";
+		}
 		else if (bidState.numPrefSuitCards >= 6)
 		{
 			// try to rebid a 6-card suit
 			nBid = bidState.GetCheapestShiftBid(nPrefSuit, nLastBid);
-			nBidLevel = BID_LEVEL(nBid);
+//NCR			nBidLevel = BID_LEVEL(nBid);
 			if (bidState.IsBidSafe(nBid))
 			{
 				status << "OVRRB76! We don't have a balanced hand, but do have a " &
@@ -871,20 +1005,29 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 			status << "OVRRB79! We don't have a balanced hand, but also lack the strength to rebid our suit or another suit, so we have to pass.\n";
 		}
 
-	}
+	}  // end partner's suit is NOTrump
 	else
 	{
 		// else we have no suit agreement
-		int nRebidLevel = bidState.GetCheapestShiftBid(nPrefSuit, nLastBid);
+		// NCR-57 Change/fix following to be nRebid and compute nRebidLevel from that
+		int nRebid = bidState.GetCheapestShiftBid(nPrefSuit, nLastBid);
+		int nRebidLevel = BID_LEVEL(nRebid);  // NCR-57 get level from bid
+		// NCR-495 Was pard's bid a cue bid?
+		if(bPartnersBidWasCue && (fMinTPPoints >= PTS_GAME-1)) {
+			nBid = nRebid;
+			status << "OVRRB77! With " & fMinTPCPoints & "-" & fMaxTPCPoints & " points, go back to our suit by bidding " 
+				       & BTS(nBid) & ".\n";
+		} 
+		else 
 		// raise partner with 2 trumps
-		if ((nPartnersBidLevel == 1) &&
+		if (!bPartnersBidWasCue && (nPartnersBidLevel == 1) &&
 			(bidState.RaisePartnersSuit(SUIT_ANY,RAISE_ONE,PTS_GAME-5,PTS_SLAM-1,SUPLEN_2)))
 		{
 			nBid = bidState.m_nBid;
 			status << "OVRRB80! With a lack of better options, we begrudgingly raise partner to the 2-level with " &
-					  bidState.numSupportCards & " at a bid of " & BTS(nBid) & ".\n";
+					  bidState.numSupportCards & " cards at a bid of " & BTS(nBid) & ".\n";
 		}
-		if ((nPartnersBidLevel == 2) &&
+		else if (!bPartnersBidWasCue && (nPartnersBidLevel == 2) &&   /// NCR-256 added else here so above does not fall thru 
 			(bidState.RaisePartnersSuit(SUIT_ANY,RAISE_ONE,PTS_GAME-3,PTS_SLAM-1,SUPLEN_2)))
 		{
 			nBid = bidState.m_nBid;
@@ -895,9 +1038,18 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 				   ((nRebidLevel == 3) && (fMinTPPoints >= PTS_GAME-1) && (bidState.numPrefSuitCards >= 6)) )
 		{
 			// rebid a 6-card suit, if possible
-			nBid = bidState.m_nBid;
+			nBid = nRebid; // NCR-57 bidState.m_nBid;
 			status << "OVRRB82! We lack the strength to raise partner, so rebid our own " & 
 					  bidState.numPrefSuitCards & "-card suit at " & BTS(nBid) & ".\n";
+		}
+		// NCR-13 if at 3 level: Raise pard's suit if we have >=3 and points
+		// NCR-351 Allow bid at 4 level
+		else if(!bPartnersBidWasCue && (nPartnersBidLevel >= 3) && (hand.GetSuit(nPartnersSuit).GetNumCards() >= 3) 
+			    && (fMinTPPoints >= PTS_GAME-1))
+		{
+			nBid = bidState.GetCheapestShiftBid(nPartnersSuit); // NCR-13 Raise pard 
+			status << "OVRRB83! With a lack of better options, we raise partner with " &
+					  bidState.numSupportCards & " cards at a bid of " & BTS(nBid) & ".\n";
 		}
 		else if (bidState.BidNoTrumpAsAppropriate(TRUE,STOPPED_ALLOTHER,nPartnersSuit))
 		{
@@ -906,11 +1058,19 @@ COvercallsConvention::HandleConventionResponse(const CPlayer& player,
 //			status << "OVRRB84! With a semi-balanced hand, we prefer to bid NT instead of raising partner with weak trump support, so bid " &
 //					   BTS(nBid) & ".\n";
 		}
+		// NCR-431 go to 4 level with points and if out suit < pard's
+		else if ( (nRebidLevel == 4) && (fMinTPPoints >= PTS_GAME) && (bidState.numPrefSuitCards >= 5) 
+			       && (nPrefSuit < nPartnersSuit) )
+		{
+			nBid = nRebid; 
+			status << "OVRRB85! We have strength to rebid but don't like partner's suit, so rebid our own "
+					  & bidState.numPrefSuitCards & "-card suit at " & BTS(nBid) & ".\n";
+		}  // end NCR-431
 		else
 		{
 			// else pass
 			nBid = BID_PASS;
-			status << "OVRRB80! As we lack agreement in suits and have only " &
+			status << "OVRRB88! As we lack agreement in suits and have only " &  // NCR changed # to 88 (vs 80)
 					  fMinTPPoints & "-" & fMaxTPPoints &
 				      " team points, we have no good options other than to pass.\n";
 		}

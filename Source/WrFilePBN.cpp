@@ -39,6 +39,7 @@ static void WriteLine(int nLineCode, int nValue);
 static void WriteLine(int nLineCode, const CString& strValue);
 static void WriteComment(const CString& strValue);
 
+const LPCTSTR szSuitNameShort[5] = { "C", "D", "H", "S", "NT" };  // NCR copied from Globals.cpp
 
 //
 //---------------------------------------------------------
@@ -65,7 +66,7 @@ BOOL CEasyBDoc::WriteFilePBN(CArchive& ar)
 	WriteLine(TAG_EVENT, FormString("%s Game", theApp.GetValue(tstrProgramTitle)));
 
 	// Site Tag
-	WriteLine(TAG_SITE, "");
+	WriteLine(TAG_SITE, "At Home"); // NCR added At Home
 
 	// Date Tag
 	CTime time = CTime::GetCurrentTime();
@@ -79,7 +80,7 @@ BOOL CEasyBDoc::WriteFilePBN(CArchive& ar)
  */
 
 	// Board Tag
-	WriteLine(TAG_BOARD, "");
+	WriteLine(TAG_BOARD, "1"); // NCR added 1
 
 	// West/North/East/South Tags
 	WriteLine(TAG_WEST, "Computer");
@@ -105,7 +106,8 @@ BOOL CEasyBDoc::WriteFilePBN(CArchive& ar)
 	// deal tag
 	CString strDeal = "W:";
 	int nPos = WEST;
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 	{
 		CCardHoldings& cards = m_pPlayer[nPos]->GetHand().GetInitialHand();
 		strDeal += cards.GetGIBFormatHoldingsString();
@@ -128,14 +130,25 @@ BOOL CEasyBDoc::WriteFilePBN(CArchive& ar)
 		WriteLine(TAG_DECLARER, "?");
 
 	// Contract Tag
-	if (ISBID(m_nContract))
-		WriteLine(TAG_CONTRACT, ContractToString(m_nContract));
+	if (ISBID(m_nContract)) 
+	{
+		// NCR Include ContractToString() here as PBN file does NOT have space before X
+		CString strBid;
+		strBid.Format("%d%s", 
+					  BID_LEVEL(m_nContract), 
+					  szSuitNameShort[BID_SUIT(m_nContract)]);
+		int nModifier = pDOC->GetContractModifier();
+		if (nModifier > 0)
+			strBid += FormString("%s", ((nModifier == 1)? "X" : "XX")); // w/o space
+
+		WriteLine(TAG_CONTRACT, strBid);  // NCR replaced ContractToString(m_nContract)
+	}
 	else
 		WriteLine(TAG_CONTRACT, "?");
 
 	// Result tag
 	if (m_numTricksPlayed == 13)
-		WriteLine(TAG_RESULT, FormString("\"%d\"",m_numTricksWon[m_nContractTeam]));
+		WriteLine(TAG_RESULT, FormString("%d", m_numTricksWon[m_nContractTeam])); // NCR removed extra "s
 	else
 		WriteLine(TAG_RESULT, "?");
 
@@ -148,7 +161,7 @@ BOOL CEasyBDoc::WriteFilePBN(CArchive& ar)
 	//
 	// write out auction
 	//
-	CString strBids = FormString("[AUCTION \"%c\"]", PositionToChar(m_nDealer));
+	CString strBids = FormString("[Auction \"%c\"]", PositionToChar(m_nDealer)); // NCR Lowercased
 	if (m_numBidsMade > 0)
 		strBids += "\r\n";
 	nPos = m_nDealer;
@@ -169,24 +182,29 @@ BOOL CEasyBDoc::WriteFilePBN(CArchive& ar)
 	//
 	// write out plays
 	//
-	CString strPlays = FormString("[PLAY \"%c\"]", PositionToChar(m_nGameLead));
+	CString strPlays = FormString("[Play \"%c\"]", PositionToChar(m_nGameLead));  // NCR Lowercased
 	if (m_numTricksPlayed> 0)
 		strPlays += "\r\n";
+	bool bLastRowFnd = false;  // NCR added - only output single row with -s
 	for(i=0;i<m_numTricksPlayed;i++)
 	{
 		int nPos = m_nGameLead;
 		for(int j=0;j<4;j++)
 		{
 			CCard* pCard = m_pGameTrick[i][nPos];
-			if (pCard == NULL)
+			if (pCard == NULL) {
 				strPlays += "-  ";
+				bLastRowFnd = true;  // NCR this row will end the output
+			}
 			else
 				strPlays += FormString("%s ", pCard->GetName());
 			nPos = ::GetNextPlayer(nPos);
-		}
+		} // end for(j) thru poisitions
 		if (i < m_numTricksPlayed-1)
 			strPlays += "\r\n";
-	}
+		if(bLastRowFnd)
+			break;  // NCR finished output plays on line with -s
+	} // end for(i) thru tricks
 	// add marker if needed
 	if (m_numTricksPlayed < 13)
 		strPlays += "\r\n*";
@@ -240,7 +258,7 @@ static void WriteLine(int nLineCode, int nValue)
 	if ((nLineCode < 0) || (nLineCode > NUM_TAGS))
 		return;
 	CString strTag = tszTagName[nLineCode];
-	strTag.MakeUpper();
+//	strTag.MakeUpper();  //NCR out
 	CString strTemp = FormString("[%s \"%d\"]", strTag, nValue);
 	WriteLine(strTemp);
 }
@@ -252,7 +270,7 @@ static void WriteLine(int nLineCode, const CString& strValue)
 	if ((nLineCode < 0) || (nLineCode > NUM_TAGS))
 		return;
 	CString strTag = tszTagName[nLineCode];
-	strTag.MakeUpper();
+//	strTag.MakeUpper(); // NCR out
 	CString strTemp =FormString("[%s \"%s\"]", strTag, strValue);
 	WriteLine(strTemp);
 }

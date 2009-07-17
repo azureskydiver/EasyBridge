@@ -95,17 +95,17 @@ CString CType2Finesse::GetFullDescription()
 		return FormString("Lead the %s %s from %s and finesses it, with the { %s } in %s as possible cover cards.",
 						   ((m_nSuit == nTrumpSuit)? "trump" : STSS(m_nSuit)),
 						   m_pConsumedCard->GetFaceName(),
-						   ((m_nTargetHand == IN_HAND)? "hand" : "dummy"),
+						   ((m_nTargetHand == IN_HAND)? "dummy" : "hand"), // NCR-421 "hand" : "dummy"),
 						   m_pCoverCards->GetHoldingsString(),
-						   ((m_nTargetHand == IN_HAND)? "dummy" : "hand"));
+						   ((m_nTargetHand == IN_HAND)? "hand" : "dummy") /* NCR-421 "dummy" : "hand")*/);
 	// done
 	else
 		return FormString("Lead the %s %s from %s and finesse it, with the %s in %s as cover.",
 						   ((m_nSuit == nTrumpSuit)? "trump" : STSS(m_nSuit)),
 						   m_pConsumedCard->GetFaceName(),
-						   ((m_nTargetHand == IN_HAND)? "hand" : "dummy"),
+						   ((m_nTargetHand == IN_HAND)? "dummy" : "hand"), // NCR-421 "hand" : "dummy"),
 						   m_pCoverCards->GetAt(0)->GetFaceName(),
-						   ((m_nTargetHand == IN_HAND)? "dummy" : "hand"));
+						   ((m_nTargetHand == IN_HAND)? "hand" : "dummy") /* NCR-421 "dummy" : "hand")*/);
 	// done
 	return strText;
 }
@@ -183,7 +183,8 @@ PlayResult CType2Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 			{
 				// leading form our own hand (declarer)
 				// see where the finese card is located
-				if (m_nTargetHand == IN_DUMMY)
+				// NCR-421 Lead comes from starting hand towards target hand
+				if (m_nTargetHand == IN_HAND)  // NCR-421 was DUMMY) Lead is from starting hand
 				{
 					// can't finesse here
 					status << "4PL2FNS10! Can't use this (Type II) finesse " &
@@ -199,13 +200,13 @@ PlayResult CType2Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 					pPlayCard = m_pConsumedCard;
 					status << "PL2FN12! " & (bLeading? "Lead" : "Play") & 
 							  " the finesse card (the " &
-							  pPlayCard->GetFaceName() & " from hand.\n";
+							  pPlayCard->GetFaceName() & ") from hand.\n";
 				}
 			}
 			else
 			{
 				// leading from dummy
-				if (m_nTargetHand == IN_HAND)
+				if (m_nTargetHand == IN_DUMMY) // NCR-421 was HAND) Lead is from starting hand
 				{
 					// leading from dummy & finessing in hand? no can do
 					status << "4PL2FNS20! Can't use this (Type II) finesse " &
@@ -263,7 +264,7 @@ PlayResult CType2Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 			{
 				// playing third from our own hand (declarer)
 				// make sure the finessee card was led from dummy
-				if (m_nTargetHand == IN_DUMMY)
+				if (m_nTargetHand == IN_HAND) // NCR-421 was IN_DUMMY)
 				{
 					// see if RHO's card is higher than the intended finesse
 					if (*pOppCard > *m_pConsumedCard)
@@ -279,8 +280,10 @@ PlayResult CType2Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 					else
 					{
 						// else discard
-						pPlayCard = playEngine.GetDiscard();
-						status << "PL2FN64! RHO has played low, so let the finesse card ride and discard the " & pPlayCard->GetName() & " from hand.\n";
+// NCR-458						pPlayCard = playEngine.GetDiscard();
+						pPlayCard = playerSuit.GetBottomCard();  // NCR-458  Discard lowest card vs ???
+						status << "PL2FN64! RHO has played low, so let the finesse card ride and discard the " 
+							      & pPlayCard->GetName() & " from hand.\n";
 					}
 				}
 				else
@@ -295,7 +298,7 @@ PlayResult CType2Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 			{
 				// playing third in dummy
 				// make sure our finesse was from hand
-				if (m_nTargetHand == IN_HAND)
+				if (m_nTargetHand == IN_DUMMY) // NCR-421 wasIN_HAND)
 				{
 					// see if LHO's card is higher than the intended finesse
 					if (*pOppCard > *m_pConsumedCard)
@@ -311,8 +314,10 @@ PlayResult CType2Finesse::Perform(CPlayEngine& playEngine, CCombinedHoldings& co
 					else
 					{
 						// else discard
-						pPlayCard = playEngine.GetDiscard();
-						status << "PL2FN64! LHO has played low, so let the finesse card ride and discard the " & pPlayCard->GetName() & " from hand.\n";
+// NCR-458						pPlayCard = playEngine.GetDiscard();
+						pPlayCard = dummySuit.GetBottomCard();  // NCR-458  Discard lowest card vs ???
+						status << "PL2FN64! LHO has played low, so let the finesse card ride and discard the " 
+							      & pPlayCard->GetName() & " from hand.\n";
 					}
 				}
 				else

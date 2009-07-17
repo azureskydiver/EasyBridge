@@ -42,6 +42,7 @@ BOOL CJacoby2NTConvention::TryConvention(const CPlayer& player,
 	// 1: Partner must have opened with 1 of a major
 	// 2: we must not have bid yet
 	// 3: we have 13+ points and 4+ card trump support
+	// 4: RHO passed or bid at one level NCR-253
 
 	int nOpeningBid = pDOC->GetOpeningBid();
 	int nPartnersBid = bidState.nPartnersBid;
@@ -49,8 +50,9 @@ BOOL CJacoby2NTConvention::TryConvention(const CPlayer& player,
 	// test conditions 1 - 4
 	if ( ISBID(nOpeningBid) && (nOpeningBid == nPartnersBid) && 
 		 (ISMAJOR(BID_SUIT(bidState.nPartnersBid))) && (bidState.nPartnersBidLevel == 1) &&
-		 (bidState.m_numBidTurns == 0) && (bidState.fPts >= OPEN_PTS(13)) &&
-		 (bidState.numSupportCards >= 4) )
+		 (bidState.m_numBidTurns == 0) && (bidState.fAdjPts >= OPEN_PTS(13)) &&  // NCR-599 fAdjPts vs fPts
+		 (bidState.numSupportCards >= 4) 
+		 && ((bidState.nRHOBid == BID_PASS) || (bidState.nRHOBidLevel == 1)) ) // NCR-253
 	{
 		 // passed the test
 	}
@@ -146,15 +148,16 @@ BOOL CJacoby2NTConvention::RespondToConvention(const CPlayer& player,
 
 		//
 		// our options are as follows, in order:
+		// NCR Points as per Root/Pavlicek in ()
 		//
-		// - with 18+ pts, rebid the suit at the 3 level
+		// - with 18+(16) pts, rebid the suit at the 3 level
 		// - with 15-17 pts and a strong 5-card side suit, bid that suit at the 4-level
 		// - with 15-17 pts and a short suit, bid the short suit at the 3 level
 		// - with 15-17 pts an no short suit, bid 3NT
 		// - otherwise, sign off in game at the 4-level
 
 		// check point count
-		if (fPts >= 18)
+		if (fPts >= PT_COUNT(18)) // NCR-228 Added PT_COUNT()
 		{
 			nBid = MAKEBID(nSuit, 3);
 			status << "J2N21! With " & fPts & " points in hand, "
@@ -163,15 +166,17 @@ BOOL CJacoby2NTConvention::RespondToConvention(const CPlayer& player,
 		else if (fPts >= 15)
 		{
 			// see if we have a strong side suit
-			int nSideSuit = NONE;
-			for(int i=0;i<4;i++)
+// NCR			int nSideSuit = NONE;
+			int i; // NCR-FFS added here, removed below
+			for(/*int*/ i=0;i<4;i++)
 			{
 				if ((i != nSuit) && (bidState.nSuitStrength[i] <= SS_STRONG) &&
 						(bidState.numCardsInSuit[i] >= 5))
 					break;
 			}
 			//
-			if (i < 4)
+			                // NCR-437 Problem if we bid 4C and Gerber is active
+			if ((i < 4) && ((i != CLUBS) || !pCurrConvSet->IsConventionEnabled(tidGerber)) )
 			{
 				// bid the suit at the 4 level
 				nSuit = i;
@@ -270,6 +275,10 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 
 	if (nStatus == CONV_INVOKED)
 	{
+		// NCR-518 Use pard's previous suit if he passed
+		int testSuit = (nPartnersBid == BID_PASS) ? nPrevSuit : nSuit;
+		// NCR-265 Need to revalue hand as AssessPosition() @ ln 918 has set it to fPts
+		double fTestAdjPts = hand.RevalueHand(REVALUE_DUMMY, testSuit, TRUE); // NCR-265 recompute
 		//
 		// here, our actions depend on partner's response
 		//
@@ -281,6 +290,7 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 					   OPEN_PTS(18) & "+ points.\n";
 
 			// revalue partnership totals
+			bidState.fAdjPts = fTestAdjPts;  // NCR-265 restore to what we used originally
 			bidState.AdjustPartnershipPoints(18, pCurrConvSet->GetValue(tn2ClubOpeningPoints));
 		}
 		else if ((nPartnersBidLevel == 3) && ISSUIT(nSuit) && (nSuit != nPrevSuit))
@@ -291,6 +301,7 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 					   " points and a singleton or void in " & STS(nSuit) & ".\n";
 
 			// revalue partnership totals
+			bidState.fAdjPts = fTestAdjPts;  // NCR-265 restore to what we used originally
 			bidState.AdjustPartnershipPoints(15, 17);
 		}
 		else if (nPartnersBid == BID_3NT)
@@ -300,6 +311,7 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 					   OPEN_PTS(15) & "-" & OPEN_PTS(17) & " points with a balanced hand.\n";
 
 			// revalue partnership totals
+			bidState.fAdjPts = fTestAdjPts;  // NCR-265 restore to what we used originally
 			bidState.AdjustPartnershipPoints(15, 17);
 		}
 		else if ((nPartnersBidLevel == 4) && ISSUIT(nSuit) && (nSuit != nPrevSuit))
@@ -310,6 +322,7 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 					   OPEN_PTS(15) & "-" & OPEN_PTS(17) & " points in the hand.\n";
 
 			// revalue partnership totals
+			bidState.fAdjPts = fTestAdjPts;  // NCR-265 restore to what we used originally
 			bidState.AdjustPartnershipPoints(15, 17);
 		}
 		else if ((nPartnersBidLevel == 4) && (nSuit == nPrevSuit))
@@ -320,6 +333,7 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 					   OPEN_PTS(12) & "-" & OPEN_PTS(14) & " points in the hand.\n";
 
 			// revalue partnership totals
+			bidState.fAdjPts = fTestAdjPts;  // NCR-265 restore to what we used originally
 			bidState.AdjustPartnershipPoints(12, 14);
 		}
 		else if ((nPartnersBid == BID_DOUBLE) || (nPartnersBid == BID_REDOUBLE))
@@ -327,9 +341,16 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 			// the convention is cancelled!
 			bidState.SetConventionStatus(this, CONV_ERROR);
 			return FALSE;
-		}
+		} 
+		else if((bidState.nLHOBid != BID_PASS) && (nPartnersBid == BID_PASS))  // NCR-518 test if interference
+		{
+			bidState.fAdjPts = fTestAdjPts;  // NCR-265 restore to what we used originally
+			bidState.AdjustPartnershipPoints(12, 14);
+		} // end NCR-518
 
+		//
 		// now figure out what to do
+		//
 		if (bidState.m_fMinTPPoints >= PTS_SLAM)
 		{
 			// go to Blackwood

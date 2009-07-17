@@ -111,7 +111,8 @@ CCard* CDisplayHoldings::RemoveByIndex(const int nIndex)
 	// update count
 	m_numCards--;
 	// move other cards over and update display indices
-	for(int i=nIndex;i<m_numCards;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=nIndex;i<m_numCards;i++) 
 	{
 		m_cards[i] = m_cards[i+1];
 		m_cards[i]->SetDisplayPosition(i);

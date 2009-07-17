@@ -77,11 +77,13 @@ public:
 	int	GetNumLosers() const { return m_numLosers; }
 	int	GetNumMaxWinners() const { return m_numMaxWinners; }
 	int GetNumMaxLikelyWinners() const { return m_numMaxLikelyWinners; }
+	int GetNumSureWinners() const { return m_numSureWinners; } // NCR-587
 	int	GetNumMaxTopCards() const { return m_numMaxTopCards; }
 	int	GetNumDeclarerWinners() const { return m_numDeclarerWinners; }
 	int	GetNumDummyWinners() const { return m_numDummyWinners; }
 	int	GetNumDeclarerTopCards() const { return m_numDeclarerTopCards; }
 	int	GetNumDummyTopCards() const { return m_numDummyTopCards; }
+	int GetNumSuitsStopped() const { return m_numSuitsStopped; }   // NCR-38
 	//
 	int	GetNumWinnersInSuit(int nSuit) const;
 	int	GetNumLosersInSuit(int nSuit) const;
@@ -165,6 +167,7 @@ private:
 	//
 	int			m_numMaxWinners;
 	int			m_numMaxLikelyWinners;
+	int			m_numSureWinners;  // NCR-587 These win from the top
 	int			m_numMaxTopCards;
 	int			m_numDeclarerWinners;
 	int			m_numDummyWinners;

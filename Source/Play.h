@@ -83,9 +83,9 @@ public:
 
 	// play location
 	enum { 
-		   IN_HAND=0, 
-		   IN_DUMMY=1, 
-		   IN_EITHER = -1, 
+		   IN_HAND=10, 
+		   IN_DUMMY=21, 
+		   IN_EITHER = -9,   // NCR-479 changed from -1
 	};
 
 	// which entry the play uses up, if any
@@ -119,6 +119,10 @@ public:
 	virtual int			GetEndingHand() { return m_nEndingHand; }
 	virtual int			GetSuit() { return m_nSuit; }
 	virtual int			GetSecondSuit() { return m_nSuit2; }
+	virtual void        SetSecondSuit(int suit2) {ASSERT(ISSUIT(suit2)); m_nSuit2 = suit2;}; // NCR-411
+	virtual void        ClearSecondSuit() {m_nSuit2 = NONE;}   // NCR-411
+	virtual int         GetQuality() {return m_nQuality;} // NCR-707
+	virtual void        SetQuality(int qual) {m_nQuality = qual;}  // NCR-707
 	virtual CString		GetFullDescription() = 0;
 	// basic functions
 	virtual PlayResult	Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHand, 
@@ -180,6 +184,7 @@ protected:
 	int			m_nPlayProspect;		// play prospect
 	int			m_nSuit;				// play suit
 	int			m_nSuit2;				// second suit (if appropriate)
+	int         m_nQuality;             // NCR-707 EG. # possible tricks for DROP or FORCE
 	PlayResult	m_nStatusCode;			// current status
 	int			m_nTargetHand;			// key hand for the play
 	int			m_nStartingHand;		// starting hand for the play

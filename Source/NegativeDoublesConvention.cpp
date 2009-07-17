@@ -53,8 +53,16 @@ BOOL CNegativeDoublesConvention::TryConvention(const CPlayer& player,
 
 	// test conditions 1, 2, 3, and 5
 	if ((bidState.m_bPartnerOpenedForTeam) && (bidState.m_numBidTurns <= 1) &&
-		(bidState.nLHOBid <= BID_PASS) && (bidState.nRHOBid > BID_PASS) &&
-		(bidState.nRHOBid <= BID_2S) && (bidState.fCardPts >= OPEN_PTS(6)))
+		(bidState.nLHOBid <= BID_PASS) && (bidState.nRHOBid > BID_PASS)
+		// NCR-145 Can't do NegDouble over Opening bid of Double 
+		&& (bidState.nPartnersOpeningBid != BID_DOUBLE)
+		// NCR-294 Can't do NegDbl over NT
+		&& (bidState.nRHOSuit != NOTRUMP) 
+		// NCR-116 split test into 2 parts depending on bid level
+		&& (((bidState.nRHOBid <= BID_1S) && (bidState.fCardPts >= OPEN_PTS(6)))
+		    // NCR-116 higher level takes more points
+		    || ((bidState.nRHOBid <= BID_2S) && (bidState.fCardPts >= OPEN_PTS(11))))
+		&& !ISBID(bidState.nPreviousBid))  // NCR test if we made a previous bid
 	{
 		 // passed the initial tests
 	}
@@ -193,10 +201,10 @@ BOOL CNegativeDoublesConvention::TryConvention(const CPlayer& player,
 	// we've now passed all the tests, so make the bid
 	//
 	if (bidState.nRHOBidLevel == 1)
-		status << "NEGDBL! With " & bidState.fPts & "/" & bidState.fPts & 
+		status << "NEGDBL1! With " & bidState.fPts & "/" & bidState.fPts & 
 				  " points and 4 cards in the unbid majors, bid a negative double.\n";
 	else
-		status << "NEGDBL! With " & bidState.fPts & "/" & bidState.fPts & 
+		status << "NEGDBL2! With " & bidState.fPts & "/" & bidState.fPts & 
 				  " points and 5+ cards in the unbid majors, bid a negative double.\n";
 	int nBid = BID_DOUBLE;
 	bidState.SetBid(nBid);
@@ -253,10 +261,13 @@ BOOL CNegativeDoublesConvention::RespondToConvention(const CPlayer& player,
 	if ( (nPartnersBid == BID_DOUBLE) &&
 		 ((bidState.nRound == 0) || (bidState.nRound == 1)) && 
 		 (bidState.m_bOpenedBiddingForTeam) && 
-		 (bidState.nLHOBid > BID_PASS) && (bidState.nLHOBid <= BID_2S))
+		 (bidState.nLHOBid > BID_PASS) && (bidState.nLHOBid <= BID_2S)
+		 // NCR-195 bid must be suit
+		 && ISSUIT(BID_SUIT(bidState.nLHOBid))
+		 )
 	{
 		//
-		status << "NEGDR! Partner has bid a negative double, indicating 4+ cards in the unbid majors " &
+		status << "NEGDR2! Partner has bid a negative double, indicating 4+ cards in the unbid majors " &
 				  ((nMajorSuits[0] && nMajorSuits[1])? "(Hearts and Spades)" :
 					nMajorSuits[0]? "(Hearts)" : "(Spades)") & ".\n";
 	}
@@ -270,9 +281,9 @@ BOOL CNegativeDoublesConvention::RespondToConvention(const CPlayer& player,
 	//
 	if (bidState.nLHOBidLevel == 1)
 	{
-		// 6-9 pts for a neg dbl the 1-level
+		// 6-9 pts for a neg dbl the 1-level  (NCR TryConvention uses 19 max???)
 		bidState.m_fPartnersMin = OPEN_PTS(6);
-		bidState.m_fPartnersMax = Min(OPEN_PTS(9),40 - bidState.fCardPts);
+		bidState.m_fPartnersMax = Min(OPEN_PTS(19),40 - bidState.fCardPts); // NCR changed 9 to 19
 		bidState.m_fMinTPPoints = bidState.fPts + bidState.m_fPartnersMin;
 		bidState.m_fMaxTPPoints = bidState.fPts + bidState.m_fPartnersMax;
 		bidState.m_fMinTPCPoints = bidState.fCardPts + bidState.m_fPartnersMin;
@@ -352,7 +363,8 @@ BOOL CNegativeDoublesConvention::RespondToConvention(const CPlayer& player,
 			nSuit = SPADES;
 		nBid = bidState.GetCheapestShiftBid(nSuit, nTopBid);
 		// see if the bid is affordable
-		if (bidState.IsBidSafe(nBid))
+		double fAdj = theApp.GetBiddingAgressiveness()*1.5; // NCR change test amt?
+		if (bidState.IsBidSafe(nBid, fAdj)) // NCR adjust???
 		{
 			status << "NEGDTR30! With " & bidState.m_fMinTPPoints & " pts in the partnership and " &
 				      hand.GetNumCardsInSuit(nSuit) & " cards available in " &
@@ -381,11 +393,26 @@ BOOL CNegativeDoublesConvention::RespondToConvention(const CPlayer& player,
 
 	// else bid something, anything
 	nSuit = bidState.GetRebidSuit(bidState.nPreviousSuit);
-	nBid = bidState.GetCheapestShiftBid(nSuit, nTopBid);
-	if (!ISMAJOR(nSuit))
-		status << "NEGDTR40! Unfortunately we don't have a major to respond with, so bid " & BTS(nBid) & ".\n";
+	if(nSuit == NONE) { //NCR test for no rebidable suit return
+		nBid = BID_1NT;  // NCR Hardcoded ??? vs get cheapest
+	}else{
+		nBid = bidState.GetCheapestShiftBid(nSuit, nTopBid);
+	}
+	// NCR-415 Test if safe bid
+	if (!bidState.IsBidSafe(nBid, bidState.fDistPts)  // NCR-592 set adj to dist pts
+		&& (bidState.nRHOBid > BID_PASS) ) // NCR-637 Only if RHO bid
+	{
+		nBid = BID_PASS;
+		status << "NEGDTR36! With a total of " & bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints
+				  & " pts in the partnership, we cannot safely bid further, so pass.\n";
+	}  // end NCR-415
 	else
-		status << "NEGDTR41! Our best response is " & BTS(nBid) & ".\n";
+	{
+		if (!ISMAJOR(nSuit))
+			status << "NEGDTR40! Unfortunately we don't have a major to respond with, so bid " & BTS(nBid) & ".\n";
+		else
+			status << "NEGDTR41! Our best response is " & BTS(nBid) & ".\n";
+	}
 	bidState.SetBid(nBid);
 	bidState.SetConventionStatus(this, CONV_FINISHED);
 	return TRUE;

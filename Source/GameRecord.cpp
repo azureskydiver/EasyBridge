@@ -81,7 +81,8 @@ CGameRecord::CGameRecord()
 	m_nVulnerability	= NEITHER;
 	m_numCardsPlayed	= 0;
 	m_numTricksPlayed	= 0;
-	for(int i=0;i<13;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<13;i++)
 	{
 		m_nRoundLead[i] = NONE;
 		m_nRoundWinner[i] = NONE;
@@ -200,12 +201,15 @@ void CGameRecord::AnalyzePlayRecord()
 //
 // IsValid()
 //
-bool CGameRecord::IsValid()
+bool CGameRecord::IsValid(bool isExportFile)  // NCR_PBNI added isExportFile
 {
-	// see if this is a valid game record
+	// see if this is a valid game record 
 	// first check the required tags
 	CString strKey, strValue;
-	for(int i=0;i<c_numMandatoryTags;i++)
+
+	if(isExportFile) {  // NCR_PBNI  export file has required tags
+    int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<c_numMandatoryTags;i++)
 	{
 		// see if the tag exists
 		strKey = tszTagName[c_mandatoryTags[i]];
@@ -230,7 +234,7 @@ bool CGameRecord::IsValid()
 		if (iter == m_mapTagValues.end() || (*iter).second.IsEmpty())
 			return false;
 	}
-
+    } // NCR_PBNI end testing tags for valid export file 
 	//
 	// check key information
 	//

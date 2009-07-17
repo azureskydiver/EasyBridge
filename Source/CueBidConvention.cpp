@@ -17,7 +17,6 @@
 #include "CueBidConvention.h"
 
 
-
 //
 //==================================================================
 // 
@@ -71,6 +70,7 @@ BOOL CCueBidConvention::TryCueBid(CHandHoldings& hand, CBidEngine& bidState,  CP
 		return FALSE;
 
 	// get adjusted point count as declarer
+	// NCR BIG PROBLEM HERE - This changes a global variable. The changes are now always wanted ???
 	bidState.fAdjPts = hand.RevalueHand(REVALUE_DECLARER, bidState.m_nAgreedSuit, TRUE);
 	bidState.m_fMinTPPoints = bidState.fAdjPts + bidState.m_fPartnersMin;
 	bidState.m_fMaxTPPoints = bidState.fAdjPts + bidState.m_fPartnersMax;
@@ -241,6 +241,21 @@ BOOL CCueBidConvention::RespondToConvention(const CPlayer& player,
 	if ((nAgreedSuit != NONE) && (nPartnersSuit != NOTRUMP) && (nPartnersSuit != nAgreedSuit) &&
 		((nPartnersBid > MAKEBID(nAgreedSuit,3)) && (nPartnersBid < bidState.GetGameBid(nAgreedSuit))))
 	{
+		//NCR what if suit was previously bid by this player???
+		// EG: N->1H, S->2C, N->3C, S->3H  3H is NOT a cue bid, it's a response to this player's  previous bid
+		// NCR how to test if partner's current bid was in suit previously bid ???
+		// NCR what about a game bid???
+		int nSuit =  BID_SUIT(nPartnersBid);
+		for(int i=0; i < player.GetNumBidsMade(); i++) { // NCR had to add const to this function def
+			int nSuitBid = pDOC->GetBidByPlayer(player.GetPosition(), i);
+			if(BID_SUIT(nSuitBid) == nSuit)
+				return FALSE;  // NCR not cue if partner bid before ???
+		}
+                                            // NCR-295 game bid in agreed suit???
+		if(bidState.IsGameBid(nPartnersBid) && (nSuit == nAgreedSuit) ) // || CheckIfSuitBid(player, BID_SUIT(nPartnersBid))) 
+		{
+			return FALSE;  //NCR don't treat Game bid as cue bid
+		}
 		// met the requirements
 		status << "CUR0! Partner made a cue bid of " & BTS(nPartnersBid) &
 				  ", hinting at slam prospects.\n";
@@ -362,9 +377,16 @@ BOOL CCueBidConvention::RespondToConvention(const CPlayer& player,
 		return FALSE;
 	}
 }
-
-
-
+/*
+bool CheckIfSuitBid(const CPlayer& player, int nSuit) const {
+	for(int i=0; i < player.GetNumBidsMade(); i++) {
+		int nSuitBid = pDOC->GetBidByPlayer(player.GetPosition(), i);
+		if(BID_SUIT(nSuitBid) == nSuit)
+			return true;
+	}
+	return false;
+}
+*/
 
 
 

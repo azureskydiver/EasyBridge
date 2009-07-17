@@ -58,7 +58,7 @@ LRESULT APIENTRY ButtonSubclassProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 //--------------------------------------------------------------------------
 // routine used to subclass button controls to give a flat appearance
 //
-static bColorsInitialized = FALSE;
+static bool bColorsInitialized = FALSE;  // NCR added bool
 static COLORREF clrHilite;
 static COLORREF m_clrShadow;
 static COLORREF m_clrButton;

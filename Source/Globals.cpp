@@ -588,7 +588,8 @@ int ContractStringToBid(LPCTSTR psz)
 
 	//
 	int nValue = c1 - '0';
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 		if ((c2 == cSuit[i]) || (toupper(c2) == cSuit[i]))
 			break;
 	int nSuit = i;

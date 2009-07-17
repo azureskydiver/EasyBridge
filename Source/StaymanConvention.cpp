@@ -84,10 +84,15 @@ BOOL CStaymanConvention::TryConvention(const CPlayer& player,
 			(bidState.nSuitStrength[DIAMONDS] >= SS_ABSOLUTE))
 		return FALSE;
 
+	// NCR-165 Don't use stayman if long major - use Jacoby
+	if((pCurrConvSet->IsConventionEnabled(tidJacobyTransfers)) 
+		&& ((bidState.numCardsInSuit[HEARTS] >= 6) || (bidState.numCardsInSuit[SPADES] >= 6)) ) 
+		return FALSE;
+
 	// also, if we have game values in NoTrump with a balanced hand, 
 	// don't even bother with Stayman, as we will bid a NT contract directly
 	if ((bidState.bBalanced) && 
-		((bidState.fCardPts + pCurrConvSet->GetNTRangeMin(1)) >= 26))
+		((bidState.fCardPts + pCurrConvSet->GetNTRangeMin(1)) >= PTS_GAME)) // NCR was 26))
 		return FALSE;
 
 	//
@@ -409,8 +414,10 @@ BOOL CStaymanConvention::HandleConventionResponse(const CPlayer& player,
 		// no match; no adjustment to points
 		nSuit = NONE;
 	}
-	int n1NTMIN = pCurrConvSet->GetNTRangeMin(1);
-	int n1NTMAX = pCurrConvSet->GetNTRangeMax(1);
+	// NCR-161 Change range depending on opening bid
+	int nNTBidLevel = bidState.nPartnersOpeningBidLevel;
+	int n1NTMIN = pCurrConvSet->GetNTRangeMin(nNTBidLevel);  // NCR-161 changed from 1
+	int n1NTMAX = pCurrConvSet->GetNTRangeMax(nNTBidLevel);  //  ditto
 	double fAdjPts = bidState.fAdjPts;
 	double fCardPts = bidState.fCardPts;
 	bidState.m_fMinTPPoints = n1NTMIN + fAdjPts;
@@ -435,7 +442,14 @@ BOOL CStaymanConvention::HandleConventionResponse(const CPlayer& player,
 		{
 			int nSuit = bidState.GetBestSuitofAtLeast(HEARTS, SPADES, 5);
 			// bid 2H/2S or 3H/3S
-			nBid = MAKEBID(nSuit, nPartnersBidLevel);
+			// NCR-501 Set bid level according to our strength
+			int nToBidLevel = nPartnersBidLevel; // Start with current
+			if((bidState.m_fMinTPPoints > PTS_GAME) && (bidState.numCardsInSuit[nSuit] >= 6))
+				nToBidLevel = 4;  // NCR-501 set to game
+			else if(bidState.m_fMinTPPoints > PTS_GAME-3)
+				nToBidLevel = nPartnersBidLevel+1;  // NCR-501 Go up one
+			
+			nBid = MAKEBID(nSuit, nToBidLevel);  // NCR-501 use computed level
 			status << "STYX21! Partner has no 4-card major suit, but with a " & 
 					  bidState.numCardsInSuit[nSuit] & "-card " & STSS(nSuit) &
 					  " suit and an unbalanced hand, invite towards a contract in " & STS(nSuit) &
@@ -470,6 +484,7 @@ BOOL CStaymanConvention::HandleConventionResponse(const CPlayer& player,
 		else if (bidState.m_fMinTPCPoints <= PTS_SLAM) 
 		{
 			// 31-32 pts:  raise to 4NT (invitational towards slam)
+			// NCR-246 Problem here: Pard thinks this is Blackwood???
 			nBid = BID_4NT;
 			status << "STYX33! With no major suit fit but with " & 
 					  bidState.m_fMinTPCPoints & "-" & bidState.m_fMaxTPCPoints &
@@ -555,8 +570,16 @@ BOOL CStaymanConvention::HandleConventionResponse(const CPlayer& player,
 	} 
 	else 
 	{
-		// 32+ pts -- bid Blackwood
-		bidState.InvokeBlackwood(bidState.m_nAgreedSuit);
+		// 32+ pts -- ask for Aces
+		// NCR-246a - Use Gerber if last bid was 2C
+		if(bidState.nPreviousBid == BID_2C) {
+			bidState.InvokeGerber(bidState.m_nAgreedSuit); // NCR-246a
+		}	else {
+		    bidState.InvokeBlackwood(bidState.m_nAgreedSuit);
+		}
+		// NCR-129 added following 2 lines
+		bidState.SetConventionStatus(this, CONV_FINISHED);
+		return TRUE;
 	}
 	//
 	bidState.SetBid(nBid);

@@ -19,6 +19,7 @@
 #include "Player.h"
 #include "PlayEngine.h"
 #include "CombinedHoldings.h"
+#include "CombinedSuitHoldings.h"  // NCR-5
 #include "CardLocation.h"
 #include "GuessedHandHoldings.h"
 #include "PlayerStatusDialog.h"
@@ -98,15 +99,15 @@ PlayResult CHoldUp::Perform(CPlayEngine& playEngine, CCombinedHoldings& combined
 	if ((nSuitLed != nTrumpSuit) && (pDOC->WasTrumpPlayed()))
 		bTrumped = TRUE;
 	pPlayCard = NULL;
-	CCard* pOppCard = NULL;
+//	CCard* pOppCard = NULL;
 	// 
 	CCard* pRoundTopCard = pDOC->GetCurrentTrickHighCard();
 	CCard* pDeclarerCard = pDOC->GetCurrentTrickCard(playEngine.GetPlayerPosition());
 	CCard* pDummysCard = pDOC->GetCurrentTrickCard(playEngine.GetPartnerPosition());
 	CCard* pPartnersCard = bPlayingInHand? pDummysCard : pDeclarerCard;
-	BOOL bPartnerHigh = (pRoundTopCard == pPartnersCard);
+//	BOOL bPartnerHigh = (pRoundTopCard == pPartnersCard);
 	//
-	BOOL bValid = FALSE;
+//	BOOL bValid = FALSE;
 
 	// test preconditions
 	if (!CPlay::IsPlayUsable(combinedHand, playEngine))
@@ -114,6 +115,30 @@ PlayResult CHoldUp::Perform(CPlayEngine& playEngine, CCombinedHoldings& combined
 		m_nStatusCode = PLAY_INACTIVE;
 		return PLAY_POSTPONE;
 	}
+
+	// NCR don't holdup if our top card covers opponent's top card and dummy's top card will be left tops
+	if(bPlayingInHand){
+		// Skip if partner already high or we're not in 3rd hand
+		if(((pRoundTopCard != pPartnersCard) && (nOrdinal == 3) 
+			  // NCR-25 added ->GetFaceValue() to following:
+			  && (!playerSuit.IsVoid() && playerSuit.GetTopCard()->GetFaceValue() > pRoundTopCard->GetFaceValue()))
+			     // NCR is players top card same value as dummy's?
+		    && (((!dummySuit.IsVoid() && (pDOC->AreCardsInSequence(dummySuit.GetTopCard()->GetDeckValue(), 
+			                             playerSuit.GetTopCard()->GetDeckValue()))))
+                // NCR-5 cover if we some better cards than the top card 
+		        || (combinedHand.GetSuit(m_nSuit).GetNumCardsAbove(pRoundTopCard) >= 3)
+		        // NCR-5 or we can beat top card and have some winners after that
+		        || (combinedHand.GetSuit(m_nSuit).GetNumCardsAbove(playEngine.GetHighestOutstandingCard(m_nSuit)) >= 3))
+		  )
+		{
+			pPlayCard = playerSuit.GetLowestCardAbove(pRoundTopCard);
+			status << "PLHLD01! Finish the hold-up and play the " & 
+					  pPlayCard->GetFaceName() & " from " & (bPlayingInHand? "hand" : "dummy") & ".\n";
+			m_nStatusCode = PLAY_COMPLETE;
+			return m_nStatusCode;
+		}
+	} // NCR end 
+
 
 	// a holdup is simple -- discard instead of winning
 	switch(nOrdinal)

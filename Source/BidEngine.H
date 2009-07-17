@@ -81,6 +81,7 @@ public:
 	int GetNumBidsMade() { return m_numBidsMade; }
 	int GetNumBidTurns() { return m_numBidTurns; }
 	int ValidateBid(int& nBid, int nOvercallBid=BID_PASS);
+	BidType GetBidType(int nBid);  // NCR
 	int GetCheapestShiftBid(int nTargetSuit, int nOldBid=BID_NONE);
 	int GetJumpShiftBid(int nTargetSuit, int nOldBid, int nJumpLevel=1);
 	//BOOL IsSuitSolid(int nSuit);
@@ -103,6 +104,7 @@ public:
 	BOOL IsBidSafe(int nBid, double fAdjustment=0);
 	BOOL TestForPenaltyDouble();
 	BOOL TestForRedouble();
+	bool TestIfOpponentsBidThis(int nSuit);  // NCR-513
 	//
 	int GetOpeningPosition() { return m_nOpeningPosition; }
 	BOOL OpenedBiddingForTeam() { return m_bOpenedBiddingForTeam; }
@@ -166,6 +168,7 @@ public:
 
 	// other convention-related helper functions
 	BOOL InvokeBlackwood(int nEventualSuit);
+	BOOL InvokeGerber(int nEventualSuit); // NCR-246a Gerber after Stayman 2C
 	BOOL PlayingConvention(int nConventionID);
 	BOOL TryCueBid();
 

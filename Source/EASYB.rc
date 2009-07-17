@@ -971,8 +971,9 @@ BEGIN
     CONTROL         IDI_CONTRACT_4HEART,IDC_IMAGE,"Static",SS_BITMAP | 
                     SS_NOTIFY | SS_SUNKEN,12,10,128,190
     CONTROL         10621,IDC_STATIC,"Static",SS_BITMAP,156,10,125,17
-    CTEXT           "e-mail: shan@nyx.net",IDC_EMAIL_ADDRESS,154,51,132,8
-    CTEXT           "www.nyx.net/~shan/EasyBridge.html",IDC_HYPERLINK,154,67,
+    CTEXT           "e-mail: shan@nyx.net",IDC_EMAIL_ADDRESS,154,49,132,8
+    CTEXT           "email: radder@hotmail.com",IDC_EMAIL_NORMS,173,60,92,8
+    CTEXT           "www.nyx.net/~shan/EasyBridge.html",IDC_HYPERLINK,154,71,
                     132,8
     LTEXT           "This program is freeware.  There are no warranties, expressed or implied, provided with the application.  Any commercial or fee-based redistribution is strictly prohibited without the author's express written consent.",
                     IDC_COPYRIGHT1,150,144,198,34
@@ -1379,16 +1380,15 @@ BEGIN
                     WS_VSCROLL | WS_TABSTOP
 END
 
-IDD_TEST_PLAY DIALOG DISCARDABLE  0, 0, 324, 135
+IDD_TEST_PLAY DIALOG DISCARDABLE  0, 0, 350, 135
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Play Test"
 FONT 8, "MS Sans Serif"
 BEGIN
     CONTROL         "List1",IDC_LIST_RESULTS,"SysListView32",LVS_REPORT | 
-                    WS_BORDER | WS_TABSTOP,4,4,316,92
-    PUSHBUTTON      "Start",ID_START,107,112,50,14
-    PUSHBUTTON      "Stop",ID_STOP,165,112,50,14
-    DEFPUSHBUTTON   "Close",IDOK,40,116,50,14,NOT WS_VISIBLE
+                    WS_BORDER | WS_TABSTOP,7,4,336,92
+    PUSHBUTTON      "Start",ID_START,119,114,50,14
+    PUSHBUTTON      "Stop",ID_STOP,178,114,50,14
     LTEXT           "Status",IDC_STATUS_TEXT,4,101,212,8
     LTEXT           "Games Made:",IDC_GAMES_MADE_LABEL,242,101,45,8,NOT 
                     WS_VISIBLE
@@ -1396,6 +1396,10 @@ BEGIN
     RTEXT           "",IDC_AVG_TIME,288,112,32,8
     LTEXT           "Avg Time:",IDC_LABEL_AVGTIME,242,112,33,8,NOT 
                     WS_VISIBLE
+    CONTROL         "Save Downs",IDC_SAVEDOWNS_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,114,55,14
+    CONTROL         "Save Convs",IDC_SAVECONVUSED_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,63,114,55,14
 END
 
 IDD_PASSED_HAND_SIMPLE DIALOG DISCARDABLE  34, 22, 140, 44
@@ -1429,13 +1433,13 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,0,0,0
- PRODUCTVERSION 4,0,0,0
+ FILEVERSION 0,10,16,13
+ PRODUCTVERSION 4,0,3,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
- FILEFLAGS 0x21L
+ FILEFLAGS 0x29L
 #else
- FILEFLAGS 0x20L
+ FILEFLAGS 0x28L
 #endif
  FILEOS 0x4L
  FILETYPE 0x1L
@@ -1445,18 +1449,18 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "Comments", "2002\0"
+            VALUE "Comments", "November 17, 2013\0"
             VALUE "CompanyName", "SteveSoft\0"
             VALUE "FileDescription", "Easy Bridge\0"
-            VALUE "FileVersion", "0, 0, 0, 0\0"
+            VALUE "FileVersion", "0, 0, 15.32\0"
             VALUE "InternalName", "EASYB\0"
             VALUE "LegalCopyright", "Copyright ©1997-2002 by Steven Han\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "EasyBridge.exe\0"
-            VALUE "PrivateBuild", "\0"
+            VALUE "PrivateBuild", "12\0"
             VALUE "ProductName", "Easy Bridge\0"
-            VALUE "ProductVersion", "4.0.2\0"
-            VALUE "SpecialBuild", " \0"
+            VALUE "ProductVersion", "4.0.3\0"
+            VALUE "SpecialBuild", " by Norm\0"
         END
     END
     BLOCK "VarFileInfo"
@@ -1640,7 +1644,7 @@ BEGIN
     IDD_TEST_PLAY, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 317
+        RIGHTMARGIN, 343
         TOPMARGIN, 7
         BOTTOMMARGIN, 128
     END

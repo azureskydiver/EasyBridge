@@ -48,7 +48,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 //
 const LPCTSTR tszFileFormatName[] = {
-	"Easy Bridge", "Portable Bridge Notation", "Text"
+	"Easy Bridge", "Portable Bridge Notation", "Text" , "Baron PPL format" // NCR added PPL
 };
 
 //
@@ -184,7 +184,8 @@ CEasyBDoc::CEasyBDoc()
 	m_bHandsDealt = FALSE;
 	m_nDealer = NONE;
 	m_nCurrPlayer = NULL;
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 		m_bSavePlayerAnalysis[i] = FALSE;
 	m_bSaveIntermediatePositions = theApp.GetValue(tbSaveIntermediatePositions);
 
@@ -256,7 +257,7 @@ BOOL CEasyBDoc::OnNewDocument()
 	return TRUE;
 }
 
-
+bool bLoadingFile = false;  // NCR-AT to skip call to OnGameComplete() in ClearTrick()
 //
 // OnOpenDocument()
 //
@@ -280,24 +281,28 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 	int nIndex = strPath.ReverseFind('.');
 	if (nIndex >= 0)
 	{
-		CString strSuffix =strPath.Mid(nIndex + 1);
+		CString strSuffix = strPath.Mid(nIndex + 1);
 		if (strSuffix.CompareNoCase("pbn") == 0)
 			m_nFileFormat = m_nPrevFileFormat = tnPBNFormat;
+		else if(strSuffix.CompareNoCase("ppl") == 0)
+			m_nFileFormat = m_nPrevFileFormat = tnPPLFormat;   // NCR adding PPL
 		else
 			m_nFileFormat = m_nPrevFileFormat = tnEasyBridgeFormat;
 	}
 
 	//
 	pMAINFRAME->SetStatusMessage("Loading file...");
+	bLoadingFile = true;  // NCR-AT
 
 	// load and check for errors
 	BOOL bCode = CDocument::OnOpenDocument(lpszPathName);
 	if ( !bCode || 
-		 ((m_nFileFormat == tnPBNFormat) && (m_gameRecords.GetSize() == 0)) )
+		 ((m_nFileFormat == tnPBNFormat) && (m_gameRecords.GetSize() == 0)) 
+		 || ((m_nFileFormat == tnPPLFormat) && (m_gameRecords.GetSize() == 0)))  // NCR added PPL
 	{
 		// see if the load went OK, but there were no games found
 		if (bCode)
-			AfxMessageBox("No valid games were found in the PBN file!");
+			AfxMessageBox("No valid games were found in the PBN/PPL file!");
 		pMAINFRAME->SetStatusMessage("An error ocurred while opening the file.");
 		pVIEW->EnableRefresh();
 		pMAINFRAME->Invalidate();
@@ -366,6 +371,7 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 		pVIEW->EnableRefresh();
 //???		pVIEW->SendMessage(WM_COMMAND, WMS_RESET_DISPLAY, 1);
 //		pVIEW->Refresh();
+		bLoadingFile = false;  // NCR-AT
 		return TRUE;
 	}
 
@@ -373,7 +379,7 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 	pMAINFRAME->HideDialog(twGameReviewDialog);
 	
 	// but check if this is PBN format
-	if (m_nFileFormat == tnPBNFormat)
+	if ((m_nFileFormat == tnPBNFormat) || (m_nFileFormat == tnPPLFormat)) // NCR added PPL
 	{
 		// if so, load the game data
 		LoadGameRecord(*(m_gameRecords[0]));
@@ -385,10 +391,11 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 	// there are currently only two entry points -- 
 	// just prior to bidding, or just prior to play
 	//
-	if (theApp.IsGameInProgress())
+	if (theApp.IsGameInProgress() || (m_numTricksPlayed == 13)) // NCR-AT Allow fully played hand
 	{
 		// init players with the new hands
-		for(int i=0;i<4;i++)
+		int i; // NCR-FFS added here, removed below
+		for(/*int*/ i=0;i<4;i++)
 			m_pPlayer[i]->InitializeRestoredHand();
 
 		// and start play
@@ -415,7 +422,8 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 			{
 				// silently play out the cards to reach the saved position
 				int nPlayer = m_nTrickLead[nRound];
-				for(int j=0;j<4;j++)
+				int j; // NCR-FFS added here, removed below
+				for(/*int*/ j=0;j<4;j++)
 				{
 					// grab the card that was played
 					int nDeckVal = m_nPlayRecord[nIndex];
@@ -453,7 +461,7 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 						pDOC->ClearTrick();
 				}
 
-			}
+			}  // end nRound through rounds in this brd file
 
 			// restore settings
 			for(i=0;i<4;i++)
@@ -491,7 +499,7 @@ BOOL CEasyBDoc::OnOpenDocument(LPCTSTR lpszPathName)
 	// restore disply
 	pVIEW->EnableRefresh();
 //	pVIEW->Refresh();
-
+	bLoadingFile = false;  // NCR-AT
 	//
 	return TRUE;
 }
@@ -518,8 +526,8 @@ void CEasyBDoc::DeleteContents()
 
 	// empty out game record
 	int numGames = m_gameRecords.GetSize();
-	for(i=0;i<numGames;i++)
-		delete m_gameRecords[i];
+	for(int j=0;j<numGames;j++)
+		delete m_gameRecords[j];
 	m_gameRecords.RemoveAll();
 
 	//
@@ -571,6 +579,16 @@ void CEasyBDoc::Serialize(CArchive& ar)
 			{
 			}
 		}
+		else if(m_nFileFormat == tnPPLFormat)  // NCR added PPL format
+		{
+					try
+			{
+				bCode = ReadFilePLL(ar);
+			}
+			catch(...)
+			{
+			}
+		}
 		else
 		{
 			try
@@ -584,7 +602,7 @@ void CEasyBDoc::Serialize(CArchive& ar)
 		if (!bCode)
 			throw (new CArchiveException());
 	}
-}
+} // end Serialize()
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -1099,7 +1117,8 @@ void CEasyBDoc::ClearPlayInfo()
 	m_numActualTricksPlayed = 0;
 	m_numCardsPlayedInRound = 0;
 	m_numCardsPlayedInGame = 0;
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 		m_pCurrTrick[i] = NULL;
 	//
 	m_nSuitLed = NONE;
@@ -1121,6 +1140,7 @@ void CEasyBDoc::ClearPlayInfo()
 	m_pLastPlayHint = NULL;
 	m_bHintMode = FALSE;
 	m_bHintFollowed = TRUE;
+	m_numSCU = 0; // NCR-SCU
 
 	// clear play record
 	for(i=0;i<13;i++) 
@@ -1728,7 +1748,8 @@ int CEasyBDoc::UndoBid()
 		m_numPasses = 0;
 
 		// search back for the last valid bid
-		for(int i=m_numBidsMade-1;i>=0;i--)
+		int i; // NCR-FFS added here, removed below
+		for(/*int*/ i=m_numBidsMade-1;i>=0;i--)
 		{
 			if ((m_nBiddingHistory[i] != BID_PASS) && (m_nBiddingHistory[i] != BID_DOUBLE) && (m_nBiddingHistory[i] != BID_DOUBLE))
 				break;
@@ -1741,9 +1762,9 @@ int CEasyBDoc::UndoBid()
 		}
 		else
 		{
-			m_nLastValidBid = NONE;
+			m_nLastValidBid = BID_NONE;  // NCR changed NONE to BID_NONE
 			m_nLastValidBidTeam = NEITHER;
-			m_nValidBidHistory[m_numValidBidsMade] = NONE;
+			m_nValidBidHistory[m_numValidBidsMade] = BID_NONE;  // NCR changed NONE to BID_NONE
 		}
 
 		// one less valid bid was made 
@@ -1882,7 +1903,8 @@ void CEasyBDoc::UpdateBiddingHistory()
 	BOOL bUseSymbols = theApp.GetValue(tbUseSuitSymbols);
 		
 	//
-	for(int i=0;i<4;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++) 
 	{
 		strTemp.Format("%-5s",PositionToString(nPos));
 		strBids += strTemp;
@@ -2079,7 +2101,72 @@ void CEasyBDoc::EnterCardPlay(Position nPos, CCard* pCard)
 	UpdatePlayHistory();
 }
 
+//NCR added following 2 functions:
+//
+// WasCardPlayed()
+//
+// check if a card has been played
+// arg:  DeckValue
+//
+bool CEasyBDoc::WasCardPlayed(const int deckValue) const
+{    
+	ASSERT(ISDECKVAL(deckValue));
+	// look at all played cards for the one requested
+	for(int i=0; i < m_numCardsPlayedInGame; i++)
+		if(m_nPlayRecord[i] == deckValue)  return true;  // found
+	return false;  // not found
+}
 
+//
+// AreSameValue()
+//
+// check if two cards have the same value,
+// if they are adjacent or if intervening cards have been played
+//
+bool CEasyBDoc::AreSameValue(const CCard* pC1, const CCard* pC2) const 
+{
+	ASSERT(pC1->IsValid());
+	ASSERT(pC2->IsValid());
+	int incr = 1;  // assume first card is less than second
+	if(pC1->GetDeckValue() > pC2->GetDeckValue())
+		incr = -1;  // need to backup if first is greater
+    int nextCDV = pC1->GetDeckValue() + incr; // start with card next to first
+	while(WasCardPlayed(nextCDV))  // loop until we find a card NOT played
+		nextCDV += incr;  // to next card
+	return nextCDV == pC2->GetDeckValue();  // is the unplayed card ours?
+}
+
+//
+// CardsAreInSequence()
+//
+// Check if two cards are in sequence
+//  Future: check all of a players holdings vs using a single card
+//  args: deck values for two cards
+//
+bool CEasyBDoc::AreCardsInSequence(const int card1DV, const int card2DV) const 
+{
+	ASSERT(ISDECKVAL(card1DV));
+	ASSERT(ISDECKVAL(card2DV));
+	// set low and high values
+	int lowDV, highDV;
+	if(card1DV < card2DV){
+		lowDV = card1DV;
+		highDV = card2DV;
+	}else{
+		lowDV = card2DV;
+		highDV = card1DV;
+	}
+	int suitAce = CARDSUIT(card1DV) * 13 + ACE;
+
+	for(int dv = lowDV+1; dv <= suitAce; dv++) {
+		if(dv == highDV)
+			return true;
+		if(!WasCardPlayed(dv))
+			return false;
+	}
+	ASSERT(false); // should never happen
+	return false;
+} // NCR end AreCardsInSequence()
 
 
 //
@@ -2203,10 +2290,10 @@ void CEasyBDoc::UndoTrick()
 {
 	// start with the most recent card and work backwards
 	int numCardsPlayed = m_numCardsPlayedInRound;
-	for(int i=0;i<numCardsPlayed;i++)
+	for(int j=0;j<numCardsPlayed;j++)
 		UndoLastCardPlayed();
 	//
-	for(i=0;i<4;i++)
+	for(int i=0;i<4;i++)
 		m_pPlayer[i]->RecordTrickUndo();
 
 	// update info
@@ -2246,7 +2333,8 @@ void CEasyBDoc::UndoPreviousTrick()
 
 	// return each card from the previous trick to the players
 	int nPos = m_nRoundLead;
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 	{
 		// retrieve the card and turn face up or down
 		CCard* pCard = m_pGameTrick[nRound][nPos];
@@ -2412,7 +2500,8 @@ void CEasyBDoc::EvaluateTrick(BOOL bQuietMode)
 void CEasyBDoc::ClearTrick() 
 {
 	// inform the players
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 		m_pPlayer[i]->RecordRoundComplete(m_nRoundWinner, m_pHighCard);
 
 	// record trick in game record
@@ -2454,7 +2543,7 @@ void CEasyBDoc::ClearTrick()
 		return;
 	
 	//
-	if (m_numTricksPlayed == 13) 
+	if (m_numTricksPlayed == 13) // && !bLoadingFile)  // NCR-AT not if loading file 
 	{
 		// game is finished
 		OnGameComplete();
@@ -2985,7 +3074,7 @@ void CEasyBDoc::UpdateScore()
 		// update other game variables here
 		m_nCurrGame++;
 		m_bVulnerable[m_nContractTeam] = TRUE;
-		if (m_nVulnerableTeam == NONE)
+		if (m_nVulnerableTeam == NEITHER)  // NCR changed to NEITHER vs NONE
 			m_nVulnerableTeam = (Team) m_nContractTeam;
 		else 
 			m_nVulnerableTeam = (Team) BOTH;
@@ -3658,7 +3747,8 @@ void CEasyBDoc::LoadGameRecord(const CGameRecord& game)
 	ClearHands();
 
 	// clear players' states
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 	{
 		m_pPlayer[i]->ClearHand();
 		m_pPlayer[i]->ClearBiddingInfo();
@@ -3768,7 +3858,8 @@ void CEasyBDoc::RotatePartialHands(int numPositions)
 		m_pPlayer[m_nDummy]->ExposeCards(FALSE, FALSE);
 
 	// rotate hands clockwise as necessary
-	for(int i=0;i<numPositions;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<numPositions;i++)
 	{
 		// first south & west
 		SwapPartialHands(SOUTH, WEST);
@@ -3899,7 +3990,8 @@ void CEasyBDoc::SwapPartialHands(int nPos1, int nPos2)
 	// first remove player 1's cards
 	CCardList tempCards;
 	int numCards1 = pPlayer1->GetNumCards();
-	for(int i=0;i<numCards1;i++) 
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<numCards1;i++) 
 		tempCards << pPlayer1->RemoveCardFromHand(0);
 
 	// then take player 2's cards and give them to player 1
@@ -4423,6 +4515,9 @@ void CEasyBDoc::OnRestartCurrentHand()
 //
 void CEasyBDoc::RestartCurrentHand(BOOL bUpdateView) 
 {
+	if (m_numTricksPlayed == 13) // NCR-AT added numTricks test
+		theApp.SetValue(tbGameInProgress, TRUE); // NCR-AT make sure in case restarting full game
+
 	if (!theApp.GetValue(tbGameInProgress))
 		return;
 
@@ -4593,7 +4688,8 @@ void CEasyBDoc::ClaimTricks(int nPos, int numTricks)
 	else
 		numTricksToClaim = numTricks;
 	//
-	for(int i=m_numTricksPlayed;i<13;i++,numTricksToClaim--)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=m_numTricksPlayed;i<13;i++,numTricksToClaim--)
 	{
 		// increment tricks won for a side
 		if (numTricksToClaim > 0)
@@ -4663,7 +4759,8 @@ void CEasyBDoc::ConcedeTricks(int nPos)
 	int numRemainingTricks = 13 - m_numTricksPlayed;
 	int nConcedingTeam = GetPlayerTeam(nPos);
 	m_nRoundWinningTeam = (nConcedingTeam == NORTH_SOUTH)? EAST_WEST: NORTH_SOUTH;
-	for(int i=m_numTricksPlayed;i<13;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=m_numTricksPlayed;i<13;i++)
 	{
 		// increment tricks won
 		m_numTricksWon[m_nRoundWinningTeam]++;
@@ -4993,7 +5090,8 @@ void CEasyBDoc::OnSwapCardsCounterclockwise()
 void CEasyBDoc::RotatePlayersHands(int nDirection, BOOL bRefresh, BOOL bRestartBidding) 
 {
 	// suspend trace
-	for(int i=0;i<4;i++)
+	int i; // NCR-FFS added here, removed below
+	for(/*int*/ i=0;i<4;i++)
 		m_pPlayer[i]->SuspendTrace();
 	//
 	if (nDirection == 0)
@@ -5049,11 +5147,11 @@ void CEasyBDoc::OnFileOpen()
 {
 	//
 	CString strExtension = "brd";
-	CString strTypeList = "EasyBridge Files (*.brd)|*.brd|Portable Bridge Notation Files (*.pbn)|*.pbn|All Files (*.*)|*.*||";
+	CString strTypeList = "EasyBridge Files (*.brd)|*.brd|Portable Bridge Notation Files (*.pbn)|*.pbn|All Files (*.*)|*.*|Baron PPL (*.ppl)|*.ppl||"; // NCR added ppl
 	if (m_nPrevFileFormat == tnPBNFormat)
 	{
 		strExtension = 	"pbn";
-		strTypeList = "Portable Bridge Notation Files (*.pbn)|*.pbn|EasyBridge Files (*.brd)|*.brd|All Files (*.*)|*.*||";
+		strTypeList = "Portable Bridge Notation Files (*.pbn)|*.pbn|EasyBridge Files (*.brd)|*.brd|All Files (*.*)|*.*|Baron PPL (*.ppl)|*.ppl||"; //NCR added ppl
 	}
 	//
 	CMyFileDialog fileDlg(TRUE, 
@@ -5211,6 +5309,18 @@ void CEasyBDoc::OnFileSaveAs()
 	m_strDocTitle = strFileName;
 	m_nFileFormat = fileDlg.m_nFileType;
 	m_nPrevFileFormat = m_nFileFormat;
+
+	// NCR make sure the filename ends with the correct extension for the format
+	if(m_nFileFormat == tnPBNFormat) {
+		// Check if strFileName ends with .pbn
+		if(strFileName.Right(4).CompareNoCase(".pbn") != 0)
+			strFileName += ".pbn";
+	}
+	else if(m_nFileFormat == tnEasyBridgeFormat) {
+		// Check if strFileName ends with .brd
+		if(strFileName.Right(4).CompareNoCase(".brd") != 0)
+			strFileName += ".brd";
+	} // NCR end making sure have correct extension
 
 	//
 	BeginWaitCursor();
@@ -5376,7 +5486,8 @@ CString CEasyBDoc::FormatOriginalHands()
 	// write out North
 	CCardList& northCards = m_pPlayer[NORTH]->GetHand().GetInitialHand();
 	int numCards = northCards.GetNumCards();
-	for(int nSuit=SPADES;nSuit>=CLUBS;nSuit--)
+	int nSuit; // NCR-FFS added here, removed below
+	for(/*int*/ nSuit=SPADES;nSuit>=CLUBS;nSuit--)
 	{
 		strHands += CString(' ', 16) + GetSuitLetter(nSuit) + ": ";
 		for(int nIndex=0;nIndex<numCards;nIndex++)
@@ -5400,7 +5511,8 @@ CString CEasyBDoc::FormatOriginalHands()
 		strHands += CString(GetSuitLetter(nSuit)) + ": ";
 		int nCount = 3;
 		// show west suit
-		for(int nIndex=0;nIndex<numWestCards;nIndex++)
+    	int nIndex; // NCR-FFS added here, removed below
+		for(/*int*/ nIndex=0;nIndex<numWestCards;nIndex++)
 		{
 			if (westCards[nIndex]->GetSuit() != nSuit)
 				continue;
@@ -5455,7 +5567,8 @@ CString CEasyBDoc::FormatCurrentHands()
 	// write out North
 	CCardList& northCards = m_pPlayer[NORTH]->GetHand();
 	int numCards = northCards.GetNumCards();
-	for(int nSuit=SPADES;nSuit>=CLUBS;nSuit--)
+	int nSuit; // NCR-FFS added here, removed below
+	for(/*int*/ nSuit=SPADES;nSuit>=CLUBS;nSuit--)
 	{
 		strHands += CString(' ', 16) + GetSuitLetter(nSuit) + ": ";
 		for(int nIndex=0;nIndex<numCards;nIndex++)
@@ -5479,7 +5592,8 @@ CString CEasyBDoc::FormatCurrentHands()
 		strHands += CString(GetSuitLetter(nSuit)) + ": ";
 		int nCount = 3;
 		// show west suit
-		for(int nIndex=0;nIndex<numWestCards;nIndex++)
+		int nIndex; // NCR-FFS added here, removed below
+		for(/*int*/ nIndex=0;nIndex<numWestCards;nIndex++)
 		{
 			if (westCards[nIndex]->GetSuit() != nSuit)
 				continue;
