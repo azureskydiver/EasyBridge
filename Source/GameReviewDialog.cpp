@@ -395,12 +395,16 @@ void CGameReviewDialog::SetGameIndex(int nGame, BOOL bRefresh)
 	pDOC->UpdatePlayHistory();
 	pMAINFRAME->SetAllIndicators();
 
+	// NCR-759 Check if this hand has data to show
+	if(pDOC->GetDeclarerPosition() == NONE) {
+		return;   // No plays to make
+	}  // end NCR-759
+
 	// set prompt
 	pMAINFRAME->SetMessageText(FormString("Contract is %s.  Declarer is %s; %s leads.",
 										   pDOC->GetFullContractString(),
 										   PositionToString(pDOC->GetDeclarerPosition()),
 										   PositionToString(pDOC->GetRoundLead())));
-
 	// set game info
 	m_numPlaysAvailable = pGameRecord->m_numCardsPlayed;
 	if (m_numPlaysAvailable > 0)

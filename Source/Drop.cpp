@@ -176,6 +176,9 @@ PlayResult CDrop::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 				}
 				//
 				pPlayCard = bPlayingInHand? playerSuit.GetBottomCard(): dummySuit.GetBottomCard();
+				CCard* pCardToPlay = GetAuxCard();  // NCR-760
+				if(pCardToPlay != NULL)
+					pPlayCard = pCardToPlay;  // NCR-760 Use what the other guy found
 				status << "PLDRP11! Lead low with the " & pPlayCard->GetName() &
 						  " from " & (bPlayingInHand? "hand" : "dummy") & " up to the " &
 						  m_pConsumedCard->GetFaceName() & " in " &

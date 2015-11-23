@@ -498,7 +498,7 @@ int CBidEngine::MakeRespondingBid()
 	//
 	//==========================================================
 	//
-	// Responding to an opening 1-bid by partner 
+	// Responding to an opening 1-bid by partner or an overcall
 	//
 	// Classify hands according to strength
 	// <6 pts:  useless
@@ -513,7 +513,7 @@ int CBidEngine::MakeRespondingBid()
 	int currBidLevel = ((nRHOBidLevel > nPartnersBidLevel) ? nRHOBidLevel : nPartnersBidLevel);
 	if ((nPartnersBidLevel == 1) 
 		// NCR add test for overcall at < 4 level
-		|| (((bType & BT_Overcall) != 0) && (currBidLevel < 4))) 
+		|| (((bType & BT_Overcall) != 0) && (currBidLevel <= 4)))   // NCR-720 <= vs < Overcall of preempt
 	{
 
 		// NCR NB: The currBidLevel could be > 1 because of an opponent overcall
@@ -528,6 +528,11 @@ int CBidEngine::MakeRespondingBid()
 		{
 			m_fPartnersMin = theApp.GetMinimumOpeningValue(m_pPartner);
 			m_fPartnersMax = OPEN_PTS(pCurrConvSet->GetValue(tn2ClubOpeningPoints)) - 1;
+		
+			// NCR-720 What if overcall at 3-4 level following a preempt?
+			if(currBidLevel >= 3) {
+				m_fPartnersMin = 14;   // Need opening hand+ here
+			}
 		}
 		//
 		if ((m_pPartner->GetOpeningPosition() == 0) ||		
@@ -606,7 +611,8 @@ int CBidEngine::MakeRespondingBid()
 		{
 			// NCR-688 Use fAdjPts vs fPts??  Bid midstrength 5card major pards minor
 			if((currBidLevel == 1) && ISMINOR(nPartnersSuit) && ISMAJOR(nPrefSuit)
-				&& (numPrefSuitCards >= 5) && (nPrefSuitStrength >= SS_MARGINAL_OPENER) )
+				&& (numPrefSuitCards >= 5) && (nPrefSuitStrength >= SS_MARGINAL_OPENER) 
+				&& (fAdjPts > 3) )   // NCR-716 Must have some points
 			{
 				m_nBid = MAKEBID(nPrefSuit, 1);
 				status << "F02b! With " & fAdjPts & " points, bid our 5+ card major ("& STS(nPrefSuit) 
@@ -1209,7 +1215,8 @@ int CBidEngine::MakeRespondingBid()
 					|| (ISMINOR(nPartnersSuit) && (nPartnersSuitSupport >= SS_STRONG_SUPPORT) 
                          // NCR-459 which pts to test? Card or Adj see -483
 					    && (fCardPts >= OPEN_PTS(11)) ) ) 
-			    &&	(nPartnersSuitSupport >= SS_WEAK_SUPPORT)) 
+			    && (nPartnersSuitSupport >= SS_WEAK_SUPPORT)
+				&& !((currBidLevel >= 3) || (nRHOBid != BID_PASS) ) )  // NCR-757 Ignore Limit bid if interference
 			{
 				// record the suit to return to 
 				m_nIntendedSuit = nPartnersSuit;
@@ -1352,7 +1359,8 @@ int CBidEngine::MakeRespondingBid()
 			nSuit = GetNextBestSuit(nPartnersSuit);
 			m_nBid = GetJumpShiftBid(nSuit,nPartnersBid);
 			// NCR-301 what if opponents have bid up a level?
-			if(nLastBid > m_nBid) {
+			if(nLastBid > m_nBid || currBidLevel  >= 3)   // NCR-772 bid game at this level
+			{
 				m_nBid = GetGameBid(nPartnersSuit);  // NCR-301
 				status << "J16! Have " & fCardPts & "/" & fPts & "/" & fAdjPts & 
 	  				  " points; go to game over interference by bidding " & BTS(m_nBid) & ".\n";

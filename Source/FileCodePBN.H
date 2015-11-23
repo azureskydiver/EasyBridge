@@ -41,6 +41,7 @@ const int	TAG_PLAY			= 25;
 const int	TAG_NOTE			= 30;
 const int	TAG_DESCRIPTION		= 31;
 const int	TAG_GENERATOR		= 32;
+const int   TAG_OPTIMUMSCORE    = 33;   // NCR-776 for PBN files
 
 // special tags
 const int	TAG_TERMINATOR		= 39;

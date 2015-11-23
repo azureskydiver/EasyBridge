@@ -81,6 +81,8 @@ public:
 	CCard* PlayForDummy();
 	LPCTSTR GetFailedPlayName() const { return m_strFailedPlay; }
 
+	virtual void ShowPlayList(CPlayList& playList);   // NCR-760
+
 
 //
 // protected routines

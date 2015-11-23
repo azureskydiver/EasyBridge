@@ -298,7 +298,8 @@ int CBidEngine::MakeRebidAsOpener()
 		// NCR-120 Pass if at level 2 and not enough points (<= 18)
 		// NCR-128 Added test if RHOSuit is NONE
 		//
-		if ((m_fMinTPCPoints <= PTS_GAME-6) && ((nRHOSuit == NONE) || (nSuit <= nRHOSuit))) 
+		double minBidPts = PTS_GAME - (6 + theApp.GetBiddingAgressiveness()); // NCR-718    
+		if ((m_fMinTPCPoints <= minBidPts) && ((nRHOSuit == NONE) || (nSuit <= nRHOSuit))) 
 		{
 			m_nBid = BID_PASS;
 			status << "B3K08! Have " & fCardPts & " HCPS and " & 
@@ -309,7 +310,7 @@ int CBidEngine::MakeRebidAsOpener()
 		//
 		// 18-23 TPs: rebid
 		//
-		double debugIt = PTS_GAME-3; // DEBUG    // NCR-388 Jump shift requires 19 pts      
+//		double debugIt = PTS_GAME-3; // DEBUG    // NCR-388 Jump shift requires 19 pts      
 		if ((m_fMinTPPoints <= PTS_GAME-3) || (fAdjPts < PT_COUNT(19)) ) 
 		{
 			m_nBid = GetCheapestShiftBid(nSuit,BID_1NT);
@@ -742,8 +743,9 @@ int CBidEngine::MakeRebidAsOpener()
 	// partner has shown < 9 HCPs
 	//   pass with < 20 pts
 	//
-	if ((nPartnersSuit == nPreviousSuit) && 
-		(nPreviousBidLevel == 1) && (nPartnersBidLevel == 4)) 
+	if ((nPartnersSuit == nPreviousSuit) 
+		 && (nPreviousBidLevel == 1) && (nPartnersBidLevel == 4)
+		 && (nOpponentsBidLevel < 3) )   // NCR-757 Not a triple raise if opponents pushed 
 	{
 		//
 		return (RespondToTripleRaise());
@@ -1076,7 +1078,9 @@ int CBidEngine::MakeRebidAsOpener()
 			// jump rebid our own suit if it's a solid six-carder
 			if ((nPreviousSuitStrength >= SS_STRONG) 
 				// NCR allow agressiveness to override strength if 6 cards
-				 && (bPreviousSuitIsSolid || (theApp.GetBiddingAgressiveness() > 1.5) )
+				 && (bPreviousSuitIsSolid || (theApp.GetBiddingAgressiveness() > 1.5) 
+				    || (numPreviousSuitPoints >= 8)   // NCR-724 points also
+					|| (AsDeclarer.fAdjPts > 18) )    // NCR-731 strong hand's points also
 				 &&	(numPreviousSuitCards >= 6)
 				 /*&& declarerPtsOk*/)    // NCR-695 If pts OK  NCR-708 Removed
 			{
@@ -1188,7 +1192,9 @@ int CBidEngine::MakeRebidAsOpener()
 		nSuit = GetNextBestSuit(nPreviousSuit,nPartnersSuit);
 		if (nSuitStrength[nSuit] >= SS_OPENABLE) 
 		{
-			m_nBid = GetJumpShiftBid(nSuit,nPartnersBid);
+			// NCR-768 get bid to jump over
+			int bidToJump = (ISBID(nRHOBid) ? ((nPartnersBid > nRHOBid) ? nPartnersBid : nRHOBid) : nPartnersBid);
+			m_nBid = GetJumpShiftBid(nSuit, bidToJump);  // NCR-768
 			status << "B3U74! With less than game-level support for partner's " & szPSS & 
 					  " suit (holding " & szHP & "), but with " &
 					  fCardPts & "/" & fPts & "/" & fAdjPts &
@@ -1545,7 +1551,8 @@ int CBidEngine::MakeRebidAsOpener()
 				((nCurrBidLevel == 3) && (m_fMinTPPoints < 21)  // NCR-203 changed 20 to 21
 				|| ((nCurrBidLevel > 3) && (m_fMinTPPoints < PTS_MINOR_GAME-6)) 
 				// NCR-279 Pass if at game level
-				|| (nCurrBidLevel > 4) )	)
+				|| (nCurrBidLevel > 4) )
+				|| IsGameBid(nPartnersBid) )  // NCR-738 Pass if pard has bid game
 			{
 				m_nBid = BID_PASS;
 				status << "B3W35! But with only about " & m_fMinTPCPoints & "-" & m_fMaxTPCPoints &
@@ -1704,6 +1711,14 @@ int CBidEngine::MakeRebidAsOpener()
 			return ValidateBid(m_nBid);
 		}
 
+		// NCR-748 Pass if pard bid game
+		if(IsGameBid(nPartnersBid) && (numSupportCards >= 3))
+		{	
+			m_nBid = BID_PASS;
+			status << "B3W57! Partner bid game. We Pass.\n";
+			return ValidateBid(m_nBid);
+		}  // end NCR-748
+
 		// else with 29+ TPs, jump shift in another suit
 		nSuit = GetNextBestSuit(nPreviousSuit,nPartnersSuit);
 		if (nSuitStrength[nSuit] >= SS_OPENABLE)
@@ -1801,7 +1816,7 @@ int CBidEngine::MakeRebidAsOpener()
 
 			// NCR-237 Has pard bid game?  Same as code below for NCR-55 ???
 			if(IsGameBid(nPartnersBid) && (nRHOBid == BID_PASS)) {
-							m_nAgreedSuit = nPartnersSuit;
+				m_nAgreedSuit = nPartnersSuit;
 				m_nBid = BID_PASS;
 				status << "B3Y12! Partner's jump to game in " & szPS & 
 						  " implies a 6+ card holding in the suit, so with " &

@@ -4037,6 +4037,8 @@ void CEasyBDoc::PlayGameRecord(int nGameIndex)
 	handDialog.m_nMode = CSelectHandDialog::SH_MODE_HAND;
 	const CGameRecord& game = *(m_gameRecords.GetAt(nGameIndex));
 
+	// NCR-759 Skip over asking if no contract
+	if(game.m_nDeclarer != NONE) {
 	// init declarer if available,else play south
 	if (ISPLAYER(game.m_nDeclarer))
 		handDialog.m_nPosition = game.m_nDeclarer;
@@ -4062,6 +4064,7 @@ void CEasyBDoc::PlayGameRecord(int nGameIndex)
 	// rotate the hands
 	CWaitCursor wait;
 	RotatePartialHands(numPositions);
+	} // end NCR-759
 
 	//
 	// and finally begin play
@@ -4079,8 +4082,16 @@ void CEasyBDoc::PlayGameRecord(int nGameIndex)
 	//
 	if (m_numTricksPlayed < 13)
 	{
+		// NCR-759 Check if a contract
+		if(game.m_nDeclarer == NONE) {
+			// Go to bidding if no contract
+			//  NOTE:  Needs to show bidding box ????
+			pMAINFRAME->MakeDialogVisible(twBidDialog);
+			pVIEW->PostMessage(WM_COMMAND, WMS_BIDDING_RESTART, 0);
+		}else {
 		// then pick up where we left off
 		pVIEW->PostMessage(WM_COMMAND, WMS_RESUME_GAME, 0);
+		}
 	}
 	else
 	{
@@ -4616,9 +4627,9 @@ void CEasyBDoc::OnPlayClaimTricks()
 	int nPos = GetHumanPlayerPos();
 	// may be claiming as declarer or defender
 	// if human has contract, get the declarer, be it human or computer partner
-	if ((nPos == NORTH) || (nPos == SOUTH))
-		nPos = GetDeclarerPosition();
-
+	if ((nPos == NORTH) || (nPos == SOUTH)) {
+//		nPos = GetDeclarerPosition();    // NCR-742 why change to declarer
+	}
 	// and check the claim
 	int numTricksRequired = 13 - m_numTricksPlayed;
 	int numClaimableTricks = m_pPlayer[nPos]->GetNumClaimableTricks();
@@ -5056,6 +5067,8 @@ void CEasyBDoc::OnSwapCardsClockwise()
 	{
 		// not started playing yet
 		RotatePlayersHands(0, TRUE, theApp.IsBiddingInProgress());
+		// NCR-759 Move dealer also
+		m_nDealer = GetNextPlayer(m_nDealer); // NCR-759 move clockwise
 	}
 	else
 	{
@@ -5075,6 +5088,8 @@ void CEasyBDoc::OnSwapCardsCounterclockwise()
 	{
 		// not started playing yet
 		RotatePlayersHands(1, TRUE, theApp.IsBiddingInProgress());
+		// NCR-759 Move dealer also
+		m_nDealer = GetPrevPlayer(m_nDealer); // NCR-759 move counterclockwise
 	}
 	else
 	{

@@ -56,6 +56,14 @@ BOOL CStrongTwoBidsConvention::TryConvention(const CPlayer& player,
 		double fCardPts = bidState.fCardPts;
 		int openType = theApp.GetBiddingAgressiveness() < 1 ? OT_STRONG : OT_OPENER; // NCR-177
 		int nBid = bidState.GetLowestOpenableBid(SUITS_MAJORS, openType, 2);  // NCR-177 chngd OT_STRONG to openType
+		// NCR-727 Make sure enough cards in suit
+		int nSuitBid = BID_SUIT(nBid);
+		if(ISSUIT(nSuitBid)) {
+			int numCards = hand.GetSuitLength(nSuitBid);
+			if(pCurrConvSet->IsConventionEnabled(tid5CardMajors) && numCards < 5)
+				nBid =  NONE;   // Try again below
+		}  // NCR-727 end checking suit
+
 		if(!ISBID(nBid))
 			nBid = bidState.GetLowestOpenableBid(SUITS_ANY, openType, 2);  // NCR-177 try any if no major
 		// NCR NOTE - above can return 1NT !!!

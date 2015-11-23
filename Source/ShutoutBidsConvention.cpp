@@ -88,9 +88,12 @@ BOOL CShutoutBidsConvention::TryConvention(const CPlayer& player,
 		// a solitary Q is okay for a Shutout bid, but any higher honors
 		// are not
 		CSuitHoldings& suit = hand.GetSuit(i);
-		if (suit.HasAce() || (suit.HasKing() && !suit.IsSingleton())) // NCR-67 don't count singleton Kings
+		if (suit.HasAce() || (suit.HasKing() && !suit.IsSingleton())) { // NCR-67 don't count singleton Kings
 			nbrOutsideHonors++;  // NCR-67 count number of outside honors
 //			return FALSE;
+			if (suit.HasAce() && suit.HasKing())   // NCR-719 what if has both
+				nbrOutsideHonors++;
+		}
 	}
 
 	//
@@ -221,18 +224,29 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 	double fMinTPPoints = bidState.m_fMinTPPoints;
 	double fMaxTPPoints = bidState.m_fMaxTPPoints;
 	
-	//
+	// NCR-728 Pard promised 7 tricks if vulnerable and 6 tricks if not
+	// Compute how many winners we need to make 4: (7+3) or (6+4)
+	int nbrWinnersNeeded = player.GetValue(tbTeamIsVulnerable) ? 3 : 4; // NCR-728
 	// NCR-155 weaken requirements if being agressive
-	int nbrWinnersNeeded = (theApp.GetBiddingAgressiveness() < 1) ? 5 : 4; // NCR-155
+	if(theApp.GetBiddingAgressiveness() >= 1) // NCR-155
+		nbrWinnersNeeded--;  // reduce ??
+	// NCR-155 Add 1/2 QT and one winner if we have the King of trump
+	if(bidState.numSuitPoints[nPartnersSuit] == 3) {
+		numQuickTricks += 0.5;
+		numLikelyWinners++;
+	}
 	if ((nPartnersBidLevel == 3) && (ISMAJOR(nPartnersSuit))
 		   // NCR changed 4 to 3       /// NCR-359 allow 2 cards with points
-		&& ((numSupportCards >= 3) || ((numSupportCards >= 2) && (fCardPts >= 13))
-		    || (numSupportCards >= 1 && fCardPts >=19))   // NCR-546 fewer cards with more pts
+		&& ((numSupportCards >= 3) 
+		    || ((numSupportCards >= 2) && (fCardPts >= 13))
+			|| ((numSupportCards >= 1) && (fCardPts >=19))   // NCR-546 fewer cards with more pts
+			|| (numQuickTricks >= 5) )  // NCR-728 5 QT will be big help
 		// NCR changed following to allow either tricks or points
 		&& (((numQuickTricks >= 2) && (numLikelyWinners >= nbrWinnersNeeded)) 
 		   // NCR-672 Also if QTs and suit points
 		   || ((numQuickTricks > 3) && (bidState.numSuitPoints[nPartnersSuit] > 4))
-		   || ((fMinTPPoints + fMaxTPPoints)/2 >= PTS_GAME)) )   // NCR-546 average min and max
+		   || ((fMinTPPoints + fMaxTPPoints)/2 >= PTS_GAME)    // NCR-546 average min and max
+		   || ((numSupportCards > 4) && (bidState.numVoids > 0) && (bidState.numSingletons <= 1)) ) ) // NCR-773 Distribution will help
 	{
 		nBid = MAKEBID(nPartnersSuit,4);
 		status << "SHUTR2! We have " & fCardPts & "/" & fPts & "/" & fAdjPts & 
@@ -249,11 +263,18 @@ BOOL CShutoutBidsConvention::RespondToConvention(const CPlayer& player,
 
 	// raise a minor to game as above, but with 5-card
 	// support && 6+ winners && 28+ TPs
-	nbrWinnersNeeded = (theApp.GetBiddingAgressiveness() < 1) ? 6 : 5; // NCR-281
-	if ((nPartnersBidLevel <= 4)  && (ISMINOR(nPartnersSuit)) &&
-		(numSupportCards >= 3) && (numQuickTricks >= 2)    // NCR changed SupportCards fm 5 to 3
+
+	// NCR-728 Pard promised 7 tricks if vulnerable and 6 tricks if not
+	// Compute how many winners we need to make 5: (7+4) or (6+5)
+	nbrWinnersNeeded = player.GetValue(tbTeamIsVulnerable) ? 4 : 5; // NCR-728
+
+//	nbrWinnersNeeded = (theApp.GetBiddingAgressiveness() < 1) ? 6 : 5; // NCR-281
+	if ((nPartnersBidLevel <= 4)  && (ISMINOR(nPartnersSuit))
+		&& (((numSupportCards >= 3) && (numQuickTricks >= 2))    // NCR changed SupportCards fm 5 to 3
+			|| (numQuickTricks >= 5))  // NCR-728
 		// NCR-281 changed to match NCR-155 above. Use var vs HC 6 below
-		&& ((numLikelyWinners >= nbrWinnersNeeded) || (fMinTPPoints >= PTS_MINOR_GAME)) )
+		&& ((numLikelyWinners >= nbrWinnersNeeded) || (fMinTPPoints >= PTS_MINOR_GAME)) 
+		&& (bidState.numAces > 0) )  // NCR-734 Need an ace at 5 level
 	{
 		nBid = MAKEBID(nPartnersSuit,5);
 		status << "SHUTR4! We have " & fCardPts & "/" & fPts & "/" & fAdjPts & 

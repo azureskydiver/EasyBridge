@@ -54,12 +54,13 @@ BOOL CTakeoutDoublesConvention::TryConvention(const CPlayer& player,
 	if ( ((bidState.nLHOBid > BID_PASS) || (bidState.nRHOBid > BID_PASS)) &&
 		 // NCR-291 Test if Opponent Redoubled
 		 (bidState.nLHOBid != BID_REDOUBLE) && (bidState.nRHOBid != BID_REDOUBLE) &&
-		 (bidState.nPartnersBid <= BID_PASS) &&
+		 (bidState.nPartnersBid <= BID_PASS) && (bidState.m_numPartnerBidsMade < 1) && // NCR-721 no TKO if pard bid
 		 (bidState.fCardPts >= OPEN_PTS(12)) &&
  		 ((bidState.m_numBidTurns == 0) ||  // NCR-610 Belated takeout after open
 		  ((bidState.m_numBidTurns == 1) /*&& (bidState.m_nBid == BID_DOUBLE)*/)) )
 	{
 		 // passed
+		int x = bidState.m_numPartnerBidsMade;  // DEBUG
 	}
 	else
 	{
@@ -221,8 +222,8 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 	int nConventionStatus = bidState.GetConventionStatus(this);
 
 	// apply tests #1, 2, and 3
-	if ( (nPartnersBid == BID_DOUBLE) && (bidState.nRound <= 2) && 
-		 (bidState.m_nBid <= BID_PASS) && (nLastValidBidLevel <= 3)
+	if ( (nPartnersBid == BID_DOUBLE) && (bidState.nRound <= 3)  // NCR-735 3 rounds vs 2
+		 && (bidState.m_nBid <= BID_PASS) && (nLastValidBidLevel <= 3)
 		 && (bidState.m_numBidsMade == 0) // NCR-191 we haven't bid yet
 		 && !bidState.IsGameBid(nLastValidBid)  // NCR Double of game is NOT Takeout
 		 && (nLastValidBid != BID_1NT) ) // NCR-350 Double of 1NT is NOT Takeout  <<<<<<<<<<<<<<< NOTE
@@ -424,7 +425,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 		//
 		// else with 0-9.5 pts, bid the longest suit (or a reasonably long major)
 		//
-		if (fPts < OPEN_PTS(10))
+		if (fCardPts < OPEN_PTS(10))  // NCR-764 use fCardPts vs fPts which includes penalty for short suit
 		{
 			// get the longest suit
 			nSuit = hand.GetLongestSuit();
@@ -502,7 +503,7 @@ BOOL CTakeoutDoublesConvention::RespondToConvention(const CPlayer& player,
 			bidState.SetBid(nBid);
 			bidState.SetConventionStatus(this, CONV_RESPONDED_ROUND1);
 			return TRUE;
-		} // end fPts < 10 pts
+		} // end fCardPts < 10 pts  // NCR-764 fCardPts vs fPts
 
 
 		//

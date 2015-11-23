@@ -394,7 +394,8 @@ BOOL CJacoby2NTConvention::HandleConventionResponse(const CPlayer& player,
 		{
 			// oops, caught with too few points
 			// either pass 3NT , or return to the suit at the cheapest level possible
-			if ((nPartnersBid == BID_3NT) || ((nSuit == nPrevSuit)))
+			if (((nPartnersBid == BID_3NT) && (bidState.numVoids == 0) ) // NCR-741 no NT w/void
+				|| ((nSuit == nPrevSuit)))
 			{
 				nBid = BID_PASS;
 				status << "J2N70! With a total of only " & bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints &

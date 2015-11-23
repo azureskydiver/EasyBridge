@@ -64,6 +64,7 @@ CPlay::CPlay(PlayType nPlayType, int nTargetHand, int nSuit, PlayProspect nPlayP
 	m_pRequiredPlayedCardsList = NULL;
 	m_nQuality = 0; // NCR-707 
 	m_nSuit2 = NONE; // NCR-411 late change
+	m_pAuxCard = NULL;  // NCR-760
 }
 
 CPlay::~CPlay() 

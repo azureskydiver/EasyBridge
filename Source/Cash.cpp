@@ -246,7 +246,11 @@ PlayResult CCash::Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHa
 //								(declarerSuit.GetNumCards() > 1) && (ombinedSuit.GetNumDummyLosers() > 0) )
 								&& (combinedSuit.GetNumDummyLosers() > 0)
 								// NCR-438 Ignore if flagged as Opportunistic
-								&& !IsOpportunistic() )
+								&& !IsOpportunistic() 
+								// NCR-754 Ok to overtake a singleton when dummy has more winners
+								&& !(declarerSuit.IsSingleton() 
+								     && (dummyHand.GetNumWinners() > playerHand.GetNumWinners()) )
+								)
 							{
 								// oops, the "low" card is equivalent to the cash card!
 								status << "4PLCSH15! Oops, the lowest card we can lead from hand for the cash is the " & 

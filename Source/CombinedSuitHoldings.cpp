@@ -382,6 +382,7 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 		// see if there are outstanding cards matching up against this one
 		if (m_numOutstandingCards > i) 
 		{
+			ASSERT(m_nMissingCards[nTheirOffset] > 1); // NCR-779
 			// see if their next card is higher than our next card
 			if (m_nMissingCards[nTheirOffset] > m_cards[nOurOffset]->GetFaceValue())
 			{
@@ -418,6 +419,13 @@ int CCombinedSuitHoldings::CheckKeyHoldings()
 		} // end for(i)
 	} // NCR-587 end getting numSureWinners
 	m_numSureWinners = numSureWinners;   // NCR-587 save the count
+
+	// NCR-779 Debug
+	if((/*numSureWinners == 1 ||*/ numSureWinners == 5) && m_nMaxLength == 5 && m_nSuit == 2
+		&& m_numOutstandingCards == 3) {
+		int xxx = 1;
+	}
+
 
 	m_numWinners = m_numLikelyWinners = numWinners;
 

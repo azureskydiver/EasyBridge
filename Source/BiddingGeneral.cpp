@@ -147,6 +147,10 @@ int CBidEngine::RespondToSingleRaise(int nPartnersBid)
 	{  // NCR set points for Freebid
 		minPts = PTS_FREEBID;
 		maxPts = 12;
+		if(nOpponentsBidLevel >= 3) {   // NCR-757 More points at higher level
+			minPts = 12;
+			maxPts = 15;
+		}
 	}
 	m_fPartnersMin = MAX(m_fPartnersMin, minPts);
 	m_fPartnersMax = MAX(m_fPartnersMax, maxPts);

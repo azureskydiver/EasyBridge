@@ -208,10 +208,10 @@ BOOL CBlackwoodConvention::RespondToConvention(const CPlayer& player,
 											   CBidEngine& bidState,  
 											   CPlayerStatusDialog& status)
 {
-	// first see if another convention is active
-//	if ((bidState.GetActiveConvention() != NULL) &&
-//					(bidState.GetActiveConvention() != this))
-//		return FALSE;
+	// first see if another convention is active  NCR-755 Uncomment following 3 lines
+	if ((bidState.GetActiveConvention() != NULL) 
+		 && (bidState.GetActiveConvention() != this))
+		return FALSE;
 
 	//
 	// first look for a Blackwood _Query_ from partner -- 
@@ -407,7 +407,8 @@ BOOL CBlackwoodConvention::HandleConventionResponse(const CPlayer& player,
 			// if we have fewer then 3 aces or less than 33 pts. then really panic
 			if ((numTotalAces < 3) || (bidState.m_fMinTPPoints < PTS_SLAM)
 				|| hand.HasWorthlessDoubleton()  // NCR can't do slam with worthless doubleton
-				|| (hand.GetNumSuitsStopped() < 4) )  // NCR-344 Don't do slam without stoppers? Use: AllOtherSuitsStopped()???
+				|| ((hand.GetNumSuitsStopped() < 4)   // NCR-344 Don't do slam without stoppers? Use: AllOtherSuitsStopped()???
+				&& !(hand.GetNumVoids() > 0 && hand.GetNumSingletons() == 1)) ) // NCR-771 Try slam with a singleton and voids
 			{
 				int nTestBid = bidState.GetCheapestShiftBid(nAgreedSuit);
 				// NCR-260 Can't do 5NT - pard will think its more Blackwood

@@ -363,7 +363,7 @@ BOOL CNegativeDoublesConvention::RespondToConvention(const CPlayer& player,
 			nSuit = SPADES;
 		nBid = bidState.GetCheapestShiftBid(nSuit, nTopBid);
 		// see if the bid is affordable
-		double fAdj = theApp.GetBiddingAgressiveness()*1.5; // NCR change test amt?
+		double fAdj = bidState.fAdjPts; // NCR-717 theApp.GetBiddingAgressiveness()*1.5; // NCR change test amt?
 		if (bidState.IsBidSafe(nBid, fAdj)) // NCR adjust???
 		{
 			status << "NEGDTR30! With " & bidState.m_fMinTPPoints & " pts in the partnership and " &

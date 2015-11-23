@@ -186,7 +186,23 @@ void CDeclarerPlayEngine::Clear()
 	m_bInHintMode = false;
 }
 
-
+//--------------------------------------------------
+// GetIndexOfBestQualPlay  NCR-761
+// return index in playlist of best plan, or -1 if all have same quality(0)
+//
+int GetIndexOfBestQualPlay(CPlayList& playList) {
+	int maxFnd = -999;
+	int maxIdx = -1;
+	for(int i=0; i < playList.GetSize(); i++) {
+		if(playList[i]->GetQuality() > maxFnd) {
+			maxFnd = playList[i]->GetQuality();  // save quality and index
+			maxIdx = i;
+		}
+	}  // end for(i) through list
+	if(maxFnd == 0 && maxIdx == 0)
+		return -1;   // nothing found
+	return maxIdx;   // return the idex
+}  // end NCR-761
 
 //
 //-----------------------------------------------------------------------
@@ -1363,7 +1379,10 @@ void CDeclarerPlayEngine::AdjustPlayCountForDeletedPlay(CPlay* pPlay)
 BOOL CDeclarerPlayEngine::IsPlayUsable(CPlay& play)
 {
 	CCard* pCard;
+#ifndef _DEBUG
+	// NCR Leave trace on when debugging 
 	m_pStatusDlg->EnableTrace(FALSE);
+#endif
 	int nCode = play.Perform(*this, *m_pCombinedHand, *m_pCardLocation,
 							  m_ppGuessedHands, *m_pStatusDlg, pCard);
 	m_pStatusDlg->EnableTrace(TRUE);
@@ -1769,7 +1788,9 @@ CCard* CDeclarerPlayEngine::PlaySecond()
 		}
 		// NCR-653 Test if doubleton honor and play if it can lose next trick
 		else if(!bPlayingInHand && dummySuit.IsDoubleton()  // && false  //<<<<<<<<<< DEBUG
-			&& (dummySuit.GetNumMissingAbove(dummySuit.GetTopCard()) == 1) ) 
+			&& (dummySuit.GetNumMissingAbove(dummySuit.GetTopCard()) == 1) 
+			// NCR-746 Don't play under a higher card
+			&& (dummySuit.GetTopCard()->GetFaceValue() > pCardLed->GetFaceValue()) ) 
 		{
 			pCard = dummySuit.GetTopCard();  
 			status << "PLDC2A2! We don't have a winner in the suit in " &
@@ -2484,6 +2505,7 @@ CCard* CDeclarerPlayEngine::GetDiscard()
 	CSuitHoldings& dummySuit = dummyHand.GetSuit(nSuitLed);
 	CSuitHoldings& suit = bPlayingInHand? declarerSuit : dummySuit;
 	CSuitHoldings& oppositeSuit = bPlayingInHand? dummySuit : declarerSuit;
+	int numOppositeEntries = bPlayingInHand ? m_numDummyEntries : m_numDeclarerEntries; // NCR-745
 
 	// see if we have cards in the suit led
 	if (suit.GetNumCards() > 0)
@@ -2517,7 +2539,9 @@ CCard* CDeclarerPlayEngine::GetDiscard()
 //			&& (combinedSuit.GetTopSequence().GetNumCards() == 2) <<<< Need to consider what has been played ???
 			&& (oppositeSuit.GetNumCards() >= suit.GetNumCards()) 
 			// NCR-478 Test if other hand has a winner before discarding a possible winner
-			&& (combinedSuit.GetSequence2(0).GetNumCards() > 1) )
+			&& (combinedSuit.GetSequence2(0).GetNumCards() > 1) 
+			// NCR-745 don't worry about blocking if opposite hand has entries
+			&& (numOppositeEntries < 2) )
 		{
 			pCard = suit.GetTopCard();
 			status << "3PLYDCS3! Discard the " & pCard->GetName() & " to unblock the suit.\n";
@@ -2883,6 +2907,8 @@ void CDeclarerPlayEngine::PlanPlay()
 	m_playPlan.Activate();
 	status.SetStreamOutputLevel(3);
 	status << "3PLN90! The tentative list of available plays is as follows:\n------>\n";
+	ShowPlayList(m_playPlan); // NCR-760
+/*
 	CString strDescription;
 	m_numPlannedRounds = m_playPlan.GetSize();
 	for(int i=0;i<m_numPlannedRounds;i++)
@@ -2890,7 +2916,7 @@ void CDeclarerPlayEngine::PlanPlay()
 		strDescription = m_playPlan[i]->GetFullDescription();
 		status << " Play " & i+1 & ": " & strDescription & "\n";
 	}
-
+*/
 	//	status << "PLN92! The plan provides for " & m_numTotalPlannedTricks &
 //			  " or more tricks versus the required " & m_numRequiredTricks & ".\n";
 //	if (m_numTotalPlannedTricks < m_numRequiredTricks)
@@ -2903,8 +2929,6 @@ void CDeclarerPlayEngine::PlanPlay()
 
 	// done 
 }
-
-
 
 
 
@@ -2993,6 +3017,8 @@ void CDeclarerPlayEngine::ReviewPlayPlan()
 	if((m_playPlan.GetSize() > 0) && (theApp.GetValue(tnAnalysisTraceLevel) > 4)) 
 	{
 		status << "5PLRV50! The unsorted list of available plays is as follows:\n------>\n";
+		ShowPlayList(m_playPlan);
+/*
 		CString strDesc, reqStr;
 		for(int ix=0;ix<m_playPlan.GetSize();ix++)
 		{
@@ -3005,6 +3031,7 @@ void CDeclarerPlayEngine::ReviewPlayPlan()
 			}
 			status << " Play " & ix+1 & ": " & strDesc &  "\n";
 		}
+*/
 	}
 #endif  // NCR-38 end 
 
@@ -3018,6 +3045,8 @@ void CDeclarerPlayEngine::ReviewPlayPlan()
 	m_playPlan.Activate();
 	status.SetStreamOutputLevel(4);
 	status << "PLRV90! The revised list of available plays is as follows:\n------>\n";
+	ShowPlayList(m_playPlan); // NCR-760
+/*
 	CString strDescription;
 	m_numPlannedRounds = m_playPlan.GetSize();
 	for(int i=0;i<m_numPlannedRounds;i++)
@@ -3025,7 +3054,7 @@ void CDeclarerPlayEngine::ReviewPlayPlan()
 		strDescription = m_playPlan[i]->GetFullDescription();
 		status << " Play " & i+1 & ": " & strDescription & "\n";
 	}
-
+*/
 	//
 	status << "PLRV95! The play plan review is complete.\n";
 	status << "---------------------------\n";
@@ -3145,6 +3174,36 @@ int CDeclarerPlayEngine::CreateNoTrumpPlayPlan()
 		status << "3PLNCNT0! Skipping using finesses because of possiblity of losing control.\n";
 	} // NCR-38 end Q&D to not finesse if there are unstopped suits
 */
+	// NCR-779 Don't Force if too many losers which would set the contract
+	// if #OS cards > top of unstopped suit is >= # cards in thatsuit
+	// func(#OS cards) > max losers allowed  where func() = (#OS/2)+1
+	bool bOkToForce = true;  // assume the best
+	if((numStopped < 4) && ((m_nTrumpSuit == NOTRUMP) || (m_numTotalTrumps == 0)) ) 
+	{
+		int nbrToTest = 4 - numStopped;
+		for(int i=0; i < nbrToTest; i++)
+		{
+			int nUSS = m_pCombinedHand->GetValue(tnUnstoppedSuits, i);  // get next one, could be NONE
+			if(ISSUIT(nUSS))
+			{
+				CCombinedSuitHoldings& aSuit = m_pCombinedHand->GetSuit(nUSS);
+				int numOS = aSuit.GetNumOutstandingCards();
+				int numAboveTop = (aSuit.GetNumCards() > 0) ? aSuit.GetNumMissingAbove(aSuit.GetTopCard()->GetFaceValue())
+															: numOS;
+				// Check if too many higher cards
+				if((numAboveTop >= aSuit.GetNumCards() && (numOS > 0)) 
+					&& ((m_numTricksLeftToBeMade - m_numSureTricks) < (numOS/2)+1)) {
+					bOkToForce = false;   // too many to try a force
+					status << "5PLNCNT1! Skipping using Forces because of possiblity of losing too many tricks."
+						      & " NumOS=" & numOS & ", numAboveTop=" & numAboveTop 
+							  & ", gap=" & (m_numTricksLeftToBeMade - m_numSureTricks) 
+							  & "\n";
+				}
+			}
+		} // end for(i)
+
+	}  // end have unstopped suits NCR-779
+
 	//
 	//---------------------------------------------------------
 	// then look at developing a suit 
@@ -3154,11 +3213,13 @@ int CDeclarerPlayEngine::CreateNoTrumpPlayPlan()
 	//
 	// NCR-44 Skip force and secondary cashes if we don't dare lose control
 	if(bOkToFinesse) {
+	   if(bOkToForce) {  // NCR-779 check if Force allowed
 		FilterPlays(forcePlays);
 		int numForcePlays = forcePlays.GetSize();
 		m_playPlan << forcePlays;
 		m_numPlannedForcePlays = numForcePlays;
 		m_numTotalPlannedTricks += numForcePlays;
+	   } // NCR-779 end skipping Force
 		//
 		FilterPlays(secondaryCashPlays);
 		m_numPlannedSecondaryCashPlays = secondaryCashPlays.GetSize();
@@ -3181,7 +3242,7 @@ int CDeclarerPlayEngine::CreateNoTrumpPlayPlan()
 		m_numPlannedFinesses += numPotentialFinesses;
 	}
 	else {
-		status << "3PLNCNT0! Skipping using finesses because of possiblity of losing control.\n";
+		status << "3PLNCNT3! Skipping using finesses because of possiblity of losing control.\n";
 	} // NCR-38 end Q&D to not finesse if there are unstopped suits
 
 
@@ -4002,7 +4063,8 @@ void CDeclarerPlayEngine::SequencePlays(BOOL bInitialPlan)
 				if(pCash->GetRequiredPlayedCardsList() == NULL) 
 				{
 					// Only move those for the current hand ???
-					if (pCash->GetStartingHand() == nCurrentHand)
+					if ((pCash->GetStartingHand() == nCurrentHand)
+						|| (pCash->GetQuality() > 50) )  // NCR-762 move if high quality
 					{
 						m_playPlan.MovePlayToFront(pCashes->GetAt(nCash));  // NCR-417 Move it to front
 						nMoved++;  // count those moved
@@ -4996,8 +5058,11 @@ void CDeclarerPlayEngine::InterleavePlays()
 				if(m_declarerEntries.GetNumCards() > 0)
 					pCard = m_declarerEntries.GetTopCard();
 			}
+			int maxQualIdx = GetIndexOfBestQualPlay(m_playPlan);  // NCR-761
+			int maxQual = maxQualIdx > 0 ? m_playPlan[maxQualIdx]->GetQuality() : 0;
                         // NCR-700 Don't add Cash if finesse in same suit
-			if(pCard && !((pPlay->GetPlayType() == CPlay::FINESSE) && (pPlay->GetSuit() == pCard->GetSuit())) ) 
+			if(pCard && !((pPlay->GetPlayType() == CPlay::FINESSE) && (pPlay->GetSuit() == pCard->GetSuit())) 
+				&& (maxQual < 50))  // NCR-761 don't insert if have hi pri plans 
 			{  // Flag as Opportunistic for the Cash class Not to skip when equivalent
 				CCash* pCash = new CCash(GetCardOwner(pCard), CPlay::IN_EITHER, NULL, pCard, CPlay::PP_LIKELY_WINNER, TRUE);
 				m_playPlan.AddPlay(0, pCash);  // Insert play at front of list
@@ -5073,6 +5138,14 @@ void CDeclarerPlayEngine::InterleavePlays()
 				 // NCR-264 Need to check if this card is stopper and if there is any unstopped suit that needs to be promoted
 				 // NCR-264 Tests: no Forces needed; No outstanding cards; This hand has entries to be able to play this later
 			{
+				// NCR-775 Make sure this card is not a needed stopper
+				CCardList outstandingCards;
+				int numOutstandingCards = GetOutstandingCards(nSuit, outstandingCards);
+				CCard* pSecCard = suit.GetSecondHighestCard();
+				int numAboveSecCard = (pSecCard == NULL) ? 0 : outstandingCards.GetNumCardsAbove(pSecCard); 
+				if ((numAboveSecCard > 1) && (numOutstandingCards > 3) )
+					continue;  /// NCR-775 Skip cash if this card a stopper
+
 				CString msg = "";  // NCR-277 Add message re
 				if(pRequiredPlayedCards != NULL){ // NCR-277
 					msg.Format(" >Note: %d required cards: %s", pRequiredPlayedCards->GetNumCards(),
@@ -5565,6 +5638,21 @@ int CDeclarerPlayEngine::FindCashingPlays(CPlayList& playList, int& numReqdCards
 				bMoveSuitToFront = true;
 			} // end NCR-683
 
+			// NCR-761 Move play if it could block suit
+			// EG Dummy=KJ653 & Hand=QT need to cash Q first then lead T to K
+			CCard* pCardToPlay = suit[j];
+			bool bCardInHand = GetCardOwner(pCardToPlay) == CPlay::IN_HAND;
+			CSuitHoldings& handWithCard = bCardInHand ? suit.GetDeclarerSuit() : suit.GetDummySuit();
+			CSuitHoldings& otherHand = bCardInHand ? suit.GetDummySuit() : suit.GetDeclarerSuit();
+		
+			// NCR-761 Move cash to front if in doubleton and this card > 2nd card
+			//  and the other hand has more cards
+			if(handWithCard.IsDoubleton() && (otherHand.GetSecondHighestCard() < pCardToPlay) 
+				&& (otherHand.GetNumCards() > handWithCard.GetNumCards()) ) {
+				bMoveToFront = true;    // NOTE: Not any use if the list is empty!!!
+				pPlay->SetQuality(77);  //????
+			}  // end NCR-761
+
 
 			if(bMoveToFront)
 				localPlayList.AddPlay(nInsertIdx++, pPlay);  // To front and incr index 
@@ -5605,6 +5693,8 @@ int CDeclarerPlayEngine::FindCashingPlays(CPlayList& playList, int& numReqdCards
 			CPlay * pNextPlay = localPlayList.PopPlay();
 			if(bMoveSuitToFront)   // NCR-683 should this suit's plays go first?
 				playList.AddPlay(nInsertIdx2++, pNextPlay);
+			else if(pNextPlay->GetQuality() > 75.0)
+				playList.AddPlay(0, pNextPlay);  // NCR-761 add to front ???
 			else
 				playList << pNextPlay;
 		}
@@ -6849,7 +6939,10 @@ int CDeclarerPlayEngine::FindSuitDevelopmentPlays(CPlayList& forcePlayList, CPla
 			{
 				CCard* dmyCard = suit.GetDummyCard(0);  // get card
 				// Check if the singleton is in the top bunch
-				if(suit.GetSequence2(0).HasCard(dmyCard)) {
+				if(suit.GetSequence2(0).HasCard(dmyCard)
+					// NCR-753 can't force with the high card
+					&& (dmyCard->GetFaceValue() < outstandingCards.GetTopCard()->GetFaceValue())
+					) {
 					pForceCard = dmyCard; // use the singleton
 				}
 			}
@@ -6858,11 +6951,19 @@ int CDeclarerPlayEngine::FindSuitDevelopmentPlays(CPlayList& forcePlayList, CPla
 				pForceCard = pLastCard;
 			}
 			ASSERT(pForceCard != NULL);
+
+			// NCR-763 can't force if a high card on trick already
+			if(pCurrTopCard && (pCurrTopCard->GetFaceValue() > pForceCard->GetFaceValue()))
+				continue; // skip trying a force
+
 			int ix, j; // NCR-FFS added here, removed below
 			for(/*int*/ ix=nIndex,j=0; ix<nIndex+numForces; ix++,j++)
 			{
 				//
 				CCard* pTargetCard = outstandingCards[j];
+				// NCR-763 Can't "Force" a lower valued card
+				if(pForceCard->GetFaceValue() > pTargetCard->GetFaceValue())
+					break; //  DONE, exit loop
 				// play the next highest card from our hand
 //NCR-449		CCard* pCard = suit.GetHighestCardBelow(pLastCard);
 //				ASSERT(pCard != NULL);
@@ -7106,6 +7207,18 @@ int CDeclarerPlayEngine::FindDropPlays(CPlayList& playList)
 			int numLongCardsAfter = suit.GetMaxLength() - numSuitTopCards;
 			double quality = (numLongCardsAfter - numOSCardsAfter) + 0.5*(numLongCardsAfter - (numOSCardsAfter+1)/2);
 			pDrop->SetQuality(quality);  //  NCR-707 save the quality
+
+			// NCR-760 See if there could be a blocking problem
+			if((nTargetHand == CPlay::IN_DUMMY) && (m_numDummyEntries == 1)
+				&& (declarer.GetNumCards() > 1) && (dummy.GetNumCards() > 2)) {
+				// If Dummy = Axxxx and Hand = YYZ with Y > x and x > Z
+				// you need to save Z as an entry to dummy 
+				// lead Y to A instead of Z to preserve entry
+				if(dummy.GetSecondHighestCard() > declarer.GetBottomCard()) {
+					CCard* pCardToLead = declarer.GetSecondLowestCard();
+					pDrop->SetAuxCard(pCardToLead);
+				}
+			}  // end NCR-760
 
 			// and add
 			playList << pDrop;
@@ -8309,7 +8422,32 @@ int CDeclarerPlayEngine::GetCardOwner(CCard* pCard) const
 // Observation routines
 //
 //
+//
+//  Show plays in list  NCR-760
+//
+void CDeclarerPlayEngine::ShowPlayList(CPlayList& playList) {
+	CString strDesc, reqStr;
+	CPlayerStatusDialog& status = *m_pStatusDlg;
 
+	int m_numPlannedRounds = playList.GetSize();
+	for(int i=0;i<m_numPlannedRounds;i++)
+	{
+		CCardList* pReqList = playList[i]->GetRequiredPlayedCardsList(); 
+		bool bHasReqPlay = pReqList != NULL;
+		CString qualMsg = "";
+		int qualVal = playList[i]->GetQuality();
+		if(qualVal != 0) {
+			qualMsg.Format(" > Qual=%d", qualVal);
+		}
+		strDesc = playList[i]->GetFullDescription(); 
+		if(bHasReqPlay) {  // Build string showing number required
+			reqStr.Format(" <Requires: %d card(s)>", pReqList->GetNumCards());
+			strDesc += reqStr;
+		}
+		status << " Play " & i+1 & ": " & strDesc & qualMsg & "\n";
+	}  // end for(i) through play list
+
+}
 
 
 

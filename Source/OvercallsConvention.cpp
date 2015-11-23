@@ -456,8 +456,8 @@ BOOL COvercallsConvention::RespondToConvention(const CPlayer& player,
 		}
 		else
 		{
-			// a simple 2-level overcall
-			bidState.m_fPartnersMin = OPEN_PTS(10);
+			// a simple 2-level overcall                    // NCR-739 13 pts at 3 level
+			bidState.m_fPartnersMin = (nPartnersBidLevel == 3) ? OPEN_PTS(13) : OPEN_PTS(10);
 			bidState.m_fPartnersMax = OPEN_PTS(15);
 			status << "ROVRC5! Partner overcalled at the 2-level, indicating a good 5+ card "				  
 					  & STSS(nPartnersSuit) & " suit, " & bidState.m_fPartnersMin & "-" & bidState.m_fPartnersMax & 
@@ -926,6 +926,11 @@ BOOL COvercallsConvention::HandleConventionResponse(const CPlayer& player,  // N
 					  " pts in the partnership, we can raise to game at " &
 					  BTS(nBid) & ".\n";
 		}
+		else if(bidState.IsGameBid(nPartnersBid))  // NCR-732 Pass if at game
+		{
+			status << "OVRRB62! Partner bid game, so pass.\n";
+			nBid = BID_PASS;
+		}
 		else 
 		{
 			// otherwise make a more modest response
@@ -1014,9 +1019,19 @@ BOOL COvercallsConvention::HandleConventionResponse(const CPlayer& player,  // N
 		int nRebidLevel = BID_LEVEL(nRebid);  // NCR-57 get level from bid
 		// NCR-495 Was pard's bid a cue bid?
 		if(bPartnersBidWasCue && (fMinTPPoints >= PTS_GAME-1)) {
-			nBid = nRebid;
-			status << "OVRRB77! With " & fMinTPCPoints & "-" & fMaxTPCPoints & " points, go back to our suit by bidding " 
+			// NCR-756 rebid with minimum hand
+			if(bidState.fCardPts < 12) {
+				nBid = nRebid;   //NCR-756 use old suit
+				status << "OVRRB77! With " & fMinTPCPoints & "-" & fMaxTPCPoints 
+					       & " points, go back to our suit by bidding " 
+					       & BTS(nBid) & ".\n";
+			}else {
+				int nNewSuit = bidState.GetNextBestSuit(nPrefSuit);  //  NCR-756 get next best
+				nBid = bidState.GetCheapestShiftBid(nNewSuit, nLastBid);  // NCR-756 bid in new suit
+			    status << "OVRRB77a! With " & fMinTPCPoints & "-" & fMaxTPCPoints 
+				       & " points, bid new suit by bidding " 
 				       & BTS(nBid) & ".\n";
+  			}
 		} 
 		else 
 		// raise partner with 2 trumps

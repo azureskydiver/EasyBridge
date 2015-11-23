@@ -481,7 +481,7 @@ double CSuitHoldings::CountPoints(const BOOL bForceCount)
 		m_numQuickTricks = 2;
 		m_numStoppers = 2;
 		m_bSuitStopped = TRUE;
-		m_bSuitProbablyStopped = TRUE;
+		m_bSuitProbablyStopped = TRUE; 
 	} 
 	else if ((m_numCards >= 2) && 
 			 (m_cards[0]->GetFaceValue() == ACE) && (m_cards[1]->GetFaceValue() == QUEEN)) 
@@ -1019,12 +1019,38 @@ void CSuitHoldings::EvaluateHoldings()
 			}
 		}
 	} 
-	else if (m_numCards < 10) 
+	else if (m_numCards == 3) //< 10) // NCR-728 rework following
 	{
-		// here, we have 3-13 cards 
-		// we may have a lot of cards in the suit if we're looking at a
-		// combined holding or a freakish hand
-		if (m_numCards == 13) 
+		// Sort out Axx->2, AKx>1 and AKQ->0
+		if (m_cards[0]->GetFaceValue() == ACE) 
+		{   
+			if(m_cards[1]->GetFaceValue() == KING){
+				if(m_cards[2]->GetFaceValue() == QUEEN) {
+					// AKQ->0
+				}
+				else  // AKx->1
+					m_numLikelyLosers = 1;
+			}else{  // Axx
+				m_numLikelyLosers = 2;
+			}
+		}	// KQx->1, Kxx->2
+		else if(m_cards[0]->GetFaceValue() == KING) 
+		{	
+			if (m_cards[1]->GetFaceValue() == QUEEN)
+				m_numLikelyLosers = 1;
+			else
+				m_numLikelyLosers = 2;
+		}  // xxx->
+		else {
+			m_numLikelyLosers = 3;
+		}
+		// end NCR-728 rework
+
+	// here, we have 4-13 cards 
+	// we may have a lot of cards in the suit if we're looking at a
+	// combined holding or a freakish hand
+	}
+	else if (m_numCards == 13) 
 		{
 			// no losers in the suit
 		}
@@ -1057,7 +1083,7 @@ void CSuitHoldings::EvaluateHoldings()
 			// at least one honor; else add 1 loser
 			if ((m_numCards >= 4) && (m_numHCPoints == 0)) 
 			{
-				m_numLikelyLosers++;
+				m_numLikelyLosers++; 
 			}
 			// NCR-260 this seems too liberal
 			// Must be more losers if ???
@@ -1067,6 +1093,10 @@ void CSuitHoldings::EvaluateHoldings()
 					m_numLikelyLosers++;
 			} // NCR-260 end
 		}
+	
+	// NCR-672 Can number of losers exceed the number of cards?
+	if(m_numLikelyLosers > m_numCards) {
+		m_numLikelyLosers = m_numCards;  // NCR-672 reset to number of cards
 	}
 
 	// and set the winners/losers count

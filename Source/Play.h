@@ -123,6 +123,7 @@ public:
 	virtual void        ClearSecondSuit() {m_nSuit2 = NONE;}   // NCR-411
 	virtual int         GetQuality() {return m_nQuality;} // NCR-707
 	virtual void        SetQuality(int qual) {m_nQuality = qual;}  // NCR-707
+	virtual void        SetAuxCard(CCard* auxCard) {m_pAuxCard = auxCard;} // NCR-760
 	virtual CString		GetFullDescription() = 0;
 	// basic functions
 	virtual PlayResult	Perform(CPlayEngine& playEngine, CCombinedHoldings& combinedHand, 
@@ -157,6 +158,7 @@ public:
 	virtual CCardList*	GetEnemyOrKeyCardsList() { return m_pEnemyOrKeyCardsList; }
 	virtual CCard*		GetConsumedCard() { return m_pConsumedCard; }
 	virtual CCard*		GetTargetCard() { return m_pTargetCard; }
+	virtual CCard*      GetAuxCard() {return m_pAuxCard;}  // NCR-760
 	virtual CCardList*	GetTargetCardsList() { return m_pTargetCardsList; }
 	virtual CCardList*	GetRequiredPlayedCardsList() { return m_pRequiredPlayedCardsList; }
 	virtual LPCTSTR		GetName() { return m_strName; }
@@ -198,6 +200,7 @@ protected:
 	//
 	CCard*		m_pConsumedCard;		// card that will be used up, if any
 	CCard*		m_pTargetCard;			// enemy card that is the target of the play
+	CCard*      m_pAuxCard;             // NCR-760 auxiliary card as needed
 	CCardList*	m_pTargetCardsList;		// enemy target cards 
 	CCardList*	m_pKeyCardsList;		// key cards required for the play
 	CCardList*	m_pOrKeyCardsList;		// one or more of these key cards are rq'd

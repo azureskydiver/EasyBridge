@@ -488,6 +488,7 @@ BOOL CJacobyTransferConvention::HandleConventionResponse(const CPlayer& player,
 	//
 	// see if we're below game
 	//
+	double testing = PTS_GAME; // NCR-DEBUG to see the pts >> 25
 	if (bidState.m_fMinTPPoints < PTS_GAME)
 	{
 		// are we correctiug?             // NCR-626 Check pard has not bid game
@@ -567,8 +568,12 @@ BOOL CJacobyTransferConvention::HandleConventionResponse(const CPlayer& player,
 		} 
 		else 
 		{
-			if (bidState.m_fMinTPPoints < PTS_MINOR_GAME)
+			if ((bidState.m_fMinTPPoints < PTS_MINOR_GAME) || (bidState.numAces == 0))  // NCR-765 Need Aces to bid 5
+			{
+				//  NCR - Should this be a min bid vs 4???
+				nBid = bidState.GetCheapestShiftBid(nTargetSuit, nPartnersBid);  // NCR-737
 				nBid = MAKEBID(nTargetSuit, 4); // NCR this precludes Opener going to 3NT ???
+			}
 			else
 				nBid = MAKEBID(nTargetSuit, 5);
 		}

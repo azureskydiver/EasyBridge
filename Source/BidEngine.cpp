@@ -2642,7 +2642,8 @@ BOOL CBidEngine::TestForPenaltyDouble()
 	}
 
 	// test -- need n+1 tricks (i.e., can set by 2 tricks) to double
-	if (numLikelyTricks >= (numTricksRequired+1))
+	if ((numLikelyTricks >= (numTricksRequired+1))
+		|| ((numLikelyTricks >= numTricksRequired) && (nTrumpSuit == NOTRUMP)) )  // NCR-744 1 trick enough for NT
 	{
 		// double!
 		status << "2TSTDBL4! But upon reconsideration, we have at least " & numLikelyTricks & 

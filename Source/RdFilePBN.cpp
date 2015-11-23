@@ -58,7 +58,7 @@ const char* tszTagName[] = {
 	"Note",				// 30
 	"Description", 
 	"Generator", 
-	"", "", 
+	"OptimumScore", "",   // NCR-776 for BridgeWebs files
 	"", "", "", "", 
 	"*",				// 39
 };
@@ -344,6 +344,11 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 					pGameRecord->m_strBiddingNotes.Add(strValue);
 				else if (nPreviousTag == TAG_PLAY)
 					pGameRecord->m_strPlayNotes.Add(strValue);
+				break;
+
+
+			case TAG_OPTIMUMSCORE:  // NCR-776 for BridgeWebs files
+				// ignore 
 				break;
 
 			case TAG_TERMINATOR:

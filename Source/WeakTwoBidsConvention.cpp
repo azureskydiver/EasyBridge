@@ -53,12 +53,13 @@ BOOL CWeakTwoBidsConvention::TryConvention(const CPlayer& player,
 				(bidState.numPrefSuitCards >= 6) && 
 				(bidState.numHonorsInPrefSuit 
 				       // NCR-150 Allow only 1 if aggressive
-				  >= ((theApp.GetBiddingAgressiveness() < 1) ? 2 : 1)) && 
+				       >= ((theApp.GetBiddingAgressiveness() < 1) ? 2 : 1)) && 
 				(bidState.numPrefSuitPoints >= 4) && 
 //			 	(bidState.numQuickTricks >= 1.5) &&
 			 	(bidState.numCardsInSuit[OTHER_MAJOR(bidState.nPrefSuit)] < 4) &&
 			 	(bidState.numVoids == 0) &&
-			 	(bidState.numSingletons <= 1)) 
+			 	(bidState.numSingletons <= 1)
+				&& (bidState.fCardPts < OPEN_PTS(12)) )  // NCR-733 Hand could open 1 
 	{
 		// this meets the requirements
 		int nSuit = bidState.nPrefSuit;
@@ -126,13 +127,14 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 	{
 		// no more actions beyond this stage
 		bidState.SetConventionStatus(this, CONV_FINISHED);
+		int nBid;
 
 		// need to check only if partner responded to our 2NT response
-		// NCR 3NT response if partner has 10+ pts and NO feature
-		if ((nPreviousBid == BID_2NT) && (nPartnersBid != BID_3NT) // NCR test if response of 3NT
-			 && ISBID(nPartnersBid))
+		if (nPreviousBid == BID_2NT) 
 		{
-			int nBid;
+		  // NCR 3NT response if partner has 10+ pts and NO feature
+		  if ((nPartnersBid != BID_3NT) && ISBID(nPartnersBid))   // NCR test if response of 3NT
+		  {
 			// see if partner bid a suit or bailed out
 			if (nPartnersSuit != nPartnersPrevSuit)
 			{
@@ -162,6 +164,7 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 							  BTS(nBid) & ".\n";
 				}
 			}
+			
 			else
 			{
 				// partner returned to his old suit
@@ -169,10 +172,29 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 				status << "RWKT2B5! Partner has returned to his original " & STSS(nPartnersPrevSuit) &
 						  " suit, indicating no interest in game, so we pass.\n";
 			}
-			bidState.SetBid(nBid);
-			return TRUE;
-		}
-		else
+		  }
+		  // NCR-769 3NT means 9+ pts and no features
+		  else if (nPartnersBid == BID_3NT)
+		  {
+				if (bidState.bBalanced) {
+					nBid = BID_PASS;  // leave it there	
+					status << "RWKT2B6! And since we have a balanced hand with "
+						       & bidState.fCardPts & " HCPs, pass at game of NT.\n";
+				}
+				else 
+				{
+					// return to partner's suit
+					nBid = bidState.GetCheapestShiftBid(nPartnersPrevSuit);
+					status << "RWKT2B7! With a total of " & bidState.m_fMinTPPoints & "-" & bidState.m_fMaxTPPoints &
+							  " pts in the partnership return to partner's suit at " &
+							  BTS(nBid) & ".\n";
+				}
+		  }  // end NCR-769 for pard's response of 3NT
+
+		  bidState.SetBid(nBid);
+		  return TRUE;
+		}  // end our previous 2NT
+//		else
 		{
 			// nothing more here
 			return FALSE;
@@ -314,13 +336,14 @@ BOOL CWeakTwoBidsConvention::RespondToConvention(const CPlayer& player,
 
 	//
 	//-----------------------------------------------------------------
-	// 13-19 pts:
+	// 13-19 pts:  NCR-740 raise upper to 22 => need 23 for slam
 	// try for game
 	//
+	double UpperBnd = PTS_GAME-3; // NCR-740 Set variable
 	if ( ((nPartnersSuitSupport < SS_WEAK_SUPPORT) && 
-							(fPts >= OPEN_PTS(13)) && (fPts <= PTS_GAME-6)) ||
-		 ((nPartnersSuitSupport >= SS_WEAK_SUPPORT) && 
-					 		(fAdjPts >= OPEN_PTS(13)) && (fAdjPts <= PTS_GAME-6)) ) 
+							(fPts >= OPEN_PTS(13)) && (fPts <= UpperBnd)) 
+		|| ((nPartnersSuitSupport >= SS_WEAK_SUPPORT) && 
+					 		(fAdjPts >= OPEN_PTS(13)) && (fAdjPts <= UpperBnd)) ) 
 	{
 		//
 		status << "RWKT15! We have " & fCardPts & "/" & fPts & "/" & fAdjPts &
@@ -730,17 +753,24 @@ BOOL CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player, // 
 			status << "HRWT41! Show our outside " &  (bAceFound? "Ace" : "King") & 
 					  " with a bid of " & BTS(nBid) & ".\n";
 		}
+		// NCR-769 Bid 3NT if > 8 HCPs
+		else if(fCardPts > 8)
+		{
+			nBid = BID_3NT;
+			status << "HRWT42! Show our strength " &  fCardPts
+					  & " with a bid of " & BTS(nBid) & ".\n";
+		}
 		else
 		{
 			// bail out
 			nBid = bidState.GetCheapestShiftBid(nPreviousSuit);
-			status << "HRWT42! Unfortunately, we have no outside Aces or Kings, so bail out at " & 
+			status << "HRWT43! Unfortunately, we have no outside Aces or Kings, so bail out at " & 
 					  BTS(nBid) & ".\n";
 		}
 		//
 		bidState.SetBid(nBid);
 		return TRUE;
-	}
+	} // end pard bid 2NT
 
 
 	// a raise to the 3-level is weak (preemptive)
@@ -750,7 +780,7 @@ BOOL CWeakTwoBidsConvention::HandleConventionResponse(const CPlayer& player, // 
 		// 
 		nBid = BID_PASS;
 		bidState.SetAgreedSuit(nPreviousSuit);
-		status << "HRWT42! Partner responded to our weak " & bidState.szPVS & 
+		status << "HRWT46! Partner responded to our weak " & bidState.szPVS & 
 				  " bid with a weak raise to " & bidState.szPB & 
 				   ".  The partnership likely lacks enough points for game, so pass.\n";
 		bidState.SetBid(nBid);

@@ -1173,6 +1173,21 @@ CCard* CDefenderPlayEngine::GetLeadCard()
 				}
 			} // NCR end defeating contract by cashing a winner
 
+			// NCR-766 take our winners if near end of play
+			// NCR-774 Take winners if NT and no future entries
+			if((nRound > 8) || (nTrumpSuit == NOTRUMP && m_pHand->GetNumWinners() > 0 
+				                // NCR-774 What is following good for?
+				                && ((m_pHand->GetNumWinners() + m_pHand->GetNumLosers() + nRound) >= 13) ) ) 
+			{
+				pLeadCard = CashWinners();
+				if (pLeadCard)
+				{
+					status << "PLYLD46! Cash a winner with the " & pLeadCard->GetName() & ".\n";
+					ASSERT(m_pHand->HasCard(pLeadCard));
+					return pLeadCard;
+				}
+			}  // NCR-766 end cashing winners at end of play
+
 			// see if partner has expressed a suit preference and has not shown out
 			// of that suit
 			pLeadCard = FindLeadCardFromPartnerPreference();
@@ -2222,6 +2237,9 @@ CCard* CDefenderPlayEngine::GetDiscard()
 				break;  // no choice, have to play one of these
 			if(suitT == suitD) 
 				continue;  // don't discard if dummy has
+			// NCR-750 Don't discard possible winner
+			if((theSuit.GetNumMissingSequences() > 0) && (theSuit.GetNumLikelyWinners() > 0) )
+				continue; //  dont' discard a winner
 			pDiscard = theSuit.GetBottomCard();
 			return pDiscard;
 
@@ -2376,6 +2394,8 @@ CCard* CDefenderPlayEngine::GetDiscard()
 
 		// look through the sorted list of suits
 		CSuitHoldings* pMaybeSuit = NULL;  // NCR save possible suit
+		bool maybeSuitNeedsGuards = false;  // NCR-752 Keep track if this suit needs guards
+
 		for(i=0;i<4;i++)
 		{
 			// check out the suit
@@ -2389,7 +2409,9 @@ CCard* CDefenderPlayEngine::GetDiscard()
 			if(pTopOutstandingCard == NULL) 
 			{
 				// NCR if no outstanding cards in this suit, then is this suit an orphan?
-				if(hand.GetNumCards() < 5)  // NCR arbitrary test for nmbr cards left in hand
+				// NCR-767 Don't discard a winner (#win = #cards)(yet)
+				if((hand.GetNumCards() < 5)  // NCR arbitrary test for nmbr cards left in hand
+					&& (suit.GetNumWinners() < suit.GetNumCards()) ) // NCR-767
 					pDiscardSuit = &hand.GetSuit(nSuit);  // NCR this eligible for discard
 				pTopOutstandingCard = deck.m_pNoCard;  // NCR vs NULL tests???
 			}
@@ -2400,6 +2422,10 @@ CCard* CDefenderPlayEngine::GetDiscard()
 			// NCR skip suit if there is an honor that needs protection
 			const int numCards = suit.GetNumCards();
 			const int topCardFV = suit.GetTopCard()->GetFaceValue();
+			const int numOSCardsAboveTopCard = suit.GetNumMissingAbove(topCardFV);  // NCR-752
+			bool suitNeedsGuards = (numOSCardsAboveTopCard > 1) && (numOSCardsAboveTopCard < 3)
+				                   && (numCards == numOSCardsAboveTopCard + 1);  // NCR-752
+
 			if(((topCardFV == KING) && (*pTopOutstandingCard > KING) 
 				  && (numCards == 2)) // King needs 1
 				|| ((topCardFV == QUEEN) && (*pTopOutstandingCard > QUEEN) 
@@ -2416,15 +2442,32 @@ CCard* CDefenderPlayEngine::GetDiscard()
 //???				if((numLosers == 0) && (suit.GetNumWinners() > 1)) 
 				// NCR-81 discard this singleton if its a loser
 				// NCR-233 Don't discard a singleton King or Queen
-				if((numLosers == numCards) && (((numCards == 1) && (topCardFV < QUEEN)) || (topCardFV <= TEN)
+				if((numLosers == numCards) && (((numCards == 1) && (topCardFV < QUEEN)) 
+					                           || (topCardFV <= TEN)
 					                              // NCR-238 Discard if lots of cards
-					                           || (numCards > 4)) )  
+					                           || (numCards >= 4)) )  // NCR-752 added =  
 				{
 					pDiscardSuit = &suit;  // NCR use this if lots of losers
 					break;				// use this one
 				}
 				else
 				{
+					// NCR-752 Ok to discard from suit with top card
+					if((numCards > 1) && (topCardFV > pTopOutstandingCard->GetFaceValue()) ) 
+					{
+						if(pMaybeSuit == NULL) {
+							pMaybeSuit = &suit;  // could use this if have a winner
+							maybeSuitNeedsGuards = suitNeedsGuards;  // remember
+							continue;
+						}
+						// How to decide to replace pMaybeSuit?
+						if(maybeSuitNeedsGuards) {
+							pMaybeSuit = &suit;
+							maybeSuitNeedsGuards = suitNeedsGuards;
+						}
+
+					}  // end NCR-752
+
 					// NCR-107 Save longer suit if a choice
 					if((pMaybeSuit != NULL) 
 					   && ((pMaybeSuit->GetNumCards() < numCards)
@@ -2438,10 +2481,12 @@ CCard* CDefenderPlayEngine::GetDiscard()
 						       && (suit.GetNumMissingAbove(topCardFV) < MAX(1,numCards-2)) /*suit.IsSuitStopped()*/)) )
 					{
 						pMaybeSuit = &suit;  // NCR save as possible, if nothing better
+						maybeSuitNeedsGuards = suitNeedsGuards;  // remember
 					}
 					else if (pMaybeSuit == NULL) 
 					{
 						pMaybeSuit = &suit; // NCR-118 save this one ???
+						maybeSuitNeedsGuards = suitNeedsGuards;  // remember
 					}
 					// don't discard from this suit if possible;
 					continue;
@@ -3041,7 +3086,10 @@ CCard* CDefenderPlayEngine::PlaySecond()
 					) )
                // NCR-528 Play high if we have top cards
 			|| ((suit.GetTopSequence().GetNumCards() > 1) && (numOutstandingCards > 0) 
-			    && (suit.GetTopSequence().GetTopCard()->GetFaceValue() > outstandingCards.GetTopCard()->GetFaceValue()) )   
+			    && (suit.GetTopSequence().GetTopCard()->GetFaceValue() > outstandingCards.GetTopCard()->GetFaceValue()) )  
+			  // NCR-747 Play high if our cards are the highest
+			|| ((suit.GetSequence2(0).GetNumCards() > 1) && (numOutstandingCards > 0)
+				&& (suit.GetSequence2(0).GetTopCard()->GetFaceValue() > pCurrTopCard->GetFaceValue()) )
 		  )
 		{
 			// NCR-56 Find card that we need to beat
@@ -3532,10 +3580,21 @@ end NCR removal*/
 									}
 									else if (nCurrentRound == 0) 
 									{
+										// NCR-751 Use Rule of 11 to compute whats' out
+										int numBiggerCardsOut = 11 - pPartnersCard->GetFaceValue();
+										int numInDummy = dummySuit.GetNumCardsAbove(pPartnersCard);
+										int numInMine = suit.GetNumCardsAbove(pPartnersCard);
+										int numInTrick = (pDOC->GetCurrentTrickCard(pDummy->GetPosition())->GetFaceValue() 
+								                         > pPartnersCard->GetFaceValue()) ? 1 : 0;
+										int numInDeclarer = numBiggerCardsOut - numInDummy - numInMine - numInTrick;
+
 										// // NCR play high card on partner's first lead
 										int smallCardFV = 7; // NCR-159 set FaceValue for following tests
-										if(suit.GetTopCard()->GetFaceValue() < JACK)  // NCR-579 Don't play high into declr
+										if((suit.GetTopCard()->GetFaceValue() < JACK)  // NCR-579 Don't play high into declr
+											|| (numInDeclarer < 2) )  // NCR-751 Play high if only one
+										{
 											pCard = suit.GetTopCard();
+										}
 										// NCR-7 don't beat pard's card
 										else if((suit.GetNumCards() > 1)
 											     && (suit.GetSecondHighestCard()->GetFaceValue() < pCurrTopCard->GetFaceValue()) //NCR-7
@@ -3575,7 +3634,7 @@ end NCR removal*/
 										}
 									}
 									// NCR chose message
-									if(pCard->GetFaceValue()  < pCurrTopCard->GetFaceValue()) {
+									if(pCard->GetFaceValue() < pCurrTopCard->GetFaceValue()) {
 										status << "PLDF36! Partner's " & pCurrTopCard->GetFaceName() & 
 											  " is high or we can't beat the highest card, so discard the " & 
 											  pCard->GetName() & ".\n";
@@ -3602,12 +3661,18 @@ end NCR removal*/
 								// NCR check if our top two cards bracket dummy's cards
 								// THIS NEED WORK ??? eg topSequence vs [0]
 								if ((m_pRHOpponent == pDummy) && (dummySuit.GetNumCards() > 0) 
-									&& (numCardsInSuitLed < 4)  // only notice dummy if few cards left ???
+//NCR-749									&& (numCardsInSuitLed < 4)  // only notice dummy if few cards left ???
 									&& (suit.GetNumCards() > 1) && (suit.GetNumSequences() > 1)
 									&& InSequence(suit.GetLowestCardAbove(dummySuit[0]), dummySuit[0],
-												  suit.GetHighestCardBelow(dummySuit[0])) )
+												  suit.GetHighestCardBelow(dummySuit[0])) 
+								    // NCR-749 only if pard'd card is lower
+									&& (pPartnersCard->GetFaceValue() 
+									    < suit.GetHighestCardBelow(dummySuit[0])->GetFaceValue())  ) 
 								{
 									pCard = suit.GetHighestCardBelow(dummySuit[0]); // if inSeq this will do 
+									// NCR-749 Use smaller card if ours same as pards
+									if(pDOC->AreSameValue(pPartnersCard, pCard))
+										pCard =  suit.GetBottomCard();
 								}
 								else
 								{
@@ -3725,6 +3790,17 @@ end NCR removal*/
 							else   // NCR-499 Third hand should play high ???
 							{
 								pCard = suit.GetTopSequence().GetBottomCard(); // NCR-499 
+								// NCR-715 Check if we can play lower card that is just as good
+								if(dummySuit.GetNumCards() > 0) {
+									CCard* pCard2 = suit.GetHighestCardBelow(dummySuit[0]);
+									if((pCard2 != NULL) && pDOC->AreSameValue(pCard2, dummySuit.GetTopCard())
+										&& (pCard2->GetFaceValue() > pActualTopCard->GetFaceValue()))  // NCR-726 Make sure higher
+									{
+										pCard = pCard2;  // use if same as dummy's high card
+									}
+								} // end NCR-715
+
+
 							}
 							// NCR-505 What if pard did NOT lead 4th card? Would he with suit contract?
 							if(ISSUIT(nTrumpSuit))
@@ -3805,14 +3881,15 @@ end NCR removal*/
 				{
 					// NCR unblock if NT, have 2 cards and pard has lead this suit before
 					// NCR Q&D needs work ???
-					if(ISNOTRUMP(nTrumpSuit) && (numCardsInSuitLed == 2)
+					if (ISNOTRUMP(nTrumpSuit) && (numCardsInSuitLed == 2)
 						// NCR-616 Don't unblock if dummy has high card
 						&& !((dummySuit.GetNumCards() > 1) 
 						     && pDOC->AreSameValue(dummySuit.GetTopCard(), suit.GetTopCard()))
-							 // NCR-656 Don't unblock if dummy will have a winner
-							 && !((dummySuit.GetNumCards() > 0)
-							      && (suit.GetTopCard()->GetFaceValue() > dummySuit.GetTopCard()->GetFaceValue())	
-							      && (suit.GetBottomCard)()->GetFaceValue()  < dummySuit.GetTopCard()->GetFaceValue()) )
+						// NCR-656 Don't unblock if dummy will have a winner
+						&& !((dummySuit.GetNumCards() > 0)
+						      && (suit.GetTopCard()->GetFaceValue() > dummySuit.GetTopCard()->GetFaceValue())	
+						      && (suit.GetBottomCard)()->GetFaceValue()  < dummySuit.GetTopCard()->GetFaceValue()) 
+					    && (nCurrentRound < 11)		  )  // NCR-777 Don't unblock before last trick
 					{
 						// NCR need special logic at end of play - save entries if we have winners
 						if ((nCurrentRound < 8) 

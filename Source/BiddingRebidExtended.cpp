@@ -111,7 +111,20 @@ int CBidEngine::MakeRebidExtended()
 	}
 
 
+	// NCR-722 Did partner redouble?
+	if(nPartnersBid == BID_REDOUBLE) {
+		// In some cases rebid may be requesting further bids. 
+		m_nBid = BID_PASS;
+		status << "BXPNTrd! Partner has redoubled, so we pass.(Don keeps doing this)\n";
+		return ValidateBid(m_nBid);
+	}  // NCR-722 end pard redoubled
 
+	// NCR-723 Did partner double a game
+	if(nPartnersBid == BID_DOUBLE && IsGameBid(pDOC->GetLastValidBid())) {
+		m_nBid = BID_PASS;
+		status << "BXPNTd! Partner has doubled, so we pass.\n";
+		return ValidateBid(m_nBid);
+	}
 
 	//
 	//============================================================
@@ -126,8 +139,8 @@ int CBidEngine::MakeRebidExtended()
 	// we want to raise the contract to game if possible, and also see 
 	// if we have any pretensions towards slam
 	//
-	if ((m_nAgreedSuit == NONE) && (nPartnersSuit == nPreviousSuit) &&
-											(nPartnersSuit != NOTRUMP))
+	if ((m_nAgreedSuit == NONE) && (nPartnersSuit == nPreviousSuit) 
+		 && (nPartnersSuit != NOTRUMP) && (nPartnersBid != BID_DOUBLE) )  // NCR-721 Skip double
 	{
 		// see if we had shifted last time
 		if ((nPreviousSuit != nFirstRoundSuit) && ISSUIT(m_nIntendedSuit) && 
@@ -743,6 +756,18 @@ int CBidEngine::MakeRebidExtended()
 				  // NCR-661 What other options do we have?
 				  if (BidNextBestSuit(SUIT_ANY,SHIFT_CHEAPEST, PTS_GAME-3, 99, LENGTH_5, SS_OPENABLE))
 					return ValidateBid(m_nBid);
+				  // NCR-730 Check some more values
+				  if((m_fMinTPPoints >= PTS_GAME) && ISSUIT(nPartnersSuit) 
+					  && (numCardsInSuit[nPartnersSuit] > 2)
+					  && (numSuitPoints[nPartnersSuit] > 2)) {
+					m_nBid = MAKEBID(nPartnersSuit, 4);
+					status << "BXG30! Despite having " & numPrefSuitCards 
+						& " cards in our preferred " & szPrefS & " suit and " 
+						& m_fMinTPPoints & "-" & m_fMaxTPPoints
+						& " partnership points, we can't push our minor so we'll support partner's major"
+						& " and bid " & BTS(m_nBid) & ".\n";
+					return ValidateBid(m_nBid);
+				  }  // end NCR-730 
 				}
 
 				// else pass
@@ -1157,8 +1182,8 @@ int CBidEngine::MakeRebidExtended()
 	//  - pass otherwise
 
 	if ((nRound == 2) && (nPartnersSuit != nPartnersPrevSuit) &&
-							(nFirstRoundSuit != nPreviousSuit) &&
-		  							(nPartnersSuit != NOTRUMP)) 
+							(nFirstRoundSuit != nPreviousSuit) 
+		  					&& (nPartnersSuit != NOTRUMP) && (nPartnersBid != BID_DOUBLE) )  // NCR-721 Skip double
 	{
 		// remark on partner's move
 		if ((nPartnersSuit == nNextPrevSuit)
@@ -1521,7 +1546,8 @@ int CBidEngine::MakeRebidExtended()
 				{
 					// else pass without enough strength
 					m_nBid = BID_PASS;
-					status << "BXPNT3! But without enough points to press the issue, we have to pass.\n";
+					status << "BXPNT3! But without enough points (" & m_fMinTPCPoints & "-" & m_fMaxTPCPoints 
+						    & ") to press the issue, we have to pass.\n";  // NCR added points
 				}
 				return ValidateBid(m_nBid);
 			}
