@@ -1,0 +1,130 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 11, 2011
+File Date =  06/20/11 20:51:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S6 S4 HK HQ HJ H8 H6 CA CQ CJ C4 
+Current Hand(West) = ST S9 S7 S5 S2 H4 DA DJ D9 D8 D7 C3 
+Current Hand(North) = SA SK S3 H9 H7 H5 H2 DQ D4 D2 CK C9 C5 
+Current Hand(East) = SJ S8 HA HT H3 D5 D3 CT C8 C7 C6 C2 
+Original Hand(South) = SQ S6 S4 HK HQ HJ H8 H6 DT CA CQ CJ C4 
+Original Hand(West) = ST S9 S7 S5 S2 H4 DA DK DJ D9 D8 D7 C3 
+Original Hand(North) = SA SK S3 H9 H7 H5 H2 DQ D4 D2 CK C9 C5 
+Original Hand(East) = SJ S8 HA HT H3 D6 D5 D3 CT C8 C7 C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = North
+Bidding History = 1H 3D 3S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East DT DK -- D6 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 510
+East/West Game 1 Points = 0
+East/West Game 2 Points = 100
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 3
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Bonus Score Record = "	 200	Bonus for defeating vulnerable contract by 2 tricks"
+Bonus Score Record = "	  60	2 overtricks"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "	 100	3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North bid 3S with only 3 spades
+>>>>>>>> NORTH<<<<<<<<
+S:AK3  H:9752  D:Q42  C:K95
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  0 Likely Winners (1/-1/0/0)
+  13 Likely Losers (2/5/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+South bids 1H.
+--------------------
+West bids 3D.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Heart trump support, the hand is revalued for a suit contract as dummy from 12.0 to 13.0 points)
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Spades from 12.0 down to 8.0 points)
+I08: Have 12.0/12.0/13.0 points with 4-card support for partner's Hearts (holding 9752), which is too strong for a limit raise, so we have to temporarily shift to Spades with a bid of 3 Spades.
+We bid 3S.  <<<<<<<<<<<<< NOT with only 3 
+--------------------
+East passes.
+--------------------
+South bids 4S.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 3 Spades, and 4 Spades.
+B4H10: Partner has raised to game, showing at least 12.0 points.
+B4H33: With a total of 25.0-34.5 points in the partnership, sign off at partner's game bid and pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is North; East leads.
+
+

@@ -1,0 +1,129 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 24, 2010
+File Date =  11/26/10 11:02:35
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK HJ H4 H2 D8 D3 CA 
+Current Hand(West) = HT H6 H3 DQ DJ DT D6 
+Current Hand(North) = SK SJ S5 S3 H9 D4 CK 
+Current Hand(East) = S8 HA HQ H8 H5 D9 D5 
+Original Hand(South) = ST S6 HK HJ H4 H2 D8 D3 D2 CA CJ C6 C4 
+Original Hand(West) = SQ S9 HT H6 H3 DK DQ DJ DT D6 C5 C3 C2 
+Original Hand(North) = SA SK SJ S5 S3 S2 H9 DA D4 CK CQ CT C9 
+Original Hand(East) = S8 S7 S4 HA HQ H8 H7 H5 D9 D7 D5 C8 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 15
+Declarer = South
+Bidding History = Pass Pass Pass 1S Pass 2C Pass 4NT Pass 5D Pass 6C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West D2 DK DA D7 North
+GameTrick #2 = North C4 C2 CQ C7 North
+GameTrick #3 = North C6 C3 C9 C8 North
+GameTrick #4 = North CJ C5 CT H7 South
+GameTrick #5 = South ST S9 S2 S4 South
+GameTrick #6 = South S6 SQ SA S7 North
+GameTrick #7 = North -- -- -- -- East
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should play Spades and discard losing Diamonds before trying finesse
+>>>>>>>>> SOUTH<<<<<<
+PLNADJ: Reviewing play plan for round 7...
+PLRV10: We have only 3 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS31: Can finesse the King of Hearts by leading to it from dummy against East.
+PLNFNS91: One possible finesse has been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Heart in dummy.
+PLNRF1: We can potentially ruff up to 0 Diamond in dummy after discarding the 1 loser from dummy.
+PLNRF5: Up to 1 ruffs can be used (1 in dummy/0 in hand) out of a total of 4 available, but require 1 discard(s) first.
+PLNRF8: This consists of the { D4 } from dummy.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Hearts, plus 4 in Spades.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 1 round of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 5 cashing tricks in the side suits, and up to 1 ruffing trick.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 8 possible plays and approx. 7+ possible tricks including 6 sure tricks (vs. 12 required) accounted for in the plan.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Heart in dummy.
+ Play 2: Lead a low Heart from dummy and finesse the King in hand against West.
+ Play 3: Cash the King of Hearts in hand. <Requires ...>
+ Play 4: Cash the Jack of Hearts in hand. <Requires ...>
+ Play 5: Cash the King of Spades in dummy.
+ Play 6: Cash the Jack of Spades in dummy.
+ Play 7: Cash the Five of Spades in dummy. <Requires ...>
+ Play 8: Cash the Three of Spades in dummy. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ5: Since we have enough sure tricks (6) to fulfill the contract, we moved 2 plays forward
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 4 plays.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Heart in dummy.
+ Play 2: Lead a low Heart from dummy and finesse the King in hand against West.
+ Play 3: Cash the King of Hearts in hand.
+ Play 4: Cash the Jack of Hearts in hand.
+ Play 5: Cash the King of Spades in dummy.
+ Play 6: Cash the Jack of Spades in dummy.
+ Play 7: Cash the Five of Spades in dummy.
+ Play 8: Cash the Three of Spades in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLRUF12: Can't lead from dummy and ruff in dummy at the same time.
+PL3FN22: Lead a low Heart (the nine) from dummy to finesse the King in hand.
+PLAY: North leads the H9.
+PLAY: East plays the HA.
+PL3FN62: RHO has played a higher card (the Ace) than our intended finesse (the King), so play low with the two.
+PLAY: We play the H2.
+PLAY: West plays the H3.
+PLAY: East wins the round.
+
+

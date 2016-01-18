@@ -1,0 +1,148 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 8, 2013
+File Date =  06/08/13 17:41:13
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S8 S7 S2 D8 C9 C8 C7 
+Current Hand(West) = HA HK HQ H8 H7 H4 CQ C5 
+Current Hand(North) = SQ SJ S9 S4 DQ D7 D4 CT 
+Current Hand(East) = SA ST S6 S5 DJ DT CJ C2 
+Original Hand(South) = SK S8 S7 S2 H6 D8 D6 D5 CA C9 C8 C7 C6 
+Original Hand(West) = HA HK HQ HJ HT H8 H7 H4 H2 D2 CQ C5 C3 
+Original Hand(North) = SQ SJ S9 S4 H9 H5 DA DK DQ D7 D4 CT C4 
+Original Hand(East) = SA ST S6 S5 S3 H3 DJ DT D9 D3 CK CJ C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 13
+Declarer = West
+Bidding History = Pass 1H 2D Pass Pass 3H Pass 3NT Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = North
+GameTrick #1 = North D5 D2 DK D3 North
+GameTrick #2 = North D6 H2 DA D9 West
+GameTrick #3 = West H6 HT H5 H3 West
+GameTrick #4 = West C6 HJ H9 S3 West
+GameTrick #5 = West CA C3 C4 CK South
+GameTrick #6 = South -- -- -- -- North
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should ruff trick vs discard
+>>>WEST<<<<<<<
+PLAY: South leads the D8.
+PLNADJ: Reviewing play plan for round 6...
+DEBUG1: NumMaxWinners=10 vs SureTricks=9 vs NumWinners=10, m_numTricksShort=-2
+PLRV11: We have 9 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Diamond in hand.
+PLNRF1: We can potentially ruff up to 3 Spades in hand.
+PLNRF5: Up to 4 ruffs can be used (0 in dummy/4 in hand) out of a total of 5 available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 2 in Clubs, plus.
+PLNCSH30: A total of 3 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNCSH32: In addition, one delayed cash is also available with the DJ.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP3: We have 8 probable winners from long suits so will try one more trump pull.
+PLNTRMP5: We can safely play up to 6 rounds of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in  1 round of trumps and up to 4 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLYSCN9: The play <HA Trump Pull> is no longer viable as the opponents no longer hold any of the required alternative cards of [---].
+PLYSCNX: 1 play(s) have been deleted as they are no longer viable.
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 8 possible plays and approx. 8+ possible tricks including 9 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Diamond in hand.
+ Play 2: Ruff a Spade in hand.
+ Play 3: Ruff a Spade in hand.
+ Play 4: Ruff a Spade in hand.
+ Play 5: Cash the Ace of Spades in dummy.
+ Play 6: Cash the Queen of Clubs in hand.
+ Play 7: Cash the Jack of Clubs in dummy.
+ Play 8: Cash the Jack of Diamonds in dummy.  <<<<<<<<<<<<????  DQ is out
+PLSEQ: Checking play sequencing...
+PLSEQ3: Since we have enough sure tricks (9) to fulfill the contract, we moved 3 cash plays forward
+PLSEQ50: Move the opportunistic CJ Cash to the front.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Diamonds in dummy.
+ Play 2: Cash the Queen of Clubs in hand.
+ Play 3: Cash the Jack of Clubs in dummy.
+ Play 4: Ruff a Diamond in hand.
+ Play 5: Ruff a Spade in hand.
+ Play 6: Ruff a Spade in hand.
+ Play 7: Ruff a Spade in hand.
+ Play 8: Cash the Ace of Spades in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH56: Discard a Club from hand in anticipation of cashing the Jack in dummy.
+PLAY: We play the C5.
+PLAY: North plays the DQ.
+PLDM: Playing card from dummy.
+PLCSH80: the opponents led a Diamond, so see if we can finish up the cash play here.
+PLCSH83: the DJ we intended to cash can't beat the DQ, so skip the cash.
+PLYTRY: No usable plays found for the current situation.
+PLAY: East plays the DT.
+
+
+
+
+
+

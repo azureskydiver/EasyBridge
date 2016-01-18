@@ -1,0 +1,124 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 5, 2012
+File Date =  01/15/12 16:21:34
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S4 S3 H8 H7 H4 DA DQ D9 D8 D5 D4 D2 C2 
+Current Hand(West) = ST S8 S6 HA HK HJ H3 H2 D6 D3 C9 C7 C6 
+Current Hand(North) = SA SQ SJ S2 HQ H9 H5 DK DJ D7 CQ CJ C5 
+Current Hand(East) = SK S9 S7 S5 HT H6 DT CA CK CT C8 C4 C3 
+Original Hand(South) = S4 S3 H8 H7 H4 DA DQ D9 D8 D5 D4 D2 C2 
+Original Hand(West) = ST S8 S6 HA HK HJ H3 H2 D6 D3 C9 C7 C6 
+Original Hand(North) = SA SQ SJ S2 HQ H9 H5 DK DJ D7 CQ CJ C5 
+Original Hand(East) = SK S9 S7 S5 HT H6 DT CA CK CT C8 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 150
+North/South Game 1 Points = 150
+North/South Game 2 Points = 60
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = " 120		4 overtricks"
+Bonus Score Record = "  30		1 overtrick, vulnerable"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "  90		3 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  60		2 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should not bid 5 Diamonds
+>>>>>>>>>>>>>>>NORTH<<<<<<<<<<<
+S:AQJ2  H:Q95  D:KJ7  C:QJ5
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0; Total pts = 16.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (3/0/1/1)
+  8 Likely Losers (1/3/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+South bids 3D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 3 Diamonds.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Diamond trump support including a trump honor, the hand is revalued for a suit contract as dummy from 16.0 to 17.0 points)
+SHUTR0: Partner made a preemptive 3 Diamonds bid, showing a 7-card Diamond suit with no tricks outside the suit, and most likely 5.5-8.5 points.
+SHUTR4: We have 16.0/16.0/17.0 points in hand, for a total of 22.5-25.5 points in the partnership, strong support for partner's long Diamond suit (holding KJ7), plus 2.0 QTs and 5 likely winners, so we can safely bid a minor game at 5 Diamonds.
+We bid 5D.  <<<<<<<<<<<<<<<<<<<<<<<<Not enough Aces
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is South; West leads.
+=======================
+RCP5A: South is now known to have started with 1 Club.
+RCP5A: East is now known to have started with 1 Diamond.
+RCP20: Dummy is now out of Hearts.
+PLAYCL: South has claimed the remaining 4 tricks.
+RESULT: North/South were set 2 tricks.
+
+
+

@@ -1,0 +1,191 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 16, 2010
+File Date =  11/17/10 10:40:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S3 HK HT H7 H5 H3 D9 D7 D6 D5 CA C9 C2 
+Current Hand(West) = SA SK SQ HJ H8 H2 DK D4 D3 CQ CJ C4 C3 
+Current Hand(North) = SJ ST S7 S5 S4 H9 DQ DJ DT CT C8 C6 C5 
+Current Hand(East) = S9 S8 S6 S2 HA HQ H6 H4 DA D8 D2 CK C7 
+Original Hand(South) = S3 HK HT H7 H5 H3 D9 D7 D6 D5 CA C9 C2 
+Original Hand(West) = SA SK SQ HJ H8 H2 DK D4 D3 CQ CJ C4 C3 
+Original Hand(North) = SJ ST S7 S5 S4 H9 DQ DJ DT CT C8 C6 C5 
+Original Hand(East) = S9 S8 S6 S2 HA HQ H6 H4 DA D8 D2 CK C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 6
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 15
+Declarer = East
+Bidding History = Pass 1D Pass 2C Pass 2H Pass 4NT Pass 5H Pass 6D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W bid Slam without points
+>>>>>>> WEST<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:AKQ  H:J82  D:K43  C:QJ43
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 15.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (3/0/0/2)
+  8 Likely Losers (0/3/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+
+North passes.
+--------------------
+East bids 1D.
+--------------------
+South passes.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Diamond trump support including a trump honor, the hand is revalued for a suit contract as dummy from 15.5 to 16.5 points)
+F00: Partner is showing 12.0-20.0 points and 2+ QT's.
+I14: Have 16.0/15.5/16.5 points but we prefer to shift instead of raising a minor Diamond suit, so show our own Club suit by bidding 2 Clubs.
+We bid 2C.
+--------------------
+North passes.
+--------------------
+East bids 2H.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 2 Clubs, and 2 Hearts.
+B4P0RV: Partner reversed and bid a higher-ranking suit at the 2-level (2 Hearts over 1 Diamond) after our 2/1 response, showing 17.0-18.0 points. <<<<<<<<<< NOTE <<<<<<<<<
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Heart trump support including a trump honor, the hand is revalued for a suit contract as dummy from 15.5 to 17.0 points)
+PKF1: With 3 trumps in partner's first suit (Diamonds), we prefer to support that suit.
+PKF1: With 3 trumps in partner's first suit (Diamonds), we prefer to support that suit.
+BLKWD: with 16.0/15.5/17.0 points in the hand, for a total of approx. 33.0-34.0 / 34.0-35.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump.
+We bid 4NT.
+--------------------
+North passes.
+--------------------
+East bids 5H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Hearts, indicating 2 Aces.
+BK38: Without all four aces we can't proceed to a grand slam, so stop at 6 Diamonds.
+We bid 6D.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 6 Diamonds.  Declarer is East; South leads.
+=======================
+
+>>>>>>>>>>>>> EAST<<<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:9862  H:AQ64  D:A82  C:K7
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Likely Winners (-1/2/0/1)
+  11 Likely Losers (5/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+
+North passes.
+--------------------
+Opening bid for team.
+E01: Have 13.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+South passes.
+--------------------
+West bids 2C.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 2 Clubs.
+B3W00: Partner has made a 2 over 1 bid, Clubs over Diamonds, which shows 9.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+B3W40: With poor support for partner's minor Club suit (holding K7), and our first suit not rebiddable, we have to shift to another suit at 2 Hearts.  <<<<<<<< Reverse?????
+We bid 2H.
+--------------------
+South passes.
+--------------------
+West bids 4NT.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BK10: With 2 Aces, respond to partner's Blackwood inquiry with 5 Hearts.
+We bid 5H.
+--------------------
+South passes.
+--------------------
+West bids 6D.
+--------------------
+North passes.
+--------------------
+Rebidding in round 4.
+BK13: Partner appears to have bailed out, so we'll pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 6 Diamonds.  Declarer is East; South leads.
+=======================
+
+
+
+

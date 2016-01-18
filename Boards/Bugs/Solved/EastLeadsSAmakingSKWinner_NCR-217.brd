@@ -1,0 +1,134 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 13,  2010
+File Date =  02/13/10 20:39:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S8 S6 DA DK D2 CT C6 
+Current Hand(West) = ST S9 S7 D9 D7 D4 CK CQ 
+Current Hand(North) = HA HQ H7 H6 H5 DJ D8 D6 
+Current Hand(East) = SA SJ S5 DQ DT D5 D3 C8 
+Original Hand(South) = SK SQ S8 S6 HK H4 DA DK D2 CT C6 C3 C2 
+Original Hand(West) = ST S9 S7 S3 H8 H2 D9 D7 D4 CK CQ C5 C4 
+Original Hand(North) = S4 HA HQ HJ H7 H6 H5 H3 DJ D8 D6 CA C9 
+Original Hand(East) = SA SJ S5 S2 HT H9 DQ DT D5 D3 CJ C8 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1H Pass 1S Pass 2H Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East SQ S3 S4 S2 South
+GameTrick #2 = South HK H2 H3 H9 South
+GameTrick #3 = South H4 H8 HJ HT North
+GameTrick #4 = North C2 C4 CA C7 North
+GameTrick #5 = North C3 C5 C9 CJ East
+GameTrick #6 = East -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads SA making Dummy's SK a winner
+>>>>>>> EAST<<<<<<<<<<
+S:AJ52  H:T9  D:QT53  C:J87
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 7.5.
+  QT's = 1.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  4 Likely Winners (2/0/2/0)
+  9 Likely Losers (2/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+West passes.
+--------------------
+North bids 1H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+North bids 2H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 4H.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 4 Hearts.
+PLYLD4A: Lead the fourth card from our best suit (Spades) -- play the S2.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLAYB48: We can't beat South's King, so discard the H9.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the seven.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G2: There's a chance highcard will be picked up next trick, so win now with the Jack.
+PLCSW9: With no other good options, cash a winner in the Spade suit, the Ace <<<<<<<<<< No Makes SK winner!!!
+
+

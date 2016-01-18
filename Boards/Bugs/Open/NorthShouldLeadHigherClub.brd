@@ -1,0 +1,157 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 15,  2010
+File Date =  05/01/10 12:11:56
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S3 S2 HA H9 H8 H6 C8 
+Current Hand(West) = SK SQ ST S7 HQ H7 H2 D7 
+Current Hand(North) = SA SJ S8 HK CQ C9 C6 C4 
+Current Hand(East) = S6 HJ HT H5 H4 H3 D9 CT 
+Original Hand(South) = S9 S3 S2 HA H9 H8 H6 DJ DT D5 CA CK C8 
+Original Hand(West) = SK SQ ST S7 S4 HQ H7 H2 DA DK DQ D7 CJ 
+Original Hand(North) = SA SJ S8 S5 HK D6 D3 CQ C9 C6 C4 C3 C2 
+Original Hand(East) = S6 HJ HT H5 H4 H3 D9 D8 D4 D2 CT C7 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 15
+Declarer = West
+Bidding History = Pass Pass 1C Dbl 2C Pass Pass Dbl Pass 2H Pass 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = North
+GameTrick #1 = North CK CJ C2 C5 South
+GameTrick #2 = South CA S4 C3 C7 West
+GameTrick #3 = West D5 DA D3 D2 West
+GameTrick #4 = West DT DK D6 D4 West
+GameTrick #5 = West DJ DQ S5 D8 North
+GameTrick #6 = North -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should not lead lower card than dummy's
+>>>>>>>>>NORTH<<<<<<<<
+S:AJ85  H:K  D:63  C:Q96432
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 8.5.
+  QT's = 1.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/0/3)
+  8 Likely Losers (2/1/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Spades
+The best suit is Clubs.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 1C.
+--------------------
+West doubles.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+2REVAL38: (with 6-card Club trump support including a trump honor & a doubleton in Diamonds,  & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 8.5 to 16.5 points)
+F01: Partner, opening in third position, is showing 10.0+ points and 2+ QT's.
+I20: Have 10.0/8.5/16.5 points and strong support for partner's minor Club suit (holding Q96432).  Although we'd prefer not to raise a minor, we have no other good options, so raise to 2 Clubs.
+We bid 2C.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West doubles.
+--------------------
+Rebidding after opening bid of 2 Clubs and partner's pass.
+REVAL1: Revaluing hand as declarer...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+3REVAL8: Since the trump suit is only topped by a Ace, deduct 1 points.
+2REVAL10: (with a 6-card trump suit in Clubs, declarer's hand is revalued for a suit contract from 8.5 to 11.5 points)
+B3A20: Partner passed, showing < 6 points, so with 10.0/8.5 points in hand and 11.5-16.5 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+East bids 2H.
+--------------------
+South passes.
+--------------------
+West bids 2S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 2 Spades.
+PLYLD4: Lead the bottom card of partner's Club suit (the two.
+RCP5A: West is now known to have started with 1 Club.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the three.
+PLDF23: We can't beat the opponent's four of trumps, so discard the C3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the six.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2N4: We don't think partner will win the round, so trump with the five.
+RCP5A: North is now known to have started with 2 Diamonds.
+PLYLDPRF2: Partner likes the Club suit, but declarer has shown out of the suit and _may_ be able to ruff, so avoid leading the suit if possible.
+PLYLD33: Partner has bid the Clubs suit, so lead the C4.  <<<<<<<<<<<<<<<<<<< NO cover dummy <<<<<<<<<<
+RCP20: Dummy is now out of Clubs.
+
+

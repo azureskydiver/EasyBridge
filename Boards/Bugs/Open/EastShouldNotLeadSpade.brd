@@ -1,0 +1,89 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 22,  2010
+File Date =  02/27/10 10:26:06
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S8 HA HT H9 H7 H6 C8 C6 C4 
+Current Hand(West) = SK S6 S5 S3 H8 H5 H4 H2 DT D9 
+Current Hand(North) = SA SJ HK HQ HJ DA D8 D5 CK C7 
+Current Hand(East) = ST S9 S4 S2 H3 DQ D7 D4 D3 C9 
+Original Hand(South) = SQ S8 HA HT H9 H7 H6 DK CA C8 C6 C4 C2 
+Original Hand(West) = SK S7 S6 S5 S3 H8 H5 H4 H2 DJ DT D9 CQ 
+Original Hand(North) = SA SJ HK HQ HJ DA D8 D5 D2 CK CT C7 C3 
+Original Hand(East) = ST S9 S4 S2 H3 DQ D7 D6 D4 D3 CJ C9 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 14
+Declarer = South
+Bidding History = 1H Pass 3D Pass 4C Pass 4NT Pass 5H Pass 6C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West DK DJ D2 D6 South
+GameTrick #2 = South CA CQ C3 C5 South
+GameTrick #3 = South C2 S7 CT CJ East
+GameTrick #4 = East -- -- -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should NOT lead Spades into Dmy's (RHO) SAJ
+>>>>>>>> EAST<<<<<
+Swapped into a new hand.
+------------------------
+S:T942  H:3  D:Q7643  C:J95
+Hand evaluation:
+  HCPs = 3.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 1.5.
+  QT's = 0.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  3 Likely Winners (0/0/3/0)
+  10 Likely Losers (4/1/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+PL03: Starting play as right-hand defender.
+PLDF35: Try to force a higher card by playing D6.
+PLAYB48: We can't beat South's Ace, so discard the C5.
+RCP5A: West is now known to have started with 1 Club.
+PLAYB48: We can't beat North's King, so discard the C9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Jack.
+PLYLD42: With no good card to lead, lead the ST since the opponents have not shown out of the Spade suit.  <<<<<<<<<< NO RHO has AJ
+
+

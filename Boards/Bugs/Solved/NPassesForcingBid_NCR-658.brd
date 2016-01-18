@@ -1,0 +1,140 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 28, 2013
+File Date =  01/29/13 13:29:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S6 HA HJ H5 DQ DJ DT D6 D5 D4 CQ C5 
+Current Hand(West) = S9 S5 S3 S2 HQ H6 H2 DK D2 CJ C8 C7 
+Current Hand(North) = SJ ST S8 S7 S4 HT H8 H7 H3 DA CA CK C3 
+Current Hand(East) = SK SQ HK H9 H4 D9 D8 D7 D3 CT C9 C4 C2 
+Original Hand(South) = SA S6 HA HJ H5 DQ DJ DT D6 D5 D4 CQ C5 
+Original Hand(West) = S9 S5 S3 S2 HQ H6 H2 DK D2 CJ C8 C7 C6 
+Original Hand(North) = SJ ST S8 S7 S4 HT H8 H7 H3 DA CA CK C3 
+Original Hand(East) = SK SQ HK H9 H4 D9 D8 D7 D3 CT C9 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 1S Pass 2D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- C6 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North's analysis says South's bid forcing for 1 round (which is correct) then North passes (which is wrong).
+
+S:JT874  H:T873  D:A  C:AK3
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  3 Likely Winners (2/-1/1/1)
+  10 Likely Losers (3/5/0/2)
+Preferred suit is Spades.
+====================
+Opening bid for team.
+Have 12.0 points in high cards, 3.0 quick tricks, and a 5-card suit, so bid 1 Spade.
+We bid 1S.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 2 Diamonds.
+Partner has made a 2 over 1 bid, Diamonds over Spades, which shows 10.0-18.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 6 point(s) for the 3 trump(s) short of 4.
+But with only about 22.0-30.0 HCPS in the partnership, we don't have enough for game, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is South; West leads.
+=======================
+
+>>>>> DEBUG NORTH<<<<<<<<<
+=====================================
+Received hand:
+  S:JT874  H:T873  D:A  C:AK3
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  3 Likely Winners (2/-1/1/1)
+  10 Likely Losers (3/5/0/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+Opening bid for team.
+E04: Have 12.0 points in high cards, 3.0 quick tricks, and a 5-card suit, so bid 1 Spade.
+We bid 1S.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 2 Diamonds.
+B3W00: Partner has made a 2 over 1 bid, Diamonds over Spades, which shows 9.5-17.5 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+B3W42: But with only about 21.5-29.5 HCPS in the partnership, we don't have enough for game, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is South; West leads.
+=======================
+PLAY: West leads the C6.
+
+
+
+

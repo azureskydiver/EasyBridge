@@ -1,0 +1,203 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = February 22, 2015
+File Date =  02/22/15 17:38:38
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = C6 
+Current Hand(West) = D4 
+Current Hand(North) = SJ 
+Current Hand(East) = S9 
+Original Hand(South) = SA SQ S2 H6 H4 DJ DT CA CK CQ C6 C3 C2 
+Original Hand(West) = S6 S4 H5 H3 DA DK DQ D7 D4 CT C9 C8 C4 
+Original Hand(North) = SJ ST S8 S7 S3 HA HK HQ H8 H7 D5 D2 C7 
+Original Hand(East) = SK S9 S5 HJ HT H9 H2 D9 D8 D6 D3 CJ C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass Pass Pass 1NT Pass 2D Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 12
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West DT DA D2 D3 West
+GameTrick #2 = West DJ DK D5 D6 West
+GameTrick #3 = West S2 DQ S3 D9 West
+GameTrick #4 = West H4 D7 S7 D8 East
+GameTrick #5 = East SQ S4 S8 S5 South
+GameTrick #6 = South CA C4 C7 C5 South
+GameTrick #7 = South CK C8 H7 CJ South
+GameTrick #8 = South CQ C9 H8 H2 South
+GameTrick #9 = South H6 H3 HQ H9 North
+GameTrick #10 = North C2 H5 HK HT North
+GameTrick #11 = North C3 S6 HA HJ North
+GameTrick #12 = North SA CT ST SK ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why did West save D4?  There aren't any Diamonds left.  Save CT
+>>>>>>>>>>WEST<<<<<<<<<<<<
+S:64  H:53  D:AKQ74  C:T984
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0; Total pts = 9.0.
+  QT's = 2.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  5 Likely Winners (0/0/5/0)
+  8 Likely Losers (2/2/0/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD22: Lead the DA from the top of the 3-card sequence {DA DK DQ }.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLYLD76: Continue developing our Diamond suit by playing the DK.
+RCP20: Dummy is now out of Diamonds.
+PLYSIG8: Partner discarded high with the six after discarding the three last round, thus marking a low-high signal for a poor suit.
+PLYLD76: Continue developing our Diamond suit by playing the DQ.
+RCP5A: South is now known to have started with 2 Diamonds.
+PLYLD76: Continue developing our Diamond suit by playing the D7.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the four.
+PLDF48: We can't beat South's SQ, so discard the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the four.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+RCP5A: East is now known to have started with 2 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the CT.
+RCP20: Dummy is now out of Spades.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D4.
+RESULT: North/South made the contract.
+PLAY: Play restarted.
+====================
+S:64  H:53  D:AKQ74  C:T984
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0; Total pts = 9.0.
+  QT's = 2.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  5 Likely Winners (0/0/5/0)
+  8 Likely Losers (2/2/0/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+PLAY: Play restarted.
+====================
+S:64  H:53  D:AKQ74  C:T984
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0; Total pts = 9.0.
+  QT's = 2.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  5 Likely Winners (0/0/5/0)
+  8 Likely Losers (2/2/0/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD22: Lead the DA from the top of the 3-card sequence {DA DK DQ }.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLYLD76: Continue developing our Diamond suit by playing the DK.
+RCP20: Dummy is now out of Diamonds.
+PLYSIG8: Partner discarded high with the six after discarding the three last round, thus marking a low-high signal for a poor suit.
+PLYLD76: Continue developing our Diamond suit by playing the DQ.
+RCP5A: South is now known to have started with 2 Diamonds.
+PLYLD76: Continue developing our Diamond suit by playing the D7.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the four.
+PLDF48: We can't beat South's SQ, so discard the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the four.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+RCP5A: East is now known to have started with 2 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+RCP20: Dummy is now out of Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.
+RCP5A: West is now known to have started with 2 Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the CT.   <<<<<<<<<<<<<NO
+
+

@@ -1,0 +1,137 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = September 12, 2011
+File Date =  09/13/11 17:41:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S5 HK HT H8 H7 H4 C9 C5 
+Current Hand(West) = HJ H5 DA DJ DT CK CJ C7 C3 
+Current Hand(North) = H9 H3 H2 D9 D6 CQ C6 C4 
+Current Hand(East) = HA HQ H6 D8 D2 CA CT C8 
+Original Hand(South) = SQ SJ ST S9 S5 HK HT H8 H7 H4 DK C9 C5 
+Original Hand(West) = SA S8 S2 HJ H5 DA DJ DT D7 CK CJ C7 C3 
+Original Hand(North) = SK S6 S4 H9 H3 H2 D9 D6 D5 D3 CQ C6 C4 
+Original Hand(East) = S7 S3 HA HQ H6 DQ D8 D4 D2 CA CT C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 11
+Declarer = West
+Bidding History = Pass 1D Pass 2C 2S 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = North
+GameTrick #1 = North S9 SA S4 S3 West
+GameTrick #2 = West DK D7 D3 DQ South
+GameTrick #3 = South ST S2 S6 S7 South
+GameTrick #4 = South SJ S8 SK C2 North
+GameTrick #5 = North -- -- D5 D4 ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North misplayed Spades and blocked South's suit
+>>>>>>>>>> NORTH<<<<<<<<<
+S:K64  H:932  D:9653  C:Q64
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0; Total pts = 4.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  -2 Likely Winners (0/-1/-1/0)
+  15 Likely Losers (3/4/5/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+South passes.
+--------------------
+West bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 4.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East bids 2C.
+--------------------
+South bids 2S.
+--------------------
+West bids 2NT.
+--------------------
+Responding to partner's  bid of 2 Spades.
+REVAL1: Revaluing hand as dummy for Spade contract...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Spade trump support including a trump honor, the hand is revalued for a suit contract as dummy from 4.0 to 5.0 points)
+ROVRC5: Partner overcalled at the 2-level, indicating a good 5+ card Spade suit, 9.5-14.5 points, and probably 6+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 14.5-19.5 points.
+ROVRC10: This is not enough to bid any higher, so pass.
+We pass.
+--------------------
+East bids 3NT.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 3 No Trump.
+PLYLD4: Lead the bottom card of partner's Spade suit (the four.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the six.   <<<<<<<<< NO Play King
+PLDF36: Partner's ten is high or we can't beat the highest card, so discard the S6.
+RCP20: Dummy is now out of Spades.
+PLDF25: Play our only card in the suit, the King.   
+PLYLDE: With no other obvious plays, play D5.
+
+

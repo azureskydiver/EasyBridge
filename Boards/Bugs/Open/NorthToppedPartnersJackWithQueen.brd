@@ -1,0 +1,83 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 30, 2009
+File Date =  05/02/09 18:11:40
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 HK H9 H3 DT CK CQ C6 
+Current Hand(West) = SK HQ HJ H7 H4 H2 D9 D7 C5 
+Current Hand(North) = S7 S6 DK D4 D3 CT C9 C8 C2 
+Current Hand(East) = SA S5 S3 S2 HT D8 D6 D5 C7 
+Original Hand(South) = SQ SJ S9 HK H9 H8 H3 DJ DT CK CQ C6 C3 
+Original Hand(West) = SK S8 HA HQ HJ H7 H4 H2 D9 D7 D2 C5 C4 
+Original Hand(North) = S7 S6 S4 H5 DK DQ D4 D3 CJ CT C9 C8 C2 
+Original Hand(East) = SA ST S5 S3 S2 HT H6 DA D8 D6 D5 CA C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = Pass 1S 2C 2H Pass 3D Pass 3H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = North
+GameTrick #1 = North C3 C4 CJ CA East
+GameTrick #2 = East H8 HA H5 H6 West
+GameTrick #3 = West SJ S8 S4 ST South
+GameTrick #4 = South DJ D2 DQ DA ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+PLDF38C: we top declarer's Jack with the Queen to force dummy to play a winner.
+The Jack was led by player's partner(South) and North covered with a Queen. 
+Problem: it was partner NOT declarer that led Jack.
+North should duck.
+PLDFP10: ...
+East leads SA when partner has singleton K
+

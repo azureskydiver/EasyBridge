@@ -1,0 +1,174 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = May 12, 2010
+File Date =  05/17/10 20:07:17
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ S7 S6 S5 S3 H6 H3 DT D8 D7 D5 C6 
+Current Hand(West) = ST HA HQ H9 H7 H2 D6 D4 D2 CA CK C9 C5 
+Current Hand(North) = SA HK HJ H8 H5 DQ DJ D9 D3 CJ CT C8 C7 
+Current Hand(East) = SQ S9 S8 S4 S2 HT H4 DA DK CQ C4 C3 C2 
+Original Hand(South) = SK SJ S7 S6 S5 S3 H6 H3 DT D8 D7 D5 C6 
+Original Hand(West) = ST HA HQ H9 H7 H2 D6 D4 D2 CA CK C9 C5 
+Original Hand(North) = SA HK HJ H8 H5 DQ DJ D9 D3 CJ CT C8 C7 
+Original Hand(East) = SQ S9 S8 S4 S2 HT H4 DA DK CQ C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W really mess up bidding this hand
+>>>>>>>>WEST<<<<<<
+S:T  H:AQ972  D:642  C:AK95
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  4 Likely Winners (0/3/-1/2)
+  9 Likely Losers (1/2/4/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+South bids 2S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+TKOUT: With 13.0/13.0 points and support for all unbid suits, bid a takeout double.   <<<<<<<<<<<
+We bid Dbl.
+--------------------
+North passes.
+--------------------
+East bids 4S.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 4 Spades.
+TKORb40: Partner has responded in the enemy suit, indicating 13+ pts but no long suits.   <<<<<<<<<<<<<<<<<<<
+TKRb49: The total point count in the partnership is therefore 26.0-35.0 pts.
+TKRb91: Without clear suit agreement, we bid our 5-card Heart suit at 5 Hearts.  <<<<<<<<???
+We bid 5H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Hearts.  Declarer is West; North leads.
+
+
+>>>>>>>>>>>>>>>> EAST<<<<<<<<<<
+S:Q9842  H:T4  D:AK  C:Q432
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 11.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/2/1)
+  8 Likely Losers (3/2/0/3)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Clubs, Spades
+The best suit is Spades.
+====================
+South bids 2S.
+--------------------
+West doubles.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 11.0+ HCPs, for a total in the partnership of 22.0-32.0 points.
+TKOTR55: With 11.0/11.0 pts and no long major suit, jump to 4 Spades, even though it's the enemy suit.  <<<<<<<<<<<<<<<<<????
+We bid 4S.
+--------------------
+South passes.
+--------------------
+West bids 5H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 4 Spades and partner's response of 5 Hearts.
+TKOTRx: Partner bid 5 Hearts after his takeout and our 4 Spades response.
+TKOTR60: Partner shifted to a new suit after our response of 4 Spades to his takeout, indicating that he has 16.0+ pts, for a total in the partnership of 27.0-30.0 points.  <<<<????
+TKOTR75: Partner responded with a game bid of 5 Hearts, so we should pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Hearts.  Declarer is West; North leads.
+=======================
+RCP5A: South is now known to have started with 1 Club.
+PLAYB41: Play the King to win the trick.
+RCP5A: West is now known to have started with 1 Spade.
+RCP5A: North is now known to have started with 1 Spade.
+RCP20: Dummy is now out of Clubs.
+RCP20: Dummy is now out of Diamonds.
+PLYLDD: With no other obvious plays, play S9.
+PLYLDD: With no other obvious plays, play SQ.
+RCP20: Dummy is now out of Spades.
+RESULT: East/West were set 4 tricks.
+
+

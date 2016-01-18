@@ -1,0 +1,128 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 18,  2009
+File Date =  12/20/09 20:49:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S5 H6 H3 DJ D7 D4 D3 D2 CA CQ 
+Current Hand(West) = SJ ST S8 S4 HJ DT D9 D8 D6 C2 
+Current Hand(North) = SQ S7 S6 S3 HT H5 DA DK C8 C3 
+Current Hand(East) = SA SK S9 S2 DQ D5 CK CJ C7 C4 
+Original Hand(South) = S5 HA H7 H6 H3 DJ D7 D4 D3 D2 CA CQ C6 
+Original Hand(West) = SJ ST S8 S4 HJ H8 H2 DT D9 D8 D6 C9 C2 
+Original Hand(North) = SQ S7 S6 S3 HT H9 H5 H4 DA DK CT C8 C3 
+Original Hand(East) = SA SK S9 S2 HK HQ DQ D5 CK CJ C7 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass Pass 1C 1D Pass 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East C6 C9 CT C5 North
+GameTrick #2 = North HA H2 H4 HQ South
+GameTrick #3 = South H7 H8 H9 HK East
+GameTrick #4 = East -- -- -- -- South
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Game Score Record = "	  60	2 Spades made"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads CK into DMY/LHO's CAQ
+>>>>> EAST <<<<<<
+S:AK92  H:KQ  D:Q5  C:KJ754
+Hand evaluation:
+  HCPs = 18.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 17.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (3/1/0/3)
+  6 Likely Losers (1/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Spades
+The best suit is Clubs.
+====================
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+E01: Have 18.0 points in high cards, so bid 1 Club.
+We bid 1C.
+--------------------
+South bids 1D.
+--------------------
+West passes.
+--------------------
+North bids 1NT.
+--------------------
+Rebidding after opening bid of 1 Club and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 18.0/17.0 points in hand and 17.0-26.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C5.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F: Play the Queen to force a higher card from dummy and promote the other top cards in our hand.
+PLAYB41: Play the King to win the trick.
+PLYLD76: Continue developing our Club suit by playing the CK.  <<<< DMY has AQ ???
+
+
+

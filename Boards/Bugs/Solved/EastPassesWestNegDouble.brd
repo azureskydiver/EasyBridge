@@ -1,0 +1,188 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 14, 2009
+File Date =  06/14/09 11:04:35
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ ST S8 S2 H5 D6 D2 CK C5 C4 C3 C2 
+Current Hand(West) = SK S6 HA HJ HT H7 H2 DT D8 D5 D3 CQ C8 
+Current Hand(North) = SQ S9 S5 S4 H8 H6 H3 DQ D4 CA CT C9 C7 
+Current Hand(East) = S7 S3 HK HQ H9 H4 DA DK DJ D9 D7 CJ C6 
+Original Hand(South) = SA SJ ST S8 S2 H5 D6 D2 CK C5 C4 C3 C2 
+Original Hand(West) = SK S6 HA HJ HT H7 H2 DT D8 D5 D3 CQ C8 
+Original Hand(North) = SQ S9 S5 S4 H8 H6 H3 DQ D4 CA CT C9 C7 
+Original Hand(East) = S7 S3 HK HQ H9 H4 DA DK DJ D9 D7 CJ C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 1
+Dealer = East
+Number of Bids Made = 5
+Declarer = ????
+Bidding History = 1D 1S Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Game Score Record = " 100		5 Diamonds made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West's Negative double of 1S is passed by East.  West has 10 pts, East has14 pts.
+East should  bid 2H or 2D!!!
+>>>>>>>>> EAST <<<<<<<<<<
+S:73  H:KQ94  D:AKJ97  C:J6
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  7 Likely Winners (0/3/4/0)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Diamond.
+--------------------
+South bids 1S.
+--------------------
+West doubles.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of Double.
+NEGDR: Partner has bid a negative double, indicating 4+ cards in the unbid majors (Hearts).
+NEGDR8: Partner's negative double indicates 5.0-8.0 points, for a total in the partnership of 18.5-21.5 points.
+NEGDTR31: We have 4 cards in the Heart suit, but with only 18.5 pts in the partnership, we can't go any higher.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 1 Spade (doubled).  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF40a: Play higher with the King.
+PLYLDRT8: Return partner's Diamond suit with the Ace.
+PLYSIG1: Partner discarded low with the five, so consider it a signal that he dislikes the suit.
+RCP20: Dummy is now out of Diamonds.
+PLYLDWN2: We'd like to lead the Diamonds suit, but dummy might ruff.
+PLYLD42: With no good card to lead, lead the HK since the opponents have not shown out of the Heart suit.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLYLDWN2: We'd like to lead the Diamonds suit, but dummy might ruff.
+PLYLDD: With no other obvious plays, play H4.
+RCP5A: South is now known to have started with 1 Heart.
+PLYSIG8: Partner discarded high with the seven after discarding the two last round, thus marking a low-high signal for a poor suit.
+PLAYB48: We can't beat North's Ace, so discard the C6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F1: Play the seven to prevent it from being captured next lead.
+PLDF25: Play our only card in the suit, the three.
+RCP5A: West is now known to have started with 2 Spades.
+PLAYB52: With no cards in the suit led and no trumps, we discard the CJ.
+RCP5A: East is now known to have started with 2 Spades.
+PLAYB52: With no cards in the suit led and no trumps, we discard the D7.
+PLAYB52: With no cards in the suit led and no trumps, we discard the D9.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Clubs and no trumps, so discard the DJ.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the nine.
+PLAYB23: We can't beat the opponent's nine of trumps, so discard the HQ.
+RESULT: North/South made 2 overtricks.
+PLAY: Play restarted.
+====================
+S:73  H:KQ94  D:AKJ97  C:J6
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  7 Likely Winners (0/3/4/0)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+S:73  H:KQ94  D:AKJ97  C:J6
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  7 Likely Winners (0/3/4/0)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Diamond.
+--------------------
+South bids 1S.
+--------------------
+West doubles.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of Double.
+NEGDR: Partner has bid a negative double, indicating 4+ cards in the unbid majors (Hearts).
+NEGDR8: Partner's negative double indicates 5.0-8.0 points, for a total in the partnership of 18.5-21.5 points.
+NEGDTR31: We have 4 cards in the Heart suit, but with only 18.5 pts in the partnership, we can't go any higher.
+We pass.
+--------------------
+
+

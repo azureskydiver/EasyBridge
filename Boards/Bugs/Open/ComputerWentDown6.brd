@@ -1,0 +1,223 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 10, 2010
+File Date =  12/13/10 19:48:40
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S7 S5 HK H9 H3 DK D6 D3 D2 CA CT C2 
+Current Hand(West) = SQ S4 S3 HA HQ H8 H6 H5 H4 DA D9 D7 CJ 
+Current Hand(North) = SA SK ST S8 S6 H2 DJ DT D8 CK CQ C8 C3 
+Current Hand(East) = SJ S2 HJ HT H7 DQ D5 D4 C9 C7 C6 C5 C4 
+Original Hand(South) = S9 S7 S5 HK H9 H3 DK D6 D3 D2 CA CT C2 
+Original Hand(West) = SQ S4 S3 HA HQ H8 H6 H5 H4 DA D9 D7 CJ 
+Original Hand(North) = SA SK ST S8 S6 H2 DJ DT D8 CK CQ C8 C3 
+Original Hand(East) = SJ S2 HJ HT H7 DQ D5 D4 C9 C7 C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = North
+Bidding History = 1S Pass 2D 2H 2S Pass 3S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+>>>>>>>>>> WEST<<<<<<<<<<<<<
+Received hand:
+  S:Q43  H:AQ8654  D:A97  C:J
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/4/0/0)
+  9 Likely Losers (3/2/3/1)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+The contract is 4 Spades by North.
+East leads.
+====================
+PLAY: East leads the HJ.
+PLAY: South plays the HK.
+PL03: Starting play as right-hand defender.
+PLDF40: Play high with the Ace.
+PLAY: We play the HA.
+PLAY: North plays the H2.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Queen
+PLAY: We lead the HQ.
+PLAY: North plays the S6.
+RCP10: North shows out of Hearts.
+RCP5A: North is now known to have started with 1 Heart.
+PLAY: East plays the H7.
+PLAY: South plays the H3.
+PLAY: North wins the round.
+--------
+PLAY: North leads the SK.
+PLAY: East plays the S2.
+PLAY: South plays the S5.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat North's King, so discard the S3.
+PLAY: We play the S3.
+PLAY: North wins the round.
+--------
+PLAY: North leads the SA.
+PLAY: East plays the SJ.
+PLAY: South plays the S7.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat North's Ace, so discard the S4.
+PLAY: We play the S4.
+PLAY: North wins the round.
+--------
+PLAY: North leads the C3.
+PLAY: East plays the C4.
+PLAY: South plays the CT.
+PLAY4: Playing fourth, using default player logic.
+PLAYB41: Play the Jack to win the trick.
+PLAY: We play the CJ.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLDD: With no other obvious plays, play H4.
+PLAY: We lead the H4.
+PLAY: North plays the S8.
+PLAY: East plays the HT.
+PLAY: South plays the H9.
+RCP20: Dummy is now out of Hearts.
+PLAY: North wins the round.
+--------
+PLAY: North leads the D8.
+PLAY: East plays the D4.
+PLAY: South plays the DK.
+PLAY4: Playing fourth, using default player logic.
+PLAYB41: Play the Ace to win the trick.
+PLAY: We play the DA.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDWN2: We'd like to lead the Hearts suit, but dummy might ruff.
+PLYLD35: We have the boss trumps, so pull declarer's trumps by leading the SQ.
+PLAY: We lead the SQ.
+PLAY: North plays the ST.
+PLAY: East plays the C5.
+RCP10: East shows out of Spades.
+RCP5A: East is now known to have started with 2 Spades.
+PLAY: South plays the S9.
+RCP20: Dummy is now out of Spades.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDA: With no other obvious plays, cash a winner with the H8.
+PLAY: We lead the H8.
+PLAY: North plays the C8.
+PLAY: East plays the C6.
+RCP10: East shows out of Hearts.
+RCP1A: East is now known to have started with  3 Hearts and 2 Spades.
+PLAY: South plays the D2.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDA: With no other obvious plays, cash a winner with the H5.
+PLAY: We lead the H5.
+PLAY: North plays the CQ.
+PLAY: East plays the C7.
+PLAY: South plays the D3.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDA: With no other obvious plays, cash a winner with the H6.
+PLAY: We lead the H6.
+PLAY: North plays the DT.
+PLAY: East plays the C9.
+PLAY: South plays the D6.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDE: With no other obvious plays, play D7.
+PLAY: We lead the D7.
+PLAY: North plays the DJ.
+PLAY: East plays the DQ.
+PLAY: South plays the C2.
+RCP10: South shows out of Diamonds.
+RCP1A: South is now known to have started with  4 Diamonds and 3 Hearts and 3 Spades.
+RCP1B: Therefore, South started with 3 Clubs and has 1 left.
+PLAY: East wins the round.
+--------
+PLAY: East leads the D5.
+PLAY: South plays the CA.
+PLDF25: Play our only card in the suit, the nine.
+PLAY: We play the D9.
+PLAY: North plays the CK.
+RCP10: North shows out of Diamonds.
+RCP1A: North is now known to have started with  3 Diamonds and 1 Hearts.
+PLAY: West wins the round.
+--------
+RESULT: North/South were set 6 tricks.
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:Q43  H:AQ8654  D:A97  C:J
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/4/0/0)
+  9 Likely Losers (3/2/3/1)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+
+
+
+
+
+

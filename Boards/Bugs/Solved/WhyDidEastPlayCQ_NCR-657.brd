@@ -1,0 +1,135 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 25, 2013
+File Date =  01/28/13 15:33:43
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ HA HT H7 H5 DK D7 D3 CK 
+Current Hand(West) = S6 H9 H6 H4 H2 DA DQ DT D8 D2 
+Current Hand(North) = S7 S2 HK HJ H8 D5 CJ C6 C5 C2 
+Current Hand(East) = HQ H3 DJ D9 D6 D4 CQ C9 C4 C3 
+Original Hand(South) = SA SJ S9 S4 HA HT H7 H5 DK D7 D3 CK C8 
+Original Hand(West) = ST S6 S5 H9 H6 H4 H2 DA DQ DT D8 D2 C7 
+Original Hand(North) = SK SQ S7 S2 HK HJ H8 D5 CJ CT C6 C5 C2 
+Original Hand(East) = S8 S3 HQ H3 DJ D9 D6 D4 CA CQ C9 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = North
+Bidding History = Pass Pass 1NT Pass 2S Pass 2NT Pass 4C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East S4 ST SQ S8 North
+GameTrick #2 = North C8 C7 CT CA East
+GameTrick #3 = East S9 S5 SK S3 North
+GameTrick #4 = North -- -- -- -- South
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why did East play CQ
+>>>>>>>EAST>>>>>>>>>>>>>>
+S:83  H:Q3  D:J964  C:AQ943
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/1/3)
+  9 Likely Losers (2/2/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+North passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 1NT.
+--------------------
+West passes.
+--------------------
+North bids 2S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+North bids 4C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 4 Clubs.
+PLYLD17: Lead the S8 Top of doubleton.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: North led an honor (the ten), so cover it with our Ace.
+PLYLD42: With no good card to lead, lead the S3 since the opponents have not shown out of the Spade suit.
+PLYSIG1: Partner discarded low with the five, so consider it a signal that he dislikes the suit.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H3: Cover with the Queen.  <<<<<<<<<<<<???  Dmy has singleton CK
+
+
+
+

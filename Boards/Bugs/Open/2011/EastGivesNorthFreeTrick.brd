@@ -1,0 +1,132 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 25, 2011
+File Date =  05/21/11 06:56:29
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = DQ D9 C9 C8 C7 
+Current Hand(West) = HQ HJ DK DJ DT 
+Current Hand(North) = SJ H8 H6 D6 D3 
+Current Hand(East) = HT DA D8 CT 
+Original Hand(South) = SA SK SQ H3 DQ D9 D2 CA CK C9 C8 C7 C5 
+Original Hand(West) = S7 S3 HA HK HQ HJ H2 DK DJ DT D4 CQ C2 
+Original Hand(North) = SJ S9 S6 S2 H8 H6 H5 H4 D6 D5 D3 CJ C6 
+Original Hand(East) = ST S8 S5 S4 HT H9 H7 DA D8 D7 CT C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = 1C 1H Pass Pass 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H3 HK H4 H9 West
+GameTrick #2 = West C5 HA H5 H7 South
+GameTrick #3 = South CA C2 C6 C3 South
+GameTrick #4 = South CK CQ CJ C4 South
+GameTrick #5 = South SA S3 S2 S4 South
+GameTrick #6 = South SQ S7 S6 S5 South
+GameTrick #7 = South SK H2 S9 S8 South
+GameTrick #8 = South D2 D4 D5 D7 East
+GameTrick #9 = East -- -- -- ST North
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East gives North free trick with Spade lead
+>>>>>>>>>>> EAST<<<<<<<<<
+S:T854  H:T97  D:A87  C:T43
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 4.0.
+  QT's = 1.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  -3 Likely Winners (-1/-1/0/-1)
+  16 Likely Losers (5/4/3/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+South bids 1C.
+--------------------
+West bids 1H.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Heart suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 11.5-18.5 points.
+ROVRC10: This is not enough to bid any higher, so pass.
+We pass.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the nine.
+PLDF47: Partner's HK can win the trick, so discard the H9.
+PLDF47: Partner's HA can win the trick, so discard the H7.
+RCP5A: South is now known to have started with 1 Heart.
+PLAYB48: We can't beat South's Ace, so discard the C3.
+RCP20: Dummy is now out of Clubs.
+PLAYB48: We can't beat South's King, so discard the C4.
+PLAYB48: We can't beat South's Ace, so discard the S4.
+PLAYB48: We can't beat South's Queen, so discard the S5.
+RCP5A: West is now known to have started with 2 Spades.
+PLAYB48: We can't beat South's King, so discard the S8.
+PLAYB41: Play the seven to win the trick.
+PLYLD32: Partner is void in Spades and may still have some trumps, so lead the ST.
+RCP20: Dummy is now out of Spades.
+PLYLD32: Partner is void in Spades and may still have some trumps, so lead the ST.
+
+

@@ -1,0 +1,132 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 9, 2009
+File Date =  09/12/09 11:48:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S8 S2 H9 H8 H6 DJ D4 CT C4 C2 
+Current Hand(West) = SK S4 S3 HK HQ H4 H2 DA DQ D6 D3 CJ 
+Current Hand(North) = SJ ST HA DK D9 D8 D7 D5 CA C9 C8 C5 
+Current Hand(East) = S9 S7 S6 S5 HJ HT H7 H5 H3 DT D2 CK 
+Original Hand(South) = SA SQ S8 S2 H9 H8 H6 DJ D4 CQ CT C4 C2 
+Original Hand(West) = SK S4 S3 HK HQ H4 H2 DA DQ D6 D3 CJ C3 
+Original Hand(North) = SJ ST HA DK D9 D8 D7 D5 CA C9 C8 C6 C5 
+Original Hand(East) = S9 S7 S6 S5 HJ HT H7 H5 H3 DT D2 CK C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 5
+Declarer = West
+Bidding History = Pass 1NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North CQ C3 C6 C7 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy plays under K, leaving K bare. Should play Ck vs C7.
+>>>>>> WEST <<<<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:K976543 (9765/K43)
+  H:KQJT75432 (JT753/KQ42)
+  D:AQT632 (T2/AQ63)
+  C:KJ73 (K7/J3)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 0.0;
+  Total pts = 19.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  1 Sure Winner (0/0/1/0)
+  5 Eventual Winners (0/4/1/0)
+  8 Possible Losers (vs. 6 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 1 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:K976543 (9765/K43)
+  H:KQJT75432 (JT753/KQ42)
+  D:AQT632 (T2/AQ63)
+  C:KJ73 (K7/J3)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 0.0;
+  Total pts = 19.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  1 Sure Winner (0/0/1/0)
+  5 Eventual Winners (0/4/1/0)
+  8 Possible Losers (vs. 6 allowable)
+PLN10: We have only 5 sure tricks against a requirement of 7 for the 1NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the King of Hearts in hand.
+ Play 2: Cash the Queen of Hearts in hand.
+ Play 3: Cash the Seven of Hearts in dummy.
+ Play 4: Cash the Jack of Hearts in dummy.
+ Play 5: Cash the Ten of Hearts in dummy.
+ Play 6: Cash the Ace of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the seven.  <<<<<<<<< NO< PLAY KING
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's Queen, so discard the C3.
+
+

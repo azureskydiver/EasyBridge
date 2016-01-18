@@ -1,0 +1,194 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2010
+File Date =  11/04/10 20:03:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S8 S7 S6 HA HK H6 DA D4 CQ C7 C3 
+Current Hand(West) = SQ SJ S4 H7 H4 DK D9 D3 C9 C6 C5 C4 C2 
+Current Hand(North) = SK S3 S2 HJ H9 H8 H5 H3 H2 DJ DT D7 D2 
+Current Hand(East) = S9 S5 HQ HT DQ D8 D6 D5 CA CK CJ CT C8 
+Original Hand(South) = SA ST S8 S7 S6 HA HK H6 DA D4 CQ C7 C3 
+Original Hand(West) = SQ SJ S4 H7 H4 DK D9 D3 C9 C6 C5 C4 C2 
+Original Hand(North) = SK S3 S2 HJ H9 H8 H5 H3 H2 DJ DT D7 D2 
+Original Hand(East) = S9 S5 HQ HT DQ D8 D6 D5 CA CK CJ CT C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 1
+Dealer = North
+Number of Bids Made = 13
+Declarer = South
+Bidding History = Pass 1C 1NT Pass 2D 3C 3NT Pass Pass Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 30
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  90		3 overtricks"
+Game Score Record = "	  30	1 Spade made"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Should discard Diamonds vs Hearts from dummy
+Declarer should try to drop HQ (has 9 hearts with AK)
+>>>>>>>>>>> SOUTH<<<<<<<<<<<<<
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:AT876  H:AK6  D:A4  C:Q73
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 17.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (2/1/1/0)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PLAY: West leads the C2.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKT87632 (K32/AT876)
+  H:AKJ986532 (J98532/AK6)
+  D:AJT742 (JT72/A4)
+  C:Q73 (/Q73)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;   Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (2/2/1/0)
+  5 Eventual Winners (2/2/1/0)
+  8 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 No Trump (doubled).
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKT87632 (K32/AT876)
+  H:AKJ986532 (J98532/AK6)
+  D:AJT742 (JT72/A4)
+  C:Q73 (/Q73)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;   Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (2/2/1/0)
+  5 Eventual Winners (2/2/1/0)
+  8 Possible Losers (vs. 4 allowable)
+PLN10: We have only 5 sure tricks against a requirement of 9 for the 3NT X contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1a: Can play the Ace of Hearts in hand to try and drop one or more of the opponents' { HQ HJ  }.
+PLNDRP1a: Can play the King of Hearts in hand to try and drop one or more of the opponents' { HQ HJ  }.
+PLNDRP5: A total of 2 possible drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS11: Can finesse the Ten of Spades in hand with the Ace as the potential cover card.
+PSFNS21: Can finesse the Three of Spades by leading it from dummy, with the Ace as the potential cover card in hand.
+PSFNS30: Can finesse the Jack of Hearts by leading it from dummy against East.
+PSFNS21: Can finesse the Jack of Diamonds by leading it from dummy, with the Ace as the potential cover card in hand.
+PSFNS30: Can finesse the Jack of Diamonds by leading it from dummy against East.
+PLNFNS90: A total of 5 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Spades, plus 1 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 5 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 12 plays and approx. 5+ possible tricks including 5 sure tricks (vs. 9 required) accounted for in the plan.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [SA Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Play the HA from hand to try and drop one or more of the { HQ HJ  }.
+ Play 2: Play the HK from hand to try and drop one or more of the { HQ HJ  }.
+ Play 3: Lead a low Heart from hand and finesse the Jack in dummy against East.
+ Play 4: Cash the Ace of Hearts in hand.
+ Play 5: Cash the King of Hearts in hand.
+ Play 6: Lead a low Spade from dummy to finesse the ten in hand against West, with the Ace as cover.
+ Play 7: Lead the Spade three from dummy and finesse it, with the Ace in hand as cover.
+ Play 8: Lead the Diamond Jack from dummy and finesse it, with the Ace in hand as cover.
+ Play 9: Lead a low Diamond from hand and finesse the Jack in dummy against East.
+ Play 10: Cash the King of Spades in dummy.
+ Play 11: Cash the Ace of Spades in hand.
+ Play 12: Cash the Ace of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2C2: We have no more cards in the suit in dummy, so discard the H2.  <<<<<<<<<<< NO Hearts could be useful if they split 2-2 Diamonds are not useful.
+PLAY: North plays the H2.
+Combined hand (Dummy/Hand):
+  S:AKT87632 (K32/AT876)
+  H:AKJ98653 (J9853/AK6)
+  D:AJT742 (JT72/A4)
+  C:Q73 (/Q73)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;   Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (2/2/1/0)
+  5 Eventual Winners (2/2/1/0)
+  8 Possible Losers (vs. 4 allowable)
+PLAY: East plays the CK.
+
+
+

@@ -1,0 +1,220 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 2, 2011
+File Date =  12/11/11 20:26:03
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S6 HQ HJ H9 H7 H4 H3 CQ C8 C6 C5 C2 
+Current Hand(West) = S8 S4 S3 S2 HA HK H8 D8 D7 D6 CT C9 C3 
+Current Hand(North) = SK SJ ST S7 S5 HT H6 H5 H2 D4 CA CK CJ 
+Current Hand(East) = SA SQ DA DK DQ DJ DT D9 D5 D3 D2 C7 C4 
+Original Hand(South) = S9 S6 HQ HJ H9 H7 H4 H3 CQ C8 C6 C5 C2 
+Original Hand(West) = S8 S4 S3 S2 HA HK H8 D8 D7 D6 CT C9 C3 
+Original Hand(North) = SK SJ ST S7 S5 HT H6 H5 H2 D4 CA CK CJ 
+Original Hand(East) = SA SQ DA DK DQ DJ DT D9 D5 D3 D2 C7 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = Pass 1S Dbl Pass 2H Pass 4D Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "	  60	3 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Bidding really went badly
+Norm,
+ 
+Somehow E-W really went wrong in the bidding.  It was not bad until West rebid his 3 card heart suit over 4 diamonds (with 3 card diamond help !).  Then East didn’t correct to his 9 card diamond suit over 4 hearts. Then, when 4 hearts was doubled, neither West nor East ran to 5 diamonds.   Down 7, doubled.
+ 
+I think I can agree with East’s original takeout double, rather than a preempt because of his great playing strength in diamonds (maybe I would even start with a direct cue-bid of 2 spades).
+ 
+By the way, that brings up another problem area.  EasyBridge seems to treat bids of opponents’ suit as natural instead of artificial and forcing showing great strength.  In fact, I don’t ever recall EasyBridge making a cue-bid.
+
+>>>>> EAST<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:AQ  H:  D:AKQJT9532  C:74
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 12.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 23.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  10 Likely Winners (1/0/9/0)
+  3 Likely Losers (1/0/0/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+S:AQ  H:---  D:AKQJT9532  C:74
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 12.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 23.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  10 Likely Winners (1/0/9/0)
+  3 Likely Losers (1/0/0/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+West passes.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCTK: With 16.0/23.0 points, the hand is too strong for a simple overcall, so start by doubling.
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 2H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 2 Hearts.
+TKORb43: Partner has made a minimum response of 2 Hearts, indicating no more than 9 points.
+TKRb49: The total point count in the partnership is therefore 25.0-32.0 pts.
+TKRb90: Partner's forced response of 2 Hearts not withstanding, we can now show the Diamond suit that we wanted to overcall with last round by bidding 4 Diamonds.
+We bid 4D.
+--------------------
+South passes.
+--------------------
+West bids 4H.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 2 Hearts, 4 Diamonds, and 4 Hearts.
+TKRc45 With a total of 25.0-32.0 pts in the partnership, partner has gone to game in his suit at 4 Hearts, so pass.?????????????????????
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is West; North leads.
+=======================
+
+
+>>>>>>>> WEST<<<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:8432  H:AK8  D:876  C:T93
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 2.0,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  -2 Likely Winners (-1/1/-1/-1)
+  15 Likely Losers (5/2/4/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+S:8432  H:AK8  D:876  C:T93
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 2.0,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  -2 Likely Winners (-1/1/-1/-1)
+  15 Likely Losers (5/2/4/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1S.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+A02: Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKOTR8: Partner's takeout indicates 11.5+ HCPs, for a total in the partnership of 18.5-28.5 points.
+TKOTR20a: Our longest suit of Spades happens to be the enemy suit, so respond in the next-longest suit of Hearts.
+We bid 2H.
+--------------------
+North passes.
+--------------------
+East bids 4D.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's response of 4 Diamonds.
+TKOTRx: Partner bid 4 Diamonds after his takeout and our 2 Hearts response.
+TKOTR60: Partner shifted to a new suit after our response of 2 Hearts to his takeout, indicating that he has 19.0+ pts, for a total in the partnership of 26.0-28.5 points.
+TKOTR85: With 26.0-28.5 points in the partnership but only weak support for partner's Diamonds, we rebid our Heart suit at 4 Hearts.
+We bid 4H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is West; North leads.
+
+
+
+

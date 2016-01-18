@@ -1,0 +1,146 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 30, 2009
+File Date =  06/30/09 21:07:53
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 DJ CA CQ C9 C8 C4 
+Current Hand(West) = ST S9 S4 C7 C5 C3 C2 
+Current Hand(North) = SJ S6 HQ DK DQ D9 CJ C6 
+Current Hand(East) = HK HJ H6 H5 H4 H3 CK CT 
+Original Hand(South) = SK S8 S7 DJ DT D6 D3 D2 CA CQ C9 C8 C4 
+Original Hand(West) = SQ ST S9 S4 S3 S2 HA H9 DA C7 C5 C3 C2 
+Original Hand(North) = SJ S6 S5 HQ H8 H7 DK DQ D9 D8 D7 CJ C6 
+Original Hand(East) = SA HK HJ HT H6 H5 H4 H3 H2 D5 D4 CK CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = Pass Pass Pass 1H 2D Pass 3D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West D2 HA H7 HT South
+GameTrick #2 = South D3 DA D7 D4 West
+GameTrick #3 = West S7 S2 S5 SA East
+GameTrick #4 = East D6 S3 D8 D5 North
+GameTrick #5 = North DT H9 H8 H2 South
+GameTrick #6 = South SK SQ -- -- South
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West plays SQ on South's SK when had smaller cards.............
+Doesn't do it in the original version...................
+========================
+West analysis==================
+S:QT9432  H:A9  D:A  C:7532
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0; Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  6 Likely Winners (4/1/1/0)
+  7 Likely Losers (2/1/0/4)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South passes.
+--------------------
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 1H.
+--------------------
+South bids 2D.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+Partner, opening in fourth position, is showing 10.0+ points and 2+ QT's.
+Have 10.0/10.0/10.0 points with poor (A9) support for partner's Heart suit but hold a openable 6-card Spade suit, so bid 1 Spade instead.
+But our bid is too low vs. the last bid of of 2 Diamonds, so we have to pass.
+We pass.
+--------------------
+North bids 3D.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is South; West leads.
+=======================
+Starting play as left-hand defender.
+Making opening lead as West against a contract of 3 Diamonds.
+Lead the top card of partner's Heart suit (the Ace.
+South is now known to have started with 0 Hearts.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the Ace.
+Partner likes the Heart suit, but declarer has shown out of the suit and _may_ be able to ruff, so avoid leading the suit if possible.
+With no other clear plays available, lead a card from the unbid Spade suit.
+With no cards in the suit led and no trumps, we discard the S3.
+West is now known to have started with 1 Diamond.
+We can't beat the opponent's ten of trumps, so discard the H9.
+Playing second as defender, using default player logic.
+Cover with the winner Queen.
+Play second hand low with the Queen.
+East is now known to have started with 1 Spade.
+Playing second as defender, using default player logic.
+Cover with the winner ten.
+Cover with the ten.
+Dummy is now out of Spades.
+Playing second as defender, using default player logic.
+Cover with the winner Queen.
+Play second hand low with the Queen.<<<<<<<<<<<<================= over King by South
+
+

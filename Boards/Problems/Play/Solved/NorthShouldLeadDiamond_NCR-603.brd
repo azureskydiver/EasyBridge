@@ -1,0 +1,120 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 5, 2012
+File Date =  01/15/12 11:59:02
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ ST S6 S4 HT H9 H4 CK C7 C4 
+Current Hand(West) = SA SQ S8 S7 S2 HA HJ H6 D4 CA CT 
+Current Hand(North) = S9 DT D9 D7 D6 D2 C9 C8 C6 C3 
+Current Hand(East) = S5 HK HQ H8 H7 H5 CQ CJ C5 C2 
+Original Hand(South) = SK SJ ST S6 S4 S3 HT H9 H4 D5 CK C7 C4 
+Original Hand(West) = SA SQ S8 S7 S2 HA HJ H6 DK D4 D3 CA CT 
+Original Hand(North) = S9 H3 DA DQ DT D9 D7 D6 D2 C9 C8 C6 C3 
+Original Hand(East) = S5 HK HQ H8 H7 H5 H2 DJ D8 CQ CJ C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 7
+Declarer = East
+Bidding History = 2S Dbl Pass 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South D5 DK DA D8 North
+GameTrick #2 = North S3 D3 DQ DJ North
+GameTrick #3 = North -- -- H3 H2 ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should lead Diamond for South to Ruff
+>>>>>>>>>>>>>NORTH<<<<<<<<<<<<
+S:9  H:3  D:AQT9762  C:9863
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0; Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  5 Likely Winners (0/0/6/-1)
+  8 Likely Losers (1/1/1/5)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 2S.
+--------------------
+West doubles.
+--------------------
+B00 Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.5-10.5 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+RWKT4: We only have 6.0/9.0/6.0 points, for a partnership total of 11.5-16.5 points, which is probably not enough for game.
+RWKT10: And since we don't like partner's Spade suit (holding 9), have no good suit of our own, and hold an imbalanced hand, we have to pass.
+We pass.
+--------------------
+East bids 3H.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is East; South leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF40a: Play higher with the Ace.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Queen
+RCP5A: South is now known to have started with 1 Diamond.  <<<<<<<<<<<<<<<<<<note
+PLYLD44: With no other obvious plays, lead a low trump H3.
+
+

@@ -1,0 +1,135 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  10/27/14 21:08:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S4 D6 D5 D4 D3 CA CQ CJ C9 
+Current Hand(West) = SA SK SJ S7 S6 S5 HQ DK DJ CK C8 
+Current Hand(North) = ST S8 S3 HJ HT H6 H5 DT CT C2 
+Current Hand(East) = S2 DA DQ D7 D2 C7 C6 C5 C4 C3 
+Original Hand(South) = SQ S9 S4 H9 H8 D6 D5 D4 D3 CA CQ CJ C9 
+Original Hand(West) = SA SK SJ S7 S6 S5 HQ H4 H2 DK DJ CK C8 
+Original Hand(North) = ST S8 S3 HA HK HJ HT H6 H5 DT D8 CT C2 
+Original Hand(East) = S2 H7 H3 DA DQ D9 D7 D2 C7 C6 C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = 2H Pass Pass Dbl Pass 3D Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North H9 H2 HK H3 North
+GameTrick #2 = North H8 H4 HA H7 North
+GameTrick #3 = North -- -- D8 D9 ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 100
+North/South Game 2 Points = 70
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "  40		2 overtricks"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  70		2 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should lead another Heart
+>>>NORTH<<<<<<<<<<
+S:T83  H:AKJT65  D:T8  C:T2
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 9.0.
+  QT's = 2.0,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  5 Likely Winners (0/5/0/0)
+  8 Likely Losers (3/1/2/2)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+Opening bid for team.
+WEAK2: Have a good 6-card Heart suit with 8.0/9.0 points (less than normal opening requirements), so bid a weak 2 Hearts.
+We bid 2H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West doubles.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's pass.
+HRWT80: After our weak 2 Hearts opening bid, assume partner's Pass bid is to play, so pass.
+We pass.
+--------------------
+East bids 3D.
+--------------------
+South passes.
+--------------------
+West bids 3S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 3 Spades.
+PLYLD15: Lead the HK from the top of the { HA HK } sequence.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+RCP20: Dummy is now out of Hearts.
+PLYSIG6: Partner discarded low with the eight after discarding the nine last round, thus marking a high-low suit preference signal.
+PLYLDPRF1: Partner likes the Heart suit, but dummy can ruff, so skip this suit for now.  <<<<<<<<<South could overruff
+PLYLD42: With no good card to lead, lead the D8 since the opponents have not shown out of the Diamond suit.
+
+

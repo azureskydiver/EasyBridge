@@ -1,0 +1,87 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 23, 2014
+File Date =  07/09/14 18:29:15
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST HA HQ HJ H7 H6 H5 H4 H3 D9 D2 CT C6 
+Current Hand(West) = SQ S7 S6 S5 HK H8 DQ DT D7 D4 CQ C8 C3 
+Current Hand(North) = SA SK S8 S3 DA D8 D6 D5 CA CK CJ C9 C4 
+Current Hand(East) = SJ S9 S4 S2 HT H9 H2 DK DJ D3 C7 C5 C2 
+Original Hand(South) = ST HA HQ HJ H7 H6 H5 H4 H3 D9 D2 CT C6 
+Original Hand(West) = SQ S7 S6 S5 HK H8 DQ DT D7 D4 CQ C8 C3 
+Original Hand(North) = SA SK S8 S3 DA D8 D6 D5 CA CK CJ C9 C4 
+Original Hand(East) = SJ S9 S4 S2 HT H9 H2 DK DJ D3 C7 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 1
+Declarer = ????
+Bidding History = Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+
+[[Match Information]]
+North/South Bonus Points = 710
+North/South Game 1 Points = 120
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 320
+East/West Game 1 Points = 0
+East/West Game 2 Points = 60
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = " 100		Redoubled contract"
+Bonus Score Record = " 400		2 overtricks, redoubled"
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	100	Honors bonus for holding 4 trump honors"
+Bonus Score Record = "  60		3 overtricks, vulnerable"
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	  20	1 overtrick"
+Bonus Score Record = "	100	Honors bonus for holding 4 trump honors"
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = " 120		1 Heart (redoubled) redoubled made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "	  60	3 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+In the attached hand South preempts with 3 Hearts, and North passes.  It makes 6 Hearts.
+ 
+I think this indicates a fundamental difference between EasyBridge and me in the way preempts are handled.
+ 
+I preempt with a 7+ length suit, less than 10 HCP, and no outside 4 card major headed by at least the Q.  The level of the preempt is determined by adding either 2 or 3 tricks (depending on vulnerability) to the number of tricks I estimate I will win with no help from dummy.  That means with the attached hand that has 8 Hearts headed by AQJ (hence 7 expected winners) I preempt 3 Hearts vulnerable, and 4 Hearts not vulnerable.
+ 
+The responder bids according to his “Quick Tricks”, not point count.  He adds his quick tricks to the number of tricks South is promising and sets the contract accordingly.  In the attached hand N-S were vulnerable, so South is estimating his hand at 7 winners by bidding 3 Hearts. North has 5 quick tricks, which, added to South’s 7 tricks equals 12.  So North should bid 6 Hearts (despite his void in Hearts).
+ 
+<<As an aside, I have also heard some players advocate a scheme that adds 2 tricks with unfavorable vulnerability (you vulnerable, opponents not), 3 tricks with equal vulnerability, and 4 tricks with favorable vulnerability. >>
+ 
+Of course, some novices simply bid a 3 level preempt with 7 card suits and 4 level with 8 card suits, with no respect to expected winning tricks or vulnerability.  That makes responding to them a guessing game (and opens the possibility of being set for big numbers if doubled).  Is EasyBridge in this camp ?
+ 
+

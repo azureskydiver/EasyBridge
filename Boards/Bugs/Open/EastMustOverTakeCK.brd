@@ -1,0 +1,155 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 27, 2010
+File Date =  11/28/10 17:02:34
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S8 HT H8 D8 D6 C8 C6 C2 
+Current Hand(West) = HA HK HQ HJ H9 H7 H6 H4 
+Current Hand(North) = S7 S6 S4 H5 H2 DJ CT C5 
+Current Hand(East) = H3 DQ D9 D7 CA CQ CJ C9 
+Original Hand(South) = S9 S8 S3 S2 HT H8 D8 D6 D5 D3 C8 C6 C2 
+Original Hand(West) = SJ S5 HA HK HQ HJ H9 H7 H6 H4 DT CK C7 
+Original Hand(North) = SA SK S7 S6 S4 H5 H2 DA DK DJ CT C5 C4 
+Original Hand(East) = SQ ST H3 DQ D9 D7 D4 D2 CA CQ CJ C9 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 1
+Dealer = North
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 1S 2NT Pass 5C Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = North
+GameTrick #1 = North S2 S5 SK SQ North
+GameTrick #2 = North S3 SJ SA ST North
+GameTrick #3 = North D3 DT DA D2 North
+GameTrick #4 = North D5 C7 DK D4 West
+GameTrick #5 = West -- CK C4 C3 West
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should Overtake West's CK to continue drawing trumps
+>>>>>>>> WEST<<<<<<<<<<<<
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 9 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Heart in dummy.
+PLNRF1: We can potentially ruff up to 1 Diamond in hand.
+PLNRF5: Up to 2 ruffs can be used (1 in dummy/1 in hand) out of a total of 2 available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Diamonds, plus 8 in Hearts, plus 4 in Clubs.
+PLNCSH30: A total of 14 maximum cashing tricks are immediately available.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 5 rounds of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 6 outstanding trump(s).
+PLNTRMP9: This will result in (up to) 5 rounds of trumps, 10 cashing tricks in the side suits, and up to 2 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90B: We have 21 possible plays and up to 9 possible tricks including 14 sure tricks (vs. 11 required) accounted for in the plan.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in dummy.
+ Play 2: Pull a round of trumps with the King in hand.
+ Play 3: Pull a round of trumps with the Queen in dummy.
+ Play 4: Pull a round of trumps with the Jack in dummy if necessary.
+ Play 5: Pull a round of trumps with the nine in dummy if necessary. <Requires ...>
+ Play 6: Ruff a Heart in dummy.
+ Play 7: Ruff a Diamond in hand.
+ Play 8: Cash the Queen of Diamonds in dummy.
+ Play 9: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 10: Cash the Ace of Hearts in hand.
+ Play 11: Cash the King of Hearts in hand.
+ Play 12: Cash the Queen of Hearts in hand.
+ Play 13: Cash the Jack of Hearts in hand.
+ Play 14: Cash the Nine of Hearts in hand. <Requires ...>
+ Play 15: Cash the Seven of Hearts in hand. <Requires ...>
+ Play 16: Cash the Six of Hearts in hand. <Requires ...>
+ Play 17: Cash the Four of Hearts in hand. <Requires ...>
+ Play 18: Cash the Ace of Clubs in dummy.
+ Play 19: Cash the King of Clubs in hand.
+ Play 20: Cash the Queen of Clubs in dummy.
+ Play 21: Cash the Jack of Clubs in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the DQ, D9, HA, HK, HQ, HJ, H9, H7 and H6.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in dummy.
+ Play 2: Pull a round of trumps with the King in hand.
+ Play 3: Pull a round of trumps with the Queen in dummy.
+ Play 4: Pull a round of trumps with the Jack in dummy if necessary.
+ Play 5: Pull a round of trumps with the nine in dummy if necessary.
+ Play 6: Ruff a Heart in dummy.
+ Play 7: Ruff a Diamond in hand.
+ Play 8: Cash the Queen of Diamonds in dummy.
+ Play 9: Cash the Nine of Diamonds in dummy.
+ Play 10: Cash the Ace of Hearts in hand.
+ Play 11: Cash the King of Hearts in hand.
+ Play 12: Cash the Queen of Hearts in hand.
+ Play 13: Cash the Jack of Hearts in hand.
+ Play 14: Cash the Nine of Hearts in hand.
+ Play 15: Cash the Seven of Hearts in hand.
+ Play 16: Cash the Six of Hearts in hand.
+ Play 17: Cash the Four of Hearts in hand.
+ Play 18: Cash the Ace of Clubs in dummy.
+ Play 19: Cash the King of Clubs in hand.
+ Play 20: Cash the Queen of Clubs in dummy.
+ Play 21: Cash the Jack of Clubs in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLTMRP15: Oops, the lowest trump we can lead from hand is the King, which is equivalent to the Ace, so skip this play.
+PLTRMP12: Lead out the CK from hand to pull in a round of trumps.
+PLAY: We lead the CK.
+PLAY: North plays the C4.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the C3 on declarer's top King of trumps. <<<<<<<<<<<<<<<<<< NO MUST OVERTAKE !!!!!!!!!!!!!!!
+PLAY: East plays the C3.
+
+

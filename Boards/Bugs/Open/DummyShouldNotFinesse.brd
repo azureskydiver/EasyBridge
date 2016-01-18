@@ -1,0 +1,316 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 8, 2010
+File Date =  11/08/10 15:59:52
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S4 HK H7 H5 H3 DA DQ DJ D6 C6 C4 C2 
+Current Hand(West) = HT H8 H6 H4 H2 D7 D4 CK CQ C9 C8 C7 
+Current Hand(North) = SA SK S8 S7 HA DK DT D8 D5 D2 CA CT 
+Current Hand(East) = SQ S6 S5 S3 HQ HJ H9 D9 D3 CJ C5 C3 
+Original Hand(South) = S9 S4 HK H7 H5 H3 DA DQ DJ D6 C6 C4 C2 
+Original Hand(West) = S2 HT H8 H6 H4 H2 D7 D4 CK CQ C9 C8 C7 
+Original Hand(North) = SA SK ST S8 S7 HA DK DT D8 D5 D2 CA CT 
+Original Hand(East) = SQ SJ S6 S5 S3 HQ HJ H9 D9 D3 CJ C5 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 7
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 18
+Declarer = South
+Bidding History = Pass Pass 1S Pass 2D Pass 4NT Pass 5D Pass 5NT Pass 6D Pass 7D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- S2 ST SJ ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should NOT finesse with SAK
+>>>>>>> SOUTH<<<<<<<<<<<<
+Swapped into a new hand.
+------------------------
+=====================================
+Received hand:
+  S:94  H:K753  D:AQJ6  C:642
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  3 Likely Winners (0/1/3/-1)
+  10 Likely Losers (2/3/1/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+PLAY: West leads the S2.
+PLAY: North plays the SK.
+Combined hand (Dummy/Hand):
+  S:AT9874 (AT87/94)
+  H:AK753 (A/K753)
+  D:AKQJT8652 (KT852/AQJ6)
+  C:AT642 (AT/642)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 8.0;
+  Total pts = 33.0.
+  QT's = 6.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  9 Sure Winners (1/2/5/1)
+  9 Eventual Winners (1/2/5/1)
+  4 Possible Losers (vs. 0 allowable)
+PLAY: East plays the SJ.
+PLAY: We play the S4.
+PLAY: North wins the round.
+--------
+PLAY: North leads the D2.
+PLAY: East plays the D9.
+PLAY: We play the DA.
+PLAY: West plays the D4.
+PLAY: South wins the round.
+--------
+PLAY: We lead the DJ.
+PLAY: West plays the D7.
+PLAY: North plays the D5.
+PLAY: East plays the D3.
+PLAY: South wins the round.
+--------
+PLAY: We lead the S9.
+PLAY: West plays the C9.
+RCP10: West shows out of Spades.
+RCP5A: West is now known to have started with 1 Spade.
+PLAY: North plays the SA.
+PLAY: East plays the S3.
+PLAY: North wins the round.
+--------
+PLAY: North leads the ST.
+PLAY: East plays the SQ.
+PLAY: We play the D6.
+PLAY: West plays the H2.
+PLAY: South wins the round.
+--------
+PLAY: We lead the H3.
+PLAY: West plays the H4.
+PLAY: North plays the HA.
+PLAY: East plays the H9.
+PLAY: North wins the round.
+--------
+PLAY: North leads the S8.
+PLAY: East plays the S5.
+PLAY: We play the C2.
+PLAY: West plays the H6.
+PLAY: North wins the round.
+--------
+PLAY: North leads the S7.
+PLAY: East plays the S6.
+PLAY: We play the C4.
+PLAY: West plays the H8.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CA.
+PLAY: East plays the C3.
+PLAY: We play the C6.
+PLAY: West plays the C7.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CT.
+PLAY: East plays the CJ.
+PLAY: We play the DQ.
+PLAY: West plays the C8.
+PLAY: South wins the round.
+--------
+PLAY: We lead the HK.
+PLAY: West plays the HT.
+PLAY: North plays the D8.
+PLAY: East plays the HJ.
+PLAY: North wins the round.
+--------
+PLAYCL: South has claimed the remaining 2 tricks.
+RESULT: North/South made the contract.
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:94  H:K753  D:AQJ6  C:642
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  3 Likely Winners (0/1/3/-1)
+  10 Likely Losers (2/3/1/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:94  H:K753  D:AQJ6  C:642
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  3 Likely Winners (0/1/3/-1)
+  10 Likely Losers (2/3/1/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+PLAY: West leads the S2.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKT9874 (AKT87/94)
+  H:AK753 (A/K753)
+  D:AKQJT8652 (KT852/AQJ6)
+  C:AT642 (AT/642)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 4.0;
+  Total pts = 32.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (2/2/5/1)
+  10 Eventual Winners (2/2/5/1)
+  3 Possible Losers (vs. 0 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 7 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKT9874 (AKT87/94)
+  H:AK753 (A/K753)
+  D:AKQJT8652 (KT852/AQJ6)
+  C:AT642 (AT/642)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 4.0;
+  Total pts = 32.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (2/2/5/1)
+  10 Eventual Winners (2/2/5/1)
+  3 Possible Losers (vs. 0 allowable)
+PLN10: We have only 10 sure tricks against a requirement of 13 for the 7D contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS10: Can finesse the Ten of Spades in dummy with the { SA SK  } as the potential cover carsd.
+PSFNS44: Can opportunistically finesse the Ten of Spades in dummy against East.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 3 Spades in hand.
+PLNRF1: We can potentially ruff up to 2 Hearts in dummy.
+PLNRF1: We can potentially ruff up to 1 Club in dummy after discarding the 1 loser from dummy.
+PLNRF1: We can potentially ruff up to 1 Club in hand after discarding the 2 losers from hand.
+PLNRF5: Up to 7 ruffs can be used (3 in dummy/4 in hand) out of a total of 7 available, but require 3 discard(s) first.
+PLNRF8: This consists of the { CT } from dummy and the { C2 C4 } from hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Hearts, plus 2 in Spades, plus 1 in Clubs, plus 5 in Diamonds.
+PLNCSH30: A total of 10 maximum cashing tricks are immediately available.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 1 round of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 4 outstanding trump(s).
+PLNTRMP9: This will result in  1 round of trumps, 5 cashing tricks in the side suits, and up to 7 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90B: We have 20 possible plays and up to 13 possible tricks including 10 sure tricks (vs. 13 required) accounted for in the plan.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ45: We want to eventualy exit with a Club and a Heart.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [DK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in hand.
+ Play 2: Cash the Ace of Clubs in dummy.
+ Play 3: Cash the Ace of Hearts in dummy.
+ Play 4: Cash the King of Hearts in hand.
+ Play 5: Exit with a Club or Heart and throw the opponents into the lead.
+ Play 6: Ruff a Spade in hand.
+ Play 7: Ruff a Spade in hand.
+ Play 8: Ruff a Spade in hand.
+ Play 9: Ruff a Heart in dummy.
+ Play 10: Ruff a Heart in dummy.
+ Play 11: Ruff a Club in dummy.
+ Play 12: Ruff a Club in hand.
+ Play 13: Lead a low Spade from hand to finesse the ten in dummy against East, with the { SA SK  } as possible cover cards.
+ Play 14: Opportunistically play the ten from dummy to finesse against West.
+ Play 15: Cash the Ace of Spades in dummy.
+ Play 16: Cash the King of Spades in dummy.
+ Play 17: Cash the Ace of Diamonds in hand.
+ Play 18: Cash the Queen of Diamonds in hand.
+ Play 19: Cash the Jack of Diamonds in hand.
+ Play 20: Cash the King of Diamonds in dummy.
+ Play 21: Cash the Ten of Diamonds in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLYTST9: The play <Exit Play> is not yet viable as the precursor play [CA Cash] has not neen used yet.
+PLAFN54: Opportunistically finesse the ST from dummy in second position against East.  <<<<<<<<<<<<<<<<<< NO, 
+PLAY: North plays the ST.
+Combined hand (Dummy/Hand):
+  S:AK9874 (AK87/94)
+  H:AK753 (A/K753)
+  D:AKQJT8652 (KT852/AQJ6)
+  C:AT642 (AT/642)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 4.0;
+  Total pts = 32.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (2/2/5/1)
+  10 Eventual Winners (2/2/5/1)
+  3 Possible Losers (vs. 0 allowable)
+PLAY: East plays the SJ.
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY4: Removed plan <ST Finesse> (abandoned)
+PLEXT99: ExitPlay postponing <Exit with a Club or Hearts.> because Spade led.
+PLYTRY: No usable plays found for the current situation.
+PLAY4: Playing fourth, using default player logic.
+PLYE48: We can't beat East's Jack, so discard the S4.
+
+
+

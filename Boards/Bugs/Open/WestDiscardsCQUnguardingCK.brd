@@ -1,0 +1,131 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 14, 2009
+File Date =  07/16/09 08:28:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S4 D5 CJ C9 C8 C6 
+Current Hand(West) = SQ S8 S7 HQ HT H9 CK CQ 
+Current Hand(North) = SJ S9 D8 D7 D6 CA CT C7 
+Current Hand(East) = SK S6 S3 HK H6 H5 C5 C4 
+Original Hand(South) = SA ST S4 HA H3 DA DT D5 D4 CJ C9 C8 C6 
+Original Hand(West) = SQ S8 S7 S5 HQ HT H9 H8 H7 D2 CK CQ C3 
+Original Hand(North) = SJ S9 S2 H2 DK DQ D8 D7 D6 D3 CA CT C7 
+Original Hand(East) = SK S6 S3 HK HJ H6 H5 H4 DJ D9 C5 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = 1D Pass 3C Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West H3 H8 H2 HJ East
+GameTrick #2 = East HA H7 S2 H4 South
+GameTrick #3 = South DA D2 D3 D9 South
+GameTrick #4 = South DT S5 DQ DJ North
+GameTrick #5 = North D4 C3 DK C2 North
+GameTrick #6 = North -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West discards CQ unguarding CK. Could discard H9, HQ only needs 1 guard
+>>>>>>>> WEST <<<<<<<<<<<<<
+S:Q875  H:QT987  D:2  C:KQ3
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (2/3/0/2)
+  6 Likely Losers (2/2/1/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+South bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6: But we don't have a sufficiently strong overcall suit.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3C.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H8.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the seven.
+PLDF48: We can't beat South's Ace, so discard the H7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the S5.
+RCP5A: West is now known to have started with 1 Diamond.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAYB52: With no cards in the suit led and no trumps, we discard the C3.
+PLAYB52: With no cards in the suit led and no trumps, we discard the CQ.
+
+

@@ -1,0 +1,207 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 04, 2009
+File Date =  10/04/09 12:43:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S5 HK HQ HJ H7 H3 DK D3 D2 C7 C3 
+Current Hand(West) = SK ST S9 S6 HT H9 DJ DT D5 CQ CJ C9 C8 
+Current Hand(North) = SA SQ S4 S2 HA H6 H5 DA D9 D8 D7 D6 CT 
+Current Hand(East) = S7 S3 H8 H4 H2 DQ D4 CA CK C6 C5 C4 C2 
+Original Hand(South) = SJ S8 S5 HK HQ HJ H7 H3 DK D3 D2 C7 C3 
+Original Hand(West) = SK ST S9 S6 HT H9 DJ DT D5 CQ CJ C9 C8 
+Original Hand(North) = SA SQ S4 S2 HA H6 H5 DA D9 D8 D7 D6 CT 
+Original Hand(East) = S7 S3 H8 H4 H2 DQ D4 CA CK C6 C5 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should support South's Hearts with A65 and 14HCPs
+>>>>>> NORTH<<<<<<<
+S:AQ42  H:A65  D:A9876  C:T
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (3/1/3/0)
+  6 Likely Losers (1/2/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+South passes.
+--------------------
+West passes.
+--------------------
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+East passes.
+--------------------
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 1 Heart.
+B3U00a: Partner has made a 1 over 1 bid after an earlier pass, Hearts over Diamonds, which shows 5.5-11.5 points and is forcing for one round.
+REVAL38: (with 3-card Heart trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 14.0 to 17.0 points)
+RevV0: We'd like to bid the Spade suit, but we can't reverse with less than 17 points.
+RevV2: And since the 3rd best suit (Clubs) is not strong enough to bid, we have to rebid the original Diamond suit.
+B3U54: With weak support for partner's Heart suit (holding A65), 14.0/14.0/17.0 points, and a second openable suit in Diamonds (holding A9876), show it in a 2 Diamonds bid.
+We bid 2D.
+--------------------
+East passes.
+--------------------
+South bids 3D.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+RDR0: With a single raise, partner is showing 6.0-11.5 points and decent (3-4 card) support for our Diamond suit.
+REVAL1: Revaluing hand as declarer...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 14.0 to 16.0 points)
+RDR5: With a total of only 22.0-27.5 points in the partnership, we have to pass partners's  3 Diamonds bid.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AQJ8542 (J85/AQ42)
+  H:AKQJ7653 (KQJ73/A65)
+  D:AK987632 (K32/A9876)
+  C:T7 (7/T)
+Combined hand evaluation:
+  HCPs = 24.0, Distn pts = 0.0;
+  Total pts = 24.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Sure Winners (1/4/2/0)
+  8 Eventual Winners (2/4/2/0)
+  5 Possible Losers (vs. 4 allowable)
+RCP5A: East is now known to have started with 2 Diamonds.
+RCP5A: West is now known to have started with 2 Hearts.
+RESULT: North/South made the contract.
+S:AQ42  H:A65  D:A9876  C:T
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (3/1/3/0)
+  6 Likely Losers (1/2/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+West passes.
+--------------------
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+East passes.
+--------------------
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 1 Heart.
+B3U00a: Partner has made a 1 over 1 bid after an earlier pass, Hearts over Diamonds, which shows 5.5-11.5 points and is forcing for one round.
+REVAL38: (with 3-card Heart trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 14.0 to 17.0 points)
+RevV0: We'd like to bid the Spade suit, but we can't reverse with less than 17 points.
+RevV2: And since the 3rd best suit (Clubs) is not strong enough to bid, we have to rebid the original Diamond suit.
+B3U54: With weak support for partner's Heart suit (holding A65), 14.0/14.0/17.0 points, and a second openable suit in Diamonds (holding A9876), show it in a 2 Diamonds bid.
+We bid 2D.
+--------------------
+East passes.
+--------------------
+South bids 2H.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BXG40: Despite having 5 cards in our preferred Diamonds suit and 22.5-28.5 partnership points, we can't push our minor and can't support partner's major, so pass.  <<<<<<<<<<<<<<<<<<<< ????????????????
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is South; West leads.
+=======================
+RCP20: Dummy is now out of Clubs.
+RCP25: Dummy is shown to be void in Clubs.
+RCP20: Dummy is now out of Hearts.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP5A: East is now known to have started with 2 Spades.
+RCP20: Dummy is now out of Spades.
+RCP5A: South is now known to have started with 3 Spades.
+RESULT: North/South made 4 overtricks.
+
+

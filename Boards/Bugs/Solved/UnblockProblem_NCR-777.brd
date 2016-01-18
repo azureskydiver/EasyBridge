@@ -1,0 +1,134 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = October 27, 2015
+File Date =  11/15/15 18:53:06
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HQ HJ 
+Current Hand(West) = H4 
+Current Hand(North) = D9 
+Current Hand(East) = HT 
+Original Hand(South) = SA SK ST HQ HJ H6 DQ D6 D4 D3 D2 CK C8 
+Original Hand(West) = SJ S7 S5 S4 HA H4 H3 DJ CQ CJ CT C6 C3 
+Original Hand(North) = SQ S9 S3 S2 H9 H8 H5 DA D9 D7 D5 C5 C4 
+Original Hand(East) = S8 S6 HK HT H7 H2 DK DT D8 CA C9 C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = South
+Bidding History = Pass Pass 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 12
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West C8 CQ C4 CA East
+GameTrick #2 = East CK C3 C5 C9 South
+GameTrick #3 = South SA S4 S2 S6 South
+GameTrick #4 = South SK S5 S3 S8 South
+GameTrick #5 = South ST SJ SQ H7 North
+GameTrick #6 = North D2 S7 S9 C2 North
+GameTrick #7 = North DQ DJ D5 D8 South
+GameTrick #8 = South D3 C6 DA DT North
+GameTrick #9 = North D4 H3 D7 DK East
+GameTrick #10 = East D6 CJ H5 C7 West
+GameTrick #11 = West H6 CT H8 H2 West
+GameTrick #12 = West -- HA H9 HK ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 180
+North/South Game 1 Points = 120
+North/South Game 2 Points = 80
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "  90		3 overtricks"
+Bonus Score Record = "  60		3 overtricks, vulnerable"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "  60		2 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  80		4 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+No sense to unblock with one trick left
+>>>>>>>>>>EAST<<<<<<<<<
+=====================================
+Received hand:
+  S:86  H:KT72  D:KT8  C:A972
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  3 Likely Winners (0/1/1/1)
+  10 Likely Losers (2/3/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+North passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 1NT.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is South; West leads.
+=======================
+
+ ......
+
+PLAY: West leads the CT.
+PLAY: North plays the H8.
+PLDF60: With no cards in the suit led , we discard the H2.
+PLAY: We play the H2.
+RCP10: East shows out of Clubs.
+RCP1A: East is now known to have started with  4 Clubs and 2 Spades.
+PLAY: South plays the H6.
+PLAY: West wins the round.
+--------
+PLAY: West leads the HA.
+PLAY: North plays the H9.
+RCP20: Dummy is now out of Hearts.
+PLDF41: Drop the HK here to unblock the suit for partner.  <<<<<<<<<<<<NO
+PLAY: We play the HK.
+
+

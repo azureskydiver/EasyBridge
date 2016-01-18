@@ -1,0 +1,201 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1, 2012
+File Date =  02/06/12 19:03:38
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S5 S4 S3 HK H2 DA DK DJ D9 D4 CK C7 
+Current Hand(West) = S9 H8 H7 H6 H5 D7 D5 D3 CA CJ C9 C6 
+Current Hand(North) = ST S8 S7 S6 HA HQ HT H9 H4 DQ D8 CQ C5 
+Current Hand(East) = SK SQ SJ S2 HJ H3 DT D6 D2 CT C4 C3 C2 
+Original Hand(South) = SA S5 S4 S3 HK H2 DA DK DJ D9 D4 CK C7 
+Original Hand(West) = S9 H8 H7 H6 H5 D7 D5 D3 CA CJ C9 C8 C6 
+Original Hand(North) = ST S8 S7 S6 HA HQ HT H9 H4 DQ D8 CQ C5 
+Original Hand(East) = SK SQ SJ S2 HJ H3 DT D6 D2 CT C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1D Pass 1H Pass 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- C8 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 200
+North/South Game 1 Points = 150
+North/South Game 2 Points = 60
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 130
+East/West Game 1 Points = 0
+East/West Game 2 Points = 150
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 3
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  30		1 overtrick, vulnerable"
+Bonus Score Record = "	  30	1 overtrick"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "  90		3 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  60		2 Spades made"
+Game Score Record = "	  60	3 Clubs made"
+Game Score Record = "	  90	3 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should NOT pass 2NT!
+
+North's bidding analysis:
+
+S:T876  H:AQT94  D:Q8  C:Q5
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  2 Likely Winners (-1/3/0/0)
+  11 Likely Losers (5/2/2/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South bids 1D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+Partner is showing 12.0-21.0 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 8.0 to 10.0 points)
+Have 10.0/8.0/8.0 pts with an available 5-card major suit in Hearts (AQT94), so bid 1 Heart over partner's minor suit 1 Diamond bid.
+We bid 1H.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Heart, and 2 No Trump.
+Partner's jump shift from our 1 Heart bid to 2 No Trump indicates a balanced hand and 17.0+ points, for a total of 25.0+ points in the partnership, and is forcing to game.
+with 10.0/8.0 points in hand, and a total of 25.0-27.0 in the partnership, sign off on partner's contract of 2NT.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+
+
+The N/S bidding went S: 1D N: 1H, S: 2NT (the hand really is not balanced enough for for me to bid 2NT, but I did anyway – 2 doubletons makes it unbalanced) N: pass!
+ 
+North’s own analysis says 2NT is forcing to game but he passes anyway with 8 HCP.
+ 
+By the way my point count ranges for balanced and semi-balanced (5 card minor allowed) hand opening bids are:
+ 
+13-14 Open 1 of a minor, rebid NT (non-jump)
+15-17 Open 1NT
+18-19 Open 1 of a minor, jump rebid NT
+20-21 Open 2NT
+22-23 Open 2C, rebid 2NT
+24+ Open 2C, jump in NT
+ 
+I had assumed that in EasyBridge that if I set point count of 15-17 for 1NT and 20-21 for 2NT that it would use the same schedule that I listed above.  However, in North’s analysis of South’s 2NT, he indicates 17+ points (instead of 18-19).  Now, maybe I’m quibbling because 1 point isn’t much, but it means North passed 2NT with a combined point count of 26-27  -- clearly enough for game, especially with a 5 card heart suit and an honor in my suit.
+ 
+
+>>>>>>>>>>> Debug Version <<<<<<<<<<
+  S:T876  H:AQT94  D:Q8  C:Q5
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  2 Likely Winners (-1/3/0/0)
+  11 Likely Losers (5/2/2/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South bids 1D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 8.0 to 10.0 points)
+F01a: Have 10.0/8.0/8.0 pts with an available 5-card major suit in Hearts (AQT94), so bid 1 Heart over partner's minor suit 1 Diamond bid.
+We bid 1H.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Heart, and 2 No Trump.
+NT42: Partner's jump shift from our 1 Heart bid to 2 No Trump indicates a balanced hand and 17.0+ points, for a total of 25.0+ points in the partnership, and is forcing to game.
+BN1: With 27.0-29.0 HCPs in the partnership and a reasonably balanced hand, though without stoppers in all suits, bid 3 No Trump.
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PLAY: West leads the C8.
+
+

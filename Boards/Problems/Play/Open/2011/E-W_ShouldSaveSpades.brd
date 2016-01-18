@@ -1,0 +1,210 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 28, 2011
+File Date =  10/31/11 15:06:04
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 DJ 
+Current Hand(West) = ST CJ C6 
+Current Hand(North) = HT H5 C9 
+Current Hand(East) = SJ HJ CK 
+Original Hand(South) = SQ S9 S7 S2 HQ H9 DK DQ DJ D8 CQ C7 C3 
+Original Hand(West) = ST S8 S3 H6 DT D9 D6 D5 D3 CJ C6 C5 C2 
+Original Hand(North) = SA SK HK HT H5 H4 H2 DA D7 D4 CA C9 C8 
+Original Hand(East) = SJ S6 S5 S4 HA HJ H8 H7 H3 D2 CK CT C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass 1H Pass 2D Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East H9 H6 H2 H7 South
+GameTrick #2 = South S2 S3 SK S4 North
+GameTrick #3 = North S7 S8 SA S5 North
+GameTrick #4 = North HQ D3 H4 HA East
+GameTrick #5 = East CQ C2 C8 C4 South
+GameTrick #6 = South C3 C5 CA CT North
+GameTrick #7 = North C7 D5 HK H3 North
+GameTrick #8 = North D8 D6 DA D2 North
+GameTrick #9 = North DK D9 D4 H8 South
+GameTrick #10 = South DQ DT D7 S6 ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W should save Spades at end
+>>>>>>>WEST<<<<<<<<<<<
+S:T83  H:6  D:T9653  C:J652
+Hand evaluation:
+  HCPs = 1.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 0.0.
+  QT's = 0.0,
+  Sure Stoppers:
+  Probable Stoppers in: C
+  0 Likely Winners (-1/0/0/1)
+  13 Likely Losers (4/1/5/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1H.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+Starting play as right-hand defender.
+Play our only card in the suit, the six.
+Playing second as defender, using default player logic.
+As second hand, play the lowest card we have in the suit, the three.
+Dummy is now out of Hearts.
+With no cards in the suit led and no trumps, we discard the D3.
+West is now known to have started with 1 Heart.
+Play high with the eight.
+We can't beat South's Queen, so discard the C2.
+Playing second as defender, using default player logic.
+As second hand, play the lowest card we have in the suit, the five.
+With no cards in the suit led and no trumps, we discard the D5.
+We can't beat North's Ace, so discard the D6.
+East is now known to have started with 1 Diamond.
+We can't beat South's King, so discard the D9.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the ten.
+Dummy is now out of Diamonds.
+Playing second as defender, using default player logic.
+We have no Diamonds, so discard the ST.
+North is now known to have started with 3 Diamonds.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the C6.
+Dummy is now out of Spades.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the CJ.
+North/South made 3 overtricks.
+
+>>>>>>>>>>EAST<<<<<<<<<<<<<
+S:J654  H:AJ873  D:2  C:KT4
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  4 Likely Winners (1/3/0/0)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+West passes.
+--------------------
+North bids 1H.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+But we lack the strength with 9.0 pts for a simple overcall.
+We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 2D.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+Starting play as left-hand defender.
+Making opening lead as East against a contract of 3 No Trump.
+Lead the fourth card from our best suit (Hearts) -- play the H7.
+We can't beat North's King, so discard the S4.
+Playing second as defender, using default player logic.
+Keep declarer from finessing the Queen, win now with the Ace.
+Dummy is now out of Hearts.
+West is now known to have started with 1 Heart.
+With no other clear plays available, lead a card from the unbid Spade suit.
+Playing second as defender, using default player logic.
+Play second hand low with the four.
+We can't beat North's Ace, so discard the CT.
+Playing second as defender, using default player logic.
+Play second hand low with the three.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the two.
+Playing second as defender, using default player logic.
+We have no Diamonds, so discard the H8.
+East is now known to have started with 1 Diamond.
+With no cards in the suit led and no trumps, we discard the S6.
+Dummy is now out of Diamonds.
+North is now known to have started with 3 Diamonds.
+With no cards in the suit led and no trumps, we discard the SJ.
+With no cards in the suit led and no trumps, we discard the CK.
+Dummy is now out of Spades.
+With no cards in the suit led and no trumps, we discard the HJ.
+North/South made 3 overtricks.
+
+

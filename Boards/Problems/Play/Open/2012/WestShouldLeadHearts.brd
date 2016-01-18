@@ -1,0 +1,112 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  03/21/12 20:57:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S4 S3 H9 DA DK DQ D8 D6 D4 CQ 
+Current Hand(West) = ST S7 S6 S2 HT H6 H3 DT D7 D2 
+Current Hand(North) = SK SQ SJ S5 HK H7 D9 CK CJ C9 C7 
+Current Hand(East) = S9 HA HQ H5 DJ D5 D3 CT C8 C4 C3 
+Original Hand(South) = SA S4 S3 H9 H2 DA DK DQ D8 D6 D4 CQ C6 
+Original Hand(West) = ST S8 S7 S6 S2 HJ HT H6 H3 DT D7 D2 CA 
+Original Hand(North) = SK SQ SJ S5 HK H7 H4 D9 CK CJ C9 C7 C5 
+Original Hand(East) = S9 HA HQ H8 H5 DJ D5 D3 CT C8 C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 1D Pass 2C Pass 2D Pass 3C Pass 4D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West C6 CA C5 C2 West
+GameTrick #2 = West H2 HJ H4 H8 West
+GameTrick #3 = West -- S8 -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 120
+North/South Game 1 Points = 160
+North/South Game 2 Points = 60
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 40
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  20		1 overtrick"
+Bonus Score Record = "	  40	2 overtricks"
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "  40		2 overtricks, vulnerable"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = "	  60	3 Clubs made"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  60		3 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should lead hearts
+>>>>>>>>>>>>>WEST<<<<<<<<<<<<<
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Diamonds.
+PLYLD4: Lead the singleton CA.
+PLAY: Play restarted.
+====================
+S:T8762  H:JT63  D:T72  C:A
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0; Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  1 Likely Winners (0/1/-1/1)
+  12 Likely Losers (5/3/4/0)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Hearts, Spades
+The best suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Diamonds.
+PLYLD4: Lead the singleton CA.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLYLD42: With no good card to lead, lead the HJ since the opponents have not shown out of the Heart suit.
+PLYLDB: With no other clear plays available, lead a card from the unbid Spade suit.  <<<<<<<<<<<NO
+
+

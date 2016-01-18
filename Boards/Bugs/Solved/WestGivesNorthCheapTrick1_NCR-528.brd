@@ -1,0 +1,174 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 17, 2011
+File Date =  04/25/11 16:58:12
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HT H7 DJ D5 D4 D3 D2 CJ 
+Current Hand(West) = SQ SJ ST HJ H9 H4 H3 CK 
+Current Hand(North) = S8 S7 S6 S5 HA H6 H5 H2 C6 
+Current Hand(East) = HK HQ H8 CQ C9 C8 C7 C5 C4 
+Original Hand(South) = SA S3 HT H7 DA DQ DJ D5 D4 D3 D2 CJ CT 
+Original Hand(West) = SK SQ SJ ST S4 HJ H9 H4 H3 D8 D7 CK C3 
+Original Hand(North) = S8 S7 S6 S5 S2 HA H6 H5 H2 DT D6 CA C6 
+Original Hand(East) = S9 HK HQ H8 DK D9 CQ C9 C8 C7 C5 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1D 1S Dbl Pass 2D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West SA SK S2 S9 South
+GameTrick #2 = South CT C3 CA C2 North
+GameTrick #3 = North DA D7 DT DK South
+GameTrick #4 = South DQ D8 D6 D9 South
+GameTrick #5 = South S3 S4 -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West gave North Cheap trick
+>>>>>>> WEST<<<<<<<<<<<
+=====================================
+Received hand:
+  S:KQJT4  H:J943  D:87  C:K3
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  6 Likely Winners (4/1/0/1)
+  7 Likely Losers (1/3/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+East passes.
+--------------------
+South bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVERCL8: Have a good 5-card Spade suit with 10.0/9.0 points and 6 playing tricks, so overcall the opponents' 1 Diamond with a bid of 1 Spade.
+We bid 1S.
+--------------------
+North doubles.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as West against a contract of 2 Diamonds.
+PLYLD15: Lead the SK from the top of the { SK SQ SJ ST } sequence.
+PLAY: We lead the SK.
+PLAY: North plays the S2.
+PLAY: East plays the S9.
+PLAY: South plays the SA.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CT.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E1: South led an honor (the ten), we may be being finessed, so play three.
+PLAY: We play the C3.
+PLAY: North plays the CA.
+PLAY: East plays the C2.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DT.
+PLAY: East plays the DK.
+PLAY: South plays the DA.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's Ace, so discard the D7.
+PLAY: We play the D7.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DQ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the eight.
+PLAY: We play the D8.
+PLAY: North plays the D6.
+RCP20: Dummy is now out of Diamonds.
+PLAY: East plays the D9.
+PLAY: South wins the round.
+--------
+PLAY: South leads the S3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the four.  <<<<<<<<<<<<< NO, Have top three cards, Play one !!!!
+PLAY: We play the S4.
+PLAY: North plays the S5.
+PLAY: East plays the C4.
+RCP10: East shows out of Spades.
+RCP5A: East is now known to have started with 1 Spade.
+PLAY: North wins the round.
+--------
+
+
+>>>>>>>>>> On replay of trick: <<<<<<<<<
+>> Trick taken back.
+PLAY: South leads the S3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2B: Partner is out of Spades, and dummy on our left is out of trumps, so we can play high in second position with the ten.  <<<<<<<<<< NOTE Info re pard
+PLAY: We play the ST.
+
+
+
+
+

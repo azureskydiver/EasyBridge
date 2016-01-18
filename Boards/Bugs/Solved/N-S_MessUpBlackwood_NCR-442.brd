@@ -1,0 +1,219 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 1, 2010
+File Date =  12/07/10 20:58:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK S5 S3 H3 D7 D6 D5 CA CQ CJ CT C5 
+Current Hand(West) = SJ S8 S6 S4 HK HQ H8 H7 H6 H5 H2 D4 CK 
+Current Hand(North) = ST S7 S2 HA HJ H9 DA DK D9 D2 C9 C8 C2 
+Current Hand(East) = SQ S9 HT H4 DQ DJ DT D8 D3 C7 C6 C4 C3 
+Original Hand(South) = SA SK S5 S3 H3 D7 D6 D5 CA CQ CJ CT C5 
+Original Hand(West) = SJ S8 S6 S4 HK HQ H8 H7 H6 H5 H2 D4 CK 
+Original Hand(North) = ST S7 S2 HA HJ H9 DA DK D9 D2 C9 C8 C2 
+Original Hand(East) = SQ S9 HT H4 DQ DJ DT D8 D3 C7 C6 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N-S mess up Blackwood
+>>>>>>>>>> NORTH<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:T72  H:AJ9  D:AK92  C:982
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  1 Likely Winners (-1/1/2/-1)
+  12 Likely Losers (4/2/2/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+The contract is 5 Hearts (doubled) by South.
+West leads.
+====================
+=====================================
+Received hand:
+  S:T72  H:AJ9  D:AK92  C:982
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  1 Likely Winners (-1/1/2/-1)
+  12 Likely Losers (4/2/2/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+South bids 1C.
+--------------------
+West bids 2H.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+F00: Partner is showing 12.0-21.0 points and 2+ QT's.
+H08: Have 12.0/12.0/12.0 points  but prefer to show our own Diamond suit instead of raising a minor, so bid 3 Diamonds.
+We bid 3D.
+--------------------
+East passes.
+--------------------
+South bids 4C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 3 Diamonds, and 4 Clubs.
+B4C4: Partner made a minimum rebid of his Club suit at 4 Clubs, showing 12.0-16.0 points and 5+ trump cards.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 12.0 down to 10.0 points)
+B4C19: with zero trump support, we have to escape from partner's Clubs and bid 4 No Trump.  <<<<<<<<< Not Blackwood ????!!!!!!!!
+We bid 4NT.
+--------------------
+East passes.
+--------------------
+South bids 5H.
+--------------------
+West doubles.
+--------------------
+Rebidding in round 3.
+BXL04: Partner has reversed from Clubs to Hearts.
+BXL36: Without the strength to push further at 24.0-28.0 total team points, pass and accept the contract of 5 Hearts.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Hearts (doubled).  Declarer is South; West leads.
+=======================
+
+>>>>>>>>>>>> SOUTH<<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AK53  H:3  D:765  C:AQJT5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/-1/4)
+  8 Likely Losers (2/1/4/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Spades
+The best suit is Clubs.
+====================
+The contract is 5 Hearts (doubled) by South.
+West leads.
+====================
+=====================================
+Received hand:
+  S:AK53  H:3  D:765  C:AQJT5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/-1/4)
+  8 Likely Losers (2/1/4/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Spades
+The best suit is Clubs.
+====================
+***Bidding restarted***
+We bid 1C.
+--------------------
+West bids 2H.
+--------------------
+North bids 3D.
+--------------------
+East passes.
+--------------------
+Rebidding after opening bid of 1 Club and partner's response of 3 Diamonds.
+B3W00: Partner has made a 2 over 1 bid, Diamonds over Clubs, which shows 10.0-18.0 points and is forcing for one round.
+B3W36: With a rebiddable Club suit and weak support for partner's Diamonds (holding 765), rebid 4 Clubs.
+We bid 4C.
+--------------------
+West passes.
+--------------------
+North bids 4NT.
+--------------------
+East passes.
+--------------------
+Rebidding in round 3.
+BK10: With 2 Aces, respond to partner's Blackwood inquiry with 5 Hearts.  <<<<<<<<< North's bid was NOT blackwood!!!!!!!!
+We bid 5H.
+--------------------
+West doubles.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Rebidding in round 4.
+BK13: Partner appears to have bailed out, so we'll pass.
+We pass.
+--------------------
+Bidding finished; contract is 5 Hearts (doubled).  Declarer is South; West leads.
+=======================
+PLAY: West leads the D4.
+
+
+
+
+

@@ -1,0 +1,158 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 7,  2010
+File Date =  03/11/10 16:39:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S8 S7 HK HQ DA DK DQ D8 D6 D4 C8 
+Current Hand(West) = SQ S9 S4 S2 H9 H4 H3 H2 DT C9 C7 C6 C5 
+Current Hand(North) = SK S6 S3 HJ HT H7 D9 D3 CA CK CQ CT C4 
+Current Hand(East) = SJ S5 H8 H6 H5 DJ D7 D5 D2 CJ C3 C2 
+Original Hand(South) = SA ST S8 S7 HK HQ DA DK DQ D8 D6 D4 C8 
+Original Hand(West) = SQ S9 S4 S2 H9 H4 H3 H2 DT C9 C7 C6 C5 
+Original Hand(North) = SK S6 S3 HJ HT H7 D9 D3 CA CK CQ CT C4 
+Original Hand(East) = SJ S5 HA H8 H6 H5 DJ D7 D5 D2 CJ C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 7
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 18
+Declarer = North
+Bidding History = 2C Pass 3C Pass 3D Pass 4NT Pass 5H Pass 5NT Pass 6H Pass 7NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- HA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North does not know how to stop bidding at 5NT after asking for Aces
+>>>>>>> NORTH <<<<<<
+=====================================
+Received hand:
+  S:K63  H:JT7  D:93  C:AKQT4
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  6 Likely Winners (1/0/0/5)
+  7 Likely Losers (2/3/2/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Clubs.
+Preferred suit is Clubs.
+====================
+=====================================
+Received hand:
+  S:K63  H:JT7  D:93  C:AKQT4
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  6 Likely Winners (1/0/0/5)
+  7 Likely Losers (2/3/2/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Clubs.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+South bids 2C.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Clubs.
+R2CLUB: Partner made an artificial bid of 2 Clubs, showing either a game suit or 22+ points.  We want to respond positively if interested in a slam.
+R2C08: With a total of 35.0+ points in the partnership, we want to invite slam.
+R2C14: With  13.0/13.0 points in hand, and a total of 35.0-40.0 points in the partnership, we express possible interest in slam by showing our best suit (Clubs) with a bid of 3 Clubs.
+We bid 3C.
+--------------------
+East passes.
+--------------------
+South bids 3D.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 2 Clubs, 3 Clubs, and 3 Diamonds.
+B4P00: Partner bid another suit at 3 Diamonds after opening an artificial 2C, indicating 22.0-22.0 points in his hand.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 1 point(s) for the solid Club suit.
+3REVAL6: Deducting 1 point(s) for the 1 trump(s) short of 3.
+PKF6: Without a compelling suit of our own, and with lackluster support for partner's two suits, we prefer to play in No Trumps.   <<<<<<<<<<NOTE<<<<<<<<<<<
+PKF6: Without a compelling suit of our own, and with lackluster support for partner's two suits, we prefer to play in No Trumps.
+BLKWD: with 13.0/13.0/13.0 points in the hand, for a total of approx. 35.0-35.0 / 35.0-35.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump.
+We bid 4NT.
+--------------------
+East passes.
+--------------------
+South bids 5H.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Hearts, indicating 2 Aces.
+BK34: Oops, we're caught with as few as 35.0 total points, so halt the bidding at the five-level.
+BK38: Without all four aces we can't proceed to a grand slam, so stop at 5 No Trump.  <<<<<<<<<<<<<<<<<<<<<<<<<<<< HOW TO STOP HERE ????
+We bid 5NT.
+--------------------
+East passes.
+--------------------
+South bids 6H.  <<<<<<<<<<<< South thinks its still Blackwood!!!!
+--------------------
+West passes.
+--------------------
+Rebidding in round 4.
+BXK06: Partner has rebid his suit twice, indicating 6+ cards.
+BXK30: With no agreement in suits but with 35.0-35.0 HCPs in the partnership, go ahead and bid slam at 7 No Trump.
+We bid 7NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 7 No Trump.  Declarer is North; East leads.
+=======================
+PLAY: East leads the HA.
+
+
+
+

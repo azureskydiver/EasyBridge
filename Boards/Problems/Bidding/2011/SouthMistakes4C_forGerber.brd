@@ -1,0 +1,179 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 22, 2011
+File Date =  11/25/11 16:14:31
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ S7 S4 S2 HA HK H9 H6 H4 DK D3 C2 
+Current Hand(West) = SQ ST S9 S6 S3 H5 H2 DQ D9 D7 D6 D4 C8 
+Current Hand(North) = S5 H8 DJ DT D5 CA CK CJ C9 C6 C5 C4 C3 
+Current Hand(East) = SA S8 HQ HJ HT H7 H3 DA D8 D2 CQ CT C7 
+Original Hand(South) = SK SJ S7 S4 S2 HA HK H9 H6 H4 DK D3 C2 
+Original Hand(West) = SQ ST S9 S6 S3 H5 H2 DQ D9 D7 D6 D4 C8 
+Original Hand(North) = S5 H8 DJ DT D5 CA CK CJ C9 C6 C5 C4 C3 
+Original Hand(East) = SA S8 HQ HJ HT H7 H3 DA D8 D2 CQ CT C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North-South cross wires on bid South mistakes bid for Gerber
+>>>>>>>>>> NORTH<<<<<<<
+Starting play from restored game.
+------------------------
+S:5  H:8  D:JT5  C:AKJ96543
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 9.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/0/7)
+  6 Likely Losers (1/1/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Clubs.
+Preferred suit is Clubs.
+====================
+RCP5A: South is now known to have started with 1 Club.
+RCP5A: West is now known to have started with 1 Club.
+RCP20: Dummy is now out of Hearts.
+PLAYB48: We can't beat East's Ace, so discard the DT.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C3.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: East is now known to have started with 2 Spades.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C6.
+RESULT: North/South were set 6 tricks.
+S:5  H:8  D:JT5  C:AKJ96543
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 9.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/0/7)
+  6 Likely Losers (1/1/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Clubs.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy for Heart contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Club contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+2REVAL10: (with a 8-card trump suit in Clubs, declarer's hand is revalued for a suit contract from 14.0 to 18.0 points)
+I12: Have 9.0/14.0/14.0 points but insufficient trump support (holding 8) for a double raise, so show our own Club suit by bidding 2 Clubs.
+We bid 2C.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 2 Clubs, and 2 No Trump.
+NT43: Partner's shift from our 2 Clubs bid to 2 No Trump indicates a balanced hand and 13.0+ points, for a total of 27.0+ points in the partnership.
+YR2: With With 27.0-30.0 total points and a powerful 8-card Club suit (holding AKJ96543), rebid it at 4 Clubs.
+We bid 4C.  <<<<<<<<< REBIDs clubs<<<<<<<<<<<<<<<
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is North; East leads.
+=======================
+
+>>>>>>> SOUTH<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:KJ742  H:AK964  D:K3  C:2
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (3/3/1/0)
+  6 Likely Losers (2/2/1/1)
+
+We bid 1H.
+--------------------
+West passes.
+--------------------
+North bids 2C.
+--------------------
+East passes.
+--------------------
+We bid 2NT.
+--------------------
+West passes.
+--------------------
+North bids 4C.
+--------------------
+East passes.
+--------------------
+Rebidding in round 3.
+GRB10: With 1 Ace, respond to partner's Gerber inquiry with 4 Hearts.  <<<<<<<<<<<<< NOT GERBER !!!!!!!A
+We pass.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is North; East leads.
+=======================
+
+
+
+

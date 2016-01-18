@@ -1,0 +1,90 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 23, 2014
+File Date =  05/31/14 13:22:43
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S9 S8 S6 H8 DA DT D7 D5 D3 D2 CA C3 
+Current Hand(West) = ST S7 S2 H9 H6 H5 H4 DK DQ CQ C8 C5 C4 
+Current Hand(North) = SJ S4 HA HK HJ HT H3 DJ D9 D8 D6 C9 C7 
+Current Hand(East) = SA SQ S5 S3 HQ H7 H2 D4 CK CJ CT C6 C2 
+Original Hand(South) = SK S9 S8 S6 H8 DA DT D7 D5 D3 D2 CA C3 
+Original Hand(West) = ST S7 S2 H9 H6 H5 H4 DK DQ CQ C8 C5 C4 
+Original Hand(North) = SJ S4 HA HK HJ HT H3 DJ D9 D8 D6 C9 C7 
+Original Hand(East) = SA SQ S5 S3 HQ H7 H2 D4 CK CJ CT C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 3
+Declarer = ????
+Bidding History = Pass Pass 1C 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Crash2.brd is the file renamed from the autosave file.  
+Crash3.brd I saved just immediately before the crash;  a single mouse click after loading it will crash.
+
+The bidding for the crash is:
+West           North              East                 South
+Pass            Pass                1C                   1D
+Pass            2D                  Double             Redouble
+Pass            Pass                Pass
+ 
+Replace South’s Redouble with 3D and there is no crash.
+
+
+

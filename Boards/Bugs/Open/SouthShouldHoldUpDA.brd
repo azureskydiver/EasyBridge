@@ -1,0 +1,99 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 10, 2010
+File Date =  12/12/10 15:44:26
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S8 S6 HA HJ H9 H8 H5 DA D7 D3 CT C7 
+Current Hand(West) = S7 S4 S2 H7 H3 DQ D9 D8 D4 CJ C8 C3 
+Current Hand(North) = SK SQ SJ S9 HK H6 H4 D5 CA CQ C9 C2 
+Current Hand(East) = ST S5 S3 HQ HT H2 DK DJ CK C6 C5 C4 
+Original Hand(South) = SA S8 S6 HA HJ H9 H8 H5 DA D7 D3 CT C7 
+Original Hand(West) = S7 S4 S2 H7 H3 DQ D9 D8 D6 D4 CJ C8 C3 
+Original Hand(North) = SK SQ SJ S9 HK H6 H4 D5 D2 CA CQ C9 C2 
+Original Hand(East) = ST S5 S3 HQ HT H2 DK DJ DT CK C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1H Pass 1S Pass 1NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- D6 D2 DT ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should hold up winning DA to clear East't diamonds
+>>>>>>>>> SOUTH<<<<<<<<
+PLAY: West leads the D6.
+PLAY: North plays the D2.
+Combined hand (Dummy/Hand):
+  S:AKQJ986 (KQJ9/A86)
+  H:AKJ98654 (K64/AJ985)
+  D:A753 (5/A73)
+  C:AQT972 (AQ92/T7)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 2.0;
+  Total pts = 30.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (4/2/1/1)
+  8 Eventual Winners (4/2/1/1)
+  5 Possible Losers (vs. 4 allowable)
+PLAY: East plays the DT.
+PLAY4: Playing fourth, using default player logic.
+PLYE41: Play the Ace to win the trick.   <<<<<<<<<<<<<< NO, hold up to clear East's Diamonds
+
+

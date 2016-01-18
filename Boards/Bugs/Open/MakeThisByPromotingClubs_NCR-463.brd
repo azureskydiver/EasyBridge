@@ -1,0 +1,345 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 14, 2010
+File Date =  12/16/10 15:35:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA HK H7 DA DK D4 CK CQ CT C5 C4 
+Current Hand(West) = S9 S6 S2 HJ HT H8 H4 H3 DQ D5 D3 
+Current Hand(North) = SA S7 S5 S3 HQ H5 DJ DT D7 D2 C6 
+Current Hand(East) = SJ ST S8 H9 H2 D9 D8 D6 CJ C9 C8 
+Original Hand(South) = HA HK H7 H6 DA DK D4 CA CK CQ CT C5 C4 
+Original Hand(West) = SQ S9 S6 S2 HJ HT H8 H4 H3 DQ D5 D3 C7 
+Original Hand(North) = SA SK S7 S5 S3 HQ H5 DJ DT D7 D2 C6 C2 
+Original Hand(East) = SJ ST S8 S4 H9 H2 D9 D8 D6 CJ C9 C8 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 14
+Declarer = North
+Bidding History = 2C Pass 2S Pass 3C Pass 4NT Pass 5S Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East H6 SQ SK S4 North
+GameTrick #2 = North CA C7 C2 C3 South
+GameTrick #3 = South -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Make this be promoting Clubs
+>>>NORTH<<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AK753  H:Q5  D:JT72  C:62
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 9.0.
+  QT's = 2.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  4 Likely Winners (3/0/1/0)
+  9 Likely Losers (2/2/3/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+The contract is 6 No Trump by North.
+East leads.
+====================
+PLAY: East leads the S4.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AK753 (/AK753)
+  H:AKQ765 (AK76/Q5)
+  D:AKJT742 (AK4/JT72)
+  C:AKQT6542 (AKQT54/62)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 6.0;
+  Total pts = 39.0.
+  QT's = 8.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (2/3/2/3)
+  11 Eventual Winners (2/3/3/3)
+  2 Possible Losers (vs. 1 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 6 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AK753 (/AK753)
+  H:AKQ765 (AK76/Q5)
+  D:AKJT742 (AK4/JT72)
+  C:AKQT6542 (AKQT54/62)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 6.0;
+  Total pts = 39.0.
+  QT's = 8.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (2/3/2/3)
+  11 Eventual Winners (2/3/3/3)
+  2 Possible Losers (vs. 1 allowable)
+PLN10: We have only 11 sure tricks against a requirement of 12 for the 6NT contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the Ace of Clubs in dummy to try and drop the opponents' Jack.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the { DA DK  } as the potential cover cards in dummy.
+PSFNS31: Can finesse the Jack of Diamonds by leading to it from dummy against East.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Diamonds to force out the opponents' Queen.
+PLNDEV31: This will promote the PLNDEV91: One forcing play has been found, which will promote 0 lower card.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Spades, plus 3 in Clubs, plus 3 in Diamonds, plus 3 in Hearts.
+PLNCSH30: A total of 11 maximum cashing tricks are immediately available. 1 require cards to have been played
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 15 plays and approx. 12+ possible tricks including 11 sure tricks (vs. 12 required) accounted for in the plan.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 3 plays using the Club suit.
+PLSEQ55: Move the Type 3 Finesse (DJ Finesse) to the end.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV70A: Try to cross over to hand with the [SA Cash] when possible to cash the stranded winners..
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Spades in hand.
+ Play 2: Play the CA from Dummy to try and drop the CJ.
+ Play 3: Cash the Ace of Clubs in dummy.
+ Play 4: Cash the King of Clubs in dummy.
+ Play 5: Cash the Queen of Clubs in dummy.
+ Play 6: Lead the Diamond Jack from hand and finesses it, with the { DA DK  } in dummy as possible cover cards.
+ Play 7: Play the Ten of Diamonds from hand to force out the opponents' Queen.
+ Play 8: Cash the King of Spades in hand.
+ Play 9: Cash the Ace of Diamonds in dummy.
+ Play 10: Cash the King of Diamonds in dummy.
+ Play 11: Cash the Jack of Diamonds in hand.
+ Play 12: Cash the Queen of Hearts in hand.
+ Play 13: Cash the King of Hearts in dummy.
+ Play 14: Cash the Ace of Hearts in dummy.
+ Play 15: Lead a low Diamond from dummy and finesse the Jack in hand against East.
+PLN95: The planning is complete.
+---------------------------
+PLCSH56: Discard a Heart from dummy in anticipation of cashing the Ace in hand.
+PLAY: South plays the H6.
+Combined hand (Dummy/Hand):
+  S:AK753 (/AK753)
+  H:AKQ75 (AK7/Q5)
+  D:AKJT742 (AK4/JT72)
+  C:AKQT6542 (AKQT54/62)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 6.0;
+  Total pts = 39.0.
+  QT's = 8.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (2/3/2/3)
+  11 Eventual Winners (2/3/3/3)
+  2 Possible Losers (vs. 1 allowable)
+PLAY: West plays the SQ.
+PLCSH80: the opponents led a Spade, so see if we can finish up the cash play here.
+PLCSH85: We can actually play the King to win this trick, so postpone the cash of the Ace.
+PLYTRY: No usable plays found for the current situation.
+PLAY4: Playing fourth, using default player logic.
+PLYE41: Play the King to win the trick.
+PLAY: We play the SK.
+PLAY: North wins the round.
+--------
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 9 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the Ace of Clubs in dummy to try and drop the opponents' Jack.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the { DA DK  } as the potential cover cards in dummy.
+PSFNS31: Can finesse the Jack of Diamonds by leading to it from dummy against East.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Diamonds to force out the opponents' Queen.
+PLNDEV31: This will promote the PLNDEV91: One forcing play has been found, which will promote 0 lower card.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 5 in Clubs, plus 3 in Diamonds, plus 3 in Hearts.
+PLNCSH30: A total of 12 maximum cashing tricks are immediately available. 3 require cards to have been played
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 16 plays and up to 12 possible tricks including 9 sure tricks (vs. 12 required) accounted for in the plan.
+PLNPRI: The Club suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the CA from Dummy to try and drop the CJ.
+ Play 2: Lead the Diamond Jack from hand and finesses it, with the { DA DK  } in dummy as possible cover cards.
+ Play 3: Lead a low Diamond from dummy and finesse the Jack in hand against East.
+ Play 4: Play the Ten of Diamonds from hand to force out the opponents' Queen.
+ Play 5: Cash the Ace of Spades in hand.
+ Play 6: Cash the Ace of Clubs in dummy.
+ Play 7: Cash the King of Clubs in dummy.
+ Play 8: Cash the Queen of Clubs in dummy.
+ Play 9: Cash the Ten of Clubs in dummy. <Requires ...>
+ Play 10: Cash the Six of Clubs in hand. <Requires ...>
+ Play 11: Cash the Ace of Diamonds in dummy.
+ Play 12: Cash the King of Diamonds in dummy.
+ Play 13: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 14: Cash the Ace of Hearts in dummy.
+ Play 15: Cash the King of Hearts in dummy.
+ Play 16: Cash the Queen of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 5 plays using the Club suit.
+PLSEQ55: Move the Type 3 Finesse (DJ Finesse) to the end.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [CA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CT Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Play the CA from Dummy to try and drop the CJ.
+ Play 2: Cash the Six of Clubs in hand.
+ Play 3: Cash the Ten of Clubs in dummy.
+ Play 4: Cash the Queen of Clubs in dummy.
+ Play 5: Cash the King of Clubs in dummy.
+ Play 6: Cash the Ace of Clubs in dummy.
+ Play 7: Lead the Diamond Jack from hand and finesses it, with the { DA DK  } in dummy as possible cover cards.
+ Play 8: Play the Ten of Diamonds from hand to force out the opponents' Queen.
+ Play 9: Cash the Ace of Spades in hand.
+ Play 10: Cash the Ace of Diamonds in dummy.
+ Play 11: Cash the King of Diamonds in dummy.
+ Play 12: Cash the Jack of Diamonds in hand.
+ Play 13: Cash the Queen of Hearts in hand.
+ Play 14: Cash the King of Hearts in dummy.
+ Play 15: Cash the Ace of Hearts in dummy.
+ Play 16: Lead a low Diamond from dummy and finesse the Jack in hand against East.
+PLRV95: The play plan review is complete.
+---------------------------
+PLDRP11: Lead low with the C2 from hand up to the Ace in dummy to try and drop the CJ.
+PLAY: We lead the C2.
+PLAY: East plays the C3.
+PLDM: Playing card from dummy.
+PLDRP61: East did not drop a desired card (the CJ), but perhaps West might, so continue and play the CA from dummy and hope West drops the CJ.
+PLAY: South plays the CA.
+PLAY: West plays the C7.
+PLAY: South wins the round.
+--------
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 8 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the King of Clubs in dummy to try and drop the opponents' Jack.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the { DA DK  } as the potential cover cards in dummy.
+PSFNS31: Can finesse the Jack of Diamonds by leading to it from dummy against East.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Diamonds to force out the opponents' Queen.
+PLNDEV31: This will promote the PLNDEV91: One forcing play has been found, which will promote 0 lower card.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 4 in Clubs, plus 3 in Diamonds, plus 3 in Hearts.
+PLNCSH30: A total of 11 maximum cashing tricks are immediately available. 3 require cards to have been played
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 15 plays and approx. 12+ possible tricks including 8 sure tricks (vs. 12 required) accounted for in the plan.
+PLNPRI: The Club suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the CK from Dummy to try and drop the CJ.
+ Play 2: Lead the Diamond Jack from hand and finesses it, with the { DA DK  } in dummy as possible cover cards.
+ Play 3: Lead a low Diamond from dummy and finesse the Jack in hand against East.
+ Play 4: Play the Ten of Diamonds from hand to force out the opponents' Queen.
+ Play 5: Cash the Ace of Spades in hand.
+ Play 6: Cash the Six of Clubs in hand. <Requires ...>
+ Play 7: Cash the Ten of Clubs in dummy. <Requires ...>
+ Play 8: Cash the Queen of Clubs in dummy.
+ Play 9: Cash the King of Clubs in dummy.
+ Play 10: Cash the Ace of Diamonds in dummy.
+ Play 11: Cash the King of Diamonds in dummy.
+ Play 12: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 13: Cash the Ace of Hearts in dummy.
+ Play 14: Cash the King of Hearts in dummy.
+ Play 15: Cash the Queen of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 4 plays using the Club suit.
+PLSEQ55: Move the Type 3 Finesse (DJ Finesse) to the end.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV70A: Try to cross over to hand with the [HQ Cash] when possible to cash the stranded winners..
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Queen of Hearts in hand.
+ Play 2: Play the CK from Dummy to try and drop the CJ.
+ Play 3: Cash the Six of Clubs in hand.
+ Play 4: Cash the Ten of Clubs in dummy.
+ Play 5: Cash the Queen of Clubs in dummy.
+ Play 6: Cash the King of Clubs in dummy.
+ Play 7: Lead the Diamond Jack from hand and finesses it, with the { DA DK  } in dummy as possible cover cards.
+ Play 8: Play the Ten of Diamonds from hand to force out the opponents' Queen.
+ Play 9: Cash the Ace of Spades in hand.
+ Play 10: Cash the Ace of Diamonds in dummy.
+ Play 11: Cash the King of Diamonds in dummy.
+ Play 12: Cash the Jack of Diamonds in hand.
+ Play 13: Cash the King of Hearts in dummy.
+ Play 14: Cash the Ace of Hearts in dummy.
+ Play 15: Lead a low Diamond from dummy and finesse the Jack in hand against East.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH40: Lead a low Heart (the seven) from dummy in order to cash the Queen in hand.
+
+
+
+
+
+
+

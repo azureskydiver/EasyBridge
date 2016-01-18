@@ -1,0 +1,168 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2010
+File Date =  11/07/10 09:06:03
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S2 H9 DK DQ D8 D7 CA CQ CJ C9 C7 C3 
+Current Hand(West) = SK S6 S3 HT H8 H6 H2 DA DJ D9 CT C6 C4 
+Current Hand(North) = SA S9 S8 S5 S4 HA HQ H7 H4 D3 D2 CK C8 
+Current Hand(East) = SQ SJ ST HK HJ H5 H3 DT D6 D5 D4 C5 C2 
+Original Hand(South) = S7 S2 H9 DK DQ D8 D7 CA CQ CJ C9 C7 C3 
+Original Hand(West) = SK S6 S3 HT H8 H6 H2 DA DJ D9 CT C6 C4 
+Original Hand(North) = SA S9 S8 S5 S4 HA HQ H7 H4 D3 D2 CK C8 
+Original Hand(East) = SQ SJ ST HK HJ H5 H3 DT D6 D5 D4 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass 1S Pass 2C Pass 2H Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- -- -- -- East
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East played HK when HJ would do ???
+East signaled with HJ when North played HA
+>>>>>>>> EAST<<<<<<<<<<
+S:QJT  H:KJ53  D:T654  C:52
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  2 Likely Winners (1/2/-1/0)
+  11 Likely Losers (2/2/5/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+West passes.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 6.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+North bids 2H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 3NT.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF40: Play high with the King.
+PLYLDRT2: We'd like to return partner's Hearts suit, but dummy will most likely win.
+PLYLD76: Continue developing partner's Heart suit by playing the HJ.
+RCP5A: South is now known to have started with 1 Heart.
+PLYLD76: Continue developing partner's Heart suit by playing the H5.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the five.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D4.
+RCP5A: East is now known to have started with 2 Clubs.
+RCP5A: West is now known to have started with 3 Clubs.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D6.
+PLAYB56: With no cards in the suit led and no trumps, we discard the DT.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H3.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the Jack.
+PLDF48: We can't beat North's SA, so discard the SJ.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the ten.
+PLYLDE: With no other obvious plays, play SQ.
+RESULT: North/South were set 1 trick.
+PLAY: Play restarted.
+====================
+S:QJT  H:KJ53  D:T654  C:52
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  2 Likely Winners (1/2/-1/0)
+  11 Likely Losers (2/2/5/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+PL03: Starting play as right-hand defender.
+PLDF40: Play high with the King.  <<<<<<<<<<<<<< No, Dummy has HAQ  Jack will do
+
+
+
+

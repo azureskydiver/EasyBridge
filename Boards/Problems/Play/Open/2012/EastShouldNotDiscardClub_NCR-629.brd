@@ -1,0 +1,178 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  03/27/12 17:54:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 H6 H5 H4 D5 D4 CA C9 C4 
+Current Hand(West) = SK SJ S9 S6 S5 S3 S2 HJ H9 
+Current Hand(North) = ST S4 HQ H8 H7 CT C8 C6 C2 
+Current Hand(East) = SA SQ S8 HA HK HT H3 H2 CK 
+Original Hand(South) = S7 H6 H5 H4 DA DK DJ D9 D5 D4 CA C9 C4 
+Original Hand(West) = SK SJ S9 S6 S5 S3 S2 HJ H9 D2 CQ CJ C3 
+Original Hand(North) = ST S4 HQ H8 H7 D8 D7 D6 D3 CT C8 C6 C2 
+Original Hand(East) = SA SQ S8 HA HK HT H3 H2 DQ DT CK C7 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 8
+Declarer = East
+Bidding History = 1H 2D 2S Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South DK D2 D3 DT South
+GameTrick #2 = South DA C3 D6 DQ South
+GameTrick #3 = South DJ CJ D8 C5 South
+GameTrick #4 = South D9 CQ D7 C7 ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 80
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "  80		4 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should not unguard CK
+>>>>>>>>>>>>EAST<<<<<<<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJ986532 (KJ96532/AQ8)
+  H:AKJT932 (J9/AKT32)
+  D:QT2 (2/QT)
+  C:KQJ753 (QJ3/K75)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 7.0;   Total pts = 33.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (4/2/0/0)
+  12 Eventual Winners (7/3/0/2)
+  1 Possible Loser (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJ986532 (KJ96532/AQ8)
+  H:AKJT932 (J9/AKT32)
+  D:QT2 (2/QT)
+  C:KQJ753 (QJ3/K75)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 7.0;   Total pts = 33.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (4/2/0/0)
+  12 Eventual Winners (7/3/0/2)
+  1 Possible Loser (vs. 4 allowable)
+PLN10: We have 12 sure tricks against a requirement of 9 for the 3NT contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Spades in hand.
+ Play 2: Cash the Queen of Spades in hand.
+ Play 3: Cash the Ace of Spades in hand.
+ Play 4: Cash the King of Hearts in hand.
+ Play 5: Play the SA from hand to try and drop the ST.
+ Play 6: Lead a low Club from hand and finesse the Jack in dummy against North.
+ Play 7: Lead a low Club from hand and finesse the Queen in dummy against North.
+ Play 8: Lead a low Club from dummy and finesse the King in hand against South.
+ Play 9: Lead a low Heart from hand and finesse the Jack in dummy against North.
+ Play 10: Play the King of Clubs from hand to force out the opponents' Ace.
+ Play 11: Cash the Queen of Clubs in dummy.
+ Play 12: Cash the Jack of Clubs in dummy.
+ Play 13: Cash the Nine of Spades in dummy.
+ Play 14: Cash the Jack of Spades in dummy.
+ Play 15: Cash the King of Spades in dummy.
+ Play 16: Cash the Six of Spades in dummy.
+ Play 17: Cash the Ace of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A0: Play our only card in the suit, the two.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's King, so discard the DT.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=14 vs SureTricks=10 vs NumWinners=14, m_numTricksShort=-1
+PLRV11: We have 10 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH53: the card led (DA)  beats the DQ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2C2: We have no more cards in the suit in dummy, so discard the C3.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's Ace, so discard the DQ.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=13 vs SureTricks=9 vs NumWinners=13, m_numTricksShort=0
+PLRV11: We have 9 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2C2: We have no more cards in the suit in dummy, so discard the CJ.
+PLYTRY: No usable plays found for the current situation.
+PLYE52a: With no cards in the suit led, we discard the C5.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=12 vs SureTricks=9 vs NumWinners=12, m_numTricksShort=0
+PLRV11: We have 9 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2C2: We have no more cards in the suit in dummy, so discard the CQ.
+PLYTRY: No usable plays found for the current situation.
+PLYE52a: With no cards in the suit led, we discard the C7.  <<<<<<<<<<<<<NO
+
+

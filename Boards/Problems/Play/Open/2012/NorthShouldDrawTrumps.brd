@@ -1,0 +1,116 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 6, 2012
+File Date =  01/11/12 12:16:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK H7 D8 CQ C3 
+Current Hand(West) = HT H5 H3 C9 C7 
+Current Hand(North) = HQ DK CA CK C6 
+Current Hand(East) = S8 H9 H8 D5 C8 
+Original Hand(South) = S7 S4 S2 HK H7 H4 H2 D8 D4 D2 CQ CT C3 
+Original Hand(West) = SK HA HT H5 H3 DT D9 D7 D6 CJ C9 C7 C5 
+Original Hand(North) = SA S9 S6 S5 HQ HJ DA DK DJ CA CK C6 C4 
+Original Hand(East) = SQ SJ ST S8 S3 H9 H8 H6 DQ D5 D3 C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = Pass Pass 2C Pass 2D Pass 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 6
+Lead Player for Current Game = East
+GameTrick #1 = East S2 SK SA SQ North
+GameTrick #2 = North CT CJ C4 C2 West
+GameTrick #3 = West H2 HA HJ H6 West
+GameTrick #4 = West D2 DT DJ DQ East
+GameTrick #5 = East S4 D6 S5 SJ East
+GameTrick #6 = East S7 D7 S6 ST East
+GameTrick #7 = East H4 C5 S9 S3 West
+GameTrick #8 = West D4 D9 DA D3 North
+GameTrick #9 = North -- -- -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should draw Trumps
+>>>>>>>>>>>NORTH<<<<<<<<
+--------
+PLNADJ: Reviewing play plan for round 9...
+DEBUG1: NumMaxWinners=6 vs SureTricks=6 vs NumWinners=6, m_numTricksShort=1
+PLRV10: We have only 6 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF4: No immediate ruffing tricks are available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Diamonds, plus 2 in Hearts, plus 3 in Clubs.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available. 0 require cards to have been played
+
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 3 cashing tricks in the side suits, and up to 0 ruffing tricks.
+
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 6 possible plays and approx. 6+ possible tricks including 6 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the King of Diamonds in hand.
+ Play 2: Cash the King of Hearts in dummy.
+ Play 3: Cash the Queen of Hearts in hand.
+ Play 4: Cash the Ace of Clubs in hand.
+ Play 5: Cash the King of Clubs in hand.
+ Play 6: Cash the Queen of Clubs in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by cashing the DK, HK, HQ, CA, CK and CQ.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [CA Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CK Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the King of Diamonds in hand.
+ Play 2: Cash the King of Hearts in dummy.
+ Play 3: Cash the Queen of Hearts in hand.
+ Play 4: Cash the Queen of Clubs in dummy.
+ Play 5: Cash the King of Clubs in hand.
+ Play 6: Cash the Ace of Clubs in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH10: Cash the DK from hand.
+
+

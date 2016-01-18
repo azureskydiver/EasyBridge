@@ -1,0 +1,215 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 20, 2009
+File Date =  08/20/09 20:05:31
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA H7 H4 DA DQ DT D9 D6 
+Current Hand(West) = S9 S8 S5 HQ H8 D5 C6 C3 
+Current Hand(North) = SJ S4 S3 HK HJ D4 D3 D2 
+Current Hand(East) = SK SQ ST S6 S2 DK DJ D8 
+Original Hand(South) = SA S7 HA HT H7 H4 DA DQ DT D9 D6 CJ CT 
+Original Hand(West) = S9 S8 S5 HQ H8 H5 H3 D5 CQ C8 C6 C5 C3 
+Original Hand(North) = SJ S4 S3 HK HJ H9 H6 D4 D3 D2 CK C7 C2 
+Original Hand(East) = SK SQ ST S6 S2 H2 DK DJ D8 D7 CA C9 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1NT Pass 2NT Pass 3D Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West CT C5 C2 CA East
+GameTrick #2 = East CJ CQ C7 C9 West
+GameTrick #3 = West S7 C8 CK C4 North
+GameTrick #4 = North HA H3 H6 H2 South
+GameTrick #5 = South HT H5 H9 D7 South
+GameTrick #6 = South -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East discards guards for DKJ and keeps SKQT62  - should discard a Spade
+>>>>>>> EAST <<<<<<<<<<<
+S:KQT62  H:2  D:KJ87  C:A94
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/2/1)
+  6 Likely Losers (1/1/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Diamonds, Spades
+The best suit is Spades.
+====================
+South bids 1NT.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 3-level.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 3D.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF37: Partner's five might not win the round, so top it with the Ace.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLD76: Continue developing partner's Club suit by playing the C9.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLD76: Continue developing partner's Club suit by playing the C9.
+RCP20: Dummy is now out of Clubs.
+PLDF25: Play our only card in the suit, the four.
+RCP5A: South is now known to have started with 2 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the two.
+PLDF52: With no cards in the suit led , we discard the D7.
+RCP5A: East is now known to have started with 3 Clubs.
+PLDF52: With no cards in the suit led , we discard the D8.  <<<<<<< NO Should discard a SPADE !!!!!!!!!
+PLDF37: Partner's five might not win the round, so top it with the Queen.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S2.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.
+RCP20: Dummy is now out of Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the ST.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner King.
+PLDF2H3: Cover with the King.
+RCP5A: West is now known to have started with 1 Diamond.
+PLAYB48: We can't beat South's Queen, so discard the DJ.
+PLAYB56: With no cards in the suit led and no trumps, we discard the SK.
+RESULT: North/South were set 1 trick.
+PLAY: Play restarted.
+====================
+S:KQT62  H:2  D:KJ87  C:A94
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/2/1)
+  6 Likely Losers (1/1/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Diamonds, Spades
+The best suit is Spades.
+====================
+PL03: Starting play as right-hand defender.
+PLDF37: Partner's five might not win the round, so top it with the Ace.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLD76: Continue developing partner's Club suit by playing the C9.
+RCP20: Dummy is now out of Clubs.
+PLDF25: Play our only card in the suit, the four.
+RCP5A: South is now known to have started with 2 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the two.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D7.
+RCP5A: East is now known to have started with 1 Heart.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D8.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the DJ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the King.
+RCP5A: West is now known to have started with 1 Diamond.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S2.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.
+PLAYB56: With no cards in the suit led and no trumps, we discard the ST.
+PLAYB56: With no cards in the suit led and no trumps, we discard the SQ.
+RCP20: Dummy is now out of Spades.
+PLAYB48: We can't beat South's Ace, so discard the SK.
+RESULT: North/South made 2 overtricks.
+PLAY: Play restarted.
+====================
+S:KQT62  H:2  D:KJ87  C:A94
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/2/1)
+  6 Likely Losers (1/1/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Diamonds, Spades
+The best suit is Spades.
+====================
+PL03: Starting play as right-hand defender.
+PLDF37: Partner's five might not win the round, so top it with the Ace.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLD76: Continue developing partner's Club suit by playing the C9.
+RCP20: Dummy is now out of Clubs.
+PLDF25: Play our only card in the suit, the four.
+RCP5A: South is now known to have started with 2 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the two.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D7.
+RCP5A: East is now known to have started with 1 Heart.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D8.
+
+

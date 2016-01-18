@@ -1,0 +1,94 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 17, 2009
+File Date =  07/17/09 11:10:13
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S9 D8 D5 D4 D3 CA C8 
+Current Hand(West) = SQ S8 S5 DK DJ D6 CQ C9 C5 
+Current Hand(North) = S6 S4 S3 HT H5 DT C7 C4 C2 
+Current Hand(East) = SK SJ S7 S2 H9 D9 CK CJ CT 
+Original Hand(South) = SA ST S9 HJ H7 DA D8 D5 D4 D3 CA C8 C6 
+Original Hand(West) = SQ S8 S5 HK H3 DK DJ D6 D2 CQ C9 C5 C3 
+Original Hand(North) = S6 S4 S3 HA HQ HT H5 H4 DT D7 C7 C4 C2 
+Original Hand(East) = SK SJ S7 S2 H9 H8 H6 H2 DQ D9 CK CJ CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = South
+Bidding History = 1NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West DA D2 D7 DQ South
+GameTrick #2 = South HJ H3 H4 H2 South
+GameTrick #3 = South H7 HK HA H6 North
+GameTrick #4 = North C6 C3 HQ H8 North
+GameTrick #5 = North -- -- -- -- North
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West discards the DJ from DKJ6 ??? vs a low Club
+>>>>>>> WEST <<<<<<<<
+Swapped into a new hand.
+------------------------
+S:Q85  H:K3  D:KJ62  C:Q953
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 10.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (1/1/2/2)
+  7 Likely Losers (2/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the Jack), so cover it with our three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the King.
+RCP5A: South is now known to have started with 2 Hearts.
+PLAYB52: With no cards in the suit led and no trumps, we discard the C3.
+RCP5A: West is now known to have started with 2 Hearts.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the DJ. <<<<<<<<<??????? NO
+PLAYB52: With no cards in the suit led and no trumps, we discard the DJ.
+
+
+

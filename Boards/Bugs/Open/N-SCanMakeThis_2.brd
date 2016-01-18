@@ -1,0 +1,185 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2010
+File Date =  12/24/10 12:45:17
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S9 S7 S4 H8 D8 D7 D5 CA CJ C4 
+Current Hand(West) = HJ H7 H4 H2 DA DQ DJ D9 D6 CQ CT 
+Current Hand(North) = SQ S3 HK H9 DT D2 CK C8 C6 C5 C3 
+Current Hand(East) = SJ S8 S6 HT H3 DK D4 D3 C9 C7 C2 
+Original Hand(South) = SA SK S9 S7 S4 H8 H6 D8 D7 D5 CA CJ C4 
+Original Hand(West) = ST HQ HJ H7 H4 H2 DA DQ DJ D9 D6 CQ CT 
+Original Hand(North) = SQ S3 S2 HA HK H9 DT D2 CK C8 C6 C5 C3 
+Original Hand(East) = SJ S8 S6 S5 HT H5 H3 DK D4 D3 C9 C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1C Pass 1S 2D 2S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West H6 HQ HA H5 North
+GameTrick #2 = North SK ST S2 S5 South
+GameTrick #3 = South -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N-S can make this be drawing trumps and then promoting Clubs  
+The order of play is important=> West played ST on first Spade => Either now void or has singleton Jack => So lead to dummy's Q and the can finesse East
+
+>>>>>>>>>> NORTH<<<<<<<<<<
+Received hand:
+  S:Q32  H:AK9  D:T2  C:K8653
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  3 Likely Winners (0/1/0/2)
+  10 Likely Losers (3/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+The contract is 4 Spades by South.
+West leads.
+====================
+PLAY: West leads the HQ.
+PLAY: We play the HK.
+PLAY: East plays the H5.
+PLAY: South plays the H6.
+PLAY: North wins the round.
+--------
+PLAY: We lead the S2.
+PLAY: East plays the S5.
+PLAY: South plays the SK.
+PLAY: West plays the ST.
+PLAY: South wins the round.
+--------
+PLAY: South leads the S4.
+PLAY: West plays the DJ.
+RCP10: West shows out of Spades.
+RCP5A: West is now known to have started with 1 Spade.
+PLAY: We play the SQ.
+PLAY: East plays the S6.
+PLAY: North wins the round.
+--------
+PLAY: We lead the S3.
+RCP20: Dummy is now out of Spades.
+PLAY: East plays the S8.
+PLAY: South plays the S9.
+PLAY: West plays the D9.
+PLAY: South wins the round.
+--------
+PLAY: South leads the SA.
+PLAY: West plays the D6.
+PLAY: We play the D2.
+PLAY: East plays the SJ.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CA.
+PLAY: West plays the CT.
+PLAY: We play the C3.
+PLAY: East plays the C2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the C4.
+PLAY: West plays the CQ.
+PLAY: We play the CK.
+PLAY: East plays the C7.
+PLAY: North wins the round.
+--------
+PLAY: We lead the C5.
+PLAY: East plays the C9.
+PLAY: South plays the CJ.
+PLAY: West plays the DQ.
+RCP10: West shows out of Clubs.
+RCP1A: West is now known to have started with  2 Clubs and 1 Spades.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H8.
+PLAY: West plays the H2.
+PLAY: We play the HA.
+PLAY: East plays the H3.
+PLAY: North wins the round.
+--------
+PLAY: We lead the C8.
+PLAY: East plays the HT.
+RCP10: East shows out of Clubs.
+RCP5A: East is now known to have started with 3 Clubs.
+PLAY: South plays the D5.
+RCP10: South shows out of Clubs.
+RCP5A: South is now known to have started with 3 Clubs.
+PLAY: West plays the H4.
+PLAY: North wins the round.
+--------
+PLAY: We lead the C6.
+RCP20: Dummy is now out of Clubs.
+PLAY: East plays the D3.
+PLAY: South plays the D7.
+PLAY: West plays the H7.
+PLAY: North wins the round.
+--------
+PLAY: We lead the DT.
+RCP20: Dummy is now out of Diamonds.
+PLAY: East plays the DK.
+PLAY: South plays the D8.
+PLAY: West plays the DA.
+PLAY: West wins the round.
+--------
+PLAY: West leads the HJ.
+PLAY: We play the H9.
+RCP20: Dummy is now out of Hearts.
+PLAY: East plays the D4.
+RCP10: East shows out of Hearts.
+RCP1A: East is now known to have started with  3 Clubs and 3 Hearts.
+PLAY: South plays the S7.
+RCP10: South shows out of Hearts.
+RCP1A: South is now known to have started with  3 Clubs and 2 Hearts.
+PLAY: South wins the round.
+--------
+RESULT: North/South made 2 overtricks.
+
+
+
+
+
+
+

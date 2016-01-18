@@ -1,0 +1,150 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 16, 2010
+File Date =  11/19/10 16:55:27
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA H9 H6 H4 CA CQ C9 C3 
+Current Hand(West) = S8 S7 S4 S2 HT H7 D5 C6 
+Current Hand(North) = HQ H8 H3 DQ DT D9 D3 C8 
+Current Hand(East) = SJ HK HJ H5 H2 DJ CT C5 
+Original Hand(South) = SK S6 HA H9 H6 H4 D7 CA CQ CJ C9 C3 C2 
+Original Hand(West) = S9 S8 S7 S5 S4 S2 HT H7 D5 D4 D2 CK C6 
+Original Hand(North) = SA SQ HQ H8 H3 DA DK DQ DT D9 D3 C8 C7 
+Original Hand(East) = SJ ST S3 HK HJ H5 H2 DJ D8 D6 CT C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 13
+Declarer = South
+Bidding History = Pass 1C Pass 2D Pass 2NT Pass 3NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West S6 S5 SA ST North
+GameTrick #2 = North CJ CK C7 C4 West
+GameTrick #3 = West SK S9 SQ S3 South
+GameTrick #4 = South D7 D2 DA D6 North
+GameTrick #5 = North C2 D4 DK D8 ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should discard a useless Heart vs a LONG club
+>>>>>>>> SOUTH<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:K6  H:A964  D:7  C:AQJ932
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (1/1/0/5)
+  6 Likely Losers (1/3/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Clubs.
+Preferred suit is Clubs.
+====================
+The contract is 6 No Trump by South.
+West leads.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 5 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the Ace of Clubs in hand to try and drop the opponents' Jack.
+PLNDRP1: Can play the King of Diamonds in dummy to try and drop the opponents' Jack.
+PLNDRP5: A total of 2 possible drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Queen of Hearts by leading to it from hand against West.
+PLNFNS91: One possible finesse has been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 4 cards in Clubs, plus 4 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 10 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLYSCN9: The play <Drop the CJ> is no longer viable as the opponents no longer hold any of the required alternative cards of [CJ ].
+PLYSCNX: 1 play(s) have been deleted as they are no longer viable.
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 12 plays and approx. 9+ possible tricks including 5 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the DK from Dummy to try and drop the DJ.
+ Play 2: Lead a low Heart from hand and finesse the Queen in dummy against East.
+ Play 3: Cash the Ace of Clubs in hand.
+ Play 4: Cash the Queen of Clubs in hand.
+ Play 5: Cash the Nine of Clubs in hand. <Requires ...>
+ Play 6: Cash the Eight of Clubs in dummy. <Requires ...>
+ Play 7: Cash the King of Diamonds in dummy.
+ Play 8: Cash the Queen of Diamonds in dummy.
+ Play 9: Cash the Ten of Diamonds in dummy. <Requires ...>
+ Play 10: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 11: Cash the Ace of Hearts in hand.
+ Play 12: Cash the Queen of Hearts in dummy. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ55: Move the Type 3 Finesse (HQ Finesse) to the end.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HA Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Play the DK from Dummy to try and drop the DJ.
+ Play 2: Cash the Ace of Clubs in hand.
+ Play 3: Cash the Queen of Clubs in hand.
+ Play 4: Cash the Nine of Clubs in hand.
+ Play 5: Cash the Eight of Clubs in dummy.
+ Play 6: Cash the King of Diamonds in dummy.
+ Play 7: Cash the Queen of Diamonds in dummy.
+ Play 8: Cash the Ten of Diamonds in dummy.
+ Play 9: Cash the Nine of Diamonds in dummy.
+ Play 10: Cash the Queen of Hearts in dummy.
+ Play 11: Cash the Ace of Hearts in hand.
+ Play 12: Lead a low Heart from hand and finesse the Queen in dummy against East.
+PLRV95: The play plan review is complete.
+---------------------------
+PLDRP10: Lead the DK to try and drop the DJ.
+PLAY: North leads the DK.
+PLAY: East plays the D8.
+PLDRP65: East did not drop a desired card (the DJ), but perhaps West might; continue the play by discarding the C2 from hand.  <<<<<<<<<<<<<<<<< No Save LONG clubs
+PLAY: We play the C2.
+PLAY: West plays the D4.
+
+

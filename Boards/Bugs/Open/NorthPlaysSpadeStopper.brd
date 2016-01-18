@@ -1,0 +1,149 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 24, 2010
+File Date =  11/26/10 13:24:30
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HQ HT H9 H3 DK DQ DJ D8 D6 CK CT 
+Current Hand(West) = SQ S6 S4 S2 HA HJ H8 H7 H6 H2 D9 
+Current Hand(North) = SK HK H5 H4 DA DT D3 D2 CQ CJ C7 
+Current Hand(East) = ST S9 S7 S3 D7 D5 D4 C9 C8 C6 C5 
+Original Hand(South) = SA HQ HT H9 H3 DK DQ DJ D8 D6 CK CT C2 
+Original Hand(West) = SQ S8 S6 S4 S2 HA HJ H8 H7 H6 H2 D9 C3 
+Original Hand(North) = SK SJ HK H5 H4 DA DT D3 D2 CA CQ CJ C7 
+Original Hand(East) = ST S9 S7 S5 S3 D7 D5 D4 C9 C8 C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = North
+Bidding History = 1C Pass 1D 1H 2NT Pass 6NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East SA S8 SJ S5 South
+GameTrick #2 = South C2 C3 CA C4 North
+GameTrick #3 = North -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 80
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 300
+East/West Game 1 Points = 70
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  20		1 overtrick"
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Bonus Score Record = "	 200	Bonus for defeating vulnerable contract by 2 tricks"
+Game Score Record = "  40		2 Clubs made"
+Game Score Record = "	  70	2 No Trump made"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North plays Spade stopper before Heart Ace is forced out
+>>>>>>>>>> NORTH<<<<<<<<<
+PLAY: North wins the round.
+--------
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 9 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Queen of Hearts by leading to it from hand against East.
+PSFNS31: Can finesse the King of Hearts by leading to it from dummy against West.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNCNT0: Skipping using finesses because of possiblity of losing control.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Queen of Hearts to force out the opponents' Ace.
+PLNDEV30: We can play the Queen of Hearts to force out the opponents' Jack.
+PLNDEV31: This will promote the ten to winners.
+nine to a winner.
+PLNDEV90: A total of 2 forcing plays have been found, which will promote 2 lower cards.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 3 in Clubs, plus 5 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 11 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 11 plays and approx. 11+ possible tricks including 9 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the King of Spades in hand.   <<<<<<<<<<<<< NO This is Spade stopper
+ Play 2: Cash the King of Clubs in dummy.
+ Play 3: Cash the Queen of Clubs in hand.
+ Play 4: Cash the Jack of Clubs in hand.
+ Play 5: Cash the Ace of Diamonds in hand.
+ Play 6: Cash the King of Diamonds in dummy.
+ Play 7: Cash the Queen of Diamonds in dummy.
+ Play 8: Cash the Jack of Diamonds in dummy.
+ Play 9: Cash the Ten of Diamonds in hand.
+ Play 10: Cash the King of Hearts in hand. <Requires ...>
+ Play 11: Cash the Queen of Hearts in dummy. <Requires ...>
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [DK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DJ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the King of Spades in hand.
+ Play 2: Cash the King of Clubs in dummy.
+ Play 3: Cash the Queen of Clubs in hand.
+ Play 4: Cash the Jack of Clubs in hand.
+ Play 5: Cash the Ace of Diamonds in hand.
+ Play 6: Cash the Ten of Diamonds in hand.
+ Play 7: Cash the Jack of Diamonds in dummy.
+ Play 8: Cash the Queen of Diamonds in dummy.
+ Play 9: Cash the King of Diamonds in dummy.
+ Play 10: Cash the King of Hearts in hand.
+ Play 11: Cash the Queen of Hearts in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH10: Cash the SK from hand.
+
+
+

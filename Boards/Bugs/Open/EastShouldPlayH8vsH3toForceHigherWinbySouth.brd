@@ -1,0 +1,210 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 1, 2009
+File Date =  09/04/09 10:07:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S9 S8 HK H7 H2 D5 C9 C5 C4 
+Current Hand(West) = SA SJ S5 S4 S3 HJ CA C8 C3 
+Current Hand(North) = S7 S6 HA HT H6 DJ DT D9 CK 
+Current Hand(East) = SK SQ S2 HQ H9 H8 DQ CJ C7 
+Original Hand(South) = ST S9 S8 HK H7 H2 D8 D5 D3 C9 C5 C4 C2 
+Original Hand(West) = SA SJ S5 S4 S3 HJ H5 D7 D4 CA CQ C8 C3 
+Original Hand(North) = S7 S6 HA HT H6 H3 DA DK DJ DT D9 CK CT 
+Original Hand(East) = SK SQ S2 HQ H9 H8 H4 DQ D6 D2 CJ C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 7
+Declarer = East
+Bidding History = Pass 1S 2D 2H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = South
+GameTrick #1 = South D8 D4 DK D2 North
+GameTrick #2 = North D3 D7 DA D6 North
+GameTrick #3 = North C2 CQ CT C6 West
+GameTrick #4 = West -- H5 H3 H4 ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 0
+North/South Game 2 Points = 80
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 30
+East/West Game 1 Points = 160
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 2
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = "  30		1 overtrick, vulnerable"
+Game Score Record = "	  90	3 Hearts made"
+Game Score Record = "	  70	2 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads H5, N plays H3, East hold HQ984 and he plays the H4 letting South win trick with H7. If is fine to not play his Q but he should have played the H8 to force a higher card - potentially.
+
+======================
+East analysis +++++++++++++++++++++++++++++++++++++++++++++
+S:KQ2  H:Q984  D:Q62  C:J76
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 8.5.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Likely Winners (2/2/1/0)
+  8 Likely Losers (1/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+South passes.
+--------------------
+West bids 1S.
+--------------------
+North bids 2D.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+(with 3-card Spade trump support including a trump honor, the hand is revalued for a suit contract as dummy from 8.5 to 10.5 points)
+Partner is showing 12.0+ points and 2+ QT's.
+Have 10.0/8.5/10.5 points (in between single & double raise ranges)  and moderate support for partner's Spade suit (holding KQ2), but first show our preferred Heart suit in a 2 Hearts bid.
+We bid 2H.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is East; South leads.
+=======================
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJ5432 (AJ543/KQ2)
+  H:QJ9854 (J5/Q984)
+  D:Q7642 (74/Q62)
+  C:AQJ8763 (AQ83/J76)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 0.0;
+  Total pts = 22.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (4/0/0/1)
+  6 Eventual Winners (4/0/0/2)
+  7 Possible Losers (vs. 5 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 2 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJ5432 (AJ543/KQ2)
+  H:QJ9854 (J5/Q984)
+  D:Q7642 (74/Q62)
+  C:AQJ8763 (AQ83/J76)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 0.0;
+  Total pts = 22.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (4/0/0/1)
+  6 Eventual Winners (4/0/0/2)
+  7 Possible Losers (vs. 5 allowable)
+We have only 6 sure tricks against a requirement of 8 for the 2H contract.
+The Club suit looks the most promising for further development.
+Checking play sequencing...
+We want to eventualy exit with a Club and a Spade.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Queen of Clubs in dummy.
+ Play 2: Cash the Ace of Clubs in dummy.
+ Play 3: Cash the Queen of Spades in hand.
+ Play 4: Cash the King of Spades in hand.
+ Play 5: Cash the Jack of Spades in dummy.
+ Play 6: Cash the Ace of Spades in dummy.
+ Play 7: Exit with a Club or Spade and throw the opponents into the lead.
+ Play 8: Ruff a Spade in hand.
+ Play 9: Ruff a Club in hand.
+ Play 10: Ruff a Diamond in dummy.
+ Play 11: Lead a low Club from hand to finesse the Queen in dummy against North, with the Ace as cover.
+ Play 12: Lead a low Club from dummy and finesse the Jack in hand against South.
+ Play 13: Lead a low Diamond from dummy and finesse the Queen in hand against South.
+The planning is complete.
+---------------------------
+Play low Diamond (the four) from dummy to opportunistically finesse the Queen in hand.
+RHO has played a higher card (the King) than our intended finesse (the Queen), so skip the play.
+No usable plays found for the current situation.
+We can't beat North's King, so discard the D2.
+Reviewing play plan for round 2...
+We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+eight to winners.
+Checking play sequencing...
+We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the SA, SK, SQ, SJ, CA and CQ.
+Interleaving plays...
+the card led (DA)  beats the DQ we were going to play, so skip the cash for now.
+No usable plays found for the current situation.
+Playing second in hand, using default player logic.
+We don't have a winner in the suit in hand, so discard the six.
+Playing card from dummy.
+No usable plays found for the current situation.
+Reviewing play plan for round 3...
+We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+eight to winners.
+Checking play sequencing...
+We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the SA, SK, SQ, SJ, CA and CQ.
+Interleaving plays...
+Discard a Club from hand in anticipation of cashing the Ace in dummy.
+Playing card from dummy.
+the opponents led a Club, so see if we can finish up the cash play here.
+We can actually play the Queen to win this trick, so postpone the cash of the Ace.
+No usable plays found for the current situation.
+Playing card from dummy.
+Reviewing play plan for round 4...
+We have only 6 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the SA, SK, SQ, SJ, CA and CJ.
+Interleaving plays...
+Lead the H5 up to own hand to pull in a round of trumps.
+Although LHO may hold the trump Ace, we have nothing to beat it, so hope partner's five wins and discard the four.<<<======H8 better play
+
+

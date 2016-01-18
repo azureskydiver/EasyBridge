@@ -1,0 +1,149 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/15/11 19:50:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S3 HA HQ HJ DJ D6 D5 CJ C5 C3 
+Current Hand(West) = ST S6 S2 HT DT D8 D7 CK CQ C9 C6 
+Current Hand(North) = SQ S8 S5 H5 DK DQ D9 CT C8 C7 C2 
+Current Hand(East) = SK SJ S9 S7 S4 H8 H7 H3 H2 CA C4 
+Original Hand(South) = SA S3 HA HQ HJ H4 DJ D6 D5 D2 CJ C5 C3 
+Original Hand(West) = ST S6 S2 HT H6 DT D8 D7 D3 CK CQ C9 C6 
+Original Hand(North) = SQ S8 S5 HK H5 DK DQ D9 D4 CT C8 C7 C2 
+Original Hand(East) = SK SJ S9 S7 S4 H9 H8 H7 H3 H2 DA CA C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass Pass 1S Dbl Pass 2D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East H4 H6 HK H9 North
+GameTrick #2 = North D2 D3 D4 DA East
+GameTrick #3 = East -- -- -- -- North
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should play high. Gives North CHEAP trick
+>>>> WEST<<<<<<<<
+=====================================
+Received hand:
+  S:T62  H:T6  D:T873  C:KQ96
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 4.0.
+  QT's = 1.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  0 Likely Winners (-1/0/-1/2)
+  13 Likely Losers (4/2/5/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 1S.
+--------------------
+South doubles.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 0 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Spade trump support & a doubleton in Hearts, the hand is revalued for a suit contract as dummy from 4.0 to 5.0 points)
+F01: Partner, opening in third position, is showing 10.0-20.5 points and 2+ QT's.
+F03: But we have only 5.0/4.0/5.0 points, so we have to pass.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is North; East leads.
+=======================
+PLAY: East leads the H9.
+PLAY: South plays the H4.
+PL03: Starting play as right-hand defender.
+PLDF36: Partner's nine is high or we can't beat the highest card, so discard the H6.
+PLAY: We play the H6.
+PLAY: North plays the HK.
+PLAY: North wins the round.
+--------
+PLAY: North leads the D4.
+PLAY: East plays the DA.
+PLAY: South plays the D2.
+PLAY4: Playing fourth, using default player logic.
+PLAYB47: Partner's Ace can win the trick, so discard the D3.
+PLAY: We play the D3.
+PLAY: East wins the round.
+--------
+PLAY: East leads the S4.
+PLAY: South plays the S3.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the six.
+PLDF36: Partner's four is high or we can't beat the highest card, so discard the S2.   <<<<<<<<<<< CHEAP TRICK HERE
+PLAY: We play the S2.
+PLAY: North plays the S5.
+PLAY: North wins the round.
+--------
+
+
+
+

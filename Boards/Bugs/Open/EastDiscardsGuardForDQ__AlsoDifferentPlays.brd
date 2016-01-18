@@ -1,0 +1,86 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = May 29, 2009
+File Date =  05/29/09 15:37:09
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S2 DA D8 D3 CK CJ C9 C6 
+Current Hand(West) = SA SQ S8 H8 DT D9 D6 CT C3 
+Current Hand(North) = S7 HA DK DJ D7 D4 CA CQ C2 
+Current Hand(East) = SJ S9 S5 DQ D5 D2 C8 C7 C5 
+Original Hand(South) = SK ST S2 HJ HT H9 DA D8 D3 CK CJ C9 C6 
+Original Hand(West) = SA SQ S8 S6 H8 H6 H3 H2 DT D9 D6 CT C3 
+Original Hand(North) = S7 S3 HA HK HQ H5 DK DJ D7 D4 CA CQ C2 
+Original Hand(East) = SJ S9 S5 S4 H7 H4 DQ D5 D2 C8 C7 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass 1D Pass 2C Pass 3H Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West ST S6 S3 S4 South
+GameTrick #2 = South HJ H2 H5 H4 South
+GameTrick #3 = South H9 H3 HQ H7 North
+GameTrick #4 = North HT H6 HK C4 North
+GameTrick #5 = North -- -- -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 160
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+PLDF2Ya: .. no Hearts, discard D2.
+East discards D5 (from DQ52) when North leads HA.
+Leaves DQ unprotected. East has C875 to discard!!!
+
+This hand is played differently when the trick is replayed. First time East discards the D5. After undo, East plays the C8!!!
+

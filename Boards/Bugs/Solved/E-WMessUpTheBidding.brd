@@ -1,0 +1,179 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 1, 2010
+File Date =  12/04/10 12:48:01
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ ST S8 S5 HA HK HT DT D7 D4 CJ C5 
+Current Hand(West) = SA S9 S2 H7 DA DK DJ D9 D2 CK C9 C7 C2 
+Current Hand(North) = SQ S7 S6 S4 HJ H5 H3 H2 D8 D6 C8 C6 
+Current Hand(East) = HQ H9 H8 H6 DQ D5 D3 CA CQ CT C4 C3 
+Original Hand(South) = SK SJ ST S8 S5 HA HK HT DT D7 D4 CJ C5 
+Original Hand(West) = SA S9 S2 H7 DA DK DJ D9 D2 CK C9 C7 C2 
+Original Hand(North) = SQ S7 S6 S4 S3 HJ H5 H3 H2 D8 D6 C8 C6 
+Original Hand(East) = HQ H9 H8 H6 H4 DQ D5 D3 CA CQ CT C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 5
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 15
+Declarer = West
+Bidding History = Pass Pass 1S 2D Pass 3D Pass 4D Pass 4NT Pass 5H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- S3 H4 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W mess up bidding
+>>>>>> EAST<<<<<<<<<
+S:---  H:Q9864  D:Q53  C:AQT43
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/2/0/3)
+  8 Likely Losers (0/3/3/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 1S.
+--------------------
+West bids 2D.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 2 Diamonds.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Diamond trump support including a trump honor & a void in Spades, the hand is revalued for a suit contract as dummy from 10.0 to 14.0 points)
+ROVRC5: Partner overcalled at the 2-level, indicating a good 5+ card Diamond suit, 10.0-15.0 points, and probably 6+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 24.0-29.0 points.
+YN1: With 24.0-29.0 points in the partnership and 3-card support for partner's  Diamond suit (holding Q53), raise to 3 Diamonds.
+We bid 3D.
+--------------------
+South passes.
+--------------------
+West bids 4D.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 2 Diamonds, 3 Diamonds, and 4 Diamonds.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 10.0 down to 8.0 points)
+B4C4: Partner made a minimum rebid of his Diamond suit at 4 Diamonds, showing 10.0-16.0 points and 5+ trump cards.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Diamond trump support including a trump honor & a void in Spades, the hand is revalued for a suit contract as dummy from 10.0 to 14.0 points)
+REVAL1: Revaluing hand as declarer...  <<<<<<<<<<<<<<<<<<<<<<<<<<< ??????????????????????????
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 10.0 down to 8.0 points)
+B4C19: with zero trump support, we have to escape from partner's Diamonds and bid 4 No Trump.  <<<<<<<<<<<<<<<<<<<???????????
+We bid 4NT.
+--------------------
+
+>>>>>>> WEST<<<<<<<<<<
+S:A92  H:7  D:AKJ92  C:K972
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/4/1)
+  8 Likely Losers (3/1/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVERCL8: Have a good 5-card Diamond suit with 15.0/15.0 points and 5 playing tricks, so overcall the opponents' 1 Spade with a bid of 2 Diamonds.
+We bid 2D.
+--------------------
+North passes.
+--------------------
+East bids 3D.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 2 Diamonds and partner's response of 3 Diamonds.
+OVRRB10: Partner raised our initial 2 Diamonds overcall to 3 Diamonds, indicating 3+ trumps and 13.0-15.0 points.
+OVRRB66: With a total of approx. 28.0-28.0 pts in the partnership, we can raise to 4 Diamonds.
+We bid 4D.
+--------------------
+North passes.
+--------------------
+East bids 4NT.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BK10: With 2 Aces, respond to partner's Blackwood inquiry with 5 Hearts.  <<<<<<<<<<<<< 4NT was NOT blackwood
+We bid 5H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+
+
+
+
+
+

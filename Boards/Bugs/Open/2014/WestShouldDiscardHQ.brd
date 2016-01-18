@@ -1,0 +1,99 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  11/11/14 06:37:29
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ S9 S8 CA 
+Current Hand(West) = SQ S4 HQ CK C5 
+Current Hand(North) = SA ST S5 CT C6 
+Current Hand(East) = S6 CQ CJ C9 C8 
+Original Hand(South) = SK SJ S9 S8 S7 HA HK HT DQ D8 D4 CA C7 
+Original Hand(West) = SQ S4 S3 HQ H8 H7 H6 H4 DT D9 CK C5 C4 
+Original Hand(North) = SA ST S5 H3 DK DJ D7 D5 D3 D2 CT C6 C3 
+Original Hand(East) = S6 S2 HJ H9 H5 H2 DA D6 CQ CJ C9 C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass Pass Pass 1NT Pass 2S Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West HK H6 H3 HJ South
+GameTrick #2 = South DQ D9 D2 DA East
+GameTrick #3 = East HA H4 C3 H9 South
+GameTrick #4 = South D4 DT DJ D6 North
+GameTrick #5 = North D8 H7 DK C2 North
+GameTrick #6 = North C7 H8 D7 H2 North
+GameTrick #7 = North HT C4 D3 S2 North
+GameTrick #8 = North S7 S3 D5 H5 ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should keep Spade
+>>>>>>>>WEST<<<
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H6.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the four.
+PLDF48: We can't beat South's HA, so discard the H4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the ten.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H7.
+RCP5A: West is now known to have started with 2 Diamonds.
+RCP5A: South is now known to have started with 3 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C4.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S3.  <<<<<<<NO HQ better
+
+

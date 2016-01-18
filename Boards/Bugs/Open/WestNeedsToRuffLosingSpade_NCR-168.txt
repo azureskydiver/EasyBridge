@@ -1,0 +1,81 @@
+Starting play from restored game.
+------------------------
+S:T  H:Q9432  D:KQJ6  C:KQ4
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 12.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/3/3/2)
+  5 Likely Losers (1/2/1/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Diamonds.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 8 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLCSH72: Our cash of the S2 from dummy is holding, so discard the DJ.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 8 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Spades in hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 1 in Clubs 3 in Diamonds.
+PLNCSH30: A total of 5 maximum cashing tricks are immediately available.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 2 rounds of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 1 cashing trick in the side suits, and up to 2 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 7 possible plays and approx. 7+ possible tricks including 5 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in hand. <<<<<<<<<<<<<<<<<<<<<<<<< WHat happened to this??????????????
+ Play 2: Ruff a Spade in hand.
+ Play 3: Cash the Queen of Spades in dummy. <Requires ...>
+ Play 4: Cash the Queen of Clubs in hand.
+ Play 5: Cash the King of Diamonds in hand.
+ Play 6: Cash the Queen of Diamonds in hand.
+ Play 7: Cash the Jack of Diamonds in hand.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Queen of Spades in dummy.
+ Play 2: Cash the Queen of Clubs in hand.
+ Play 3: Cash the King of Diamonds in hand.
+ Play 4: Cash the Queen of Diamonds in hand.
+ Play 5: Cash the Jack of Diamonds in hand.
+ Play 6: Ruff a Spade in hand.  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HERE
+ Play 7: Ruff a Spade in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTST8: The play <SQ Cash> is not yet viable as the card [King] is still outstanding.
+PLCSH42: Oops, we wanted to cash a Club in hand, but we have no Clubs in dummy to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <CQ Cash> (abandoned)
+PLCSH42: Oops, we wanted to cash a Diamond in hand, but we have no Diamonds in dummy to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <DK Cash> (abandoned)
+PLCSH42: Oops, we wanted to cash a Diamond in hand, but we have no Diamonds in dummy to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <DQ Cash> (abandoned)
+??????????? Where is the Spade ruff?????????????
+
+PLYTRY: No usable plays found for the current situation.
+PLAY: East leads the S2.
+PLAY: South plays the S6.
+PLCSH72: Our cash of the S2 from dummy is holding, so discard the DJ.
+PLAY: We play the DJ.
+PLAY: North plays the S7.
+

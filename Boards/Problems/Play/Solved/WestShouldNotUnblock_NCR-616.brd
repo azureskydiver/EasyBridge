@@ -1,0 +1,122 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 27, 2012
+File Date =  01/31/12 13:35:25
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S7 HJ H6 DA DQ D9 CA C4 C3 
+Current Hand(West) = S9 S5 S3 H3 CK CJ CT C6 C5 C2 
+Current Hand(North) = SQ SJ HQ HT H9 D8 D5 D4 D3 D2 
+Current Hand(East) = ST S6 H7 H5 H4 DK DJ DT D7 D6 
+Original Hand(South) = SK S8 S7 HJ H6 H2 DA DQ D9 CA CQ C4 C3 
+Original Hand(West) = S9 S5 S3 S2 HK H3 CK CJ CT C7 C6 C5 C2 
+Original Hand(North) = SQ SJ S4 HQ HT H9 H8 D8 D5 D4 D3 D2 C9 
+Original Hand(East) = SA ST S6 HA H7 H5 H4 DK DJ DT D7 D6 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = South
+Bidding History = Pass 1D 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West CQ C7 C9 C8 South
+GameTrick #2 = South SK S2 S4 SA East
+GameTrick #3 = East H2 HK H8 HA ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should not Unblock when dummy has high hearts
+>>>>>>>>>>>>>>WEST<<<<<<<<<<<<<<
+S:9532  H:K3  D:94  C:KJT7652
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 7.0, Bonus/Penalty = 0.0/-1.0; Total pts = 9.0.
+  QT's = 1.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (-1/1/0/5)
+  8 Likely Losers (5/1/0/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+North passes.
+--------------------
+East bids 1D.
+--------------------
+South bids 1NT.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 6 point(s) for the 3 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Club contract...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL10: (with a 7-card trump suit in Clubs, declarer's hand is revalued for a suit contract from 9.0 to 13.0 points)
+F02: But we have only 7.0/9.0/9.0 points with weak trump support, so we have to pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C7.
+RCP20: Dummy is now out of Clubs.
+RCP25: Dummy is shown to be void in Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLDF41: Drop the HK here to unblock the suit for partner.  <<<<<<<<<<<<<No dmy has Q
+
+

@@ -1,0 +1,138 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 28, 2010
+File Date =  10/01/10 14:02:24
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S2 HK HJ H8 H7 H5 H4 DJ CK C8 C7 C5 
+Current Hand(West) = SA S8 S7 S5 S3 DT D9 D4 CA C9 C6 C3 C2 
+Current Hand(North) = SJ S6 S4 HA HQ H6 H2 DA DK D7 D6 D5 C4 
+Current Hand(East) = SK SQ ST HT H9 H3 DQ D8 D3 D2 CQ CJ CT 
+Original Hand(South) = S9 S2 HK HJ H8 H7 H5 H4 DJ CK C8 C7 C5 
+Original Hand(West) = SA S8 S7 S5 S3 DT D9 D4 CA C9 C6 C3 C2 
+Original Hand(North) = SJ S6 S4 HA HQ H6 H2 DA DK D7 D6 D5 C4 
+Original Hand(East) = SK SQ ST HT H9 H3 DQ D8 D3 D2 CQ CJ CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = ????
+Bidding History = 2H Pass 2NT Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South's hint does not recognize weak 2 followed by 2NT
+>>>>>>>> SOUTH<<<<<<<<<<<<<<
+S:92  H:KJ8754  D:J  C:K875
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 7.5.
+  QT's = 1.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (0/4/0/1)
+  8 Likely Losers (2/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+Opening bid for team.
+WEAK2: Have a good 6-card Heart suit with 8.0/7.5 points (less than normal opening requirements), so bid a weak 2 Hearts.  <<<<<<<<< OK
+We bid 2H.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's response of 2 No Trump.  <<<<<<<<<< WeakTwo response see below
+B3Z00: Partner made a response which we don't understand; simply pass. <<<<<<<<<<<<<<<<<<<<<<<<< ????
+
+
+>>>>>>>>>NORTH<<<<<<<<<<<<<<<<
+S:J64  H:AQ62  D:AK765  C:4
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 3.5,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (0/2/3/0)
+  8 Likely Losers (3/2/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+South bids 2H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Hearts.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Heart trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 13.5 to 18.5 points)
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.0-10.0 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+We have 14.0/13.5/14.0 points, for a partnership total of 19.0-24.0 points, so we are interested in game if a good fit can be found.
+RWKT21: And we like partner's Heart suit (holding AQ62 support), but with only 19.0-24.0 total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.  <<<<<<<<<<<<< ASKING
+We bid 2NT.
+--------------------
+East passes.
+--------------------
+
+
+
+

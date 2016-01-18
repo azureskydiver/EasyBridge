@@ -1,0 +1,174 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  12/08/14 21:45:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HJ H8 H7 H4 DJ D9 D7 D5 C8 C5 
+Current Hand(West) = S8 S7 S4 HT H6 H3 DT D3 D2 
+Current Hand(North) = SK H9 DK DQ D8 D4 CA CK CQ 
+Current Hand(East) = ST HK DA D6 C9 C7 C6 C4 C2 
+Original Hand(South) = SQ S2 HQ HJ H8 H7 H4 DJ D9 D7 D5 C8 C5 
+Original Hand(West) = SA S8 S7 S4 S3 HA HT H6 H3 DT D3 D2 C3 
+Original Hand(North) = SK S9 S6 H9 H2 DK DQ D8 D4 CA CK CQ CT 
+Original Hand(East) = SJ ST S5 HK H5 DA D6 CJ C9 C7 C6 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass 1NT Pass 2D Pass 2H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East S2 SA S6 SJ West
+GameTrick #2 = West SQ S3 S9 S5 South
+GameTrick #3 = South HQ HA H2 H5 West
+GameTrick #4 = West -- C3 CT CJ ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should play high
+>>>>NORTH<<<<<<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KQ962 (Q2/K96)
+  H:QJ98742 (QJ874/92)
+  D:KQJ98754 (J975/KQ84)
+  C:AKQT85 (85/AKQT)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 3.0;   Total pts = 26.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (0/0/0/3)
+  6 Eventual Winners (1/0/2/3)
+  7 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KQ962 (Q2/K96)
+  H:QJ98742 (QJ874/92)
+  D:KQJ98754 (J975/KQ84)
+  C:AKQT85 (85/AKQT)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 3.0;   Total pts = 26.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (0/0/0/3)
+  6 Eventual Winners (1/0/2/3)
+  7 Possible Losers (vs. 5 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 8 for the 2H contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Lead a low Diamond from hand and finesse the Jack in dummy against West.
+ Play 2: Lead a low Diamond from dummy and finesse the Queen in hand against East.
+ Play 3: Lead a low Diamond from dummy and finesse the King in hand against East.
+ Play 4: Ruff a Club in dummy.
+ Play 5: Ruff a Spade in dummy.
+ Play 6: Lead a low Club from dummy to finesse the ten in dummy against East, with the { CA CK CQ  } as possible cover cards.
+ Play 7: Lead a low Spade from hand and finesse the Queen in dummy against West.
+ Play 8: Lead a low Spade from dummy and finesse the King in hand against East.
+ Play 9: Cash the Ace of Clubs in hand.
+ Play 10: Cash the King of Clubs in hand.
+ Play 11: Cash the Queen of Clubs in hand.
+ Play 12: Cash the King of Spades in hand.
+PLN95: The planning is complete.
+---------------------------
+PL3FN36: Play low Spade (the two) from dummy to opportunistically finesse the King in hand.
+Combined hand (Dummy/Hand):
+  S:KQ96 (Q/K96)
+  H:QJ98742 (QJ874/92)
+  D:KQJ98754 (J975/KQ84)
+  C:AKQT85 (85/AKQT)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 3.0;   Total pts = 26.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (0/0/0/3)
+  6 Eventual Winners (1/0/2/3)
+  7 Possible Losers (vs. 5 allowable)
+PL3FN92: RHO has played a higher card (the Ace) than our intended finesse (the King), so skip the play.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat West's Ace, so discard the S6.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=10 vs SureTricks=5 vs NumWinners=10, m_numTricksShort=3
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH56: Discard a Spade from hand in anticipation of cashing the Queen in dummy.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=9 vs SureTricks=4 vs NumWinners=9, m_numTricksShort=3
+PLRV10: We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the HQ from dummy to pull in a round of trumps.
+PLYTRY: No usable plays found for the current situation.
+PLYD2A50: With nothing higher in hand, discard the two.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=9 vs SureTricks=4 vs NumWinners=9, m_numTricksShort=3
+PLRV10: We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLAFN20: Opportunistically finesse the CT from hand in second position against East.  <<<<<<<<<<<<<NO
+
+

@@ -1,0 +1,129 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 25,  2010
+File Date =  03/26/10 10:57:02
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S2 HA H4 H3 DA DQ DJ D7 CQ C9 C7 C6 
+Current Hand(West) = SQ SJ S9 S7 S5 HK HQ H5 DK DT D9 D3 D2 
+Current Hand(North) = S8 S6 S4 S3 HJ H7 H6 D5 CK CT C8 C2 
+Current Hand(East) = SA SK HT H9 H8 H2 D6 CA CJ C5 C4 C3 
+Original Hand(South) = ST S2 HA H4 H3 DA DQ DJ D7 CQ C9 C7 C6 
+Original Hand(West) = SQ SJ S9 S7 S5 HK HQ H5 DK DT D9 D3 D2 
+Original Hand(North) = S8 S6 S4 S3 HJ H7 H6 D8 D5 CK CT C8 C2 
+Original Hand(East) = SA SK HT H9 H8 H2 D6 D4 CA CJ C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = Pass Pass 1C 1D 1S Pass 2C Pass 2D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- D8 D4 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should support West's Spades vs passing his Diamonds
+>>>>>EAST<<<<<<<
+S:AK  H:T982  D:64  C:AJ543
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/0/3)
+  8 Likely Losers (0/4/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+E02: Have 12.0 points in high cards and 3.0 quick tricks, so bid 1 Club.
+We bid 1C.
+--------------------
+South bids 1D.
+--------------------
+West bids 1S.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Club and partner's response of 1 Spade.
+B3U00a: Partner has made a 1 over 1 bid after an earlier pass, Spades over Clubs, which shows 5.0-11.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+RevV0: We'd like to bid the Heart suit, but we can't reverse with less than 17 points.
+RevV2: And since the 3rd best suit (Diamonds) is not strong enough to bid, we have to rebid the original Club suit.
+B3U18a: With poor support for partner's Spade suit (holding AK), and no other suit available to bid, rebid the Club suit at 2 Clubs.
+We bid 2C.
+--------------------
+South passes.
+--------------------
+West bids 2D.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BXM80: With no agreement in suits, 17.0-23.0 / 17.0-23.0 partnership points, and no good alternatives, pass.  <<<<<<<<<< NO bid 2S with AK
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is West; North leads.
+=======================
+
+

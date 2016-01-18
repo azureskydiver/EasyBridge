@@ -1,0 +1,135 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 5, 2010
+File Date =  10/17/10 13:32:13
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = C9 C6 
+Current Hand(West) = HJ CQ 
+Current Hand(North) = HQ CT 
+Current Hand(East) = DQ D7 
+Original Hand(South) = S9 S5 S4 S3 S2 HK H7 DT D4 CA C9 C6 C3 
+Original Hand(West) = SA SK SQ HJ HT H6 H2 D9 D3 D2 CQ CJ C4 
+Original Hand(North) = SJ ST S6 HA HQ H4 DA D8 D6 CK CT C5 C2 
+Original Hand(East) = S8 S7 H9 H8 H5 H3 DK DQ DJ D7 D5 C8 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 6
+Declarer = East
+Bidding History = 1C Pass 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 5
+Lead Player for Current Game = South
+GameTrick #1 = South S3 SA ST S7 West
+GameTrick #2 = West D4 D2 D6 DK East
+GameTrick #3 = East S2 SK S6 S8 West
+GameTrick #4 = West S4 SQ SJ H3 West
+GameTrick #5 = West DT D3 D8 DJ East
+GameTrick #6 = East C3 D9 DA D5 North
+GameTrick #7 = North H7 H2 HA H5 North
+GameTrick #8 = North HK H6 H4 H8 South
+GameTrick #9 = South S9 C4 C2 C7 South
+GameTrick #10 = South S5 HT C5 C8 South
+GameTrick #11 = South CA CJ CK H9 South
+GameTrick #12 = South -- -- -- -- ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 30
+East/West Game 1 Points = 40
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  30	1 overtrick"
+Game Score Record = "	  40	1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+NorthShouldNotPlayCK on my CA..... he should keep it to win the CQ on the dummy
+===========================
+S:JT6  H:AQ4  D:A86  C:KT52
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Likely Winners (0/1/0/1)
+  11 Likely Losers (3/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+West bids 1C.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+But we lack the strength with 14.0 pts for a simple overcall.
+We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East bids 1NT.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is East; South leads.
+=======================
+Starting play as right-hand defender.
+We do not have a winner in the Spade suit, so discard low with the ten.
+We can't beat West's Ace, so discard the ST.
+Playing second as defender, using default player logic.
+As second hand, play the lowest card we have in the suit, the six.
+We can't beat West's King, so discard the S6.
+Dummy is now out of Spades.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the Jack.
+East is now known to have started with 2 Spades.
+Playing second as defender, using default player logic.
+As second hand, play the lowest card we have in the suit, the eight.
+South is now known to have started with 2 Diamonds.
+Dummy is now out of Diamonds.
+Play the Ace to win the trick.
+With no other good options, cash a winner in the Heart suit, the Ace
+With no other obvious plays, cash a winner with the HA.
+With no other obvious plays, play H4.
+With no cards in the suit led , we discard the C2.
+North is now known to have started with 3 Spades.
+With no cards in the suit led , we discard the C5.
+Drop the King here to unblock the suit for partner.
+
+

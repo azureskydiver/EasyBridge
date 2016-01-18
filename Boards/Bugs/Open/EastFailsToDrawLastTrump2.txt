@@ -1,0 +1,80 @@
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AT  H:J5  D:AQ762  C:9753
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5; Total pts = 10.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  5 Likely Winners (1/0/4/0)
+  8 Likely Losers (1/2/1/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+The contract is 5 Diamonds by East.
+South leads.
+====================
+PLNADJ: Reviewing play plan for round 6...
+PLRV10: We have only 3 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the King of Clubs by leading it from dummy against North.
+PLNFNS91: One possible finesse has been found.
+
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Clubs to force out the opponents' Ace.
+PLNDEV31: This will promote the ten and nine to winners.
+PLNDEV91: One forcing play has been found, which will promote 2 lower cards.
+
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Spade in hand.
+PLNRF1: We can potentially ruff up to 1 Heart in hand after discarding the 2 losers from hand.
+PLNRF5: Up to 2 ruffs can be used (0 in dummy/2 in hand) out of a total of 4 available, but require 2 discard(s) first.
+PLNRF8: This consists of the { H5 HJ } from hand.
+
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Spades, plus 2 in Clubs, plus 1 in Diamonds.
+PLNCSH30: A total of 5 maximum cashing tricks are immediately available.
+
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<????
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 4 cashing tricks in the side suits, and up to 2 ruffing tricks.
+
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 9 possible plays and approx. 7+ possible tricks including 5 sure tricks (vs. 11 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in hand.
+ Play 2: Ruff a Heart in hand.
+ Play 3: Lead a low Club from hand and finesse the King in dummy against North.
+ Play 4: Play the Ten of Clubs from dummy to force out the opponents' Ace.
+ Play 5: Cash the King of Spades in dummy.
+ Play 6: Cash the Queen of Spades in dummy.
+ Play 7: Cash the King of Clubs in dummy. <Requires ...>
+ Play 8: Cash the Ten of Clubs in dummy. <Requires ...>
+ Play 9: Cash the Ace of Diamonds in hand.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in hand.
+ Play 2: Ruff a Heart in hand.
+ Play 3: Lead a low Club from hand and finesse the King in dummy against North.
+ Play 4: Play the Ten of Clubs from dummy to force out the opponents' Ace.
+ Play 5: Cash the King of Spades in dummy.
+ Play 6: Cash the Queen of Spades in dummy.
+ Play 7: Cash the King of Clubs in dummy.
+ Play 8: Cash the Ten of Clubs in dummy.
+ Play 9: Cash the Ace of Diamonds in hand. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<THIS ONE FIRST
+PLRV95: The play plan review is complete.
+---------------------------
+PL3FN12: Lead a low Club (the five) from hand to finesse the King in dummy.
+PLAY: We lead the C5.
+

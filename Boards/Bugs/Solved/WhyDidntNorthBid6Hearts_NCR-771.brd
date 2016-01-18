@@ -1,0 +1,156 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = September 22, 2015
+File Date =  10/20/15 19:45:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S6 S3 S2 HQ H9 H7 DA DK D5 D2 CT C3 
+Current Hand(West) = SQ ST S7 S5 S4 H6 H4 DQ D9 D7 D6 D4 D3 
+Current Hand(North) = HA HK HJ HT H8 H5 H3 H2 D8 CA CK C8 C5 
+Current Hand(East) = SA SJ S9 S8 DJ DT CQ CJ C9 C7 C6 C4 C2 
+Original Hand(South) = SK S6 S3 S2 HQ H9 H7 DA DK D5 D2 CT C3 
+Original Hand(West) = SQ ST S7 S5 S4 H6 H4 DQ D9 D7 D6 D4 D3 
+Original Hand(North) = HA HK HJ HT H8 H5 H3 H2 D8 CA CK C8 C5 
+Original Hand(East) = SA SJ S9 S8 DJ DT CQ CJ C9 C7 C6 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 5
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 14
+Declarer = North
+Bidding History = 1D Pass 1H 3C 3H Pass 4NT Pass 5D Pass 5H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  40		2 overtricks"
+Game Score Record = "  60		3 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why didn't North bid 6H?
+>>>>>NORTH<<<<<<<<
+S:J85  H:AKJT8532  D:8  C:AK85
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 10.0, Bonus/Penalty = 0.0/0.0; Total pts = 20.0.
+  QT's = 4.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  9 Likely Winners (0/7/0/2)
+  4 Likely Losers (0/1/1/2)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+South bids 1D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 6 point(s) for the 3 trump(s) short of 4.
+2REVAL70: Dummy's hand is revalued for a suit contract from 20.0 down to 13.5 points.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+2REVAL10: (with a 8-card trump suit in Hearts, declarer's hand is revalued for a suit contract from 20.0 to 25.0 points)
+F01a: Have 15.0/20.0/13.5 pts with an available 8-card major suit in Hearts (AKJT8532), so bid 1 Heart over partner's minor suit 1 Diamond bid.
+We bid 1H.
+--------------------
+East bids 3C.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Heart, and 3 Hearts.
+B4M00: Partner made a double raise of our Heart suit to 3 Hearts, showing 15.0-21.0 points.
+BLKWD: with 15.0/20.0/25.0 points in the hand, for a total of approx. 30.0-36.0 / 40.0-46.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump. The eventual contract in Heart.
+We bid 4NT.
+--------------------
+East passes.
+--------------------
+South bids 5D.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Diamonds, indicating 1 Ace.
+BK34: Oops, we're caught with as few as 40.0 total points, so halt the bidding at the five-level.
+BK38: Without all four aces we can't proceed to a grand slam, so stop at 5 Hearts.   <<<<<<<<<<<< 6H???
+We bid 5H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Hearts.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:K632 (K632/)
+  H:AKQJT987532 (Q97/AKJT8532)
+  D:AK852 (AK52/8)
+  C:AKT85 (T/AK85)
+Combined hand evaluation:
+  HCPs = 27.0, Distn pts = 11.0;   Total pts = 38.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  12 Sure Winners (0/8/2/2)
+  12 Eventual Winners (0/8/2/2)
+  0 Possible Loser (vs. 2 allowable)
+RCP5A: West is now known to have started with 0 Clubs.
+RCP5A: East is now known to have started with 0 Hearts.
+PLAYCL: South has claimed the remaining 8 tricks.
+RESULT: North/South made 1 overtrick.
+

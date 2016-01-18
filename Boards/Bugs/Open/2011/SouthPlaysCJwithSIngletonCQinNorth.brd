@@ -1,0 +1,169 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/04/11 20:36:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S3 S2 HA HQ H8 DQ D9 D8 D3 CA C4 
+Current Hand(West) = SQ S7 S5 H4 H2 DK DJ D6 CT C7 C6 C3 
+Current Hand(North) = SK SJ ST S6 S4 HK HT H6 DA DT D7 D5 
+Current Hand(East) = SA S9 HJ H9 H7 H5 H3 D4 D2 C8 C5 C2 
+Original Hand(South) = S8 S3 S2 HA HQ H8 DQ D9 D8 D3 CA CJ C4 
+Original Hand(West) = SQ S7 S5 H4 H2 DK DJ D6 CK CT C7 C6 C3 
+Original Hand(North) = SK SJ ST S6 S4 HK HT H6 DA DT D7 D5 CQ 
+Original Hand(East) = SA S9 HJ H9 H7 H5 H3 D4 D2 C9 C8 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = 1D Pass 1S Pass 2S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East CJ CK CQ C9 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South played CJ with singleton CQ in North
+>>>>>>>>> NORTH<<<<
+East leads the C9.
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KJT86432 (832/KJT64)
+  H:AKQT86 (AQ8/KT6)
+  D:AQT98753 (Q983/AT75)
+  C:AQJ4 (AJ4/Q)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 2.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/3/1/1)
+  7 Eventual Winners (1/3/1/2)
+  6 Possible Losers (vs. 3 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 4 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KJT86432 (832/KJT64)
+  H:AKQT86 (AQ8/KT6)
+  D:AQT98753 (Q983/AT75)
+  C:AQJ4 (AJ4/Q)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 2.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/3/1/1)
+  7 Eventual Winners (1/3/1/2)
+  6 Possible Losers (vs. 3 allowable)
+We have only 7 sure tricks against a requirement of 10 for the 4S contract.
+Looking at the hand for drop plays...
+No drop plays are available.
+Looking for possible finesses...
+Can finesse the Queen of Clubs by leading it from hand, with the Ace as the potential cover card in dummy.
+Can finesse the Ten of Diamonds in hand with the Ace as the potential cover card.
+Can finesse the Queen of Diamonds by leading to it from hand against East.
+A total of 3 possible finesses exist.
+Looking for ways to force out enemy top cards and promote our own......
+We can play the Jack of Clubs to force out the opponents' King.
+No suit development plays have been found.
+Looking for ruffing tricks...
+We can potentially ruff up to 1 Club in hand.
+Looking at the hand for cashes...
+We can cash 2 cards in Clubs, plus 1 in Diamonds, plus 3 in Hearts, plus 1 in Spades.
+A total of 7 maximum cashing tricks are immediately available. 2 require cards to have been played
+Evaluating the trumps situation...
+We can safely play up to 1 round of trumps without endangering the contract.
+However, this may not pull in all 5 outstanding trump(s).
+This will result in  1 round of trumps, 6 cashing tricks in the side suits, and up to 1 ruffing trick.
+Reviewing available plays...
+Checking logic of selected plays against play history...
+Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+We have 13 possible plays and approx. 9+ possible tricks including 7 sure tricks (vs. 10 required) accounted for in the plan.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the King in hand.
+ Play 2: Lead a low Diamond from dummy to finesse the ten in hand against East, with the Ace as cover.
+ Play 3: Lead a low Diamond from hand and finesse the Queen in dummy against West.
+ Play 4: Cash the Ace of Diamonds in hand.
+ Play 5: Ruff a Club in hand.
+ Play 6: Lead the Club Queen from hand and finesse it, with the Ace in dummy as cover.
+ Play 7: Play the Jack of Clubs from dummy to force out the opponents' King.
+ Play 8: Cash the Ace of Clubs in dummy.
+ Play 9: Cash the Queen of Clubs in hand.
+ Play 10: Cash the Ace of Hearts in dummy.
+ Play 11: Cash the King of Hearts in hand.
+ Play 12: Cash the Queen of Hearts in dummy.
+ Play 13: Cash the King of Spades in hand.
+The planning is complete.
+---------------------------
+LHO has led the C9, which is the same suit as our CQ finesse card and lower in value, so we can still try the finesse.
+Can't use this (Type II) finesse playing from dummy, as the finesse card (CQ) has to be led from hand.
+The opponents led a Club, so play the CJ from dummy to try and force out the King now.  <<<<<<<<<<<< NO, North has singleton Queen
+South plays the CJ.
+Combined hand (Dummy/Hand):
+  S:KJT86432 (832/KJT64)
+  H:AKQT86 (AQ8/KT6)
+  D:AQT98753 (Q983/AT75)
+  C:AQ4 (A4/Q)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 2.0;
+  Total pts = 27.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/3/1/1)
+  7 Eventual Winners (1/3/1/2)
+  6 Possible Losers (vs. 3 allowable)
+West plays the CK.
+We play the CQ.
+
+
+
+
+

@@ -1,0 +1,175 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 9, 2009
+File Date =  09/13/09 10:26:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S4 HK DK DJ D9 D8 CJ C6 C2 
+Current Hand(West) = SQ S9 S6 HJ H9 H8 H6 H3 H2 CA 
+Current Hand(North) = SK ST S8 S7 DT D4 CK C8 C7 C4 
+Current Hand(East) = SJ S5 S3 S2 HQ HT CQ CT C9 C5 
+Original Hand(South) = SA S4 HK H4 DK DJ D9 D8 D7 D2 CJ C6 C2 
+Original Hand(West) = SQ S9 S6 HJ H9 H8 H7 H6 H3 H2 D6 CA C3 
+Original Hand(North) = SK ST S8 S7 HA DA DQ DT D4 CK C8 C7 C4 
+Original Hand(East) = SJ S5 S3 S2 HQ HT H5 D5 D3 CQ CT C9 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1D Pass 2S Pass 2NT Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West H4 H7 HA H5 North
+GameTrick #2 = North D2 D6 DA D3 North
+GameTrick #3 = North D7 C3 DQ D5 North
+GameTrick #4 = North -- -- -- -- North
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West unguards SQ Keeps long Hearts????
+>>>>>>>> WEST <<<<<<<<
+S:Q96  H:J987632  D:6  C:A3
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  6 Likely Winners (1/4/0/1)
+  7 Likely Losers (2/3/1/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+South bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2S.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H7.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLYSIG1: Partner discarded low with the five, so consider it a signal that he dislikes the suit.
+PLAYB48: We can't beat South's Jack, so discard the D6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the C3.
+RCP5A: West is now known to have started with 1 Diamond.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the SQ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the H2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the H6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the H8.
+RCP20: Dummy is now out of Spades.
+RCP5A: South is now known to have started with 2 Spades.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H9.
+PLAYB34: Partner's Queen is high, so discard the CA.
+PLYLDE: With no other obvious plays, play HJ.
+RESULT: North/South made 2 overtricks.
+PLAY: Play restarted.
+====================
+S:Q96  H:J987632  D:6  C:A3
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  6 Likely Winners (1/4/0/1)
+  7 Likely Losers (2/3/1/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H7.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLYSIG1: Partner discarded low with the five, so consider it a signal that he dislikes the suit.
+PLAYB48: We can't beat North's Ace, so discard the D6.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C3.
+RCP5A: West is now known to have started with 1 Diamond.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.  <<<<<<<<<< NO, KEEP TO GUARD QUEEN discard Heart
+
+

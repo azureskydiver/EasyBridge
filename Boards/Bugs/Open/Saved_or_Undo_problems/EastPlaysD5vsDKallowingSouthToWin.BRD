@@ -1,0 +1,215 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 30, 2009
+File Date =  06/30/09 16:38:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S4 S2 HK HT H9 H7 H6 H4 DJ D3 C6 C5 
+Current Hand(West) = SK S7 H5 DA DQ D8 D7 D6 D2 CQ CJ C3 C2 
+Current Hand(North) = S5 S3 HA HQ H8 H3 DT D9 D4 CK CT C9 C4 
+Current Hand(East) = SA SQ ST S9 S8 S6 HJ H2 DK D5 CA C8 C7 
+Original Hand(South) = SJ S4 S2 HK HT H9 H7 H6 H4 DJ D3 C6 C5 
+Original Hand(West) = SK S7 H5 DA DQ D8 D7 D6 D2 CQ CJ C3 C2 
+Original Hand(North) = S5 S3 HA HQ H8 H3 DT D9 D4 CK CT C9 C4 
+Original Hand(East) = SA SQ ST S9 S8 S6 HJ H2 DK D5 CA C8 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = East
+Bidding History = Pass 1S 2H 3D 3H 3S Pass 4S Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 290
+North/South Game 1 Points = 180
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 150
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "  60		3 overtricks"
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = " 200		Bonus for defeating vulnerable contract by 2 tricks"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads low diamond that East does NOT play DK on.  E-W have top 3 diamonds
+>>>>>>>> EAST <<<<<<<<<<
+Starting play from restored game.
+***Bidding restarted***
+North passes.
+--------------------
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Spade.
+We bid 1S.
+--------------------
+South bids 2H.
+--------------------
+West bids 3D.
+--------------------
+North bids 3H.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 3 Diamonds.
+B3W00: Partner has made a 2 over 1 bid, Diamonds over Spades, which shows 9.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+B3W36: With a rebiddable Spade suit and poor support for partner's Diamonds (holding K5), rebid 3 Spades.
+We bid 3S.
+--------------------
+South passes.
+--------------------
+West bids 4S.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BXB30: Partner has bid game in the Spade suit, and with only 23.5-31.5 pts in the partnership, we don't want to raise further, so pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is East; South leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQT9876 (K7/AQT986)
+  H:J52 (5/J2)
+  D:AKQ87652 (AQ8762/K5)
+  C:AQJ8732 (QJ32/A87)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 2.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Sure Winners (3/0/3/1)
+  8 Eventual Winners (3/0/3/2)
+  5 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQT9876 (K7/AQT986)
+  H:J52 (5/J2)
+  D:AKQ87652 (AQ8762/K5)
+  C:AQJ8732 (QJ32/A87)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 2.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Sure Winners (3/0/3/1)
+  8 Eventual Winners (3/0/3/2)
+  5 Possible Losers (vs. 3 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 10 for the 4S contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in hand.
+ Play 2: Ruff a Diamond in hand.
+ Play 3: Ruff a Diamond in hand.
+ Play 4: Ruff a Diamond in hand.
+ Play 5: Play the Seven of Diamonds from dummy to force out the opponents' Jack.
+ Play 6: Play the Seven of Diamonds from dummy to force out the opponents' Ten.
+ Play 7: Cash the King of Diamonds in hand.
+ Play 8: Cash the Ace of Diamonds in dummy.
+ Play 9: Cash the Queen of Diamonds in dummy.
+ Play 10: Ruff a Club in hand.
+ Play 11: Ruff a Heart in dummy.
+ Play 12: Lead the Club Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 13: Lead a low Club from hand and finesse the Jack in dummy against North.
+ Play 14: Lead a low Club from hand and finesse the Queen in dummy against North.
+ Play 15: Lead a low Heart from dummy and finesse the Jack in hand against South.
+ Play 16: Cash the Ace of Clubs in hand.
+ Play 17: Cash the Queen of Clubs in dummy.
+ Play 18: Cash the King of Spades in dummy.
+ Play 19: Cash the Ace of Spades in hand.
+ Play 20: Cash the Queen of Spades in hand.
+PLN95: The planning is complete.
+---------------------------
+PL2FN30: LHO has led the C6, which is the same suit as our CQ finesse card and lower in value, so we can still try the finesse.
+PL2FN22: Play the finesse card (the Queen) from dummy.
+PL2FN80: We played the finesse card in second position, so check the results.
+PLYDCS1: Use this opportunity to discard the C7.
+PL2FN82: Our finesse card (the Queen has held, so discard the C7.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 7 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 5 round(s) of trumps, and cashing the CA, CJ, DA, DK, DQ and D8.
+PINTLV: Interleaving plays...
+PLTRMP28: Lead the S7 up to own hand to pull in a round of trumps.
+PLTRMP82b: Since LHO may hold the trump Jack, we have to play the Queen.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the CA, CJ, DA, DK, DQ and D8.
+PINTLV: Interleaving plays...
+PLTRMP12: Lead out the S6 from hand to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82b: Since LHO may hold the trump Jack, we have to play the King from dummy.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 5 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLFRC12: Play the D8 from dummy to force out the opponents' Jack.
+PLFRC64: We're in the opposite hand of a force play, so discard the D5. <<<<<<<< NO, have the DAQ in dummy
+
+
+
+

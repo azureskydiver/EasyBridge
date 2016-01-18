@@ -1,0 +1,129 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 13, 2013
+File Date =  11/14/13 12:03:02
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S7 HA H9 H4 H3 DT D9 D4 C8 C4 C3 C2 
+Current Hand(West) = SK SQ S8 S2 H6 DQ D7 D6 D5 D2 CA CK CJ 
+Current Hand(North) = SJ S5 HQ HJ DA D8 D3 CQ CT C7 C6 C5 
+Current Hand(East) = SA ST S6 S4 S3 HT H8 H7 H5 DK DJ C9 
+Original Hand(South) = S9 S7 HA H9 H4 H3 DT D9 D4 C8 C4 C3 C2 
+Original Hand(West) = SK SQ S8 S2 H6 DQ D7 D6 D5 D2 CA CK CJ 
+Original Hand(North) = SJ S5 HK HQ HJ DA D8 D3 CQ CT C7 C6 C5 
+Original Hand(East) = SA ST S6 S4 S3 HT H8 H7 H5 H2 DK DJ C9 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 1
+Dealer = North
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 1C 2C Pass 3S Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- HK H2 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Should North double at 3 level with only 13 HCPs
+>>>>>>>> NORTH <<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:J5  H:KQJ  D:A83  C:QT765
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 12.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/2/0/2)
+  9 Likely Losers (2/1/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+The contract is 4 Hearts by South.
+West leads.
+====================
+=====================================
+Received hand:
+  S:J5  H:KQJ  D:A83  C:QT765
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 12.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/2/0/2)
+  9 Likely Losers (2/1/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+Opening bid for team.
+E02: Have 13.0 points in high cards and 2.0 quick tricks, so bid 1 Club.
+We bid 1C.
+--------------------
+East bids 2C.
+--------------------
+South passes.
+--------------------
+West bids 3S.
+--------------------
+Rebidding after opening bid of 1 Club and partner's pass.
+TKOUT: With 13.0/12.5 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Spades (doubled).  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as North against a contract of 3 Spades.
+PLYLD15: Lead the HK from the top of the { HK HQ HJ } sequence.
+PLAY: We lead the HK.
+PLAY: East plays the H2.
+
+

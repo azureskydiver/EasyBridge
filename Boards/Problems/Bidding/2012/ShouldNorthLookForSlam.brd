@@ -1,0 +1,127 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  03/13/12 13:24:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S6 H6 H3 DA DK DJ D4 D2 CK CQ CJ C5 
+Current Hand(West) = S9 S5 HQ HJ HT H9 H8 H7 H4 H2 DQ D9 C9 
+Current Hand(North) = SA SQ SJ ST S8 HA DT D8 D7 D6 D5 CA C6 
+Current Hand(East) = SK S4 S3 S2 HK H5 D3 CT C8 C7 C4 C3 C2 
+Original Hand(South) = S7 S6 H6 H3 DA DK DJ D4 D2 CK CQ CJ C5 
+Original Hand(West) = S9 S5 HQ HJ HT H9 H8 H7 H4 H2 DQ D9 C9 
+Original Hand(North) = SA SQ SJ ST S8 HA DT D8 D7 D6 D5 CA C6 
+Original Hand(East) = SK S4 S3 S2 HK H5 D3 CT C8 C7 C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+should North look for slam
+>>>>>>>>>>>NORTH<<<<<<<<<<<<
+S:AQJT8  H:A  D:T8765  C:A6
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  6 Likely Winners (4/1/0/1)
+  7 Likely Losers (1/0/5/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South bids 1D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Diamond trump support & a doubleton in Clubs,  & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 15.0 to 22.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 15.0 to 18.0 points)
+F01a: Have 15.0/15.0/22.0 pts with an available 5-card major suit in Spades (AQJT8), so bid 1 Spade over partner's minor suit 1 Diamond bid.
+We bid 1S.
+--------------------
+East passes.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Spade, and 2 Clubs.
+B4P04: Partner bid another suit (third suit in partnership) at 2 Clubs after our 1/1 response, showing 12.0-18.0 points.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+PKF1: With 5 trumps in partner's first suit (Diamonds), we prefer to support that suit.
+BN1: With 27.0-33.0 HCPs in the partnership and a reasonably balanced hand, and all unbid suits stopped, bid 3 No Trump.  <<<<<<<<<<<<<<SLAM??????????
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+
+

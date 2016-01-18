@@ -1,0 +1,90 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 9, 2009
+File Date =  08/11/09 11:21:35
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S7 HA HJ H4 H3 DJ D3 CQ 
+Current Hand(West) = SK SQ S9 S6 S3 S2 HT DK DT 
+Current Hand(North) = S8 HQ H6 H2 DA DQ D5 D4 C4 
+Current Hand(East) = HK H9 H8 H7 H5 D9 D8 D7 D6 
+Original Hand(South) = SA S7 S5 HA HJ H4 H3 DJ D3 CQ CJ CT C9 
+Original Hand(West) = SK SQ ST S9 S6 S3 S2 HT DK DT CA C7 C6 
+Original Hand(North) = SJ S8 HQ H6 H2 DA DQ D5 D4 C5 C4 C3 C2 
+Original Hand(East) = S4 HK H9 H8 H7 H5 D9 D8 D7 D6 D2 CK C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 8
+Declarer = West
+Bidding History = Pass Pass 1H 4S Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = North
+GameTrick #1 = North C9 C6 C5 CK East
+GameTrick #2 = East S5 ST SJ S4 North
+GameTrick #3 = North CT CA C2 C8 West
+GameTrick #4 = West CJ C7 C3 D2 South
+GameTrick #5 = South -- -- -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North plays DQ on South's DJ
+>>>>>>> NORTH <<<<<<
+Starting play from restored game.
+------------------------
+S:J8  H:Q62  D:AQ54  C:5432
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 8.5.
+  QT's = 1.5,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/1/3/0)
+  9 Likely Losers (2/2/1/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+RCP20: Dummy is now out of Spades.
+PLAYB41: Play the Jack to win the trick.
+PLYLDPRF4: Partner has indicated a preference for the Clubs suit, so lead the C2.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLDIS2: Since we can win the next round of Diamonds, we want to signal by discarding high in the suit.
+PLDIS8: Begin the high-low signal with the Queen.
+PLDF36: Partner's Jack is high or we can't beat the highest card, so discard the DQ. <<<<<<<<<<< NO<<<<<<<
+
+

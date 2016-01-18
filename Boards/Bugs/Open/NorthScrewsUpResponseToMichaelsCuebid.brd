@@ -1,0 +1,126 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 24, 2009
+File Date =  07/26/09 20:37:03
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 HQ H6 H5 H4 H2 DQ DT D6 D5 D3 CT C8 
+Current Hand(West) = S5 HA HT H8 D8 D4 CQ CJ C9 C5 C3 C2 
+Current Hand(North) = SK S6 S3 S2 HJ H7 H3 DK DJ D2 CK C6 C4 
+Current Hand(East) = SA SJ ST S9 S8 S4 HK H9 DA D9 D7 CA C7 
+Original Hand(South) = S7 HQ H6 H5 H4 H2 DQ DT D6 D5 D3 CT C8 
+Original Hand(West) = SQ S5 HA HT H8 D8 D4 CQ CJ C9 C5 C3 C2 
+Original Hand(North) = SK S6 S3 S2 HJ H7 H3 DK DJ D2 CK C6 C4 
+Original Hand(East) = SA SJ ST S9 S8 S4 HK H9 DA D9 D7 CA C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = Pass Pass Pass 1S 2S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- SQ -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 80
+North/South Game 1 Points = 170
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  20		1 overtrick"
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = "  90		3 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North screws up responding to Michael's Cuebid of 2S by South. which shows 5Hearts and 5 of a Minor.
+>>>>>> NORTH <<<<<<<
+S:K632  H:J73  D:KJ2  C:K64
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 9.5.
+  QT's = 1.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  4 Likely Winners (2/0/1/1)
+  9 Likely Losers (2/3/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+South passes.
+--------------------
+West passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1S.
+--------------------
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Responding to partner's  bid of 2 Spades.
+REVAL38: (with 4-card Spade trump support including a trump honor, the hand is revalued for a suit contract as dummy from 9.5 to 12.5 points)
+MCLR10: Partner has made a Michaels Cue bid of 2 Spades, indicating 5/5 length in the majors. <<<< NOT TRUE
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a King, deduct 2 points.
+2REVAL18: Declarer's hand is revalued for a suit contract from 9.5 down to 5.0 points)
+MCLR21: After RHO interference, we don't have the points to go to the 3-level in response to partner's Michaels, so pass.<<<< What interference???
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is South; West leads.
+=======================
+
+

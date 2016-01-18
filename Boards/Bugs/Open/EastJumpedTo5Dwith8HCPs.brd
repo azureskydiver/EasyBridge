@@ -1,0 +1,173 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 28,  2010
+File Date =  03/29/10 17:42:53
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S8 S7 S5 S3 HA HQ H5 D7 D2 C7 C6 C4 
+Current Hand(West) = SA SK SJ S9 H9 H3 DQ DT D9 D3 CQ CJ C5 
+Current Hand(North) = SQ S6 HK HJ H8 H7 H4 DK D5 CA CT C8 C3 
+Current Hand(East) = S4 S2 HT H6 H2 DA DJ D8 D6 D4 CK C9 C2 
+Original Hand(South) = ST S8 S7 S5 S3 HA HQ H5 D7 D2 C7 C6 C4 
+Original Hand(West) = SA SK SJ S9 H9 H3 DQ DT D9 D3 CQ CJ C5 
+Original Hand(North) = SQ S6 HK HJ H8 H7 H4 DK D5 CA CT C8 C3 
+Original Hand(East) = S4 S2 HT H6 H2 DA DJ D8 D6 D4 CK C9 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = ????
+Bidding History = Pass 1D 1H 2D Pass 2S Pass 5D 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East jumped to 5D with 8 HCPs
+>>>>>EAST<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:42  H:T62  D:AJ864  C:K92
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  2 Likely Winners (0/-1/3/0)
+  11 Likely Losers (2/4/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+S:42  H:T62  D:AJ864  C:K92
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  2 Likely Winners (0/-1/3/0)
+  11 Likely Losers (2/4/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+West bids 1D.
+--------------------
+North bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Diamond trump support including a trump honor & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 8.0 to 13.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+I20: Have 8.0/8.0/13.0 points and strong support for partner's minor Diamond suit (holding AJ864).  Although we'd prefer not to raise a minor, we have no other good options, so raise to 2 Diamonds.
+We bid 2D.
+--------------------
+South passes.
+--------------------
+West bids 2S.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 2 Diamonds, and 2 Spades.
+B4O00: Partner bid a support suit at 2 Spades after our single raise, showing 16.0-18.0 points and less than 7 playing tricks.  <<<<???? See R14 below
+B4O45: Without stoppers in the unbid suits we can't bid a NT contract, but with 29.0-31.0 pts in the partnership and strong trump support, we can raise partner to game at 5 Diamonds.
+We bid 5D.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is West; North leads.
+=======================
+
+>>>>>>>>>WEST<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:AKJ9  H:93  D:QT93  C:QJ5
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (3/0/1/1)
+  8 Likely Losers (1/2/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+Opening bid for team.
+E01: Have 13.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+North bids 1H.
+--------------------
+East bids 2D.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 2 Diamonds.
+RDR0: With a single raise, partner is showing 10.0-12.0 points and decent (3-4 card) support for our Diamond suit.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a Ace, deduct 1 points.
+2REVAL18: Declarer's hand is revalued for a suit contract from 13.0 down to 11.0 points)
+R14: Using the modified trick count, we have 4 playing tricks in hand and a total of 21.0-23.0 points in the partnership, so show the Spade support suit in a bid of 2 Spades.
+We bid 2S.
+--------------------
+North passes.
+--------------------
+East bids 5D.
+--------------------
+
+
+
+
+
+

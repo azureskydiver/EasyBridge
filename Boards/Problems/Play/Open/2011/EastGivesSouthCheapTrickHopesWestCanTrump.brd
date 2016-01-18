@@ -1,0 +1,130 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = December 13, 2011
+File Date =  12/13/11 14:35:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S6 S4 H8 H6 DJ C8 
+Current Hand(West) = HQ HJ H3 CT C9 C7 C5 
+Current Hand(North) = SA SK HK H9 H4 DK CA 
+Current Hand(East) = HA HT H7 H5 DQ C6 C4 
+Original Hand(South) = SJ S8 S6 S4 S3 H8 H6 DJ DT D9 D4 CJ C8 
+Original Hand(West) = ST S5 HQ HJ H3 H2 D5 CT C9 C7 C5 C3 C2 
+Original Hand(North) = SA SK SQ S7 HK H9 H4 DK D8 D6 D3 CA CQ 
+Original Hand(East) = S9 S2 HA HT H7 H5 DA DQ D7 D2 CK C6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass 2NT Pass 3H Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East D9 D5 D3 D2 South
+GameTrick #2 = South S3 ST SQ S2 North
+GameTrick #3 = North SJ S5 S7 S9 South
+GameTrick #4 = South CJ C2 CQ CK East
+GameTrick #5 = East D4 C3 D6 DA East
+GameTrick #6 = East DT H2 D8 D7 ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East gives South cheap trick
+>>>>>>>>>>>>>>>east<<<<<<<<<<<<<
+S:92  H:AT75  D:AQ72  C:K64
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 13.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  3 Likely Winners (0/1/2/0)
+  10 Likely Losers (2/3/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 13.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+North bids 3S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 3 Spades.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D2.
+PLAYB48: We can't beat North's Queen, so discard the S2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the nine.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the nine.
+PLAYB41: Play the King to win the trick.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+PLYLDB: With no other clear plays available, lead a card from the unbid Diamond suit.
+RCP5A: West is now known to have started with 1 Diamond.
+PLYLD32: Partner is void in Diamonds and may still have some trumps, so lead the D7.  <<<<<<<<<<<??????
+
+

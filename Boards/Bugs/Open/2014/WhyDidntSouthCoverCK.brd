@@ -1,0 +1,165 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = November 2, 2013
+File Date =  03/15/14 09:04:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA HQ HJ H6 H3 H2 DK DT D3 CA CT C9 
+Current Hand(West) = ST S8 S7 S2 HA H4 DA DJ D2 C8 C6 C3 
+Current Hand(North) = SK HK H8 D7 D6 D5 D4 CJ C5 C4 C2 
+Current Hand(East) = SJ S9 S6 HT H9 H7 H5 DQ D9 D8 C7 
+Original Hand(South) = SA S4 HQ HJ H6 H3 H2 DK DT D3 CA CT C9 
+Original Hand(West) = ST S8 S7 S3 S2 HA H4 DA DJ D2 C8 C6 C3 
+Original Hand(North) = SK SQ HK H8 D7 D6 D5 D4 CQ CJ C5 C4 C2 
+Original Hand(East) = SJ S9 S6 S5 HT H9 H7 H5 DQ D9 D8 CK C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1H Pass 2C Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West S4 S3 SQ S5 North
+GameTrick #2 = North -- -- CQ CK ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 400
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	 200	Bonus for defeating vulnerable contract by 2 tricks"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why didn't  South cover CK
+>>>>>> SOUTH<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQ4 (KQ/A4)
+  H:KQJ8632 (K8/QJ632)
+  D:KT76543 (7654/KT3)
+  C:AQJT9542 (QJ542/AT9)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 3.0;   Total pts = 28.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (2/0/0/1)
+  7 Eventual Winners (2/2/0/3)
+  6 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQ4 (KQ/A4)
+  H:KQJ8632 (K8/QJ632)
+  D:KT76543 (7654/KT3)
+  C:AQJT9542 (QJ542/AT9)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 3.0;   Total pts = 28.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (2/0/0/1)
+  7 Eventual Winners (2/2/0/3)
+  6 Possible Losers (vs. 5 allowable)
+PLN10: We have only 7 sure tricks against a requirement of 8 for the 2NT contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Play the Queen of Clubs from dummy to force out the opponents' King.
+ Play 2: Play the Queen of Clubs from dummy to force out the opponents' Eight.
+ Play 3: Cash the Ten of Clubs in hand.
+ Play 4: Cash the Nine of Clubs in hand.
+ Play 5: Lead a low Club from dummy to finesse the nine in hand against West, with the Ace as cover.
+ Play 6: Lead a low Club from dummy to finesse the ten in hand against West, with the Ace as cover.
+ Play 7: Lead the Club Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 8: Cash the Ace of Clubs in hand.
+ Play 9: Lead a low Heart from hand and finesse the King in dummy against East.
+ Play 10: Lead a low Heart from dummy and finesse the Queen in hand against West.
+ Play 11: Cash the Ace of Spades in hand.
+ Play 12: Cash the King of Spades in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLCSH56: Discard a Spade from dummy in anticipation of cashing the Ace in hand.
+Combined hand (Dummy/Hand):
+  S:AK4 (K/A4)
+  H:KQJ8632 (K8/QJ632)
+  D:KT76543 (7654/KT3)
+  C:AQJT9542 (QJ542/AT9)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 3.0;   Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (2/0/0/1)
+  7 Eventual Winners (2/2/0/3)
+  6 Possible Losers (vs. 5 allowable)
+PLCSH80: the opponents led a Spade, so see if we can finish up the cash play here.
+PLCSH84: Partner's SQ is high, so skip the cash of the Ace.
+PLYTRY: No usable plays found for the current situation.
+PLYE34: Partner's Queen is high, so discard the S4.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=9 vs SureTricks=2 vs NumWinners=9, m_numTricksShort=5
+PLRV10: We have only 2 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLFRC12: Play the CQ from dummy to force out the opponents' King.
+PLFRC64: We're in the opposite hand of a force play, so discard the C9.   ???????? Why not cover with CA
+
+

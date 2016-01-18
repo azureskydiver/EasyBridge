@@ -1,0 +1,113 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 4,  2010
+File Date =  04/07/10 20:18:31
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = H4 DQ DT CT 
+Current Hand(West) = HK HJ DJ D4 
+Current Hand(North) = ST HT D9 D7 
+Current Hand(East) = HQ H3 C9 C7 
+Original Hand(South) = SJ S6 S2 H4 H2 DQ DT D8 D5 CK CT C6 C4 
+Original Hand(West) = SK SQ HK HJ H9 H8 H6 H5 DK DJ D4 D2 CJ 
+Original Hand(North) = ST S7 S5 S4 S3 HT H7 D9 D7 D6 D3 C8 C2 
+Original Hand(East) = SA S9 S8 HA HQ H3 DA CA CQ C9 C7 C5 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = West
+Bidding History = 1H Pass 3C Pass 3NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 8
+Lead Player for Current Game = North
+GameTrick #1 = North SJ SQ S4 S8 West
+GameTrick #2 = West D5 D2 D3 DA East
+GameTrick #3 = East CK CJ C2 C3 South
+GameTrick #4 = South S2 SK S3 S9 West
+GameTrick #5 = West D8 DK D6 C5 West
+GameTrick #6 = West H2 H5 H7 HA East
+GameTrick #7 = East C4 H6 C8 CQ East
+GameTrick #8 = East C6 H8 S5 CA East
+GameTrick #9 = East S6 H9 S7 SA East
+GameTrick #10 = East -- -- -- -- South
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East plays losing Club vs winning Heart
+>>>>>>>>WEST<<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:KQ  H:KJ9865  D:KJ42  C:J
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 13.5.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (1/4/2/0)
+  6 Likely Losers (1/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 5 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH30: Cash the CA from dummy.
+PLCSH72: Our cash of the CA from dummy is holding, so discard the H8.
+RCP5A: North is now known to have started with 2 Clubs.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 5 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH30: Cash the CA from dummy.
+PLCSH72: Our cash of the CA from dummy is holding, so discard the H8.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 9...
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH30: Cash the SA from dummy.
+PLCSH72: Our cash of the SA from dummy is holding, so discard the H9.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 10...
+PLRV10: We have only 2 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLFRC12: Play the C9 from dummy to force out the opponents' Ten.   <<<<<<<<<<<<<<< NO, never get control back Take winning Hearts
+PLFRC64: We're in the opposite hand of a force play, so discard the D4.
+
+
+
+

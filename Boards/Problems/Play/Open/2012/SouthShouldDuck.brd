@@ -1,0 +1,226 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 19, 2012
+File Date =  04/26/12 16:26:38
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ SJ ST S5 S3 HA H4 DA D2 CA CT C5 
+Current Hand(West) = SK S9 HT H9 H7 H6 H3 H2 DQ D8 D3 C8 C2 
+Current Hand(North) = S7 HK HQ H8 DK DT D6 D4 CK C9 C7 C6 C3 
+Current Hand(East) = S8 S6 S4 S2 HJ H5 DJ D9 D7 CQ CJ C4 
+Original Hand(South) = SA SQ SJ ST S5 S3 HA H4 DA D2 CA CT C5 
+Original Hand(West) = SK S9 HT H9 H7 H6 H3 H2 DQ D8 D3 C8 C2 
+Original Hand(North) = S7 HK HQ H8 DK DT D6 D4 CK C9 C7 C6 C3 
+Original Hand(East) = S8 S6 S4 S2 HJ H5 DJ D9 D7 D5 CQ CJ C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 13
+Declarer = North
+Bidding History = Pass 1S Pass 2C Pass 3S Pass 3NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- D5 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should let trick go to North
+>>>>>>>>>>>>> SOUTH<<<<<<<<<<<<<<
+S:7  H:KQ8  D:KT64  C:K9763
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/1/1/2)
+  9 Likely Losers (1/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+East passes.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Club contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 10.0 to 12.0 points)
+G32: Have 11.0/10.0/10.0 points with poor support for partner's Spade suit (holding 7; bid the preferred Club suit 2/1 at 2 Clubs.
+We bid 2C.
+--------------------
+East passes.
+--------------------
+South bids 3S.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Spade, 2 Clubs, and 3 Spades.
+B4D0: Partner made a jump rebid of his Spade suit to 3 Spades, showing 17.0-20.5 points.
+BN1: With 28.0-31.5 HCPs in the partnership and a reasonably balanced hand, and all unbid suits stopped, bid 3 No Trump.
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South bids 6NT.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BXPNT5: With a total of 28.0-31.5 / 27.0-30.5 pts in the partnership, we lack adequate strength for a further raise beyond partner's 6 No Trump bid, so we have to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 6 No Trump.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AQJT753 (AQJT53/7)
+  H:AKQ84 (A4/KQ8)
+  D:AKT64 (A/KT64)
+  C:AKT97653 (AT5/K9763)
+Combined hand evaluation:
+  HCPs = 30.0, Distn pts = 5.0;   Total pts = 35.0.
+  QT's = 7.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (1/3/2/2)
+  10 Eventual Winners (3/3/2/2)
+  3 Possible Losers (vs. 1 allowable)
+RCP5A: West is now known to have started with 2 Spades.
+RCP5A: East is now known to have started with 4 Spades.
+PLAYCL: North has claimed the remaining 3 tricks.
+RESULT: North/South made the contract.
+PLAY: Play restarted.
+====================
+S:7  H:KQ8  D:KT64  C:K9763
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/1/1/2)
+  9 Likely Losers (1/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PLAY: Play restarted.
+====================
+S:7  H:KQ8  D:KT64  C:K9763
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/1/1/2)
+  9 Likely Losers (1/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AQJT753 (AQJT53/7)
+  H:AKQ84 (A4/KQ8)
+  D:AKT642 (A2/KT64)
+  C:AKT97653 (AT5/K9763)
+Combined hand evaluation:
+  HCPs = 30.0, Distn pts = 5.0;   Total pts = 35.0.
+  QT's = 7.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (1/3/2/2)
+  10 Eventual Winners (3/3/2/2)
+  3 Possible Losers (vs. 1 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 6 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AQJT753 (AQJT53/7)
+  H:AKQ84 (A4/KQ8)
+  D:AKT642 (A2/KT64)
+  C:AKT97653 (AT5/K9763)
+Combined hand evaluation:
+  HCPs = 30.0, Distn pts = 5.0;   Total pts = 35.0.
+  QT's = 7.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (1/3/2/2)
+  10 Eventual Winners (3/3/2/2)
+  3 Possible Losers (vs. 1 allowable)
+PLN10: We have only 10 sure tricks against a requirement of 12 for the 6NT contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Spade suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Lead a low Spade from hand to finesse the Queen in dummy against West, with the Ace as cover.
+ Play 2: Cash the Ace of Spades in dummy.
+ Play 3: Lead a low Club from hand to finesse the ten in dummy against West, with the Ace as cover.
+ Play 4: Lead a low Diamond from dummy to finesse the ten in hand against East, with the King as cover.
+ Play 5: Cash the Ace of Clubs in dummy.
+ Play 6: Cash the King of Clubs in hand.
+ Play 7: Cash the Ace of Diamonds in dummy.
+ Play 8: Cash the King of Diamonds in hand.
+ Play 9: Cash the Ace of Hearts in dummy.
+ Play 10: Cash the King of Hearts in hand.
+ Play 11: Cash the Queen of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PLCSH55: The opponents led a Diamond, so cash the Ace now.  <<<<<<<<<<<<<<<< Let go to N
+
+

@@ -1,0 +1,142 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 24, 2015
+File Date =  02/15/15 16:23:26
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ S4 DQ DJ D8 D6 CA CQ 
+Current Hand(West) = SK S3 H9 H8 DA D5 D4 C9 
+Current Hand(North) = SQ S8 DK DT D9 CK C7 C5 C4 
+Current Hand(East) = ST S9 S6 D7 D3 CJ CT C3 C2 
+Original Hand(South) = SA SJ S4 S2 H3 H2 DQ DJ D8 D6 D2 CA CQ 
+Original Hand(West) = SK S3 HA HK HQ HJ H9 H8 DA D5 D4 C9 C6 
+Original Hand(North) = SQ S8 S7 S5 HT H6 DK DT D9 CK C7 C5 C4 
+Original Hand(East) = ST S9 S6 H7 H5 H4 D7 D3 CJ CT C8 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass Pass 1NT Dbl Pass Pass 2D Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West H2 HA H6 H4 West
+GameTrick #2 = West H3 HK HT H7 West
+GameTrick #3 = West S2 HQ S5 H5 West
+GameTrick #4 = West D2 HJ S7 C8 West
+GameTrick #5 = West -- C6 -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 130
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 300
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  40		2 overtricks"
+Bonus Score Record = "	 300	Bonus for defeating vulnerable contract by 3 tricks"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = "  70		2 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why did West stop leading Hearts?
+>>>>>WEST<<<<<<<<<
+S:K3  H:AKQJ98  D:A54  C:96
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 18.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (1/6/1/0)
+  5 Likely Losers (1/0/2/2)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCTK: With 17.0/18.0 points, the hand is too strong for a simple overcall, so start by doubling.
+We bid Dbl.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+Rebidding after opening bid of Double and partner's pass.
+TKRb10: After interference from the left-hand opponent, partner passed our takeout.
+B3A20: Partner passed, showing < 6 points, so with 17.0/18.0 points in hand and 18.0-23.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 2 No Trump.
+PLYLD22: Lead the HA from the top of the 4-card sequence {HA HK HQ HJ }.
+PLYLD76: Continue developing our Heart suit by playing the HK.
+RCP20: Dummy is now out of Hearts.
+PLYLD76: Continue developing our Heart suit by playing the HQ.
+PLYSIG6: Partner discarded low with the five after discarding the seven last round, thus marking a high-low suit preference signal.
+RCP5A: South is now known to have started with 2 Hearts.
+PLYLD76: Continue developing our Heart suit by playing the HJ.
+RCP5A: East is now known to have started with 3 Hearts.
+PLYSIG20: Partner discarded high in the Club suit, indicating a preference for that suit.
+PLYLDPRF8: Partner has indicated a preference for the Clubs suit, so lead the C6.  <<<<<<<<<<< NO Take hearts first
+
+

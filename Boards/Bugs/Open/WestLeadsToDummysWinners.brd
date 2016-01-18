@@ -1,0 +1,159 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 4,  2010
+File Date =  04/08/10 14:26:43
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ H9 DQ D5 
+Current Hand(West) = SJ S8 S5 S3 D7 
+Current Hand(North) = DK DT C8 C7 C4 
+Current Hand(East) = HJ H6 H5 DJ D9 
+Original Hand(South) = SA SQ S7 S6 S4 HK H9 H7 H2 DQ D5 D4 D3 
+Original Hand(West) = SJ ST S8 S5 S3 S2 H3 DA D7 CK CQ C9 C5 
+Original Hand(North) = SK HA H4 DK DT D8 CA CJ C8 C7 C6 C4 C3 
+Original Hand(East) = S9 HQ HJ HT H8 H6 H5 DJ D9 D6 D2 CT C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1C 2H Dbl Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West HK H3 H4 HT South
+GameTrick #2 = South S4 ST SK S9 North
+GameTrick #3 = North H2 C5 CA C2 North
+GameTrick #4 = North S6 C9 C6 CT East
+GameTrick #5 = East H7 S2 HA HQ North
+GameTrick #6 = North D3 CQ CJ H8 West
+GameTrick #7 = West S7 CK C3 D2 West
+GameTrick #8 = West D4 DA D8 D6 West
+GameTrick #9 = West -- -- -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 30
+East/West Game 1 Points = 40
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  30	1 overtrick"
+Game Score Record = "	  40	1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads to Dummy's winner with dummy having 3 club winners  Should lead a spade
+>>>> WEST<<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:JT8532  H:3  D:A7  C:KQ95
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 6.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  6 Likely Winners (3/0/1/2)
+  7 Likely Losers (3/1/1/2)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Clubs, Spades
+The best suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4: Lead the top card of partner's Heart suit (the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F: Play the ten to force a higher card from dummy and promote the other top cards in our hand.
+RCP20: Dummy is now out of Spades.
+RCP5A: South is now known to have started with 0 Clubs.
+PLAYB48: We can't beat North's Ace, so discard the C5.
+PLAYB34: Partner's ten is high, so discard the C9.
+PLDF52: With no cards in the suit led , we discard the S2.
+RCP5A: West is now known to have started with 1 Heart.
+RCP20: Dummy is now out of Hearts.
+RCP5A: East is now known to have started with 2 Clubs.
+PLAYB41: Play the Queen to win the trick.
+PLCSW9: With no other good options, cash a winner in the Club suit, the King
+PLYLDS6e: Try to defeat the contract now by playing the CK.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLDS6e: Try to defeat the contract now by playing the DA.
+PLYSIG0: Partner discarded high with the six, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Diamonds suit, so lead the D7.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S3.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S5.
+RCP20: Dummy is now out of Clubs.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S8.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the SJ.
+RESULT: North/South made the contract.
+PLAY: Play restarted.
+====================
+S:JT8532  H:3  D:A7  C:KQ95
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  6 Likely Winners (3/0/1/2)
+  7 Likely Losers (3/1/1/2)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Clubs, Spades
+The best suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4: Lead the top card of partner's Heart suit (the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F: Play the ten to force a higher card from dummy and promote the other top cards in our hand.
+RCP20: Dummy is now out of Spades.
+RCP5A: South is now known to have started with 0 Clubs.
+PLAYB48: We can't beat North's Ace, so discard the C5.
+PLAYB34: Partner's ten is high, so discard the C9.
+PLDF52: With no cards in the suit led , we discard the S2.
+RCP5A: West is now known to have started with 1 Heart.
+RCP20: Dummy is now out of Hearts.
+RCP5A: East is now known to have started with 2 Clubs.
+PLAYB41: Play the Queen to win the trick.
+PLCSW9: With no other good options, cash a winner in the Club suit, the King
+PLYLD84: With no other obvious plays, cash a winner with the CK.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLD84: With no other obvious plays, cash a winner with the DA.
+PLYSIG0: Partner discarded high with the six, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Diamonds suit, so lead the D7.   <<<<<<NO dummy has 3 winning clubs!!!!!!!!11
+
+

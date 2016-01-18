@@ -1,0 +1,176 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 22, 2010
+File Date =  06/22/10 15:23:30
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S7 HK HQ HJ HT H8 H3 DT D9 C8 C5 C4 
+Current Hand(West) = SA SK S8 S5 S4 S3 HA H7 H6 H4 H2 D8 C6 
+Current Hand(North) = SJ ST S9 S6 DA D7 D6 CA CT C9 C7 C3 
+Current Hand(East) = S2 H9 H5 DK DQ DJ D5 D4 D3 D2 CQ CJ 
+Original Hand(South) = SQ S7 HK HQ HJ HT H8 H3 DT D9 C8 C5 C4 
+Original Hand(West) = SA SK S8 S5 S4 S3 HA H7 H6 H4 H2 D8 C6 
+Original Hand(North) = SJ ST S9 S6 DA D7 D6 CA CK CT C9 C7 C3 
+Original Hand(East) = S2 H9 H5 DK DQ DJ D5 D4 D3 D2 CQ CJ C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 1S 2C 2D 2H 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- CK C2 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West bid South's Hearts
+>>>>>>>> WEST<<<<<<<<
+S:AK8543  H:A7642  D:8  C:6
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 5.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  6 Likely Winners (4/2/0/0)
+  7 Likely Losers (2/3/1/1)
+Playing five-card majors, both majors qualify for opening.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+Opening bid for team.
+E03: Have 11.0 points in high cards, 3.0 quick tricks, and a rebiddable suit in Spades, so bid 1 Spade.
+We bid 1S.
+--------------------
+North bids 2C.
+--------------------
+East bids 2D.
+--------------------
+South bids 2H.                 <<<<<<<<<<<<<<<<<<<<<<NOTE
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 2 Diamonds.
+B3W00: Partner has made a 2 over 1 bid, Diamonds over Spades, which shows 9.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+B3W28: With weak 1-card support for partner's Diamonds (holding 8) and a openable second suit in Hearts (holding A7642), show it in a 3 Hearts bid.  <<<<<<< SOUTH bid it???
+We bid 3H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is West; North leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AK85432 (2/AK8543)
+  H:A976542 (95/A7642)
+  D:KQJ85432 (KQJ5432/8)
+  C:QJ62 (QJ2/6)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 11.0;
+  Total pts = 31.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (2/1/0/0)
+  5 Eventual Winners (2/1/2/0)
+  8 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AK85432 (2/AK8543)
+  H:A976542 (95/A7642)
+  D:KQJ85432 (KQJ5432/8)
+  C:QJ62 (QJ2/6)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 11.0;
+  Total pts = 31.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (2/1/0/0)
+  5 Eventual Winners (2/1/2/0)
+  8 Possible Losers (vs. 4 allowable)
+PLN10: We have only 5 sure tricks against a requirement of 9 for the 3H contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Ruff a Diamond in hand.
+ Play 2: Ruff a Diamond in hand.
+ Play 3: Ruff a Diamond in hand.
+ Play 4: Ruff a Diamond in hand.
+ Play 5: Ruff a Diamond in hand.
+ Play 6: Cash the King of Diamonds in dummy.
+ Play 7: Cash the Queen of Diamonds in dummy.
+ Play 8: Ruff a Spade in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Lead a low Club from hand and finesse the Queen in dummy against South.
+ Play 11: Cash the Ace of Spades in hand.
+ Play 12: Cash the King of Spades in hand.
+ Play 13: Cash the Ace of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the two.
+
+
+

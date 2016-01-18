@@ -1,0 +1,128 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 21, 2009
+File Date =  08/24/09 13:55:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S9 S6 HQ H7 DQ D7 D6 D3 
+Current Hand(West) = S7 S2 H8 H5 H4 H2 CJ CT C8 
+Current Hand(North) = SQ ST S5 HJ HT H6 DK D4 D2 
+Current Hand(East) = SK SJ S8 S4 HA HK H3 DT D8 
+Original Hand(South) = SA S9 S6 S3 HQ H7 DQ D9 D7 D6 D3 C6 C2 
+Original Hand(West) = S7 S2 H8 H5 H4 H2 D5 CK CJ CT C8 C5 C3 
+Original Hand(North) = SQ ST S5 HJ HT H9 H6 DK DJ D4 D2 C9 C4 
+Original Hand(East) = SK SJ S8 S4 HA HK H3 DA DT D8 CA CQ C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 7
+Declarer = East
+Bidding History = 2NT Pass 3NT Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = South
+GameTrick #1 = South D9 D5 DJ DA East
+GameTrick #2 = East C2 C3 C4 CA East
+GameTrick #3 = East C6 C5 C9 CQ East
+GameTrick #4 = East S3 CK H9 C7 ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North discards guard for HJ  >>> Has 2 low diamonds
+>>>>>> NORTH <<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:QT5  H:JT96  D:KJ42  C:94
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  4 Likely Winners (1/1/2/0)
+  9 Likely Losers (2/3/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+The contract is 3 No Trump by East.
+South leads.
+====================
+PLAY: East leads the CA.
+PLAY: South plays the C2.
+PLAY: West plays the C3.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat East's Ace, so discard the C4.
+PLAY: We play the C4.
+PLAY: East wins the round.
+--------
+PLAY: East leads the CQ.
+PLAY: South plays the C6.
+PLAY: West plays the C5.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat East's Queen, so discard the C9.
+PLAY: We play the C9.
+PLAY: East wins the round.
+--------
+PLAY: East leads the C7.
+PLAY: South plays the S3.
+RCP10: South shows out of Clubs.
+RCP5A: South is now known to have started with 2 Clubs.
+PLAY: West plays the CK.
+PLAY4: Playing fourth, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H9.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H9.  <<<<<<<<< NO this unguards the HJ
+PLAY: We play the H9.
+RCP10: North shows out of Clubs.
+RCP5A: North is now known to have started with 2 Clubs.
+
+

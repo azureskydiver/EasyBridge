@@ -1,0 +1,237 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 19, 2010
+File Date =  08/27/10 11:14:51
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S3 HA HK HQ DK DT D5 D2 CJ C8 C2 
+Current Hand(West) = SJ S8 S7 S6 S5 H8 H7 H4 CA CK CT C7 C6 
+Current Hand(North) = S9 S2 HT H6 H2 DJ D9 D8 D7 D6 C9 C4 C3 
+Current Hand(East) = SK SQ S4 HJ H9 H5 H3 DA DQ D4 D3 CQ C5 
+Original Hand(South) = SA ST S3 HA HK HQ DK DT D5 D2 CJ C8 C2 
+Original Hand(West) = SJ S8 S7 S6 S5 H8 H7 H4 CA CK CT C7 C6 
+Original Hand(North) = S9 S2 HT H6 H2 DJ D9 D8 D7 D6 C9 C4 C3 
+Original Hand(East) = SK SQ S4 HJ H9 H5 H3 DA DQ D4 D3 CQ C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = East
+Bidding History = Pass Pass 1NT Dbl 2S Pass 3D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East bid 3D on own vs supporting West's Spades
+West shouldn't pass East's new suit
+>>>>>>>> EAST<<<<<<<<<<<<<<<<<
+S:KQ4  H:J953  D:AQ43  C:Q5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0; Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  4 Likely Winners (1/1/2/0)
+  9 Likely Losers (2/3/2/2)
+Preferred suit is Diamonds.
+====================
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+A00: Have 14.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+We bid 1NT.
+--------------------
+South doubles.
+--------------------
+West bids 2S.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 No Trump and partner's response of 2 Spades.
+B3W00a: Partner has made a 2 over 1 bid following an earlier pass, Spades over No Trump, which shows 9.0-11.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+B3W40: With moderate support for partner's Spade suit (holding KQ4), and our first suit not rebiddable, we have to shift to another suit at 3 Diamonds.  <<<<<<<<<<<< NO bid Spades
+We bid 3D.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is East; South leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KQJ87654 (J8765/KQ4)
+  H:J987543 (874/J953)
+  D:AQ43 (/AQ43)
+  C:AKQT765 (AKT76/Q5)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;
+  Total pts = 26.0.
+  QT's = 4.5,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  4 Sure Winners (0/0/1/3)
+  6 Eventual Winners (2/0/1/3)
+  7 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 Diamonds.
+
+>>>>>>>>>>>> WEST<<<<<<<<<<<<<<<<<<<<<<
+S:J8765  H:874  D:A865  C:AKT76  <<<<<<<<<<<<<<<<<<?????????????  Void in Diamonds ???????????????
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0; Total pts = 9.0.
+  QT's = 2.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  4 Likely Winners (2/-1/0/3)
+  9 Likely Losers (3/4/0/2)
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 1NT.
+--------------------
+South doubles.
+--------------------
+Responding to partner's opening bid of 1 No Trump.
+A10: Partner's bid indicates 15-17 points with balanced hand.
+C16: Have 8.0/8.0 points with a 5-card Spade suit (holding J8765), so bid 2 Spades.
+We bid 2S.
+--------------------
+North passes.
+--------------------
+East bids 3D.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 1 No Trump, 2 Spades, and 3 Diamonds.
+B4T02: Partner bid another suit at 3 Diamonds after his opening of 1NT and our response of 2 Spades.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 6 point(s) for the 3 trump(s) short of 3.
+B4T21: With 23.0-25.0 points in the partnership but without good support for partner's new Diamond suit (holding void), and with no more bidding room, we're forced to pass. <<<<< NO
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is East; South leads.
+
+>>>>>>>>>>> WEST After clear and rebid <<<<<<<<<<<
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 1NT.
+--------------------
+S:J8765  H:874  D:---  C:AKT76
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 2.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  4 Likely Winners (2/-1/0/3)
+  9 Likely Losers (3/4/0/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 1NT.
+--------------------
+South doubles.
+--------------------
+Responding to partner's opening bid of 1 No Trump.
+A10: Partner's bid indicates 15-17 points with balanced hand.
+C16: Have 8.0/8.0 points with a 5-card Spade suit (holding J8765), so bid 2 Spades.
+We bid 2S.
+--------------------
+North passes.
+--------------------
+East bids 3D.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 1 No Trump, 2 Spades, and 3 Diamonds.
+B4T02: Partner bid another suit at 3 Diamonds after his opening of 1NT and our response of 2 Spades.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 6 point(s) for the 3 trump(s) short of 3.
+B4T21: With 23.0-25.0 points in the partnership but without good support for partner's new Diamond suit (holding void), and with no more bidding room, we're forced to pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is East; South leads.
+=======================
+
+
+
+
+

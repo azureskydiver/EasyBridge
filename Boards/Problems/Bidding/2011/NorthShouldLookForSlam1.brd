@@ -1,0 +1,141 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2011
+File Date =  12/26/11 11:27:17
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ ST S8 HJ DA DK D6 D4 D2 CJ CT C5 
+Current Hand(West) = SQ S4 S3 HQ HT H6 H2 D9 D5 C7 C4 C3 C2 
+Current Hand(North) = SK S5 S2 HA DQ DT D7 D3 CA CK CQ C9 C6 
+Current Hand(East) = S9 S7 S6 HK H9 H8 H7 H5 H4 H3 DJ D8 C8 
+Original Hand(South) = SA SJ ST S8 HJ DA DK D6 D4 D2 CJ CT C5 
+Original Hand(West) = SQ S4 S3 HQ HT H6 H2 D9 D5 C7 C4 C3 C2 
+Original Hand(North) = SK S5 S2 HA DQ DT D7 D3 CA CK CQ C9 C6 
+Original Hand(East) = S9 S7 S6 HK H9 H8 H7 H5 H4 H3 DJ D8 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should look for slam vs jumping to 5D
+>>>>>>> NORTH<<<<<<<<<
+S:K52  H:A  D:QT73  C:AKQ96
+Hand evaluation:
+  HCPs = 18.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 18.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/1/1/5)
+  6 Likely Losers (3/0/3/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Clubs.
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+E01: Have 18.0 points in high cards, so bid 1 Club.
+We bid 1C.
+--------------------
+East passes.
+--------------------
+South bids 1D.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Club and partner's response of 1 Diamond.
+B3U00: Partner has made a 1 over 1 bid, Diamonds over Clubs, which shows 5.5-17.5 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL7: Adding 1 point(s) for the solid Club suit.
+3REVAL5: Adding 2 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Diamond trump support including a trump honor & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 18.0 to 24.0 points)
+B3U86: With 4-card support for partner's minor Diamonds suit (holding QT73), no rebiddable suit or second suit of our own, and 18.0/18.0/24.0 points (for a total of 29.5-41.5 points in the partnership), raise to game at 5 Diamonds.
+We bid 5D.
+--------------------
+East passes.
+--------------------
+South bids 6D.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL7: Adding 1 point(s) for the solid Club suit.
+3REVAL6: Deducting 1 point(s) for the 1 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+BXM81: We've reached agreement in suits, but with only 23.5-35.5 total points we can't raise partner's 6 Diamonds bid any further, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 6 Diamonds.  Declarer is South; West leads.
+=======================
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+RCP5A: East is now known to have started with 1 Club.
+RCP5A: South is now known to have started with 3 Clubs.
+RCP20: Dummy is now out of Clubs.
+RCP5A: West is now known to have started with 4 Clubs.
+PLAYCL: South has claimed the remaining 3 tricks.
+RESULT: North/South made 1 overtrick.
+
+

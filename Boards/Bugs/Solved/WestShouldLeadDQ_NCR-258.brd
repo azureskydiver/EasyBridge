@@ -1,0 +1,136 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 27,  2010
+File Date =  03/27/10 17:31:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S7 HQ HJ H8 H6 D5 C7 C3 
+Current Hand(West) = HT H9 DQ DT D8 D6 D4 D2 C9 C6 
+Current Hand(North) = ST S5 H7 DJ CA CK CQ CJ CT C4 
+Current Hand(East) = SK SQ S6 S4 H4 H3 D3 C8 C5 C2 
+Original Hand(South) = SJ S8 S7 S3 HK HQ HJ H8 H6 DA D5 C7 C3 
+Original Hand(West) = SA HA HT H9 DQ DT D8 D7 D6 D4 D2 C9 C6 
+Original Hand(North) = ST S5 S2 H7 H5 DJ D9 CA CK CQ CJ CT C4 
+Original Hand(East) = SK SQ S9 S6 S4 H4 H3 H2 DK D3 C8 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass 1C 1S 2H Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S3 SA S2 S9 West
+GameTrick #2 = West DA D7 D9 DK South
+GameTrick #3 = South HK HA H5 H2 West
+GameTrick #4 = West -- -- -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should lead the DQ to win Dmy's DJ
+>>>>>>WEST<<<<<<<<<<
+S:A  H:AT9  D:QT87642  C:96
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (1/1/5/0)
+  6 Likely Losers (0/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1C.
+--------------------
+East bids 1S.
+--------------------
+South bids 2H.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Spade suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 17.0-24.0 points.
+ROVRC20: And although we want to bid our own 7-card Diamond suit, we can't bid it at the 3 with only 10.0 points, so pass.
+We pass.
+--------------------
+North bids 3C.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4: Lead the top card of partner's Spade suit (the Ace.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D7.
+PLYLD81: With no other obvious plays, fourth best with the D7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the Jack), so cover it with our Ace.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D6.
+PLYLD81: With no other obvious plays, fourth best with the D6.   <<<<<<<<<<<<<<<<<<<<< NO West has ALL of Diamonds. Lead DQ!!!
+
+

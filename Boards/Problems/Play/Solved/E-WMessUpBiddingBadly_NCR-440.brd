@@ -1,0 +1,163 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 1, 2010
+File Date =  12/07/10 11:56:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ S8 S7 S5 D2 CK CJ C9 C8 C7 C4 C2 
+Current Hand(West) = ST S9 S3 HA HJ H6 H5 H4 DA DK DQ CQ C3 
+Current Hand(North) = S6 H8 H7 H3 H2 DJ D8 D7 D6 D3 CA CT C6 
+Current Hand(East) = SA SK S4 S2 HK HQ HT H9 DT D9 D5 D4 C5 
+Original Hand(South) = SQ SJ S8 S7 S5 D2 CK CJ C9 C8 C7 C4 C2 
+Original Hand(West) = ST S9 S3 HA HJ H6 H5 H4 DA DK DQ CQ C3 
+Original Hand(North) = S6 H8 H7 H3 H2 DJ D8 D7 D6 D3 CA CT C6 
+Original Hand(East) = SA SK S4 S2 HK HQ HT H9 DT D9 D5 D4 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 7
+Declarer = East
+Bidding History = 3C Dbl Pass 4C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W mess up bidding badly
+>>>> EAST<<<<<<<<<
+
+Received hand:
+  S:AK42  H:KQT9  D:T954  C:5
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  3 Likely Winners (2/2/-1/0)
+  10 Likely Losers (2/2/5/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Spades.
+====================
+***Bidding restarted***
+South bids 3C.
+--------------------
+West doubles.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 12.0+ HCPs, for a total in the partnership of 24.0-33.0 points.
+TKOTR50: With 12.0/12.0 pts but without a long suit, make a game-forcing bid by bidding the opponents' suit at 4 Clubs.  <<<<<<<<<<<<<<< NOTE <<<<<<<<<<<
+We bid 4C.
+--------------------
+South passes.
+--------------------
+West passes.  <<<<<<<<<<<<<<<< NO!!!!
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is East; South leads.
+=======================
+
+>>>> WEST<<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:T93  H:AJ654  D:AKQ  C:Q3
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 15.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (-1/3/3/0)
+  8 Likely Losers (4/2/0/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+The contract is 4 Clubs by East.
+South leads.
+====================
+=====================================
+Received hand:
+  S:T93  H:AJ654  D:AKQ  C:Q3
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 15.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (-1/3/3/0)
+  8 Likely Losers (4/2/0/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South bids 3C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+TKOUT: With 16.0/15.0 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+North passes.
+--------------------
+East bids 4C.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 4 Clubs.
+TKORb40: Partner has responded in the enemy suit, indicating 13+ pts but no long suits.  <<<<<<<<<< NOTE THIS IS FORCING !!!!!!!!!!!
+TKRb49: The total point count in the partnership is therefore 28.0-37.0 pts.
+TKRb81: But as we do not have a proper hand to bid No Trump at the appropriate level, we have to pass. <<<<<<<<<<< NO
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is East; South leads.
+=======================
+
+
+

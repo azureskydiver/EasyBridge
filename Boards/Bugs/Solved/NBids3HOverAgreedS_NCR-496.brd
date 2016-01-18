@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/14/11 14:01:19
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S7 S3 S2 HT H7 H3 D9 D6 CK C8 C5 
+Current Hand(West) = SK DA DK DT D5 D4 D2 CQ C9 C7 C6 C4 C2 
+Current Hand(North) = SA SQ S6 S5 HQ HJ H9 H4 DJ D8 D3 CA C3 
+Current Hand(East) = S9 S8 S4 HA HK H8 H6 H5 H2 DQ D7 CJ CT 
+Original Hand(South) = SJ ST S7 S3 S2 HT H7 H3 D9 D6 CK C8 C5 
+Original Hand(West) = SK DA DK DT D5 D4 D2 CQ C9 C7 C6 C4 C2 
+Original Hand(North) = SA SQ S6 S5 HQ HJ H9 H4 DJ D8 D3 CA C3 
+Original Hand(East) = S9 S8 S4 HA HK H8 H6 H5 H2 DQ D7 CJ CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = ????
+Bidding History = 1S 2H 2S 3D 3H Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+In ACOL, 1S-2S indicates 6-9 points and support for Spades.
+As a second issue, N bidding 3H is crazy - we alredy have a match in Spades and the opponents have bid Hearts!!!  North Must pass here.
+
+North:
+S:AQ65  H:QJ94  D:J83  C:A3
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  5 Likely Winners (2/2/0/1)
+  8 Likely Losers (2/2/3/1)
+Preferred suit is Spades.
+====================
+Opening bid for team.
+A00: Have 14.0 HCP's with a balanced hand.
+A02: But with an openable 4-card Heart suit, prefer to open in the major instead of in No Trump.
+E01: Have 14.0 points in high cards, so bid 1 Spade.
+We bid 1S.
+--------------------
+East bids 2H.
+--------------------
+South bids 2S.
+--------------------
+West bids 3D.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 2 Spades.
+RDR0: With a single raise, partner is showing 9.0-12.0 points and decent (3-4 card) support for our Spade suit.
+REVAL1: Revaluing hand as declarer...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 13.5 to 14.5 points)
+R14: Using the modified trick count, we have 3 playing tricks in hand and a total of 23.5-26.5 points in the partnership, so show the Heart support suit in a bid of 3 Hearts.
+We bid 3H.
+--------------------
+East passes.
+--------------------
+
+
+
+

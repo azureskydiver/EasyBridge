@@ -1,0 +1,147 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1,  2010
+File Date =  02/08/10 17:42:16
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S4 HA HT H8 H7 DA DJ DT D7 D3 D2 
+Current Hand(West) = ST S5 S3 HQ H9 H6 H4 DQ D9 D6 D5 C5 C3 
+Current Hand(North) = SA SK S6 S2 H5 H2 D8 CK CJ CT C9 C4 C2 
+Current Hand(East) = SQ S9 S7 HK HJ H3 DK D4 CA CQ C8 C7 C6 
+Original Hand(South) = SJ S8 S4 HA HT H8 H7 DA DJ DT D7 D3 D2 
+Original Hand(West) = ST S5 S3 HQ H9 H6 H4 DQ D9 D6 D5 C5 C3 
+Original Hand(North) = SA SK S6 S2 H5 H2 D8 CK CJ CT C9 C4 C2 
+Original Hand(East) = SQ S9 S7 HK HJ H3 DK D4 CA CQ C8 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East makes a poor TkODbl of 2C bid with 5 clubs
+>>>>>>>>> EAST<<<<
+S:Q97  H:KJ3  D:K4  C:AQ876
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Likely Winners (1/1/1/4)
+  6 Likely Losers (2/2/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South bids 1D.
+--------------------
+West passes.
+--------------------
+North bids 2C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 2-level.
+TKOUT: With 15.0/15.0 points and support for all unbid suits, bid a takeout double.  <<<<<<<<<<<<<<< NOT WITH 5 Clubs ?????????
+We bid Dbl.
+--------------------
+South bids 2D.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+Rebidding after opening bid of Double and partner's pass.
+TKOUT: With 15.0/15.0 points and support for all unbid suits, bid a takeout doubleagain.
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 3H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 3 Hearts.
+TKORb43: Partner has made a minimum response of 3 Hearts, indicating no more than 9 points.
+TKRb49: The total point count in the partnership is therefore 19.0-24.0 pts.
+TKRb72: With a total of 19.0-24.0 points in the partnership, we have insufficient strength to raise partner's 3 Hearts bid, so we have to pass.
+We pass.
+--------------------
+South doubles.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Hearts (doubled).  Declarer is West; North leads.
+=======================
+RCP5A: North is now known to have started with 1 Diamond.
+RCP20: Dummy is now out of Diamonds.
+PLAYB48: We can't beat North's King, so discard the S7.
+RCP20: Dummy is now out of Spades.
+RCP5A: South is now known to have started with 0 Clubs.
+PLYLDD: With no other obvious plays, play C6.
+PLYLDD: With no other obvious plays, play C8.
+RCP5A: West is now known to have started with 2 Clubs.
+RESULT: East/West were set 3 tricks.
+
+

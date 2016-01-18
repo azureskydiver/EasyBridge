@@ -1,0 +1,128 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 2, 2009
+File Date =  07/02/09 12:56:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S8 S7 S6 HK HJ H6 D7 D2 CJ C8 
+Current Hand(West) = SQ HQ H8 H7 H4 H3 DQ DJ DT D6 D4 
+Current Hand(North) = ST S3 S2 HA H2 DA DK D9 D8 D3 C7 
+Current Hand(East) = S9 HT H9 H5 D5 CK CQ CT C4 C3 C2 
+Original Hand(South) = SK S8 S7 S6 S5 HK HJ H6 D7 D2 CJ C8 C6 
+Original Hand(West) = SQ S4 HQ H8 H7 H4 H3 DQ DJ DT D6 D4 C5 
+Original Hand(North) = SJ ST S3 S2 HA H2 DA DK D9 D8 D3 CA C7 
+Original Hand(East) = SA S9 HT H9 H5 D5 CK CQ CT C9 C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = Pass Pass 1D 2C 2S Pass 4S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West C6 C5 CA C9 North
+GameTrick #2 = North S5 S4 SJ SA East
+GameTrick #3 = East -- -- -- -- West
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West trumped East's winning CQ
+>>>>>> WEST <<<<
+S:Q4  H:Q8743  D:QJT64  C:5
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 5.0.
+  QT's = 0.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  6 Likely Winners (0/3/3/0)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Diamonds.
+====================
+South passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1D.
+--------------------
+East bids 2C.
+--------------------
+South bids 2S.
+--------------------
+Responding to partner's opening bid of 2 Clubs.
+ROVRC5: Partner overcalled at the 2-level, indicating a good 5+ card Club suit, 9.0-14.0 points, and probably 6+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 14.0-19.0 points.
+ROVRC10: This is not enough to bid any higher, so pass.
+We pass.
+--------------------
+North bids 4S.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Spades.
+PLYLD4: Lead the singleton C5.
+PLAYB47: Partner's Ace can win the trick, so discard the S4.
+PLDF55: With no cards in Clubs, trump with the SQ. <<<<<<<<<<<< NO winning card is partner's
+RCP5A: West is now known to have started with 1 Club.
+RCP20: Dummy is now out of Clubs.
+
+

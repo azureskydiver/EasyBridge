@@ -1,0 +1,261 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 18, 2011
+File Date =  01/25/11 16:08:40
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S5 S3 DQ DJ D8 D5 
+Current Hand(West) = SK H8 H5 D9 CQ CJ C8 
+Current Hand(North) = SJ S9 S4 S2 DK DT C6 
+Current Hand(East) = SA ST S8 S7 S6 H7 D6 
+Original Hand(South) = SQ S5 S3 HJ DA DQ DJ D8 D5 D4 CK C7 C3 
+Original Hand(West) = SK HK HQ H8 H5 H4 D9 D3 CA CQ CJ CT C8 
+Original Hand(North) = SJ S9 S4 S2 HA H9 H6 DK DT D7 C6 C5 C2 
+Original Hand(East) = SA ST S8 S7 S6 HT H7 H3 H2 D6 D2 C9 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 1H Pass 2H 3D 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = North
+GameTrick #1 = North DA D3 D7 D2 South
+GameTrick #2 = South C3 CT C5 C4 West
+GameTrick #3 = West HJ HQ HA H2 North
+GameTrick #4 = North CK CA C2 C9 West
+GameTrick #5 = West C7 HK H6 H3 West
+GameTrick #6 = West D4 H4 H9 HT East
+GameTrick #7 = East -- -- -- -- East
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy leads SA with partner having singleton SK
+>>>>>>>> WEST<<<<<<<<<<
+=====================================
+Received hand:
+  S:K  H:KQ854  D:93  C:AQJT8
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  7 Likely Winners (0/3/0/4)
+  6 Likely Losers (1/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+Opening bid for team.
+E01: Have 15.0 points in high cards, so bid 1 Heart.
+We bid 1H.
+--------------------
+North passes.
+--------------------
+East bids 2H.
+--------------------
+South bids 3D.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 2 Hearts.
+RDR0: With a single raise, partner is showing 6.0-10.0 points and decent (3-4 card) support for our Heart suit.
+REVAL1: Revaluing hand as declarer...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 13.5 to 16.5 points)
+R18: Using the modified trick count, we have 7 playing tricks in hand and a total of 22.5-26.5points in the partnership, so invite game with a bid of 3 Hearts.
+We bid 3H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is West; North leads.
+=======================
+PLAY: North leads the D7.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKT876 (AT876/K)
+  H:KQT875432 (T732/KQ854)
+  D:9632 (62/93)
+  C:AQJT984 (94/AQJT8)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 5.0;
+  Total pts = 24.0.
+  QT's = 4.5,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  3 Sure Winners (2/0/0/1)
+  6 Eventual Winners (2/1/0/3)
+  7 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 Hearts.
+---------------------------
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 7 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Spades in hand.
+PLNRF1: We can potentially ruff up to 1 Diamond in dummy after discarding the 1 loser from dummy.
+PLNRF5: Up to 3 ruffs can be used (1 in dummy/2 in hand) out of a total of 3 available, but require 1 discard(s) first.
+PLNRF8: This consists of the { D6 } from dummy.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 3 cards in Spades, plus 3 in Clubs.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available. 1 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP3: We have 5 probable winners from long suits so will try one more trump pull.
+PLNTRMP5: We can safely play up to 2 rounds of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in  1 round of trumps, 4 cashing tricks in the side suits, and up to 3 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLYSCN9: The play <H7 Trump Pull> is no longer viable as the opponents no longer hold any of the required alternative cards of [---].
+PLYSCNX: 1 play(s) have been deleted as they are no longer viable.
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 9 possible plays and approx. 9+ possible tricks including 7 sure tricks (vs. 9 required) accounted for in the plan.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in hand.
+ Play 2: Ruff a Spade in hand.
+ Play 3: Ruff a Diamond in dummy.
+ Play 4: Cash the Ace of Spades in dummy.
+ Play 5: Cash the King of Spades in hand.
+ Play 6: Cash the Ten of Spades in dummy. <Requires: 2 card(s)>
+ Play 7: Cash the Queen of Clubs in hand.
+ Play 8: Cash the Jack of Clubs in hand.
+ Play 9: Cash the Eight of Clubs in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ3: Since we have enough sure tricks (7) to fulfill the contract, we moved 2 cash plays forward
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Spades in dummy.
+ Play 2: Cash the King of Spades in hand.
+ Play 3: Ruff a Spade in hand.
+ Play 4: Ruff a Spade in hand.
+ Play 5: Ruff a Diamond in dummy.
+ Play 6: Cash the Ten of Spades in dummy.
+ Play 7: Cash the Queen of Clubs in hand.
+ Play 8: Cash the Jack of Clubs in hand.
+ Play 9: Cash the Eight of Clubs in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH30: Cash the SA from dummy.  <<<<<<<<<<<<<<< Hand has singleton King
+PLAY: East leads the SA.
+PLAY: South plays the S3.
+PLCSH72: Our cash of the SA from dummy is holding, so discard the SK.  <<<<<<<<<<<<< NO
+PLAY: We play the SK.    
+PLAY: North plays the S2.
+PLAY: East wins the round.
+--------
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV11: We have 5 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Spades in hand.
+PLNRF1: We can potentially ruff up to 1 Diamond in dummy after discarding the 1 loser from dummy.
+PLNRF5: Up to 3 ruffs can be used (1 in dummy/2 in hand) out of a total of 3 available, but require 1 discard(s) first.
+PLNRF8: This consists of the { D6 } from dummy.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 3 in Clubs.
+PLNCSH30: A total of 4 maximum cashing tricks are immediately available. 1 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP3: We have 5 probable winners from long suits so will try one more trump pull.
+PLNTRMP5: We can safely play up to 2 rounds of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in  1 round of trumps, 2 cashing tricks in the side suits, and up to 3 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLYSCN9: The play <H7 Trump Pull> is no longer viable as the opponents no longer hold any of the required alternative cards of [---].
+PLYSCNX: 1 play(s) have been deleted as they are no longer viable.
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 7 possible plays and approx. 7+ possible tricks including 5 sure tricks (vs. 9 required) accounted for in the plan.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in hand.
+ Play 2: Ruff a Spade in hand.
+ Play 3: Ruff a Diamond in dummy.
+ Play 4: Cash the Ten of Spades in dummy. <Requires: 2 card(s)>
+ Play 5: Cash the Queen of Clubs in hand.
+ Play 6: Cash the Jack of Clubs in hand.
+ Play 7: Cash the Eight of Clubs in hand.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in hand.
+ Play 2: Ruff a Spade in hand.
+ Play 3: Ruff a Diamond in dummy.
+ Play 4: Cash the Ten of Spades in dummy.
+ Play 5: Cash the Queen of Clubs in hand.
+ Play 6: Cash the Jack of Clubs in hand.
+ Play 7: Cash the Eight of Clubs in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLRUF14: Lead a low Spade (the six) from dummy to ruff in hand.
+PLAY: East leads the S6.
+PLAY: South plays the S5.
+PLRUF60: Ruff in hand with the H5.
+PLAY: We play the H5.
+PLAY: North plays the S4.
+
+

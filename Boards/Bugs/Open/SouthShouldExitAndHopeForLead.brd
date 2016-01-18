@@ -1,0 +1,168 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 24, 2010
+File Date =  11/25/10 17:00:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 H9 H8 H6 
+Current Hand(West) = SK SJ HQ HT 
+Current Hand(North) = S4 S3 HJ CT 
+Current Hand(East) = SA SQ S2 HK 
+Original Hand(South) = S9 HA H9 H8 H6 DK DQ DT D9 D4 CK CQ C4 
+Original Hand(West) = SK SJ ST S8 S7 S6 HQ HT H7 H4 D5 C7 C2 
+Original Hand(North) = S4 S3 HJ H3 DA DJ D6 D3 D2 CJ CT C6 C3 
+Original Hand(East) = SA SQ S5 S2 HK H5 H2 D8 D7 CA C9 C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = 1D Pass 3D Dbl 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West C4 C7 CJ CA East
+GameTrick #2 = East CK C2 C3 C5 South
+GameTrick #3 = South D4 D5 DJ D7 North
+GameTrick #4 = North D9 ST DA D8 North
+GameTrick #5 = North CQ S6 C6 C9 South
+GameTrick #6 = South HA H4 H3 H2 South
+GameTrick #7 = South DQ H7 D2 S5 South
+GameTrick #8 = South DK S7 D3 C8 South
+GameTrick #9 = South DT S8 D6 H5 South
+GameTrick #10 = South -- -- -- -- ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Declarer played trumps vs using exit play.
+>>>>> SOUTH<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AQ52  H:K52  D:87  C:A985
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  3 Likely Winners (2/0/0/1)
+  10 Likely Losers (2/3/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Spades
+The best suit is Spades.
+====================
+The contract is 5 Diamonds by South.
+West leads.
+====================
+PLAY: West leads the C7.
+PLAY: North plays the CJ.
+PL03: Starting play as right-hand defender.
+PLDF40: Play high with the Ace.
+PLAY: We play the CA.
+PLAY: South plays the C4.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDRT8: Return partner's Club suit with the five.
+PLAY: We lead the C5.
+PLAY: South plays the CK.
+PLAY: West plays the C2.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAY: North plays the C3.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D4.
+PLAY: West plays the D5.
+PLAY: North plays the DJ.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat North's Jack, so discard the D7.
+PLAY: We play the D7.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DA.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the eight.
+PLAY: We play the D8.
+PLAY: South plays the D9.
+PLAY: West plays the ST.
+RCP10: West shows out of Diamonds.
+RCP5A: West is now known to have started with 1 Diamond.
+PLAY: North wins the round.
+--------
+PLAY: North leads the C6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F1: Play the nine to prevent it from being captured next lead.
+PLAY: We play the C9.
+PLAY: South plays the CQ.
+PLAY: West plays the S6.
+RCP10: West shows out of Clubs.
+RCP1A: West is now known to have started with  2 Clubs and 1 Diamonds.
+PLAY: South wins the round.
+--------
+PLAY: South leads the HA.
+PLAY: West plays the H4.
+PLAY: North plays the H3.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's Ace, so discard the H2.
+PLAY: We play the H2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DQ.
+PLAY: West plays the H7.
+PLAY: North plays the D2.
+PLAY4: Playing fourth, using default player logic.
+PLDIS40: Indicate a preference for the Spade by discarding high with the S5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S5.
+PLAY: We play the S5.
+RCP10: East shows out of Diamonds.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DK.
+PLAY: West plays the S7.
+PLAY: North plays the D3.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C8.
+PLAY: We play the C8.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DT.
+PLAY: West plays the S8.
+PLAY: North plays the D6.
+RCP20: Dummy is now out of Diamonds.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H5.
+PLAY: We play the H5.
+PLAY: South wins the round.
+--------
+
+

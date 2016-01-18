@@ -1,0 +1,126 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 11, 2011
+File Date =  06/25/11 13:32:12
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ S7 S5 S2 HK HQ H8 H7 H4 DJ CK CQ 
+Current Hand(West) = HA H9 H3 DA DT D9 D7 D6 D3 CA C8 C7 C2 
+Current Hand(North) = SA SQ ST S8 S6 S3 HJ HT H6 DQ D5 D4 CT 
+Current Hand(East) = S9 S4 H5 H2 DK D8 D2 CJ C9 C6 C5 C4 C3 
+Original Hand(South) = SK SJ S7 S5 S2 HK HQ H8 H7 H4 DJ CK CQ 
+Original Hand(West) = HA H9 H3 DA DT D9 D7 D6 D3 CA C8 C7 C2 
+Original Hand(North) = SA SQ ST S8 S6 S3 HJ HT H6 DQ D5 D4 CT 
+Original Hand(East) = S9 S4 H5 H2 DK D8 D2 CJ C9 C6 C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = ????
+Bidding History = 1S 2D 3D Pass 3H Pass 3S Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North's reval doesnt' show same points as first valuation
+>>>>>>>>>> NORTH<<<<<<<<<,,
+S:AQT863  H:JT6  D:Q54  C:T
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  4 Likely Winners (4/0/0/0)
+  9 Likely Losers (2/3/3/1)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+South bids 1S.
+--------------------
+West bids 2D.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 6-card Spade trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 10.0 to 18.0 points)  <<<<<<<<<<  NOTE 18!!!
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Spades, declarer's hand is revalued for a suit contract from 10.0 to 12.0 points)
+I08: Have 9.0/10.0/18.0 points with 6-card support for partner's Spades (holding AQT863), which is too strong for a limit raise, so we have to temporarily shift to Diamonds with a bid of 3 Diamonds.
+We bid 3D.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Spade, 3 Diamonds, and 3 Hearts.
+B4P04: Partner bid another suit (third suit in partnership) at 3 Hearts after our jump response, showing 12.0-18.0 points.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Heart trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 10.0 to 12.0 points)   <<<<<<<<<< NOTE 12???
+PKF1: With 6 trumps in partner's first suit (Spades), we prefer to support that suit.
+B4P24: With 9.0/10.0 points in hand, for a total in the partnership of 24.0-30.0 points, and 6-card support for partner's first suit (Spades), return to it by shifting back to 3 Spades.
+We bid 3S.
+--------------------
+East passes.
+--------------------
+
+

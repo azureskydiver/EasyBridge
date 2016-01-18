@@ -1,0 +1,209 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 9, 2009
+File Date =  09/11/09 19:59:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST DK CA CQ CJ C5 
+Current Hand(West) = H2 DT D9 D6 C8 C7 
+Current Hand(North) = SQ S9 S7 S6 D8 C9 
+Current Hand(East) = SK SJ S8 S4 D5 C6 
+Original Hand(South) = ST S3 HQ H9 H3 DK DQ D7 CA CQ CJ C5 C4 
+Original Hand(West) = HA HK HT H8 H4 H2 DA DT D9 D6 CK C8 C7 
+Original Hand(North) = SA SQ S9 S7 S6 H5 D8 D4 D3 D2 CT C9 C3 
+Original Hand(East) = SK SJ S8 S5 S4 S2 HJ H7 H6 DJ D5 C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = 1C 1H 1S Pass 1NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 5
+Lead Player for Current Game = West
+GameTrick #1 = West HQ H8 H5 HJ South
+GameTrick #2 = South S3 H4 SA S2 North
+GameTrick #3 = North C4 CK CT C2 West
+GameTrick #4 = West H3 HA D2 H7 West
+GameTrick #5 = West H9 HK C3 H6 West
+GameTrick #6 = West D7 HT D3 S5 West
+GameTrick #7 = West DQ DA D4 DJ West
+GameTrick #8 = West -- -- -- -- ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West lead a losing Diamond instead of the winning Heart
+>>>>>>>>> WEST <<<<<<<<<<
+S:  H:AKT842  D:AT96  C:K87
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/5/2/1)
+  5 Likely Losers (0/1/2/2)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+South bids 1C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVERCL8: Have a good 6-card Heart suit with 15.0/15.0 points and 8 playing tricks, so overcall the opponents' 1 Club with a bid of 1 Heart.
+We bid 1H.
+--------------------
+North bids 1S.
+--------------------
+East passes.
+--------------------
+South bids 1NT.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H8.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H4.
+PLDF2Ya: We have no Spades, so discard the H4.
+RCP5A: West is now known to have started with 0 Spades.
+PLAYB41: Play the King to win the trick.
+PLYLD76: Continue developing our Heart suit by playing the HA.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Hearts suit, so lead the HK.
+PLYLD76: Continue developing our Heart suit by playing the HK.
+PLYSIG6: Partner discarded low with the six after discarding the seven last round, thus marking a high-low suit preference signal.
+PLYLD76: Continue developing our Heart suit by playing the HT.
+RCP5A: East is now known to have started with 3 Hearts.
+RCP5A: South is now known to have started with 3 Hearts.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLD84: With no other obvious plays, cash a winner with the DA.
+PLYSIG0: Partner discarded high with the Jack, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Diamonds suit, so lead the D6.
+RCP20: Dummy is now out of Diamonds.
+PLYSIG6: Partner discarded low with the five after discarding the Jack last round, thus marking a high-low suit preference signal.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the seven.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Clubs, so discard the H2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Clubs, so discard the DT.
+RESULT: North/South made 1 overtrick.
+PLAY: Play restarted.
+====================
+S:---  H:AKT842  D:AT96  C:K87
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/5/2/1)
+  5 Likely Losers (0/1/2/2)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+PLAY: Play restarted.
+====================
+S:---  H:AKT842  D:AT96  C:K87
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/5/2/1)
+  5 Likely Losers (0/1/2/2)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H8.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H4.
+PLDF2Ya: We have no Spades, so discard the H4.
+RCP5A: West is now known to have started with 0 Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H4.
+PLDF2Ya: We have no Spades, so discard the H4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H4.
+PLDF2Ya: We have no Spades, so discard the H4.
+PLAYB41: Play the King to win the trick.
+PLYLD76: Continue developing our Heart suit by playing the HA.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Hearts suit, so lead the HK.
+PLYLD76: Continue developing our Heart suit by playing the HK.
+PLYSIG6: Partner discarded low with the six after discarding the seven last round, thus marking a high-low suit preference signal.
+PLYLD76: Continue developing our Heart suit by playing the HT.
+RCP5A: East is now known to have started with 3 Hearts.
+RCP5A: South is now known to have started with 3 Hearts.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLD84: With no other obvious plays, cash a winner with the DA.
+PLYSIG0: Partner discarded high with the Jack, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Diamonds suit, so lead the D6.  <<<<<<<< NO TAKE THE WINNING H2
+
+

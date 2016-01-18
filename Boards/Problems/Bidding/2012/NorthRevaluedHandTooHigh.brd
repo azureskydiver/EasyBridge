@@ -1,0 +1,141 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  03/17/12 16:25:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S5 S2 H4 H3 DA DQ DT D7 CK CQ C9 C4 
+Current Hand(West) = SJ S9 S7 S3 HQ H8 H7 H5 DJ CA C6 C5 C2 
+Current Hand(North) = ST S8 HA DK D9 D5 D4 D3 D2 CJ CT C7 C3 
+Current Hand(East) = SA SK S6 S4 HK HJ HT H9 H6 H2 D8 D6 C8 
+Original Hand(South) = SQ S5 S2 H4 H3 DA DQ DT D7 CK CQ C9 C4 
+Original Hand(West) = SJ S9 S7 S3 HQ H8 H7 H5 DJ CA C6 C5 C2 
+Original Hand(North) = ST S8 HA DK D9 D5 D4 D3 D2 CJ CT C7 C3 
+Original Hand(East) = SA SK S6 S4 HK HJ HT H9 H6 H2 D8 D6 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 100
+North/South Game 1 Points = 0
+North/South Game 2 Points = 140
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 60
+East/West Game 1 Points = 120
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 3
+Bonus Score Record = "	  60	2 overtricks"
+Bonus Score Record = "  40		2 overtricks"
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "	 120	4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Clubs made"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North revalues hand too highly
+>>>>>>>>>>>>>NORTH<<<<<<<<<<<
+S:T8  H:A  D:K95432  C:JT73
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (0/1/3/1)
+  8 Likely Losers (2/0/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+South bids 1D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 6-card Diamond trump support including a trump honor & a doubleton in Spades,  & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 8.0 to 18.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Diamonds, declarer's hand is revalued for a suit contract from 8.0 to 12.0 points)
+I20: Have 8.0/8.0/18.0 points and strong support for partner's minor Diamond suit (holding K95432).  Although we'd prefer not to raise a minor, we have no other good options, so raise to 2 Diamonds.
+We bid 2D.
+--------------------
+East bids 2H.
+--------------------
+South bids 3C.
+--------------------
+West bids 3H.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 2 Diamonds, and 3 Clubs.
+B4O00: Partner bid a support suit at 3 Clubs after our single raise, showing 16.0-18.0 points and less than 7 playing tricks.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Club trump support including a trump honor & a doubleton in Spades,  & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 8.0 to 13.0 points)
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 6-card Diamond trump support including a trump honor & a doubleton in Spades,  & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 8.0 to 18.0 points)  <<<<<<<???
+B4O45: Without stoppers in the unbid suits we can't bid a NT contract, but with 34.0-36.0 pts in the partnership and strong trump support, we can raise partner to game at 5 Diamonds.
+We bid 5D.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is South; West leads.
+
+

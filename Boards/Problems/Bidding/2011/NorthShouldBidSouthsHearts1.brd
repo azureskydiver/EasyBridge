@@ -1,0 +1,137 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 25, 2011
+File Date =  05/12/11 20:17:41
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S4 S2 HA HK HJ H9 H4 DQ DT D9 D8 D3 C9 
+Current Hand(West) = SQ S9 S8 S7 H8 H6 H5 DA D6 D5 D4 C8 
+Current Hand(North) = SJ S5 S3 HQ H7 H2 D2 CK CJ C7 C6 C3 C2 
+Current Hand(East) = SA SK ST S6 HT H3 DK DJ D7 CA CQ C5 C4 
+Original Hand(South) = S4 S2 HA HK HJ H9 H4 DQ DT D9 D8 D3 C9 
+Original Hand(West) = SQ S9 S8 S7 H8 H6 H5 DA D6 D5 D4 CT C8 
+Original Hand(North) = SJ S5 S3 HQ H7 H2 D2 CK CJ C7 C6 C3 C2 
+Original Hand(East) = SA SK ST S6 HT H3 DK DJ D7 CA CQ C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 1H Pass 2H Dbl Pass 2S Pass Pass 3D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- CT -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 120
+North/South Game 2 Points = 60
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  40		2 overtricks, vulnerable"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = "  20		1 Diamond made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should bid South's Hearts vs leaving him in Diamonds
+>>>>>>>>> NORTH<<<<<<<<<
+S:J53  H:Q72  D:2  C:KJ7632
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 6.5.
+  QT's = 0.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/0/4)
+  9 Likely Losers (3/3/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Heart trump support including a trump honor & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 6.5 to 8.5 points)
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+G08: Have 7.0/6.5/8.5 points and 3-card (Q72) Heart trump support playing 5-card majors, so raise to 2 Hearts.
+We bid 2H.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+West bids 2S.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's pass.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Hearts from 6.5 down to 2.5 points)
+B3A20: Partner passed, showing < 6 points, so with 7.0/6.5 points in hand and 2.5-7.5 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 3D.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of Pass, Pass, and 3 Diamonds.
+B4Z00: Partner made a response which we don't understand; simply pass.   <<<<<<<<<<<< NO, Bid Hearts
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is South; West leads.
+=======================
+
+

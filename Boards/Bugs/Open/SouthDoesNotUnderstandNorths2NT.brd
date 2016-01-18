@@ -1,0 +1,139 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1,  2010
+File Date =  02/05/10 10:01:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ ST S9 S8 S4 S3 HA H5 D6 D4 CK C3 C2 
+Current Hand(West) = SK S2 HK HQ H7 H2 DQ DT D9 D8 D2 CJ C5 
+Current Hand(North) = SA SJ S6 S5 HJ H4 DA D7 D3 C8 C7 C6 C4 
+Current Hand(East) = S7 HT H9 H8 H6 H3 DK DJ D5 CA CQ CT C9 
+Original Hand(South) = SQ ST S9 S8 S4 S3 HA H5 D6 D4 CK C3 C2 
+Original Hand(West) = SK S2 HK HQ H7 H2 DQ DT D9 D8 D2 CJ C5 
+Original Hand(North) = SA SJ S6 S5 HJ H4 DA D7 D3 C8 C7 C6 C4 
+Original Hand(East) = S7 HT H9 H8 H6 H3 DK DJ D5 CA CQ CT C9 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = ????
+Bidding History = 2S Pass 2NT Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 200
+North/South Game 1 Points = 0
+North/South Game 2 Points = 120
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 80
+East/West Game 1 Points = 120
+East/West Game 2 Points = 40
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 3
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "100		Honors bonus for holding 4 trump honors"
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = " 100		Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = "	 120	4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "	  40	2 Clubs made"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South's HInt does NOT understand North's 2NT response to weak two
+>>>>>>>> SOUTH<<<<<<<<
+S:QT9843  H:A5  D:64  C:K32
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  6 Likely Winners (4/1/0/1)
+  7 Likely Losers (2/1/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+We bid 2S.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+Rebidding after opening bid of 2 Spades and partner's response of 2 No Trump.   <<<<<<<<< Asking for 'feature' see below
+B3Z00: Partner made a response which we don't understand; simply pass.
+>>>>>>> NORTH<<<<<<
+S:AJ65  H:J4  D:A73  C:8764
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 9.5.
+  QT's = 2.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  3 Likely Winners (2/0/1/0)
+  10 Likely Losers (2/2/2/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Spade trump support including a trump honor & a doubleton in Hearts, the hand is revalued for a suit contract as dummy from 9.5 to 12.5 points)
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.0-10.0 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+We have 10.0/9.5/12.5 points, for a partnership total of 17.5-22.5 points, so we are interested in game if a good fit can be found.
+RWKT21: And we like partner's Spade suit (holding AJ65 support), but with only 17.5-22.5 total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<NOTE
+We bid 2NT.
+--------------------
+East passes.
+--------------------
+
+

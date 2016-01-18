@@ -1,0 +1,149 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 15,  2010
+File Date =  04/15/10 16:08:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S5 S2 HK HJ HT H4 H3 D6 D5 D3 C4 C2 
+Current Hand(West) = SJ ST S9 S8 HQ H6 DA DJ CJ C7 C6 C5 C3 
+Current Hand(North) = S7 S6 S4 S3 H8 H7 DT D9 D8 D7 D4 D2 C9 
+Current Hand(East) = SA SQ HA H9 H5 H2 DK DQ CA CK CQ CT C8 
+Original Hand(South) = SK S5 S2 HK HJ HT H4 H3 D6 D5 D3 C4 C2 
+Original Hand(West) = SJ ST S9 S8 HQ H6 DA DJ CJ C7 C6 C5 C3 
+Original Hand(North) = S7 S6 S4 S3 H8 H7 DT D9 D8 D7 D4 D2 C9 
+Original Hand(East) = SA SQ HA H9 H5 H2 DK DQ CA CK CQ CT C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 15
+Declarer = East
+Bidding History = Pass Pass Pass 2C Pass 3C Pass 4NT Pass 5D Pass 6C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy should cover South's HJ with HQ
+>>>>>>>> EAST<<<<<,,
+Swapped into a new hand.
+------------------------
+S:AQ  H:A952  D:KQ  C:AKQT8
+Hand evaluation:
+  HCPs = 24.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 24.0.
+  QT's = 5.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (1/1/1/5)
+  5 Likely Losers (1/3/1/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Clubs.
+Preferred suit is Clubs.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AQJT98 (JT98/AQ)
+  H:AQ9652 (Q6/A952)
+  D:AKQJ (AJ/KQ)
+  C:AKQJT87653 (J7653/AKQT8)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 7.0;
+  Total pts = 40.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  9 Sure Winners (1/1/2/5)
+  12 Eventual Winners (3/2/2/5)
+  1 Possible Loser (vs. 1 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 6 Clubs.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AQJT98 (JT98/AQ)
+  H:AQ9652 (Q6/A952)
+  D:AKQJ (AJ/KQ)
+  C:AKQJT87653 (J7653/AKQT8)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 7.0;
+  Total pts = 40.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  9 Sure Winners (1/1/2/5)
+  12 Eventual Winners (3/2/2/5)
+  1 Possible Loser (vs. 1 allowable)
+PLN10: We have 12 sure tricks against a requirement of 12 for the 6C contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the DA, DK, HA, HQ, SA, SQ, SJ, CJ and CT.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in hand.
+ Play 2: Pull a round of trumps with the King in hand.
+ Play 3: Pull a round of trumps with the Queen in hand if necessary.
+ Play 4: Ruff a Spade in hand.
+ Play 5: Ruff a Heart in dummy.
+ Play 6: Ruff a Heart in dummy.
+ Play 7: Cash the Ace of Diamonds in dummy.
+ Play 8: Cash the King of Diamonds in hand.
+ Play 9: Cash the Queen of Hearts in dummy.
+ Play 10: Cash the Ace of Hearts in hand.
+ Play 11: Cash the Ace of Spades in hand.
+ Play 12: Cash the Queen of Spades in hand.
+ Play 13: Cash the Jack of Spades in dummy.
+ Play 14: Cash the Ace of Clubs in hand.
+ Play 15: Cash the King of Clubs in hand.
+ Play 16: Cash the Queen of Clubs in hand.
+ Play 17: Cash the Jack of Clubs in dummy.
+ Play 18: Cash the Ten of Clubs in hand.
+ Play 19: Lead the Spade nine from dummy and finesse it, with the Ace in hand as cover.
+ Play 20: Lead the Spade ten from dummy and finesse it, with the Ace in hand as cover.
+ Play 21: Lead the Spade Jack from dummy and finesse it, with the Ace in hand as cover.
+ Play 22: Lead a low Heart from hand and finesse the Queen in dummy against North.
+ Play 23: Play the Jack of Spades from dummy to force out the opponents' King.
+PLN95: The planning is complete.
+---------------------------
+PLCSH56: Discard a Heart from dummy in anticipation of cashing the Ace in hand.  <<<<<<<<<<<<<<<< NO Cover the HJ
+PLCSH80: the opponents led a Heart, so see if we can finish up the cash play here.
+PLCSH86: Cash the HA from hand.
+
+

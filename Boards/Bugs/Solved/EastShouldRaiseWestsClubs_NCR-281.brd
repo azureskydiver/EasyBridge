@@ -1,0 +1,170 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 8,  2010
+File Date =  04/09/10 19:48:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S3 HK HT H8 H6 H2 DJ DT D7 D5 D3 D2 CA 
+Current Hand(West) = S9 HA H7 H4 D8 D4 CQ CJ CT C8 C7 C5 C2 
+Current Hand(North) = SQ SJ S7 S4 S2 HJ H9 H5 H3 DQ D6 C4 C3 
+Current Hand(East) = SA SK ST S8 S6 S5 HQ DA DK D9 CK C9 C6 
+Original Hand(South) = S3 HK HT H8 H6 H2 DJ DT D7 D5 D3 D2 CA 
+Original Hand(West) = S9 HA H7 H4 D8 D4 CQ CJ CT C8 C7 C5 C2 
+Original Hand(North) = SQ SJ S7 S4 S2 HJ H9 H5 H3 DQ D6 C4 C3 
+Original Hand(East) = SA SK ST S8 S6 S5 HQ DA DK D9 CK C9 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 3
+Declarer = ????
+Bidding History = 3C Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should bid with 19 HCPs
+>>>>>EAST<<<<<<<<<<
+S:AKT865  H:Q  D:AK9  C:K96
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 19.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (4/0/1/0)
+  8 Likely Losers (2/1/2/3)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+West bids 3C.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 3 Clubs.
+REVAL1: Revaluing hand as dummy...
+SHUTR0: Partner made a preemptive 3 Clubs bid, showing a 7-card Club suit with no tricks outside the suit, and most likely 5.0-8.0 points.
+SHUTR9: With 19.0/19.0/17.0 points in hand, for a total of 22.0-25.0 points in the partnership, holding K96 in support of partner's Club suit, and with only 4.5 QTs and 5 likely winners, we have no real reason to bid anything, so just pass.  <<<<<<<<<NO Bid!!!!
+We pass.
+--------------------
+South bids 3D.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF40: Play high with the King.
+PLYLD33: Partner has bid the Clubs suit, so lead the C6.
+PLAYB41: Play the King to win the trick.
+PLYLDPRF4: Partner has indicated a preference for the Clubs suit, so lead the CK.
+RCP5A: South is now known to have started with 1 Club.
+RCP20: Dummy is now out of Clubs.
+RCP20: Dummy is now out of Diamonds.
+PLAYB41: Play the Ace to win the trick.
+PLYLDPRF2: Partner likes the Club suit, but declarer has shown out of the suit and _may_ be able to ruff, so avoid leading the suit if possible.
+PLYLD33: Partner has bid the Clubs suit, so lead the C9.
+RCP5A: West is now known to have started with 2 Diamonds.
+PLAYB41: Play the Queen to win the trick.
+PLYLDA: With no other obvious plays, cash a winner with the SA.
+PLYLDD: With no other obvious plays, play S5.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the S6.
+RCP5A: East is now known to have started with 1 Heart.
+PLDF52: With no cards in the suit led and no trumps, we discard the S8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the ST.
+RESULT: North/South were set 2 tricks.
+S:AKT865  H:Q  D:AK9  C:K96
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 19.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (4/0/1/0)
+  8 Likely Losers (2/1/2/3)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+West bids 3C.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 3 Clubs.
+REVAL1: Revaluing hand as dummy...
+SHUTR0: Partner made a preemptive 3 Clubs bid, showing a 7-card Club suit with no tricks outside the suit, and most likely 5.0-8.0 points.
+SHUTR9: With 19.0/19.0/17.0 points in hand, for a total of 22.0-25.0 points in the partnership, holding K96 in support of partner's Club suit, and with only 4.5 QTs and 5 likely winners, we have no real reason to bid anything, so just pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is West; North leads.
+=======================
+RCP20: Dummy is now out of Hearts.
+RCP5A: South is now known to have started with 1 Club.
+RCP5A: West is now known to have started with 1 Spade.
+RCP5A: North is now known to have started with 2 Clubs.
+RESULT: East/West made 3 overtricks.
+
+

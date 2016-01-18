@@ -1,0 +1,207 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 2, 2011
+File Date =  12/04/11 12:38:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S6 S4 D8 D7 CA CK CQ CT C7 C4 
+Current Hand(West) = SQ ST S7 S5 S2 HQ HJ H9 H3 D3 C6 C2 
+Current Hand(North) = SA SK S9 S3 DA DK DJ DT D9 D5 D4 C3 
+Current Hand(East) = HT H8 H7 H5 H4 DQ D6 D2 CJ C9 C8 C5 
+Original Hand(South) = SJ S8 S6 S4 HK D8 D7 CA CK CQ CT C7 C4 
+Original Hand(West) = SQ ST S7 S5 S2 HA HQ HJ H9 H3 D3 C6 C2 
+Original Hand(North) = SA SK S9 S3 H6 DA DK DJ DT D9 D5 D4 C3 
+Original Hand(East) = HT H8 H7 H5 H4 H2 DQ D6 D2 CJ C9 C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = 1C 1H 2D Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East HK HA H6 H2 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Norht did not have Hearts stopped
+>>>>>>NORTH<<<<<<<<<
+S:AK93  H:6  D:AKJT954  C:3
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 18.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  8 Likely Winners (2/0/6/0)
+  5 Likely Losers (2/1/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 1C.
+--------------------
+West bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL10: (with a 7-card trump suit in Diamonds, declarer's hand is revalued for a suit contract from 18.0 to 22.0 points)
+Have 15.0/18.0/18.0 points but we prefer to shift instead of raising a minor Club suit, so show our own Diamond suit by bidding 2 Diamonds.
+We bid 2D.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 2 Diamonds, and 3 Clubs.
+Partner made a minimum rebid of his Club suit at 3 Clubs, showing 12.0-16.0 points and 5+ trump cards.
+With 27.0-31.0 HCPs in the partnership and a reasonably balanced hand, though without stoppers in all suits, bid 3 No Trump. <<<<<<<<<<<<<<<<< NO
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+
+>>>>>>>>>>> DEBUG VERSION>>>>>>>>>>>
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AK93  H:6  D:AKJT954  C:3
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 18.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  8 Likely Winners (2/0/6/0)
+  5 Likely Losers (2/1/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+The contract is 3 No Trump by North.
+East leads.
+====================
+=====================================
+Received hand:
+  S:AK93  H:6  D:AKJT954  C:3
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 18.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  8 Likely Winners (2/0/6/0)
+  5 Likely Losers (2/1/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+South bids 1C.
+--------------------
+West bids 2C.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL10: (with a 7-card trump suit in Diamonds, declarer's hand is revalued for a suit contract from 18.0 to 22.0 points)
+I14: Have 15.0/18.0/18.0 points but we prefer to shift instead of raising a minor Club suit, so show our own Diamond suit by bidding 2 Diamonds.
+We bid 2D.
+--------------------
+East bids 4H.
+--------------------
+***Bidding Cancelled***
+South bids 1C.
+--------------------
+West bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Club.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+I14: Have 15.0/18.0/18.0 points but we prefer to shift instead of raising a minor Club suit, so show our own Diamond suit by bidding 2 Diamonds.
+We bid 2D.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 2 Diamonds, and 3 Clubs.
+B4C4: Partner made a minimum rebid of his Club suit at 3 Clubs, showing 12.0-16.0 points and 5+ trump cards.
+BN1: With 27.0-31.0 HCPs in the partnership and a reasonably balanced hand, though without stoppers in all suits, bid 3 No Trump. <<<<<<<<<<<<<<<< NO
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+
+

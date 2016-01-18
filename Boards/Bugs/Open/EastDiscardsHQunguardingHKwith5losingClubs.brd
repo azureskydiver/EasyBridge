@@ -1,0 +1,139 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 1, 2009
+File Date =  08/03/09 10:38:53
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA HJ HT H8 DT D4 C2 
+Current Hand(West) = H9 H3 DJ D9 D7 C9 C8 
+Current Hand(North) = H4 H2 DA DK D5 CQ 
+Current Hand(East) = HK CT C7 C6 C4 C3 
+Original Hand(South) = SA SJ S6 HA HJ HT H8 H5 DT D4 D3 CA C2 
+Original Hand(West) = SQ S8 S5 H9 H3 DJ D9 D7 D6 D2 C9 C8 C5 
+Original Hand(North) = SK ST S9 S7 S4 H4 H2 DA DK DQ D5 CQ CJ 
+Original Hand(East) = S3 S2 HK HQ H7 H6 D8 CK CT C7 C6 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 5
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1S Pass 2H Pass 3D Pass 5NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West D3 D6 DQ D8 North
+GameTrick #2 = North CA C5 CJ CK South
+GameTrick #3 = South SA S5 S4 S2 South
+GameTrick #4 = South SJ S8 S7 S3 South
+GameTrick #5 = South S6 SQ SK H6 North
+GameTrick #6 = North H5 D2 ST H7 North
+GameTrick #7 = North -- -- S9 HQ ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East discards HQ unguarding HK. Has 5 losing clubs?
+>>>>>> EAST <<<<<<<<
+S:32  H:KQ76  D:8  C:KT7643
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  7 Likely Winners (0/3/0/4)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 2H.
+--------------------
+West passes.
+--------------------
+North bids 3D.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 5NT.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 5 No Trump.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF25: Play our only card in the suit, the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: North led an honor (the Jack), so cover it with our King.
+PLAYB48: We can't beat South's Ace, so discard the S2.
+PLAYB48: We can't beat South's Jack, so discard the S3.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H6.
+RCP5A: East is now known to have started with 2 Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the H7.
+RCP5A: South is now known to have started with 3 Spades.
+RCP5A: West is now known to have started with 3 Spades.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the HQ.  <<<<<<<<<<<<<<< NO unguards HK
+
+

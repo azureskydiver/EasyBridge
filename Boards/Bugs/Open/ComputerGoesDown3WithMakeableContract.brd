@@ -1,0 +1,137 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 11,  2010
+File Date =  03/13/10 16:02:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK H8 H7 H5 H2 DT D6 D5 CK CQ CT C2 
+Current Hand(West) = SJ S5 S3 HA H6 H4 H3 DK D4 D3 C7 C5 
+Current Hand(North) = SA SK S7 HJ HT DA DQ DJ D7 D2 CJ C3 
+Current Hand(East) = S9 S6 S4 HQ H9 D9 D8 CA C9 C8 C6 C4 
+Original Hand(South) = S8 HK H8 H7 H5 H2 DT D6 D5 CK CQ CT C2 
+Original Hand(West) = SJ S5 S3 S2 HA H6 H4 H3 DK D4 D3 C7 C5 
+Original Hand(North) = SA SK SQ S7 HJ HT DA DQ DJ D7 D2 CJ C3 
+Original Hand(East) = ST S9 S6 S4 HQ H9 D9 D8 CA C9 C8 C6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 13
+Declarer = North
+Bidding History = Pass 1D Pass 1H Pass 1S Pass 2D Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East S8 S2 SQ ST North
+GameTrick #2 = North -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N-S can make 6D with this hand. Computer goes down 3
+>>>>>>>>>> NORTH<<<<<<<<<<
+S:AKQ7  H:JT  D:AQJ72  C:J3
+Hand evaluation:
+  HCPs = 18.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 17.5.
+  QT's = 3.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  8 Likely Winners (4/0/4/0)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+***Bidding restarted***
+West passes.
+--------------------
+Opening bid for team.
+E01: Have 18.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+East passes.
+--------------------
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 1 Heart.
+B3U00: Partner has made a 1 over 1 bid, Hearts over Diamonds, which shows 5.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 1 point(s) for the solid Diamond suit.
+3REVAL6: Deducting 1 point(s) for the 1 trump(s) short of 3.
+B3U68: With 2-card support for partner's Hearts (holding JT), 18.0/17.5/17.5 points, an unbalanced hand, and our primary Diamond suit not jump rebiddable, we have to show our strength by shifting to 1 Spade, regardless of that suit's strength.
+We bid 1S.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BXC00: Partner has returned to our first suit, raising it to 2 Diamonds.
+REVAL1: Revaluing hand as declarer...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 17.5 to 19.5 points)
+BXC06: And with 5 trump cards and 24.5-36.5 team points, push on to a minor game at 5 Diamonds.
+We bid 5D.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AKQ7 (/AKQ7)
+  H:KJT8752 (K8752/JT)
+  D:AQJT7652 (T65/AQJ72)
+  C:KQJT32 (KQT2/J3)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 4.0;
+  Total pts = 30.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (3/0/1/0)
+  10 Eventual Winners (3/1/3/3)
+  3 Possible Losers (vs. 2 allowable)
+
+
+

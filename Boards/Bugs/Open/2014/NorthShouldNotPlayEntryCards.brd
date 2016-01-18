@@ -1,0 +1,119 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  10/11/14 21:31:49
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK HK HJ H9 DK DQ DJ D9 D4 CK CQ 
+Current Hand(West) = SA SJ S8 S3 H7 DT D8 D6 D5 D3 D2 
+Current Hand(North) = HQ HT H5 H4 DA D7 CT C7 C5 C4 C2 
+Current Hand(East) = ST S9 S5 S4 HA H8 H6 H3 H2 C9 C6 
+Original Hand(South) = SK S6 HK HJ H9 DK DQ DJ D9 D4 CK CQ C8 
+Original Hand(West) = SA SJ S8 S7 S3 H7 DT D8 D6 D5 D3 D2 CJ 
+Original Hand(North) = SQ HQ HT H5 H4 DA D7 CA CT C7 C5 C4 C2 
+Original Hand(East) = ST S9 S5 S4 S2 HA H8 H6 H3 H2 C9 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1NT Pass 2S Pass 3C Pass 4NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West S6 S7 SQ S2 North
+GameTrick #2 = North C8 CJ CA C3 North
+GameTrick #3 = North -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 180
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 200
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	 150	Bonus for defeating contract by 3 tricks"
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "	  60	2 Spades made"
+Game Score Record = "  60		2 Spades made"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should not play entry cards
+>>>>>>>SOUTH<<<<
+Combined hand (Dummy/Hand):
+  S:K6 (/K6)
+  H:KQJT954 (QT54/KJ9)
+  D:AKQJ974 (A7/KQJ94)
+  C:AKQT87542 (AT7542/KQ8)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 4.0;   Total pts = 32.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (0/0/4/3)
+  12 Eventual Winners (0/3/4/5)
+  1 Possible Loser (vs. 3 allowable)
+PLYE34: Partner's Queen is high, so discard the S6.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=12 vs SureTricks=7 vs NumWinners=12, m_numTricksShort=2
+PLRV10: We have only 7 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLDRP10: Lead the CA to try and drop the CJ.  <<<<<NO
+PLDRP65: East did not drop a desired card (the CJ), but perhaps West might; continue the play by discarding the C8 from hand.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=12 vs SureTricks=9 vs NumWinners=12, m_numTricksShort=-1
+PLRV11: We have 9 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLDRP10: Lead the DA to try and drop the DT.  <<<<<<<<<<<<<NO
+
+

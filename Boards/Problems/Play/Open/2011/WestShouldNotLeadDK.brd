@@ -1,0 +1,140 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 11, 2011
+File Date =  06/11/11 20:03:06
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK ST S9 S8 S6 S5 HA H7 H2 DA D6 C9 
+Current Hand(West) = SQ S4 S2 HK HT H8 H5 DK CT C8 C7 C2 
+Current Hand(North) = S3 HQ HJ H4 DQ DJ DT D9 D8 CK CQ C5 C4 
+Current Hand(East) = SJ S7 H9 H3 D7 D5 D4 D3 D2 CA CJ C6 C3 
+Original Hand(South) = SA SK ST S9 S8 S6 S5 HA H7 H2 DA D6 C9 
+Original Hand(West) = SQ S4 S2 HK HT H8 H6 H5 DK CT C8 C7 C2 
+Original Hand(North) = S3 HQ HJ H4 DQ DJ DT D9 D8 CK CQ C5 C4 
+Original Hand(East) = SJ S7 H9 H3 D7 D5 D4 D3 D2 CA CJ C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 5
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 14
+Declarer = South
+Bidding History = Pass Pass 1S Pass 2D Pass 3S Pass 3NT Pass 5S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- H6 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 20
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  20		1 overtrick"
+Game Score Record = "  60		3 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+S:Q42  H:KT865  D:K  C:T872
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.5;
+Total pts = 5.5.
+  QT's = 0.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  1 Likely Winners (0/2/0/-1)
+  12 Likely Losers (3/3/1/5)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 5.5 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 3S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 3NT.
+--------------------
+East passes.
+--------------------
+South bids 5S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 5 Spades.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 5 Spades.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H6.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+RCP20: Dummy is now out of Spades.
+PLAYB48: We can't beat South's Ace, so discard the S2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the four.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Queen.
+RCP5A: East is now known to have started with 2 Spades.
+PLYLD43: With no good card to lead, lead the DK since dummy is not void in the Diamond suit (we don't know about declarer, though).  <<<<<<<<<<<<<<<<<< No Save the King !!!!!!!!!!
+
+

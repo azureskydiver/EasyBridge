@@ -1,0 +1,150 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 25, 2011
+File Date =  06/11/11 11:25:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S6 S2 HQ H3 DA DK CA CQ CJ CT C9 
+Current Hand(West) = S8 S7 HK H8 H5 H4 DQ DJ D7 CK C8 C3 C2 
+Current Hand(North) = SK SQ S9 S5 S4 HJ HT H6 H2 DT D9 D6 C7 
+Current Hand(East) = SA S3 HA H9 H7 D8 D5 D4 D3 D2 C6 C5 C4 
+Original Hand(South) = SJ ST S6 S2 HQ H3 DA DK CA CQ CJ CT C9 
+Original Hand(West) = S8 S7 HK H8 H5 H4 DQ DJ D7 CK C8 C3 C2 
+Original Hand(North) = SK SQ S9 S5 S4 HJ HT H6 H2 DT D9 D6 C7 
+Original Hand(East) = SA S3 HA H9 H7 D8 D5 D4 D3 D2 C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N should show his 5 card spade suit (has 6hcp's) when South opens 1 club
+====================================
+S:KQ954  H:JT62  D:T96  C:7
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  3 Likely Winners (3/1/-1/0)
+  10 Likely Losers (2/3/4/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South bids 1C.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+Partner is showing 12.0-20.5 points and 2+ QT's.
+We don't like partner's suit but have 6.0 HCPs, so bid 1NT.
+We bid 1NT.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 1 No Trump, and 2 No Trump.
+Partner's raise from our 1 No Trump to 2 No Trump indicates a balanced hand and 17.0-18.0 HCPs, for a total of 23.0+ HCPs in the partnership.
+with 6.0/5.0 points in hand, and a total of 23.0-24.0 in the partnership, sign off on partner's contract of 2NT.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is North; East leads.
+=======================
+
+>>>>>>>>> NORM's system <<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:KQ954  H:JT62  D:T96  C:7
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  3 Likely Winners (3/1/-1/0)
+  10 Likely Losers (2/3/4/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+
+South bids 1C.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+F02a: We don't like partner's suit but have 6.0 HCPs, so bid 1NT.   <<<<<<<<<<<<< NO bid 1Spade
+--------------------
+East passes.
+--------------------
+
+
+
+
+

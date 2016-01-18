@@ -1,0 +1,101 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = February 19, 2012
+File Date =  02/20/12 15:16:53
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S3 DA DQ DJ DT D8 D4 C8 C5 C3 
+Current Hand(West) = SK ST S6 S2 HJ HT H5 DK D3 CQ CJ C4 
+Current Hand(North) = SA S8 S5 S4 HK H6 D9 D2 CA CK CT C2 
+Current Hand(East) = SJ S7 HA H9 H8 H4 D7 D6 D5 C9 C7 C6 
+Original Hand(South) = SQ S9 S3 HQ DA DQ DJ DT D8 D4 C8 C5 C3 
+Original Hand(West) = SK ST S6 S2 HJ HT H5 H2 DK D3 CQ CJ C4 
+Original Hand(North) = SA S8 S5 S4 HK H6 H3 D9 D2 CA CK CT C2 
+Original Hand(East) = SJ S7 HA H9 H8 H7 H4 D7 D6 D5 C9 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1C Pass 1D Pass 1NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East HQ H2 H3 H7 South
+GameTrick #2 = South -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Declarer must promote Diamonds
+>>>>>>>>>>>>NORTH<<<<<<<<<<<
+Combined hand (Dummy/Hand):
+  S:AQ98543 (Q93/A854)
+  H:K63 (/K63)
+  D:AQJT9842 (AQJT84/92)
+  C:AKT8532 (853/AKT2)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 4.0;   Total pts = 27.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/0/1/2)
+  6 Eventual Winners (1/0/3/2)
+  7 Possible Losers (vs. 4 allowable)
+PLYE34: Partner's Queen is high, so discard the H3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=10 vs SureTricks=4 vs NumWinners=10, m_numTricksShort=4
+PLRV10: We have only 4 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH40: Lead a low Spade (the three) from dummy in order to cash the Ace in hand.
+
+

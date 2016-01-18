@@ -1,0 +1,134 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  04/03/12 16:20:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S3 H6 H4 DA DK DQ DT D9 CA CK C5 C3 
+Current Hand(West) = S9 S6 S4 HA HJ HT H3 D7 D6 D3 C8 C7 C2 
+Current Hand(North) = SA SK SJ ST HK H8 H5 D5 D4 CJ C9 C6 C4 
+Current Hand(East) = SQ S7 S5 S2 HQ H9 H7 H2 DJ D8 D2 CQ CT 
+Original Hand(South) = S8 S3 H6 H4 DA DK DQ DT D9 CA CK C5 C3 
+Original Hand(West) = S9 S6 S4 HA HJ HT H3 D7 D6 D3 C8 C7 C2 
+Original Hand(North) = SA SK SJ ST HK H8 H5 D5 D4 CJ C9 C6 C4 
+Original Hand(East) = SQ S7 S5 S2 HQ H9 H7 H2 DJ D8 D2 CQ CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 1
+Declarer = ????
+Bidding History = Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should not pass
+>>>>>>>>>>>>>>>NORTH<<<<<<<<<<<<<<<<
+S:AKJT  H:K85  D:54  C:J964
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  4 Likely Winners (3/0/0/1)
+  9 Likely Losers (1/3/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+East passes.
+--------------------
+South bids 1D.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Spades from 12.0 down to 11.0 points)
+F01a: Have 12.0/12.0/12.0 pts with an available 4-card major suit in Spades (AKJT), so bid 1 Spade over partner's minor suit 1 Diamond bid.
+We bid 1S.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Spade, and 2 Diamonds.
+B4C4: Partner made a minimum rebid of his Diamond suit at 2 Diamonds, showing 12.0-16.0 points and 5+ trump cards.
+B4C21: with a total of 24.0-28.0 pts in the partnership, Pass. <<<<<<<<<<<<<<< ENough for another bid
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is South; West leads.
+=======================
+RCP20: Dummy is now out of Diamonds.
+RCP5A: South is now known to have started with 2 Spades.
+RCP20: Dummy is now out of Spades.
+RCP5A: West is now known to have started with 3 Spades.
+RCP5A: East is now known to have started with 2 Clubs.
+RCP20: Dummy is now out of Clubs.
+PLAYCL: South has claimed the remaining 2 tricks.
+RESULT: North/South made 4 overtricks.
+
+

@@ -1,0 +1,184 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 18,  2009
+File Date =  12/31/09 14:31:27
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 HA HK H8 H6 DA DK DQ DJ DT D8 D7 D3 
+Current Hand(West) = SA SJ S8 HT H3 H2 D4 CA CJ CT C9 C6 C2 
+Current Hand(North) = ST S9 S5 S2 HJ H5 D5 D2 CK C8 C7 C5 C4 
+Current Hand(East) = SK SQ S6 S4 S3 HQ H9 H7 H4 D9 D6 CQ C3 
+Original Hand(South) = S7 HA HK H8 H6 DA DK DQ DJ DT D8 D7 D3 
+Original Hand(West) = SA SJ S8 HT H3 H2 D4 CA CJ CT C9 C6 C2 
+Original Hand(North) = ST S9 S5 S2 HJ H5 D5 D2 CK C8 C7 C5 C4 
+Original Hand(East) = SK SQ S6 S4 S3 HQ H9 H7 H4 D9 D6 CQ C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 1
+Declarer = ????
+Bidding History = Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 160
+North/South Game 1 Points = 160
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = " 100		Bonus for defeating contract by 2 tricks"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Claim remaining tricks should NOT have given the tricks!!!
+S:KQ643  H:Q974  D:96  C:Q3
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  6 Likely Winners (4/2/0/0)
+  7 Likely Losers (1/2/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+North bids 2D.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 4NT.
+--------------------
+West passes.
+--------------------
+North bids 5C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 6D.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 6 Diamonds.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 6 Diamonds.
+PLYLD15: Lead the SK from the top of the { SK SQ } sequence.
+RCP20: Dummy is now out of Spades.
+RCP25: Dummy is shown to be void in Clubs.
+RCP25: Dummy is shown to be void in Spades.
+PLYLDD: With no other obvious plays, play H7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+RCP5A: West is now known to have started with 1 Diamond.
+RCP5A: North is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S3.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S4.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H4.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S6.
+PLAYB56: With no cards in the suit led and no trumps, we discard the SQ.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H9.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C3.
+RCP20: Dummy is now out of Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the CQ.
+RESULT: North/South made the contract.
+PLAY: Play restarted.
+====================
+S:KQ643  H:Q974  D:96  C:Q3
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  6 Likely Winners (4/2/0/0)
+  7 Likely Losers (1/2/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 6 Diamonds.
+PLYLD15: Lead the SK from the top of the { SK SQ } sequence.
+RCP20: Dummy is now out of Spades.
+RCP25: Dummy is shown to be void in Clubs.
+RCP25: Dummy is shown to be void in Spades.
+PLYLDD: With no other obvious plays, play H7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+RCP5A: West is now known to have started with 1 Diamond.
+RCP5A: North is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S3.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S4.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H4.
+PLAYCL: North has claimed the remaining 7 tricks.  <<<<<<<<<<<<<<<<<<<< NOT necessarily ?????
+
+

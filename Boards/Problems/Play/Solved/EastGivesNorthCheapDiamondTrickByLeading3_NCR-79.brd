@@ -1,0 +1,114 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 6, 2009
+File Date =  09/07/09 12:55:01
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S5 HA H4 H2 CA CK CT C6 C3 C2 
+Current Hand(West) = S9 S8 S6 H9 H5 H3 CJ C8 C7 C5 C4 
+Current Hand(North) = SJ ST S7 S3 HK HQ HJ H8 DQ D5 CQ 
+Current Hand(East) = SK SQ S4 S2 HT H7 H6 DT D8 D3 C9 
+Original Hand(South) = SA S5 HA H4 H2 D6 D2 CA CK CT C6 C3 C2 
+Original Hand(West) = S9 S8 S6 H9 H5 H3 DA D9 CJ C8 C7 C5 C4 
+Original Hand(North) = SJ ST S7 S3 HK HQ HJ H8 DQ DJ D5 D4 CQ 
+Original Hand(East) = SK SQ S4 S2 HT H7 H6 DK DT D8 D7 D3 C9 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = 1C Pass 1H Pass 2C Pass 2NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East D6 DA D4 D7 West
+GameTrick #2 = West D2 D9 DJ DK East
+GameTrick #3 = East -- -- -- -- North
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads low Diamond giving North a Cheap trick.  Should lead T or 8
+>>>>>>>> EAST <<<<<<<<<
+S:KQ42  H:T76  D:KT873  C:9
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  6 Likely Winners (3/0/3/0)
+  7 Likely Losers (1/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+South bids 1C.
+--------------------
+West passes.
+--------------------
+North bids 1H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 2 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D7.
+PLDF38B: Play high to win with the King.
+RCP20: Dummy is now out of Diamonds.
+PLYLDRT8: Return partner's Diamond suit with the three.  <<<<<<<<<< ONLY DQ5  left ouf Play HIGH to prevent D5 winning
+RCP5A: West is now known to have started with 2 Diamonds.
+
+

@@ -1,0 +1,78 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2011
+File Date =  07/17/11 15:31:43
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ ST DQ 
+Current Hand(West) = HQ DJ D9 D2 
+Current Hand(North) = S4 HA DK D7 
+Current Hand(East) = S7 HT DT D5 
+Original Hand(South) = SK SJ ST S9 S8 S6 HJ H8 DQ D4 C7 C4 C3 
+Original Hand(West) = SA S5 S3 HQ H7 H3 H2 DA DJ D9 D2 CQ C5 
+Original Hand(North) = SQ S4 HA H6 H5 H4 DK D8 D7 D6 C9 C8 C2 
+Original Hand(East) = S7 S2 HK HT H9 DT D5 D3 CA CK CJ CT C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 9
+Declarer = West
+Bidding History = Pass 1D Pass 2C 2S 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 8
+Lead Player for Current Game = North
+GameTrick #1 = North S6 SA SQ S2 West
+GameTrick #2 = West H8 H2 H4 HK East
+GameTrick #3 = East C3 CQ C2 C6 West
+GameTrick #4 = West C4 C5 C8 CA East
+GameTrick #5 = East C7 S3 C9 CJ East
+GameTrick #6 = East S8 S5 D8 CT East
+GameTrick #7 = East S9 H3 H5 CK East
+GameTrick #8 = East D4 DA D6 D3 West
+GameTrick #9 = West HJ H7 H6 H9 South
+GameTrick #10 = South -- -- -- -- ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Compute unstopped  Diamonds before leading Hearts
+

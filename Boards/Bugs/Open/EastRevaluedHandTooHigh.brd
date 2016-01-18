@@ -1,0 +1,131 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 15,  2010
+File Date =  05/03/10 13:00:40
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S4 S3 HA HQ DT D8 D7 CA CJ C6 C2 
+Current Hand(West) = SA S7 S6 S5 DQ DJ D6 D5 D3 D2 CQ CT C3 
+Current Hand(North) = S8 H9 H6 H5 H4 H3 DK D9 D4 CK C9 C7 C4 
+Current Hand(East) = SK SQ S9 S2 HK HJ HT H8 H7 H2 DA C8 C5 
+Original Hand(South) = SJ ST S4 S3 HA HQ DT D8 D7 CA CJ C6 C2 
+Original Hand(West) = SA S7 S6 S5 DQ DJ D6 D5 D3 D2 CQ CT C3 
+Original Hand(North) = S8 H9 H6 H5 H4 H3 DK D9 D4 CK C9 C7 C4 
+Original Hand(East) = SK SQ S9 S2 HK HJ HT H8 H7 H2 DA C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 3
+Declarer = ????
+Bidding History = Pass Pass 1H 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East revalued hand too much
+>>> EAST<
+S:KQ92  H:KJT872  D:A  C:85
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (2/4/1/0)
+  6 Likely Losers (2/2/0/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+E01: Have 13.0 points in high cards, so bid 1 Heart.
+We bid 1H.
+--------------------
+South doubles.
+--------------------
+West bids 1S.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 1 Spade.
+B3U00a: Partner has made a 1 over 1 bid after an earlier pass, Spades over Hearts, which shows 5.0-11.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Spade trump support including a trump honor & a doubleton in Clubs,  & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 14.0 to 19.0 points)
+B3U72: With 4-card support for partner's Spades (holding KQ92) and 13.0/14.0/19.0 points in hand (for 24.0-30.0 points in the partnership), we have enough for game, so bid 4 Spades.
+We bid 4S.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is West; North leads.
+=======================
+RCP5A: North is now known to have started with 1 Spade.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: West is now known to have started with 0 Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H7.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the HJ.
+PLAYB56: With no cards in the suit led and no trumps, we discard the HK.
+RESULT: East/West were set 4 tricks.
+
+

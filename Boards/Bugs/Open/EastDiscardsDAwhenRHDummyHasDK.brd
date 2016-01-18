@@ -1,0 +1,266 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 14, 2009
+File Date =  06/16/09 21:24:04
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = C9 C7 
+Current Hand(West) = S7 CQ 
+Current Hand(North) = HT DK 
+Current Hand(East) = SQ DA 
+Original Hand(South) = ST S5 HA HK HQ HJ H7 C9 C7 C6 C4 C3 C2 
+Original Hand(West) = SA SJ S7 S2 H6 H2 DJ D6 D4 CA CQ CJ C8 
+Original Hand(North) = SK S9 S3 HT H9 H8 H5 H4 H3 DK D9 D5 CT 
+Original Hand(East) = SQ S8 S6 S4 DA DQ DT D8 D7 D3 D2 CK C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1H Dbl 1S 2D 2H Pass 4H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 9
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H7 D4 D5 DQ South
+GameTrick #2 = South HA H2 H3 D3 South
+GameTrick #3 = South HK H6 H4 D7 South
+GameTrick #4 = South C2 CA CT C5 West
+GameTrick #5 = West S5 S2 SK S4 North
+GameTrick #6 = North ST SJ S3 S6 West
+GameTrick #7 = West HJ SA S9 S8 South
+GameTrick #8 = South C3 C8 H5 CK North
+GameTrick #9 = North HQ D6 D9 DT South
+GameTrick #10 = South C4 CJ H8 D2 North
+GameTrick #11 = North C6 DJ H9 D8 North
+GameTrick #12 = North -- -- -- -- ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East discards DA when Dummy (RH) leads HT(trump). Dummy still has DK.  East should save DA to cover DK
+>>>>>>>> EAST <<<<<<<<<<<<
+S:Q864  H:82  D:AQT8732  C:K5
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  9 Likely Winners (2/0/6/1)
+  4 Likely Losers (2/0/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 1H.
+--------------------
+West doubles.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 11.0+ HCPs, for a total in the partnership of 25.0-35.0 points.
+TKOTR12: But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+TKOTR14: However, assuming partner has 12+ HCPs, that amount combined with our 11.0/14.0 points totals 23.0/26.0 pts, which is enough for us to bid 2 Diamonds.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+Rebidding after opening bid of 2 Diamonds and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 11.0/14.0 points in hand and 14.0-19.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D8.
+RCP5A: South is now known to have started with 0 Diamonds.
+RCP25: Dummy is shown to be void in Diamonds.
+PLYSIG1: Partner discarded low with the four, so consider it a signal that he dislikes the suit.
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D8.
+RCP25: Dummy is shown to be void in Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the D3.
+PLDF2Ya: We have no Hearts, so discard the D3.
+RCP5A: East is now known to have started with 0 Hearts.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the D7.
+PLAYB52: With no cards in the suit led and no trumps, we discard the D7.
+RCP5A: West is now known to have started with 2 Hearts.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the DT.
+PLAYB52: With no cards in the suit led and no trumps, we discard the DT.
+PLDIS40: Indicate a preference for the Spade by discarding high with the S8.
+PLAYB52: With no cards in the suit led and no trumps, we discard the S8.
+RCP20: Dummy is now out of Hearts.
+PLAYB52: With no cards in the suit led and no trumps, we discard the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: North led an honor (the ten), so cover it with our King.
+PLYLD76: Continue developing our Diamond suit by playing the DA.
+PLYLDE: With no other obvious plays, play C5.
+RCP5A: North is now known to have started with 1 Club.
+PLDF52: With no cards in the suit led , we discard the DQ.
+RCP20: Dummy is now out of Clubs.
+PLDF41: Drop the Queen here to unblock the suit for partner.
+PLDF25: Play our only card in the suit, the six.
+RCP20: Dummy is now out of Spades.
+RESULT: North/South were set 2 tricks.
+S:Q864  H:---  D:AQT8732  C:K5
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  9 Likely Winners (2/0/6/1)
+  4 Likely Losers (2/0/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+South bids 1H.
+--------------------
+West doubles.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 11.0+ HCPs, for a total in the partnership of 25.0-35.0 points.
+TKOTR12: But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+TKOTR14: However, assuming partner has 12+ HCPs, that amount combined with our 11.0/14.0 points totals 23.0/26.0 pts, which is enough for us to bid 2 Diamonds.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+Rebidding after opening bid of 2 Diamonds and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 11.0/14.0 points in hand and 14.0-19.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+S:Q864  H:---  D:AQT8732  C:K5
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  9 Likely Winners (2/0/6/1)
+  4 Likely Losers (2/0/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+South bids 1H.
+--------------------
+West doubles.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 11.0+ HCPs, for a total in the partnership of 25.0-35.0 points.
+TKOTR12: But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+TKOTR14: However, assuming partner has 12+ HCPs, that amount combined with our 11.0/14.0 points totals 23.0/26.0 pts, which is enough for us to bid 2 Diamonds.
+--------------------
+South bids 2H.
+--------------------
+West passes.
+--------------------
+North bids 4H.
+--------------------
+Rebidding after opening bid of 2 Diamonds and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 11.0/14.0 points in hand and 14.0-19.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF40a: Play higher with the Queen.
+RCP5A: South is now known to have started with 0 Diamonds.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the D3.
+PLAYB52: With no cards in the suit led and no trumps, we discard the D3.
+RCP5A: East is now known to have started with 0 Hearts.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the D7.
+PLAYB52: With no cards in the suit led and no trumps, we discard the D7.
+RCP20: Dummy is now out of Clubs.
+PLAYB47: Partner's Ace can win the trick, so discard the C5.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the four.
+PLDF48: We can't beat North's King, so discard the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+RCP20: Dummy is now out of Spades.
+PLDF47: Partner's Ace can win the trick, so discard the S8.
+PLAYB23: We can't beat the opponent's five of trumps, so discard the CK.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H3: Cover with the ten.
+PLAYB23: We can't beat the opponent's eight of trumps, so discard the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the D8.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the DA. <<<<<<<<<<,
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the D8.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the DA.
+
+

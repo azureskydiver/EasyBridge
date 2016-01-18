@@ -1,0 +1,96 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  10/22/14 07:12:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S9 CA CK CJ C5 C4 
+Current Hand(West) = S8 S7 HQ HT H8 H7 C6 
+Current Hand(North) = S5 H5 H4 H2 D9 D7 D6 
+Current Hand(East) = HK DT D4 D3 CT C9 C3 
+Original Hand(South) = SJ ST S9 S6 S4 H9 H6 DK CA CK CJ C5 C4 
+Original Hand(West) = SA S8 S7 S2 HQ HT H8 H7 H3 D8 C7 C6 C2 
+Original Hand(North) = SQ S5 S3 HA H5 H4 H2 DA D9 D7 D6 D5 C8 
+Original Hand(East) = SK HK HJ DQ DJ DT D4 D3 D2 CQ CT C9 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = 1S Pass 2D Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East DK D8 D5 DQ South
+GameTrick #2 = South H6 H3 HA HJ North
+GameTrick #3 = North S4 S2 S3 SK East
+GameTrick #4 = East H9 C2 DA DJ North
+GameTrick #5 = North S6 SA SQ D2 West
+GameTrick #6 = West -- C7 C8 CQ ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 100
+North/South Game 2 Points = 70
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks, vulnerable"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  70		2 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West shoul not lead into South's CAKJ
+>>>WEST<<<<
+RCP20: Dummy is now out of Diamonds.
+RCP25: Dummy is shown to be void in Diamonds.
+PL03: Starting play as right-hand defender.
+PLDF25: Play our only card in the suit, the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYB34: Partner's King is high, so discard the S2.
+PLDF60: With no cards in the suit led , we discard the C2.
+RCP5A: West is now known to have started with 1 Diamond.
+RCP5A: East is now known to have started with 1 Spade.
+PLAYB41: Play the Ace to win the trick.
+PLYLDE: With no other obvious plays, play C7.  <<<<<<<<<<<NO
+
+

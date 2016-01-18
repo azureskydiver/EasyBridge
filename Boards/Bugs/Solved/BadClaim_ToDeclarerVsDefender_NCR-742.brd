@@ -1,0 +1,76 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 24, 2015
+File Date =  02/21/15 12:15:03
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = CQ CT 
+Current Hand(West) = S8 HQ 
+Current Hand(North) = HK HT 
+Current Hand(East) = SK ST 
+Original Hand(South) = SQ S5 S2 HA H7 D8 D6 CQ CT C8 C6 C5 C3 
+Original Hand(West) = S8 S7 HQ HJ H5 H2 DA DK DQ DJ DT D7 CJ 
+Original Hand(North) = SA SJ S9 S6 S4 HK HT H8 H3 D2 C7 C4 C2 
+Original Hand(East) = SK ST S3 H9 H6 H4 D9 D5 D4 D3 CA CK C9 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 7
+Declarer = East
+Bidding History = Pass 1D Pass 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 9
+Lead Player for Current Game = South
+GameTrick #1 = South C6 CJ C2 C9 West
+GameTrick #2 = West D6 D7 D2 D9 East
+GameTrick #3 = East C3 H2 C4 CK East
+GameTrick #4 = East C5 H5 C7 CA East
+GameTrick #5 = East D8 DA S6 D3 West
+GameTrick #6 = West H7 DK S9 D5 West
+GameTrick #7 = West S2 DQ S4 D4 West
+GameTrick #8 = West S5 DT SJ H4 West
+GameTrick #9 = West SQ DJ H3 H6 West
+GameTrick #10 = West C8 S7 SA S3 North
+GameTrick #11 = North HA HJ H8 H9 South
+GameTrick #12 = South -- -- -- -- ????
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+On this deal
+   B2F1E5FFC
+E should end up in 1NT.
+
+Lead a club, and discard all spades later, to leave you with AH and QxC. North will lead a H to you, which you take with the A and claim the last two tricks (only clubs left).
+
+The trick count goes from 2-9 to 2-11, whereas it should go to 4-9.
+
+It looks as though "Claim remaining tricks" assigns them all to declarer, even when the defenders are claiming them.
+
+
+
+

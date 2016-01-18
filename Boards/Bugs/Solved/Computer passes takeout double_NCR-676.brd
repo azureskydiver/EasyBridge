@@ -1,0 +1,186 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 8, 2013
+File Date =  06/28/13 14:25:57
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S9 S6 S5 HA HJ H7 H3 CK CJ C7 C3 
+Current Hand(West) = SQ ST H9 H6 H5 DA DJ DT D3 D2 C5 C4 
+Current Hand(North) = SJ S8 S7 S3 HK HQ HT H4 H2 CA CT C9 C2 
+Current Hand(East) = SA S4 S2 H8 DQ D9 D6 D5 D4 CQ C8 C6 
+Original Hand(South) = SK S9 S6 S5 HA HJ H7 H3 D7 CK CJ C7 C3 
+Original Hand(West) = SQ ST H9 H6 H5 DA DJ DT D8 D3 D2 C5 C4 
+Original Hand(North) = SJ S8 S7 S3 HK HQ HT H4 H2 CA CT C9 C2 
+Original Hand(East) = SA S4 S2 H8 DK DQ D9 D6 D5 D4 CQ C8 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 8
+Declarer = North
+Bidding History = Pass 1D Dbl 2D 2H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East D7 D8 -- DK ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N should not pass a takeout double - he has an excellent hand and should bid 2H over 2D.
+
+Local VERSION  NORTH<<<<<<<<<<
+S:J873  H:KQT42  D:  C:AT92
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0; Total pts = 11.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (1/3/0/1)
+  8 Likely Losers (3/2/0/3)
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+Opening bid for team.
+With 2 good suits (Clubs and Hearts), bid the higher suit.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1D.
+--------------------
+South doubles.
+--------------------
+West bids 2D.
+--------------------
+Responding to partner's opening double.
+Partner has doubled for takeout.
+Partner's takeout indicates 12.0+ HCPs, for a total in the partnership of 23.0-33.0 points.
+But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+
+And with only 10.0/11.0 points, we choose to pass.   <<<<<<<<<<<<<<???? vs 2H
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is East; South leads.
+=======================
+>>>DEBUG VERSION<
+>>>>NORTH<
+S:J873  H:KQT42  D:---  C:AT92
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (1/3/0/1)
+  8 Likely Losers (3/2/0/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+***Bidding restarted***
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1D.
+--------------------
+South doubles.
+--------------------
+West bids 2D.
+--------------------
+A10: Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKOTR8: Partner's takeout indicates 11.5+ HCPs, for a total in the partnership of 21.5-31.5 points.
+TKOTR12: But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+TKOTR14: However, assuming partner has 12+ HCPs, that amount combined with our 10.0/10.0 points totals 22.0/22.0 pts, which is enough for us to bid 2 Hearts.
+We bid 2H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is North; East leads.
+
+>>>>>>>> JohnD options with Agression=1<<<<<
+Starting play from restored game.
+------------------------
+S:J873  H:KQT42  D:  C:AT92
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 11.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (1/3/0/1)
+  8 Likely Losers (3/2/0/3)
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+***Bidding restarted***
+Opening bid for team.
+With 2 good suits (Clubs and Hearts), bid the higher suit.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1D.
+--------------------
+South doubles.
+--------------------
+West bids 2D.
+--------------------
+Responding to partner's opening double.
+Partner has doubled for takeout.
+Partner's takeout indicates 11.5+ HCPs, for a total in the partnership of 22.5-32.5 points.
+But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+
+However, assuming partner has 12+ HCPs, that amount combined with our 10.0/11.0 points totals 22.0/23.0 pts, which is enough for us to bid 2 Hearts.
+We bid 2H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is North; East leads.
+
+

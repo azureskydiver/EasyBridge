@@ -1,0 +1,99 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = December 28, 2011
+File Date =  01/04/12 14:04:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S6 C9 C4 
+Current Hand(West) = DK DQ DJ D9 
+Current Hand(North) = SA SK SJ CK CJ 
+Current Hand(East) = S8 S4 DT CQ CT 
+Original Hand(South) = SQ S9 S6 S5 HA H6 H5 H4 H2 D3 C9 C4 C2 
+Original Hand(West) = S7 HQ HJ HT H7 DK DQ DJ D9 D6 D4 CA C6 
+Original Hand(North) = SA SK SJ ST HK H9 H3 DA D5 CK CJ C8 C5 
+Original Hand(East) = S8 S4 S3 S2 H8 DT D8 D7 D2 CQ CT C7 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = 1D Dbl Pass 1H Pass 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West S5 S7 ST S2 North
+GameTrick #2 = North HA H7 H3 H8 South
+GameTrick #3 = South H2 HT HK C7 North
+GameTrick #4 = North D3 D4 DA D2 North
+GameTrick #5 = North H4 D6 D5 D7 South
+GameTrick #6 = South C2 CA C5 C3 West
+GameTrick #7 = West H5 HQ H9 S3 West
+GameTrick #8 = West H6 HJ C8 D8 West
+GameTrick #9 = West -- C6 -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should take winners
+>>>>>>>>>>>>>>WEST<<<<<<<<<<<<<
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Hearts.
+PLYLD4: Lead the singleton S7.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAYB48: We can't beat South's Ace, so discard the H7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F: Play the ten to force a higher card from dummy and promote the other top cards in our hand.
+RCP5A: East is now known to have started with 1 Heart.
+PLAYB48: We can't beat North's Ace, so discard the D4.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: South is now known to have started with 1 Diamond.
+PLAYB23: We can't beat the opponent's four of trumps, so discard the D6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner Ace.
+PLDF2H3: Cover with the Ace.
+PLYLD35: We have the boss trumps, so pull declarer's trumps by leading the HQ.
+RCP20: Dummy is now out of Hearts.
+PLYLD35: We have the boss trumps, so pull declarer's trumps by leading the HJ.
+PLYLD42: With no good card to lead, lead the C6 since the opponents have not shown out of the Club suit. <<<<<<<<NO
+
+

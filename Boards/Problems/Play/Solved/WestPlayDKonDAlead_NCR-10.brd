@@ -1,0 +1,191 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 13, 2009
+File Date =  08/14/09 20:04:55
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK ST S9 HA H5 DJ D8 D5 D4 CA 
+Current Hand(West) = SA S8 S6 HK H7 D7 CT C8 C7 C6 
+Current Hand(North) = SQ SJ S3 HQ HJ HT H8 H4 C9 C5 
+Current Hand(East) = S7 S5 S4 S2 H9 H6 H3 DT CQ C4 
+Original Hand(South) = SK ST S9 HA H5 DA DQ DJ D8 D5 D4 CA CK 
+Original Hand(West) = SA S8 S6 HK H7 DK D7 D6 CJ CT C8 C7 C6 
+Original Hand(North) = SQ SJ S3 HQ HJ HT H8 H4 H2 D3 C9 C5 C3 
+Original Hand(East) = S7 S5 S4 S2 H9 H6 H3 DT D9 D2 CQ C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = Pass Pass 1D Pass 1H Pass 2D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West CK CJ C3 C2 South
+GameTrick #2 = South DA DK D3 D2 South
+GameTrick #3 = South DQ D6 H2 D9 South
+GameTrick #4 = South -- -- -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West played DK on DA lead when he had other card
+================================
+West analysis ----------------------------------------------------------------------------
+S:A86  H:K7  D:K76  C:JT876
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 11.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Likely Winners (1/1/1/2)
+  8 Likely Losers (2/1/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+But we don't have a suit strong enough to overcall with at the 2-level.
+We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+Starting play as right-hand defender.
+Play high with the Ace.
+We'd like to return partner's Spades suit, but dummy will most likely win.
+Continue developing partner's Spade suit by playing the S8.
+Partner discarded low with the four, so consider it a signal that he dislikes the suit.
+Play the King to win the trick.
+Continue developing partner's Spade suit by playing the S6.
+Dummy is now out of Spades.
+Dummy is now out of Hearts.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the seven.
+Playing second as defender, using default player logic.
+Play second hand low with the six.
+Dummy is now out of Clubs.
+Playing second as defender, using default player logic.
+Cover with the winner Jack.
+Play second hand low with the Jack.
+S:A86  H:K7  D:K76  C:JT876
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 11.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Likely Winners (1/1/1/2)
+  8 Likely Losers (2/1/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1D.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+But we don't have a sufficiently strong overcall suit.
+We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 1H.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is South; West leads.
+=======================
+Starting play as left-hand defender.
+Making opening lead as West against a contract of 2 Diamonds.
+Lead the CJ from the top of the { CJ CT } sequence.
+Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+Playing second as defender, using default player logic.
+Cover with the winner King.
+Play second hand low with the King.
+Dummy is now out of Diamonds.
+Playing second as defender, using default player logic.
+Play second hand low with the six.
+
+

@@ -1,0 +1,131 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2011
+File Date =  08/06/11 20:01:01
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ ST S9 S6 S5 S4 HK DK D6 CQ CT C7 
+Current Hand(West) = SA S8 S2 H9 H6 H4 DJ D9 CK C9 C5 C3 C2 
+Current Hand(North) = S7 S3 H7 H5 H2 DQ DT D8 D5 CJ C8 C6 C4 
+Current Hand(East) = SK HA HQ HJ HT H8 H3 DA D7 D4 D3 D2 CA 
+Original Hand(South) = SQ SJ ST S9 S6 S5 S4 HK DK D6 CQ CT C7 
+Original Hand(West) = SA S8 S2 H9 H6 H4 DJ D9 CK C9 C5 C3 C2 
+Original Hand(North) = S7 S3 H7 H5 H2 DQ DT D8 D5 CJ C8 C6 C4 
+Original Hand(East) = SK HA HQ HJ HT H8 H3 DA D7 D4 D3 D2 CA 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 1
+Dealer = South
+Number of Bids Made = 4
+Declarer = ????
+Bidding History = 3S Pass Pass Dbl 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should not double with a singleton Club
+>>>>>>>>> EAST <<<<<<<<<
+S:K  H:AQJT83  D:A7432  C:A
+Hand evaluation:
+  HCPs = 18.0, Distn pts = 5.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 17.5.
+  QT's = 3.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/5/2/1)
+  5 Likely Losers (1/1/3/0)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+South bids 3S.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+TKOUT: With 18.0/17.5 points and support for all unbid suits, bid a takeout double.   <<<<<<<<<<< NOT with Singleton CLUB - Bid Hearts !!!
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 4C.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 4 Clubs.
+TKORb43: Partner has made a minimum response of 4 Clubs, indicating no more than 9 points.
+TKRb49: The total point count in the partnership is therefore 19.5-26.5 pts.
+TKORb99: We see no good fit with partner and no other options, so pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is West; North leads.
+=======================
+RCP20: Dummy is now out of Spades.
+RCP25: Dummy is shown to be void in Spades.
+PLAYB48: We can't beat South's King, so discard the D2.
+PLAYB52: Although we could trump this hand, partner's S8 is high, so discard the D3.
+RCP5A: South is now known to have started with 2 Diamonds.
+RCP5A: West is now known to have started with 2 Diamonds.
+RCP5A: North is now known to have started with 2 Spades.
+PLAYB23: We can't beat the opponent's six of trumps, so discard the D4.
+PLYLDA: With no other obvious plays, cash a winner with the HA.
+RCP20: Dummy is now out of Diamonds.
+RESULT: East/West were set 3 tricks.
+
+

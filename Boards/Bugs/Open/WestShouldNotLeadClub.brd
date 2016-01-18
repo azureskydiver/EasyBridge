@@ -1,0 +1,81 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 1, 2010
+File Date =  12/04/10 12:23:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = DQ DT D4 D2 C5 
+Current Hand(West) = DK D9 D6 D3 
+Current Hand(North) = CQ CJ C9 C7 C6 
+Current Hand(East) = SJ ST DA DJ D5 
+Original Hand(South) = SA SQ S8 HK HT H8 H4 DQ DT D4 D2 C5 C4 
+Original Hand(West) = S6 S4 S2 HQ H9 H6 H2 DK D9 D6 D3 CA CT 
+Original Hand(North) = S5 HA HJ H7 H5 D8 CK CQ CJ C9 C7 C6 C2 
+Original Hand(East) = SK SJ ST S9 S7 S3 H3 DA DJ D7 D5 C8 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1C 2S 3H Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West SA S2 S5 SK South
+GameTrick #2 = South S8 S4 H5 S3 North
+GameTrick #3 = North HK H2 H7 H3 South
+GameTrick #4 = South H4 H6 HJ D7 North
+GameTrick #5 = North H8 H9 HA C3 North
+GameTrick #6 = North C4 CA CK C8 West
+GameTrick #7 = West SQ S6 D8 S9 South
+GameTrick #8 = South HT HQ C2 S7 West
+GameTrick #9 = West -- CT -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should NOT lead club to dummy's solid club suit
+>>>>>> WEST<<<<<<<<
+PLAYB48: We can't beat South's King, so discard the H2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+RCP5A: East is now known to have started with 1 Heart.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+RCP20: Dummy is now out of Hearts.
+PLAYB48: We can't beat North's Ace, so discard the H9.
+PLAYB41: Play the Ace to win the trick.
+PLYLDPRF4: Partner has indicated a preference for the Spades suit, so lead the S6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Queen.
+PLYLDE: With no other obvious plays, play CT.   <<<<<<<<<<<<<< NO. Dummy wins rest of tricks
+
+
+

@@ -1,0 +1,86 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 23, 2014
+File Date =  06/16/14 18:19:33
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S9 S5 S4 H8 H6 DA CK CQ C9 C7 C5 C4 
+Current Hand(West) = SK SQ S7 HK HQ H7 H5 D8 CA CJ C8 C6 C2 
+Current Hand(North) = ST S8 S2 HA HJ H9 H3 H2 DQ DT D7 D6 D3 
+Current Hand(East) = SA S6 S3 HT H4 DK DJ D9 D5 D4 D2 CT C3 
+Original Hand(South) = SJ S9 S5 S4 H8 H6 DA CK CQ C9 C7 C5 C4 
+Original Hand(West) = SK SQ S7 HK HQ H7 H5 D8 CA CJ C8 C6 C2 
+Original Hand(North) = ST S8 S2 HA HJ H9 H3 H2 DQ DT D7 D6 D3 
+Original Hand(East) = SA S6 S3 HT H4 DK DJ D9 D5 D4 D2 CT C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "  40		2 overtricks"
+Game Score Record = "  60		3 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+>	EasyBridge.exe!CHandHoldings::RevalueHand(int nMode=2, int nTrumpSuit=-99, int bTrace=1, int bForceRevalue=0)  Line 1216 + 0x23 bytes	C++
+ 	EasyBridge.exe!CBidEngine::MakeRebidExtended()  Line 310 + 0x1b bytes	C++
+ 	EasyBridge.exe!CBidEngine::Bid()  Line 414 + 0x8 bytes	C++
+ 	EasyBridge.exe!CPlayer::Bid()  Line 587	C++
+ 	EasyBridge.exe!CBidDialog::GetComputerBids(int nStart=1)  Line 473 + 0x17 bytes	C++
+ 	EasyBridge.exe!CBidDialog::OnCommand(unsigned int wParam=9840, long lParam=3081718)  Line 319	C++
+ 	EasyBridge.exe!CBidDialogLarge::OnCommand(unsigned int wParam=9840, long lParam=3081718)  Line 228	C++

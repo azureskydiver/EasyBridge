@@ -1,0 +1,327 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 1,  2010
+File Date =  01/07/10 13:24:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ S2 H6 H4 DK DQ DJ D7 D4 CK C7 C2 
+Current Hand(West) = ST S7 S5 HK HQ H8 H3 DA D9 D8 D2 CJ C4 
+Current Hand(North) = SA S9 S8 S6 S4 S3 HJ HT H7 D3 C8 C6 C5 
+Current Hand(East) = SQ HA H9 H5 H2 DT D6 D5 CA CQ CT C9 C3 
+Original Hand(South) = SK SJ S2 H6 H4 DK DQ DJ D7 D4 CK C7 C2 
+Original Hand(West) = ST S7 S5 HK HQ H8 H3 DA D9 D8 D2 CJ C4 
+Original Hand(North) = SA S9 S8 S6 S4 S3 HJ HT H7 D3 C8 C6 C5 
+Original Hand(East) = SQ HA H9 H5 H2 DT D6 D5 CA CQ CT C9 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 1
+Dealer = North
+Number of Bids Made = 2
+Declarer = ????
+Bidding History = 2S Dbl 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 540
+North/South Game 1 Points = 250
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  40		2 overtricks"
+Bonus Score Record = " 500		Small slam contract"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = " 190		6 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W overbid this hand
+>>>>>EAST<<<<<<<<<
+S:Q  H:A952  D:T65  C:AQT93
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 11.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  6 Likely Winners (0/2/0/4)
+  7 Likely Losers (1/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+North bids 2S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 3-level.
+TKOUT: With 12.0/11.0 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+South bids 3S.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's pass.
+TKRb10: After interference from the left-hand opponent, partner passed our takeout.
+B3A20: Partner passed, showing < 6 points, so with 12.0/11.0 points in hand and 11.0-20.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 3 Spades.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C9.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's King, so play the Ace.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLDRT8: Return partner's Club suit with the three.
+RCP20: Dummy is now out of Clubs.
+RCP5A: West is now known to have started with 2 Clubs.
+PLDF36: Partner's King is high or we can't beat the highest card, so discard the H2.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the five.
+PLDF47: Partner's Ace can win the trick, so discard the D5.
+PLDF38B: Play high to win with the Ace.
+RCP20: Dummy is now out of Hearts.
+PLYLDRT1: We'd like to return partner's Hearts suit, but dummy might ruff.
+PLYLDRT8: Return partner's Heart suit with the five.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+RCP20: Dummy is now out of Spades.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D6.
+RCP5A: East is now known to have started with 1 Spade.
+PLAYCL: North has claimed the remaining 4 tricks.
+RESULT: North/South were set 2 tricks.
+PLAY: Play restarted.
+====================
+S:Q  H:A952  D:T65  C:AQT93
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 11.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  6 Likely Winners (0/2/0/4)
+  7 Likely Losers (1/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+S:Q  H:A952  D:T65  C:AQT93
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 11.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  6 Likely Winners (0/2/0/4)
+  7 Likely Losers (1/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+***Bidding restarted***
+North bids 2S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 3-level.
+TKOUT: With 12.0/11.0 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 4H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 4 Hearts.
+TKORb41: Partner has jumped to game in Hearts, indicating 13+ pts and a 5+ card suit.  <<<<<<<<<<<NO WRONG PT COUNT SEE BELOW
+TKRb49: The total point count in the partnership is therefore 41.0-33.0 pts. <<<<<<<<<<<<<<<<<<<???????????????????
+BLKWD: with 12.0/11.0/11.0 points in the hand, for a total of approx. 42.0-34.0 / 41.0-33.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump.
+We bid 4NT.
+--------------------
+South passes.
+--------------------
+West bids 5D.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 4 Hearts, 4 No Trump, and 5 Diamonds.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Diamonds, indicating 1 Ace.
+BK38: Without all four aces we can't proceed to a grand slam, so stop at 6 Hearts.
+We bid 6H.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 6 Hearts.  Declarer is West; North leads.
+>>>>>>>>>>> WEST<<<<<<<<<<
+S:T75  H:KQ83  D:A982  C:J4
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 9.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (0/3/2/0)
+  8 Likely Losers (3/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+North bids 2S.
+--------------------
+East doubles.
+--------------------
+South bids 3S.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 12.0+ HCPs, for a total in the partnership of 21.5-30.5 points.
+TKOTR12: But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+TKOTR17: And with only 10.0/9.5 points, we choose to pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is North; East leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF30: Drop the Jack here to unblock the suit for partner.
+PLYLDRT8: Return partner's Club suit with the four.
+RCP20: Dummy is now out of Clubs.
+PLDF55: With no cards in Clubs, trump with the S5.
+RCP5A: West is now known to have started with 2 Clubs.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLD42: With no good card to lead, lead the HK since the opponents have not shown out of the Heart suit.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYLDA: With no other obvious plays, cash a winner with the DA.
+PLYLDB: With no other clear plays available, lead a card from the unbid Heart suit.
+RCP20: Dummy is now out of Hearts.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the three.
+PLDF23: We can't beat the opponent's two of trumps, so discard the H3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the seven.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the ten.
+RCP5A: East is now known to have started with 1 Spade.
+PLAYCL: North has claimed the remaining 4 tricks.
+RESULT: North/South were set 2 tricks.
+PLAY: Play restarted.
+====================
+S:T75  H:KQ83  D:A982  C:J4
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 9.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (0/3/2/0)
+  8 Likely Losers (3/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+S:T75  H:KQ83  D:A982  C:J4
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 9.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (0/3/2/0)
+  8 Likely Losers (3/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+***Bidding restarted***
+North bids 2S.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+Opening bid for team.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 11.0+ HCPs, for a total in the partnership of 20.5-30.5 points.
+TKOTR55: With 10.0/9.5 pts and no long major suit, jump to 4 Hearts. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<JUMPS
+We bid 4H.
+--------------------
+North passes.
+--------------------
+East bids 4NT.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 4 Hearts and partner's response of 4 No Trump.
+BK10: With 1 Ace, respond to partner's Blackwood inquiry with 5 Diamonds.
+We bid 5D.
+--------------------
+North passes.
+--------------------
+East bids 6H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BK13: Partner appears to have bailed out, so we'll pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 6 Hearts.  Declarer is West; North leads.
+
+

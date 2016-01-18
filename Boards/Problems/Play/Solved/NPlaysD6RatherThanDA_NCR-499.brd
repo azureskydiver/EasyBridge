@@ -1,0 +1,145 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/18/11 16:28:57
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S4 H9 H7 H3 H2 DK DT D2 CQ C8 C4 
+Current Hand(West) = ST S9 S3 HA HK H5 DJ D9 D7 D5 CT C5 C3 
+Current Hand(North) = S5 S2 HQ HT H6 H4 DA D8 D6 D4 CA C9 C7 
+Current Hand(East) = SA SK SQ S7 S6 HJ H8 DQ D3 CK CJ C6 C2 
+Original Hand(South) = SJ S8 S4 H9 H7 H3 H2 DK DT D2 CQ C8 C4 
+Original Hand(West) = ST S9 S3 HA HK H5 DJ D9 D7 D5 CT C5 C3 
+Original Hand(North) = S5 S2 HQ HT H6 H4 DA D8 D6 D4 CA C9 C7 
+Original Hand(East) = SA SK SQ S7 S6 HJ H8 DQ D3 CK CJ C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 14
+Declarer = East
+Bidding History = Pass Pass 1S Pass 1NT Pass 2C Pass 2S Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- East
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+On the first trick, I lead the D2 and N plays the D6.
+The comment says "Play high with the six". (huh?!)
+North really should play the DA and come back with a low Diamond.
+
+North:
+S:52  H:QT64  D:A864  C:A97
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Likely Winners (0/1/1/0)
+  11 Likely Losers (2/3/3/3)
+Preferred suit is Diamonds.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1S.
+--------------------
+South passes.
+--------------------
+West bids 1NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East bids 2C.
+--------------------
+South passes.
+--------------------
+West bids 2S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East bids 3S.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is East; South leads.
+=======================
+Starting play as right-hand defender.
+PLDF40: Play high with the six.  <<<<<<<<<<<<<<<<< HIGH?????????
+We can't beat East's Queen, so discard the S2.
+Dummy is now out of Spades.
+Indicate a preference for the Heart by discarding high with the H6.
+With no cards in the suit led and no trumps, we discard the H6.
+North is now known to have started with 2 Spades.
+Play the Ace to win the trick.
+With no other good options, cash a winner in the Diamond suit, the Ace
+With no other clear plays available, lead a card from the unbid Diamond suit.
+With no other clear plays available, lead a card from the unbid Diamond suit.
+East is now known to have started with 2 Diamonds.
+We can't beat West's Ace, so discard the H4.
+Dummy is now out of Diamonds.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the four.
+South is now known to have started with 3 Diamonds.
+Playing second as defender, using default player logic.
+Play second hand low with the ten.
+Dummy is now out of Hearts.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the Queen.
+Partner's Queen can win the trick, so discard the C7.
+Dummy is now out of Clubs.
+Play our only card in the suit, the nine.
+
+
+
+
+
+

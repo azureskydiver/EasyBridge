@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/06/11 15:26:17
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S5 S3 HK H6 H2 CA C8 C5 C2 
+Current Hand(West) = SA SK SQ SJ S8 HA HJ H5 H3 DA 
+Current Hand(North) = ST S4 S2 HQ HT H7 D5 D3 C9 
+Current Hand(East) = S9 S6 H9 DQ DJ D9 D8 D7 D6 
+Original Hand(South) = S7 S5 S3 HK H6 H2 D4 CA CK CQ C8 C5 C2 
+Original Hand(West) = SA SK SQ SJ S8 HA HJ H5 H3 DA DT CJ C6 
+Original Hand(North) = ST S4 S2 HQ HT H7 H4 DK D5 D3 CT C9 C7 
+Original Hand(East) = S9 S6 H9 H8 DQ DJ D9 D8 D7 D6 D2 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = Pass Pass 1C Dbl Pass 1D 2C 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North CQ C6 CT C3 South
+GameTrick #2 = South CK CJ C7 C4 South
+GameTrick #3 = South D4 DT DK D2 North
+GameTrick #4 = North -- -- H4 H8 ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  60		2 Hearts made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North could lead Diamond for South to Ruff
+>>>>>>>>>> NORTH<<<<<<<<
+PLAY: South leads the CK.
+PLAY: West plays the CJ.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the seven.
+PLDF47: Partner's CK can win the trick, so discard the C7.
+PLAY: We play the C7.
+PLAY: East plays the C4.
+RCP20: Dummy is now out of Clubs.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D4.
+PLAY: West plays the DT.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's Queen, so play the King.
+PLAY: We play the DK.
+PLAY: East plays the D2.
+PLAY: North wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDPRF1: Partner likes the Club suit, but dummy can ruff, so skip this suit for now.
+PLYLDB: With no other clear plays available, lead a card from the unbid Heart suit.  <<<<<<<<<<<< South lead Diamond last time. Return it
+PLAY: We lead the H4.
+PLAY: East plays the H8.
+
+

@@ -1,0 +1,172 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2011
+File Date =  12/25/11 17:32:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK S7 S6 S5 S3 D7 CK C7 C5 
+Current Hand(West) = SQ S8 S2 H7 H6 H3 D2 C9 C2 
+Current Hand(North) = SJ ST S9 DK DT D8 CQ CJ C8 C6 
+Current Hand(East) = S4 HQ HJ DQ DJ D9 D5 CT C4 C3 
+Original Hand(South) = SA SK S7 S6 S5 S3 H5 H2 D7 D6 CK C7 C5 
+Original Hand(West) = SQ S8 S2 HA HK H7 H6 H3 DA D2 CA C9 C2 
+Original Hand(North) = SJ ST S9 HT H8 DK DT D8 D4 CQ CJ C8 C6 
+Original Hand(East) = S4 HQ HJ H9 H4 DQ DJ D9 D5 D3 CT C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 7
+Declarer = South
+Bidding History = Pass 1S Dbl 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West H2 HK H8 H4 West
+GameTrick #2 = West H5 HA HT H9 West
+GameTrick #3 = West D6 DA D4 D3 West
+GameTrick #4 = West -- CA -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 130
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = "  70		2 No Trump made"
+Game Score Record = "  60		3 Clubs made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West lead Ace - gives South's K
+>>>>>>>>>>>>>>WEST<<<<<<<<<<<<<
+S:Q82  H:AK763  D:A2  C:A92
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 17.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/3/1/0)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+East passes.
+--------------------
+South bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCTK: With 17.0/17.0 points, the hand is too strong for a simple overcall, so start by doubling.
+We bid Dbl.
+--------------------
+North bids 2S.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of Double and partner's pass.
+TKRb10: After interference from the left-hand opponent, partner passed our takeout.
+B3A20: Partner passed, showing < 6 points, so with 17.0/17.0 points in hand and 17.0-26.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 2 Spades.
+PLYLD15: Lead the HK from the top of the { HA HK } sequence.
+PLYSIG1: Partner discarded low with the four, so consider it a signal that he dislikes the suit.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+RCP20: Dummy is now out of Hearts.
+PLYSIG8: Partner discarded high with the nine after discarding the four last round, thus marking a low-high signal for a poor suit.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLYLDB: With no other clear plays available, lead a card from the unbid Club suit.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+
+Starting play from restored game.
+------------------------
+S:Q82  H:AK763  D:A2  C:A92
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/3/1/0)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+PLYLDB: With no other clear plays available, lead a card from the unbid Club suit.
+PLAY: Play restarted.
+====================
+S:Q82  H:AK763  D:A2  C:A92
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/3/1/0)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 2 Spades.
+PLYLD15: Lead the HK from the top of the { HA HK } sequence.
+PLYSIG1: Partner discarded low with the four, so consider it a signal that he dislikes the suit.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+RCP20: Dummy is now out of Hearts.
+PLYSIG8: Partner discarded high with the nine after discarding the four last round, thus marking a low-high signal for a poor suit.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLYLDB: With no other clear plays available, lead a card from the unbid Club suit.
+
+
+
+
+

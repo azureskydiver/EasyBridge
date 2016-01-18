@@ -1,0 +1,210 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 14, 2009
+File Date =  07/15/09 19:46:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK H2 DA DT CA CQ C8 C7 C4 C3 
+Current Hand(West) = HA HQ H9 H6 H3 D9 D7 D3 C9 C6 
+Current Hand(North) = HT H8 H7 DK DQ DJ D6 CJ CT C5 
+Current Hand(East) = SA SJ HJ H5 H4 D8 D5 D4 CK C2 
+Original Hand(South) = ST S6 HK H2 DA DT D2 CA CQ C8 C7 C4 C3 
+Original Hand(West) = SK SQ S8 HA HQ H9 H6 H3 D9 D7 D3 C9 C6 
+Original Hand(North) = S5 S3 S2 HT H8 H7 DK DQ DJ D6 CJ CT C5 
+Original Hand(East) = SA SJ S9 S7 S4 HJ H5 H4 D8 D5 D4 CK C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = East
+Bidding History = 1H Pass 1S 2C 2S Pass 3S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = South
+GameTrick #1 = South ST SK S2 S4 West
+GameTrick #2 = West S6 S8 S3 S7 West
+GameTrick #3 = West D2 SQ S5 S9 West
+GameTrick #4 = West -- -- -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East finesses the wrong way. Should lead Heart from hand???
+>>>>>> EAST <<<<<<<<<<
+S:AJ974  H:J54  D:854  C:K2
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 8.5.
+  QT's = 1.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  4 Likely Winners (3/0/0/1)
+  9 Likely Losers (2/3/3/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+West bids 1H.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL38: (with 3-card Heart trump support including a trump honor & a doubleton in Clubs, the hand is revalued for a suit contract as dummy from 8.5 to 11.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+H04: Have 9.0/8.5/11.0 points  and weak support for partner's Heart suit (holding J54), so show our preferred Spade suit in a 1 Spade bid.
+We bid 1S.
+--------------------
+South bids 2C.
+--------------------
+West bids 2S.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 1 Spade, and 2 Spades.
+REVAL1: Revaluing hand as declarer...
+3REVAL8: Since the trump suit is only topped by a Ace, deduct 0 points.
+B4H11: Partner made a single raise of our Spade suit, showing 12.0-20.0 points with 3+ trump cards.
+YR1: With 20.5-28.5 total points and a openable 5-card Spade suit (holding AJ974), re-raise it to 3 Spades.
+We bid 3S.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is East; South leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJ9874 (KQ8/AJ974)
+  H:AQJ96543 (AQ963/J54)
+  D:987543 (973/854)
+  C:K962 (96/K2)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 0.0;
+  Total pts = 20.0.
+  QT's = 4.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  6 Sure Winners (5/1/0/0)
+  6 Eventual Winners (4/2/0/0)
+  7 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJ9874 (KQ8/AJ974)
+  H:AQJ96543 (AQ963/J54)
+  D:987543 (973/854)
+  C:K962 (96/K2)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 0.0;
+  Total pts = 20.0.
+  QT's = 4.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  6 Sure Winners (5/1/0/0)
+  6 Eventual Winners (4/2/0/0)
+  7 Possible Losers (vs. 4 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 9 for the 3S contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Queen in dummy if necessary.
+ Play 2: Pull a round of trumps with the King in dummy.
+ Play 3: Pull a round of trumps with the Ace in hand.
+ Play 4: Ruff a Heart in hand.
+ Play 5: Ruff a Heart in hand.
+ Play 6: Lead a low Heart from hand to finesse the nine in dummy against North, with the Ace as cover.
+ Play 7: Lead a low Heart from hand to finesse the Queen in dummy against North, with the Ace as cover.
+ Play 8: Lead a low Heart from dummy and finesse the Jack in hand against South.
+ Play 9: Cash the Ace of Hearts in dummy.
+ Play 10: Cash the Queen of Hearts in dummy.
+ Play 11: Lead a low Club from dummy and finesse the King in hand against South.
+ Play 12: Cash the King of Spades in dummy.
+ Play 13: Cash the Queen of Spades in dummy.
+ Play 14: Cash the Ace of Spades in hand.
+ Play 15: Cash the Jack of Spades in hand.
+PLN95: The planning is complete.
+---------------------------
+PLCSH55: The opponents led a Spade, so cash the King now.
+PLCSH80: the opponents led a Spade, so see if we can finish up the cash play here.
+PLCSH88b: Our cash of the SK from dummy is holding, so discard the S4.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+six to winners.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the CK, HA, HQ, HJ and S9.
+PINTLV: Interleaving plays...
+PLTRMP28: Lead the S8 up to own hand to pull in a round of trumps.
+PLTRMP82a: Discard the S7 on dummy's top eight of trumps.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+six to winners.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP28: Lead the SQ up to own hand to pull in a round of trumps.
+PLTRMP82: Since there are no more outstanding trumps,  partner's Queen is high, so discard the SQ from hand.
+RCP5A: South is now known to have started with 2 Spades.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 3 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+six to winners.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PL3FN22: Lead a low Heart (the three) from dummy to finesse the Jack in hand.
+PL3FN64: Finesse the HJ from hand.   <<<<<<<<??????
+
+

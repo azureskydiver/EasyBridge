@@ -1,0 +1,146 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 1, 2010
+File Date =  08/09/10 15:40:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S9 S5 S4 S3 DA DJ D8 CQ C5 
+Current Hand(West) = SK ST S6 S2 H9 H3 D7 C9 C8 C4 
+Current Hand(North) = S8 S7 HK HJ DK DQ D9 D3 D2 CA CT 
+Current Hand(East) = SJ HQ HT H8 H7 H6 DT D6 D5 D4 C7 
+Original Hand(South) = SA SQ S9 S5 S4 S3 H4 DA DJ D8 CQ CJ C5 
+Original Hand(West) = SK ST S6 S2 HA H9 H3 D7 CK C9 C8 C6 C4 
+Original Hand(North) = S8 S7 HK HJ H2 DK DQ D9 D3 D2 CA CT C3 
+Original Hand(East) = SJ HQ HT H8 H7 H6 H5 DT D6 D5 D4 C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass 1D Pass 1S 2C 2D Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West CJ C6 C3 C2 South
+GameTrick #2 = South H4 HA H2 H5 West
+GameTrick #3 = West -- CK -- -- North
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+WEST  leads CK to dummy's CA ???
+????????WEST<<<<<<<
+Starting play from restored game.
+------------------------
+S:KT62  H:A93  D:7  C:K9864
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  3 Likely Winners (1/0/0/2)
+  10 Likely Losers (3/3/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C6.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the seven.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Spade by discarding high with the S6.
+PLDF2Ya: We have no Diamonds, so discard the S6.
+RCP5A: West is now known to have started with 1 Diamond.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the S2.
+RCP5A: South is now known to have started with 3 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H3.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: East is now known to have started with 4 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H9.
+PLAYB41: Play the King to win the trick.
+PLYLD76: Continue developing our Club suit by playing the C9.
+RCP20: Dummy is now out of Clubs.
+PLAYB41: Play the King to win the trick.
+PLCSW9: With no other good options, cash a winner in the Club suit, the eight
+PLYLD84: With no other obvious plays, cash a winner with the C8.
+PLCSW9: With no other good options, cash a winner in the Club suit, the four
+PLYLD84: With no other obvious plays, cash a winner with the C4.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+PLYLDS6e: Try to defeat the contract now by playing the HA.
+PLYLDE: With no other obvious plays, play ST.
+RESULT: North/South were set 1 trick.
+PLAY: Play restarted.
+====================
+S:KT62  H:A93  D:7  C:K9864
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  3 Likely Winners (1/0/0/2)
+  10 Likely Losers (3/3/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C6.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner Ace.
+PLDF2H3: Cover with the Ace.
+PLYLD76: Continue developing our Club suit by playing the CK. <<<<<<<<<<<<<<<<<<<<<<<< ??????????
+
+
+

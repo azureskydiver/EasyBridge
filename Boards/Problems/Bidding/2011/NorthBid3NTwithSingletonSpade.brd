@@ -1,0 +1,111 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2011
+File Date =  07/06/11 17:46:34
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S7 S3 HA HK HQ H8 H7 H4 DK D9 D4 C3 
+Current Hand(West) = ST S9 S8 S4 H5 DA D2 CQ CJ C9 C8 C7 C6 
+Current Hand(North) = S2 HJ DQ DJ D8 D7 D5 D3 CA CK CT C5 C2 
+Current Hand(East) = SA SQ SJ S6 S5 HT H9 H6 H3 H2 DT D6 C4 
+Original Hand(South) = SK S7 S3 HA HK HQ H8 H7 H4 DK D9 D4 C3 
+Original Hand(West) = ST S9 S8 S4 H5 DA D2 CQ CJ C9 C8 C7 C6 
+Original Hand(North) = S2 HJ DQ DJ D8 D7 D5 D3 CA CK CT C5 C2 
+Original Hand(East) = SA SQ SJ S6 S5 HT H9 H6 H3 H2 DT D6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 9
+Declarer = ????
+Bidding History = Pass 1H Pass 2D Pass 3H Pass 3NT Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North bid 3NT with a singleton spade
+>>>>>>>>> NORTH<<<<<<<<
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+2REVAL10: (with a 6-card trump suit in Diamonds, declarer's hand is revalued for a suit contract from 10.5 to 14.5 points)
+H04: Have 11.0/10.5/10.5 points  and poor support for partner's Heart suit (holding J), so show our preferred Diamond suit in a 2 Diamonds bid.
+We bid 2D.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 2 Diamonds, and 3 Hearts.
+B4D0: Partner made a jump rebid of his Heart suit to 3 Hearts, showing 17.0-21.5 points.
+B4D19a: We have 27.5-32.0 pts in the partnership, which is enough for game, but there is no suit agreement -- so we're forced to bid 3 No Trump.  <<<<<<<<< Singleton Spade ???????
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+
+

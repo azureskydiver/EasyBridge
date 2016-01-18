@@ -1,0 +1,176 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 22, 2010
+File Date =  07/08/10 19:36:42
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S9 S6 HA HK H9 H5 H3 D9 D7 D6 CK CQ 
+Current Hand(West) = SQ S7 S5 S2 HJ HT H4 H2 DQ D5 C8 C4 C2 
+Current Hand(North) = SA S4 HQ H8 DK D8 D4 D3 CA CT C9 C7 C6 
+Current Hand(East) = SK SJ S8 S3 H7 H6 DA DJ DT D2 CJ C5 C3 
+Original Hand(South) = ST S9 S6 HA HK H9 H5 H3 D9 D7 D6 CK CQ 
+Original Hand(West) = SQ S7 S5 S2 HJ HT H4 H2 DQ D5 C8 C4 C2 
+Original Hand(North) = SA S4 HQ H8 DK D8 D4 D3 CA CT C9 C7 C6 
+Original Hand(East) = SK SJ S8 S3 H7 H6 DA DJ DT D2 CJ C5 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1H Pass 2C Pass 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Computer goes down 2 on makeable contract
+>>>>>> SOUTH<<<<<<<
+S:T96  H:AK953  D:976  C:KQ
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  2 Likely Winners (-1/3/-1/1)
+  11 Likely Losers (4/2/4/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+We pass.
+--------------------
+West passes.
+--------------------
+North bids 1C.
+--------------------
+East passes.
+--------------------
+We bid 1H.
+--------------------
+West passes.
+--------------------
+North bids 2C.
+--------------------
+East passes.
+--------------------
+We bid 3C.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is North; East leads.
+=======================
+RCP20: Dummy is now out of Clubs.
+RCP5A: North is now known to have started with 2 Hearts.
+RCP5A: East is now known to have started with 2 Hearts.
+RCP5A: West is now known to have started with 3 Clubs.
+RCP20: Dummy is now out of Spades.
+RESULT: North/South made the contract.
+S:T96  H:AK953  D:976  C:KQ
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  2 Likely Winners (-1/3/-1/1)
+  11 Likely Losers (4/2/4/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+We bid 1H.
+--------------------
+West passes.
+--------------------
+North bids 2C.
+--------------------
+East passes.
+--------------------
+We bid 2NT.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+East passes.
+--------------------
+We pass.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AT96 (A/T96)
+  H:AKQ9853 (Q8/AK953)
+  D:K987643 (K843/976)
+  C:AKQT976 (AT976/KQ)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 3.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (1/3/0/3)
+  7 Eventual Winners (1/3/0/3)
+  6 Possible Losers (vs. 4 allowable)
+RCP5A: East is now known to have started with 3 Clubs.
+RCP5A: West is now known to have started with 3 Clubs.
+RESULT: North/South made 3 overtricks.
+
+

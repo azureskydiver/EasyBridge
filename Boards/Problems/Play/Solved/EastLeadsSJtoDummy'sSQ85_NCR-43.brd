@@ -1,0 +1,380 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 25, 2009
+File Date =  08/25/09 15:01:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HQ C9 C3 
+Current Hand(West) = HA CK CJ 
+Current Hand(North) = SQ S8 S5 
+Current Hand(East) = SJ HT H5 
+Original Hand(South) = ST S6 HQ H7 DQ DJ D8 D7 D3 CA C9 C3 C2 
+Original Hand(West) = S9 S3 S2 HA H9 H6 D9 D6 D5 CK CJ C5 C4 
+Original Hand(North) = SA SQ S8 S5 S4 HJ H8 H4 H3 DA DK CQ CT 
+Original Hand(East) = SK SJ S7 HK HT H5 H2 DT D4 D2 C8 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass Pass 1S Pass 1NT Pass 2S Pass 2NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West C2 C4 CT C6 North
+GameTrick #2 = North D3 D5 DK D2 North
+GameTrick #3 = North D7 D6 DA DT North
+GameTrick #4 = North CA C5 CQ C8 South
+GameTrick #5 = South DQ D9 H3 D4 South
+GameTrick #6 = South DJ H9 H4 C7 South
+GameTrick #7 = South D8 S2 H8 H2 South
+GameTrick #8 = South ST S3 SA S7 North
+GameTrick #9 = North H7 H6 HJ HK East
+GameTrick #10 = East S6 S9 S4 SK East
+GameTrick #11 = East -- -- -- -- ????
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads SJ to dummy's SQxx. No other spades are out!!!!!!
+>>>>>>> EAST <<<<<<<<
+=====================================
+Received hand:
+  S:KJ7  H:KT52  D:T42  C:876
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  3 Likely Winners (1/2/0/0)
+  10 Likely Losers (2/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+South passes.
+--------------------
+West passes.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 1NT.
+--------------------
+West passes.
+--------------------
+North bids 2S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+PLAY: West leads the C4.
+PLAY: North plays the CT.
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the six.
+PLDF48: We can't beat North's ten, so discard the C6.
+PLAY: We play the C6.
+PLAY: South plays the C2.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DK.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAY: We play the D2.
+PLAY: South plays the D3.
+PLAY: West plays the D5.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DA.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner ten.
+PLDF2H1: Play second hand low with the ten.
+PLAY: We play the DT.
+PLAY: South plays the D7.
+PLAY: West plays the D6.
+PLAY: North wins the round.
+--------
+PLAY: North leads the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the seven.
+PLAY: We play the S7.
+PLAY: South plays the ST.
+PLAY: West plays the S2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the HQ.
+PLAY: West plays the HA.
+PLAY: North plays the H3.
+PLAY4: Playing fourth, using default player logic.
+PLAYB47: Partner's Ace can win the trick, so discard the H2.
+PLAY: We play the H2.
+PLAY: West wins the round.
+--------
+PLAY: West leads the CK.
+PLAY: North plays the CQ.
+RCP20: Dummy is now out of Clubs.
+PLDF41: Drop the eight here to unblock the suit for partner.
+PLAY: We play the C8.
+PLAY: South plays the CA.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H7.
+PLAY: West plays the H6.
+PLAY: North plays the HJ.
+PLAY4: Playing fourth, using default player logic.
+PLAYB41: Play the King to win the trick.
+PLAY: We play the HK.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLD76: Continue developing partner's Club suit by playing the C7.
+PLAY: We lead the C7.
+PLAY: South plays the C9.
+PLAY: West plays the CJ.
+PLAY: North plays the S5.
+PLAY: West wins the round.
+--------
+PLAY: West leads the C5.
+PLAY: North plays the H4.
+PLDF52: With no cards in the suit led , we discard the D4.
+PLAY: We play the D4.
+RCP10: East shows out of Clubs.
+RCP5A: East is now known to have started with 3 Clubs.
+PLAY: South plays the C3.
+PLAY: West wins the round.
+--------
+PLAY: West leads the H9.
+PLAY: North plays the H8.
+RCP20: Dummy is now out of Hearts.
+PLDF31: We're holding all the remaining winning Hearts in our hand, so win with the ten in order to cash our winners.
+PLAY: We play the HT.
+PLAY: South plays the D8.
+RCP10: South shows out of Hearts.
+RCP5A: South is now known to have started with 2 Hearts.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDRT8: Return partner's Heart suit with the five.
+PLAY: We lead the H5.
+PLAY: South plays the DJ.
+PLAY: West plays the S3.
+RCP10: West shows out of Hearts.
+RCP5A: West is now known to have started with 3 Hearts.
+PLAY: North plays the S8.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLD50: With no cards left in Hearts, there's no point in continuing to try and develop the suit.
+PLYLDE: With no other obvious plays, play SJ.
+PLAY: We lead the SJ.
+PLAY: South plays the S6.
+PLAY: West plays the S9.
+PLYSIG0: Partner discarded high with the nine, so consider it a suit preference signal.
+PLAY: North plays the SQ.
+PLAY: North wins the round.
+--------
+PLAY: North leads the SA.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the King.
+PLAY: We play the SK.
+PLAY: South plays the DQ.
+RCP10: South shows out of Spades.
+RCP1A: South is now known to have started with  2 Hearts and 2 Spades.
+PLAY: West plays the D9.
+RCP10: West shows out of Spades.
+RCP1A: West is now known to have started with  3 Hearts and 3 Spades.
+PLAY: North wins the round.
+--------
+RESULT: North/South were set 1 trick.
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:KJ7  H:KT52  D:T42  C:876
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  3 Likely Winners (1/2/0/0)
+  10 Likely Losers (2/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:KJ7  H:KT52  D:T42  C:876
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  3 Likely Winners (1/2/0/0)
+  10 Likely Losers (2/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+PLAY: West leads the C4.
+PLAY: North plays the CT.
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the six.
+PLDF48: We can't beat North's ten, so discard the C6.
+PLAY: We play the C6.
+PLAY: South plays the C2.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DK.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAY: We play the D2.
+PLAY: South plays the D3.
+PLAY: West plays the D5.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DA.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner ten.
+PLDF2H1: Play second hand low with the ten.
+PLAY: We play the DT.
+PLAY: South plays the D7.
+PLAY: West plays the D6.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CQ.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner eight.
+PLDF2H1: Play second hand low with the eight.
+PLAY: We play the C8.
+PLAY: South plays the CA.
+PLAY: West plays the C5.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DQ.
+PLAY: West plays the D9.
+PLAY: North plays the H3.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's Queen, so discard the D4.
+PLAY: We play the D4.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DJ.
+PLAY: West plays the H9.
+RCP10: West shows out of Diamonds.
+RCP5A: West is now known to have started with 3 Diamonds.
+PLAY: North plays the H4.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C7.
+PLAY: We play the C7.
+RCP10: East shows out of Diamonds.
+RCP5A: East is now known to have started with 3 Diamonds.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D8.
+PLAY: West plays the S2.
+PLAY: North plays the H8.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H2.
+PLAY: We play the H2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the ST.
+PLAY: West plays the S3.
+PLAY: North plays the SA.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat North's Ace, so discard the S7.
+PLAY: We play the S7.
+PLAY: North wins the round.
+--------
+PLAY: North leads the HJ.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: North led an honor (the Jack), so cover it with our King.
+PLAY: We play the HK.
+PLAY: South plays the H7.
+PLAY: West plays the H6.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLCSW9: With no other good options, cash a winner in the Spade suit, the King
+PLYLD84: With no other obvious plays, cash a winner with the SK.
+PLAY: We lead the SK.
+PLAY: South plays the S6.
+PLAY: West plays the S9.
+PLYSIG0: Partner discarded high with the nine, so consider it a suit preference signal.
+PLAY: North plays the S4.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDE: With no other obvious plays, play SJ.  <<<<<<<<<<< NO<<<<<<<<<<<<< Gives Dummy tricks
+PLAY: We lead the SJ.
+PLAY: South plays the C3.
+RCP10: South shows out of Spades.
+RCP5A: South is now known to have started with 2 Spades.
+PLAY: West plays the CJ.
+RCP10: West shows out of Spades.
+RCP1A: West is now known to have started with  3 Diamonds and 3 Spades.
+
+
+

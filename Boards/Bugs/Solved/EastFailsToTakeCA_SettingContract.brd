@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 27, 2009
+File Date =  06/29/09 09:05:55
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK HJ HT CK CQ 
+Current Hand(West) = SK H9 H5 CT C8 
+Current Hand(North) = S9 S6 S4 C6 C4 
+Current Hand(East) = H7 D8 D7 CA C7 
+Original Hand(South) = S8 HK HJ HT H8 H6 H4 DJ DT CK CQ CJ C2 
+Original Hand(West) = SK SJ S5 S2 H9 H5 H2 DA D6 D5 CT C8 C3 
+Original Hand(North) = SA SQ ST S9 S6 S4 HQ D4 D3 D2 C9 C6 C4 
+Original Hand(East) = S7 S3 HA H7 H3 DK DQ D9 D8 D7 CA C7 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 7
+Declarer = South
+Bidding History = 2S Dbl 3NT Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West S8 S2 ST S7 North
+GameTrick #2 = North CJ C3 C9 C5 South
+GameTrick #3 = South H4 H2 HQ HA East
+GameTrick #4 = East DT D6 D2 DQ East
+GameTrick #5 = East DJ D5 D3 DK East
+GameTrick #6 = East H6 DA D4 D9 West
+GameTrick #7 = West H8 S5 SQ S3 North
+GameTrick #8 = North C2 SJ SA H3 North
+GameTrick #9 = North -- -- -- -- South
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East fails to take CA when contract booked and he has 2 diamond winners.
+>>> EAST <<<<<<
+Starting play from restored game.
+------------------------
+S:73  H:A73  D:KQ987  C:A75
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (0/1/4/1)
+  7 Likely Losers (2/2/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+PLDF25: Play our only card in the suit, the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the H3.
+RCP5A: East is now known to have started with 2 Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the seven. <<<< NO take the ACE
+
+
+

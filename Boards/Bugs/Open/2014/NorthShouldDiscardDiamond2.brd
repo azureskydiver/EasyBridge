@@ -1,0 +1,130 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  12/25/14 12:05:43
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ HK HQ H8 DA D8 D6 D4 CA C5 
+Current Hand(West) = S6 H5 H2 DJ D9 D7 CJ C8 C2 
+Current Hand(North) = HA HJ H7 H6 D5 D3 D2 CK CQ C7 
+Current Hand(East) = HT H9 H4 DK DQ DT CT C9 C6 C3 
+Original Hand(South) = SQ SJ S9 S5 HK HQ H8 DA D8 D6 D4 CA C5 
+Original Hand(West) = SK ST S8 S7 S6 H5 H2 DJ D9 D7 CJ C8 C2 
+Original Hand(North) = S2 HA HJ H7 H6 H3 D5 D3 D2 CK CQ C7 C4 
+Original Hand(East) = SA S4 S3 HT H9 H4 DK DQ DT CT C9 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1NT Pass 2D Pass 2H Pass 4NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West S5 S7 S2 SA East
+GameTrick #2 = East S9 ST H3 S4 West
+GameTrick #3 = West SJ SK C4 S3 West
+GameTrick #4 = West -- S8 -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 30
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  30		1 Spade made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should discard Diamond
+>>>>>>SOUTH<<<<<<<<
+Combined hand (Dummy/Hand):
+  S:QJ95 (/QJ95)
+  H:AKQJ8763 (AJ763/KQ8)
+  D:A865432 (532/A864)
+  C:AKQ754 (KQ74/A5)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 3.0;   Total pts = 29.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (0/4/1/3)
+  8 Eventual Winners (0/4/1/3)
+  5 Possible Losers (vs. 3 allowable)
+PLYE48: We can't beat East's Ace, so discard the S5.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=10 vs SureTricks=8 vs NumWinners=10, m_numTricksShort=2
+PLRV10: We have only 8 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLAFN20: Opportunistically finesse the S9 from hand in second position against West.
+PLDM: Playing card from dummy.
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=10 vs SureTricks=10 vs NumWinners=10, m_numTricksShort=0
+PLRV11: We have 10 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (10) to fulfill the contract, we can just proceed with the cashing.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (SK)  beats the SQ we were going to play, so skip the cash for now.
+PLCSH53: the card led (SK)  beats the SJ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2C2: We have no more cards in the suit in dummy, so discard the C4.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat West's King, so discard the SJ.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=9 vs SureTricks=9 vs NumWinners=9, m_numTricksShort=1
+PLRV10: We have only 9 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH56: Discard a Heart from dummy in anticipation of cashing the Queen in hand.  <<<<<<<<<<NO
+
+

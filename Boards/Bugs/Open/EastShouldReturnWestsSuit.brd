@@ -1,0 +1,137 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 14, 2010
+File Date =  12/20/10 09:17:56
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S8 S4 H7 H6 H3 CT C6 C4 
+Current Hand(West) = SQ S5 HQ D5 D4 D3 CQ C5 
+Current Hand(North) = SJ ST S7 DA DK DQ CJ C9 C8 
+Current Hand(East) = SA SK S6 S3 DJ DT D9 D8 D6 
+Original Hand(South) = S9 S8 S4 HA HK H9 H7 H6 H3 CA CT C6 C4 
+Original Hand(West) = SQ S5 S2 HQ HT H8 H4 D5 D4 D3 CK CQ C5 
+Original Hand(North) = SJ ST S7 H2 DA DK DQ D7 CJ C9 C8 C3 C2 
+Original Hand(East) = SA SK S6 S3 HJ H5 DJ DT D9 D8 D6 D2 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 1H Pass 2D Pass 2H Pass 2NT Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West CA CK C2 C7 South
+GameTrick #2 = South HA H4 H2 H5 South
+GameTrick #3 = South HK H8 D7 HJ South
+GameTrick #4 = South H9 HT C3 D2 West
+GameTrick #5 = West -- S2 -- -- East
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should return West's last lead vs Diamonds
+>>>>>>>>> EAST<<<<<<<<<
+PLAY: West leads the CK.
+PLAY: North plays the C2.
+PL03: Starting play as right-hand defender.
+PLDF25: Play our only card in the suit, the seven.
+PLAY: We play the C7.
+PLAY: South plays the CA.
+PLAY: South wins the round.
+--------
+PLAY: South leads the HA.
+PLAY: West plays the H4.
+PLAY: North plays the H2.
+RCP20: Dummy is now out of Hearts.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's Ace, so discard the H5.
+PLAY: We play the H5.
+PLAY: South wins the round.
+--------
+PLAY: South leads the HK.
+PLAY: West plays the H8.
+PLAY: North plays the D7.
+PLAY4: Playing fourth, using default player logic.
+PLAY: We play the HJ.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H9.
+PLAY: West plays the HT.
+PLAY: North plays the C3.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D2.
+PLAY: We play the D2.
+RCP10: East shows out of Hearts.
+RCP5A: East is now known to have started with 2 Hearts.
+PLAY: West wins the round.
+--------
+PLAY: West leads the CQ.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+PLAY: West leads the S2.  <<<<<<<<<<<<<<<<<<< NOTE
+PLAY: North plays the S7.
+PLDF40a: Play higher with the King.
+PLAY: We play the SK.
+PLAY: South plays the S4.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDRT8: Return partner's Spade suit with the Ace.
+PLAY: We lead the SA.
+PLAY: South plays the S8.
+PLAY: West plays the S5.
+PLYSIG1: Partner discarded low with the five, so consider it a signal that he dislikes the suit.  <<<<<<<<<<< NO, he led it last trick!!!!
+PLAY: North plays the ST.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLD42: With no good card to lead, lead the DJ since the opponents have not shown out of the Diamond suit.  <<<<<<<<<<<<< NO, return West's spade suit
+PLAY: We lead the DJ.
+
+

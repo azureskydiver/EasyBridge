@@ -1,0 +1,125 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 1, 2009
+File Date =  09/01/09 20:10:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ S7 S5 S4 S2 HA HJ H5 DK CA CJ C4 
+Current Hand(West) = SA S6 S3 HQ H9 DQ D5 D4 D2 CK CQ C5 C2 
+Current Hand(North) = SQ ST S8 HK H8 H3 H2 DJ DT D7 C9 C7 C3 
+Current Hand(East) = S9 HT H7 H6 H4 DA D9 D8 D6 D3 CT C8 C6 
+Original Hand(South) = SK SJ S7 S5 S4 S2 HA HJ H5 DK CA CJ C4 
+Original Hand(West) = SA S6 S3 HQ H9 DQ D5 D4 D2 CK CQ C5 C2 
+Original Hand(North) = SQ ST S8 HK H8 H3 H2 DJ DT D7 C9 C7 C3 
+Original Hand(East) = S9 HT H7 H6 H4 DA D9 D8 D6 D3 CT C8 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 3
+Declarer = ????
+Bidding History = 1C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North could respond 2S to South's 1S overcall.  How should South show 17 pts?
+>>>>>>> NORTH <<<<
+S:QT8  H:K832  D:JT7  C:973
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  3 Likely Winners (1/2/0/0)
+  10 Likely Losers (2/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+West bids 1C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL38: (with 3-card Spade trump support including a trump honor, the hand is revalued for a suit contract as dummy from 5.0 to 7.0 points)
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Spade suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 15.0-22.0 points.
+ROVRC10: This is not enough to bid any higher, so pass.  <<<<<<<<<<< ??? Could bid 2S
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 1 Spade.  Declarer is South; West leads.
+=======================
+RCP5A: East is now known to have started with 1 Spade.
+RCP20: Dummy is now out of Spades.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+RCP5A: South is now known to have started with 3 Hearts.
+PLAYCL: South has claimed the remaining 2 tricks.
+RESULT: North/South made 3 overtricks.
+
+

@@ -1,0 +1,179 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 23, 2012
+File Date =  01/26/12 11:01:52
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = D9 D6 D5 C9 C6 
+Current Hand(West) = HT H8 DK C8 
+Current Hand(North) = S9 H5 H3 CT 
+Current Hand(East) = S8 S7 HK HJ 
+Original Hand(South) = ST S6 S3 HQ D9 D8 D6 D5 D4 CA C9 C6 C2 
+Original Hand(West) = SQ SJ HT H8 H7 H6 DA DK DQ DJ C8 C7 C4 
+Original Hand(North) = SA SK S9 HA H5 H3 H2 DT D3 D2 CK CT C5 
+Original Hand(East) = S8 S7 S5 S4 S2 HK HJ H9 H4 D7 CQ CJ C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass 1D Dbl 1S Pass 1NT Dbl Pass 2C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S3 SQ SK S2 North
+GameTrick #2 = North HQ H6 H2 H4 South
+GameTrick #3 = South C2 C4 CK C3 North
+GameTrick #4 = North CA C7 C5 CJ South
+GameTrick #5 = South S6 SJ SA S4 North
+GameTrick #6 = North ST H7 HA H9 North
+GameTrick #7 = North D8 DJ D2 D7 West
+GameTrick #8 = West D4 DA D3 S5 West
+GameTrick #9 = West -- DQ DT CQ East
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East ruffed West's winner
+>>>>>>>>>>EAST<<<<<<<<<<<<<<
+S:87542  H:KJ94  D:7  C:QJ3
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 6.0.
+  QT's = 0.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  3 Likely Winners (0/2/0/1)
+  10 Likely Losers (5/2/1/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Hearts.
+====================
+South passes.
+--------------------
+West bids 1D.
+--------------------
+North doubles.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+3REVAL8: Since the trump suit is only topped by a eight, deduct 5 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Spades from 6.0 down to 3.0 points)
+G20: Have 7.0/6.0/6.0 pts with an available 5-card major suit in Spades (87542), so bid 1 Spade over partner's minor suit 1 Diamond bid.
+We bid 1S.
+--------------------
+South passes.
+--------------------
+West bids 1NT.
+--------------------
+North doubles.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Spade, and 1 No Trump.
+B4E00: Partner made a rebid of 1NT, showing 12.0-20.5 points with a balanced hand, for a total of 18.0-26.5 pts in the partnership.
+B4E10: With only 7.0/6.0 pts in hand, for a total in the partnership of approx. 18.0-26.5 HCPs, making a game seems unlikely, so pass.
+We pass.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 2 Clubs.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the two.
+PLDF48: We can't beat North's SK, so discard the S2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the four.
+PLAYB48: We can't beat North's King, so discard the C3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the Jack.
+PLAYB48: We can't beat North's Ace, so discard the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+RCP5A: South is now known to have started with 1 Heart.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the seven.
+PLDF54: Although we could trump this hand, partner's DA is high, so discard the S5.
+RCP5A: East is now known to have started with 1 Diamond.
+RCP20: Dummy is now out of Diamonds.
+PLDF55: With no cards in Diamonds, trump with the CQ.  <<<<<<<<<<<<<<<<PARD is high
+PLYLDD: With no other obvious plays, play HK.
+
+>>>>>>>>>>>> DEBUG WEST<<<<<<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:QJ  H:T876  D:AKQJ  C:874
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  2 Likely Winners (0/-1/4/-1)
+  11 Likely Losers (2/5/0/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+The contract is 2 Clubs by South.
+West leads.
+====================
+- - - - - - - -
+>> Trick taken back.
+PLAY1: Leading card, using default player logic.
+PLYLD32: Partner is void in Diamonds and may still have some trumps, so lead the DQ.  <<<<<<<<<< No Pard won't know we have DK !!!!
+PLAY: We lead the DQ.
+PLAY: North plays the DT.
+RCP20: Dummy is now out of Diamonds.
+PLAY: East plays the CQ.
+
+
+
+

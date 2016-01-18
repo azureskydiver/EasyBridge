@@ -1,0 +1,105 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 7, 2009
+File Date =  08/09/09 10:55:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S7 HA HJ H4 H3 DJ D3 CQ CJ 
+Current Hand(West) = SK SQ S9 S6 S3 S2 HT DK DT C7 
+Current Hand(North) = S8 HQ H6 H2 DA DQ D5 D4 C4 C3 
+Current Hand(East) = HK H9 H8 H7 H5 D9 D8 D7 D6 D2 
+Original Hand(South) = SA S7 S5 HA HJ H4 H3 DJ D3 CQ CJ CT C9 
+Original Hand(West) = SK SQ ST S9 S6 S3 S2 HT DK DT CA C7 C6 
+Original Hand(North) = SJ S8 HQ H6 H2 DA DQ D5 D4 C5 C4 C3 C2 
+Original Hand(East) = S4 HK H9 H8 H7 H5 D9 D8 D7 D6 D2 CK C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 8
+Declarer = West
+Bidding History = Pass Pass 1H 4S Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = North
+GameTrick #1 = North C9 C6 C5 CK East
+GameTrick #2 = East S5 ST SJ S4 North
+GameTrick #3 = North CT CA C2 C8 West
+GameTrick #4 = West -- -- -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West plays Dk from doubleton to force the A ???
+>>>>> WEST <<<<<
+Starting play from restored game.
+------------------------
+S:KQT9632  H:T  D:KT  C:A76
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  8 Likely Winners (6/0/1/1)
+  5 Likely Losers (1/1/1/2)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 1 reasonably sure trick left vs. 9 more trick(s) required for the contract.
+seven to winners.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLTRMP28: Lead the S4 up to own hand to pull in a round of trumps.
+PLTRMP82e: Top RHO's five of trumps with the ten.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 1 reasonably sure trick left vs. 9 more trick(s) required for the contract.
+seven to winners.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH56: Discard a Club from dummy in anticipation of cashing the Ace in hand.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH86: Cash the CA from hand.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 0 reasonably sure trick left vs. 8 more trick(s) required for the contract.
+seven to winners.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLFRC04: Play the DK from hand to force out the opponents' Ace.  <<<<<<< ????????
+
+

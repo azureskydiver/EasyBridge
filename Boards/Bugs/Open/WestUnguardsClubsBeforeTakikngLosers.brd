@@ -1,0 +1,596 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 14, 2009
+File Date =  09/24/09 15:02:34
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ ST S9 S6 S2 HJ 
+Current Hand(West) = SK S8 HQ DJ DT D6 
+Current Hand(North) = SA S4 H8 DK CT 
+Current Hand(East) = SJ DQ D8 D7 D4 
+Original Hand(South) = SQ ST S9 S6 S2 HK HJ H2 D5 C7 C5 C3 C2 
+Original Hand(West) = SK S8 HQ HT H5 H4 DJ DT D6 D3 CA CK CJ 
+Original Hand(North) = SA S4 H8 H7 H6 DK D9 CQ CT C9 C8 C6 C4 
+Original Hand(East) = SJ S7 S5 S3 HA H9 H3 DA DQ D8 D7 D4 D2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = 1D Pass 2S Pass 2NT Pass 3H Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 5
+Lead Player for Current Game = North
+GameTrick #1 = North C2 CJ C8 S3 West
+GameTrick #2 = West C3 CA C4 S5 West
+GameTrick #3 = West C5 CK C6 H3 West
+GameTrick #4 = West D5 D3 D9 DA East
+GameTrick #5 = East H2 H4 H6 HA East
+GameTrick #6 = East HK H5 H7 H9 South
+GameTrick #7 = South C7 HT CQ D2 North
+GameTrick #8 = North -- -- C9 S7 ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West unguards Clubs before taking losers?????
+>>>>>>> WEST <<<<<<<<
+PLAY: North leads the C8.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KJ8753 (J753/K8)
+  H:AQT9543 (A93/QT54)
+  D:AQJT876432 (AQ8742/JT63)
+  C:AKJ (/AKJ)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 1.0;
+  Total pts = 26.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (0/1/1/2)
+  8 Eventual Winners (0/1/5/2)
+  5 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KJ8753 (J753/K8)
+  H:AQT9543 (A93/QT54)
+  D:AQJT876432 (AQ8742/JT63)
+  C:AKJ (/AKJ)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 1.0;
+  Total pts = 26.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (0/1/1/2)
+  8 Eventual Winners (0/1/5/2)
+  5 Possible Losers (vs. 4 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 9 for the 3NT contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Hearts by leading it from hand against North.
+PSFNS10: Can finesse the Queen of Diamonds in dummy with the Ace as the potential cover card.
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the Ace as the potential cover card in dummy.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 7 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight to winners.
+seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Clubs, plus 5 in Diamonds, plus 1 in Hearts.
+PLNCSH30: A total of 8 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 10 plays and up to 13 possible tricks including 8 sure tricks (vs. 9 required) accounted for in the plan.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Diamonds in hand.
+ Play 2: Cash the Ten of Diamonds in hand.
+ Play 3: Cash the Queen of Diamonds in dummy.
+ Play 4: Cash the Ace of Diamonds in dummy.
+ Play 5: Cash the Seven of Diamonds in dummy.
+ Play 6: Cash the Eight of Diamonds in dummy.
+ Play 7: Cash the Eight of Diamonds in dummy.
+ Play 8: Cash the Ace of Clubs in hand.
+ Play 9: Cash the King of Clubs in hand.
+ Play 10: Cash the Ace of Hearts in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLYTST8: The play <DJ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DT Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DQ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D7 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D8 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D8 Cash> is not yet viable as the card [King] is still outstanding.
+PLCSH56: Discard a Club from dummy in anticipation of cashing the Ace in hand.
+PLAY: East plays the S3.
+PLAY: South plays the C2.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH85: We can actually play the Jack to win this trick, so postpone the cash of the Ace.
+PLYTRY: No usable plays found for the current situation.
+PLAY4: Playing fourth, using default player logic.
+PLYE41: Play the Jack to win the trick.
+PLAY: We play the CJ.
+PLAY: West wins the round.
+--------
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 4 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Hearts by leading it from hand against North.
+PSFNS10: Can finesse the Queen of Diamonds in dummy with the Ace as the potential cover card.
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the Ace as the potential cover card in dummy.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 7 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight to winners.
+seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 2 in Clubs, plus 5 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 10 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 12 plays and up to 12 possible tricks including 4 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 2: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 3: Cash the King of Spades in hand. <Requires ...>
+ Play 4: Cash the Ace of Clubs in hand.
+ Play 5: Cash the King of Clubs in hand.
+ Play 6: Cash the Ace of Diamonds in dummy.
+ Play 7: Cash the Queen of Diamonds in dummy. <Requires ...>
+ Play 8: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 9: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 10: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 11: Cash the Ace of Hearts in dummy.
+ Play 12: Cash the Queen of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV50: The cash of the CK can only be used here in the hand since there are no lead cards in the opposite hand -- so move up the play.
+PINTLV50: The cash of the CA can only be used here in the hand since there are no lead cards in the opposite hand -- so move up the play.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Clubs in hand.
+ Play 2: Cash the King of Clubs in hand.
+ Play 3: Cash the Jack of Diamonds in hand.
+ Play 4: Cash the Ten of Diamonds in hand.
+ Play 5: Cash the Queen of Diamonds in dummy.
+ Play 6: Cash the Ace of Diamonds in dummy.
+ Play 7: Cash the Seven of Diamonds in dummy.
+ Play 8: Cash the Eight of Diamonds in dummy.
+ Play 9: Cash the Eight of Diamonds in dummy.
+ Play 10: Cash the King of Spades in hand.
+ Play 11: Cash the Ace of Hearts in dummy.
+ Play 12: Cash the Queen of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH10: Cash the CA from hand.
+PLAY: We lead the CA.
+PLAY: North plays the C4.
+PLDM: Playing card from dummy.
+PLCSH78: Our cash of the CA from hand is holding, so discard the S5.
+PLAY: East plays the S5.
+PLAY: South plays the C3.
+PLAY: West wins the round.
+--------
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Hearts by leading it from hand against North.
+PSFNS10: Can finesse the Queen of Diamonds in dummy with the Ace as the potential cover card.
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the Ace as the potential cover card in dummy.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 7 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight to winners.
+seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 1 in Clubs, plus 5 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 9 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 11 plays and up to 11 possible tricks including 3 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 2: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 3: Cash the King of Spades in hand. <Requires ...>
+ Play 4: Cash the King of Clubs in hand.
+ Play 5: Cash the Ace of Diamonds in dummy.
+ Play 6: Cash the Queen of Diamonds in dummy. <Requires ...>
+ Play 7: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 8: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 9: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 10: Cash the Ace of Hearts in dummy.
+ Play 11: Cash the Queen of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV50: The cash of the CK can only be used here in the hand since there are no lead cards in the opposite hand -- so move up the play.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the King of Clubs in hand.
+ Play 2: Cash the Jack of Diamonds in hand.
+ Play 3: Cash the Ten of Diamonds in hand.
+ Play 4: Cash the Queen of Diamonds in dummy.
+ Play 5: Cash the Ace of Diamonds in dummy.
+ Play 6: Cash the Seven of Diamonds in dummy.
+ Play 7: Cash the Eight of Diamonds in dummy.
+ Play 8: Cash the Eight of Diamonds in dummy.
+ Play 9: Cash the King of Spades in hand.
+ Play 10: Cash the Ace of Hearts in dummy.
+ Play 11: Cash the Queen of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH10: Cash the CK from hand.
+PLAY: We lead the CK.
+PLAY: North plays the C6.
+PLDM: Playing card from dummy.
+PLCSH78: Our cash of the CK from hand is holding, so discard the H3.
+PLAY: East plays the H3.
+PLAY: South plays the C5.
+PLAY: West wins the round.
+--------
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 2 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Hearts by leading it from hand against North.
+PSFNS10: Can finesse the Queen of Diamonds in dummy with the Ace as the potential cover card.
+PSFNS20: Can finesse the Jack of Diamonds by leading it from hand, with the Ace as the potential cover card in dummy.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 7 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight to winners.
+seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 5 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 8 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 10 plays and up to 10 possible tricks including 2 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 2: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 3: Cash the King of Spades in hand. <Requires ...>
+ Play 4: Cash the Ace of Diamonds in dummy.
+ Play 5: Cash the Queen of Diamonds in dummy. <Requires ...>
+ Play 6: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 7: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 8: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 9: Cash the Ace of Hearts in dummy.
+ Play 10: Cash the Queen of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Diamonds in hand.
+ Play 2: Cash the Ten of Diamonds in hand.
+ Play 3: Cash the Queen of Diamonds in dummy.
+ Play 4: Cash the Ace of Diamonds in dummy.
+ Play 5: Cash the Seven of Diamonds in dummy.
+ Play 6: Cash the Eight of Diamonds in dummy.
+ Play 7: Cash the Eight of Diamonds in dummy.
+ Play 8: Cash the King of Spades in hand.
+ Play 9: Cash the Ace of Hearts in dummy.
+ Play 10: Cash the Queen of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTST8: The play <DJ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DT Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DQ Cash> is not yet viable as the card [King] is still outstanding.
+PLCSH20: Lead a low Diamond (the three) from hand in order to cash the Ace in dummy.
+PLAY: We lead the D3.
+PLAY: North plays the D9.
+PLDM: Playing card from dummy.
+PLCSH74: Cash the DA from dummy.
+PLAY: East plays the DA.
+PLAY: South plays the D5.
+PLAY: East wins the round.
+--------
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 1 reasonably sure trick left vs. 5 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Hearts by leading it from hand against North.
+PSFNS30: Can finesse the Queen of Diamonds by leading it from dummy against South.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 6 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight, and seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 4 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 7 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 9 plays and approx. 12+ possible tricks including 1 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 2: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 3: Cash the King of Spades in hand. <Requires ...>
+ Play 4: Cash the Queen of Diamonds in dummy. <Requires ...>
+ Play 5: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 6: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 7: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 8: Cash the Ace of Hearts in dummy.
+ Play 9: Cash the Queen of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Diamonds in hand.
+ Play 2: Cash the Ten of Diamonds in hand.
+ Play 3: Cash the Queen of Diamonds in dummy.
+ Play 4: Cash the Seven of Diamonds in dummy.
+ Play 5: Cash the Eight of Diamonds in dummy.
+ Play 6: Cash the Eight of Diamonds in dummy.
+ Play 7: Cash the King of Spades in hand.
+ Play 8: Cash the Ace of Hearts in dummy.
+ Play 9: Cash the Queen of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTST8: The play <DJ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DT Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DQ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D7 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D8 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D8 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <SK Cash> is not yet viable as the card [Ace] is still outstanding.
+PLCSH30: Cash the HA from dummy.
+PLAY: East leads the HA.
+PLAY: South plays the H2.
+PLCSH72: Our cash of the HA from dummy is holding, so discard the H4.
+PLAY: We play the H4.
+PLAY: North plays the H6.
+PLAY: East wins the round.
+--------
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 6...
+PLRV10: We have only 0 reasonably sure trick left vs. 4 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Hearts by leading it from hand against North.
+PSFNS30: Can finesse the Queen of Diamonds by leading it from dummy against South.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 6 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight, and seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 4 in Diamonds, plus 1 in Hearts.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 8 plays and approx. 11+ possible tricks including 0 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 2: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 3: Cash the King of Spades in hand. <Requires ...>
+ Play 4: Cash the Queen of Diamonds in dummy. <Requires ...>
+ Play 5: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 6: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 7: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 8: Cash the Queen of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Diamonds in hand.
+ Play 2: Cash the Ten of Diamonds in hand.
+ Play 3: Cash the Queen of Diamonds in dummy.
+ Play 4: Cash the Seven of Diamonds in dummy.
+ Play 5: Cash the Eight of Diamonds in dummy.
+ Play 6: Cash the Eight of Diamonds in dummy.
+ Play 7: Cash the King of Spades in hand.
+ Play 8: Cash the Queen of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTST8: The play <DJ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DT Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <DQ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D7 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D8 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <D8 Cash> is not yet viable as the card [King] is still outstanding.
+PLYTST8: The play <SK Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <HQ Cash> is not yet viable as the card [King] is still outstanding.
+PLYTRY: No usable plays found for the current situation.
+PLAY: East leads the H9.
+PLAY: South plays the HK.
+PLCSH66: the HQ can't beat the HK, so skip the cash.
+PLYTRY: No usable plays found for the current situation.
+PLYD2A50: With nothing higher in hand, discard the five.
+PLAY: We play the H5.
+PLAY: North plays the H7.
+PLAY: South wins the round.
+--------
+PLAY: South leads the C7.
+PLNADJ: Reviewing play plan for round 7...
+PLRV10: We have only 1 reasonably sure trick left vs. 4 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Jack of Spades by leading it from dummy against South.
+PSFNS31: Can finesse the King of Spades by leading it from hand against North.
+PSFNS30: Can finesse the Queen of Diamonds by leading it from dummy against South.
+PSFNS31: Can finesse the Ten of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 5 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten, eight, and seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 4 in Diamonds, plus 1 in Hearts.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 8 plays and approx. 11+ possible tricks including 1 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 2: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 3: Cash the King of Spades in hand. <Requires ...>
+ Play 4: Cash the Queen of Diamonds in dummy. <Requires ...>
+ Play 5: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 6: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 7: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 8: Cash the Queen of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [D8 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [D7 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV50: The cash of the HQ can only be used here in the hand since there are no lead cards in the opposite hand -- so move up the play.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Queen of Hearts in hand.
+ Play 2: Cash the Jack of Diamonds in hand.
+ Play 3: Cash the Ten of Diamonds in hand.
+ Play 4: Cash the Queen of Diamo
+
+
+

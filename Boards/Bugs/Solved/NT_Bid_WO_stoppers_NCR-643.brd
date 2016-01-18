@@ -1,0 +1,144 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 5, 2012
+File Date =  09/30/12 10:27:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ S7 S5 S3 HT H9 H5 H3 DK D6 C5 
+Current Hand(West) = ST S9 S6 HQ H8 H6 D4 CT C8 C4 C2 
+Current Hand(North) = SK S8 S4 HA HK HJ DQ DJ D9 D7 D3 D2 
+Current Hand(East) = SQ S2 H7 H4 H2 DA DT D8 D5 CK CQ C7 
+Original Hand(South) = SA SJ S7 S5 S3 HT H9 H5 H3 DK D6 C5 C3 
+Original Hand(West) = ST S9 S6 HQ H8 H6 D4 CA CJ CT C8 C4 C2 
+Original Hand(North) = SK S8 S4 HA HK HJ DQ DJ D9 D7 D3 D2 C9 
+Original Hand(East) = SQ S2 H7 H4 H2 DA DT D8 D5 CK CQ C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1D Pass 1S Pass 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East C3 CA C9 C6 West
+GameTrick #2 = West -- CJ -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  90		3 overtricks"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N bid 2NT without stoppers in unbid suit (in fact had a singleton)
+==============
+North Analysis
+==============
+S:K84  H:AKJ  D:QJ9732  C:9
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  6 Likely Winners (0/2/4/0)
+  7 Likely Losers (3/1/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Have 14.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 1 Spade.
+Partner has made a 1 over 1 bid, Spades over Diamonds, which shows 5.5-17.5 points and is forcing for one round.
+Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Spade trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 14.0 to 17.0 points)
+With 3-card support for partner's Spades (holding K84), 14.0/14.0/17.0 points, an unbalanced hand, our primary Diamond suit not jump rebiddable, and no second suit available, bid 2NT.
+We bid 2NT.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+With a total of 19.5-31.5 / 22.5-34.5 pts in the partnership, we lack adequate strength for a further raise beyond partner's 3 No Trump bid, so we have to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AKJ87543 (AJ753/K84)
+  H:AKJT953 (T953/AKJ)
+  D:KQJ97632 (K6/QJ9732)
+  C:95 (5/9)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;
+  Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Sure Winners (2/2/0/0)
+  7 Eventual Winners (2/3/2/0)
+  6 Possible Losers (vs. 4 allowable)
+
+

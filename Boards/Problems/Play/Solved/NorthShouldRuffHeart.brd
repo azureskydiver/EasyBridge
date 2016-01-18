@@ -1,0 +1,195 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2010
+File Date =  12/25/10 11:53:28
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S7 HT H7 
+Current Hand(West) = CK CJ C9 C8 
+Current Hand(North) = S6 DT D7 CQ CT 
+Current Hand(East) = HQ H6 H5 CA C4 
+Original Hand(South) = SK SQ ST S7 S5 HK HJ HT H7 H2 DK DJ D8 
+Original Hand(West) = SJ S9 S3 HA H4 DA DQ CK CJ C9 C8 C7 C5 
+Original Hand(North) = SA S6 S4 S2 H8 DT D7 D6 D5 D2 CQ CT C6 
+Original Hand(East) = S8 HQ H9 H6 H5 H3 D9 D4 D3 CA C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 13
+Declarer = South
+Bidding History = 1C Pass 1H 1S 2C 2S Pass 3S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H2 HA H8 H9 West
+GameTrick #2 = West D8 DA D2 D4 West
+GameTrick #3 = West DK DQ D5 D3 South
+GameTrick #4 = South S5 S3 SA S8 North
+GameTrick #5 = North SQ S9 S2 C2 South
+GameTrick #6 = South SK SJ S4 D9 South
+GameTrick #7 = South DJ C5 D6 C3 South
+GameTrick #8 = South HK H4 C6 H3 South
+GameTrick #9 = South HJ C7 -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North Should Ruff the Heart and cash all the winning Diamonds
+>>>>>>>>> SOUTH<<<<<<<<<
+PLNADJ: Reviewing play plan for round 9...
+PLRV11: We have 4 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Hearts to force out the opponents' Queen.
+PLNDEV31: This will promote the seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 1 lower card.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Clubs in hand.
+PLNRF1: We can potentially ruff up to 1 Heart in dummy.
+PLNRF5: Up to 3 ruffs can be used (1 in dummy/2 in hand) out of a total of 3 available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 4 maximum cashing tricks are immediately available. 2 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 2 rounds of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 2 cashing tricks in the side suits, and up to 3 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 8 possible plays and approx. 7+ possible tricks including 4 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Club in hand.
+ Play 2: Ruff a Club in hand.
+ Play 3: Ruff a Heart in dummy.
+ Play 4: Play the Ten of Hearts from hand to force out the opponents' Queen.
+ Play 5: Cash the Ten of Diamonds in dummy.
+ Play 6: Cash the Seven of Diamonds in dummy.
+ Play 7: Cash the Jack of Hearts in hand. <Requires ...>
+ Play 8: Cash the Ten of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ3: Since we have enough sure tricks (4) to fulfill the contract, we moved 2 cash plays forward
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Ten of Diamonds in dummy.
+ Play 2: Cash the Seven of Diamonds in dummy.
+ Play 3: Ruff a Club in hand.
+ Play 4: Ruff a Club in hand.
+ Play 5: Ruff a Heart in dummy.
+ Play 6: Play the Ten of Hearts from hand to force out the opponents' Queen.
+ Play 7: Cash the Jack of Hearts in hand.
+ Play 8: Cash the Ten of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH22: Oops, we wanted to cash a Diamond in dummy, but we have no Diamonds in hand to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <DT Cash> (abandoned)
+PLCSH22: Oops, we wanted to cash a Diamond in dummy, but we have no Diamonds in hand to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <D7 Cash> (abandoned)
+PLFRC04: Play the HJ from hand to force out the opponents' Queen.
+PLAY: We lead the HJ.
+PLAY: West plays the C7.
+RCP10: West shows out of Hearts.
+RCP1A: West is now known to have started with  2 Diamonds and 2 Hearts.
+PLDM: Playing card from dummy.
+PLFRC64: We're in the opposite hand of a force play, so discard the CT.
+
+
+
+PLNADJ: Reviewing play plan for round 10...
+PLRV10: We have only 2 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Hearts to force out the opponents' Queen.
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Heart in dummy.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 3 cards in Diamonds 1 in Hearts.
+PLNCSH30: A total of 4 maximum cashing tricks are immediately available. 3 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 3 cashing tricks in the side suits, and up to 1 ruffing trick.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 6 possible plays and approx. 5+ possible tricks including 2 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Heart in dummy.
+ Play 2: Play the Ten of Hearts from hand to force out the opponents' Queen.
+ Play 3: Cash the Ten of Diamonds in dummy.
+ Play 4: Cash the Eight of Diamonds in hand. <Requires ...>
+ Play 5: Cash the Seven of Diamonds in dummy. <Requires ...>
+ Play 6: Cash the Jack of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Heart in dummy.
+ Play 2: Play the Ten of Hearts from hand to force out the opponents' Queen.
+ Play 3: Cash the Ten of Diamonds in dummy.
+ Play 4: Cash the Eight of Diamonds in hand.
+ Play 5: Cash the Seven of Diamonds in dummy.
+ Play 6: Cash the Jack of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLFRC04: Play the HJ from hand to force out the opponents' Queen.
+PLAY: We lead the HJ.
+PLAY: West plays the C5.
+RCP10: West shows out of Hearts.
+RCP5A: West is now known to have started with 2 Hearts.
+PLDM: Playing card from dummy.
+PLFRC64: We're in the opposite hand of a force play, so discard the D6.
+PLAY: North plays the D6.
+PLAY: East plays the HQ.
+

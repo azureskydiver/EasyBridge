@@ -1,0 +1,194 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = November 14, 2013
+File Date =  11/14/13 19:11:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S4 S3 S2 DQ DJ DT D9 C9 C5 C4 C3 C2 
+Current Hand(West) = SA SQ SJ S7 S6 HA HQ HJ H8 H7 D6 D2 C7 
+Current Hand(North) = SK S9 S5 HK H5 H3 D4 CA CQ CJ CT C6 
+Current Hand(East) = S8 HT H9 H6 H4 H2 DK D7 D5 D3 CK C8 
+Original Hand(South) = ST S4 S3 S2 DQ DJ DT D9 C9 C5 C4 C3 C2 
+Original Hand(West) = SA SQ SJ S7 S6 HA HQ HJ H8 H7 D6 D2 C7 
+Original Hand(North) = SK S9 S5 HK H5 H3 D8 D4 CA CQ CJ CT C6 
+Original Hand(East) = S8 HT H9 H6 H4 H2 DA DK D7 D5 D3 CK C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = 1C 2NT Pass 3C Pass 3D Pass 5C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- D8 DA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 120
+North/South Game 1 Points = 80
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "100		Honors bonus for holding 4 trump honors"
+Bonus Score Record = "  20		1 overtrick"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+A strange hand where E-W should end in 4 Hearts, but instead play in a 2-1 fit at 5 clubs.
+ 
+North opens a normal 1 Club, East bids 2 NT (unusual, showing Hearts and Diamonds), South passes, West cue bids 3 Clubs, North passes, East responds weakly by bidding 3 diamonds (the lower of his two suits), South passes, now for some reason West thinks that East has responded in the HIGHER of the two suits showing a strong hand and then bids 5 Clubs, not the indicated 4 Hearts.  I have no idea why 5 clubs was bid – clearly West had lost all track of what was going on.
+
+>>>>>>>>>>WEST<<<<<<<<<
+S:AQJ76  H:AQJ87  D:62  C:7
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  8 Likely Winners (4/4/0/0)
+  5 Likely Losers (1/1/2/1)
+Playing five-card majors, both majors qualify for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Spades.
+====================
+North bids 1C.
+--------------------
+East bids 2NT.
+--------------------
+South passes.
+--------------------
+B00 Responding to partner's opening bid of 2 No Trump.
+UNTR10: Partner has made an Unusual NT bid of 2 No Trump, indicating 5/5 length in Hearts and Diamonds.
+UNTR12: Given a choice, we prefer the Heart suit.
+REVAL1: Revaluing hand as declarer for Heart contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 14.0 to 17.0 points)
+UNTR26: With a total of 23.0-28.0 pts in the partnership, we may be able to make game in Hearts if partner has a strong opener, so cue bid the enemy Club at 3 Clubs to inquire about partner's strength..
+We bid 3C.
+--------------------
+North passes.
+--------------------
+East bids 3D.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 2 No Trump, 3 Clubs, and 3 Diamonds.
+UNTR50: After our cue-bid of the enemy suit, partner has NOT bid the lower of his two suits,  indicating a strong opening Unusual NT hand with 16.5+ pts, for a total in the partnership of 31.0-31.0 pts.  ??????????? LOwer suit IS DIAMONDS???
+UNTR72: So go ahead and bid game at 5 Clubs.  ???????????SIngleton
+We bid 5C.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+
+>>>>>>>>>>>>EAST<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:8  H:T9642  D:AK753  C:K8
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 10.0.
+  QT's = 2.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/3/1)
+  9 Likely Losers (1/5/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Diamonds.
+====================
+S:8  H:T9642  D:AK753  C:K8
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 10.0.
+  QT's = 2.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/3/1)
+  9 Likely Losers (1/5/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+North bids 1C.
+--------------------
+Opening bid for team.
+UNT5: We have at least 5/5 in Diamonds and Hearts, so we can make an Unusual NT bid over the opponent's 1D opening.
+UNT9: With a 2-suited hand, make an Unusual NT bid over RHO's Clubs bid at 2 No Trump.
+We bid 2NT.
+--------------------
+South passes.
+--------------------
+West bids 3C.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 2 No Trump and partner's response of 3 Clubs.
+UNTRH20: Partner cue bid the enemy suit, which is a game or slam try.   <<<<<<<<<<<<<<<<OK
+UNTRH23: But with only 10.0 pts in hand (a weak opener), respond negatively by bidding the lower of our suits (Diamonds) suit at 3 Diamonds.    <<<<<<<<<<<<OK
+We bid 3D.
+--------------------
+South passes.
+--------------------
+West bids 5C.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BXF01: Partner jump rebid his Club suit at 5 Clubs, indicating 11-18 pts.    <<<<<<<<<<<<NO CLubs was North's
+BXH40: We have a 5-card Diamonds suit, and partner is pushing the Club suit, but we have no agreement, and lack complete stoppers, so we have to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is West; North leads.
+=======================
+
+South passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is West; North leads.
+=======================
+
+
+

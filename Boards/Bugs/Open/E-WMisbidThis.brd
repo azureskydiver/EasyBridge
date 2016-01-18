@@ -1,0 +1,152 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 14, 2010
+File Date =  12/16/10 15:26:28
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S9 S8 S7 S6 HJ H8 H7 H6 H5 C8 C5 C3 
+Current Hand(West) = S5 S4 HA HK H3 DA DQ DT D5 D2 CT C4 C2 
+Current Hand(North) = SA SQ S3 S2 HT H9 D8 D6 D4 CK CJ C9 C7 
+Current Hand(East) = SK SJ HQ H4 H2 DK DJ D9 D7 D3 CA CQ C6 
+Original Hand(South) = ST S9 S8 S7 S6 HJ H8 H7 H6 H5 C8 C5 C3 
+Original Hand(West) = S5 S4 HA HK H3 DA DQ DT D5 D2 CT C4 C2 
+Original Hand(North) = SA SQ S3 S2 HT H9 D8 D6 D4 CK CJ C9 C7 
+Original Hand(East) = SK SJ HQ H4 H2 DK DJ D9 D7 D3 CA CQ C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = East
+Bidding History = 1D Pass 3C Pass 5C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W misbid this
+>>>>>>>>>> WEST<<<<<<<<
+Received hand:
+  S:54  H:AK3  D:AQT52  C:T42
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  3 Likely Winners (0/1/3/-1)
+  10 Likely Losers (2/2/2/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+Opening bid for team.
+E02: Have 13.0 points in high cards and 3.5 quick tricks, so bid 1 Diamond.
+We bid 1D.
+--------------------
+North passes.
+--------------------
+East bids 3C.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 3 Clubs.
+B3Y00: Partner has made a jump shift to 3 Clubs after our opening 1 Diamond bid, which indicates 19.0+ points and is forcing to game (and points to a possible slam).
+REVAL1: Revaluing hand as dummy...
+YN1: With 32.0-35.0 points in the partnership and 3-card support for partner's  Club suit (holding T42), raise to 5 Clubs.
+We bid 5C.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is East; South leads.
+=======================
+
+
+>>>>>> EAST<<<<<<
+Received hand:
+  S:KJ  H:Q42  D:KJ973  C:AQ6
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (1/0/3/1)
+  8 Likely Losers (1/3/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+West bids 1D.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Diamond trump support including a trump honor & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 16.0 to 20.0 points)
+F00: Partner is showing 12.0-21.0 points and 2+ QT's.
+J20: Have 16.0/16.0/20.0 points; show strength by jump shifting to 3 Clubs, even though it's not the preferred suit.
+We bid 3C.
+--------------------
+South passes.
+--------------------
+West bids 5C.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 3 Clubs, and 5 Clubs.
+B4M00: Partner made a double raise of our Club suit to 5 Clubs, showing 17.0-21.0 points.
+B4M02: Though partner raised our Club suit after our shift response, we really want to play in partner's Diamond suit.
+BLKWDx: we'd like to use Blackwood, but partner has already bid higher than 4NT, so we have to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is East; South leads.
+=======================
+
+
+
+

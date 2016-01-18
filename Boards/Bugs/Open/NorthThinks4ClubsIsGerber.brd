@@ -1,0 +1,177 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2010
+File Date =  12/22/10 14:41:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HQ H8 H6 DA DQ D7 D6 D2 CA CT C9 C6 C3 
+Current Hand(West) = SK ST S8 S3 HT H9 H7 H5 H4 H3 H2 C7 C5 
+Current Hand(North) = SQ S6 S2 HA HK HJ DK D8 D4 CK CJ C8 C2 
+Current Hand(East) = SA SJ S9 S7 S5 S4 DJ DT D9 D5 D3 CQ C4 
+Original Hand(South) = HQ H8 H6 DA DQ D7 D6 D2 CA CT C9 C6 C3 
+Original Hand(West) = SK ST S8 S3 HT H9 H7 H5 H4 H3 H2 C7 C5 
+Original Hand(North) = SQ S6 S2 HA HK HJ DK D8 D4 CK CJ C8 C2 
+Original Hand(East) = SA SJ S9 S7 S5 S4 DJ DT D9 D5 D3 CQ C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = ????
+Bidding History = 1D Pass 3NT Pass 4C Pass 4H Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South's 4C is mistaken as Gerber
+>>>>>>>>>> SOUTH<<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:  H:Q86  D:AQ762  C:AT963
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/3/2)
+  8 Likely Losers (0/3/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+The contract is 4 Hearts by North.
+East leads.
+====================
+=====================================
+Received hand:
+  S:---  H:Q86  D:AQ762  C:AT963
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/3/2)
+  8 Likely Losers (0/3/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+***Bidding restarted***
+We bid 1D.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+East passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 3 No Trump.
+NT44: Partner's jump shift from our 1 Diamond bid to 3 No Trump indicates a balanced hand and 15.0+ points, for a total of 27.0+ points in the partnership.
+B3N90: In response to partner's game bid, we have no choice but to express dislike for NT by bidding 4 Clubs.   <<<<<<<<<<< NOT Gerber !!! Skip to 5 or rebid Diamonds?
+
+>>>>>>>>>> NORTH<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:Q62  H:AKJ  D:K84  C:KJ82
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/2/0/2)
+  9 Likely Losers (3/1/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+The contract is 4 Hearts by North.
+East leads.
+====================
+=====================================
+Received hand:
+  S:Q62  H:AKJ  D:K84  C:KJ82
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/2/0/2)
+  9 Likely Losers (3/1/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+South bids 1D.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Diamond trump support including a trump honor, the hand is revalued for a suit contract as dummy from 17.0 to 18.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+I04: Have 17.0 HCPs in hand, for a total in the partnership of approx. 29.0-37.5 HCPS, and all four suits are stopped, so jump to 3 No Trump.
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South bids 4C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 3 No Trump, and 4 Clubs.
+GRB10: With 1 Ace, respond to partner's Gerber inquiry with 4 Hearts.   <<<<<<<<<<< 4C NOT Gerber ????
+We bid 4H.
+--------------------
+East passes.
+--------------------
+
+
+
+
+

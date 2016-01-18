@@ -1,0 +1,135 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 12, 2011
+File Date =  10/10/11 19:43:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S6 S4 HA HQ H9 H7 DQ D3 CA CK C9 C5 
+Current Hand(West) = S9 HK HJ HT H6 DA DJ D9 D4 D2 C7 C3 
+Current Hand(North) = SK SQ S7 S5 S2 H8 H5 D8 D7 D5 CJ CT C8 
+Current Hand(East) = SJ S8 S3 H4 H3 H2 DK DT D6 CQ C6 C4 C2 
+Original Hand(South) = SA S6 S4 HA HQ H9 H7 DQ D3 CA CK C9 C5 
+Original Hand(West) = ST S9 HK HJ HT H6 DA DJ D9 D4 D2 C7 C3 
+Original Hand(North) = SK SQ S7 S5 S2 H8 H5 D8 D7 D5 CJ CT C8 
+Original Hand(East) = SJ S8 S3 H4 H3 H2 DK DT D6 CQ C6 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 1C 1D Pass Pass Dbl Pass 1S Pass 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- ST -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+NOrth should bid again
+>>> NORTH<<<<<<<
+S:KQ752  H:85  D:875  C:JT8
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  2 Likely Winners (3/0/-1/0)
+  11 Likely Losers (2/2/4/3)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+
+South bids 1C.
+--------------------
+West bids 1D.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Club trump support including a trump honor & a doubleton in Hearts, the hand is revalued for a suit contract as dummy from 5.0 to 6.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 5.0 to 6.0 points)
+F04: But we have only 6.0/5.0/6.0 points against a minor suit bid, so we prefer to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South doubles.
+--------------------
+West passes.
+--------------------
+A02: Responding to partner's  double.
+TKOTR: Partner has doubled for takeout.
+TKOTR8: Partner's takeout indicates 11.5+ HCPs, for a total in the partnership of 16.5-26.5 points.
+TKOTR22: With 6.0/5.0 pts, respond with our longest suit of Spades at a bid of 1 Spade.
+We bid 1S.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of Double, 1 Spade, and 3 Hearts.
+TKOTRx: Partner bid 3 Hearts after his takeout and our 1 Spade response.
+TKOTR60: Partner shifted to a new suit after our response of 1 Spade to his takeout, indicating that he has 19.0+ pts, for a total in the partnership of 24.0-26.5 points.
+TKOTR70: Unfortunately, with only 24.0-26.5 pts in the partnership, poor support for partner's Hearts, and no other good suits we can bid safely, we have to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+
+

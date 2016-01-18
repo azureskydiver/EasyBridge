@@ -1,0 +1,167 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 30, 2009
+File Date =  06/30/09 10:14:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ SJ HQ H7 H6 H3 DA CJ C5 C4 
+Current Hand(West) = S3 HJ H4 DK DQ D7 D4 D3 CK CT C6 
+Current Hand(North) = SK ST S9 S6 S2 HA HT H9 DJ CA C7 
+Current Hand(East) = S8 S7 S5 S4 HK H8 H5 H2 D8 D6 C9 
+Original Hand(South) = SA SQ SJ HQ H7 H6 H3 DA DT CQ CJ C5 C4 
+Original Hand(West) = S3 HJ H4 DK DQ D7 D5 D4 D3 CK CT C6 C2 
+Original Hand(North) = SK ST S9 S6 S2 HA HT H9 DJ D9 CA C7 C3 
+Original Hand(East) = S8 S7 S5 S4 HK H8 H5 H2 D8 D6 D2 C9 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 1NT Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West DT D5 D9 D2 South
+GameTrick #2 = South CQ C2 C3 C8 South
+GameTrick #3 = South -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West plays low on South's CJ lead - Should cover as he has CT which will be top club
+>>>>>> WEST <<<<
+S:3  H:J4  D:KQ7543  C:KT62
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 8.5.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/5/2)
+  6 Likely Losers (1/2/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 1NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D5.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E1: South led an honor (the Queen), we may be being finessed, so play two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the four.
+PLDIS2: Since we can win the next round of Diamonds, we want to signal by discarding high in the suit.
+PLDIS8: Begin the high-low signal with the seven.
+PLDF48: We can't beat South's Ace, so discard the D7.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Jack.
+RCP20: Dummy is now out of Hearts.
+PLAYB52: With no cards in the suit led and no trumps, we discard the C6.
+RCP5A: West is now known to have started with 2 Hearts.
+PLAYB48: We can't beat South's Jack, so discard the S3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the D3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the D4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the DQ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the ten.
+RCP20: Dummy is now out of Clubs.
+RCP5A: South is now known to have started with 3 Spades.
+PLAYB52: With no cards in the suit led and no trumps, we discard the DK.
+RCP20: Dummy is now out of Spades.
+RCP5A: East is now known to have started with 4 Spades.
+PLAYB52: With no cards in the suit led and no trumps, we discard the CK.
+RESULT: North/South made 3 overtricks.
+PLAY: Play restarted.
+====================
+S:3  H:J4  D:KQ7543  C:KT62
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 8.5.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/5/2)
+  6 Likely Losers (1/2/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D5.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E1: South led an honor (the Queen), we may be being finessed, so play two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E1: South led an honor (the Jack), we may be being finessed, so play six.  <<<<<< NO <<<<<<
+
+

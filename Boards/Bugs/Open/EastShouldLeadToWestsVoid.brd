@@ -1,0 +1,143 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 16, 2010
+File Date =  11/19/10 17:20:28
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK ST S3 S2 HQ HT H3 D7 D5 CK C8 
+Current Hand(West) = S8 S7 HK H9 H8 H6 CJ C9 C7 C3 C2 
+Current Hand(North) = SA SQ SJ S6 S5 HJ DA D9 CA CT C5 
+Current Hand(East) = S9 DQ DJ DT D8 D6 D3 CQ C6 C4 
+Original Hand(South) = SK ST S3 S2 HQ HT H3 H2 D7 D5 D2 CK C8 
+Original Hand(West) = S8 S7 S4 HK H9 H8 H6 H5 CJ C9 C7 C3 C2 
+Original Hand(North) = SA SQ SJ S6 S5 HJ H4 DA D9 D4 CA CT C5 
+Original Hand(East) = S9 HA H7 DK DQ DJ DT D8 D6 D3 CQ C6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = Pass Pass 1S 2D 2S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East D2 S4 D4 DK West
+GameTrick #2 = West H2 H5 H4 HA East
+GameTrick #3 = East -- -- -- H7 ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should lead Diamonds to give West a ruff
+>>>>>>>>>>>>>> EAST<<<<<<<<
+=====================================
+Received hand:
+  S:9  H:A7  D:KQJT863  C:Q64
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 6.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/1/6/0)
+  6 Likely Losers (1/1/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South passes.
+--------------------
+West passes.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVERCL8: Have a good 7-card Diamond suit with 15.0/15.0 points and 7 playing tricks, so overcall the opponents' 1 Spade with a bid of 2 Diamonds.
+We bid 2D.
+--------------------
+South bids 2S.
+--------------------
+West passes.
+--------------------
+North bids 4S.
+--------------------
+Rebidding after opening bid of 2 Diamonds and partner's pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as East against a contract of 4 Spades.
+PLYLD15: Lead the DK from the top of the { DK DQ DJ DT } sequence.
+PLAY: We lead the DK.
+PLAY: South plays the D2.
+PLAY: West plays the S4.
+RCP10: West shows out of Diamonds.
+RCP5A: West is now known to have started with 0 Diamonds.   <<<<<<<<<<<<<< Note Pard is void !!!
+PLAY: North plays the D4.
+PLAY: West wins the round.
+--------
+PLAY: West leads the H5.
+PLAY: North plays the H4.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's Queen, so play the Ace.
+PLAY: We play the HA.
+PLAY: South plays the H2.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDRT8: Return partner's Heart suit with the seven. <<<<<<<<<<< NO lead to his void: Diamonds !!!
+PLAY: We lead the H7.
+
+

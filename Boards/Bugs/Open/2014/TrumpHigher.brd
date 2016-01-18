@@ -1,0 +1,138 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 13, 2015
+File Date =  01/15/15 20:35:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S6 HA HQ H3 DK D8 D5 CA CT C9 
+Current Hand(West) = SK SQ HJ HT H9 H7 DJ DT D7 C4 
+Current Hand(North) = S9 S8 S4 S3 H8 H6 DQ D6 D3 D2 
+Current Hand(East) = SA SJ ST S7 S5 HK H2 DA D9 D4 
+Original Hand(South) = S6 HA HQ H3 DK D8 D5 CA CK CQ CT C9 C5 
+Original Hand(West) = SK SQ HJ HT H9 H7 DJ DT D7 C8 C4 C3 C2 
+Original Hand(North) = S9 S8 S4 S3 S2 H8 H6 H4 DQ D6 D3 D2 C6 
+Original Hand(East) = SA SJ ST S7 S5 HK H5 H2 DA D9 D4 CJ C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = Pass Pass 1S 2C Pass Pass Dbl Pass 2H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North CQ C2 C6 C7 South
+GameTrick #2 = South CK C3 S2 CJ South
+GameTrick #3 = South C5 C8 H4 H5 East
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 50
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North when trumped should force the K in dummy. Playing the 4H is silly.
+===================
+North 
+S:98432  H:864  D:Q632  C:6
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0; Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  1 Likely Winners (0/0/1/0)
+  12 Likely Losers (5/3/3/1)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Diamonds, Spades
+The best suit is Spades.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1S.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 2 Clubs.
+Partner overcalled at the 2-level, indicating a good 5+ card Club suit, 9.5-14.5 points, and probably 6+ playing tricks.
+The total point count in the partnership is therefore 10.5-15.5 points.
+This is not enough to bid any higher, so pass.
+We pass.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+West bids 2H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is West; North leads.
+=======================
+Starting play as left-hand defender.
+Making opening lead as North against a contract of 2 Hearts.
+Lead the singleton C6.
+Although we could trump this hand, partner's CK is high, so discard the S2.
+North is now known to have started with 1 Club.
+Dummy is now out of Clubs.
+With no cards in Clubs, trump with the H4.<<<<<=================Should trump with at least 6 to force KH<<******
+
+====================
+PLDF55: With no cards in Clubs, trump with the H4.  <<< debug version
+
+
+

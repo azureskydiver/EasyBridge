@@ -1,0 +1,403 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 1,  2010
+File Date =  01/09/10 20:29:43
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S7 S4 HA HK H7 H3 H2 DJ D3 CK C6 C3 
+Current Hand(West) = SK ST S6 S2 HJ H9 H4 D9 D8 CA C9 C7 C2 
+Current Hand(North) = S5 S3 HQ H8 H6 H5 DQ D5 D2 CQ CJ C8 C5 
+Current Hand(East) = SQ SJ S9 S8 HT DA DK DT D7 D6 D4 CT C4 
+Original Hand(South) = SA S7 S4 HA HK H7 H3 H2 DJ D3 CK C6 C3 
+Original Hand(West) = SK ST S6 S2 HJ H9 H4 D9 D8 CA C9 C7 C2 
+Original Hand(North) = S5 S3 HQ H8 H6 H5 DQ D5 D2 CQ CJ C8 C5 
+Original Hand(East) = SQ SJ S9 S8 HT DA DK DT D7 D6 D4 CT C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1NT Pass Pass 2D 2H Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- -- -- -- East
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 90
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Game Score Record = "	  90	3 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 8 for the 2NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Queen from dummy to finesse against West. <<<<<<<<<<<<< NO, need to consider keeping stopper in Diamonds
+ Play 2: Play the HA from hand to try and drop one or more of the { HJ HT  }.
+ Play 3: Play the HK from hand to try and drop one or more of the { HJ HT  }.
+ Play 4: Lead a low Diamond from dummy and finesse the Jack in hand against West.
+ Play 5: Play the Seven of Hearts from hand to force out the opponents' Jack.
+ Play 6: Cash the Ace of Spades in hand.
+ Play 7: Cash the Queen of Hearts in dummy.
+ Play 8: Cash the King of Hearts in hand.
+ Play 9: Cash the Ace of Hearts in hand.
+ Play 10: Cash the Seven of Hearts in hand.
+ Play 11: Lead a low Diamond from hand and finesse the Queen in dummy against East.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the DQ from dummy in second position against East.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:J532 (52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 2.0;
+  Total pts = 22.0.
+  QT's = 4.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat East's King, so discard the D3.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+eight to a winner.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2A0: Play our only card in the suit, the Jack.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 4 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+eight to a winner.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2C2: We have no more cards in the suit in hand, so discard the C3.
+RCP5A: West is now known to have started with 2 Diamonds.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 4 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+eight to a winner.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2C2: We have no more cards in the suit in hand, so discard the S4.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 8 for the 2NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Queen from dummy to finesse against West.
+ Play 2: Play the HA from hand to try and drop one or more of the { HJ HT  }.
+ Play 3: Play the HK from hand to try and drop one or more of the { HJ HT  }.
+ Play 4: Lead a low Diamond from dummy and finesse the Jack in hand against West.
+ Play 5: Play the Seven of Hearts from hand to force out the opponents' Jack.
+ Play 6: Cash the Ace of Spades in hand.
+ Play 7: Cash the Queen of Hearts in dummy.
+ Play 8: Cash the King of Hearts in hand.
+ Play 9: Cash the Ace of Hearts in hand.
+ Play 10: Cash the Seven of Hearts in hand.
+ Play 11: Lead a low Diamond from hand and finesse the Queen in dummy against East.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the DQ from dummy in second position against East.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:J532 (52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 2.0;
+  Total pts = 22.0.
+  QT's = 4.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat East's King, so discard the D3.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 8 for the 2NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Queen from dummy to finesse against West.
+ Play 2: Play the HA from hand to try and drop one or more of the { HJ HT  }.
+ Play 3: Play the HK from hand to try and drop one or more of the { HJ HT  }.
+ Play 4: Lead a low Diamond from dummy and finesse the Jack in hand against West.
+ Play 5: Play the Seven of Hearts from hand to force out the opponents' Jack.
+ Play 6: Cash the Ace of Spades in hand.
+ Play 7: Cash the Queen of Hearts in dummy.
+ Play 8: Cash the King of Hearts in hand.
+ Play 9: Cash the Ace of Hearts in hand.
+ Play 10: Cash the Seven of Hearts in hand.
+ Play 11: Lead a low Diamond from hand and finesse the Queen in dummy against East.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the DQ from dummy in second position against East.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:J532 (52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 2.0;
+  Total pts = 22.0.
+  QT's = 4.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat East's King, so discard the D3.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+eight to a winner.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2A0: Play our only card in the suit, the Jack.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:QJ532 (Q52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;
+  Total pts = 24.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 8 for the 2NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Queen from dummy to finesse against West.
+ Play 2: Play the HA from hand to try and drop one or more of the { HJ HT  }.
+ Play 3: Play the HK from hand to try and drop one or more of the { HJ HT  }.
+ Play 4: Lead a low Diamond from dummy and finesse the Jack in hand against West.
+ Play 5: Play the Seven of Hearts from hand to force out the opponents' Jack.
+ Play 6: Cash the Ace of Spades in hand.
+ Play 7: Cash the Queen of Hearts in dummy.
+ Play 8: Cash the King of Hearts in hand.
+ Play 9: Cash the Ace of Hearts in hand.
+ Play 10: Cash the Seven of Hearts in hand.
+ Play 11: Lead a low Diamond from hand and finesse the Queen in dummy against East.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the DQ from dummy in second position against East.
+Combined hand (Dummy/Hand):
+  S:A7543 (53/A74)
+  H:AKQ876532 (Q865/AK732)
+  D:J532 (52/J3)
+  C:KQJ8653 (QJ85/K63)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 2.0;
+  Total pts = 22.0.
+  QT's = 4.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Sure Winners (1/3/0/0)
+  6 Eventual Winners (1/3/0/2)
+  7 Possible Losers (vs. 5 allowable)
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat East's King, so discard the D3.
+Computer set 5 Tricks in makeable contract
+North should NOT play the DQ. Let play continue to South's DJ
+
+

@@ -1,0 +1,187 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 30, 2009
+File Date =  09/30/09 13:16:49
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S6 S4 S3 HT H8 D9 D4 D3 CA CQ 
+Current Hand(West) = S2 H7 H4 DT D7 D5 CK C9 C8 C7 C6 C3 
+Current Hand(North) = SJ S7 HK H6 H2 DK DJ D6 CJ C5 C4 C2 
+Current Hand(East) = SK ST S9 S8 S5 HQ H5 DA DQ D8 D2 CT 
+Original Hand(South) = SA SQ S6 S4 S3 HJ HT H8 D9 D4 D3 CA CQ 
+Original Hand(West) = S2 HA H7 H4 DT D7 D5 CK C9 C8 C7 C6 C3 
+Original Hand(North) = SJ S7 HK H9 H6 H2 DK DJ D6 CJ C5 C4 C2 
+Original Hand(East) = SK ST S9 S8 S5 HQ H5 H3 DA DQ D8 D2 CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = East
+Bidding History = Pass Pass 1S Pass 1NT Pass 2D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = South
+GameTrick #1 = South HJ HA H9 H3 West
+GameTrick #2 = West -- -- -- -- East
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 90
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "  90		3 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should finesse with the DQ vs playing DA
+>>>> EAST <<<<<<
+S:KT985  H:Q53  D:AQ82  C:T
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 11.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (3/1/3/0)
+  6 Likely Losers (2/2/1/1)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Diamonds, Spades
+The best suit is Spades.
+====================
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+E07: Have 11.0 points in high cards in 3rd position and a openable Spade suit, so bid 1 Spade.
+We bid 1S.
+--------------------
+South passes.
+--------------------
+West bids 1NT.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 1 No Trump.
+B3J00: With a 1NT response, partner is showing 6.0-10.0 points, a lack of good support for our Spade suit, and no other suit available to bid at an appropriate level.
+B3K12: Since partner doesn't like our Spades, try 2 Diamonds.
+We bid 2D.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is East; South leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KT9852 (2/KT985)
+  H:AQ7543 (A74/Q53)
+  D:AQT8752 (T75/AQ82)
+  C:KT98763 (K98763/T)
+Combined hand evaluation:
+  HCPs = 18.0, Distn pts = 0.0;
+  Total pts = 18.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/1/0)
+  3 Eventual Winners (0/2/1/0)
+  10 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KT9852 (2/KT985)
+  H:AQ7543 (A74/Q53)
+  D:AQT8752 (T75/AQ82)
+  C:KT98763 (K98763/T)
+Combined hand evaluation:
+  HCPs = 18.0, Distn pts = 0.0;
+  Total pts = 18.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/1/0)
+  3 Eventual Winners (0/2/1/0)
+  10 Possible Losers (vs. 5 allowable)
+PLN10: We have only 3 sure tricks against a requirement of 8 for the 2D contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ44: We want to eventualy exit with a Heart.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Queen of Hearts in hand.
+ Play 2: Cash the Ace of Hearts in dummy.
+ Play 3: Exit with a Heart and throw the opponents into the lead.
+ Play 4: Ruff a Club in hand.
+ Play 5: Ruff a Club in hand.
+ Play 6: Ruff a Club in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Spade in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Ruff a Spade in dummy.
+ Play 11: Lead a low Club from hand and finesse the King in dummy against North.
+ Play 12: Lead a low Spade from dummy and finesse the King in hand against South.
+ Play 13: Lead a low Heart from dummy and finesse the Queen in hand against South.
+ Play 14: Cash the Ace of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLCSH55: The opponents led a Heart, so cash the Ace now.
+PLCSH80: the opponents led a Heart, so see if we can finish up the cash play here.
+PLCSH88b: Our cash of the HA from dummy is holding, so discard the H3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 1 reasonably sure trick left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP28: Lead the D5 up to own hand to pull in a round of trumps.
+PLTRMP83: Play high to take the round of trumps with the Ace.  <<<<<<<<<<<<<< NO Finesse with the DQ <<<<<<<<<<<<<
+
+

@@ -1,0 +1,157 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2010
+File Date =  11/07/10 20:26:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK SJ S7 S4 HK HJ H6 H3 D4 CK CQ C7 
+Current Hand(West) = HQ H9 H7 DA DK DQ DJ DT D9 D7 CA CT C3 
+Current Hand(North) = SQ S8 S5 S2 H8 H5 H2 D6 D5 D2 C9 C5 C4 
+Current Hand(East) = ST S9 S6 S3 HA HT H4 D8 D3 CJ C8 C6 C2 
+Original Hand(South) = SA SK SJ S7 S4 HK HJ H6 H3 D4 CK CQ C7 
+Original Hand(West) = HQ H9 H7 DA DK DQ DJ DT D9 D7 CA CT C3 
+Original Hand(North) = SQ S8 S5 S2 H8 H5 H2 D6 D5 D2 C9 C5 C4 
+Original Hand(East) = ST S9 S6 S3 HA HT H4 D8 D3 CJ C8 C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 1D Pass 1NT 2S 3D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North could lead suit South bid
+>>>>>>>>> NORTH <<<<<<<<<<
+S:Q852  H:852  D:652  C:954
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  -2 Likely Winners (1/-1/-1/-1)
+  15 Likely Losers (3/4/4/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+West bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 1.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East bids 1NT.
+--------------------
+***Bidding Cancelled***
+West bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 1.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East bids 1NT.
+--------------------
+East bids 2S.   <<<<<<<<<<< SOUTH
+--------------------
+South doubles. <<<<<<<<<< WEST
+--------------------
+West bids 3D. 
+--------------------
+Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 12.0+ HCPs, for a total in the partnership of 13.0-22.0 points.
+TKOTR12: But Right-hand opponent has bid after partner's double, so the takeout is no longer in effect.
+TKOTR17: And with only 2.0/1.0 points, we choose to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 3 Diamonds.
+PLYLD18: Lead the D6 Top of nothing.
+PLYSIG0: Partner discarded high with the four, so consider it a suit preference signal.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: South is now known to have started with 1 Diamond.
+PLAYB48: We can't beat West's nine, so discard the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the five.
+PLAY: Play restarted.
+====================
+S:Q852  H:852  D:652  C:954
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  -2 Likely Winners (1/-1/-1/-1)
+  15 Likely Losers (3/4/4/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+
+
+

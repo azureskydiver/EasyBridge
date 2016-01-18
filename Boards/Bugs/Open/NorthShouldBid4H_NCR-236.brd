@@ -1,0 +1,109 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 22,  2010
+File Date =  03/05/10 17:21:11
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S3 HA HQ HJ H8 D6 D5 D4 D3 CK C8 C2 
+Current Hand(West) = ST S5 HT H4 DA DK DQ DJ DT D9 D7 CT C3 
+Current Hand(North) = SQ S8 S7 S6 H9 H7 H6 H5 H2 D8 CA CQ C5 
+Current Hand(East) = SK SJ S9 S4 S2 HK H3 CJ C9 C7 C6 C4 
+Original Hand(South) = SA S3 HA HQ HJ H8 D6 D5 D4 D3 CK C8 C2 
+Original Hand(West) = ST S5 HT H4 DA DK DQ DJ DT D9 D7 CT C3 
+Original Hand(North) = SQ S8 S7 S6 H9 H7 H6 H5 H2 D8 CA CQ C5 
+Original Hand(East) = SK SJ S9 S4 S2 HK H3 D2 CJ C9 C7 C6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = 3D Pass Pass 3H Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- D2 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+NOrth should bid 4H showing Heart support vs bidding Spades
+>>>>>>>>NORTH<<<<<<<<<<
+S:Q876  H:97652  D:8  C:AQ5
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  5 Likely Winners (2/1/0/2)
+  8 Likely Losers (2/4/1/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+West bids 3D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 3 Hearts.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Heart trump support & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 8.0 to 14.0 points)
+F01: Partner, opening in fourth position, is showing 10.0+ points and 2+ QT's.
+I08: Have 8.0/8.0/14.0 points with 5-card support for partner's Hearts (holding 97652), which is too strong for a limit raise, so we have to temporarily shift to Spades with a bid of 3 Spades.  <<<<<<<<<<<<<<<<<<<<<<<???????????  4H better ????
+We bid 3S.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is North; East leads.
+=======================
+
+

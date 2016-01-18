@@ -1,0 +1,167 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 1, 2010
+File Date =  09/02/10 16:32:48
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S6 HK HT H9 DA DK DJ D9 CK C5 C4 C3 
+Current Hand(West) = S2 HQ HJ H8 D8 D7 D5 D4 CA CQ CJ C8 
+Current Hand(North) = SA SK SQ ST S8 S5 HA H5 H3 DQ D6 D3 
+Current Hand(East) = SJ S9 S4 S3 H7 H6 H4 H2 DT D2 CT C7 
+Original Hand(South) = S7 S6 HK HT H9 DA DK DJ D9 CK C5 C4 C3 
+Original Hand(West) = S2 HQ HJ H8 D8 D7 D5 D4 CA CQ CJ C9 C8 
+Original Hand(North) = SA SK SQ ST S8 S5 HA H5 H3 DQ D6 D3 C6 
+Original Hand(East) = SJ S9 S4 S3 H7 H6 H4 H2 DT D2 CT C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass 1S Pass 2D Pass 3S Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- C9 C6 C2 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South bids 6NT without checking for Aces
+>>>>>>> SOUTH <<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:76  H:KT9  D:AKJ9  C:K543
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/3/1)
+  9 Likely Losers (2/3/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+Combined hand (Dummy/Hand):
+  S:AKQT8765 (AKQT85/76)
+  H:AKT953 (A53/KT9)
+  D:AKQJ963 (Q63/AKJ9)
+  C:K543 (/K543)
+Combined hand evaluation:
+  HCPs = 29.0, Distn pts = 5.0;
+  Total pts = 34.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  9 Sure Winners (3/2/4/0)
+  9 Eventual Winners (3/2/4/0)
+  4 Possible Losers (vs. 1 allowable)
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 7 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLDRP11: Lead low with the S6 from hand up to the Ace in dummy to try and drop the SJ.
+PLDM: Playing card from dummy.
+PLDRP61: West did not drop a desired card (the SJ), but perhaps East might, so continue and play the SA from dummy and hope East drops the SJ.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLDRP10: Lead the SK to try and drop the SJ.
+RCP5A: West is now known to have started with 1 Spade.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 6...
+PLRV10: We have only 5 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH30: Cash the SQ from dummy.
+PLCSH72: Our cash of the SQ from dummy is holding, so discard the C3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV10: We have only 4 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLFRC12: Play the ST from dummy to force out the opponents' Jack.
+PLFRC64: We're in the opposite hand of a force play, so discard the C4.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+RCP5A: East is now known to have started with 2 Diamonds.
+RESULT: North/South were set 2 tricks.
+S:76  H:KT9  D:AKJ9  C:K543
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/3/1)
+  9 Likely Losers (2/3/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+West passes.
+--------------------
+North bids 1S.
+--------------------
+East passes.
+--------------------
+We bid 2D.
+--------------------
+West passes.
+--------------------
+North bids 3S.
+--------------------
+East passes.
+--------------------
+Rebidding as responder after bids of 1 Spade, 2 Diamonds, and 3 Spades.
+B4D0: Partner made a jump rebid of his Spade suit to 3 Spades, showing 17.0-21.0 points.
+B4D20: With 14.0/14.0/14.0 pts in hand, for a total in the partnership of 31.0-35.0 pts, we have the points to make game or possibly slam, but so far with no agreed on suit.
+BN1: With 31.0+ HCPs in the partnership and a reasonably balanced hand, and all unbid suits stopped, bid 6 No Trump.
+We bid 6NT.  <<<<<<<<<<<<<<<<<<< Aces????
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 6 No Trump.  Declarer is South; West leads.
+
+

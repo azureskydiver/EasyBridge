@@ -1,0 +1,129 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 29, 2009
+File Date =  08/30/09 16:18:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S6 S4 HJ H9 H4 CA CJ CT C4 C3 
+Current Hand(West) = SA SQ SJ S8 S5 S2 HT D9 C9 C7 C5 
+Current Hand(North) = ST HA HQ H8 H5 DJ DT D6 D5 C8 C2 
+Current Hand(East) = SK S9 S3 HK H7 H6 H3 H2 CK CQ C6 
+Original Hand(South) = S7 S6 S4 HJ H9 H4 D7 D4 CA CJ CT C4 C3 
+Original Hand(West) = SA SQ SJ S8 S5 S2 HT D9 D8 D3 C9 C7 C5 
+Original Hand(North) = ST HA HQ H8 H5 DA DK DJ DT D6 D5 C8 C2 
+Original Hand(East) = SK S9 S3 HK H7 H6 H3 H2 DQ D2 CK CQ C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 9
+Declarer = West
+Bidding History = Pass 2S Pass 2NT Pass 3S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North D7 D3 DK D2 North
+GameTrick #2 = North D4 D8 DA DQ North
+GameTrick #3 = North -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should lead Diamonds, Partner has signaled Hi-Lo in DIamonds and can over trump dummy.
+>>>>>>>> NORTH <<<<<<<<<
+S:T  H:AQ85  D:AKJT65  C:82
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  8 Likely Winners (0/3/5/0)
+  5 Likely Losers (1/1/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South passes.
+--------------------
+West bids 2S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 3-level.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East bids 2NT.
+--------------------
+South passes.
+--------------------
+West bids 3S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 3 Spades.
+PLYLD15: Lead the DK from the top of the { DA DK } sequence.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+PLYLDPRF4: Partner has indicated a preference for the Diamonds suit, so lead the DA.
+RCP20: Dummy is now out of Diamonds.
+PLYSIG6: Partner discarded low with the four after discarding the seven last round, thus marking a high-low suit preference signal.
+PLYLDPRF1: Partner likes the Diamond suit, but dummy can ruff, so skip this suit for now.  
+PLYLDWN2: We'd like to lead the Diamonds suit, but dummy might ruff. <<<<<<<<<<<<<  Maybe Pard can OVER RUFF <<<<<<
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+PLYLDA: With no other obvious plays, cash a winner with the HA.
+
+

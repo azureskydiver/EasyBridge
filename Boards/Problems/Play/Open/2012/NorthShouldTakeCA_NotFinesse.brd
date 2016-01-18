@@ -1,0 +1,127 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  03/31/12 17:19:12
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ ST S8 S7 HQ H6 H4 H2 C5 C4 
+Current Hand(West) = SJ HT DJ DT D9 D6 D5 CT C6 
+Current Hand(North) = HA HK HJ H9 H7 H5 CA CQ C7 C2 
+Current Hand(East) = H8 H3 DK D8 D7 D4 CK CJ C9 C8 
+Original Hand(South) = SQ ST S8 S7 S6 S2 HQ H6 H4 H2 D3 C5 C4 
+Original Hand(West) = SA SK SJ HT DA DJ DT D9 D6 D5 CT C6 C3 
+Original Hand(North) = S9 S4 HA HK HJ H9 H7 H5 DQ CA CQ C7 C2 
+Original Hand(East) = S5 S3 H8 H3 DK D8 D7 D4 D2 CK CJ C9 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = 1D 1H 3D 3H Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = East
+GameTrick #1 = East D3 DA DQ D2 West
+GameTrick #2 = West S2 SA S4 S3 West
+GameTrick #3 = West S6 SK S9 S5 West
+GameTrick #4 = West -- C3 -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 90
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  90		3 Hearts made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should take CA.  The Spades are established and Hearts are an entry.
+>>>>>>>>>>>>NORTH<<<<<<<<<<
+S:94  H:AKJ975  D:Q  C:AQ72
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.0; Total pts = 16.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  7 Likely Winners (0/5/0/2)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+PLAY: Play restarted.
+====================
+S:94  H:AKJ975  D:Q  C:AQ72
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.0; Total pts = 16.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  7 Likely Winners (0/5/0/2)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+Combined hand (Dummy/Hand):
+  S:QT987642 (QT8762/94)
+  H:AKQJ976542 (Q642/AKJ975)
+  D:Q (/Q)
+  C:AQ7542 (54/AQ72)
+Combined hand evaluation:
+  HCPs = 20.0, Distn pts = 7.0;   Total pts = 27.0.
+  QT's = 3.5,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  5 Sure Winners (0/4/0/1)
+  7 Eventual Winners (0/6/0/1)
+  6 Possible Losers (vs. 3 allowable)
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=12 vs SureTricks=11 vs NumWinners=12, m_numTricksShort=-1
+PLRV11: We have 11 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLAFN20: Opportunistically finesse the CQ from hand in second position against East.  <<<<<<<<<<<NO
+
+

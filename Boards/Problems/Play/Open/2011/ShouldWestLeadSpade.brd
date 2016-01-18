@@ -1,0 +1,162 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 11, 2011
+File Date =  11/14/11 10:33:24
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA HQ HJ H6 DA DJ D6 D5 D2 
+Current Hand(West) = S7 S6 S3 H9 H3 DQ DT D8 C7 
+Current Hand(North) = HT H8 H2 D9 D7 CQ CT C9 C6 
+Current Hand(East) = ST S8 HK H7 H4 DK D4 D3 C3 
+Original Hand(South) = S9 S4 HA HQ HJ H6 H5 DA DJ D6 D5 D2 CJ 
+Original Hand(West) = SA S7 S6 S3 S2 H9 H3 DQ DT D8 C8 C7 C4 
+Original Hand(North) = SQ SJ HT H8 H2 D9 D7 CQ CT C9 C6 C5 C2 
+Original Hand(East) = SK ST S8 S5 HK H7 H4 DK D4 D3 CA CK C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 7
+Declarer = South
+Bidding History = Pass Pass 1NT 2H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West CJ C8 C2 CK East
+GameTrick #2 = East H5 C4 C5 CA South
+GameTrick #3 = South S4 SA SJ S5 West
+GameTrick #4 = West S9 S2 SQ SK East
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Should West lead Spade thru singleton Spade?
+>>>>>>>> WEST<<<<<<
+Starting play from restored game.
+------------------------
+S:A7632  H:93  D:QT8  C:874
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  1 Likely Winners (2/0/0/-1)
+  12 Likely Losers (3/2/3/4)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PLAY: Play restarted.
+====================
+S:A7632  H:93  D:QT8  C:874
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  1 Likely Winners (2/0/0/-1)
+  12 Likely Losers (3/2/3/4)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as West against a contract of 2 Hearts.
+PLYLD15: Lead the C8 from the top of the { C8 C7 } sequence.
+PLAY: We lead the C8.
+PLAY: North plays the C2.
+PLAY: East plays the CK.
+PLAY: South plays the CJ.
+PLAY: East wins the round.
+--------
+PLAY: East leads the CA.
+PLAY: South plays the H5.
+RCP10: South shows out of Clubs.
+RCP5A: South is now known to have started with 1 Club.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the four.
+PLDF23: We can't beat the opponent's five of trumps, so discard the C4.
+PLAY: We play the C4.
+PLAY: North plays the C5.
+PLAY: South wins the round.
+--------
+PLAY: South leads the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G4: Keep declarer from finessing the Queen, win now with the Ace.
+PLAY: We play the SA.
+PLAY: North plays the SJ.
+PLAY: East plays the S5.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDB: With no other clear plays available, lead a card from the unbid Spade suit.
+PLAY: We lead the S2.
+PLAY: North plays the SQ.
+RCP20: Dummy is now out of Spades.
+PLAY: East plays the SK.
+PLAY: South plays the S9.
+PLAY: East wins the round.
+--------
+PLAY: East leads the ST.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+PLAY1: Leading card, using default player logic.
+PLYLDB: With no other clear plays available, lead a card from the unbid Spade suit.  <<<<<<<<<<<<<<<<<<<<<<??????????
+PLAY: We lead the S2.
+PLAY: North plays the SQ.
+RCP20: Dummy is now out of Spades.
+PLAY: East plays the SK.
+PLAY: South plays the S9.
+
+

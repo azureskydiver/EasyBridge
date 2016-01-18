@@ -1,0 +1,262 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 15, 2009
+File Date =  10/15/09 20:15:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S3 HQ H9 H6 DT D9 CK CQ CT C9 C8 C6 
+Current Hand(West) = SJ S6 H8 H3 H2 DA DJ D7 D6 D4 D3 D2 C2 
+Current Hand(North) = SA ST S9 S5 S2 HA HK HJ H5 H4 DK D5 CJ 
+Current Hand(East) = SK SQ S8 S4 HT H7 DQ D8 CA C7 C5 C4 C3 
+Original Hand(South) = S7 S3 HQ H9 H6 DT D9 CK CQ CT C9 C8 C6 
+Original Hand(West) = SJ S6 H8 H3 H2 DA DJ D7 D6 D4 D3 D2 C2 
+Original Hand(North) = SA ST S9 S5 S2 HA HK HJ H5 H4 DK D5 CJ 
+Original Hand(East) = SK SQ S8 S4 HT H7 DQ D8 CA C7 C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = ????
+Bidding History = Pass 3D Pass Pass 3H Pass 4S Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+How to bid this??? North should overcall West's 3D openning with 3H.  Here I force bid by bidding Hearts
+>>>> NORTH<<<<<<
+=====================================
+Received hand:
+  S:AT952  H:AKJ54  D:K5  C:J
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 15.5.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (3/4/1/0)
+  5 Likely Losers (2/1/1/1)
+Playing five-card majors, both majors qualify for opening.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+South passes.
+--------------------
+West bids 3D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 4C.
+--------------------
+West passes.
+--------------------
+Responding to partner's  bid of 4 Clubs.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+<<Error>> -- ZA0: fell out of decision loop.  Partner's bid was 4 Clubs; points are 16.0/15.5/15.5, preferred suit is Heart (holding AKJ54).  Returning PASS
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is South; West leads.
+=======================
+PLAY: West leads the SJ.
+PLAY: We play the SA.
+PLAY: East plays the S8.
+PLAY: South plays the S3.
+PLAY: North wins the round.
+--------
+PLAY: We lead the CJ.
+RCP20: Dummy is now out of Clubs.
+PLAY: East plays the C3.
+PLAY: South plays the C6.
+PLAY: West plays the C2.
+PLAY: North wins the round.
+--------
+PLAY: We lead the H4.
+PLAY: East plays the HT.
+PLAY: South plays the HQ.
+PLAY: West plays the H2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CK.
+PLAY: West plays the D3.
+RCP10: West shows out of Clubs.
+RCP5A: West is now known to have started with 1 Club.
+PLAY: We play the S2.
+PLAY: East plays the CA.
+PLAY: East wins the round.
+--------
+PLAY: East leads the D8.
+PLAY: South plays the D9.
+PLAY: West plays the DA.
+PLAY: We play the DK.
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+PLAY: East leads the D8.
+PLAY: South plays the D9.
+PLAY: West plays the DA.
+PLAY: We play the D5.
+PLAY: West wins the round.
+--------
+PLAY: West leads the S6.
+PLAY: We play the S5.
+PLAY: East plays the SQ.
+PLAY: South plays the S7.
+PLAY: East wins the round.
+--------
+PLAY: East leads the DQ.
+PLAY: South plays the DT.
+PLAY: West plays the D2.
+PLAY: We play the DK.
+RCP20: Dummy is now out of Diamonds.
+PLAY: North wins the round.
+--------
+PLAY: We lead the S9.
+PLAY: East plays the SK.
+PLAY: South plays the C8.
+RCP10: South shows out of Spades.
+RCP5A: South is now known to have started with 2 Spades.
+PLAY: West plays the H3.
+RCP10: West shows out of Spades.
+RCP1A: West is now known to have started with  1 Clubs and 2 Spades.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CQ.
+PLAY: West plays the H8.
+PLAY: We play the ST.
+PLAY: East plays the C4.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CT.
+PLAY: West plays the D4.
+PLAY: We play the H5.
+PLAY: East plays the C5.
+PLAY: South wins the round.
+--------
+PLAY: South leads the C9.
+PLAY: West plays the D6.
+PLAY: We play the HJ.
+PLAY: East plays the C7.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H6.
+PLAY: West plays the D7.
+RCP10: West shows out of Hearts.
+RCP1A: West is now known to have started with  1 Clubs and 3 Hearts and 2 Spades.
+RCP1B: Therefore, West started with 7 Diamonds and has 1 left.
+PLAY: We play the HK.
+PLAY: East plays the H7.
+PLAY: North wins the round.
+--------
+PLAY: We lead the HA.
+RCP20: Dummy is now out of Hearts.
+PLAY: East plays the S4.
+RCP10: East shows out of Hearts.
+RCP5A: East is now known to have started with 2 Hearts.
+PLAY: South plays the H9.
+PLAY: West plays the DJ.
+PLAY: North wins the round.
+--------
+RESULT: North/South made the contract.
+=====================================
+Received hand:
+  S:AT952  H:AKJ54  D:K5  C:J
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 15.5.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (3/4/1/0)
+  5 Likely Losers (2/1/1/1)
+Playing five-card majors, both majors qualify for opening.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+West bids 3D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Responding to partner's  bid of 3 Hearts.
+REVAL38: (with 5-card Heart trump support including a trump honor & a doubleton in Diamonds,  & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 15.5 to 21.5 points)
+F01: Partner, opening in fourth position, is showing 10.0+ points and 2+ QT's.
+J20: Have 16.0/15.5/21.5 points; show strength by jump shifting to 4 Spades, even though it's not the preferred suit.
+We bid 4S.
+--------------------
+East passes.
+--------------------
+
+

@@ -1,0 +1,149 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2009
+File Date =  07/07/09 20:27:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S9 S8 HK H9 H8 C7 C6 
+Current Hand(West) = SQ S5 S4 S3 S2 DQ D9 D7 
+Current Hand(North) = SA S6 DK D8 CQ CT C8 C5 
+Current Hand(East) = SK ST S7 DJ D6 D5 C4 C2 
+Original Hand(South) = SJ S9 S8 HA HK HJ H9 H8 H7 H2 CK C7 C6 
+Original Hand(West) = SQ S5 S4 S3 S2 H6 H5 H3 DQ D9 D7 D3 CJ 
+Original Hand(North) = SA S6 HQ H4 DK DT D8 D4 CQ CT C8 C5 C3 
+Original Hand(East) = SK ST S7 HT DA DJ D6 D5 D2 CA C9 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass 1D 1H 1S 1NT 2S 3H Pass 4H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West H2 D3 DT DA South
+GameTrick #2 = South H7 H3 HQ HT North
+GameTrick #3 = North HJ H5 H4 D2 South
+GameTrick #4 = South HA H6 D4 C9 South
+GameTrick #5 = South CK CJ C3 CA East
+GameTrick #6 = East -- -- -- -- North
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  20		1 overtrick"
+Bonus Score Record = "  20		1 overtrick"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  20		1 Club made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should play the D9 to force dummy's DK.   Dummy has DK8
+>>>>>> WEST <<<<<<<<<
+S:Q5432  H:653  D:Q973  C:J
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 3.5.
+  QT's = 0.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  5 Likely Winners (3/0/2/0)
+  8 Likely Losers (2/3/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suits are  Diamonds, Spades
+The best suit is Spades.
+====================
+North passes.
+--------------------
+East bids 1D.
+--------------------
+South bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL38: (with 4-card Diamond trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 3.5 to 9.5 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+F01a: Have 5.0/3.5/9.5 pts with an available 5-card major suit in Spades (Q5432), so bid 1 Spade over partner's minor suit 1 Diamond bid.
+We bid 1S.
+--------------------
+North bids 1NT.
+--------------------
+East bids 2S.
+--------------------
+South bids 3H.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Spade, and 2 Spades.
+REVAL1: Revaluing hand as declarer...
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+B4H11: Partner made a single raise of our Spade suit, showing 12.0-20.0 points with 3+ trump cards.
+B4H18: With only 5.0/3.5/3.5 pts in hand, for a total in the partnership of 15.5-23.5 points, a game is unlikely, so pass.
+We pass.
+--------------------
+North bids 4H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Hearts.
+PLYLD4: Lead the bottom card of partner's Diamond suit (the three.
+RCP5A: South is now known to have started with 0 Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+RCP20: Dummy is now out of Hearts.
+RCP5A: East is now known to have started with 1 Heart.
+PLAYB48: We can't beat South's Jack, so discard the H5.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the six.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Jack.
+PLDF38D: We can't beat dummy in this hand, so discard the seven . <<< NO PLAY D9 
+
+
+

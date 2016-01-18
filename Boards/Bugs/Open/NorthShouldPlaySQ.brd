@@ -1,0 +1,151 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 27, 2010
+File Date =  08/31/10 16:10:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S7 HA HQ H5 H4 DK D9 D8 D7 D3 CJ C8 
+Current Hand(West) = HJ H8 H7 H6 H2 D4 CA CT C9 C6 C3 C2 
+Current Hand(North) = SK SQ ST S9 S5 S2 HT DA DQ DJ D6 D2 CK 
+Current Hand(East) = SA SJ S6 S3 HK H9 H3 DT D5 CQ C7 C5 C4 
+Original Hand(South) = S8 S7 HA HQ H5 H4 DK D9 D8 D7 D3 CJ C8 
+Original Hand(West) = S4 HJ H8 H7 H6 H2 D4 CA CT C9 C6 C3 C2 
+Original Hand(North) = SK SQ ST S9 S5 S2 HT DA DQ DJ D6 D2 CK 
+Original Hand(East) = SA SJ S6 S3 HK H9 H3 DT D5 CQ C7 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass Pass Pass 1S Pass 2D Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- S4 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Hint says to finesse S9 vs play SK
+>>>>>>>> SOUTH<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:87  H:AQ54  D:K9873  C:J8
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 9.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/2/2/0)
+  9 Likely Losers (2/2/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KQT98752 (KQT952/87)
+  H:AQT54 (T/AQ54)
+  D:AKQJ987632 (AQJ62/K9873)
+  C:KJ8 (K/J8)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 7.0;
+  Total pts = 32.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/1/4/0)
+  7 Eventual Winners (1/1/5/0)
+  6 Possible Losers (vs. 2 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 5 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KQT98752 (KQT952/87)
+  H:AQT54 (T/AQ54)
+  D:AKQJ987632 (AQJ62/K9873)
+  C:KJ8 (K/J8)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 7.0;
+  Total pts = 32.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/1/4/0)
+  7 Eventual Winners (1/1/5/0)
+  6 Possible Losers (vs. 2 allowable)
+PLN10: We have only 7 sure tricks against a requirement of 11 for the 5D contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the nine from dummy to finesse against West.
+ Play 2: Pull a round of trumps with the Ace in dummy.
+ Play 3: Ruff a Heart in dummy.
+ Play 4: Ruff a Heart in dummy.
+ Play 5: Ruff a Heart in dummy.
+ Play 6: Ruff a Club in dummy.
+ Play 7: Ruff a Spade in hand.
+ Play 8: Ruff a Spade in hand.
+ Play 9: Ruff a Spade in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Lead a low Club from hand and finesse the King in dummy against East.
+ Play 12: Lead a low Club from dummy and finesse the Jack in hand against West.
+ Play 13: Lead a low Spade from hand and finesse the Queen in dummy against East.
+ Play 14: Lead a low Spade from hand and finesse the King in dummy against East.
+ Play 15: Play the Queen of Spades from dummy to force out the opponents' Ace.
+ Play 16: Play the Queen of Spades from dummy to force out the opponents' Jack.
+ Play 17: Play the Queen of Spades from dummy to force out the opponents' Six.
+ Play 18: Play the Queen of Spades from dummy to force out the opponents' Three.
+ Play 19: Cash the Ace of Hearts in hand.
+ Play 20: Cash the King of Spades in dummy.
+ Play 21: Cash the Ace of Diamonds in dummy.
+ Play 22: Cash the King of Diamonds in hand.
+ Play 23: Cash the Queen of Diamonds in dummy.
+ Play 24: Cash the Jack of Diamonds in dummy.
+ Play 25: Cash the Nine of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the S9 from dummy in second position against East.  <<<<<<<<<<<<<<<< NO  South only has 2 Spades. 
+
+
+
+
+

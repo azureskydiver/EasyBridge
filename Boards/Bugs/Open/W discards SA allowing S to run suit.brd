@@ -1,0 +1,247 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2009
+File Date =  07/04/09 09:54:42
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ ST S8 HA D7 
+Current Hand(West) = HQ H9 H7 DQ D6 D3 
+Current Hand(North) = HT DA DT D8 D4 D2 
+Current Hand(East) = S9 S6 H5 H3 DK DJ 
+Original Hand(South) = SQ SJ ST S8 S5 HA HK H8 D7 CA CK C9 C5 
+Original Hand(West) = SA S7 S4 S2 HQ H9 H7 H4 H2 DQ D6 D3 CT 
+Original Hand(North) = SK HT H6 DA DT D8 D4 D2 CQ CJ C7 C6 C2 
+Original Hand(East) = S9 S6 S3 HJ H5 H3 DK DJ D9 D5 C8 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = Pass Pass 1S Pass 2D Pass 2NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West HK H4 H6 HJ South
+GameTrick #2 = South S5 S2 SK S3 North
+GameTrick #3 = North CA CT C2 C3 South
+GameTrick #4 = South CK H2 C6 C4 South
+GameTrick #5 = South C9 S7 C7 C8 South
+GameTrick #6 = South C5 S4 CJ D9 North
+GameTrick #7 = North H8 SA CQ D5 ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 700
+North/South Game 1 Points = 190
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = " 500		Small slam contract"
+Bonus Score Record = " 200		Bonus for defeating vulnerable contract by 2 tricks"
+Game Score Record = " 190		6 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why would W discard SA? It lets South run his spades later.
+===============================================
+West analysis: 
+S:A742  H:Q9742  D:Q63  C:T
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  6 Likely Winners (2/3/1/0)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Spades.
+====================
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+But we don't have a suit strong enough to overcall with at the 2-level.
+We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+Starting play as left-hand defender.
+Making opening lead as West against a contract of 2 No Trump.
+Lead the fourth card from our best suit (Hearts) -- play the H4.
+We do not have a winner in the Heart suit, so discard low with the two.
+We can't beat South's King, so discard the H2.
+Dummy is now out of Hearts.
+Playing second as defender, using default player logic.
+Play second hand low with the two.
+Dummy is now out of Spades.
+We can't beat South's Ace, so discard the CT.
+Playing second as defender, using default player logic.
+Indicate a preference for the Spade by discarding high with the S7.
+We have no Clubs, so discard the S7.
+West is now known to have started with 1 Club.
+Playing second as defender, using default player logic.
+We have no Clubs, so discard the S4.
+East is now known to have started with 3 Clubs.
+With no cards in the suit led and no trumps, we discard the SA.
+Dummy is now out of Clubs.
+South is now known to have started with 4 Clubs.
+With no cards in the suit led and no trumps, we discard the H7.
+We can't beat North's Ace, so discard the D3.
+Partner's King can win the trick, so discard the D6.
+We can't beat South's Ace, so discard the H9.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the HQ.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the DQ.
+North/South made 3 overtricks.
+Play restarted.
+====================
+S:A742  H:Q9742  D:Q63  C:T
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  6 Likely Winners (2/3/1/0)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Spades.
+====================
+Play restarted.
+====================
+S:A742  H:Q9742  D:Q63  C:T
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  6 Likely Winners (2/3/1/0)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Spades.
+====================
+Starting play as left-hand defender.
+Making opening lead as West against a contract of 2 No Trump.
+Lead the fourth card from our best suit (Hearts) -- play the H4.
+Playing second as defender, using default player logic.
+Play second hand low with the two.
+Dummy is now out of Spades.
+We can't beat South's Ace, so discard the CT.
+Playing second as defender, using default player logic.
+We have no Clubs, so discard the H2.
+West is now known to have started with 1 Club.
+Playing second as defender, using default player logic.
+Indicate a preference for the Spade by discarding high with the S7.
+We have no Clubs, so discard the S7.
+Playing second as defender, using default player logic.
+We have no Clubs, so discard the S4.
+East is now known to have started with 3 Clubs.
+Dummy is now out of Clubs.
+South is now known to have started with 4 Clubs.
+With no cards in the suit led and no trumps, we discard the SA.
+Dummy is now out of Hearts.
+We can't beat South's Ace, so discard the H7.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the H9.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the HQ.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the D3.
+Playing second as defender, using default player logic.
+We have no Spades, so discard the D6.
+Playing second as defender, using default player logic.
+Play our only card in the suit, the Queen.
+Dummy is now out of Diamonds.
+North/South made 5 overtricks.
+Play restarted.
+====================
+S:A742  H:Q9742  D:Q63  C:T
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  6 Likely Winners (2/3/1/0)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Spades.
+====================
+Starting play as left-hand defender.
+Making opening lead as West against a contract of 2 No Trump.
+Lead the fourth card from our best suit (Hearts) -- play the H4.
+Playing second as defender, using default player logic.
+Play second hand low with the two.
+Dummy is now out of Spades.
+We can't beat South's Ace, so discard the CT.
+Playing second as defender, using default player logic.
+We have no Clubs, so discard the H2.
+West is now known to have started with 1 Club.
+Playing second as defender, using default player logic.
+Indicate a preference for the Spade by discarding high with the S7.
+We have no Clubs, so discard the S7.
+Playing second as defender, using default player logic.
+We have no Clubs, so discard the S4.
+East is now known to have started with 3 Clubs.
+Dummy is now out of Clubs.
+South is now known to have started with 4 Clubs.
+With no cards in the suit led and no trumps, we discard the SA.
+
+

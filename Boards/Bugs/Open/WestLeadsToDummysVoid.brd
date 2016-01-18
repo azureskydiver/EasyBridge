@@ -1,0 +1,139 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 6, 2009
+File Date =  06/08/09 11:57:13
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S6 HA HT H4 H2 D9 D3 CK C5 
+Current Hand(West) = S8 HJ H8 DQ DT D7 D6 CQ C4 
+Current Hand(North) = H7 DA D8 D4 D2 CJ CT C9 C8 
+Current Hand(East) = SK SQ ST HQ H9 DK DJ D5 C6 
+Original Hand(South) = S6 S5 S4 HA HK HT H4 H2 D9 D3 CK C5 C2 
+Original Hand(West) = SJ S8 S3 HJ H8 H6 DQ DT D7 D6 CA CQ C4 
+Original Hand(North) = SA S7 H7 H5 DA D8 D4 D2 CJ CT C9 C8 C7 
+Original Hand(East) = SK SQ ST S9 S2 HQ H9 H3 DK DJ D5 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass Pass 1C 1S 2H Pass 3D Pass 3H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S4 S3 SA S9 North
+GameTrick #2 = North HK H6 H5 H3 South
+GameTrick #3 = South S5 SJ S7 S2 West
+GameTrick #4 = West C2 CA C7 C3 West
+GameTrick #5 = West -- -- -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads to dummy's void???
+>>> WEST <<<
+S:J83  H:J86  D:QT76  C:AQ4
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/2/2)
+  9 Likely Losers (3/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+South passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1C.
+--------------------
+East bids 1S.
+--------------------
+South bids 2H.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL38: (with 3-card Spade trump support including a trump honor, the hand is revalued for a suit contract as dummy from 9.0 to 10.5 points)
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Spade suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 17.5-24.5 points.
+ROVRC20: This is insufficient to raise partner, so pass.
+We pass.
+--------------------
+North bids 3D.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Hearts.
+PLYLD4: Lead the bottom card of partner's Spade suit (the three.
+PLAYB48: We can't beat South's King, so discard the H6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G2: There's a chance highcard will be picked up next trick, so win now with the Jack.
+RCP20: Dummy is now out of Spades.
+PLYLDPRF1: Partner likes the Spade suit, but dummy can ruff, so skip this suit for now.
+PLCSW9: With no other good options, cash a winner in the Club suit, the Ace
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLYLDPRF1: Partner likes the Spade suit, but dummy can ruff, so skip this suit for now.
+PLYLDC: Lead the singleton S8 in the hopes of setting up a ruff later.
+
+

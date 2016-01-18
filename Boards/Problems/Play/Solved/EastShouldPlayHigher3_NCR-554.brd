@@ -1,0 +1,131 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2011
+File Date =  10/28/11 13:16:02
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S5 S4 HK H6 H3 C8 C6 
+Current Hand(West) = SK ST DK D8 D6 CK CT C9 
+Current Hand(North) = S8 S7 H9 H7 DQ DJ CA C2 
+Current Hand(East) = SJ HA HQ HT H8 H5 CJ C7 
+Original Hand(South) = SQ S5 S4 S3 HK HJ H6 H3 DA D3 C8 C6 C3 
+Original Hand(West) = SK ST S9 S6 DK D8 D6 D5 D4 CK CT C9 C5 
+Original Hand(North) = SA S8 S7 H9 H7 H4 DQ DJ DT D9 CA CQ C2 
+Original Hand(East) = SJ S2 HA HQ HT H8 H5 H2 D7 D2 CJ C7 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1D 2H 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West D3 D5 D9 D2 North
+GameTrick #2 = North DA D4 DT D7 South
+GameTrick #3 = South C3 C5 CQ C4 North
+GameTrick #4 = North HJ S9 H4 H2 South
+GameTrick #5 = South S3 S6 SA S2 North
+GameTrick #6 = North -- -- -- -- North
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should play high, West has shown out
+>>>>> EAST<<<<<
+S:J2  H:AQT852  D:72  C:J74
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  4 Likely Winners (0/4/0/0)
+  9 Likely Losers (2/2/2/3)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+West passes.
+--------------------
+North bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCW1: With 8.0 pts and a 6-card Heart suit, make a weak jump overcall to 2 Hearts.
+We bid 2H.
+--------------------
+South bids 2NT.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the two.
+PLDF48: We can't beat North's D9, so discard the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the seven.
+PLAYB48: We can't beat North's Queen, so discard the C4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+RCP5A: West is now known to have started with 0 Hearts.   <<<<<<<<<<<<<<<<<<<<<<<<<<< NOTE
+PLAYB48: We can't beat North's Ace, so discard the S2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the five.  >>>>>>>>>>>>>>>> No, West is out <<<<<<<<<<<<<
+
+
+
+

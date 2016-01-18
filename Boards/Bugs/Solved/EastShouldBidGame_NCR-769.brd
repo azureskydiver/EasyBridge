@@ -1,0 +1,164 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = October 22, 2015
+File Date =  10/23/15 10:13:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 HA HT H9 H6 DA D6 D2 CK CQ C9 C3 C2 
+Current Hand(West) = SA SQ ST S9 S5 S3 HQ DQ D4 CJ CT C6 C4 
+Current Hand(North) = S8 HJ H7 H5 H4 H2 DT D8 D7 D5 C7 C5 
+Current Hand(East) = SK SJ S6 S4 S2 HK H8 H3 DK D9 CA C8 
+Original Hand(South) = S7 HA HT H9 H6 DA D6 D2 CK CQ C9 C3 C2 
+Original Hand(West) = SA SQ ST S9 S5 S3 HQ DQ D4 CJ CT C6 C4 
+Original Hand(North) = S8 HJ H7 H5 H4 H2 DJ DT D8 D7 D5 C7 C5 
+Original Hand(East) = SK SJ S6 S4 S2 HK H8 H3 DK D9 D3 CA C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 2S Pass 2NT Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- DJ D3 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East could bid 4Spades
+>>>>>>EAST<<<<<<
+S:KJ642  H:K83  D:K93  C:A8
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 14.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (3/1/1/1)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+West bids 2S.
+--------------------
+North passes.
+--------------------
+B00 Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 5-card Spade trump support including a trump honor & a doubleton in Clubs, the hand is revalued for a suit contract as dummy from 14.0 to 19.0 points.
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.5-10.5 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+RWKT15: We have 14.0/14.0/14.0 points, for a partnership total of 19.5-24.5 points, so we are interested in game if a good fit can be found.
+RWKT21: And we like partner's Spade suit (holding KJ642 support), but with only 19.5-24.5 total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.
+We bid 2NT.
+--------------------
+South passes.
+--------------------
+West bids 3S.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 2 Spades, 2 No Trump, and 3 Spades.
+RWKT2B5: Partner has returned to his original Spade suit, indicating no interest in game, so we pass.  <<<<<<<<<?????
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is West; North leads.
+=======================
+RCP20: Dummy is now out of Diamonds.
+RCP5A: West is now known to have started with 2 Diamonds.
+RCP20: Dummy is now out of Clubs.
+PLAYB10: We let partner's S3 trump ride and discard the H8.
+RCP5A: North is now known to have started with 2 Clubs.
+RCP20: Dummy is now out of Hearts.
+RCP5A: South is now known to have started with 1 Spade.
+PLYLDDa: With no other obvious plays, play SK.
+RCP20: Dummy is now out of Spades.
+RESULT: East/West made 2 overtricks.
+
+>>>>>>>>> WEST<<<<<<<<
+S:AQT953  H:Q  D:Q4  C:JT64
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-2.0; Total pts = 10.0.
+  QT's = 1.5,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  5 Likely Winners (4/0/0/1)
+  8 Likely Losers (2/1/2/3)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+Opening bid for team.
+WEAK2: Have a good 6-card Spade suit with 11.0/10.0 points (less than normal opening requirements), so bid a weak 2 Spades.
+We bid 2S.
+--------------------
+North passes.
+--------------------
+East bids 2NT.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 2 Spades and partner's response of 2 No Trump.
+HRWT40: Partner responded to our opening weak 2 Spades bid with 2NT, showing a trump fit and asking for an outside Ace or King.
+HRWT42: Unfortunately, we have no outside Aces or Kings, so bail out at 3 Spades.
+We bid 3S.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is West; North leads.
+

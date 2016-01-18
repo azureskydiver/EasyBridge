@@ -1,0 +1,110 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 24, 2015
+File Date =  02/14/15 13:24:02
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S7 S3 
+Current Hand(West) = SQ SJ DJ 
+Current Hand(North) = SK S6 S4 S2 
+Current Hand(East) = S8 S5 DT D7 
+Original Hand(South) = SA S7 S3 HA HK HQ H2 D9 D6 CJ C7 C5 C4 
+Original Hand(West) = SQ SJ ST S9 H9 H5 DJ D8 D4 D3 CT C9 C3 
+Original Hand(North) = SK S6 S4 S2 HJ H8 H4 DA DQ CK CQ C6 C2 
+Original Hand(East) = S8 S5 HT H7 H6 H3 DK DT D7 D5 D2 CA C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1C Pass 1S Pass 2H Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East D6 D8 DQ D5 North
+GameTrick #2 = North CJ C3 C2 C8 South
+GameTrick #3 = South C4 C9 CQ CA East
+GameTrick #4 = East D9 D3 DA DK North
+GameTrick #5 = North C5 CT CK H3 North
+GameTrick #6 = North C7 S9 C6 D2 South
+GameTrick #7 = South H2 H9 HJ H6 North
+GameTrick #8 = North HA H5 H4 H7 South
+GameTrick #9 = South HK D4 H8 HT South
+GameTrick #10 = South HQ ST -- -- ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 80
+North/South Game 1 Points = 100
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 110
+East/West Game 1 Points = 90
+East/West Game 2 Points = 90
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = "  20		1 overtrick, vulnerable"
+Game Score Record = "	  90	3 Hearts made"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "	  90	3 Hearts made"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should save Spade to guard Queen
+>>WEST<<<<<<<<<
+PL03: Starting play as right-hand defender.
+PLDF40a: Play higher with the eight.
+PLAYB48: We can't beat South's Jack, so discard the C3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the nine.
+RCP20: Dummy is now out of Diamonds.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the three.
+PLDF47: Partner's DK can win the trick, so discard the D3.
+RCP5A: East is now known to have started with 2 Clubs.
+RCP20: Dummy is now out of Clubs.
+PLDIS40: Indicate a preference for the Spade by discarding high with the S9.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S9.
+RCP5A: West is now known to have started with 3 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2F1: Play the nine to prevent it from being captured next lead.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the D4.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the ST.  <<<<<<<< NO discard Diamond
+
+

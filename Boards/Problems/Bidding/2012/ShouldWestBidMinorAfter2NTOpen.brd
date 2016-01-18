@@ -1,0 +1,208 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  04/15/12 19:48:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SQ ST S6 S3 H2 DK DJ D9 D4 D3 C6 C4 
+Current Hand(West) = SJ S4 S2 HQ HT H8 H4 H3 CK CT C8 C7 C3 
+Current Hand(North) = S5 HK H7 H5 DT D8 D7 D6 D2 C9 C5 C2 
+Current Hand(East) = S8 S7 HA HJ H9 H6 DA DQ D5 CA CQ CJ 
+Original Hand(South) = SK SQ ST S6 S3 H2 DK DJ D9 D4 D3 C6 C4 
+Original Hand(West) = SJ S4 S2 HQ HT H8 H4 H3 CK CT C8 C7 C3 
+Original Hand(North) = S9 S5 HK H7 H5 DT D8 D7 D6 D2 C9 C5 C2 
+Original Hand(East) = SA S8 S7 HA HJ H9 H6 DA DQ D5 CA CQ CJ 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 6
+Declarer = West
+Bidding History = 2NT Pass 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- S9 SA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 30
+East/West Game 1 Points = 70
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "	  70	2 No Trump made"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Qhy would West bid clubs.. a minor.. vs hearts?
+============
+S:J42  H:QT843  D:T965  C:KT873
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 4.5.
+  QT's = 0.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  4 Likely Winners (0/2/0/2)
+  9 Likely Losers (3/3/0/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Clubs.
+====================
+East bids 2NT.
+--------------------
+South passes.
+--------------------
+B00 Responding to partner's opening bid of 2 No Trump.
+Partner's bid indicates 22-24 points with balanced hand.
+Have 6.0/4.5 points with a 5-card minor Club suit, so bid3 Clubs.
+We bid 3C.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is West; North leads.
+=======================
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AJ8742 (A87/J42)
+  H:AQJT98643 (AJ96/QT843)
+  D:AQ5 (AQ5/)
+  C:AKQJT873 (AQJ/KT873)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 3.0;
+  Total pts = 31.0.
+  QT's = 6.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (1/1/1/5)
+  11 Eventual Winners (1/4/1/5)
+  2 Possible Losers (vs. 4 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 3 Clubs.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AJ8742 (A87/J42)
+  H:AQJT98643 (AJ96/QT843)
+  D:AQ5 (AQ5/)
+  C:AKQJT873 (AQJ/KT873)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 3.0;
+  Total pts = 31.0.
+  QT's = 6.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (1/1/1/5)
+  11 Eventual Winners (1/4/1/5)
+  2 Possible Losers (vs. 4 allowable)
+We have 11 sure tricks against a requirement of 9 for the 3C contract.
+The Heart suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in dummy.
+ Play 2: Pull a round of trumps with the Queen in dummy.
+ Play 3: Pull a round of trumps with the Jack in dummy.
+ Play 4: Pull a round of trumps with the King in hand if necessary.
+ Play 5: Pull a round of trumps with the ten in hand if necessary.
+ Play 6: Lead a low Heart from hand to finesse the nine in dummy against South, with the Ace as cover.
+ Play 7: Lead a low Heart from hand to finesse the Jack in dummy against South, with the Ace as cover.
+ Play 8: Lead the Heart Queen from hand and finesse it, with the Ace in dummy as cover.
+ Play 9: Play the Queen of Hearts from hand to force out the opponents' King.
+ Play 10: Cash the Ace of Hearts in dummy.
+ Play 11: Ruff a Diamond in hand.
+ Play 12: Ruff a Diamond in hand.
+ Play 13: Cash the Ace of Diamonds in dummy.
+ Play 14: Cash the Ace of Spades in dummy.
+ Play 15: Cash the Ace of Clubs in dummy.
+ Play 16: Cash the Queen of Clubs in dummy.
+ Play 17: Cash the Jack of Clubs in dummy.
+ Play 18: Cash the King of Clubs in hand.
+ Play 19: Cash the Ten of Clubs in hand.
+The planning is complete.
+---------------------------
+The opponents led a Spade, so cash the Ace now.
+East analysis: 
+====================
+S:A87  H:AJ96  D:AQ5  C:AQJ
+Hand evaluation:
+  HCPs = 22.0, Distn pts = 0.0, Bonus/Penalty = 1.0/0.0;
+Total pts = 23.0.
+  QT's = 5.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/2/1/2)
+  8 Likely Losers (3/2/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+Opening bid for team.
+Have 22.0 HCP's with a balanced hand.
+This meets the rqmts for a 2NT opening (22-24), so bid 2NT.
+We bid 2NT.
+--------------------
+South passes.
+--------------------
+West bids 3C.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 2 No Trump and partner's response of 3 Clubs.
+Partner made a response which we don't understand; simply pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is West; North leads.
+=======================
+
+

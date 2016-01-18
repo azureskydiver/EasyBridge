@@ -1,0 +1,125 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1,  2010
+File Date =  02/09/10 17:23:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S3 HQ HJ H9 H6 H5 H2 DA C8 
+Current Hand(West) = SA S6 S5 S4 S2 HA H7 DQ D4 CQ CT 
+Current Hand(North) = SK SJ S7 HK H4 H3 DJ D8 D6 D3 D2 
+Current Hand(East) = ST S8 HT H8 DK DT D9 D7 D5 C6 C5 
+Original Hand(South) = SQ S9 S3 HQ HJ H9 H6 H5 H2 DA C8 C7 C4 
+Original Hand(West) = SA S6 S5 S4 S2 HA H7 DQ D4 CK CQ CT C2 
+Original Hand(North) = SK SJ S7 HK H4 H3 DJ D8 D6 D3 D2 C9 C3 
+Original Hand(East) = ST S8 HT H8 DK DT D9 D7 D5 CA CJ C6 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 8
+Declarer = South
+Bidding History = Pass Pass 2H Pass 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West C4 CK C3 CJ West
+GameTrick #2 = West C7 C2 C9 CA East
+GameTrick #3 = East -- -- -- -- North
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 550
+North/South Game 1 Points = 180
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 350
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = " 500		Small slam contract"
+Bonus Score Record = "	 300	Bonus for defeating vulnerable contract by 3 tricks"
+Game Score Record = " 180		6 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East led a club to dummy's void allowing a ruff
+>>>> EAST<<<<
+S:T8  H:T8  D:KT975  C:AJ65
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/3/2)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+North passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 2H.
+--------------------
+West passes.
+--------------------
+North bids 3H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF36: Partner's King is high or we can't beat the highest card, so discard the CJ.
+RCP20: Dummy is now out of Clubs.
+PLDF40a: Play higher with the Ace.
+PLYLDRT1: We'd like to return partner's Clubs suit, but dummy might ruff.  <<<<<<<<<<<<<<<<<< YES
+PLYLDRT8: Return partner's Club suit with the five.  <<<<<<<<<<< WHY ??????????
+

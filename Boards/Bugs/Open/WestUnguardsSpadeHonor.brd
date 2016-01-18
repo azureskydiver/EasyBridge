@@ -1,0 +1,177 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 18,  2009
+File Date =  12/29/09 13:36:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S6 S5 S3 
+Current Hand(West) = SQ SJ S4 HK HQ 
+Current Hand(North) = SK S8 S7 DK CA 
+Current Hand(East) = H9 H7 DJ D9 D8 
+Original Hand(South) = SA ST S6 S5 S3 H4 H3 H2 DT D6 CQ CJ C9 
+Original Hand(West) = SQ SJ S9 S4 S2 HK HQ HJ H8 H5 D5 C6 C5 
+Original Hand(North) = SK S8 S7 HT DA DK DQ D2 CA CT C7 C3 C2 
+Original Hand(East) = HA H9 H7 H6 DJ D9 D8 D7 D4 D3 CK C8 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1D Pass 1S Pass 3C Pass 4C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East DT D5 D2 D7 South
+GameTrick #2 = South CQ C5 C2 CK East
+GameTrick #3 = East H2 H8 HT HA East
+GameTrick #4 = East H3 HJ C3 H6 North
+GameTrick #5 = North CJ C6 C7 C4 South
+GameTrick #6 = South C9 S9 CT C8 North
+GameTrick #7 = North D6 H5 DA D3 North
+GameTrick #8 = North H4 S2 DQ D4 North
+GameTrick #9 = North -- -- -- -- North
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West unguards Spades when N-S are void in Hearts
+>>>>>>>> WEST<<<<<<<<<<<
+S:QJ942  H:KQJ85  D:5  C:65
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  7 Likely Winners (3/4/0/0)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, both majors qualify for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1D.
+--------------------
+East passes.
+--------------------
+South bids 1NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 2C.
+--------------------
+East passes.
+--------------------
+S:QJ942  H:KQJ85  D:5  C:65
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  7 Likely Winners (3/4/0/0)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, both majors qualify for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+***Bidding restarted***
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 1D.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 3C.
+--------------------
+East passes.
+--------------------
+South bids 4C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is North; East leads.
+=======================
+Starting play as right-hand defender.
+Play our only card in the suit, the five.
+Playing second as defender, using default player logic.
+Play second hand low with the five.
+Since we can win the next round of Hearts, we want to signal by discarding high in the suit.
+Begin the high-low signal with the eight.
+Partner's Ace can win the trick, so discard the H8.
+Partner's six might not win the round, so top it with the Jack.
+North is now known to have started with 1 Heart.   <<<<<<<<<<<< North VOID in hearts !!!!!!!!!!!!!!!!
+Dummy is now out of Clubs.
+Playing second as defender, using default player logic.
+Indicate a preference for the Spade by discarding high with the S9.
+We have no Clubs and no trumps, so discard the S9.
+West is now known to have started with 2 Clubs.
+East is now known to have started with 3 Clubs.
+With no cards in the suit led and no trumps, we discard the S2.
+Dummy is now out of Diamonds.
+With no cards in the suit led and no trumps, we discard the H5.
+With no cards in the suit led and no trumps, we discard the S4.   <<<<<<<<<<< NO need to protect SQ
+With no cards in the suit led and no trumps, we discard the HQ.
+We can't beat North's King, so discard the SJ.
+Dummy is now out of Spades.
+Playing second as defender, using default player logic.
+We have no Spades and no trumps, so discard the HK.
+North/South made 1 overtrick.
+
+

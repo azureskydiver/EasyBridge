@@ -1,0 +1,141 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 21, 2009
+File Date =  06/22/09 19:51:29
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK HQ HJ HT H8 H4 DA DK DT D8 D7 D3 C2 
+Current Hand(West) = SA SQ S8 S4 S3 S2 DQ D9 D2 CQ C7 C3 
+Current Hand(North) = ST S7 S5 HK H7 H6 H3 H2 D4 CK CJ CT C9 
+Current Hand(East) = SJ S9 S6 HA H5 DJ D6 D5 CA C8 C6 C5 C4 
+Original Hand(South) = SK HQ HJ HT H8 H4 DA DK DT D8 D7 D3 C2 
+Original Hand(West) = SA SQ S8 S4 S3 S2 H9 DQ D9 D2 CQ C7 C3 
+Original Hand(North) = ST S7 S5 HK H7 H6 H3 H2 D4 CK CJ CT C9 
+Original Hand(East) = SJ S9 S6 HA H5 DJ D6 D5 CA C8 C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 15
+Declarer = South
+Bidding History = Pass Pass 1C 1D 1S Pass 2S 3H 3S Pass Pass 4D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- H9 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 150
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North didn't change suit to Hearts with 5 Hearts after South bid Diamonds and Hearts and then Diamonds.
+>>>>>>>> NORTH <<<<<<<<<<
+S:T75  H:K7632  D:4  C:KJT9
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (0/3/0/2)
+  8 Likely Losers (3/2/1/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1C.
+--------------------
+South bids 1D.
+--------------------
+West bids 1S.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Diamond suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 13.0-20.0 points.
+ROVRC99: We have insufficient strength for either a raise, suit shift, or NT bid, so pass.
+We pass.
+--------------------
+East bids 2S.
+--------------------
+South bids 3H.
+--------------------
+West bids 3S.
+--------------------
+Rebidding as responder after bids of 1 Diamond, Pass, and 3 Hearts.
+B4Z00: Partner made a response which we don't understand; simply pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 4D.
+--------------------
+West passes.
+--------------------
+Responding to partner's  bid of 4 Diamonds.
+<<Error>> -- ZA0: fell out of decision loop.  Partner's bid was 4 Diamonds; points are 7.0/6.0/6.0, preferred suit is Heart (holding K7632).  Returning PASS
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Diamonds.  Declarer is South; West leads.
+=======================
+
+

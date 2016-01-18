@@ -1,0 +1,272 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 4, 2009
+File Date =  09/04/09 20:02:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S4 HQ H7 H5 H3 DK DT D9 CQ C9 C2 
+Current Hand(West) = SA ST S6 S2 HK H2 DA DQ DJ D8 D4 CT C7 
+Current Hand(North) = SK SJ S8 S7 S5 S3 HJ H8 H6 H4 D3 D2 
+Current Hand(East) = HA HT H9 D7 D6 D5 CA CK C8 C6 C4 C3 
+Original Hand(South) = SQ S9 S4 HQ H7 H5 H3 DK DT D9 CQ C9 C2 
+Original Hand(West) = SA ST S6 S2 HK H2 DA DQ DJ D8 D4 CT C7 
+Original Hand(North) = SK SJ S8 S7 S5 S3 HJ H8 H6 H4 D3 D2 C5 
+Original Hand(East) = HA HT H9 D7 D6 D5 CA CK CJ C8 C6 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = West
+Bidding History = 1D Pass 2C Pass 2D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- C5 CJ South
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should take CA vs finesse since only 2 clubs in hand.
+>>>>>>>>> WEST <<<<<<<<<<<
+S:AT62  H:K2  D:AQJ84  C:T7
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (2/1/4/0)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+North passes.
+--------------------
+East bids 2C.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 2 Clubs.
+B3W00: Partner has made a 2 over 1 bid, Clubs over Diamonds, which shows 9.5-17.5 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+B3W36: With a rebiddable Diamond suit and poor support for partner's Clubs (holding T7), rebid 2 Diamonds.
+We bid 2D.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is West; North leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AT62 (/AT62)
+  H:AKT92 (AT9/K2)
+  D:AQJ87654 (765/AQJ84)
+  C:AKJT87643 (AKJ8643/T7)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 3.0;
+  Total pts = 29.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (1/2/1/2)
+  11 Eventual Winners (1/2/2/6)
+  2 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AT62 (/AT62)
+  H:AKT92 (AT9/K2)
+  D:AQJ87654 (765/AQJ84)
+  C:AKJT87643 (AKJ8643/T7)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 3.0;
+  Total pts = 29.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (1/2/1/2)
+  11 Eventual Winners (1/2/2/6)
+  2 Possible Losers (vs. 5 allowable)
+PLN10: We have 11 sure tricks against a requirement of 8 for the 2D contract.
+six to winners.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, cashing the HA, HK, SA, CA, CK and CJ, and ruffing 1 card(s).
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Jack from dummy to finesse against North.
+ Play 2: Pull a round of trumps with the seven in dummy if necessary.
+ Play 3: Pull a round of trumps with the eight in hand if necessary.
+ Play 4: Pull a round of trumps with the Jack in hand.
+ Play 5: Pull a round of trumps with the Queen in hand.
+ Play 6: Pull a round of trumps with the Ace in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Spade in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Ruff a Spade in dummy.
+ Play 11: Ruff a Heart in hand.
+ Play 12: Cash the King of Hearts in hand.
+ Play 13: Cash the Ace of Hearts in dummy.
+ Play 14: Cash the Ace of Spades in hand.
+ Play 15: Cash the Ten of Clubs in hand.
+ Play 16: Cash the Seven of Clubs in hand.
+ Play 17: Cash the Eight of Clubs in dummy.
+ Play 18: Cash the Jack of Clubs in dummy.
+ Play 19: Cash the King of Clubs in dummy.
+ Play 20: Cash the Ace of Clubs in dummy.
+ Play 21: Cash the Ace of Diamonds in hand.
+ Play 22: Cash the Queen of Diamonds in hand.
+ Play 23: Play the CA from Dummy to try and drop the CQ.
+ Play 24: Lead a low Heart from hand to finesse the ten in dummy against South, with the Ace as cover.
+ Play 25: Lead the Heart ten from dummy and finesse it, with the King in hand as cover.
+ Play 26: Play the Ten of Clubs from hand to force out the opponents' Queen.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the CJ from dummy in second position against South.
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's Queen, so discard the C7.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 7 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the HA, HK, SA, CA, CK, CT and C8.
+PINTLV: Interleaving plays...
+PLCSH55: The opponents led a Club, so cash the ten now.
+RCP5A: North is now known to have started with 1 Club.
+PLDM: Playing card from dummy.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH82: The suit was trumped, so abandon the cashing play for this round.
+PLYTRY: No usable plays found for the current situation.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AT62 (/AT62)
+  H:AKT92 (AT9/K2)
+  D:AQJ87654 (765/AQJ84)
+  C:AKJT87643 (AKJ8643/T7)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 3.0;
+  Total pts = 29.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (1/2/1/2)
+  11 Eventual Winners (1/2/2/6)
+  2 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AT62 (/AT62)
+  H:AKT92 (AT9/K2)
+  D:AQJ87654 (765/AQJ84)
+  C:AKJT87643 (AKJ8643/T7)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 3.0;
+  Total pts = 29.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (1/2/1/2)
+  11 Eventual Winners (1/2/2/6)
+  2 Possible Losers (vs. 5 allowable)
+PLN10: We have 11 sure tricks against a requirement of 8 for the 2D contract.
+six to winners.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, cashing the HA, HK, SA, CA, CK and CJ, and ruffing 1 card(s).
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Jack from dummy to finesse against North.
+ Play 2: Pull a round of trumps with the seven in dummy if necessary.
+ Play 3: Pull a round of trumps with the eight in hand if necessary.
+ Play 4: Pull a round of trumps with the Jack in hand.
+ Play 5: Pull a round of trumps with the Queen in hand.
+ Play 6: Pull a round of trumps with the Ace in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Spade in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Ruff a Spade in dummy.
+ Play 11: Ruff a Heart in hand.
+ Play 12: Cash the King of Hearts in hand.
+ Play 13: Cash the Ace of Hearts in dummy.
+ Play 14: Cash the Ace of Spades in hand.
+ Play 15: Cash the Ten of Clubs in hand.
+ Play 16: Cash the Seven of Clubs in hand.
+ Play 17: Cash the Eight of Clubs in dummy.
+ Play 18: Cash the Jack of Clubs in dummy.
+ Play 19: Cash the King of Clubs in dummy.
+ Play 20: Cash the Ace of Clubs in dummy.
+ Play 21: Cash the Ace of Diamonds in hand.
+ Play 22: Cash the Queen of Diamonds in hand.
+ Play 23: Play the CA from Dummy to try and drop the CQ.
+ Play 24: Lead a low Heart from hand to finesse the ten in dummy against South, with the Ace as cover.
+ Play 25: Lead the Heart ten from dummy and finesse it, with the King in hand as cover.
+ Play 26: Play the Ten of Clubs from hand to force out the opponents' Queen.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the CJ from dummy in second position against South.
+
+

@@ -1,0 +1,125 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 8,  2010
+File Date =  04/13/10 17:16:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S6 H8 H2 DA D5 D4 CK CQ CJ CT C3 
+Current Hand(West) = SK S8 S7 S3 HQ H7 H4 DQ DJ CA C5 C4 C2 
+Current Hand(North) = SJ ST S9 S4 S2 HT H3 D8 D7 D6 D3 C9 C8 
+Current Hand(East) = S5 HA HK HJ H9 H6 H5 DK DT D9 D2 C7 C6 
+Original Hand(South) = SA SQ S6 H8 H2 DA D5 D4 CK CQ CJ CT C3 
+Original Hand(West) = SK S8 S7 S3 HQ H7 H4 DQ DJ CA C5 C4 C2 
+Original Hand(North) = SJ ST S9 S4 S2 HT H3 D8 D7 D6 D3 C9 C8 
+Original Hand(East) = S5 HA HK HJ H9 H6 H5 DK DT D9 D2 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Starting play from restored game.
+------------------------
+S:AQ6  H:82  D:A54  C:KQJT3
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (1/0/0/4)
+  8 Likely Losers (2/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+S:AQ6  H:82  D:A54  C:KQJT3
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (1/0/0/4)
+  8 Likely Losers (2/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+East bids 1H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+A00: Have 16.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+
+
+>>>>>>>>>>>>>>> AFTER CODE Change<<<<<<<<<<<
+S:AQ6  H:82  D:A54  C:KQJT3
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (1/0/0/4)
+  8 Likely Losers (2/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+North passes.
+--------------------
+East bids 1H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+A00: Have 16.0 HCP's with a balanced hand.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.   <<<<<<<<<<<<<<<<< NO, how about 2 Clubs?
+
+
+
+

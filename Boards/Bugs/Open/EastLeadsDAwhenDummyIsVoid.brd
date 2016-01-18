@@ -1,0 +1,145 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 11,  2010
+File Date =  03/14/10 14:58:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S5 S2 HA H9 H8 H7 H4 H3 
+Current Hand(West) = SK SJ S6 H2 DT D4 CJ CT C6 C3 
+Current Hand(North) = SA ST S7 HK HQ HJ HT H5 DK D7 
+Current Hand(East) = S8 S4 S3 H6 DQ DJ D9 D5 C4 
+Original Hand(South) = SQ S9 S5 S2 HA H9 H8 H7 H4 H3 D6 CQ C5 
+Original Hand(West) = SK SJ S6 H2 DT D4 D2 CA CK CJ CT C6 C3 
+Original Hand(North) = SA ST S7 HK HQ HJ HT H5 DK D7 D3 C7 C2 
+Original Hand(East) = S8 S4 S3 H6 DA DQ DJ D9 D8 D5 C9 C8 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = 1C 1H 2D 3H 4C 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = East
+GameTrick #1 = East CQ CK C2 C9 West
+GameTrick #2 = West C5 CA C7 C8 West
+GameTrick #3 = West D6 D2 D3 D8 East
+GameTrick #4 = East -- -- -- DA ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should NOT lead DA when DMY is Void
+>>>>>>>> EAST<<<<<<<<<
+=====================================
+Received hand:
+  S:843  H:6  D:AQJ985  C:984
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  5 Likely Winners (0/0/5/0)
+  8 Likely Losers (3/1/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+West bids 1C.
+--------------------
+North bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 3 point(s) for the solid Diamond suit.
+2REVAL38: (with 3-card Club trump support & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 8.0 to 10.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+H08: Have 7.0/8.0/10.0 points  but prefer to show our own Diamond suit instead of raising a minor, so bid 2 Diamonds.
+We bid 2D.
+--------------------
+South bids 3H.
+--------------------
+West bids 4C.
+--------------------
+North bids 4H.
+--------------------
+Rebidding as responder after bids of 1 Club, 2 Diamonds, and 4 Clubs.
+B4C4: Partner made a minimum rebid of his Club suit at 4 Clubs, showing 12.0-16.0 points and 5+ trump cards.
+REVAL1: Revaluing hand as declarer...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Diamonds, declarer's hand is revalued for a suit contract from 8.0 to 10.0 points)
+B4C18: with a total of 22.0-26.0 pts in the partnership and no clear direction in the bidding, pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as East against a contract of 4 Hearts.
+PLYLD15: Lead the C9 from the top of the { C9 C8 } sequence.
+PLAY: We lead the C9.
+PLAY: South plays the CQ.
+PLAY: West plays the CK.
+PLAY: North plays the C2.
+PLAY: West wins the round.
+--------
+PLAY: West leads the CA.
+PLAY: North plays the C7.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the eight.
+PLDF47: Partner's Ace can win the trick, so discard the C8.
+PLAY: We play the C8.
+PLAY: South plays the C5.
+RCP20: Dummy is now out of Clubs.
+PLAY: West wins the round.
+--------
+PLAY: West leads the D2.
+PLAY: North plays the D3.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's six, so play the eight.
+PLAY: We play the D8.
+PLAY: South plays the D6.
+RCP20: Dummy is now out of Diamonds.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDRT1: We'd like to return partner's Diamonds suit, but dummy might ruff.
+PLYLDRT8: Return partner's Diamond suit with the Ace.                                 <<<<<<<<<<<<<<<<<< NO Dmy is void??? See above
+PLAY: We lead the DA.
+
+

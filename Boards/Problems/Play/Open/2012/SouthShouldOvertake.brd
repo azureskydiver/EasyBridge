@@ -1,0 +1,122 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 19, 2012
+File Date =  04/27/12 21:01:46
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S4 S3 S2 CA CK C9 C7 
+Current Hand(West) = SK SQ ST S9 S7 H2 DK DT CT 
+Current Hand(North) = SA S5 H9 H8 H7 DJ D9 D8 D2 
+Current Hand(East) = S6 HK HT H6 H4 H3 DQ D7 D6 
+Original Hand(South) = SJ S8 S4 S3 S2 HJ D4 CA CK C9 C7 C6 C4 
+Original Hand(West) = SK SQ ST S9 S7 HQ H2 DK DT D5 CT C3 C2 
+Original Hand(North) = SA S5 HA H9 H8 H7 DA DJ D9 D8 D2 CQ CJ 
+Original Hand(East) = S6 HK HT H6 H5 H4 H3 DQ D7 D6 D3 C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = North
+Bidding History = 1D Pass 1S Pass 2D Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East HJ HQ HA H5 North
+GameTrick #2 = North C4 C2 CJ C5 North
+GameTrick #3 = North D4 D5 DA D3 North
+GameTrick #4 = North C6 C3 CQ C8 North
+GameTrick #5 = North -- -- -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 0
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 80
+East/West Game 1 Points = 100
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 2
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  40		2 overtricks"
+Game Score Record = "	 100	3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should overtake
+>>>>>>>>>>>NORTH<<<<<<<<
+Combined hand (Dummy/Hand):
+  S:AJ85432 (J8432/A5)
+  H:A987 (/A987)
+  D:AJ9842 (4/AJ982)
+  C:AKQJ9764 (AK9764/QJ)
+Combined hand evaluation:
+  HCPs = 24.0, Distn pts = 7.0;   Total pts = 31.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (1/1/1/4)
+  7 Eventual Winners (1/1/1/4)
+  6 Possible Losers (vs. 4 allowable)
+PLYE41: Play the Ace to win the trick.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=10 vs SureTricks=6 vs NumWinners=10, m_numTricksShort=2
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH10: Cash the CJ from hand.
+PLDM: Playing card from dummy.
+PLCSH78: Our cash of the CJ from hand is holding, so discard the C4.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=10 vs SureTricks=7 vs NumWinners=10, m_numTricksShort=0
+PLRV11: We have 7 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH10: Cash the DA from hand.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=9 vs SureTricks=6 vs NumWinners=9, m_numTricksShort=0
+PLRV11: We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLDRP10: Lead the CQ to try and drop the CT.  <<<<<<<<<<<<<< 
+PLDM: Playing card from dummy.
+PLDRP65: East did not drop a desired card (the CT), but perhaps West might; continue the play by discarding the C6 from dummy. <<<<<<<<<<<<Overtake<<<<<<<<<<
+
+

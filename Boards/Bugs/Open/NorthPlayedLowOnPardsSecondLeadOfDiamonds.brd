@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 21, 2009
+File Date =  08/22/09 20:58:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ HJ H7 H2 DK DT D4 D3 D2 CT C5 
+Current Hand(West) = SA ST S9 S6 S5 S2 HQ HT H9 H4 C6 
+Current Hand(North) = SJ S8 S4 S3 HK H6 H5 DJ D6 CJ C7 
+Current Hand(East) = SK S7 HA H8 H3 DA D9 CK C9 C8 C3 
+Original Hand(South) = SQ HJ H7 H2 DK DT D8 D4 D3 D2 CA CT C5 
+Original Hand(West) = SA ST S9 S6 S5 S2 HQ HT H9 H4 DQ C6 C2 
+Original Hand(North) = SJ S8 S4 S3 HK H6 H5 DJ D6 D5 CJ C7 C4 
+Original Hand(East) = SK S7 HA H8 H3 DA D9 D7 CK CQ C9 C8 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = East
+Bidding History = Pass Pass 1NT 2D 2S Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = South
+GameTrick #1 = South D8 DQ D5 D7 West
+GameTrick #2 = West CA C2 C4 CQ South
+GameTrick #3 = South -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North played low card to pard's Diamond lead
+>>>>>>> NORTH<<<<<<<
+PLAY: Play restarted.
+====================
+S:J843  H:K65  D:J65  C:J74
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 4.0.
+  QT's = 0.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  2 Likely Winners (1/1/0/0)
+  11 Likely Losers (3/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+RCP20: Dummy is now out of Diamonds.
+RCP25: Dummy is shown to be void in Diamonds.
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the five.
+PLDF48: We can't beat West's Queen, so discard the D5.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the four.
+PLDF36: Partner's two is high or we can't beat the highest card, so discard the D6. <<<<<<<< 2 is high???????
+
+

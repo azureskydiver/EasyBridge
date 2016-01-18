@@ -1,0 +1,262 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 12, 2011
+File Date =  02/20/11 10:18:26
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK S6 S5 HA H9 H7 H6 H2 DK DQ DT 
+Current Hand(West) = S2 HQ HT H4 H3 D8 D4 CA C9 C5 C3 C2 
+Current Hand(North) = SQ SJ ST S8 HK HJ H8 H5 DA D7 D5 D2 
+Current Hand(East) = S9 S7 S4 S3 DJ D9 D6 CK CJ CT C7 C6 
+Original Hand(South) = SA SK S6 S5 HA H9 H7 H6 H2 DK DQ DT D3 
+Original Hand(West) = S2 HQ HT H4 H3 D8 D4 CA C9 C8 C5 C3 C2 
+Original Hand(North) = SQ SJ ST S8 HK HJ H8 H5 DA D7 D5 D2 CQ 
+Original Hand(East) = S9 S7 S4 S3 DJ D9 D6 CK CJ CT C7 C6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 13
+Declarer = North
+Bidding History = Pass Pass Pass 1H 2C 2D Pass 4NT Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East D3 C8 CQ C4 South
+GameTrick #2 = South -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Conputer goes down 4 with this???
+>>>>>>>> NORTH<<<<<<<
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:QJT8  H:KJ85  D:A752  C:Q
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 12.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Likely Winners (2/2/1/0)
+  8 Likely Losers (2/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+PLAY: East leads the C4.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJT865 (AK65/QJT8)
+  H:AKJ987652 (A9762/KJ85)
+  D:AKQT7532 (KQT3/A752)
+  C:Q (/Q)
+Combined hand evaluation:
+  HCPs = 29.0, Distn pts = 5.0;
+  Total pts = 34.0.
+  QT's = 6.0,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  9 Sure Winners (4/2/3/0)
+  9 Eventual Winners (4/2/3/0)
+  4 Possible Losers (vs. 2 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 5 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJT865 (AK65/QJT8)
+  H:AKJ987652 (A9762/KJ85)
+  D:AKQT7532 (KQT3/A752)
+  C:Q (/Q)
+Combined hand evaluation:
+  HCPs = 29.0, Distn pts = 5.0;
+  Total pts = 34.0.
+  QT's = 6.0,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  9 Sure Winners (4/2/3/0)
+  9 Eventual Winners (4/2/3/0)
+  4 Possible Losers (vs. 2 allowable)
+PLN10: We have only 9 sure tricks against a requirement of 11 for the 5D contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1a: Can play the Ace of Hearts in dummy to try and drop one or more of the opponents' { HQ HT  }.
+PLNDRP1a: Can play the King of Hearts in hand to try and drop one or more of the opponents' { HQ HT  }.
+PLNDRP5: A total of 2 possible drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Club in dummy.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Hearts, plus 4 in Spades, plus 3 in Diamonds.
+PLNCSH30: A total of 9 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 3 rounds of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 5 outstanding trump(s).
+PLNTRMP9: This will result in (up to) 3 rounds of trumps, 4 cashing tricks in the side suits, and up to 1 ruffing trick.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90B: We have 15 possible plays and up to 13 possible tricks including 9 sure tricks (vs. 11 required) accounted for in the plan.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 2 plays using the Heart suit.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the King in dummy.
+ Play 2: Pull a round of trumps with the Queen in dummy.
+ Play 3: Pull a round of trumps with the Ace in hand.
+ Play 4: Play the HA from Dummy to try and drop one or more of the { HQ HT  }.
+ Play 5: Play the HK from hand to try and drop one or more of the { HQ HT  }.
+ Play 6: Cash the King of Hearts in hand.
+ Play 7: Cash the Ace of Hearts in dummy.
+ Play 8: Ruff a Club in dummy.
+ Play 9: Cash the Ace of Spades in dummy.
+ Play 10: Cash the King of Spades in dummy.
+ Play 11: Cash the Queen of Spades in hand.
+ Play 12: Cash the Jack of Spades in hand.
+ Play 13: Cash the Ace of Diamonds in hand.
+ Play 14: Cash the King of Diamonds in dummy.
+ Play 15: Cash the Queen of Diamonds in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLRUF20: We can ruff in the suit led by the opponent.
+PLRUF40: Ruff in dummy with the D3.
+PLAY: South plays the D3.
+Combined hand (Dummy/Hand):
+  S:AKQJT865 (AK65/QJT8)
+  H:AKJ987652 (A9762/KJ85)
+  D:AKQT752 (KQT/A752)
+  C:Q (/Q)
+Combined hand evaluation:
+  HCPs = 29.0, Distn pts = 5.0;
+  Total pts = 34.0.
+  QT's = 6.0,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  9 Sure Winners (4/2/3/0)
+  9 Eventual Winners (4/2/3/0)
+  4 Possible Losers (vs. 2 allowable)
+PLAY: West plays the C8.
+PLAY: We play the CQ.
+PLAY: South wins the round.
+--------
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 9 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1a: Can play the Ace of Hearts in dummy to try and drop one or more of the opponents' { HQ HT  }.
+PLNDRP1a: Can play the King of Hearts in hand to try and drop one or more of the opponents' { HQ HT  }.
+PLNDRP5: A total of 2 possible drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF4: No immediate ruffing tricks are available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 4 cards in Hearts, plus 4 in Spades, plus 3 in Diamonds.
+PLNCSH30: A total of 11 maximum cashing tricks are immediately available. 2 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.  <<<<<<<<<<<<<<<<<<<<<<<<NO MUST DRAW TRUMPS<<<<<<<<<<<<<<
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 6 cashing tricks in the side suits, and up to 0 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 13 possible plays and approx. 11+ possible tricks including 9 sure tricks (vs. 11 required) accounted for in the plan.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the HA from Dummy to try and drop one or more of the { HQ HT  }.
+ Play 2: Play the HK from hand to try and drop one or more of the { HQ HT  }.
+ Play 3: Cash the Ace of Hearts in dummy.
+ Play 4: Cash the King of Hearts in hand.
+ Play 5: Cash the Jack of Hearts in hand. <Requires: 1 card(s)>
+ Play 6: Cash the Nine of Hearts in dummy. <Requires: 2 card(s)>
+ Play 7: Cash the Ace of Spades in dummy.
+ Play 8: Cash the King of Spades in dummy.
+ Play 9: Cash the Queen of Spades in hand.
+ Play 10: Cash the Jack of Spades in hand.
+ Play 11: Cash the Ace of Diamonds in hand.
+ Play 12: Cash the King of Diamonds in dummy.
+ Play 13: Cash the Queen of Diamonds in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [DA Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Play the HA from Dummy to try and drop one or more of the { HQ HT  }.
+ Play 2: Play the HK from hand to try and drop one or more of the { HQ HT  }.
+ Play 3: Cash the King of Hearts in hand.
+ Play 4: Cash the Jack of Hearts in hand.
+ Play 5: Cash the Ace of Hearts in dummy.
+ Play 6: Cash the Nine of Hearts in dummy.
+ Play 7: Cash the Ace of Spades in dummy.
+ Play 8: Cash the King of Spades in dummy.
+ Play 9: Cash the Queen of Spades in hand.
+ Play 10: Cash the Jack of Spades in hand.
+ Play 11: Cash the King of Diamonds in dummy.
+ Play 12: Cash the Queen of Diamonds in dummy.
+ Play 13: Cash the Ace of Diamonds in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLDRP10: Lead the HA to try and drop one or more of the { HQ HT  }.
+
+

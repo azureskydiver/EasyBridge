@@ -1,0 +1,148 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 11, 2009
+File Date =  07/11/09 10:08:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S8 HJ HT H8 DK C7 
+Current Hand(West) = ST S6 S5 HK H7 H6 H3 
+Current Hand(North) = SJ S9 HQ H9 DT D9 D7 
+Current Hand(East) = S2 DJ D8 D6 D5 D4 CJ 
+Original Hand(South) = SK S8 S3 HJ HT H8 H5 DK DQ CA CK C7 C3 
+Original Hand(West) = ST S6 S5 S4 HK H7 H6 H3 H2 CQ C9 C6 C2 
+Original Hand(North) = SQ SJ S9 S7 HQ H9 H4 DT D9 D7 D3 D2 C8 
+Original Hand(East) = SA S2 HA DA DJ D8 D6 D5 D4 CJ CT C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = East
+Bidding History = 1NT Pass Pass 2D Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = South
+GameTrick #1 = South CA C2 C8 C4 South
+GameTrick #2 = South CK C6 S7 C5 South
+GameTrick #3 = South C3 CQ D2 CT North
+GameTrick #4 = North S3 S4 SQ SA East
+GameTrick #5 = East H5 H2 H4 HA East
+GameTrick #6 = East DQ C9 D3 DA East
+GameTrick #7 = East -- -- -- -- ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 90
+East/West Game 1 Points = 20
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	  40	2 overtricks"
+Game Score Record = "	  20	1 Diamond made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads CJ knowing that North is void and can ruff.
+>>>>>> EAST <<<<<<<<,
+Starting play from restored game.
+------------------------
+S:A2  H:A  D:AJ8654  C:JT54
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Likely Winners (1/1/4/1)
+  6 Likely Losers (1/0/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 7 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the HA, HK, SA, CQ, CJ and CT.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the six.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's King, so discard the C5.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A1: We have a winner in the suit in dummy, so play the Queen.
+PLYTRY: No usable plays found for the current situation.
+PLYE23: We can't beat the opponent's two of trumps, so discard the CT.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH55: The opponents led a Spade, so cash the Ace now.
+PLDM: Playing card from dummy.
+PLCSH80: the opponents led a Spade, so see if we can finish up the cash play here.
+PLCSH92b: Our cash of the SA from hand is holding, so discard the S4.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH10: Cash the HA from hand.
+PLDM: Playing card from dummy.
+PLCSH78: Our cash of the HA from hand is holding, so discard the H2.
+PLNADJ: Reviewing play plan for round 6...
+PLRV10: We have only 3 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLTRMP12: Lead out the DA from hand to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the C9 on declarer's top Ace of trumps.
+PLNADJ: Reviewing play plan for round 7...
+PLRV10: We have only 2 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLYLDA: With no other obvious plays, cash a winner with the CJ.  <<<<<<<  NO North can ruff <<<
+
+
+

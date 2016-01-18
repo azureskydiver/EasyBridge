@@ -1,0 +1,88 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 7, 2009
+File Date =  08/08/09 20:21:54
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S5 S3 S2 DJ 
+Current Hand(West) = ST DQ DT CJ C5 
+Current Hand(North) = DK D7 CQ C8 C6 
+Current Hand(East) = H5 H3 H2 D8 C7 
+Original Hand(South) = SA SK S7 S5 S3 S2 H7 H6 DA DJ D5 D3 C4 
+Original Hand(West) = ST S6 S4 HJ H9 DQ DT D9 D6 CA CJ C5 C2 
+Original Hand(North) = SJ S8 HK H8 H4 DK D7 D2 CK CQ C8 C6 C3 
+Original Hand(East) = SQ S9 HA HQ HT H5 H3 H2 D8 D4 CT C9 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = South
+Bidding History = 1C 2H 2S Pass 3C Pass 3S Pass Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West H6 HJ HK HA East
+GameTrick #2 = East H7 H9 H4 HQ East
+GameTrick #3 = East D3 D6 H8 HT East
+GameTrick #4 = East C4 CA C3 CT West
+GameTrick #5 = West D5 C2 CK C9 North
+GameTrick #6 = North SA S4 SJ SQ South
+GameTrick #7 = South SK S6 S8 S9 South
+GameTrick #8 = South DA D9 D2 D4 South
+GameTrick #9 = South -- -- -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should cover DJ with DQ since he has DT
+>>>>>>> WEST <<<<<<
+Starting play from restored game.
+------------------------
+S:T64  H:J9  D:QT96  C:AJ52
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 7.5.
+  QT's = 1.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/0/2/2)
+  9 Likely Losers (3/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the six.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the Jack), so cover it with our ten.  <<<<<<<<<<< ten vs Queen ?????
+
+

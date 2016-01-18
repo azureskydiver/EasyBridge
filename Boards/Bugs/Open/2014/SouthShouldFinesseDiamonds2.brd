@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = June 17, 2014
+File Date =  06/22/14 10:48:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S7 S4 HK HT H8 H3 DA DJ DT D5 D4 
+Current Hand(West) = SJ S8 S2 HQ HJ H7 H6 H5 H4 DQ D9 D3 
+Current Hand(North) = SK ST S5 S3 HA H9 D8 D6 CA CK C7 
+Current Hand(East) = SA SQ S6 H2 DK CQ CT C9 C6 C5 C2 
+Original Hand(South) = S9 S7 S4 HK HT H8 H3 DA DJ DT D5 D4 C4 
+Original Hand(West) = SJ S8 S2 HQ HJ H7 H6 H5 H4 DQ D9 D3 C3 
+Original Hand(North) = SK ST S5 S3 HA H9 D8 D6 D2 CA CK CJ C7 
+Original Hand(East) = SA SQ S6 H2 DK D7 CQ CT C9 C8 C6 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 7
+Declarer = North
+Bidding History = Pass 1NT 3C 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East C4 C3 CJ C8 North
+GameTrick #2 = North -- -- D2 D7 ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 50
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should finesse Diamonds
+>>>>>>>NORTH<<<<<<<<
+Combined hand (Dummy/Hand):
+  S:KT97543 (974/KT53)
+  H:AKT983 (KT83/A9)
+  D:AJT86542 (AJT54/862)
+  C:AKJ7 (/AKJ7)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 3.0;   Total pts = 26.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/2/1/2)
+  5 Eventual Winners (0/2/1/2)
+  8 Possible Losers (vs. 4 allowable)
+PLYE41: Play the Jack to win the trick.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=8 vs SureTricks=5 vs NumWinners=8, m_numTricksShort=3
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLCSH20: Lead a low Diamond (the two) from hand in order to cash the Ace in dummy.
+PLDM: Playing card from dummy.
+PLCSH74: Cash the DA from dummy.
+
+

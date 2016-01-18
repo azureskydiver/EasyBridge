@@ -1,0 +1,88 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = May 21, 2010
+File Date =  05/29/10 17:41:31
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HQ HJ H2 DJ CK C5 
+Current Hand(West) = D9 D8 CQ CJ C9 
+Current Hand(North) = HT H7 H6 H5 CT 
+Current Hand(East) = H9 H8 H4 C8 C2 
+Original Hand(South) = SA S3 HQ HJ H2 DJ DT D6 D3 D2 CK C5 C3 
+Original Hand(West) = SQ S9 S5 HK DA DK D9 D8 CQ CJ C9 C7 C6 
+Original Hand(North) = SK SJ S8 S6 HT H7 H6 H5 H3 DQ D5 CT C4 
+Original Hand(East) = ST S7 S4 S2 HA H9 H8 H4 D7 D4 CA C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 10
+Declarer = West
+Bidding History = Pass Pass 1C Pass 1H Pass 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = North
+GameTrick #1 = North SA S5 S6 S2 South
+GameTrick #2 = South S3 SQ SK S4 North
+GameTrick #3 = North D2 S9 SJ S7 North
+GameTrick #4 = North C3 C6 C4 CA East
+GameTrick #5 = East D3 C7 S8 ST East
+GameTrick #6 = East D6 DA D5 D4 West
+GameTrick #7 = West DT DK DQ D7 West
+GameTrick #8 = West -- HK H3 HA ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads HK to dummy's HA ???
+>>>> WEST<<<<<<<<<<<
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 2 reasonably sure tricks left vs. 3 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLDM: Playing card from dummy.
+PLCSH74: Cash the HA from dummy. <<<<<<<<<<<<<<< NO, Dont overtake HK
+
+

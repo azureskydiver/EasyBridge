@@ -1,0 +1,122 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 11, 2011
+File Date =  11/20/11 14:01:56
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = D9 D7 D5 D4 CT 
+Current Hand(West) = ST H9 C9 C6 C4 
+Current Hand(North) = SQ S3 S2 H8 H4 
+Current Hand(East) = S6 S4 HQ HJ 
+Original Hand(South) = S8 S5 DA DT D9 D7 D5 D4 D2 CT C5 C3 C2 
+Original Hand(West) = SJ ST S9 H9 H6 H5 H3 D3 CK CQ C9 C6 C4 
+Original Hand(North) = SA SQ S3 S2 HA HK H8 H4 H2 DK DJ CJ C7 
+Original Hand(East) = SK S7 S6 S4 HQ HJ HT H7 DQ D8 D6 CA C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = South
+Bidding History = 3D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West C2 CK C7 C8 West
+GameTrick #2 = West S5 SJ SA S7 North
+GameTrick #3 = North S8 H3 HA H7 North
+GameTrick #4 = North C3 H5 HK HT North
+GameTrick #5 = North D2 D3 DK D6 North
+GameTrick #6 = North DA H6 DJ DQ South
+GameTrick #7 = South DT S9 H2 D8 South
+GameTrick #8 = South C5 CQ CJ CA East
+GameTrick #9 = East -- -- -- SK ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should play second hand low
+>>>>>>>>>> WEST<<<<<<<<<<<
+S:JT9  H:9653  D:3  C:KQ964
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  2 Likely Winners (0/-1/0/3)
+  11 Likely Losers (3/5/1/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South bids 3D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 5.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Diamonds.
+PLYLD15: Lead the CK from the top of the { CK CQ } sequence.
+PLYLD42: With no good card to lead, lead the SJ since the opponents have not shown out of the Spade suit.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+RCP5A: South is now known to have started with 0 Hearts.
+PLAYB48: We can't beat North's Ace, so discard the H3.
+PLAYB48: We can't beat North's King, so discard the H5.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H6.
+RCP5A: West is now known to have started with 1 Diamond.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Diamonds and no trumps, so discard the S9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G4: Keep declarer from finessing the Jack, win now with the Queen.  <<<<<<<<<<<<<<<<<<<< ????????????
+RCP20: Dummy is now out of Clubs.
+
+

@@ -1,0 +1,102 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1, 2012
+File Date =  02/09/12 21:29:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = CA CT 
+Current Hand(West) = DK D7 
+Current Hand(North) = DJ DT 
+Current Hand(East) = DQ CJ 
+Original Hand(South) = SK SJ ST S8 S5 S4 S2 HQ H3 CA CQ CT C6 
+Original Hand(West) = SA S9 HA HJ H8 H7 DA DK D7 D2 CK C9 C3 
+Original Hand(North) = SQ HK H9 H2 DJ DT D8 D6 D5 D4 D3 C8 C4 
+Original Hand(East) = S7 S6 S3 HT H6 H5 H4 DQ D9 CJ C7 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = 1D 3D Pass 3S Dbl Pass 4H 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West H3 HA H2 H4 West
+GameTrick #2 = West HQ H7 H9 HT South
+GameTrick #3 = South S2 SA SQ S3 West
+GameTrick #4 = West C6 H8 HK H5 North
+GameTrick #5 = North CQ CK C4 C2 West
+GameTrick #6 = West S4 DA D3 D9 South
+GameTrick #7 = South SK S9 C8 S6 South
+GameTrick #8 = South SJ C3 D4 S7 South
+GameTrick #9 = South ST C9 D5 H6 South
+GameTrick #10 = South S8 HJ D6 C5 South
+GameTrick #11 = South S5 D2 D8 C7 South
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should discard DQ South has shown out of diamonds
+>>>>>>>>>>>>>>>>EAST<<<<<<<<<<<<<<,
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the four.
+PLDF47: Partner's HA can win the trick, so discard the H4.
+PLDF40: Play high with the ten.
+RCP20: Dummy is now out of Spades.
+PLAYB47: Partner's Ace can win the trick, so discard the S3.
+RCP20: Dummy is now out of Hearts.
+PLDF48: We can't beat North's HK, so discard the H5.
+RCP5A: South is now known to have started with 2 Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the nine.
+PLDF47: Partner's DA can win the trick, so discard the D9.
+PLAYB48: We can't beat South's King, so discard the S6.
+RCP5A: West is now known to have started with 2 Spades.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H6.
+RCP5A: East is now known to have started with 3 Spades.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C7.   <<<<<<<<<<<<<<<No Guards CJ // South is void in Diamonds
+
+
+
+

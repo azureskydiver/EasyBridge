@@ -1,0 +1,117 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 6, 2012
+File Date =  01/14/12 09:42:13
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S9 S8 S6 S4 HA HT H6 CA CK CJ C4 C2 
+Current Hand(West) = SK S3 HK HJ H7 H3 H2 DK D9 D5 D2 C8 
+Current Hand(North) = SA SQ SJ S7 S5 HQ H5 H4 D6 D3 CQ C7 C3 
+Current Hand(East) = S2 H9 H8 DA DQ DJ DT D8 D7 D4 C9 C6 C5 
+Original Hand(South) = ST S9 S8 S6 S4 HA HT H6 CA CK CJ C4 C2 
+Original Hand(West) = SK S3 HK HJ H7 H3 H2 DK D9 D5 D2 CT C8 
+Original Hand(North) = SA SQ SJ S7 S5 HQ H5 H4 D6 D3 CQ C7 C3 
+Original Hand(East) = S2 H9 H8 DA DQ DJ DT D8 D7 D4 C9 C6 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 1S Pass 2H Pass 3C Pass 3S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+
+[[Match Information]]
+North/South Bonus Points = 180
+North/South Game 1 Points = 100
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 40
+East/West Game 1 Points = 0
+East/West Game 2 Points = 60
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  20		1 overtrick"
+Bonus Score Record = "100		Honors bonus for holding 4 trump honors"
+Bonus Score Record = "  20		1 overtrick"
+Bonus Score Record = "  40		2 overtricks, vulnerable"
+Bonus Score Record = "	  40	2 overtricks"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  60		3 Clubs made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Clubs made"
+Game Score Record = "	  60	3 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North misses Jacoby 2NT and also ignores South's aggressive bidding and only makes minimal responses -- missing an obvious slem.
+
+North's analysis:
+South bids 1S.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Spade.
+Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 5-card Spade trump support including a trump honor & a doubleton in Diamonds, the hand is revalued for a suit contract as dummy from 11.0 to 16.0 points)
+Partner is showing 12.0-21.0 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 11.0 to 12.0 points)
+Have 11.0/11.0/16.0 points with 5-card support for partner's Spades (holding AQJ75), which is too strong for a limit raise, so we have to temporarily shift to Hearts with a bid of 2 Hearts.
+We bid 2H.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Spade, 2 Hearts, and 3 Clubs.
+Partner bid another suit (third suit in partnership) at 3 Clubs after our 2/1 response, showing 12.0-18.0 points.
+Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Club trump support including a trump honor & a doubleton in Diamonds, the hand is revalued for a suit contract as dummy from 11.0 to 12.0 points)
+With 5 trumps in partner's first suit (Spades), we prefer to support that suit.
+With 11.0/11.0/12.0 points in hand, for a total in the partnership of 24.0-30.0 points, and 5-card support for partner's first suit (Spades), return to it by shifting back to 3 Spades.
+We bid 3S.
+--------------------
+East passes.
+--------------------
+South bids 4S.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+Partner has reversed from Clubs to Spades.
+Without the strength to push further at 24.0-30.0 total team points, pass and accept the contract of 4 Spades.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is South; West leads.
+=======================
+
+

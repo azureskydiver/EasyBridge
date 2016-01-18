@@ -1,0 +1,91 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  12/30/14 14:20:30
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S8 S3 H3 DA DJ DT D9 D8 D3 D2 C9 
+Current Hand(West) = SQ S7 S6 S2 HK H8 CJ C7 C6 C5 C3 C2 
+Current Hand(North) = SA SK ST S9 S5 HA HQ HJ H5 H2 D7 
+Current Hand(East) = S4 HT H9 H7 H6 H4 D6 D5 D4 CK C4 
+Original Hand(South) = SJ S8 S3 H3 DA DJ DT D9 D8 D3 D2 C9 C8 
+Original Hand(West) = SQ S7 S6 S2 HK H8 CQ CJ C7 C6 C5 C3 C2 
+Original Hand(North) = SA SK ST S9 S5 HA HQ HJ H5 H2 DQ D7 CA 
+Original Hand(East) = S4 HT H9 H7 H6 H4 DK D6 D5 D4 CK CT C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = South
+Bidding History = 3D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West C8 CQ CA CT North
+GameTrick #2 = North -- -- DQ DK ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 600
+North/South Game 1 Points = 220
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 150
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = " 500		Small slam contract"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Bonus Score Record = "  40		2 overtricks, vulnerable"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = " 180		6 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East could save DK
+>>EAST<
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: North led an honor (the Queen), so cover it with our King.  <<<<<<<<<< No, can save with length to win later
+
+

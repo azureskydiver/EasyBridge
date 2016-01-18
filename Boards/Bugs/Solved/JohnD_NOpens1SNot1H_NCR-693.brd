@@ -1,0 +1,145 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 10, 2013
+File Date =  08/16/13 09:39:35
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S7 S5 S3 S2 H5 H3 H2 DT D9 D4 CJ C7 
+Current Hand(West) = SQ ST S6 S4 H9 H6 DA DQ CQ CT C9 C8 C3 
+Current Hand(North) = SA SK SJ HK HJ HT H7 DJ D6 D3 CA C5 C4 
+Current Hand(East) = S8 HA HQ H8 H4 DK D8 D7 D5 D2 CK C6 C2 
+Original Hand(South) = S9 S7 S5 S3 S2 H5 H3 H2 DT D9 D4 CJ C7 
+Original Hand(West) = SQ ST S6 S4 H9 H6 DA DQ CQ CT C9 C8 C3 
+Original Hand(North) = SA SK SJ HK HJ HT H7 DJ D6 D3 CA C5 C4 
+Original Hand(East) = S8 HA HQ H8 H4 DK D8 D7 D5 D2 CK C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Looks like a bug in the software logic here!
+N should open 1H, not 1S.
+
+North:
+S:AKJ  H:KJT7  D:J63  C:A54
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 16.5.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Likely Winners (2/2/0/0)
+  9 Likely Losers (1/2/3/3)
+Preferred suit is Hearts.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Have 17.0 HCP's with a balanced hand.
+But with an openable 4-card Heart suit, prefer to open in the major instead of in No Trump.
+Have 17.0 points in high cards, so bid 1 Spade.
+We bid 1S.
+--------------------
+East doubles.
+--------------------
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 2 Spades.
+With a single raise, partner is showing 6.0-10.0 points and decent (3-4 card) support for our Spade suit.
+REVAL1: Revaluing hand as declarer for Spade contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 4.
+2REVAL18: Declarer's hand is revalued for a suit contract in Spades from 16.5 down to 14.5 points)
+We have a total of 20.5-24.5 points in the partnership, which is not enough for game, so settle for a part score and pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is North; East leads.
+=======================
+
+>>>>>>>>>>>NORTH<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:AKJ  H:KJT7  D:J63  C:A54
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5; Total pts = 16.5.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Likely Winners (2/2/0/0)
+  9 Likely Losers (1/2/3/3)
+Preferred suit is Hearts.
+====================
+S:AKJ  H:KJT7  D:J63  C:A54
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5; Total pts = 16.5.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Likely Winners (2/2/0/0)
+  9 Likely Losers (1/2/3/3)
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+West passes.
+--------------------
+Opening bid for team.
+A00: Have 17.0 HCP's with a balanced hand.
+A02: But with an openable 4-card Heart suit, prefer to open in the major instead of in No Trump.   <<<<<<<<<<<YES Hearts
+E01: Have 17.0 points in high cards, so bid 1 Spade.  ??????????? only 3 cards
+We bid 1S.
+--------------------
+East doubles.
+--------------------
+***Bidding Cancelled***
+
+
+
+
+

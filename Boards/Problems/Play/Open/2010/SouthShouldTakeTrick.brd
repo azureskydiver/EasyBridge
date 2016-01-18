@@ -1,0 +1,176 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 10, 2010
+File Date =  12/10/10 12:13:24
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S7 HA HK HJ H5 H4 DK DT D7 D6 D3 
+Current Hand(West) = S6 H9 H6 H3 H2 DA CA CK C7 C6 C5 C4 C2 
+Current Hand(North) = SA SQ S8 S4 S3 S2 HQ H8 H7 DJ D9 D8 CJ 
+Current Hand(East) = SK S9 S5 DQ D5 D4 D2 CQ CT C9 C8 C3 
+Original Hand(South) = SJ ST S7 HA HK HJ H5 H4 DK DT D7 D6 D3 
+Original Hand(West) = S6 H9 H6 H3 H2 DA CA CK C7 C6 C5 C4 C2 
+Original Hand(North) = SA SQ S8 S4 S3 S2 HQ H8 H7 DJ D9 D8 CJ 
+Original Hand(East) = SK S9 S5 HT DQ D5 D4 D2 CQ CT C9 C8 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 13
+Declarer = North
+Bidding History = Pass 1H 2C 2S Pass 3D Pass 3S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- HT ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Declarer should win so that he can finesse Spades next
+>>>>>>>>> NORTH<<<<<<<<<<<<
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AQJT87432 (JT7/AQ8432)
+  H:AKQJ8754 (AKJ54/Q87)
+  D:KJT98763 (KT763/J98)
+  C:J (/J)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 6.0;
+  Total pts = 28.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Sure Winners (1/4/0/0)
+  11 Eventual Winners (5/5/1/0)
+  2 Possible Losers (vs. 3 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 4 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AQJT87432 (JT7/AQ8432)
+  H:AKQJ8754 (AKJ54/Q87)
+  D:KJT98763 (KT763/J98)
+  C:J (/J)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 6.0;
+  Total pts = 28.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Sure Winners (1/4/0/0)
+  11 Eventual Winners (5/5/1/0)
+  2 Possible Losers (vs. 3 allowable)
+We have 11 sure tricks against a requirement of 10 for the 4S contract.
+Looking at the hand for drop plays...
+No drop plays are available.
+Looking for possible finesses...
+Can finesse the King of Diamonds by leading to it from hand against East.
+Can finesse the Jack of Diamonds by leading to it from dummy against East.
+A total of 2 possible finesses exist.
+Looking for ways to force out enemy top cards and promote our own......
+We can play the Jack of Diamonds to force out the opponents' Ace.
+We can play the Jack of Diamonds to force out the opponents' Queen.
+We can play the Jack of Diamonds to force out the opponents' five.
+We can play the Jack of Diamonds to force out the opponents' four.
+This will promote the eight to a winner.
+A total of 4 forcing plays have been found, which will promote 1 lower card.
+Looking for ruffing tricks...
+We can potentially ruff up to 1 Club in dummy.
+We can potentially ruff up to 2 Diamonds in hand after discarding the 2 losers from hand.
+Up to 3 ruffs can be used (1 in dummy/2 in hand) out of a total of 5 available, but require 2 discard(s) first.
+This consists of the { D8 D9 } from hand.
+Looking at the hand for cashes...
+We can cash 1 card in Diamonds, plus 5 in Hearts, plus 5 in Spades.
+A total of 11 maximum cashing tricks are immediately available.
+Evaluating the trumps situation...
+We can safely play up to 6 rounds of trumps without endangering the contract.
+However, we only need to pull a maximum of 4 rounds to collect all the outstanding trumps.
+This will result in (up to) 4 rounds of trumps, 6 cashing tricks in the side suits, and up to 3 ruffing tricks.
+Can finesse the Queen of Spades in hand with the Ace as the potential cover card.
+Can finesse the Jack of Spades by leading it from dummy, with the Ace as the potential cover card in hand.
+Can finesse the Ten of Spades by leading to it from hand against East.
+Can finesse the Jack of Spades by leading to it from hand against East.
+Removed plan <Trump ten Finesse>, only types 1 & 2 for trump.
+Removed plan <Trump Jack Finesse>, only types 1 & 2 for trump.
+Reviewing available plays...
+Checking logic of selected plays against play history...
+Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+We have 26 possible plays and up to 13 possible tricks including 11 sure tricks (vs. 10 required) accounted for in the plan.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We want to eventualy exit with a Club.
+Interleaving plays...
+Postpone the [HJ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+Postpone the [SA Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+Postpone the [SQ Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Hearts in hand.
+ Play 2: Cash the Queen of Hearts in hand.
+ Play 3: Cash the Jack of Hearts in dummy.
+ Play 4: Cash the King of Hearts in dummy.
+ Play 5: Cash the Ace of Hearts in dummy.
+ Play 6: Exit with a Club and throw the opponents into the lead.
+ Play 7: Lead a low trump from dummy to finesse the Queen in hand against East, with the Ace as cover.
+ Play 8: Lead the trump Jack from dummy and finesse it, with the Ace in hand as cover.
+ Play 9: Pull a round of trumps with the Ace in hand.
+ Play 10: Pull a round of trumps with the Queen in hand.
+ Play 11: Pull a round of trumps with the Jack in dummy if necessary.
+ Play 12: Pull a round of trumps with the ten in dummy if necessary.
+ Play 13: Ruff a Club in dummy.
+ Play 14: Ruff a Diamond in hand.
+ Play 15: Ruff a Diamond in hand.
+ Play 16: Lead a low Diamond from hand and finesse the King in dummy against West.
+ Play 17: Lead a low Diamond from dummy and finesse the Jack in hand against East.
+ Play 18: Play the Jack of Diamonds from hand to force out the opponents' Ace.
+ Play 19: Play the Jack of Diamonds from hand to force out the opponents' Queen.
+ Play 20: Play the Jack of Diamonds from hand to force out the opponents' Five.
+ Play 21: Play the Jack of Diamonds from hand to force out the opponents' Four.
+ Play 22: Cash the King of Diamonds in dummy.
+ Play 23: Cash the Jack of Spades in dummy.
+ Play 24: Cash the Ten of Spades in dummy.
+ Play 25: Cash the Queen of Spades in hand.
+ Play 26: Cash the Ace of Spades in hand.
+ Play 27: Cash the Eight of Spades in hand.
+The planning is complete.
+---------------------------
+The play <H8 Cash> is not yet viable as the card [nine] is still outstanding.
+Discard a Heart from dummy in anticipation of cashing the Queen in hand.  <<<<<<<<<<< NO win in dummy to finesse next time
+
+

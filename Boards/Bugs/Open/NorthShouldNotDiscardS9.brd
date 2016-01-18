@@ -1,0 +1,99 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 10, 2010
+File Date =  12/12/10 15:46:26
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S8 S6 HA HJ H9 H8 H5 DA CT C7 
+Current Hand(West) = S7 S4 S2 H7 H3 DQ D9 D8 CJ C8 C3 
+Current Hand(North) = SK SQ SJ S9 HK H6 H4 CA CQ C9 C2 
+Current Hand(East) = ST S5 S3 HQ HT H2 DK CK C6 C5 C4 
+Original Hand(South) = SA S8 S6 HA HJ H9 H8 H5 DA D7 D3 CT C7 
+Original Hand(West) = S7 S4 S2 H7 H3 DQ D9 D8 D6 D4 CJ C8 C3 
+Original Hand(North) = SK SQ SJ S9 HK H6 H4 D5 D2 CA CQ C9 C2 
+Original Hand(East) = ST S5 S3 HQ HT H2 DK DJ DT CK C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1H Pass 1S Pass 1NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West D3 D6 D2 DT East
+GameTrick #2 = East D7 D4 D5 DJ East
+GameTrick #3 = East -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy should NOT discard S9. This will play under the SA giving 4 Spade tricks
+>>>>>>NORTH<<<<<<<<
+PLAY: West leads the D6.
+PLAY: We play the D2.
+PLAY: East plays the DT.
+PLAY: South plays the D3.
+PLAY: East wins the round.
+--------
+PLAY: East leads the DJ.
+PLAY: South plays the D7.
+PLAY: West plays the D4.
+PLAY: We play the D5.
+RCP20: Dummy is now out of Diamonds.
+PLAY: East wins the round.
+--------
+PLAY: East leads the DK.
+PLAY: South plays the DA.
+PLAY: West plays the D9.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S9.  <<<<<<<<< No, this will play under SA 
+PLAY: We play the S9.
+
+

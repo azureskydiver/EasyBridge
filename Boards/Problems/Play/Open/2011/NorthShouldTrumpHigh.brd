@@ -1,0 +1,129 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 12, 2011
+File Date =  02/25/11 08:21:49
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA HK CA CK CQ CJ C5 
+Current Hand(West) = HQ H9 H8 H6 CT C9 C8 
+Current Hand(North) = HJ HT H3 D9 D6 C7 C4 C3 
+Current Hand(East) = H7 H5 H4 H2 DJ DT D4 C6 
+Original Hand(South) = SQ ST S6 S5 HA HK DK D8 CA CK CQ CJ C5 
+Original Hand(West) = SA SJ S9 S3 HQ H9 H8 H6 D7 CT C9 C8 C2 
+Original Hand(North) = S7 S4 HJ HT H3 D9 D6 D5 D3 D2 C7 C4 C3 
+Original Hand(East) = SK S8 S2 H7 H5 H4 H2 DA DQ DJ DT D4 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 2C Pass 2D Dbl 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West D8 D7 D2 DA East
+GameTrick #2 = East DK C2 D3 DQ West
+GameTrick #3 = West S5 SA S4 S8 West
+GameTrick #4 = West S6 S9 S7 SK East
+GameTrick #5 = East SQ S3 D5 S2 South
+GameTrick #6 = South ST SJ -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should trump with High card
+>>>>>>>>>SOUTH<<<<<<<<
+PLAY: North plays the D2.
+Combined hand (Dummy/Hand):
+  S:QT7654 (74/QT65)
+  H:AKJT3 (JT3/AK)
+  D:K98653 (9653/K8)
+  C:AKQJ7543 (743/AKQJ5)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 3.0;
+  Total pts = 26.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (0/2/0/4)
+  7 Eventual Winners (0/3/0/4)
+  6 Possible Losers (vs. 4 allowable)
+PLAY: East plays the DA.
+PLAY: We play the D8.
+PLAY: East wins the round.
+--------
+PLAY: East leads the DQ.
+PLAY: We play the DK.
+PLAY: West plays the C2.
+RCP10: West shows out of Diamonds.
+RCP5A: West is now known to have started with 1 Diamond.
+PLAY: North plays the D3.
+PLAY: West wins the round.
+--------
+PLAY: West leads the SA.
+PLAY: North plays the S4.
+PLAY: East plays the S8.
+PLAY: We play the S5.
+PLAY: West wins the round.
+--------
+PLAY: West leads the S9.
+PLAY: North plays the S7.
+PLAY: East plays the SK.
+PLAY: We play the S6.
+PLAY: East wins the round.
+--------
+PLAY: East leads the S2.
+PLAY: We play the SQ.
+PLAY: West plays the S3.
+PLAY: North plays the D5.
+PLAY: South wins the round.
+--------
+PLAY: We lead the ST.
+PLAY: West plays the SJ.
+PLDM: Playing card from dummy.
+PLYD2A55: With no cards in Spades, trump with the C3.  <<<<<<<<<<<< NO us high card - Hand has top 4 cards for drawing 
+
+

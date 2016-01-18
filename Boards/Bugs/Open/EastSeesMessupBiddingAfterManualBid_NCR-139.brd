@@ -1,0 +1,234 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2009
+File Date =  10/19/09 19:40:41
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ S9 S7 S4 S3 H5 D9 D6 D3 C8 C7 C6 
+Current Hand(West) = SA ST S8 S5 HQ H9 H8 H7 H4 DJ D2 CA CQ 
+Current Hand(North) = SK S2 HJ H6 H2 DT D8 D4 CK CT C9 C5 C3 
+Current Hand(East) = S6 HA HK HT H3 DA DK DQ D7 D5 CJ C4 C2 
+Original Hand(South) = SQ SJ S9 S7 S4 S3 H5 D9 D6 D3 C8 C7 C6 
+Original Hand(West) = SA ST S8 S5 HQ H9 H8 H7 H4 DJ D2 CA CQ 
+Original Hand(North) = SK S2 HJ H6 H2 DT D8 D4 CK CT C9 C5 C3 
+Original Hand(East) = S6 HA HK HT H3 DA DK DQ D7 D5 CJ C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = ????
+Bidding History = 2S Pass 3S Dbl Pass 4H Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East sees messup bidding if bidding done manually
+>>>>>>>> EAST <<<<<<<<<<
+S:6  H:AKT3  D:AKQ75  C:J42
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 16.5.
+  QT's = 4.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  8 Likely Winners (0/3/5/0)
+  5 Likely Losers (1/1/0/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+North bids 3S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+TKOUT: With 17.0/16.5 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 5H.   <<<<<<<<<<<<<<<< THIS was done manually!!!
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's pass.  <<<<<<<<<< NO< Partner bid 5H
+TKRb10: After interference from the left-hand opponent, partner passed our takeout.  ?????????? ???????????????????????????
+B3A20: Partner passed, showing < 6 points, so with 17.0/16.5 points in hand and 16.5-21.5 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+
+
+>>>>>>>> FROM OLD VERSION <<<<<<<<<<
+>>>>>>>>>>>>> WEST <<<<<<<<<<<<<<<<
+=====================================
+Received hand:
+  S:AT85  H:Q9874  D:J2  C:AQ
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 12.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  6 Likely Winners (2/3/0/1)
+  7 Likely Losers (2/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Spades.
+====================
+South bids 2S.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+But we don't have a suit strong enough to overcall with at the 3-level.
+We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3S.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+Responding to partner's opening double.
+Partner has doubled for takeout.
+Partner's takeout indicates 12.5+ HCPs, for a total in the partnership of 25.0-34.0 points.
+With 13.0/12.5 pts and a 5-card Heart suit, jump to game at 4 Hearts.
+--------------------
+North passes.
+--------------------
+East bids 4NT.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 4 Hearts and partner's response of 4 No Trump.
+With 2 Aces, respond to partner's Blackwood inquiry with 5 Hearts.
+--------------------
+North passes.
+--------------------
+East bids 5NT.
+--------------------
+South passes.
+--------------------
+Rebidding in round 4.
+With 0 King, respond to partner's Blackwood inquiry with 6 Clubs.
+--------------------
+North passes.
+--------------------
+East bids 6H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 5.
+We've reached agreement in suits, but with only 25.0-34.0 total points we can't raise partner's 6 Hearts bid any further, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 6 Hearts.  Declarer is West; North leads.
+>>>>>>>>>>>> EAST <<<<<<<<<<<<<<<<
+=====================================
+Received hand:
+  S:6  H:AKT3  D:AKQ75  C:J42
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 16.5.
+  QT's = 4.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  8 Likely Winners (0/3/5/0)
+  5 Likely Losers (1/1/0/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+North bids 3S.
+--------------------
+Opening bid for team.
+Opponents have opened the bidding; see if we can overcall.
+With 16.5/16.5 points and support for all unbid suits, bid a takeout double.
+--------------------
+South passes.
+--------------------
+West bids 4H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 4 Hearts.
+Partner has jumped to game in Hearts, indicating 13+ pts and a 5+ card suit.  <<<<<<<<<<<<<<<<<< NOT A JUMP, an OVERCALL ???????????/
+The total point count in the partnership is therefore 46.5-38.5 pts.
+with 17.0/16.5/16.5 points in the hand, for a total of approx. 47.0-39.0 / 46.5-38.5 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump.  <<<<<<<<<<<<<<<<<<<<
+--------------------
+South passes.
+--------------------
+West bids 5H.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 4 Hearts, 4 No Trump, and 5 Hearts.
+Partner responded to our 4NT Blackwood inquiry with 5 Hearts, indicating 2 Aces.
+Our team holds all four aces, so proceed to 5NT to ask for kings.
+--------------------
+South passes.
+--------------------
+West bids 6C.
+--------------------
+North passes.
+--------------------
+Rebidding in round 4.
+Partner responded to our 4NT Blackwood inquiry with 6 Clubs, indicating 0 King.
+Since we're missing 2 Kings and have a total of only 46.5-38.5 pts in the partnership, we lack sufficient strength for a grand slam and have to settle for a small slam at 6 Hearts.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 6 Hearts.  Declarer is West; North leads.
+
+

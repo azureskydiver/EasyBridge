@@ -1,0 +1,169 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 22,  2010
+File Date =  02/28/10 19:51:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ ST S9 S7 S6 S2 HA HK H6 D7 D4 CQ C7 
+Current Hand(West) = SK S5 S3 H7 H3 DT D9 D5 D2 CJ C9 C5 
+Current Hand(North) = HQ HJ HT H8 H4 DA DQ DJ D8 D3 CK CT C6 
+Current Hand(East) = SA SJ S8 S4 H9 H5 H2 DK D6 CA C8 C4 C2 
+Original Hand(South) = SQ ST S9 S7 S6 S2 HA HK H6 D7 D4 CQ C7 
+Original Hand(West) = SK S5 S3 H7 H3 DT D9 D5 D2 CJ C9 C5 C3 
+Original Hand(North) = HQ HJ HT H8 H4 DA DQ DJ D8 D3 CK CT C6 
+Original Hand(East) = SA SJ S8 S4 H9 H5 H2 DK D6 CA C8 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 1
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 5
+Declarer = South
+Bidding History = 1C 1S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- C3 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 200
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "	 200	Bonus for defeating vulnerable contract by 2 tricks"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should bid his Heart suit. Makes 4H
+>>>>>NORTH<<<<<<<<<<
+S:KJ8654  H:QJT84  D:AQJ83  C:KT6
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/3/4/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+East bids 1C.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 1 point(s) for the solid Diamond suit.
+3REVAL6: Deducting 5 point(s) for the 3 trump(s) short of 3.
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Spade suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 20.0-27.0 points.
+ROVRC99: We have insufficient strength for either a raise, suit shift, or NT bid, so pass.    <<<<<<<<<<<<<<<?????????????????
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 1 Spade.  Declarer is South; West leads.
+=======================
+RCP25: Dummy is shown to be void in Spades.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP5A: East is now known to have started with 3 Hearts.
+RCP5A: South is now known to have started with 3 Hearts.
+RCP20: Dummy is now out of Clubs.
+RCP20: Dummy is now out of Hearts.
+RESULT: North/South made 1 overtrick.
+S:---  H:QJT84  D:AQJ83  C:KT6
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/3/4/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+***Bidding restarted***
+East bids 1C.
+--------------------
+South bids 1H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 1 point(s) for the solid Diamond suit.
+3REVAL5: Adding 4 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Heart trump support including a trump honor & a void in Spades, the hand is revalued for a suit contract as dummy from 13.0 to 23.0 points)
+ROVRC1: Partner overcalled at the 1-level, indicating a good 5+ card Heart suit, 8-15 points, and probably 5+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 30.0-37.0 points.
+YN1: With 30.0-37.0 points in the partnership and 5-card support for partner's major Heart suit (holding QJT84), raise to 4 Hearts.
+We bid 4H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is South; West leads.
+=======================
+RCP25: Dummy is shown to be void in Spades.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP5A: East is now known to have started with 2 Diamonds.
+RCP5A: South is now known to have started with 2 Diamonds.
+RCP20: Dummy is now out of Clubs.
+RCP20: Dummy is now out of Hearts.
+RCP20: Dummy is now out of Diamonds.
+RESULT: North/South made the contract.
+
+

@@ -1,0 +1,163 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 15,  2010
+File Date =  05/10/10 19:34:06
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST HA HK HT H9 H8 H7 D6 D5 D3 CJ C7 
+Current Hand(West) = SJ S3 S2 HJ H4 H2 DA DK CK CQ C9 C8 C6 
+Current Hand(North) = SK S9 S8 S6 HQ H3 DT D9 D8 D2 CT C5 C4 
+Current Hand(East) = SQ S7 S5 S4 H6 H5 DQ DJ D7 D4 CA C3 C2 
+Original Hand(South) = SA ST HA HK HT H9 H8 H7 D6 D5 D3 CJ C7 
+Original Hand(West) = SJ S3 S2 HJ H4 H2 DA DK CK CQ C9 C8 C6 
+Original Hand(North) = SK S9 S8 S6 HQ H3 DT D9 D8 D2 CT C5 C4 
+Original Hand(East) = SQ S7 S5 S4 H6 H5 DQ DJ D7 D4 CA C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 3
+Declarer = ????
+Bidding History = 1NT Pass 2C 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West made Stayman response over South's bid
+>>>>>WEST<<<<<<<<<<<
+S:J32  H:J42  D:AK  C:KQ986
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 13.0.
+  QT's = 3.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/2/3)
+  8 Likely Losers (3/3/0/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+A00: Have 14.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+We bid 1NT.
+--------------------
+North passes.
+--------------------
+East bids 2C.
+--------------------
+South bids 2H.
+--------------------
+Rebidding after opening bid of 1 No Trump and partner's response of 2 Clubs.
+STYR: Partner is using the Stayman convention, asking for majors.
+STYR12: But we have no 4-card majors, so reply negatively to Stayman by bidding 3 Diamonds.   <<<<<<<<< NOT over Souths 2H
+We bid 3D.
+--------------------
+
+>>>>>>>>>>>>EAST<<<<<<<<<<<<
+S:Q754  H:65  D:QJ74  C:A32
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 9.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  3 Likely Winners (1/0/2/0)
+  10 Likely Losers (3/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+West bids 1NT.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 No Trump.
+STY0: Have 9.0/9.0 points and at least one 4+ card major suit, so bid 2 Clubs (Stayman).
+We bid 2C.
+--------------------
+South bids 2H.
+--------------------
+West bids 3D.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 No Trump, 2 Clubs, and 3 Diamonds.
+STYX12: Partner replied 3 Diamonds to our Stayman query, indicating no 4-card majors.   <<<<<<<<<<<<<<<<<<<<< Ignores South's bid
+STYX32: With no major suit fit but with 24.0-26.0 HCPs in the partnership, bid game at 3NT.
+We bid 3NT.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is West; North leads.
+=======================
+RCP20: Dummy is now out of Hearts.
+RCP5A: North is now known to have started with 2 Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S4.
+RCP5A: West is now known to have started with 3 Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D4.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D7.
+RCP20: Dummy is now out of Clubs.
+RCP5A: South is now known to have started with 2 Clubs.
+RCP20: Dummy is now out of Spades.
+RCP20: Dummy is now out of Diamonds.
+RESULT: East/West were set 4 tricks.
+
+

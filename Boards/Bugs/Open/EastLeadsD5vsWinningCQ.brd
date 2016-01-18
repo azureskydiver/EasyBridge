@@ -1,0 +1,137 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 21, 2009
+File Date =  06/23/09 14:19:57
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = DT CT 
+Current Hand(West) = H8 H3 
+Current Hand(North) = H9 DJ 
+Current Hand(East) = D5 CQ 
+Original Hand(South) = SJ S8 HT H7 DT D8 D6 CA CK CT C9 C7 C5 
+Original Hand(West) = SK ST S6 S5 HA HJ H8 H3 DQ D4 D2 C8 C3 
+Original Hand(North) = SA SQ S7 S2 H9 H6 H5 H4 DK DJ D9 D7 C6 
+Original Hand(East) = S9 S4 S3 HK HQ H2 DA D5 D3 CQ CJ C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 10
+Declarer = West
+Bidding History = 1C Pass 1H Pass 2H 3C 3H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 5
+Lead Player for Current Game = North
+GameTrick #1 = North CK C3 C6 CJ South
+GameTrick #2 = South CA C8 D7 C2 South
+GameTrick #3 = South C5 D2 H4 C4 North
+GameTrick #4 = North S8 S5 SA S3 North
+GameTrick #5 = North SJ SK S2 S4 West
+GameTrick #6 = West H7 HA H5 H2 West
+GameTrick #7 = West HT HJ H6 HQ East
+GameTrick #8 = East D6 DQ DK D3 North
+GameTrick #9 = North C7 S6 SQ S9 North
+GameTrick #10 = North C9 ST S7 HK East
+GameTrick #11 = East D8 D4 D9 DA East
+GameTrick #12 = East -- -- -- -- West
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 20
+North/South Game 1 Points = 120
+North/South Game 2 Points = 90
+North/South Game 3 Points = 40
+North/South Games Won = 1
+East/West Bonus Points = 30
+East/West Game 1 Points = 0
+East/West Game 2 Points = 130
+East/West Game 3 Points = 70
+East/West Games Won = 1
+Current Game = 3
+Bonus Score Record = "	  30	1 overtrick, vulnerable"
+Bonus Score Record = "  20		1 overtrick, vulnerable"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  90		3 Hearts made"
+Game Score Record = "	 130	4 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "	  70	2 No Trump made"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads losing D5 vs winning CQ. 
+>>>>>> EAST<<<<<<<<<
+S:943  H:KQ2  D:A53  C:QJ42
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/2/1/2)
+  8 Likely Losers (3/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+E02: Have 12.0 points in high cards and 2.0 quick tricks, so bid 1 Club.
+--------------------
+South passes.
+--------------------
+West bids 1H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Club and partner's response of 1 Heart.
+B3U00: Partner has made a 1 over 1 bid, Hearts over Clubs, which shows 5.0-17.0 points and is forcing for one round.
+REVAL38: (with 3-card Heart trump support including a trump honor, the hand is revalued for a suit contract as dummy from 12.0 to 13.0 points)
+B3U14: With decent 3-card support for partner's major Heart suit (holding KQ2), no rebiddable suit, and no openable second suit, raise to 2 Hearts.
+--------------------
+South bids 3C.
+--------------------
+West bids 3H.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BXM81: We've reached agreement in suits, but with only 18.0-30.0 total points we can't raise partner's 3 Hearts bid any further, so pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is West; North leads.
+=======================
+RCP5A: North is now known to have started with 1 Club.
+PLAYB48: We can't beat South's Ace, so discard the C2.
+RCP5A: West is now known to have started with 2 Clubs.
+PLAYB23: We can't beat the opponent's four of trumps, so discard the C4.
+RCP20: Dummy is now out of Spades.
+RCP5A: South is now known to have started with 2 Spades.
+RCP20: Dummy is now out of Diamonds.
+RCP20: Dummy is now out of Diamonds.
+
+

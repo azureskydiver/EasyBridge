@@ -1,0 +1,189 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 23,  2009
+File Date =  11/27/09 21:01:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S6 HA H9 H8 H2 DK DJ DT D7 D5 CJ 
+Current Hand(West) = ST S8 S2 HK H6 H3 DA D6 D4 CQ C7 C5 
+Current Hand(North) = S7 S5 HT H4 DQ D9 D8 D3 CK C8 C3 C2 
+Current Hand(East) = SK SQ SJ S9 S4 S3 HQ HJ H7 H5 D2 CT 
+Original Hand(South) = SA S6 HA H9 H8 H2 DK DJ DT D7 D5 CJ C9 
+Original Hand(West) = ST S8 S2 HK H6 H3 DA D6 D4 CQ C7 C5 C4 
+Original Hand(North) = S7 S5 HT H4 DQ D9 D8 D3 CA CK C8 C3 C2 
+Original Hand(East) = SK SQ SJ S9 S4 S3 HQ HJ H7 H5 D2 CT C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass Pass 1D Pass 2C Pass 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West C9 C4 CA C6 North
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 70
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 40
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  70		2 No Trump made"
+Game Score Record = "	  40	1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should finesse for CQ on opening lead of club.
+>>>>>>>>> SOUTH <<<<
+PLAY: West leads the C4.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:A765 (75/A6)
+  H:AT9842 (T4/A982)
+  D:KQJT98753 (Q983/KJT75)
+  C:AKJ9832 (AK832/J9)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;
+  Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/1/0/2)
+  8 Eventual Winners (1/1/4/2)
+  5 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:A765 (75/A6)
+  H:AT9842 (T4/A982)
+  D:KQJT98753 (Q983/KJT75)
+  C:AKJ9832 (AK832/J9)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 4.0;
+  Total pts = 26.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (1/1/0/2)
+  8 Eventual Winners (1/1/4/2)
+  5 Possible Losers (vs. 4 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 9 for the 3NT contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS31: Can finesse the Jack of Clubs by leading it from hand against West.
+PLNFNS91: One possible finesse has been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Queen of Diamonds to force out the opponents' Ace.
+PLNDEV31: This will promote the Queen, Jack, ten to winners.
+nine to a winner.
+PLNDEV91: One forcing play has been found, which will promote 4 lower cards.
+PLNCNT2: Removed finesses because Force and Cash generate more than 3 tricks
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 2 in Clubs, plus 4 in Diamonds, plus 1 in Hearts.
+PLNCSH30: A total of 8 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 13 plays and up to 13 possible tricks including 8 sure tricks (vs. 9 required) accounted for in the plan.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [DJ Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DT Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [DK Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Play the Queen of Diamonds from dummy to force out the opponents' Ace.
+ Play 2: Cash the Queen of Diamonds in dummy.
+ Play 3: Cash the Nine of Diamonds in dummy.
+ Play 4: Cash the Queen of Diamonds in dummy.
+ Play 5: Cash the King of Diamonds in hand.
+ Play 6: Cash the Ten of Diamonds in hand.
+ Play 7: Cash the Jack of Diamonds in hand.
+ Play 8: Cash the Jack of Diamonds in hand.
+ Play 9: Cash the Ten of Diamonds in hand.
+ Play 10: Cash the Ace of Spades in hand.
+ Play 11: Cash the Ace of Clubs in dummy.
+ Play 12: Cash the King of Clubs in dummy.
+ Play 13: Cash the Ace of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTST8: The play <DQ Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <D9 Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <DQ Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <DK Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <DT Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <DJ Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <DJ Cash> is not yet viable as the card [Ace] is still outstanding.
+PLYTST8: The play <DT Cash> is not yet viable as the card [Ace] is still outstanding.
+PLCSH55: The opponents led a Club, so cash the Ace now.
+PLAY: North plays the CA.
+Combined hand (Dummy/Hand):
+  S:A765 (75/A6)
+  H:AT9842 (T4/A982)
+  D:KQJT98753 (Q983/KJT75)
+  C:KJ9832 (K832/J9)
+Combined hand evaluation:
+  HCPs = 18.0, Distn pts = 4.0;
+  Total pts = 22.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  3 Sure Winners (1/1/0/1)
+  7 Eventual Winners (1/1/4/1)
+  6 Possible Losers (vs. 4 allowable)
+PLAY: East plays the C6.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.  <<<<<<<<<<<<<NO finesse for CQ
+PLCSH88b: Our cash of the CA from dummy is holding, so discard the C9.
+PLAY: We play the C9.
+
+

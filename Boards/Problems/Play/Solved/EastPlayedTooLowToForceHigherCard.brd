@@ -1,0 +1,118 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 24, 2009
+File Date =  07/26/09 14:52:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SJ ST H7 DK D9 D7 D4 D3 CA CJ C3 
+Current Hand(West) = SA HA HJ H9 H6 H3 DT CK CT C9 C4 C2 
+Current Hand(North) = SQ S7 S5 S2 HK HQ H5 H4 DA DQ DJ D2 
+Current Hand(East) = S9 S8 S6 S4 S3 HT H8 D8 D6 D5 CQ C7 
+Original Hand(South) = SK SJ ST H7 DK D9 D7 D4 D3 CA CJ C8 C3 
+Original Hand(West) = SA HA HJ H9 H6 H3 DT CK CT C9 C5 C4 C2 
+Original Hand(North) = SQ S7 S5 S2 HK HQ H5 H4 H2 DA DQ DJ D2 
+Original Hand(East) = S9 S8 S6 S4 S3 HT H8 D8 D6 D5 CQ C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 7
+Declarer = South
+Bidding History = 1C 1H Pass 1NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West C8 C5 H2 C6 South
+GameTrick #2 = South -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 50
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East played the C6 to FORCE a higher card ???
+>>>>>>>> EAST <<<<<<<<
+S:98643  H:T8  D:865  C:Q76
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  2 Likely Winners (1/0/0/1)
+  11 Likely Losers (4/2/3/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+West bids 1C.
+--------------------
+North bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL38: (with 3-card Club trump support including a trump honor & a doubleton in Hearts, the hand is revalued for a suit contract as dummy from 1.0 to 3.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+F04: But we have only 2.0/1.0/3.0 points against a minor suit bid, so we prefer to pass.
+We pass.
+--------------------
+South bids 1NT.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is South; West leads.
+=======================
+RCP5A: North is now known to have started with 0 Clubs.
+RCP25: Dummy is shown to be void in Clubs.
+PL03: Starting play as right-hand defender.
+PLDF35: Try to force a higher card by playing C6.  <<<<< HAS CQ
+
+

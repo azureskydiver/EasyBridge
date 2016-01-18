@@ -1,0 +1,145 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/07/11 17:24:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK SQ SJ H8 H3 H2 D6 D4 D3 CT C9 C8 
+Current Hand(West) = ST S4 S3 S2 HT H9 H4 DK DJ DT D9 D7 C4 
+Current Hand(North) = S9 S8 HQ HJ H6 H5 DA DQ D5 CA CK C3 C2 
+Current Hand(East) = S7 S6 S5 HA HK H7 D8 D2 CQ CJ C7 C5 
+Original Hand(South) = SA SK SQ SJ H8 H3 H2 D6 D4 D3 CT C9 C8 
+Original Hand(West) = ST S4 S3 S2 HT H9 H4 DK DJ DT D9 D7 C4 
+Original Hand(North) = S9 S8 HQ HJ H6 H5 DA DQ D5 CA CK C3 C2 
+Original Hand(East) = S7 S6 S5 HA HK H7 D8 D2 CQ CJ C7 C6 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 16
+Declarer = North
+Bidding History = Pass Pass 1NT Pass 2C Pass 2H Pass 2S Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- C6 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North forgot that South's 2C bid was Stayman
+>>>>>>>> NORTH<<<<<<<<
+=====================================
+Received hand:
+  S:98  H:QJ65  D:AQ5  C:AK32
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/2/1/2)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South passes.
+--------------------
+West passes.
+--------------------
+Opening bid for team.
+A00: Have 16.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+We bid 1NT.
+--------------------
+East passes.
+--------------------
+South bids 2C.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 No Trump and partner's response of 2 Clubs.
+STYR: Partner is using the Stayman convention, asking for majors.
+STYR11: With a 4-card Heart suit, reply to partner's Stayman inquiry with a 2 Hearts bid.
+We bid 2H.
+--------------------
+East passes.
+--------------------
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BXL04: Partner has reversed from Clubs to Spades.  <<<<<<<<<<<<<<<<<<< No, 2C was Stayman !!!!!!!!!!
+BXL30: Although partner bid Spades, we prefer to return to his previous Club suit.
+BXL39: Support partner's Club suit with 4-card support and 24.0-38.0 total team pts by bidding 3 Clubs.
+We bid 3C.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+West passes.
+--------------------
+Rebidding in round 4.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Clubs from 16.0 down to 15.0 points)
+BXPNTA: Partner bid Notrump, indicating a dislike for our Club suit.
+BXPNT5: With a total of 24.0-38.0 / 23.0-37.0 pts in the partnership, we lack adequate strength for a further raise beyond partner's 3 No Trump bid, so we have to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is North; East leads.
+=======================
+PLAY: East leads the C6.
+
+

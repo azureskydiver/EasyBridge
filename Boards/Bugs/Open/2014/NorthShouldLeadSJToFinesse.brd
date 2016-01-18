@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 8, 2014
+File Date =  04/11/14 21:12:07
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ ST S6 S5 HA HK HJ HT H9 H8 CT 
+Current Hand(West) = S9 H6 H3 H2 DT D8 D5 D3 D2 CA CJ C2 
+Current Hand(North) = SJ S7 S3 DA DQ D7 D6 CK C8 C7 C6 
+Current Hand(East) = SK S8 DK DJ D9 D4 CQ C9 C5 C4 C3 
+Original Hand(South) = SA SQ ST S6 S5 HA HK HJ HT H9 H8 H4 CT 
+Original Hand(West) = S9 H7 H6 H3 H2 DT D8 D5 D3 D2 CA CJ C2 
+Original Hand(North) = SJ S7 S3 S2 HQ DA DQ D7 D6 CK C8 C7 C6 
+Original Hand(East) = SK S8 S4 H5 DK DJ D9 D4 CQ C9 C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 16
+Declarer = South
+Bidding History = 1H Pass 2D Pass 2S Pass 4S Pass 4NT Pass 5D Pass 6S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West H4 H7 HQ H5 North
+GameTrick #2 = North -- -- S2 S4 ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 150
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 150	Bonus for defeating contract by 3 tricks"
+Game Score Record = "  60		2 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should finesse starting with the Jack
+>>>>>>>>SOUTH<<<<
+Combined hand (Dummy/Hand):
+  S:AQJT76532 (J732/AQT65)
+  H:AKJT984 (/AKJT984)
+  D:AQ76 (AQ76/)
+  C:KT876 (K876/T)
+Combined hand evaluation:
+  HCPs = 24.0, Distn pts = 10.0;   Total pts = 34.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (1/6/1/0)
+  12 Eventual Winners (4/7/1/0)
+  1 Possible Loser (vs. 1 allowable)
+PLYE34: Partner's Queen is high, so discard the H4.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=13 vs SureTricks=8 vs NumWinners=13, m_numTricksShort=3
+PLRV10: We have only 8 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PL1FN22: Lead a low Spade (the two) from dummy to finesse the ten in hand.  <<<<<<<<<<<<<NO transportation problem
+
+

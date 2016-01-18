@@ -1,0 +1,147 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 07, 2009
+File Date =  10/11/09 15:36:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S7 S5 S2 HK HQ HT H4 DK D2 C8 C5 C3 
+Current Hand(West) = SQ SJ S6 S3 HJ H7 H6 DA D9 D7 CA CK C9 
+Current Hand(North) = SA SK ST S4 H9 H8 H2 DQ DJ DT D6 C4 
+Current Hand(East) = HA H5 H3 D8 D5 D4 D3 CQ CJ CT C7 C6 
+Original Hand(South) = S9 S7 S5 S2 HK HQ HT H4 DK D2 C8 C5 C3 
+Original Hand(West) = SQ SJ S6 S3 HJ H7 H6 DA D9 D7 CA CK C9 
+Original Hand(North) = SA SK ST S8 S4 H9 H8 H2 DQ DJ DT D6 C4 
+Original Hand(East) = HA H5 H3 D8 D5 D4 D3 CQ CJ CT C7 C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 6
+Declarer = West
+Bidding History = 1NT 2S 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- S8 C2 West
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East/Dummy discards a winning Club
+>>>>>>> WEST <<<<<<<
+Swapped into a new hand.
+------------------------
+S:QJ63  H:J76  D:A97  C:AK9
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 14.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/1/2)
+  8 Likely Losers (2/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:QJ63 (/QJ63)
+  H:AJ7653 (A53/J76)
+  D:A987543 (8543/A97)
+  C:AKQJT9762 (QJT762/AK9)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 0.0;
+  Total pts = 22.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (0/1/1/6)
+  8 Eventual Winners (0/1/1/6)
+  5 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:QJ63 (/QJ63)
+  H:AJ7653 (A53/J76)
+  D:A987543 (8543/A97)
+  C:AKQJT9762 (QJT762/AK9)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 0.0;
+  Total pts = 22.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (0/1/1/6)
+  8 Eventual Winners (0/1/1/6)
+  5 Possible Losers (vs. 4 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 9 for the 3NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Lead a low Heart from dummy and finesse the Jack in hand against North.
+ Play 2: Cash the Ace of Hearts in dummy.
+ Play 3: Cash the Ace of Clubs in hand.
+ Play 4: Cash the King of Clubs in hand.
+ Play 5: Cash the Nine of Clubs in hand.
+ Play 6: Cash the Ten of Clubs in dummy.
+ Play 7: Cash the Jack of Clubs in dummy.
+ Play 8: Cash the Queen of Clubs in dummy.
+ Play 9: Cash the Ace of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2C2: We have no more cards in the suit in dummy, so discard the C2.  <<<<<<<<<< NO THIS will be A WINNER
+
+

@@ -1,0 +1,416 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 5, 2009
+File Date =  09/05/09 16:59:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S9 S7 S5 HJ H5 DT C9 
+Current Hand(West) = SJ ST S6 HT H8 H7 H4 H3 DJ 
+Current Hand(North) = S8 HK H2 D3 D2 CK CJ C8 C7 
+Current Hand(East) = HA HQ H9 H6 DQ CQ CT C6 C3 
+Original Hand(South) = SA SQ S9 S7 S5 S2 HJ H5 DT D6 D4 C9 C2 
+Original Hand(West) = SJ ST S6 S3 HT H8 H7 H4 H3 DJ D9 D7 C5 
+Original Hand(North) = SK S8 HK H2 DA DK D3 D2 CK CJ C8 C7 C4 
+Original Hand(East) = S4 HA HQ H9 H6 DQ D8 D5 CA CQ CT C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 9
+Declarer = West
+Bidding History = 2S Pass 3S Dbl Pass 4H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = North
+GameTrick #1 = North S2 S3 SK S4 North
+GameTrick #2 = North D4 D7 DA D5 North
+GameTrick #3 = North D6 D9 DK D8 North
+GameTrick #4 = North C2 C5 C4 CA East
+GameTrick #5 = East -- -- -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W are booked. Leading HA leaves HK as winner. Should finesse North for HK
+>>>>>>>> WEST<<<<<<<
+S:JT63  H:T8743  D:J97  C:5
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 0.5.
+  QT's = 0.0,
+  Sure Stoppers:
+  Probable Stoppers in: S
+  2 Likely Winners (1/1/0/0)
+  11 Likely Losers (3/4/3/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+South bids 2S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3S.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 12.5+ HCPs, for a total in the partnership of 13.0-22.0 points.
+TKOTR22: With 2.0/0.5 pts, respond with our longest suit of Hearts at a bid of 4 Hearts.
+We bid 4H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is West; North leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:JT643 (4/JT63)
+  H:AQT987643 (AQ96/T8743)
+  D:QJ9875 (Q85/J97)
+  C:AQT653 (AQT63/5)
+Combined hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0;
+  Total pts = 16.0.
+  QT's = 3.0,
+  Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/0/1)
+  2 Eventual Winners (0/1/0/1)
+  11 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:JT643 (4/JT63)
+  H:AQT987643 (AQ96/T8743)
+  D:QJ9875 (Q85/J97)
+  C:AQT653 (AQT63/5)
+Combined hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0;
+  Total pts = 16.0.
+  QT's = 3.0,
+  Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/0/1)
+  2 Eventual Winners (0/1/0/1)
+  11 Possible Losers (vs. 3 allowable)
+PLN10: We have only 2 sure tricks against a requirement of 10 for the 4H contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in dummy.
+ Play 2: Ruff a Club in hand.
+ Play 3: Ruff a Club in hand.
+ Play 4: Ruff a Club in hand.
+ Play 5: Ruff a Club in hand.
+ Play 6: Lead a low Club from hand to finesse the Queen in dummy against South, with the Ace as cover.
+ Play 7: Cash the Ace of Clubs in dummy.
+ Play 8: Ruff a Spade in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Ruff a Spade in dummy.
+ Play 11: Lead a low Spade from dummy and finesse the Jack in hand against North.
+ Play 12: Lead a low Diamond from hand and finesse the Queen in dummy against South.
+ Play 13: Lead a low Diamond from dummy and finesse the Jack in hand against North.
+ Play 14: Cash the Ace of Hearts in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A0: Play our only card in the suit, the four.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's King, so discard the S3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 2 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLYDCS6: Use this opportunity to discard the D5.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the five.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's Ace, so discard the D7.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 4 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (DK)  beats the DQ we were going to play, so skip the cash for now.
+PLCSH53: the card led (DK)  beats the DJ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLYDCS6: Use this opportunity to discard the D8.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the eight.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's King, so discard the D9.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 3 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH55: The opponents led a Club, so cash the Ace now.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH88b: Our cash of the CA from dummy is holding, so discard the C5.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 2 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the HA from dummy to pull in a round of trumps.
+PLTRMP82A: Discard the H3 on dummy's top Ace of trumps.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 6...
+PLRV10: We have only 1 reasonably sure trick left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the HQ from dummy to pull in a round of trumps.
+PLCSH72: Our cash of the HQ from dummy is holding, so discard the H4.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV10: We have only 5 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (CK)  beats the CQ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the three.
+PLRUF60: Ruff in hand with the H7.
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV30: Use the [Spade Ruff] to cross over to dummy to use the [Club Ruff].
+PLRUF04: Lead a low Spade (the six) from hand to ruff in dummy.
+PLDM: Playing card from dummy.
+PLRUF74: Ruff in dummy with the H6.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 9...
+PLRV10: We have only 4 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH30: Cash the CQ from dummy.
+RCP5A: South is now known to have started with 2 Clubs.
+PLCSH72: Our cash of the CQ from dummy is holding, so discard the ST.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 10...
+PLRV10: We have only 3 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF14: Lead a low Club (the six) from dummy to ruff in hand.
+PLYTRY: No usable plays found for the current situation.
+PLYD2A52: With no cards in the Clubs suit, trump with the ten.
+PLNADJ: Reviewing play plan for round 11...
+PLRV10: We have only 2 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PINTLV30: Use the [Spade Ruff] to cross over to dummy to use the [Club Ruff].
+PLRUF04: Lead a low Spade (the Jack) from hand to ruff in dummy.
+RCP5A: North is now known to have started with 2 Spades.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLYD2A52: With no cards in the Spades suit, trump with the nine.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 12...
+PLRV10: We have only 2 reasonably sure tricks left vs. 3 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF14: Lead a low Club (the ten) from dummy to ruff in hand.
+PLYTRY: No usable plays found for the current situation.
+PLYD2A52: With no cards in the Clubs suit, trump with the eight.
+PLNADJ: Reviewing play plan for round 13...
+PLRV10: We have only 1 reasonably sure trick left vs. 2 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH20: Lead a low Diamond (the Jack) from hand in order to cash the Queen in dummy.
+PLDM: Playing card from dummy.
+PLCSH74: Cash the DQ from dummy.
+RESULT: East/West were set 1 trick.
+PLAY: Play restarted.
+====================
+S:JT63  H:T8743  D:J97  C:5
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 0.5.
+  QT's = 0.0,
+  Sure Stoppers:
+  Probable Stoppers in: S
+  2 Likely Winners (1/1/0/0)
+  11 Likely Losers (3/4/3/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:JT643 (4/JT63)
+  H:AQT987643 (AQ96/T8743)
+  D:QJ9875 (Q85/J97)
+  C:AQT653 (AQT63/5)
+Combined hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0;
+  Total pts = 16.0.
+  QT's = 3.0,
+  Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/0/1)
+  2 Eventual Winners (0/1/0/1)
+  11 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:JT643 (4/JT63)
+  H:AQT987643 (AQ96/T8743)
+  D:QJ9875 (Q85/J97)
+  C:AQT653 (AQT63/5)
+Combined hand evaluation:
+  HCPs = 16.0, Distn pts = 0.0;
+  Total pts = 16.0.
+  QT's = 3.0,
+  Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/0/1)
+  2 Eventual Winners (0/1/0/1)
+  11 Possible Losers (vs. 3 allowable)
+PLN10: We have only 2 sure tricks against a requirement of 10 for the 4H contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in dummy.
+ Play 2: Ruff a Club in hand.
+ Play 3: Ruff a Club in hand.
+ Play 4: Ruff a Club in hand.
+ Play 5: Ruff a Club in hand.
+ Play 6: Lead a low Club from hand to finesse the Queen in dummy against South, with the Ace as cover.
+ Play 7: Cash the Ace of Clubs in dummy.
+ Play 8: Ruff a Spade in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Ruff a Spade in dummy.
+ Play 11: Lead a low Spade from dummy and finesse the Jack in hand against North.
+ Play 12: Lead a low Diamond from hand and finesse the Queen in dummy against South.
+ Play 13: Lead a low Diamond from dummy and finesse the Jack in hand against North.
+ Play 14: Cash the Ace of Hearts in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A0: Play our only card in the suit, the four.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's King, so discard the S3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 2 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLYDCS6: Use this opportunity to discard the D5.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the five.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's Ace, so discard the D7.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 4 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (DK)  beats the DQ we were going to play, so skip the cash for now.
+PLCSH53: the card led (DK)  beats the DJ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLYDCS6: Use this opportunity to discard the D8.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the eight.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's King, so discard the D9.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 3 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH55: The opponents led a Club, so cash the Ace now.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH88b: Our cash of the CA from dummy is holding, so discard the C5.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 2 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the HA from dummy to pull in a round of trumps.  <<<<<<<<<<< NO, go to hand and finesse
+
+

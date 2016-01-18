@@ -1,0 +1,131 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1,  2010
+File Date =  02/04/10 20:55:49
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S8 S4 DQ D7 
+Current Hand(West) = HJ H8 DJ C9 C4 
+Current Hand(North) = S9 S7 DT D5 D3 
+Current Hand(East) = D2 CJ CT C7 
+Original Hand(South) = SK SQ SJ S8 S4 HQ H7 DQ D7 D6 D4 C8 C6 
+Original Hand(West) = SA ST HA HJ H8 H6 H5 DJ D9 CQ C9 C4 C3 
+Original Hand(North) = S9 S7 S6 S2 H4 H3 H2 DK DT D5 D3 CK C5 
+Original Hand(East) = S5 S3 HK HT H9 DA D8 D2 CA CJ CT C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 10
+Declarer = East
+Bidding History = 1C 1S 2H Pass 3C Pass 5C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 6
+Lead Player for Current Game = South
+GameTrick #1 = South SK SA S2 S3 West
+GameTrick #2 = West C6 C3 C5 CA East
+GameTrick #3 = East C8 CQ CK C2 North
+GameTrick #4 = North SJ ST S6 S5 South
+GameTrick #5 = South D4 D9 DK DA East
+GameTrick #6 = East H7 H5 H2 HT East
+GameTrick #7 = East HQ HA H3 H9 West
+GameTrick #8 = West D6 H6 H4 HK East
+GameTrick #9 = East -- -- -- D8 ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 530
+North/South Game 1 Points = 270
+North/South Game 2 Points = 30
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = " 500		Small slam contract"
+Bonus Score Record = "  30		1 overtrick, vulnerable"
+Game Score Record = "  90		3 Hearts made"
+Game Score Record = " 180		6 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  30		1 Spade made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leds losing Diamond vs transfering to dummy to discard diamonds on winning Hearts
+>>>>>>EAST<<<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:53  H:KT9  D:A82  C:AJT72
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/1/1/3)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV11: We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (3) to fulfill the contract, we can just proceed with the cashing.
+PINTLV: Interleaving plays...
+PLCSH40: Lead a low Heart (the six) from dummy in order to cash the King in hand.
+PLCSH68: Cash the HK from hand.
+RCP5A: South is now known to have started with 2 Hearts.
+PLNADJ: Reviewing play plan for round 9...
+PLRV11: We have 5 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (2) to fulfill the contract, we can just proceed with the cashing.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLYLDB: With no other clear plays available, lead a card from the unbid Diamond suit.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV11: We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (3) to fulfill the contract, we can just proceed with the cashing.
+PINTLV: Interleaving plays...
+PLCSH40: Lead a low Heart (the six) from dummy in order to cash the King in hand.
+PLCSH68: Cash the HK from hand.
+PLNADJ: Reviewing play plan for round 9...
+PLRV11: We have 5 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (2) to fulfill the contract, we can just proceed with the cashing.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLYLDB: With no other clear plays available, lead a card from the unbid Diamond suit. <<<<<<<<<<<<< NO THIS LOSES !!!!!!!!!!!!
+
+

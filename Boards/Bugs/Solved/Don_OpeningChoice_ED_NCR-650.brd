@@ -1,0 +1,101 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 28, 2012
+File Date =  01/18/13 17:05:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S2 H8 H6 H4 DK DJ D8 D4 D3 D2 CA C7 C3 
+Current Hand(West) = SA S8 S7 S6 S5 HA HT H3 H2 D6 CJ CT C2 
+Current Hand(North) = SJ S4 S3 HJ H7 DQ DT D9 D7 CK CQ C9 C8 
+Current Hand(East) = SK SQ ST S9 HK HQ H9 H5 DA D5 C6 C5 C4 
+Original Hand(South) = S2 H8 H6 H4 DK DJ D8 D4 D3 D2 CA C7 C3 
+Original Hand(West) = SA S8 S7 S6 S5 HA HT H3 H2 D6 CJ CT C2 
+Original Hand(North) = SJ S4 S3 HJ H7 DQ DT D9 D7 CK CQ C9 C8 
+Original Hand(East) = SK SQ ST S9 HK HQ H9 H5 DA D5 C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 130
+North/South Game 1 Points = 160
+North/South Game 2 Points = 0
+North/South Game 3 Points = 60
+North/South Games Won = 1
+East/West Bonus Points = 160
+East/West Game 1 Points = 0
+East/West Game 2 Points = 190
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 3
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Bonus Score Record = "100		Honors bonus for holding 4 trump honors"
+Bonus Score Record = "	  60	2 overtricks"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "	  90	3 Hearts made"
+Game Score Record = "	 100	3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  60		3 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East opens 1 Diamond.  Why not 1 Club ?
+
+Norm,
+ 
+I do not understand why East opens 1 Diamond instead of 1 Club.
+ 
+Some people will always bid clubs (if they are 4-4 in the majors and 2-3 in the minors, or if they are 4-3 in the majors and 3-3 in the minors) and are opening a minimum hand.  This means they will sometimes open a 2 card club suit.
+ 
+Other people (like me) prefer to bid the longer minor (or the better one with equal length) in that situation.  This avoids opening a 2 card suit.
+ 
+From this hand it looks like EasyBridge picks the minor with the most HCP, even if it means opening a 2-card diamond suit.  Do you support this approach, or is it just something inherited from the old version ?
+ 
+Don
+

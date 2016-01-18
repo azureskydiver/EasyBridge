@@ -1,0 +1,235 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2010
+File Date =  11/04/10 17:04:53
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S6 S5 S4 S3 S2 HA HQ D5 CK C5 
+Current Hand(West) = SA S7 HJ H9 H6 DJ D7 CQ CT C7 C3 
+Current Hand(North) = SK SJ S8 HK H8 H4 DA DQ D9 D8 D4 
+Current Hand(East) = ST S9 HT H7 H5 H3 H2 D6 CJ C9 C8 
+Original Hand(South) = SQ S6 S5 S4 S3 S2 HA HQ DK D5 CK C5 C4 
+Original Hand(West) = SA S7 HJ H9 H6 DJ D7 D3 CQ CT C7 C6 C3 
+Original Hand(North) = SK SJ S8 HK H8 H4 DA DQ D9 D8 D4 D2 CA 
+Original Hand(East) = ST S9 HT H7 H5 H3 H2 DT D6 CJ C9 C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 35
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1D Pass 1S Pass 3D Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West C4 C6 CA C2 North
+GameTrick #2 = North DK D3 D2 DT South
+GameTrick #3 = South -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South cashes Club stopper  before getting out Spade Ace
+>>>> SOUTH<<<<<<<<<
+Starting play from restored game.
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 7 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1a: Can play the King of Diamonds in hand to try and drop one or more of the opponents' { DJ DT  }.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Queen of Spades to force out the opponents' Ace.
+PLNDEV31: This will promote the Queen, Jack, eight, six to winners.
+five to a winner.
+PLNDEV91: One forcing play has been found, which will promote 5 lower cards.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 5 cards in Spades, plus 1 in Clubs, plus 4 in Diamonds, plus 3 in Hearts.
+PLNCSH30: A total of 13 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 20 plays and up to 12 possible tricks including 7 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the DK from hand to try and drop one or more of the { DJ DT  }.
+ Play 2: Play the Queen of Spades from hand to force out the opponents' Ace.
+ Play 3: Cash the Queen of Spades in hand. <Requires ...>
+ Play 4: Cash the Jack of Spades in dummy. <Requires ...>
+ Play 5: Cash the Eight of Spades in dummy. <Requires ...>
+ Play 6: Cash the Six of Spades in hand. <Requires ...>
+ Play 7: Cash the Five of Spades in hand. <Requires ...>
+ Play 8: Cash the King of Spades in dummy. <Requires ...>
+ Play 9: Cash the Queen of Spades in hand. <Requires ...>
+ Play 10: Cash the Jack of Spades in dummy. <Requires ...>
+ Play 11: Cash the Eight of Spades in dummy. <Requires ...>
+ Play 12: Cash the Six of Spades in hand. <Requires ...>
+ Play 13: Cash the King of Clubs in hand.
+ Play 14: Cash the Ace of Diamonds in dummy.
+ Play 15: Cash the King of Diamonds in hand.
+ Play 16: Cash the Queen of Diamonds in dummy.
+ Play 17: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 18: Cash the Ace of Hearts in hand.
+ Play 19: Cash the King of Hearts in dummy.
+ Play 20: Cash the Queen of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [DA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [SQ Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [S6 Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [S5 Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [SQ Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Play the DK from hand to try and drop one or more of the { DJ DT  }.
+ Play 2: Play the Queen of Spades from hand to force out the opponents' Ace.
+ Play 3: Cash the Jack of Spades in dummy.
+ Play 4: Cash the Eight of Spades in dummy.
+ Play 5: Cash the King of Spades in dummy.
+ Play 6: Cash the Jack of Spades in dummy.
+ Play 7: Cash the Eight of Spades in dummy.
+ Play 8: Cash the Queen of Spades in hand.
+ Play 9: Cash the Five of Spades in hand.
+ Play 10: Cash the Six of Spades in hand.
+ Play 11: Cash the Queen of Spades in hand.
+ Play 12: Cash the Six of Spades in hand.
+ Play 13: Cash the King of Clubs in hand.
+ Play 14: Cash the King of Diamonds in hand.
+ Play 15: Cash the Ace of Diamonds in dummy.
+ Play 16: Cash the Queen of Diamonds in dummy.
+ Play 17: Cash the Nine of Diamonds in dummy.
+ Play 18: Cash the Ace of Hearts in hand.
+ Play 19: Cash the Queen of Hearts in hand.
+ Play 20: Cash the King of Hearts in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLDRP11: Lead low with the D2 from dummy up to the King in hand to try and drop one or more of the { DJ DT  }.
+PLAY: North leads the D2.
+PLAY: East plays the DT.
+PLAY: We play the DK.
+PLAY: West plays the D3.
+PLAY: South wins the round.
+--------
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 6 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the Ace of Diamonds in dummy to try and drop the opponents' Jack.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Queen of Spades to force out the opponents' Ace.
+PLNDEV31: This will promote the Queen, Jack, eight, six to winners.
+five to a winner.
+PLNDEV91: One forcing play has been found, which will promote 5 lower cards.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 5 cards in Spades, plus 1 in Clubs, plus 4 in Diamonds, plus 3 in Hearts.
+PLNCSH30: A total of 13 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 20 plays and up to 11 possible tricks including 6 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the DA from Dummy to try and drop the DJ.
+ Play 2: Play the Queen of Spades from hand to force out the opponents' Ace.   <<<<<<<<<<<<<<<<<<<<<<<<<<<< THIS ONE!!!!
+ Play 3: Cash the Queen of Spades in hand. <Requires ...>
+ Play 4: Cash the Jack of Spades in dummy. <Requires ...>
+ Play 5: Cash the Eight of Spades in dummy. <Requires ...>
+ Play 6: Cash the Six of Spades in hand. <Requires ...>
+ Play 7: Cash the Five of Spades in hand. <Requires ...>
+ Play 8: Cash the King of Spades in dummy. <Requires ...>
+ Play 9: Cash the Queen of Spades in hand. <Requires ...>
+ Play 10: Cash the Jack of Spades in dummy. <Requires ...>
+ Play 11: Cash the Eight of Spades in dummy. <Requires ...>
+ Play 12: Cash the Six of Spades in hand. <Requires ...>
+ Play 13: Cash the King of Clubs in hand.
+ Play 14: Cash the Ace of Diamonds in dummy.
+ Play 15: Cash the Queen of Diamonds in dummy.
+ Play 16: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 17: Cash the Eight of Diamonds in dummy. <Requires ...>
+ Play 18: Cash the Ace of Hearts in hand.
+ Play 19: Cash the King of Hearts in dummy.
+ Play 20: Cash the Queen of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [SQ Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [S6 Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [S5 Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [SQ Cash] so the suit winners in dummy are cashed first, to avoid possible stranding.
+PINTLV50: The cash of the CK can only be used here in the hand since there are no lead cards in the opposite hand -- so move up the play.  <<<<<<<<<<<< NO, have Heart entries
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the King of Clubs in hand.
+ Play 2: Play the DA from Dummy to try and drop the DJ.
+ Play 3: Play the Queen of Spades from hand to force out the opponents' Ace.
+ Play 4: Cash the Jack of Spades in dummy.
+ Play 5: Cash the Eight of Spades in dummy.
+ Play 6: Cash the King of Spades in dummy.
+ Play 7: Cash the Jack of Spades in dummy.
+ Play 8: Cash the Eight of Spades in dummy.
+ Play 9: Cash the Queen of Spades in hand.
+ Play 10: Cash the Five of Spades in hand.
+ Play 11: Cash the Six of Spades in hand.
+ Play 12: Cash the Queen of Spades in hand.
+ Play 13: Cash the Six of Spades in hand.
+ Play 14: Cash the Ace of Diamonds in dummy.
+ Play 15: Cash the Queen of Diamonds in dummy.
+ Play 16: Cash the Nine of Diamonds in dummy.
+ Play 17: Cash the Eight of Diamonds in dummy.
+ Play 18: Cash the Ace of Hearts in hand.
+ Play 19: Cash the Queen of Hearts in hand.
+ Play 20: Cash the King of Hearts in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH10: Cash the CK from hand.     <<<<<<<<<< NO only stopper. Need to get out SA first!!!
+
+
+
+

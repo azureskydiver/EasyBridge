@@ -1,0 +1,164 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 9, 2009
+File Date =  08/11/09 16:15:28
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S3 HT H3 H2 DA DK DQ D5 D4 CK C7 C3 C2 
+Current Hand(West) = SQ S7 S5 HK HQ H9 H7 DT D2 CA CQ CT 
+Current Hand(North) = SA SK S8 S6 S4 HA H8 H5 D8 D6 D3 C6 C5 
+Current Hand(East) = SJ ST S9 S2 HJ H6 H4 DJ D9 D7 CJ C9 C4 
+Original Hand(South) = S3 HT H3 H2 DA DK DQ D5 D4 CK C7 C3 C2 
+Original Hand(West) = SQ S7 S5 HK HQ H9 H7 DT D2 CA CQ CT C8 
+Original Hand(North) = SA SK S8 S6 S4 HA H8 H5 D8 D6 D3 C6 C5 
+Original Hand(East) = SJ ST S9 S2 HJ H6 H4 DJ D9 D7 CJ C9 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = 1C 1S Pass 2D Pass 3D Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- C8 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 220
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 150
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  90		3 Spades made"
+Game Score Record = " 130		4 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West led low from CAQT8 vs high from HKQ97 -> South made his 3NT
+>>>>>>>> WEST<<<<<<<,
+S:Q75  H:KQ97  D:T2  C:AQT8
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (1/3/0/3)
+  6 Likely Losers (2/1/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+Opening bid for team.
+E01: Have 13.0 points in high cards, so bid 1 Club.
+We bid 1C.
+--------------------
+North bids 1S.
+--------------------
+East passes.
+--------------------
+South bids 2D.
+--------------------
+Rebidding after opening bid of 1 Club and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 13.0/13.0 points in hand and 13.0-18.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+North bids 3D.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C8.  <<<<<<< FROM AQ???
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the ten.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H9.
+PLDF2Ya: We have no Diamonds, so discard the H9.
+RCP5A: West is now known to have started with 2 Diamonds.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the H7.
+RCP5A: East is now known to have started with 3 Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the CT.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the five.
+RCP5A: South is now known to have started with 1 Spade.
+PLAYB48: We can't beat North's Ace, so discard the S7.
+PLAYB48: We can't beat North's Ace, so discard the HQ.
+RCP20: Dummy is now out of Hearts.
+PLAYB34: Partner's Jack is high, so discard the HK.
+PLYLD76: Continue developing our Club suit by playing the CA.
+PLYSIG0: Partner discarded high with the Jack, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Clubs suit, so lead the CQ.
+PLCSW9: With no other good options, cash a winner in the Club suit, the Queen
+PLYLD84: With no other obvious plays, cash a winner with the CQ.
+PLYSIG6: Partner discarded low with the four after discarding the Jack last round, thus marking a high-low suit preference signal.
+PLCSW9: With no other good options, cash a winner in the Spade suit, the Queen
+PLYLD84: With no other obvious plays, cash a winner with the SQ.
+RCP20: Dummy is now out of Spades.
+PLYSIG0: Partner discarded high with the Jack, so consider it a suit preference signal.
+RESULT: North/South made the contract.
+
+

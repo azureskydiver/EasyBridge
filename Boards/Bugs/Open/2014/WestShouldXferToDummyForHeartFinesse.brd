@@ -1,0 +1,588 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 19, 2015
+File Date =  01/24/15 14:50:42
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ S4 HK H7 H5 H4 DJ D9 D3 
+Current Hand(West) = SK S8 HT H9 H8 DA DQ D6 D4 
+Current Hand(North) = S9 S6 S5 DK DT D8 D7 C6 C4 
+Current Hand(East) = SQ ST S7 S3 S2 HQ HJ H3 C8 
+Original Hand(South) = SA SJ S4 HK H7 H5 H4 DJ D9 D3 D2 CA C3 
+Original Hand(West) = SK S8 HA HT H9 H8 H6 DA DQ D6 D4 C9 C7 
+Original Hand(North) = S9 S6 S5 DK DT D8 D7 D5 CQ CJ CT C6 C4 
+Original Hand(East) = SQ ST S7 S3 S2 HQ HJ H3 H2 CK C8 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = West
+Bidding History = 1H Pass 2NT Pass 3NT Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = North
+GameTrick #1 = North CA C7 CQ CK South
+GameTrick #2 = South C3 C9 CT C2 North
+GameTrick #3 = North D2 H6 CJ C5 West
+GameTrick #4 = West -- HA D5 H2 ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 30
+East/West Game 1 Points = 120
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 2
+Bonus Score Record = "	  30	1 overtrick"
+Game Score Record = "	 120	4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should Xfer to board and finesse Hearts
+>>>>>WEST<<<<<<<<
+=====================================
+Received hand:
+  S:K8  H:AT986  D:AQ64  C:97
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0; Total pts = 13.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Likely Winners (1/2/2/0)
+  8 Likely Losers (1/3/2/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+Opening bid for team.
+E02: Have 13.0 points in high cards and 3.0 quick tricks, so bid 1 Heart.
+We bid 1H.
+--------------------
+North passes.
+--------------------
+East bids 2NT.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 2 No Trump.
+J2N20: Partner has made a Jacoby 2NT inquiry bid, indicating 12.5 pts and 4+ card support.
+REVAL1: Revaluing hand as declarer for Heart contract...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 13.0 to 15.0 points)
+J2N28: With 15.0 points in hand and no short suits,  respond to partner's Jacoby 2NT inquiry with a bid of 3 No Trump.
+We bid 3NT.
+--------------------
+North passes.
+--------------------
+East bids 4H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BXC00: Partner has returned to our first suit, raising it to 4 Hearts.
+BXC30: With a game contract reached at 4 Hearts, we pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is West; North leads.
+=======================
+PLAY: North leads the CQ.
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KQT8732 (QT732/K8)
+  H:AQJT98632 (QJ32/AT986)
+  D:AQ64 (/AQ64)
+  C:K98752 (K852/97)
+Combined hand evaluation:
+  HCPs = 21.0, Distn pts = 5.0;   Total pts = 26.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/1/0)
+  6 Eventual Winners (1/4/1/0)
+  7 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KQT8732 (QT732/K8)
+  H:AQJT98632 (QJ32/AT986)
+  D:AQ64 (/AQ64)
+  C:K98752 (K852/97)
+Combined hand evaluation:
+  HCPs = 21.0, Distn pts = 5.0;   Total pts = 26.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/1/0)
+  6 Eventual Winners (1/4/1/0)
+  7 Possible Losers (vs. 3 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 10 for the 4H contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the King of Clubs by leading to it from hand against North.
+PSFNS44: Can opportunistically finesse the King of Clubs in dummy against South.
+PSFNS30: Can finesse the Queen of Spades by leading to it from hand against North.
+PSFNS31: Can finesse the King of Spades by leading to it from dummy against North.
+PLNFNS90: A total of 4 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 3 Diamonds in dummy.
+PLNRF1: We can potentially ruff up to 2 Clubs in hand after discarding the 2 losers from hand.
+PLNRF1: We can potentially ruff up to 3 Spades in hand after discarding the 2 losers from hand.
+PLNRF5: Up to 8 ruffs can be used (3 in dummy/5 in hand) out of a total of 12 available, but require 4 discard(s) first.
+PLNRF8: This consists of the { C7 C9 S8 SK } from hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Diamonds, plus 1 in Hearts, plus.
+PLNCSH30: A total of 2 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 1 round of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 4 outstanding trump(s).
+PLNTRMP9: This will result in  1 round of trumps and up to 8 ruffing tricks.
+PSFNS11: Can finesse the Nine of Hearts in hand with the Ace as the potential cover card.
+PSFNS11: Can finesse the Ten of Hearts in hand with the Ace as the potential cover card.
+PSFNS21: Can finesse the Queen of Hearts by leading it from dummy, with the Ace as the potential cover card in hand.
+PSFNS30: Can finesse the Jack of Hearts by leading to it from hand against North.
+PSFNS30: Can finesse the Queen of Hearts by leading to it from hand against North.
+PLFTF1: Removed plan <Trump Jack Finesse>, only types 1 & 2 for trump.
+PLFTF1: Removed plan <Trump Queen Finesse>, only types 1 & 2 for trump.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 18 possible plays and approx. 11+ possible tricks including 6 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ50: Move the opportunistic CK Finesse to the front.
+PINTLV: Interleaving plays...
+PINTLV55: The play: [Finesse the CK] needs to be started from the hand.
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the King from dummy to finesse against North.
+ Play 2: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 3: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 4: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 5: Pull a round of trumps with the Ace in hand.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Ruff a Diamond in dummy.
+ Play 8: Ruff a Diamond in dummy.
+ Play 9: Ruff a Club in hand.
+ Play 10: Ruff a Club in hand.
+ Play 11: Ruff a Spade in hand.
+ Play 12: Ruff a Spade in hand.
+ Play 13: Ruff a Spade in hand.
+ Play 14: Lead a low Club from hand and finesse the King in dummy against South.
+ Play 15: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 16: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 17: Cash the Ace of Diamonds in hand.
+ Play 18: Cash the Ace of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the CK from dummy in second position against South.
+PLAY: East plays the CK.
+PLAY: South plays the CA.
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY4: Removed plan <CK Finesse> (abandoned)
+PLYTRY3: Postponed plan <Trump nine Finesse>
+PLYTRY3: Postponed plan <Trump ten Finesse>
+PLYTRY3: Postponed plan <HA Trump Pull>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY: No usable plays found for the current situation.
+PLAY4: Playing fourth, using default player logic.
+PLYDCS1: Use this opportunity to discard the C7.
+PLYE48: We can't beat South's Ace, so discard the C7.
+PLAY: We play the C7.
+PLAY: South wins the round.
+--------
+PLAY: South leads the C3.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=10 vs SureTricks=2 vs NumWinners=10, m_numTricksShort=8
+PLRV10: We have only 2 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Queen of Spades by leading to it from hand against North.
+PSFNS31: Can finesse the King of Spades by leading to it from dummy against North.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the King of Spades to force out the opponents' Ace.
+PLNDEV30: We can play the King of Spades to force out the opponents' Jack.
+PLNDEV31: This will promote the ten, eight and seven to winners.
+PLDEV35: Changed priority suit to Spade from Diamond.
+PLNDEV90: A total of 2 forcing plays have been found, which will promote 3 lower cards.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Diamonds in dummy.
+PLNRF1: We can potentially ruff up to 2 Clubs in hand after discarding the 1 loser from hand.
+PLNRF1: We can potentially ruff up to 2 Spades in hand after discarding the 2 losers from hand.
+PLNRF5: Up to 6 ruffs can be used (2 in dummy/4 in hand) out of a total of 10 available, but require 3 discard(s) first.
+PLNRF8: This consists of the { C9 S8 SK } from hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Diamonds, plus 1 in Hearts, plus.
+PLNCSH30: A total of 2 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 1 round of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 4 outstanding trump(s).
+PLNTRMP9: This will result in  1 round of trumps and up to 6 ruffing tricks.
+PSFNS11: Can finesse the Nine of Hearts in hand with the Ace as the potential cover card.
+PSFNS11: Can finesse the Ten of Hearts in hand with the Ace as the potential cover card.
+PSFNS21: Can finesse the Queen of Hearts by leading it from dummy, with the Ace as the potential cover card in hand.
+PSFNS30: Can finesse the Jack of Hearts by leading to it from hand against North.
+PSFNS30: Can finesse the Queen of Hearts by leading to it from hand against North.
+PLFTF1: Removed plan <Trump Jack Finesse>, only types 1 & 2 for trump.
+PLFTF1: Removed plan <Trump Queen Finesse>, only types 1 & 2 for trump.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 16 possible plays and approx. 9+ possible tricks including 2 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRIx: Priority suit changed from Spade. Selection merit was 6.0 vs 7.0.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLRV50: The unsorted list of available plays is as follows:
+------>
+ Play 1: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 2: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 3: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 4: Pull a round of trumps with the Ace in hand.
+ Play 5: Ruff a Diamond in dummy.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Club in hand.
+ Play 9: Ruff a Spade in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 12: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 13: Play the King of Spades from hand to force out the opponents' Ace.
+ Play 14: Play the King of Spades from hand to force out the opponents' Jack.
+ Play 15: Cash the Ace of Diamonds in hand.
+ Play 16: Cash the Ace of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 1 plays using the Diamond suit.
+PINTLV: Interleaving plays...
+PINTLV55: The play: [Finesse the nine of trumps] needs to be started from dummy.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 2: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 3: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 4: Pull a round of trumps with the Ace in hand.
+ Play 5: Ruff a Diamond in dummy.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Cash the Ace of Diamonds in hand.
+ Play 8: Ruff a Club in hand.
+ Play 9: Ruff a Club in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Ruff a Spade in hand.
+ Play 12: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 13: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 14: Play the King of Spades from hand to force out the opponents' Ace.
+ Play 15: Play the King of Spades from hand to force out the opponents' Jack.
+ Play 16: Cash the Ace of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTRY3: Postponed plan <Trump nine Finesse>
+PLYTRY3: Postponed plan <Trump ten Finesse>
+PLYTRY3: Postponed plan <Trump Queen Finesse>
+PLYTRY3: Postponed plan <HA Trump Pull>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <DA Cash>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <SQ Finesse>
+PLYTRY3: Postponed plan <SK Finesse>
+PLYTRY3: Postponed plan <Force out the SA>
+PLYTRY3: Postponed plan <Force out the SJ>
+PLYTRY3: Postponed plan <HA Cash>
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2A0: Play our only card in the suit, the nine.
+PLAY: We play the C9.
+PLAY: North plays the CT.
+PLDM: Playing card from dummy.
+PLYTRY3: Postponed plan <Trump nine Finesse>
+PLYTRY3: Postponed plan <Trump ten Finesse>
+PLYTRY3: Postponed plan <HA Trump Pull>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <Force out the SA>
+PLYTRY3: Postponed plan <Force out the SJ>
+PLYTRY: No usable plays found for the current situation.
+PLAY: East plays the C2.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CJ.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=10 vs SureTricks=3 vs NumWinners=10, m_numTricksShort=7
+PLRV10: We have only 3 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Queen of Spades by leading to it from hand against North.
+PSFNS31: Can finesse the King of Spades by leading to it from dummy against North.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the King of Spades to force out the opponents' Ace.
+PLNDEV30: We can play the King of Spades to force out the opponents' Jack.
+PLNDEV31: This will promote the ten, eight and seven to winners.
+PLDEV35: Changed priority suit to Spade from Diamond.
+PLNDEV90: A total of 2 forcing plays have been found, which will promote 3 lower cards.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Club in hand.
+PLNRF1: We can potentially ruff up to 2 Diamonds in dummy.
+PLNRF1: We can potentially ruff up to 2 Spades in hand after discarding the 2 losers from hand.
+PLNRF5: Up to 5 ruffs can be used (2 in dummy/3 in hand) out of a total of 9 available, but require 2 discard(s) first.
+PLNRF8: This consists of the { S8 SK } from hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Clubs, plus 1 in Diamonds, plus 1 in Hearts, plus.
+PLNCSH30: A total of 3 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 2 rounds of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 4 outstanding trump(s).
+PLNTRMP9: This will result in (up to) 2 rounds of trumps and up to 5 ruffing tricks.
+PSFNS11: Can finesse the Nine of Hearts in hand with the Ace as the potential cover card.
+PSFNS11: Can finesse the Ten of Hearts in hand with the Ace as the potential cover card.
+PSFNS21: Can finesse the Queen of Hearts by leading it from dummy, with the Ace as the potential cover card in hand.
+PSFNS30: Can finesse the Jack of Hearts by leading to it from hand against North.
+PSFNS30: Can finesse the Queen of Hearts by leading to it from hand against North.
+PLFTF1: Removed plan <Trump Jack Finesse>, only types 1 & 2 for trump.
+PLFTF1: Removed plan <Trump Queen Finesse>, only types 1 & 2 for trump.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 17 possible plays and approx. 10+ possible tricks including 3 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRIx: Priority suit changed from Spade. Selection merit was 6.0 vs 7.0.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLRV50: The unsorted list of available plays is as follows:
+------>
+ Play 1: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 2: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 3: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 4: Pull a round of trumps with the Ace in hand.
+ Play 5: Pull a round of trumps with the ten in hand.
+ Play 6: Ruff a Club in hand.
+ Play 7: Ruff a Diamond in dummy.
+ Play 8: Ruff a Diamond in dummy.
+ Play 9: Ruff a Spade in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 12: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 13: Play the King of Spades from hand to force out the opponents' Ace.
+ Play 14: Play the King of Spades from hand to force out the opponents' Jack.
+ Play 15: Cash the Ace of Diamonds in hand.
+ Play 16: Cash the Eight of Clubs in dummy.
+ Play 17: Cash the Ace of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 3 plays using the Diamond suit.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 2: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 3: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 4: Pull a round of trumps with the Ace in hand.
+ Play 5: Pull a round of trumps with the ten in hand.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Ruff a Diamond in dummy.
+ Play 8: Cash the Ace of Diamonds in hand.
+ Play 9: Ruff a Club in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Ruff a Spade in hand.
+ Play 12: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 13: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 14: Play the King of Spades from hand to force out the opponents' Ace.
+ Play 15: Play the King of Spades from hand to force out the opponents' Jack.
+ Play 16: Cash the Eight of Clubs in dummy.
+ Play 17: Cash the Ace of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTRY3: Postponed plan <Trump nine Finesse>
+PLYTRY3: Postponed plan <Trump ten Finesse>
+PLYTRY3: Postponed plan <Trump Queen Finesse>
+PLYTRY3: Postponed plan <HA Trump Pull>
+PLYTRY3: Postponed plan <HT Trump Pull>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <DA Cash>
+PLYTRY3: Postponed plan <Club Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <Spade Ruff>
+PLYTRY3: Postponed plan <SQ Finesse>
+PLYTRY3: Postponed plan <SK Finesse>
+PLYTRY3: Postponed plan <Force out the SA>
+PLYTRY3: Postponed plan <Force out the SJ>
+PLCSH53: the card led (CJ)  beats the C8 we were going to play, so skip the cash for now.
+PLYTRY3: Postponed plan <C8 Cash>
+PLYTRY3: Postponed plan <HA Cash>
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A8: We don't have a winner in the suit in dummy, so discard the five.
+PLAY: East plays the C5.
+PLAY: South plays the D2.
+RCP10: South shows out of Clubs.
+RCP5A: South is now known to have started with 2 Clubs.
+PLYTRY3: Postponed plan <Trump nine Finesse>
+PLYTRY3: Postponed plan <Trump ten Finesse>
+PLYTRY3: Postponed plan <HA Trump Pull>
+PLYTRY3: Postponed plan <HT Trump Pull>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLYTRY3: Postponed plan <Diamond Ruff>
+PLRUF60: Ruff in hand with the H6.
+PLAY: We play the H6.
+PLAY: West wins the round.
+--------
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=9 vs SureTricks=3 vs NumWinners=9, m_numTricksShort=6
+PLRV10: We have only 3 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Queen of Spades by leading to it from hand against North.
+PSFNS31: Can finesse the King of Spades by leading to it from dummy against North.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the King of Spades to force out the opponents' Ace.
+PLNDEV30: We can play the King of Spades to force out the opponents' Jack.
+PLNDEV31: This will promote the ten, eight and seven to winners.
+PLDEV35: Changed priority suit to Spade from Diamond.
+PLNDEV90: A total of 2 forcing plays have been found, which will promote 3 lower cards.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Diamonds in dummy.
+PLNRF1: We can potentially ruff up to 2 Spades in hand after discarding the 2 losers from hand.
+PLNRF5: Up to 4 ruffs can be used (2 in dummy/2 in hand) out of a total of 7 available, but require 2 discard(s) first.
+PLNRF8: This consists of the { S8 SK } from hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Clubs, plus 1 in Diamonds, plus 1 in Hearts, plus.
+PLNCSH30: A total of 3 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 2 rounds of trumps without endangering the contract.
+PLNTRMP8: However, this may not pull in all 4 outstanding trump(s).
+PLNTRMP9: This will result in (up to) 2 rounds of trumps and up to 4 ruffing tricks.
+PSFNS11: Can finesse the Nine of Hearts in hand with the Ace as the potential cover card.
+PSFNS11: Can finesse the Ten of Hearts in hand with the Ace as the potential cover card.
+PSFNS21: Can finesse the Queen of Hearts by leading it from dummy, with the Ace as the potential cover card in hand.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 16 possible plays and approx. 9+ possible tricks including 3 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRIx: Priority suit changed from Spade. Selection merit was 6.0 vs 7.0.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLRV50: The unsorted list of available plays is as follows:
+------>
+ Play 1: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 2: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 3: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 4: Pull a round of trumps with the Ace in hand.
+ Play 5: Pull a round of trumps with the Queen in hand.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Ruff a Diamond in dummy.
+ Play 8: Ruff a Spade in hand.
+ Play 9: Ruff a Spade in hand.
+ Play 10: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 11: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 12: Play the King of Spades from hand to force out the opponents' Ace.
+ Play 13: Play the King of Spades from hand to force out the opponents' Jack.
+ Play 14: Cash the Ace of Diamonds in hand.
+ Play 15: Cash the Eight of Clubs in dummy.
+ Play 16: Cash the Ace of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 1 plays using the Diamond suit.
+PINTLV: Interleaving plays...
+PINTLV55: The play: [Finesse the nine of trumps] needs to be started from dummy.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Lead a low trump from dummy to finesse the nine in hand against North, with the Ace as cover.
+ Play 2: Lead a low trump from dummy to finesse the ten in hand against North, with the Ace as cover.
+ Play 3: Lead the trump Queen from dummy and finesse it, with the Ace in hand as cover.
+ Play 4: Pull a round of trumps with the Ace in hand.
+ Play 5: Pull a round of trumps with the Queen in hand.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Ruff a Diamond in dummy.
+ Play 8: Cash the Ace of Diamonds in hand.
+ Play 9: Ruff a Spade in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 12: Lead a low Spade from dummy and finesse the King in hand against North.
+ Play 13: Play the King of Spades from hand to force out the opponents' Ace.
+ Play 14: Play the King of Spades from hand to force out the opponents' Jack.
+ Play 15: Cash the Eight of Clubs in dummy.
+ Play 16: Cash the Ace of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PL1FNS10: Can't use this (Type I) finesse leading from hand, as the finesse card (H9) and its covers are in our own hand.
+PLYTRY3: Postponed plan <Trump nine Finesse>
+PL1FNS10: Can't use this (Type I) finesse leading from hand, as the finesse card (HT) and its covers are in our own hand.
+PLYTRY3: Postponed plan <Trump ten Finesse>
+PL2FNS10: Can't use this (Type II) finesse leading from hand, as the finesse card (HQ) has to be led from dummy.
+PLYTRY3: Postponed plan <Trump Queen Finesse>
+PLTRMP12: Lead out the HA from hand to pull in a round of trumps.
+PLAY: We lead the HA.
+PLAY: North plays the D5.
+RCP10: North shows out of Hearts.
+RCP5A: North is now known to have started with 0 Hearts.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the H2 on declarer's top Ace of trumps.
+PLAY: East plays the H2.
+
+
+
+

@@ -1,0 +1,124 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2010
+File Date =  12/26/10 13:24:05
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK HK DJ D8 
+Current Hand(West) = DA CK CJ C9 
+Current Hand(North) = DT D7 D6 D5 
+Current Hand(East) = HQ D9 D3 C4 
+Original Hand(South) = SK SQ ST S7 S5 HK HJ HT H7 H2 DK DJ D8 
+Original Hand(West) = SJ S9 S3 HA H4 DA DQ CK CJ C9 C8 C7 C5 
+Original Hand(North) = SA S6 S4 S2 H8 DT D7 D6 D5 D2 CQ CT C6 
+Original Hand(East) = S8 HQ H9 H6 H5 H3 D9 D4 D3 CA C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 13
+Declarer = South
+Bidding History = 1C Pass 1H 1S 2C 2S Pass 3S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H2 HA H8 H9 West
+GameTrick #2 = West S5 C7 C6 CA South
+GameTrick #3 = South S7 S3 SA S8 North
+GameTrick #4 = North SQ S9 S2 C2 South
+GameTrick #5 = South H7 H4 S4 H3 North
+GameTrick #6 = North ST C5 CT C3 South
+GameTrick #7 = South HT SJ CQ H5 West
+GameTrick #8 = West DK DQ D2 D4 South
+GameTrick #9 = South HJ C8 S6 H6 North
+GameTrick #10 = North -- -- -- -- ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should lead low diamond to South's Jack to keep from blocking the suit.
+>>>>>>>> SOUTH<<<<<<
+PLNADJ: Reviewing play plan for round 10...
+PLRV10: We have only 2 reasonably sure tricks left vs. 3 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Ten of Diamonds to force out the opponents' Ace.
+PLNDEV31: This will promote the eight and seven to winners.
+PLNDEV91: One forcing play has been found, which will promote 2 lower cards.
+PLNRF0: Looking for ruffing tricks...
+PLNRF4: No immediate ruffing tricks are available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 3 cards in Diamonds, plus 1 in Hearts.
+PLNCSH30: A total of 4 maximum cashing tricks are immediately available. 3 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 3 cashing tricks in the side suits, and up to 0 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 5 possible plays and approx. 4+ possible tricks including 2 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the Ten of Diamonds from dummy to force out the opponents' Ace.
+ Play 2: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 3: Cash the Ten of Diamonds in dummy. <Requires ...>
+ Play 4: Cash the Eight of Diamonds in hand. <Requires ...>
+ Play 5: Cash the King of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [DT Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Play the Ten of Diamonds from dummy to force out the opponents' Ace.
+ Play 2: Cash the Jack of Diamonds in hand.
+ Play 3: Cash the Eight of Diamonds in hand.
+ Play 4: Cash the Ten of Diamonds in dummy.
+ Play 5: Cash the King of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLFRC12: Play the DT from dummy to force out the opponents' Ace.
+
+
+

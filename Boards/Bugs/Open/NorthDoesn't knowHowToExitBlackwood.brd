@@ -1,0 +1,132 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 12,  2010
+File Date =  01/15/10 17:07:03
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ ST S7 S5 S3 HJ H7 H5 C9 C5 C4 C2 
+Current Hand(West) = SQ S8 S6 DT D8 D7 D6 D4 D2 CQ C6 C3 
+Current Hand(North) = S9 S4 HK HQ H8 H6 DA DK DQ D9 CA CJ CT 
+Current Hand(East) = SK S2 HT H9 H4 H3 H2 DJ D5 D3 CK C8 C7 
+Original Hand(South) = SA SJ ST S7 S5 S3 HJ H7 H5 C9 C5 C4 C2 
+Original Hand(West) = SQ S8 S6 HA DT D8 D7 D6 D4 D2 CQ C6 C3 
+Original Hand(North) = S9 S4 HK HQ H8 H6 DA DK DQ D9 CA CJ CT 
+Original Hand(East) = SK S2 HT H9 H4 H3 H2 DJ D5 D3 CK C8 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 2S Pass 4NT Pass 5D Pass 5NT Pass 6C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- HA -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North doesn't know how to bail out in failed slam quest when using blackwood.
+>>>>>>>NORTH<<<<<<<<<<
+S:94  H:KQ86  D:AKQ9  C:AJT
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 19.0.
+  QT's = 4.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/3/4/1)
+  5 Likely Losers (2/1/0/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.0-10.0 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+RWKT40: We have 19.0/19.0/19.0 points, for a partnership total of 24.0-29.0 points, so we may be interested in a possible slam.
+RWKT46: And we have a balanced hand with all unbid suits stopped, so move towards slam.
+BLKWD: with 19.0/19.0/19.0 points in the hand, for a total of approx. 24.0-29.0 / 24.0-29.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump.
+We bid 4NT.
+--------------------
+East passes.
+--------------------
+South bids 5D.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 2 Spades, 4 No Trump, and 5 Diamonds.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Diamonds, indicating 1 Ace.
+BK34: Oops, we're caught with as few as 24.0 total points, so halt the bidding at the five-level.
+BK38: Without all four aces we can't proceed to a grand slam, so stop at 5 No Trump.  <<<<<<<<<<<<<<<<<<<<<<<<<<< ??? How to BailOut of blackwood ????
+We bid 5NT.   <<<<<<<<<<< THIS LOOKS LIKE Blackwood
+--------------------
+East passes.
+--------------------
+South bids 6C.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BXM80: With no agreement in suits, 24.0-29.0 / 24.0-29.0 partnership points, and no good alternatives, pass.  <<<<<<<<<< NO Can't leave pard here !!!!!!!11
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 6 Clubs.  Declarer is South; West leads.
+=======================
+
+

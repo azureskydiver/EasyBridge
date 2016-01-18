@@ -1,0 +1,148 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 25, 2011
+File Date =  04/26/11 09:39:09
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK HJ HT H9 H8 DK DQ DJ D5 
+Current Hand(West) = SJ S9 H6 H2 DA D8 D7 CJ C6 
+Current Hand(North) = SA ST S7 S5 S3 H7 H3 D4 D3 
+Current Hand(East) = S8 HA HQ H5 H4 DT D9 D6 D2 
+Original Hand(South) = SQ S4 HK HJ HT H9 H8 DK DQ DJ D5 C9 C7 
+Original Hand(West) = SK SJ S9 H6 H2 DA D8 D7 CK CJ C8 C6 C2 
+Original Hand(North) = SA ST S7 S5 S3 S2 H7 H3 D4 D3 CA C5 C4 
+Original Hand(East) = S8 S6 HA HQ H5 H4 DT D9 D6 D2 CQ CT C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 5
+Declarer = North
+Bidding History = 1C 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East C7 CK CA C3 North
+GameTrick #2 = North SQ SK S2 S6 West
+GameTrick #3 = West C9 C2 C4 CT East
+GameTrick #4 = East S4 C8 C5 CQ ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East lead suit DMY/South was void in???  DMY had a trump
+>>>>>>> EAST <<<<<<
+=====================================
+Received hand:
+  S:86  H:AQ54  D:T962  C:QT3
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  1 Likely Winners (0/2/-1/0)
+  12 Likely Losers (2/2/5/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+West bids 1C.
+--------------------
+North bids 2S.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Club trump support including a trump honor & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 8.0 to 9.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+F04: But we have only 8.0/8.0/9.0 points against a minor suit bid, so we prefer to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as East against a contract of 2 Spades.
+PLYLD4: Lead the bottom card of partner's Club suit (the three.
+PLAY: We lead the C3.
+PLAY: South plays the C7.
+PLAY: West plays the CK.
+PLAY: North plays the CA.
+PLAY: North wins the round.
+--------
+PLAY: North leads the S2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+PLAY: We play the S6.
+PLAY: South plays the SQ.
+PLAY: West plays the SK.
+PLAY: West wins the round.
+--------
+PLAY: West leads the C2.
+PLAY: North plays the C4.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's nine, so play the ten.
+PLAY: We play the CT.
+PLAY: South plays the C9.
+RCP20: Dummy is now out of Clubs.
+PLAY: East wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLDRT1: We'd like to return partner's Clubs suit, but dummy might ruff.   <<<<<<<<<<<< YES DUMMY WILL RUFF !!!!!!!!
+PLYLDRT8: Return partner's Club suit with the Queen.
+PLAY: We lead the CQ.
+PLAY: South plays the S4.
+PLAY: West plays the C8.
+PLAY: North plays the C5.
+
+

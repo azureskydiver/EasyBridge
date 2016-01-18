@@ -1,0 +1,123 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 10, 2010
+File Date =  12/14/10 16:20:00
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA ST S9 HA HK DJ 
+Current Hand(West) = SQ S6 H8 H5 H4 
+Current Hand(North) = SK SJ S8 CT C6 C5 
+Current Hand(East) = S7 S3 DT D7 D4 C8 
+Original Hand(South) = SA ST S9 HA HK HJ H3 DJ D9 D5 D2 CK C7 
+Original Hand(West) = SQ S6 S5 S2 HQ H8 H5 H4 H2 D8 CQ CJ C4 
+Original Hand(North) = SK SJ S8 S4 HT H9 DQ D6 CA CT C6 C5 C3 
+Original Hand(East) = S7 S3 H7 H6 DA DK DT D7 D4 D3 C9 C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass Pass 1NT Pass 2S Pass 3C Pass 4C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West D2 D8 DQ DK East
+GameTrick #2 = East D5 S2 D6 DA East
+GameTrick #3 = East HJ HQ H9 H7 West
+GameTrick #4 = West H3 H2 HT H6 North
+GameTrick #5 = North C7 C4 CA C2 North
+GameTrick #6 = North CK CJ C3 C9 South
+GameTrick #7 = South D9 CQ S4 D3 West
+GameTrick #8 = West -- S5 -- -- ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy must take the trick to be able to pull the last trump
+>>>>>>>>> SOUTH<<<<<<<<
+PLAY: West leads the S5.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 6 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the Ace of Spades in hand to try and drop the opponents' Queen.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF4: No immediate ruffing tricks are available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Diamonds, plus 2 in Hearts, plus 2 in Spades, plus 3 in Clubs.
+PLNCSH30: A total of 8 maximum cashing tricks are immediately available. 2 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 1 round of trumps without endangering the contract.
+PLNTRMP7: This will pull in the single outstanding trump.
+PLNTRMP9: This will result in  1 round of trumps, 4 cashing tricks in the side suits, and up to 0 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 10 possible plays and approx. 9+ possible tricks including 6 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the ten in dummy.
+ Play 2: Play the SA from hand to try and drop the SQ.
+ Play 3: Cash the Jack of Diamonds in hand.
+ Play 4: Cash the Ace of Hearts in hand.
+ Play 5: Cash the King of Hearts in hand.
+ Play 6: Cash the Ace of Spades in hand.
+ Play 7: Cash the King of Spades in dummy.
+ Play 8: Cash the Ten of Clubs in dummy.
+ Play 9: Cash the Six of Clubs in dummy. <Requires ...>
+ Play 10: Cash the Five of Clubs in dummy. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the DJ, HA, HK, SA, SK and C6.
+PINTLV: Interleaving plays...
+PINTLV70A: Try to cross over to hand with the [SA Cash] when possible to cash the stranded winners..
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the ten in dummy.
+ Play 2: Cash the Ace of Spades in hand.
+ Play 3: Cash the Jack of Diamonds in hand.
+ Play 4: Cash the Ace of Hearts in hand.
+ Play 5: Cash the King of Hearts in hand.
+ Play 6: Cash the King of Spades in dummy.
+ Play 7: Cash the Ten of Clubs in dummy.
+ Play 8: Cash the Six of Clubs in dummy.
+ Play 9: Cash the Five of Clubs in dummy.
+ Play 10: Play the SA from hand to try and drop the SQ.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH56: Discard a Spade from dummy in anticipation of cashing the Ace in hand.
+
+

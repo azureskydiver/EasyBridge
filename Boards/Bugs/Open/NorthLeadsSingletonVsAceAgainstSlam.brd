@@ -1,0 +1,177 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 25, 2009
+File Date =  10/26/09 16:37:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ S8 S6 H3 DA DJ DT D8 D6 D5 C9 C8 
+Current Hand(West) = ST HA HK HJ HT H9 H6 H5 DQ CK CQ C6 C5 
+Current Hand(North) = SA S7 S5 S3 H8 H7 H2 DK D9 D7 D4 D2 C3 
+Current Hand(East) = SK S9 S4 S2 HQ H4 D3 CA CJ CT C7 C4 C2 
+Original Hand(South) = SQ SJ S8 S6 H3 DA DJ DT D8 D6 D5 C9 C8 
+Original Hand(West) = ST HA HK HJ HT H9 H6 H5 DQ CK CQ C6 C5 
+Original Hand(North) = SA S7 S5 S3 H8 H7 H2 DK D9 D7 D4 D2 C3 
+Original Hand(East) = SK S9 S4 S2 HQ H4 D3 CA CJ CT C7 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 1
+Declarer = ????
+Bidding History = Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North lead singleton against 6H contract vs partner's Diamonds
+>>>>>>>> NORTH <<<<
+S:A753  H:872  D:K9742  C:3
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  5 Likely Winners (2/0/3/0)
+  8 Likely Losers (2/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+East passes.
+--------------------
+South bids 2D.
+--------------------
+West doubles.
+--------------------
+Responding to partner's opening bid of 2 Diamonds.
+REVAL38: (with 5-card Diamond trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 7.0 to 14.0 points)
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.5-10.5 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+We have 7.0/7.0/14.0 points, for a partnership total of 19.5-24.5 points, so we are interested in game if a good fit can be found.
+RWKT21: And we like partner's Diamond suit (holding K9742 support), but with only 19.5-24.5 total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.
+We bid 2NT.
+--------------------
+East passes.
+--------------------
+South bids 3D.
+--------------------
+West doubles.
+--------------------
+Rebidding as responder after bids of 2 Diamonds, 2 No Trump, and 3 Diamonds.
+RWKT2B5: Partner has returned to his original Diamond suit, indicating no interest in game, so we pass.
+We pass.
+--------------------
+East bids 5C.
+--------------------
+South passes.
+--------------------
+West bids 6H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 6 Hearts.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 6 Hearts.
+PLYLD4: Lead the singleton C3.  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE SA and maybe South has DA ?????????
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the seven.
+RCP20: Dummy is now out of Hearts.
+RCP5A: South is now known to have started with 1 Heart.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Clubs and no trumps, so discard the S3.
+RCP5A: North is now known to have started with 1 Club.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Clubs and no trumps, so discard the S5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S7.
+RCP5A: West is now known to have started with 4 Clubs.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D2.
+RCP20: Dummy is now out of Clubs.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D4.
+PLAYB23: We can't beat the opponent's five of trumps, so discard the SA.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the D7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the D9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the DK.
+RESULT: East/West made 1 overtrick.
+S:A753  H:872  D:K9742  C:3
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  5 Likely Winners (2/0/3/0)
+  8 Likely Losers (2/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+***Bidding restarted***
+East passes.
+--------------------
+
+

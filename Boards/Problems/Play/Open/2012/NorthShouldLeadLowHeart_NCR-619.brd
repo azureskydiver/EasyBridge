@@ -1,0 +1,172 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1, 2012
+File Date =  02/09/12 21:29:54
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S9 S4 S3 HT DQ DT D8 D3 CA CK 
+Current Hand(West) = SQ ST S8 HJ H8 H6 DA DJ D7 C9 C2 
+Current Hand(North) = SK S7 H9 H7 H5 H4 D5 D4 D2 C5 C3 
+Current Hand(East) = SJ S6 S5 S2 HK DK D9 D6 CJ C8 C4 
+Original Hand(South) = SA S9 S4 S3 HT H3 DQ DT D8 D3 CA CK CQ 
+Original Hand(West) = SQ ST S8 HJ H8 H6 H2 DA DJ D7 CT C9 C2 
+Original Hand(North) = SK S7 HA H9 H7 H5 H4 D5 D4 D2 C6 C5 C3 
+Original Hand(East) = SJ S6 S5 S2 HK HQ DK D9 D6 CJ C8 C7 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 35
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 12
+Declarer = South
+Bidding History = Pass Pass 1NT Pass 2D Pass 2H Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West CQ CT C6 C7 South
+GameTrick #2 = South H3 H2 HA HQ North
+GameTrick #3 = North -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 100
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = " 100		Bonus for defeating contract by 2 tricks"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should lead low Heart to Ten
+>>>>>>>>>>>SOUTH<<<<<<<<<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AK9743 (K7/A943)
+  H:AT97543 (A9754/T3)
+  D:QT85432 (542/QT83)
+  C:AKQ653 (653/AKQ)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;   Total pts = 24.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (2/1/0/3)
+  6 Eventual Winners (2/1/0/3)
+  7 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Hearts.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AK9743 (K7/A943)
+  H:AT97543 (A9754/T3)
+  D:QT85432 (542/QT83)
+  C:AKQ653 (653/AKQ)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;   Total pts = 24.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (2/1/0/3)
+  6 Eventual Winners (2/1/0/3)
+  7 Possible Losers (vs. 3 allowable)
+PLN10: We have only 6 sure tricks against a requirement of 10 for the 4H contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Spade suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in dummy.
+ Play 2: Ruff a Spade in dummy.
+ Play 3: Ruff a Spade in dummy.
+ Play 4: Cash the King of Spades in dummy.
+ Play 5: Cash the Ace of Spades in hand.
+ Play 6: Ruff a Diamond in dummy.
+ Play 7: Cash the Ace of Clubs in hand.
+ Play 8: Cash the King of Clubs in hand.
+ Play 9: Cash the Queen of Clubs in hand.
+ Play 10: Cash the Ace of Hearts in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLYDCS2: Discard the C6 to unblock the suit.
+PLCSH56: Discard a Club from dummy in anticipation of cashing the Ace in hand.
+Combined hand (Dummy/Hand):
+  S:AK9743 (K7/A943)
+  H:AT97543 (A9754/T3)
+  D:QT85432 (542/QT83)
+  C:AKQ53 (53/AKQ)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 2.0;   Total pts = 24.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (2/1/0/3)
+  6 Eventual Winners (2/1/0/3)
+  7 Possible Losers (vs. 3 allowable)
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH85: We can actually play the Queen to win this trick, so postpone the cash of the Ace.
+PLYTRY: No usable plays found for the current situation.
+PLYE41: Play the Queen to win the trick.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=7 vs SureTricks=5 vs NumWinners=7, m_numTricksShort=4
+PLRV10: We have only 5 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Spade suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTMRP15: Oops, the lowest trump we can lead from hand is the three, which is equivalent to the four, so skip this play.
+PLTRMP18: Lead the H3 up to dummy to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82b: Since LHO may hold the trump King, we have to play the Ace from dummy.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=7 vs SureTricks=4 vs NumWinners=7, m_numTricksShort=4
+PLRV10: We have only 4 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Spade suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the H9 from dummy to pull in a round of trumps.  <<<<<<<<<<<<<<<<No lead low
+
+
+
+

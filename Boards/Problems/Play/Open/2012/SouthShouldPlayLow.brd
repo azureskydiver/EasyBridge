@@ -1,0 +1,133 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 19, 2012
+File Date =  04/30/12 16:51:15
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S6 S3 HQ H7 DA D2 CA CK CJ CT C8 C4 C2 
+Current Hand(West) = SQ ST S7 HK HT H8 H4 H2 DQ DT CQ C7 C3 
+Current Hand(North) = SA SK SJ S9 S4 S2 HA HJ H5 DK D7 D6 C9 
+Current Hand(East) = S8 S5 H9 H6 H3 DJ D9 D8 D4 D3 C6 C5 
+Original Hand(South) = S6 S3 HQ H7 DA D2 CA CK CJ CT C8 C4 C2 
+Original Hand(West) = SQ ST S7 HK HT H8 H4 H2 DQ DT CQ C7 C3 
+Original Hand(North) = SA SK SJ S9 S4 S2 HA HJ H5 DK D7 D6 C9 
+Original Hand(East) = S8 S5 H9 H6 H3 DJ D9 D8 D5 D4 D3 C6 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1C Pass 1S Pass 3C Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- D5 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "	  60	3 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should take first trick to preserve entry for Clubs
+>>>>>>>>>>>>>>NORTH<<<<<<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKJ96432 (63/AKJ942)
+  H:AQJ75 (Q7/AJ5)
+  D:AK762 (A2/K76)
+  C:AKJT9842 (AKJT842/9)
+Combined hand evaluation:
+  HCPs = 30.0, Distn pts = 9.0;   Total pts = 39.0.
+  QT's = 7.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (2/1/2/2)
+  9 Eventual Winners (2/2/2/3)
+  4 Possible Losers (vs. 1 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 6 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKJ96432 (63/AKJ942)
+  H:AQJ75 (Q7/AJ5)
+  D:AK762 (A2/K76)
+  C:AKJT9842 (AKJT842/9)
+Combined hand evaluation:
+  HCPs = 30.0, Distn pts = 9.0;   Total pts = 39.0.
+  QT's = 7.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (2/1/2/2)
+  9 Eventual Winners (2/2/2/3)
+  4 Possible Losers (vs. 1 allowable)
+PLN10: We have only 9 sure tricks against a requirement of 12 for the 6NT contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Lead the Club nine from hand and finesses it, with the { CA CK  } in dummy as possible cover cards.
+ Play 2: Cash the Ace of Clubs in dummy.
+ Play 3: Cash the King of Clubs in dummy.
+ Play 4: Lead a low Spade from dummy to finesse the nine in dummy against East, with the { SA SK  } as possible cover cards.
+ Play 5: Lead a low Spade from dummy to finesse the Jack in dummy against East, with the { SA SK  } as possible cover cards.
+ Play 6: Lead a low Heart from dummy to finesse the Jack in hand against East, with the Ace as cover.
+ Play 7: Cash the Ace of Spades in hand.
+ Play 8: Cash the King of Spades in hand.
+ Play 9: Cash the Ace of Diamonds in dummy.
+ Play 10: Cash the King of Diamonds in hand.<<<<<<<<<<<<<<<<<<<THIS
+ Play 11: Cash the Ace of Hearts in hand.
+ Play 12: Lead a low Heart from hand and finesse the Queen in dummy against West.
+PLN95: The planning is complete.
+---------------------------
+PLCSH55: The opponents led a Diamond, so cash the Ace now.  <<<<<<<<<<<< NO
+
+

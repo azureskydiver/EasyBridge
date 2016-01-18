@@ -1,0 +1,241 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 29, 2010
+File Date =  01/01/11 12:27:26
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S8 S5 H5 H4 DJ DT D8 CK CJ CT C9 C2 
+Current Hand(West) = SK SQ SJ S7 S6 HA HK HQ HJ H8 D5 C7 C4 
+Current Hand(North) = ST S3 S2 HT H3 H2 DK D9 D6 D4 D2 C8 C6 
+Current Hand(East) = SA S4 H9 H7 H6 DA DQ D7 D3 CA CQ C5 C3 
+Original Hand(South) = S9 S8 S5 H5 H4 DJ DT D8 CK CJ CT C9 C2 
+Original Hand(West) = SK SQ SJ S7 S6 HA HK HQ HJ H8 D5 C7 C4 
+Original Hand(North) = ST S3 S2 HT H3 H2 DK D9 D6 D4 D2 C8 C6 
+Original Hand(East) = SA S4 H9 H7 H6 DA DQ D7 D3 CA CQ C5 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 8
+Declarer = East
+Bidding History = 1H Pass 3NT Pass 4NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 50
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East West should bid Slam with this hand
+>>>>>>EAST<<<<<<<<<<<
+=====================================
+Received hand:
+  S:A4  H:976  D:AQ73  C:AQ53
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  4 Likely Winners (1/-1/2/2)
+  9 Likely Losers (1/4/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+West bids 1H.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+2REVAL38: (with 3-card Heart trump support & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 16.0 to 17.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+I04: Have 16.0 HCPs in hand, for a total in the partnership of approx. 28.0-36.5 HCPS, and all unbid suits are stopped, so jump to 3 No Trump.
+We bid 3NT.
+--------------------
+South passes.
+--------------------
+West bids 4NT.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 3 No Trump, and 4 No Trump.
+NT10: Partner's raise from our 3 No Trump to 4 No Trump indicates a balanced hand and 14.0-15.0 HCPs, for a total of 30.0+ HCPs in the partnership and is invitational to slam.
+B4G42: With 30.0-31.0 total HCPs in the partnership, we don't have quite enough for a slam, so we have to decline partner's invitation and pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 No Trump.  Declarer is East; South leads.
+
+
+>>>>>>>>>>>> WEST<<<<<<<<<<<<
+=====================================
+Received hand:
+  S:KQJ76  H:AKQJ8  D:5  C:74
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  9 Likely Winners (4/5/0/0)
+  4 Likely Losers (1/0/1/2)
+Playing five-card majors, both majors qualify for opening.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+Opening bid for team.
+E01: Have 16.0 points in high cards, so bid 1 Heart.
+We bid 1H.
+--------------------
+North passes.
+--------------------
+East bids 3NT.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 3 No Trump.
+NT44: Partner's jump shift from our 1 Heart bid to 3 No Trump indicates a balanced hand and 15.0+ points, for a total of 31.0+ points in the partnership.
+B3N10: With a balanced hand, we want to steer towards a contract in No Trumps.
+B3N44: With a total of approx. 31.0-34.0 HCPS in the partnership, make an invitation towards slam at 4 No Trump.
+We bid 4NT.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 No Trump.  Declarer is East; South leads.
+=======================
+PLAY: South leads the C9.
+PLAY: We play the C4.
+PLAY: North plays the C8.
+PLAY: East plays the CQ.
+PLAY: East wins the round.
+--------
+PLAY: East leads the SA.
+PLAY: South plays the S5.
+PLAY: We play the S6.
+PLAY: North plays the S2.
+PLAY: East wins the round.
+--------
+PLAY: East leads the S4.
+PLAY: South plays the S8.
+PLAY: We play the SK.
+PLAY: North plays the S3.
+PLAY: West wins the round.
+--------
+PLAY: We lead the SJ.
+PLAY: North plays the ST.
+PLAY: East plays the D3.
+RCP10: East shows out of Spades.
+RCP5A: East is now known to have started with 2 Spades.
+PLAY: South plays the S9.
+PLAY: West wins the round.
+--------
+PLAY: We lead the S7.
+PLAY: North plays the D2.
+RCP10: North shows out of Spades.
+RCP5A: North is now known to have started with 3 Spades.
+PLAY: East plays the C3.
+PLAY: South plays the H4.
+RCP10: South shows out of Spades.
+RCP5A: South is now known to have started with 3 Spades.
+PLAY: West wins the round.
+--------
+PLAY: We lead the SQ.
+RCP20: Dummy is now out of Spades.
+PLAY: North plays the H2.
+PLAY: East plays the D7.
+PLAY: South plays the H5.
+PLAY: West wins the round.
+--------
+PLAY: We lead the C7.
+RCP20: Dummy is now out of Clubs.
+PLAY: North plays the C6.
+PLAY: East plays the CA.
+PLAY: South plays the C2.
+PLAY: East wins the round.
+--------
+PLAY: East leads the DA.
+PLAY: South plays the D8.
+PLAY: We play the D5.
+RCP20: Dummy is now out of Diamonds.
+PLAY: North plays the D4.
+PLAY: East wins the round.
+--------
+PLAY: East leads the H6.
+PLAY: South plays the DT.
+RCP10: South shows out of Hearts.
+RCP1A: South is now known to have started with  2 Hearts and 3 Spades.
+PLAY: We play the HA.
+PLAY: North plays the H3.
+PLAY: West wins the round.
+--------
+PLAY: We lead the HK.
+PLAY: North plays the HT.
+PLAY: East plays the H9.
+PLAY: South plays the DJ.
+PLAY: West wins the round.
+--------
+PLAY: We lead the HQ.
+PLAY: North plays the D6.
+RCP10: North shows out of Hearts.
+RCP1A: North is now known to have started with  3 Hearts and 3 Spades.
+PLAY: East plays the H7.
+PLAYCN: South has conceded the remaining 3 tricks.
+RESULT: East/West made 3 overtricks.
+
+

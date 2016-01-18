@@ -1,0 +1,425 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 23,  2009
+File Date =  12/12/09 16:57:01
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST DA D5 D3 CA CK C8 C6 
+Current Hand(West) = DK D9 D8 D7 D6 D4 CQ CJ C7 
+Current Hand(North) = S9 S7 S5 S4 H4 H2 CT C9 C5 
+Current Hand(East) = SA SK SQ S8 S6 DQ DJ DT C4 
+Original Hand(South) = SJ ST H9 H8 H7 DA D5 D3 D2 CA CK C8 C6 
+Original Hand(West) = HJ H6 DK D9 D8 D7 D6 D4 CQ CJ C7 C3 C2 
+Original Hand(North) = S9 S7 S5 S4 HA HK HQ H5 H4 H2 CT C9 C5 
+Original Hand(East) = SA SK SQ S8 S6 S3 S2 HT H3 DQ DJ DT C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 6
+Declarer = West
+Bidding History = 1S Dbl 1NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North H7 H6 HA H3 North
+GameTrick #2 = North H8 HJ HK HT North
+GameTrick #3 = North H9 C2 HQ S2 North
+GameTrick #4 = North D2 C3 H5 S3 North
+GameTrick #5 = North -- -- -- -- ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 120
+North/South Game 1 Points = 90
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  90		3 overtricks"
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  30		1 Spade made"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "	  60	2 Hearts made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West discards unguards CQ
+>>>>>>>>> WEST<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:---  H:J6  D:K98764  C:QJ732
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 8.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 6.5.
+  QT's = 0.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/4/3)
+  6 Likely Losers (0/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQ8632 (AKQ8632/)
+  H:JT63 (T3/J6)
+  D:KQJT98764 (QJT/K98764)
+  C:QJ7432 (4/QJ732)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 15.0;
+  Total pts = 34.0.
+  QT's = 3.0,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  3 Sure Winners (3/0/0/0)
+  8 Eventual Winners (3/0/5/0)
+  5 Possible Losers (vs. 6 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 1 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQ8632 (AKQ8632/)
+  H:JT63 (T3/J6)
+  D:KQJT98764 (QJT/K98764)
+  C:QJ7432 (4/QJ732)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 15.0;
+  Total pts = 34.0.
+  QT's = 3.0,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  3 Sure Winners (3/0/0/0)
+  8 Eventual Winners (3/0/5/0)
+  5 Possible Losers (vs. 6 allowable)
+We have 8 sure tricks against a requirement of 7 for the 1NT contract.
+eight to a winner.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Spades in dummy.
+ Play 2: Cash the King of Spades in dummy.
+ Play 3: Cash the Queen of Spades in dummy.
+ Play 4: Play the Queen of Diamonds from dummy to force out the opponents' Ace.
+ Play 5: Cash the Queen of Diamonds in dummy.
+ Play 6: Cash the Jack of Diamonds in dummy.
+ Play 7: Cash the Ten of Diamonds in dummy.
+ Play 8: Cash the Queen of Diamonds in dummy.
+ Play 9: Cash the Jack of Diamonds in dummy.
+ Play 10: Cash the Ten of Diamonds in dummy.
+ Play 11: Cash the King of Diamonds in hand.
+ Play 12: Cash the Eight of Diamonds in hand.
+ Play 13: Cash the Nine of Diamonds in hand.
+ Play 14: Cash the Nine of Diamonds in hand.
+The planning is complete.
+---------------------------
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We don't have a winner in the suit in dummy, so discard the three.
+No usable plays found for the current situation.
+We can't beat North's Ace, so discard the H6.
+Playing card from dummy.
+Reviewing play plan for round 2...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+Play our only card in the suit, the ten.
+No usable plays found for the current situation.
+We can't beat North's King, so discard the HJ.
+Playing card from dummy.
+Reviewing play plan for round 3...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S2.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the C2.
+Playing card from dummy.
+Reviewing play plan for round 4...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S3.
+South is now known to have started with 3 Hearts.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the C3.
+Playing card from dummy.
+Reviewing play plan for round 5...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S6.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the C7.
+Playing card from dummy.
+Reviewing play plan for round 6...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the C4.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the CJ.
+Playing card from dummy.
+Reviewing play plan for round 7...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S8.
+No usable plays found for the current situation.
+We can't beat South's King, so discard the CQ.
+Reviewing play plan for round 8...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in hand, using default player logic.
+We have no more cards in the suit in hand, so discard the D4.
+Playing card from dummy.
+No usable plays found for the current situation.
+Reviewing play plan for round 9...
+We have 8 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by cashing the SA, SK, SQ, DK, DQ, DJ, D9 and D8.
+Interleaving plays...
+the card led (DA)  beats the DQ we were going to play, so skip the cash for now.
+the card led (DA)  beats the DJ we were going to play, so skip the cash for now.
+the card led (DA)  beats the DK we were going to play, so skip the cash for now.
+the card led (DA)  beats the D9 we were going to play, so skip the cash for now.
+the card led (DA)  beats the D8 we were going to play, so skip the cash for now.
+No usable plays found for the current situation.
+Playing second in hand, using default player logic.
+We don't have a winner in the suit in hand, so discard the six.
+North is now known to have started with 0 Diamonds.
+Playing card from dummy.
+No usable plays found for the current situation.
+Reviewing play plan for round 10...
+We have 7 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by cashing the SA, SK, SQ, DK, DQ, D9 and D8.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in hand, using default player logic.
+We have no more cards in the suit in hand, so discard the D7.
+Playing card from dummy.
+No usable plays found for the current situation.
+Reviewing play plan for round 11...
+We have only 6 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in hand, using default player logic.
+We have no more cards in the suit in hand, so discard the D8.
+Playing card from dummy.
+No usable plays found for the current situation.
+Reviewing play plan for round 12...
+We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+Discard a Spade from hand in anticipation of cashing the Ace in dummy.
+Playing card from dummy.
+the opponents led a Spade, so see if we can finish up the cash play here.
+We can actually play the King to win this trick, so postpone the cash of the Ace.
+No usable plays found for the current situation.
+Playing card from dummy.
+Reviewing play plan for round 13...
+We have only 2 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+Cash the SA from dummy.
+Our cash of the SA from dummy is holding, so discard the DK.
+East/West were set 5 tricks.
+Play restarted.
+====================
+S:---  H:J6  D:K98764  C:QJ732
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 5.5.
+  QT's = 0.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/4/3)
+  6 Likely Losers (0/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQ8632 (AKQ8632/)
+  H:JT63 (T3/J6)
+  D:KQJT98764 (QJT/K98764)
+  C:QJ7432 (4/QJ732)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 10.0;
+  Total pts = 29.0.
+  QT's = 3.0,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  3 Sure Winners (3/0/0/0)
+  8 Eventual Winners (3/0/5/0)
+  5 Possible Losers (vs. 6 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 1 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQ8632 (AKQ8632/)
+  H:JT63 (T3/J6)
+  D:KQJT98764 (QJT/K98764)
+  C:QJ7432 (4/QJ732)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 10.0;
+  Total pts = 29.0.
+  QT's = 3.0,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  3 Sure Winners (3/0/0/0)
+  8 Eventual Winners (3/0/5/0)
+  5 Possible Losers (vs. 6 allowable)
+We have 8 sure tricks against a requirement of 7 for the 1NT contract.
+eight to a winner.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Spades in dummy.
+ Play 2: Cash the King of Spades in dummy.
+ Play 3: Cash the Queen of Spades in dummy.
+ Play 4: Play the Queen of Diamonds from dummy to force out the opponents' Ace.
+ Play 5: Cash the Queen of Diamonds in dummy.
+ Play 6: Cash the Jack of Diamonds in dummy.
+ Play 7: Cash the Ten of Diamonds in dummy.
+ Play 8: Cash the Queen of Diamonds in dummy.
+ Play 9: Cash the Jack of Diamonds in dummy.
+ Play 10: Cash the Ten of Diamonds in dummy.
+ Play 11: Cash the King of Diamonds in hand.
+ Play 12: Cash the Eight of Diamonds in hand.
+ Play 13: Cash the Nine of Diamonds in hand.
+ Play 14: Cash the Nine of Diamonds in hand.
+The planning is complete.
+---------------------------
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We don't have a winner in the suit in dummy, so discard the three.
+No usable plays found for the current situation.
+We can't beat North's Ace, so discard the H6.
+Playing card from dummy.
+Reviewing play plan for round 2...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+Play our only card in the suit, the ten.
+No usable plays found for the current situation.
+We can't beat North's King, so discard the HJ.
+Playing card from dummy.
+Reviewing play plan for round 3...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S2.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the C2.
+Playing card from dummy.
+Reviewing play plan for round 4...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S3.
+South is now known to have started with 3 Hearts.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the C3.
+Playing card from dummy.
+Reviewing play plan for round 5...
+We have only 3 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+eight to a winner.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We have no more cards in the suit in dummy, so discard the S6.
+No usable plays found for the current situation.
+With no cards in the suit led, we discard the C7.  <<<<<<<<<<NO
+
+

@@ -1,0 +1,86 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 25, 2009
+File Date =  10/29/09 15:46:30
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S9 H9 H7 DK DT CT C9 
+Current Hand(West) = SK S3 HQ DQ DJ D8 D5 CK 
+Current Hand(North) = S8 S5 D7 D6 D3 CJ C8 C7 
+Current Hand(East) = ST S7 S6 H8 H5 CQ C6 C5 
+Original Hand(South) = SQ SJ S9 H9 H7 H6 H4 DK DT D9 CT C9 C3 
+Original Hand(West) = SA SK S3 HK HQ H2 DA DQ DJ D8 D5 CK C2 
+Original Hand(North) = S8 S5 S2 HA HT D7 D6 D3 D2 CA CJ C8 C7 
+Original Hand(East) = ST S7 S6 S4 HJ H8 H5 H3 D4 CQ C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 9
+Declarer = East
+Bidding History = Pass 2C Pass 2D Pass 3D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = South
+GameTrick #1 = South SQ SA S2 S4 West
+GameTrick #2 = West D9 DA D2 D4 West
+GameTrick #3 = West H4 H2 HT HJ East
+GameTrick #4 = East H6 HK HA H3 North
+GameTrick #5 = North C3 C2 CA C4 North
+GameTrick #6 = North -- -- -- -- West
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should play low since CK is singleton
+>>>>>>>> EAST <<<<<<<<<<
+PLNADJ: Reviewing play plan for round 6...
+PLRV10: We have only 4 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLDRP51: South led the C7; try to drop the one or more of the { CJ CT  } from North by playing the Queen from hand.  <<<<<<<<<< NO CK is singleton
+
+

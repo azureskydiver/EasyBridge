@@ -1,0 +1,115 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 21, 2010
+File Date =  11/24/10 10:16:09
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HK D9 D7 D6 D4 CJ C7 
+Current Hand(West) = SQ S6 S5 S2 C9 C8 C6 
+Current Hand(North) = HA HJ HT H8 CA C5 C2 
+Current Hand(East) = S7 H9 H6 H5 CK CQ C3 
+Original Hand(South) = SA HK HQ DA DJ D9 D7 D6 D4 D2 CJ C7 C4 
+Original Hand(West) = SQ SJ S9 S8 S6 S5 S2 DQ DT D3 C9 C8 C6 
+Original Hand(North) = SK S3 HA HJ HT H8 H2 DK D8 D5 CA C5 C2 
+Original Hand(East) = ST S7 S4 H9 H7 H6 H5 H4 H3 CK CQ CT C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 15
+Declarer = South
+Bidding History = Pass 1D Pass 1H Pass 2NT Pass 4C Pass 4S Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West SA S8 S3 ST South
+GameTrick #2 = South DA D3 D5 H7 South
+GameTrick #3 = South D2 DT DK CT North
+GameTrick #4 = North DJ DQ D8 H3 West
+GameTrick #5 = West C4 SJ SK S4 North
+GameTrick #6 = North HQ S9 H2 H4 South
+GameTrick #7 = South -- -- -- -- North
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should cash Diamonds before leaving South's hand  Need to consider where we are playing from
+>>>>>>>> SOUTH<<<<<<<<<<<<
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 9 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Clubs, plus 4 in Diamonds, plus 4 in Hearts.  <<<<<<< NOTE 4 diamonds
+PLNCSH30: A total of 9 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 9 plays and approx. 9+ possible tricks including 9 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Clubs in dummy.
+ Play 2: Cash the Nine of Diamonds in hand.
+ Play 3: Cash the Seven of Diamonds in hand.
+ Play 4: Cash the Six of Diamonds in hand.
+ Play 5: Cash the Four of Diamonds in hand.
+ Play 6: Cash the Ace of Hearts in dummy.
+ Play 7: Cash the King of Hearts in hand.
+ Play 8: Cash the Jack of Hearts in dummy.
+ Play 9: Cash the Ten of Hearts in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (9) to fulfill the contract, we can just proceed with the cashing.
+PLSEQ5: Since we have enough sure tricks (9) to fulfill the contract, we moved 9 plays forward   <<<<<<<< This reversed order ???
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Ten of Hearts in dummy.
+ Play 2: Cash the Jack of Hearts in dummy.
+ Play 3: Cash the King of Hearts in hand.
+ Play 4: Cash the Ace of Hearts in dummy.
+ Play 5: Cash the Four of Diamonds in hand.
+ Play 6: Cash the Six of Diamonds in hand.
+ Play 7: Cash the Seven of Diamonds in hand.
+ Play 8: Cash the Nine of Diamonds in hand.
+ Play 9: Cash the Ace of Clubs in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH21: Oops, we wanted to cash a Heart in dummy, but we have no low Hearts in hand to lead, so we have to abandon that play.
+PLCSH21: Oops, we wanted to cash a Heart in dummy, but we have no low Hearts in hand to lead, so we have to abandon that play.
+PLCSH10: Cash the HK from hand.
+
+

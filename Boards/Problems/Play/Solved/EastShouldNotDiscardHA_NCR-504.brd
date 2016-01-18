@@ -1,0 +1,105 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 18, 2011
+File Date =  01/22/11 12:01:55
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S5 S4 
+Current Hand(West) = H6 C9 
+Current Hand(North) = HK D8 
+Current Hand(East) = S6 HA 
+Original Hand(South) = SK SQ S5 S4 H8 H7 H2 D2 CQ CJ C8 C6 C3 
+Original Hand(West) = SA SJ H6 H3 DT D7 D5 CA CK C9 C5 C4 C2 
+Original Hand(North) = ST S9 S8 S3 HK HJ H5 DA DK DQ DJ D8 CT 
+Original Hand(East) = S7 S6 S2 HA HQ HT H9 H4 D9 D6 D4 D3 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = 1C 1D Pass 1NT Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West C3 C5 CT C7 North
+GameTrick #2 = North SQ SA S3 S2 West
+GameTrick #3 = West C6 CA S8 H9 West
+GameTrick #4 = West C8 CK S9 HT West
+GameTrick #5 = West SK SJ ST S7 South
+GameTrick #6 = South CJ C2 H5 H4 South
+GameTrick #7 = South CQ C4 HJ HQ South
+GameTrick #8 = South D2 D5 DA D3 North
+GameTrick #9 = North H2 D7 DK D4 North
+GameTrick #10 = North H7 DT DQ D6 North
+GameTrick #11 = North H8 H3 DJ D9 North
+GameTrick #12 = North -- -- -- -- ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East discards HA on last Diamond with HK left on board
+>>>>>>>>>> EAST<<<<<<<<<
+PLAY: North leads the DQ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the six.
+PLAY: We play the D6.
+PLAY: South plays the H7.
+PLAY: West plays the DT.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DJ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the nine.
+PLAY: We play the D9.
+PLAY: South plays the H8.
+PLAY: West plays the H3.
+RCP10: West shows out of Diamonds.
+RCP5A: West is now known to have started with 3 Diamonds.
+PLAY: North wins the round.
+--------
+PLAY: North leads the D8.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Diamonds, so discard the HA.    <<<<<<<<<<<<<<<<<<<<<<< NO this leaves Dummy's HK a winner !!!!!
+PLAY: We play the HA.
+RCP10: East shows out of Diamonds.
+RCP1A: East is now known to have started with  1 Clubs and 4 Diamonds.
+
+

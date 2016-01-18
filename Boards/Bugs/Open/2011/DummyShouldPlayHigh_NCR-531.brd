@@ -1,0 +1,272 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 25, 2011
+File Date =  05/19/11 14:27:04
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK SQ SJ CQ CJ 
+Current Hand(West) = ST S7 S5 C9 C8 
+Current Hand(North) = CT C7 C5 C4 
+Current Hand(East) = H8 H6 CA CK 
+Original Hand(South) = SK SQ SJ S8 S6 S4 S3 H5 H2 DT D5 CQ CJ 
+Original Hand(West) = ST S7 S5 S2 HA H4 DQ DJ D9 D7 C9 C8 C3 
+Original Hand(North) = SA HQ HJ H7 DK D8 D3 D2 CT C7 C5 C4 C2 
+Original Hand(East) = S9 HK HT H9 H8 H6 H3 DA D6 D4 CA CK C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 9
+Declarer = West
+Bidding History = 3S Pass Pass Dbl Pass 4D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 5
+Lead Player for Current Game = North
+GameTrick #1 = North S3 S2 SA S9 North
+GameTrick #2 = North H2 HA HQ H3 West
+GameTrick #3 = West D5 DQ D2 D4 West
+GameTrick #4 = West H5 H4 H7 HT East
+GameTrick #5 = East DT DJ HJ HK West
+GameTrick #6 = West S4 D7 D3 DA East
+GameTrick #7 = East S6 C3 D8 H9 North
+GameTrick #8 = North S8 D9 DK D6 North
+GameTrick #9 = North -- -- C2 C6 ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy should play High club. There are no Trumps left and West has NO stoppers in any suit
+>>>>>>>>> WEST<<<<<<<<
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's Ace, so discard the S2.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 5 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH56: Discard a Heart from dummy in anticipation of cashing the Ace in hand.
+PLCSH80: the opponents led a Heart, so see if we can finish up the cash play here.
+PLCSH86: Cash the HA from hand.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 4 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PL2FN12: Lead the finesse card (the Queen) from hand.
+PLDM: Playing card from dummy.
+PL2FN64: LHO has played low, so let the finesse card ride and discard the D4 from hand.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 4 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLFRC06: Lead a low Heart (four) from hand to trigger a force play in dummy.
+PLDM: Playing card from dummy.
+PLFRC62: Play the HT from dummy to try and force out the Jack now.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 4 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Spade suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH30: Cash the HK from dummy.
+RCP5A: South is now known to have started with 2 Hearts.
+PLYTRY: No usable plays found for the current situation.
+PLYD2A21: We can overtrump South's DT with the Jack.
+PLNADJ: Reviewing play plan for round 6...
+PLRV11: We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the H9, H8, H6, CA and CK.
+PINTLV: Interleaving plays...
+PLTRMP18: Lead the D7 up to dummy to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82b: Since LHO may hold the trump King, we have to play the Ace from dummy.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 5 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by cashing the H9, H8, H6, CA and CK.
+PINTLV: Interleaving plays...
+PLCSH30: Cash the H9 from dummy.
+PLCSH72: Our cash of the H9 from dummy is holding, so discard the C3.
+RCP5A: North is now known to have started with 3 Hearts.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV11: We have 5 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A0: Play our only card in the suit, the six.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat North's King, so discard the D9.
+PLDM: Playing card from dummy.
+
+
+PLNADJ: Reviewing play plan for round 9...
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLAFN54: Opportunistically finesse the C6 from dummy in second position against South.  <<<<<<<<<<<<<<<<<<<<<< NO NO NO
+
+>> Card taken back.
+>> Card taken back.
+- - - - - - - -
+>> Trick taken back.
+
+
+PLAY: North leads the C2.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 9...
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS44: Can opportunistically finesse the Six of Clubs in dummy against South.
+PLNFNS91: One possible finesse has been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 0 Club in hand.
+PLNRF1: We can potentially ruff up to 0 Spade in dummy.
+PLNRF4: No immediate ruffing tricks are available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Hearts, plus 2 in Clubs.
+PLNCSH30: A total of 4 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 4 cashing tricks in the side suits, and up to 0 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 5 possible plays and approx. 4+ possible tricks including 4 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRI: The Club suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the six from dummy to finesse against North.  <<<<<<< NO THE QJ are out. The Hearts are winners and there are no trumps left out
+ Play 2: Cash the Eight of Hearts in dummy.
+ Play 3: Cash the Six of Hearts in dummy.
+ Play 4: Cash the Ace of Clubs in dummy.
+ Play 5: Cash the King of Clubs in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 2 plays using the Club suit.
+PINTLV: Interleaving plays...
+PINTLV50: The cash of the H6 can only be used here in dummy since there are no lead cards in the opposite hand -- so move up the play.
+PINTLV50: The cash of the H8 can only be used here in dummy since there are no lead cards in the opposite hand -- so move up the play.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Hearts in dummy.
+ Play 2: Cash the Six of Hearts in dummy.
+ Play 3: Opportunistically play the six from dummy to finesse against North.
+ Play 4: Cash the Ace of Clubs in dummy.
+ Play 5: Cash the King of Clubs in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the C6 from dummy in second position against South.   
+PLAY: East plays the C6.
+
+
+****************************************************************************************
+PLAY: North leads the C2.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 9...
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS44: Can opportunistically finesse the Six of Clubs in dummy against South.
+PLNFNS91: One possible finesse has been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 0 Club in hand.
+PLNRF1: We can potentially ruff up to 0 Spade in dummy.
+PLNRF4: No immediate ruffing tricks are available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Hearts, plus 2 in Clubs.
+PLNCSH30: A total of 4 maximum cashing tricks are immediately available. 0 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 4 cashing tricks in the side suits, and up to 0 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 5 possible plays and approx. 4+ possible tricks including 4 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the six from dummy to finesse against North.  <<<<<<<<<<<<   WHY Have 4 sure winners  
+ Play 2: Cash the Eight of Hearts in dummy.
+ Play 3: Cash the Six of Hearts in dummy.
+ Play 4: Cash the Ace of Clubs in dummy.
+ Play 5: Cash the King of Clubs in dummy.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV50: The cash of the H6 can only be used here in dummy since there are no lead cards in the opposite hand -- so move up the play.
+PINTLV50: The cash of the H8 can only be used here in dummy since there are no lead cards in the opposite hand -- so move up the play.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Eight of Hearts in dummy.
+ Play 2: Cash the Six of Hearts in dummy.
+ Play 3: Opportunistically play the six from dummy to finesse against North.  ???? Do last ????????????
+ Play 4: Cash the Ace of Clubs in dummy.
+ Play 5: Cash the King of Clubs in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the C6 from dummy in second position against South.
+PLAY: East plays the C6.
+
+
+
+

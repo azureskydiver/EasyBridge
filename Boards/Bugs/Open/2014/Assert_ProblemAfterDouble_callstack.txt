@@ -1,0 +1,62 @@
+>	EasyBridge.exe!CHandHoldings::RevalueHand(int nMode=2, int nTrumpSuit=-99, int bTrace=1, int bForceRevalue=0)  Line 1216 + 0x23 bytes	C++
+ 	EasyBridge.exe!CBidEngine::MakeRebidAsResponder()  Line 195 + 0x1d bytes	C++
+ 	EasyBridge.exe!CBidEngine::Bid()  Line 357 + 0x8 bytes	C++
+ 	EasyBridge.exe!CPlayer::Bid()  Line 587	C++
+ 	EasyBridge.exe!CBidDialog::GetComputerBids(int nStart=1)  Line 473 + 0x17 bytes	C++
+ 	EasyBridge.exe!CBidDialog::OnCommand(unsigned int wParam=9840, long lParam=66820)  Line 319	C++
+ 	EasyBridge.exe!CBidDialogLarge::OnCommand(unsigned int wParam=9840, long lParam=66820)  Line 228	C++
+ 	mfc80d.dll!CWnd::OnWndMsg(unsigned int message=273, unsigned int wParam=9840, long lParam=66820, long * pResult=0x0012f790)  Line 1755 + 0x1e bytes	C++
+ 	mfc80d.dll!CWnd::WindowProc(unsigned int message=273, unsigned int wParam=9840, long lParam=66820)  Line 1741 + 0x20 bytes	C++
+ 	mfc80d.dll!AfxCallWndProc(CWnd * pWnd=0x01cd5258, HWND__ * hWnd=0x000104b8, unsigned int nMsg=273, unsigned int wParam=9840, long lParam=66820)  Line 240 + 0x1c bytes	C++
+ 	mfc80d.dll!AfxWndProc(HWND__ * hWnd=0x000104b8, unsigned int nMsg=273, unsigned int wParam=9840, long lParam=66820)  Line 389	C++
+ 	mfc80d.dll!AfxWndProcBase(HWND__ * hWnd=0x000104b8, unsigned int nMsg=273, unsigned int wParam=9840, long lParam=66820)  Line 411 + 0x15 bytes	C++
+ 	user32.dll!7654c4e7() 	
+ 	[Frames below may be incorrect and/or missing, no symbols loaded for user32.dll]	
+ 	user32.dll!7654c5e7() 	
+ 	user32.dll!7654c590() 	
+ 	user32.dll!76545294() 	
+ 	user32.dll!76545582() 	
+ 	user32.dll!765796c5() 	
+ 	user32.dll!765797c5() 	
+ 	user32.dll!76567f21() 	
+ 	mfc80d.dll!AfxUnlockGlobals(int nLockType=12563336)  Line 109	C++
+ 	user32.dll!765582b5() 	
+ 	user32.dll!7654c4e7() 	
+ 	user32.dll!7654c5e7() 	
+ 	user32.dll!7655dbcd() 	
+ 	user32.dll!7655dbcd() 	
+ 	user32.dll!7654c590() 	
+ 	user32.dll!76541b31() 	
+ 	user32.dll!7655dbcd() 	
+ 	user32.dll!76562bee() 	
+ 	user32.dll!7655dbcd() 	
+ 	mfc80d.dll!CWnd::DefWindowProcA(unsigned int nMsg=514, unsigned int wParam=0, long lParam=458769)  Line 1029 + 0x20 bytes	C++
+ 	mfc80d.dll!CWnd::WindowProc(unsigned int message=514, unsigned int wParam=0, long lParam=458769)  Line 1742 + 0x1c bytes	C++
+ 	mfc80d.dll!AfxCallWndProc(CWnd * pWnd=0x01cd69e8, HWND__ * hWnd=0x00010504, unsigned int nMsg=514, unsigned int wParam=0, long lParam=458769)  Line 240 + 0x1c bytes	C++
+ 	mfc80d.dll!AfxWndProc(HWND__ * hWnd=0x00010504, unsigned int nMsg=514, unsigned int wParam=0, long lParam=458769)  Line 389	C++
+ 	mfc80d.dll!AfxWndProcBase(HWND__ * hWnd=0x00010504, unsigned int nMsg=514, unsigned int wParam=0, long lParam=458769)  Line 411 + 0x15 bytes	C++
+ 	user32.dll!7654c4e7() 	
+ 	user32.dll!7654c5e7() 	
+ 	user32.dll!7654c590() 	
+ 	user32.dll!7654cc19() 	
+ 	user32.dll!7654cc70() 	
+ 	user32.dll!765441eb() 	
+ 	user32.dll!76552073() 	
+ 	mfc80d.dll!CWnd::IsDialogMessageA(tagMSG * lpMsg=0x002bf130)  Line 198	C++
+ 	mfc80d.dll!CWnd::PreTranslateInput(tagMSG * lpMsg=0x002bf130)  Line 4268	C++
+ 	mfc80d.dll!CDialog::PreTranslateMessage(tagMSG * pMsg=0x002bf130)  Line 80	C++
+ 	mfc80d.dll!CWnd::WalkPreTranslateTree(HWND__ * hWndStop=0x00040426, tagMSG * pMsg=0x002bf130)  Line 2882 + 0x14 bytes	C++
+ 	mfc80d.dll!AfxInternalPreTranslateMessage(tagMSG * pMsg=0x002bf130)  Line 233 + 0x12 bytes	C++
+ 	mfc80d.dll!CWinThread::PreTranslateMessage(tagMSG * pMsg=0x002bf130)  Line 773 + 0x9 bytes	C++
+ 	mfc80d.dll!AfxPreTranslateMessage(tagMSG * pMsg=0x002bf130)  Line 252 + 0x11 bytes	C++
+ 	mfc80d.dll!AfxInternalPumpMessage()  Line 178 + 0x18 bytes	C++
+ 	mfc80d.dll!CWinThread::PumpMessage()  Line 896	C++
+ 	mfc80d.dll!CWinThread::Run()  Line 625 + 0xd bytes	C++
+ 	mfc80d.dll!CWinApp::Run()  Line 924	C++
+ 	mfc80d.dll!AfxWinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x002a2800, int nCmdShow=1)  Line 47 + 0xd bytes	C++
+ 	EasyBridge.exe!WinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x002a2800, int nCmdShow=1)  Line 33	C++
+ 	EasyBridge.exe!__tmainCRTStartup()  Line 589 + 0x35 bytes	C
+ 	EasyBridge.exe!WinMainCRTStartup()  Line 414	C
+ 	kernel32.dll!75edee1c() 	
+ 	ntdll.dll!777237eb() 	
+ 	ntdll.dll!777237be() 	

@@ -1,0 +1,177 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 14, 2009
+File Date =  07/14/09 12:20:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK S8 HQ HT H9 H8 H7 H4 D5 D4 C7 C4 
+Current Hand(West) = S7 S3 HJ H2 DQ DT D9 D6 D3 CQ CT C9 C6 
+Current Hand(North) = SJ ST S6 S5 S2 HK H3 DK D7 CJ C8 C5 C2 
+Current Hand(East) = SQ S9 S4 HA H6 H5 DA DJ D8 D2 CA CK C3 
+Original Hand(South) = SA SK S8 HQ HT H9 H8 H7 H4 D5 D4 C7 C4 
+Original Hand(West) = S7 S3 HJ H2 DQ DT D9 D6 D3 CQ CT C9 C6 
+Original Hand(North) = SJ ST S6 S5 S2 HK H3 DK D7 CJ C8 C5 C2 
+Original Hand(East) = SQ S9 S4 HA H6 H5 DA DJ D8 D2 CA CK C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should finesse Diamonds
+>>>>>>> WEST <<<<<<<<
+S:73  H:J2  D:QT963  C:QT96
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.5; Total pts = 3.5.
+  QT's = 0.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/3/2)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+South bids 2H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3H.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKORT8: Partner's takeout indicates 12.0+ HCPs, for a total in the partnership of 15.5-24.5 points.
+TKOTR22: With 5.0/3.5 pts, respond with our longest suit of Diamonds at a bid of 4 Diamonds.
+We bid 4D.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Diamonds.  Declarer is West; North leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:Q9743 (Q94/73)
+  H:AJ652 (A65/J2)
+  D:AQJT98632 (AJ82/QT963)
+  C:AKQT963 (AK3/QT96)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 0.0;   Total pts = 23.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/1/1/3)
+  8 Eventual Winners (0/1/4/3)
+  5 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:Q9743 (Q94/73)
+  H:AJ652 (A65/J2)
+  D:AQJT98632 (AJ82/QT963)
+  C:AKQT963 (AK3/QT96)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 0.0;   Total pts = 23.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/1/1/3)
+  8 Eventual Winners (0/1/4/3)
+  5 Possible Losers (vs. 3 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 10 for the 4D contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ44: We want to eventualy exit with a Club.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Jack in dummy if necessary.
+ Play 2: Pull a round of trumps with the Queen in hand.
+ Play 3: Pull a round of trumps with the Ace in dummy.
+ Play 4: Cash the King of Clubs in dummy.
+ Play 5: Cash the Ace of Clubs in dummy.
+ Play 6: Cash the Queen of Clubs in hand.
+ Play 7: Exit with a Club and throw the opponents into the lead.
+ Play 8: Ruff a Club in dummy.
+ Play 9: Ruff a Heart in hand.
+ Play 10: Ruff a Spade in hand.
+ Play 11: Lead a low Club from dummy to finesse the ten in hand against North, with the Queen as cover.
+ Play 12: Lead the Club ten from hand and finesses it, with the { CA CK  } in dummy as possible cover cards.
+ Play 13: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 14: Lead a low Heart from dummy and finesse the Jack in hand against North.
+ Play 15: Cash the Ace of Hearts in dummy.
+ Play 16: Cash the Ace of Diamonds in dummy.
+ Play 17: Cash the Jack of Diamonds in dummy.
+ Play 18: Cash the Queen of Diamonds in hand.
+ Play 19: Cash the Ten of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLCSH55: The opponents led a Heart, so cash the Ace now.
+PLCSH80: the opponents led a Heart, so see if we can finish up the cash play here.
+PLYDCS1: Use this opportunity to discard the H2.
+PLCSH88b: Our cash of the HA from dummy is holding, so discard the H2.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 4 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the DA from dummy to pull in a round of trumps.  <<<<<<<<< NO, lead from hand to East for finesse??????
+
+
+

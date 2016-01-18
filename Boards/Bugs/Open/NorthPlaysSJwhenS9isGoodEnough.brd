@@ -1,0 +1,156 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 1, 2009
+File Date =  08/01/09 12:06:30
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 HA HQ HT H7 H6 H3 H2 DT D5 CA C8 C7 
+Current Hand(West) = ST S6 S4 H4 DA DK D9 D4 D2 CQ CJ C5 C2 
+Current Hand(North) = SQ SJ S9 S3 HJ H9 H8 H5 DQ D8 D6 CK C3 
+Current Hand(East) = SA SK S8 S5 S2 HK DJ D7 D3 CT C9 C6 C4 
+Original Hand(South) = S7 HA HQ HT H7 H6 H3 H2 DT D5 CA C8 C7 
+Original Hand(West) = ST S6 S4 H4 DA DK D9 D4 D2 CQ CJ C5 C2 
+Original Hand(North) = SQ SJ S9 S3 HJ H9 H8 H5 DQ D8 D6 CK C3 
+Original Hand(East) = SA SK S8 S5 S2 HK DJ D7 D3 CT C9 C6 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = East
+Bidding History = Pass Pass 1S 2H 3D Pass 3S 4H 4S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North plays SJ when S9 is just as good - ST in dummy on RH
+>>>>>>> NORTH <<<<<<<
+S:QJ93  H:J985  D:Q86  C:K3
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (2/1/1/1)
+  8 Likely Losers (2/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Spades.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1S.
+--------------------
+South bids 2H.
+--------------------
+West bids 3D.
+--------------------
+Responding to partner's opening bid of 2 Hearts.
+REVAL38: (with 4-card Heart trump support including a trump honor & a doubleton in Clubs, the hand is revalued for a suit contract as dummy from 8.0 to 12.0 points)
+ROVRC5: Partner overcalled at the 2-level, indicating a good 5+ card Heart suit, 9.5-14.5 points, and probably 6+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 21.5-26.5 points.
+ROVRC99: We have insufficient strength for either a raise, suit shift, or NT bid, so pass.
+We pass.
+--------------------
+East bids 3S.
+--------------------
+South bids 4H.
+--------------------
+West bids 4S.
+--------------------
+Rebidding as responder after bids of 2 Hearts, Pass, and 4 Hearts.
+B4C4: Partner made a minimum rebid of his Heart suit at 4 Hearts, showing 10.0-16.0 points and 5+ trump cards.
+B4C11: Pass since partner has bid game.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is East; South leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF37: Partner's seven might not win the round, so top it with the Jack. <<<<<< NOT NEEDED, 9 is good enough
+RCP5A: South is now known to have started with 1 Spade.
+PLAYB41: Play the nine to win the trick.
+PLYLDD: With no other obvious plays, play H5.
+RCP20: Dummy is now out of Hearts.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the six.
+PLDF48: We can't beat West's Ace, so discard the D6.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: West led an honor (the ten), so cover it with our Queen.
+PLAYB48: We can't beat West's King, so discard the D8.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: West led an honor (the Queen), so cover it with our King.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Queen
+PLYLD44: With no other obvious plays, lead a low trump S3.
+PLAYB47: Partner's Ace can win the trick, so discard the C3.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the eight.
+PLDF47: Partner's Queen can win the trick, so discard the H8.
+RCP5A: East is now known to have started with 1 Heart.
+RCP20: Dummy is now out of Clubs.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H9.
+RCP5A: North is now known to have started with 2 Clubs.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Diamonds and no trumps, so discard the HJ.
+RESULT: East/West were set 2 tricks.
+
+

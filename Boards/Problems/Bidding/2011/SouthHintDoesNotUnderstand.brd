@@ -1,0 +1,132 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 12, 2011
+File Date =  10/11/11 10:09:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ SJ S9 S4 S2 H9 H5 H4 DT D8 D6 C4 
+Current Hand(West) = ST HA HT H8 H3 DQ D7 D3 D2 CA CJ C8 C5 
+Current Hand(North) = S8 S7 S6 HK HQ HJ H7 H6 DA DK DJ D9 CT 
+Current Hand(East) = SK S5 S3 H2 D5 D4 CK CQ C9 C7 C6 C3 C2 
+Original Hand(South) = SA SQ SJ S9 S4 S2 H9 H5 H4 DT D8 D6 C4 
+Original Hand(West) = ST HA HT H8 H3 DQ D7 D3 D2 CA CJ C8 C5 
+Original Hand(North) = S8 S7 S6 HK HQ HJ H7 H6 DA DK DJ D9 CT 
+Original Hand(East) = SK S5 S3 H2 D5 D4 CK CQ C9 C7 C6 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = ????
+Bidding History = 2S Pass 2NT Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South's hint doesn't understand North's 2NT
+>>>>> SOUTH<<<<<<<<
+S:AQJ942  H:954  D:T86  C:4
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  3 Likely Winners (5/-1/-1/0)
+  10 Likely Losers (1/4/4/1)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+We bid 2S.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+Rebidding after opening bid of 2 Spades and partner's response of 2 No Trump.
+B3Z00: Partner made a response which we don't understand; simply pass.  <<<<<<<<<<<<<<<<<<<<<<???
+
+>>>>>NORTH<<<<<<<<<<
+S:876  H:KQJ76  D:AKJ9  C:T
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  6 Likely Winners (-1/4/3/0)
+  7 Likely Losers (4/1/1/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy for Spade contract...
+2REVAL38: (with 3-card Spade trump support & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 14.0 to 16.0 points)
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.5-10.5 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+We have 14.0/14.0/14.0 points, for a partnership total of 19.5-24.5 points, so we are interested in game if a good fit can be found.
+RWKT21: And we like partner's Spade suit (holding 876 support), but with only 19.5-24.5 total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.  <<<<<<<<<<<<<<<<<<<<<< NOTE
+We bid 2NT.
+--------------------
+East passes.
+--------------------
+
+

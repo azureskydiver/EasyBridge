@@ -1,0 +1,214 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 23, 2014
+File Date =  05/21/14 20:57:58
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S9 S8 CT C9 
+Current Hand(West) = H5 H3 CQ CJ C2 
+Current Hand(North) = HK DA DQ DT D9 D7 
+Current Hand(East) = HQ HJ HT H9 H8 D6 
+Original Hand(South) = SA SQ SJ S9 S8 S6 H4 DK D8 CT C9 C6 C4 
+Original Hand(West) = S4 HA H5 H3 H2 DJ D4 D3 CA CK CQ CJ C2 
+Original Hand(North) = SK S5 S3 HK H7 DA DQ DT D9 D7 D2 C7 C3 
+Original Hand(East) = ST S7 S2 HQ HJ HT H9 H8 H6 D6 D5 C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 2S 3C 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West C4 CK C3 C5 West
+GameTrick #2 = West H4 HA H7 H6 West
+GameTrick #3 = West C6 CA C7 C8 West
+GameTrick #4 = West D8 D3 D2 D5 South
+GameTrick #5 = South SA S4 S3 S2 South
+GameTrick #6 = South S6 H2 SK S7 North
+GameTrick #7 = North SJ D4 S5 ST South
+GameTrick #8 = South DK DJ -- -- ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Declarer needs xfer to North to toss losers
+>>>>>>>>>SOUTH<<<<<<<
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJ98653 (K53/AQJ986)
+  H:K74 (K7/4)
+  D:AKQT9872 (AQT972/K8)
+  C:T97643 (73/T964)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 7.0;   Total pts = 29.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Sure Winners (4/0/3/0)
+  9 Eventual Winners (6/0/3/0)
+  4 Possible Losers (vs. 4 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 3 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJ98653 (K53/AQJ986)
+  H:K74 (K7/4)
+  D:AKQT9872 (AQT972/K8)
+  C:T97643 (73/T964)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 7.0;   Total pts = 29.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Sure Winners (4/0/3/0)
+  9 Eventual Winners (6/0/3/0)
+  4 Possible Losers (vs. 4 allowable)
+We have 9 sure tricks against a requirement of 9 for the 3S contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the DA, DK, DQ, S9 and S8.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the King in hand.
+ Play 2: Pull a round of trumps with the Ace in hand.
+ Play 3: Pull a round of trumps with the Queen in hand if necessary.
+ Play 4: Pull a round of trumps with the Jack in hand if necessary.
+ Play 5: Ruff a Diamond in hand.
+ Play 6: Ruff a Diamond in hand.
+ Play 7: Ruff a Heart in hand.
+ Play 8: Ruff a Club in dummy.
+ Play 9: Ruff a Club in dummy.
+ Play 10: Cash the King of Diamonds in hand.
+ Play 11: Cash the Ace of Diamonds in dummy.
+ Play 12: Cash the Queen of Diamonds in dummy.
+ Play 13: Cash the King of Spades in dummy.
+ Play 14: Cash the Ace of Spades in hand.
+ Play 15: Cash the Queen of Spades in hand.
+ Play 16: Cash the Jack of Spades in hand.
+ Play 17: Cash the Nine of Spades in hand.
+ Play 18: Cash the Eight of Spades in hand.
+ Play 19: Play the DK from hand to try and drop the DJ.
+ Play 20: Lead a low Heart from hand and finesse the King in dummy against East.
+The planning is complete.
+---------------------------
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+Use this opportunity to discard the C3.
+We don't have a winner in the suit in dummy, so discard the three.
+Combined hand (Dummy/Hand):
+  S:AKQJ98653 (K53/AQJ986)
+  H:K74 (K7/4)
+  D:AKQT9872 (AQT972/K8)
+  C:T9764 (7/T964)
+Combined hand evaluation:
+  HCPs = 22.0, Distn pts = 7.0;   Total pts = 29.0.
+  QT's = 4.5,
+  Stoppers in: S, H, D
+  Probable Stoppers in:
+  7 Sure Winners (4/0/3/0)
+  9 Eventual Winners (6/0/3/0)
+  4 Possible Losers (vs. 4 allowable)
+No usable plays found for the current situation.
+We can't beat West's King, so discard the C4.
+Playing card from dummy.
+Reviewing play plan for round 2...
+We have 10 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the DA, DK, DQ, HK, S9 and S8.
+Interleaving plays...
+the card led (HA)  beats the HK we were going to play, so skip the cash for now.
+No usable plays found for the current situation.
+Playing second in dummy, using default player logic.
+We don't have a winner in the suit in dummy, so discard the seven.
+No usable plays found for the current situation.
+We can't beat West's Ace, so discard the C6.
+Playing card from dummy.
+Reviewing play plan for round 4...
+We have 10 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HK, DA, DK, DQ, S9 and S8.
+Interleaving plays...
+Discard a Diamond from dummy in anticipation of cashing the King in hand.
+the opponents led a Diamond, so see if we can finish up the cash play here.
+We can actually play the eight to win this trick, so postpone the cash of the King.
+No usable plays found for the current situation.
+Play the eight to win the trick.
+Reviewing play plan for round 5...
+We have 12 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HK, DK, DA, DQ, DT, D9, S9 and S8.
+Interleaving plays...
+Lead out the SA from hand to pull in a round of trumps.
+Playing card from dummy.
+Discard the S3 on declarer's top Ace of trumps.
+Reviewing play plan for round 6...
+We have 11 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the HK, DK, DA, DQ, DT, D9 and SK.
+Interleaving plays...
+Lead the S6 up to dummy to pull in a round of trumps.
+West is now known to have started with 1 Spade.
+Playing card from dummy.
+Since LHO may hold the trump ten, we have to play the King from dummy.
+Playing card from dummy.
+Reviewing play plan for round 7...
+We have 10 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+Checking play sequencing...
+We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the HK, DK, DA, DQ, DT and D9.
+Interleaving plays...
+Lead the S5 up to own hand to pull in a round of trumps.
+Play high to take the round of trumps with the Jack.
+Reviewing play plan for round 8...
+We have 9 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+Checking play sequencing...
+Since we have enough cashing tricks (5) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+Lead the DK to try and drop the DJ.
+Playing card from dummy.
+West dropped the DJ under our King as hoped; now discard the D7 from dummy.  <<<<<<<<<<<<NO Overtake
+
+

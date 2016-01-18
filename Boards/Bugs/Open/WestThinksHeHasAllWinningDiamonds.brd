@@ -1,0 +1,134 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 1, 2009
+File Date =  08/03/09 13:31:32
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA HK H2 DJ CA CQ C6 C5 C2 
+Current Hand(West) = S7 H9 DT D6 D4 D3 D2 CK CJ 
+Current Hand(North) = SJ S9 S8 S6 HQ H6 H5 C9 C7 C3 
+Current Hand(East) = HJ HT H8 H7 H4 H3 CT C8 C4 
+Original Hand(South) = SA ST HA HK H2 DA DJ D7 CA CQ C6 C5 C2 
+Original Hand(West) = SQ S7 S3 H9 DQ DT D6 D5 D4 D3 D2 CK CJ 
+Original Hand(North) = SJ S9 S8 S6 S5 S2 HQ H6 H5 D9 C9 C7 C3 
+Original Hand(East) = SK S4 HJ HT H8 H7 H4 H3 DK D8 CT C8 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 2C Pass 2D Pass 3C Pass 3S Pass 3NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West DA D5 D9 DK South
+GameTrick #2 = South SA S3 S2 S4 South
+GameTrick #3 = South ST SQ S5 SK East
+GameTrick #4 = East D7 DQ -- D8 ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West thinks he has all the rest of the Diamonds. South has one!!!
+>>> WEST <<<<<<
+S:Q73  H:9  D:QT65432  C:KJ
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 7.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (1/0/5/1)
+  6 Likely Losers (2/1/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+South bids 2C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 3S.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D5.
+RCP20: Dummy is now out of Diamonds.
+RCP25: Dummy is shown to be void in Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the ten), so cover it with our Queen.
+PLDF31: We're holding all the remaining winning Diamonds in our hand, so win with the Queen in order to cash our winners.
+
+

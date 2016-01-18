@@ -1,0 +1,130 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 1, 2010
+File Date =  06/06/10 16:14:15
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA HT H7 H3 DA CA CK CQ CT C7 C6 C4 
+Current Hand(West) = ST S3 HK HQ H8 H6 H2 DJ DT D2 C8 C3 
+Current Hand(North) = SJ S9 S8 HJ H4 DK DQ D7 D6 D5 CJ C9 
+Current Hand(East) = SQ S6 S5 S2 H9 H5 D9 D8 D4 D3 C5 C2 
+Original Hand(South) = S7 HA HT H7 H3 DA CA CK CQ CT C7 C6 C4 
+Original Hand(West) = SK ST S3 HK HQ H8 H6 H2 DJ DT D2 C8 C3 
+Original Hand(North) = SA SJ S9 S8 HJ H4 DK DQ D7 D6 D5 CJ C9 
+Original Hand(East) = SQ S6 S5 S4 S2 H9 H5 D9 D8 D4 D3 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 15
+Declarer = North
+Bidding History = Pass 1C Pass 1D Pass 2H Pass 2NT Pass 3C Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East S7 SK SA S4 North
+GameTrick #2 = North -- -- -- -- North
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North Plays CJ which only entry to his Diamonds.
+>>>>>>>>>>>> NORTH<<<<<<<
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 10 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS10: Can finesse the Ten of Hearts in dummy with the Ace as the potential cover card.
+PSFNS31: Can finesse the Jack of Hearts by leading it from hand against East.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNCNT0: Skipping using finesses because of possiblity of losing control.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 7 in Clubs, plus 3 in Diamonds, plus 2 in Hearts.
+PLNCSH30: A total of 13 maximum cashing tricks are immediately available.   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90B: We have 13 plays and up to 12 possible tricks including 10 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Spades in hand. <Requires ...>
+ Play 2: Cash the Ace of Clubs in dummy.
+ Play 3: Cash the King of Clubs in dummy.
+ Play 4: Cash the Queen of Clubs in dummy.
+ Play 5: Cash the Jack of Clubs in hand.  <<<<<<<<<<<<<<<<<<<<<<<<<<NO THIS IS AN Entry <<<<<<<<<<<
+ Play 6: Cash the Ten of Clubs in dummy.
+ Play 7: Cash the Nine of Clubs in hand.
+ Play 8: Cash the Seven of Clubs in dummy. <Requires ...>
+ Play 9: Cash the Ace of Diamonds in dummy.
+ Play 10: Cash the King of Diamonds in hand.
+ Play 11: Cash the Queen of Diamonds in hand.
+ Play 12: Cash the Ace of Hearts in dummy.
+ Play 13: Cash the Jack of Hearts in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [CA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [CT Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Spades in hand.
+ Play 2: Cash the Jack of Clubs in hand.
+ Play 3: Cash the Nine of Clubs in hand.
+ Play 4: Cash the Ten of Clubs in dummy.
+ Play 5: Cash the Queen of Clubs in dummy.
+ Play 6: Cash the King of Clubs in dummy.
+ Play 7: Cash the Ace of Clubs in dummy.
+ Play 8: Cash the Seven of Clubs in dummy.
+ Play 9: Cash the Ace of Diamonds in dummy.
+ Play 10: Cash the King of Diamonds in hand.
+ Play 11: Cash the Queen of Diamonds in hand.
+ Play 12: Cash the Jack of Hearts in hand.
+ Play 13: Cash the Ace of Hearts in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTST8: The play <SJ Cash> is not yet viable as the card [Queen] is still outstanding.
+PLCSH10: Cash the CJ from hand.  <<<<<<<<<<<< NO THIS IS THE ONLY ENTRY FOR Diamonds
+
+

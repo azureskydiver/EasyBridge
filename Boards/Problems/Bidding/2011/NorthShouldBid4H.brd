@@ -1,0 +1,183 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/16/11 18:05:29
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S9 S5 HK HJ HT H8 H6 H3 H2 D9 D4 CJ 
+Current Hand(West) = H5 H4 DK DJ D7 D6 D5 CT C7 C6 C3 C2 
+Current Hand(North) = SQ S8 HA HQ H9 H7 DA D8 D3 D2 CA C8 C4 
+Current Hand(East) = SA SK SJ S6 S4 S3 S2 DQ DT CK CQ C9 C5 
+Original Hand(South) = ST S9 S5 HK HJ HT H8 H6 H3 H2 D9 D4 CJ 
+Original Hand(West) = S7 H5 H4 DK DJ D7 D6 D5 CT C7 C6 C3 C2 
+Original Hand(North) = SQ S8 HA HQ H9 H7 DA D8 D3 D2 CA C8 C4 
+Original Hand(East) = SA SK SJ S6 S4 S3 S2 DQ DT CK CQ C9 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 4
+Declarer = South
+Bidding History = 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- S7 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should have bid 4H
+>>>>>>>>NORTH<<<<<<<<
+=====================================
+Received hand:
+  S:Q8  H:AQ97  D:A832  C:A84
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 15.0.
+  QT's = 3.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  3 Likely Winners (0/2/1/0)
+  10 Likely Losers (2/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 3 Hearts.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by 0 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Heart trump support including a trump honor & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 15.0 to 17.0 points)
+SHUTR0: Partner made a preemptive 3 Hearts bid, showing a 7-card Heart suit with no tricks outside the suit, and most likely 5.5-8.5 points.
+SHUTR9: With 16.0/15.0/17.0 points in hand, for a total of 22.5-25.5 points in the partnership, holding AQ97 in support of partner's Heart suit, and with only 3.5 QTs and 3 likely winners, we have no real reason to bid anything, so just pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+PLAY: West leads the S7.
+PLAY: We play the S8.
+PLAY: East plays the SJ.
+PLAY: South plays the S5.
+PLAY: East wins the round.
+--------
+PLAY: East leads the SA.
+PLAY: South plays the S9.
+PLAY: West plays the C2.
+RCP10: West shows out of Spades.
+RCP5A: West is now known to have started with 1 Spade.
+PLAY: We play the SQ.
+RCP20: Dummy is now out of Spades.
+PLAY: East wins the round.
+--------
+PLAY: East leads the CK.
+PLAY: South plays the CJ.
+PLAY: West plays the C7.
+PLAY: We play the CA.
+PLAY: North wins the round.
+--------
+PLAY: We lead the HA.
+PLAY: East plays the S3.
+RCP10: East shows out of Hearts.
+RCP5A: East is now known to have started with 0 Hearts.
+PLAY: South plays the H2.
+PLAY: West plays the H4.
+PLAY: North wins the round.
+--------
+PLAY: We lead the H7.
+PLAY: East plays the S4.
+PLAY: South plays the HJ.
+PLAY: West plays the H5.
+PLAY: South wins the round.
+--------
+PLAY: South leads the ST.
+PLAY: West plays the D6.
+PLAY: We play the H9.
+PLAY: East plays the S2.
+PLAY: North wins the round.
+--------
+PLAY: We lead the C4.
+PLAY: East plays the C5.
+PLAY: South plays the H3.
+RCP10: South shows out of Clubs.
+RCP5A: South is now known to have started with 1 Club.
+PLAY: West plays the C3.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D9.
+PLAY: West plays the D5.
+PLAY: We play the DA.
+PLAY: East plays the DT.
+PLAY: North wins the round.
+--------
+PLAY: We lead the C8.
+RCP20: Dummy is now out of Clubs.
+PLAY: East plays the CQ.
+PLAY: South plays the H6.
+PLAY: West plays the C6.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D4.
+PLAY: West plays the D7.
+PLAY: We play the D2.
+PLAY: East plays the DQ.
+PLAY: East wins the round.
+--------
+PLAY: East leads the C9.
+PLAYCL: South has claimed the remaining 3 tricks.
+RESULT: North/South made 1 overtrick.
+
+

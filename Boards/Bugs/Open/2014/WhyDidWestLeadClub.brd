@@ -1,0 +1,148 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = June 26, 2014
+File Date =  07/02/14 16:32:32
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK CA CK 
+Current Hand(West) = HK H4 CJ 
+Current Hand(North) = SJ C8 C6 
+Current Hand(East) = H7 CQ C9 
+Original Hand(South) = SK SQ ST S4 H8 H6 H2 D5 CA CK CT C5 C4 
+Original Hand(West) = S5 S3 S2 HA HK HT H9 H4 D4 D3 D2 CJ C3 
+Original Hand(North) = SJ S9 HQ DA DK DQ DT D9 D8 D7 C8 C6 C2 
+Original Hand(East) = SA S8 S7 S6 HJ H7 H5 H3 DJ D6 CQ C9 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 13
+Declarer = South
+Bidding History = Pass 1C Pass 1D Pass 1S Pass 2D Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West H2 H9 HQ H3 North
+GameTrick #2 = North D5 D2 DA D6 North
+GameTrick #3 = North H6 D3 DK DJ North
+GameTrick #4 = North H8 D4 DQ S8 North
+GameTrick #5 = North S4 HT DT S7 North
+GameTrick #6 = North ST S2 D9 S6 North
+GameTrick #7 = North C4 C3 D7 C7 North
+GameTrick #8 = North C5 S3 D8 H5 North
+GameTrick #9 = North SQ S5 S9 SA East
+GameTrick #10 = East CT HA C2 HJ ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 70
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 90
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  70		2 No Trump made"
+Game Score Record = "	  90	3 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why did West lead Club?
+>>>>>>>>>>WEST<<<<
+S:532  H:AKT94  D:432  C:J3
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5; Total pts = 7.5.
+  QT's = 2.0,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  1 Likely Winners (-1/3/-1/0)
+  12 Likely Losers (4/2/4/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+East passes.
+--------------------
+South bids 1C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 7.5 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 1D.
+--------------------
+East passes.
+--------------------
+South bids 1S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 2 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H9.
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLAYB48: We can't beat North's Ace, so discard the D2.
+RCP5A: South is now known to have started with 1 Diamond.
+PLAYB48: We can't beat North's King, so discard the D3.
+RCP5A: East is now known to have started with 2 Diamonds.
+PLYSIG20: Partner discarded high in the Spade suit, indicating a preference for that suit.
+PLDIS40: Indicate a preference for the Heart by discarding high with the HT.
+PLAYB56: With no cards in the suit led and no trumps, we discard the HT.
+RCP5A: West is now known to have started with 3 Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S2.
+PLYSIG20: Partner discarded high in the Club suit, indicating a preference for that suit.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C3.
+RCP20: Dummy is now out of Diamonds.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S3.
+PLDF31: We're holding all the remaining winning Hearts in our hand, so win with the Ace in order to cash our winners.
+PLYLDPRF8: Partner has indicated a preference for the Clubs suit, so lead the CJ.  <<<<<<<<<<<<<<<NO
+

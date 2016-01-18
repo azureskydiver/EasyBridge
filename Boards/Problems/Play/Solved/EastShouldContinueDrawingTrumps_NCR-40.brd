@@ -1,0 +1,427 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 24, 2009
+File Date =  08/25/09 10:08:35
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST HJ HT H7 H4 DQ D6 
+Current Hand(West) = S9 HA HK HQ H8 CK CJ 
+Current Hand(North) = H9 H3 DK CT C9 C5 C4 
+Current Hand(East) = SJ H6 H5 DJ DT D9 D4 
+Original Hand(South) = SA SK ST S4 HJ HT H7 H4 DQ D6 D3 CQ C7 
+Original Hand(West) = SQ S9 S6 S2 HA HK HQ H8 D7 CK CJ C8 C6 
+Original Hand(North) = S7 H9 H3 H2 DK D8 D5 CA CT C9 C5 C4 C2 
+Original Hand(East) = SJ S8 S5 S3 H6 H5 DA DJ DT D9 D4 D2 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 12
+Declarer = East
+Bidding History = Pass Pass 1C Pass 1D 1S 1NT Pass 2D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = South
+GameTrick #1 = South SK S2 S7 S3 South
+GameTrick #2 = South SA S6 H2 S5 South
+GameTrick #3 = South S4 SQ D5 S8 North
+GameTrick #4 = North C7 C6 CA C3 North
+GameTrick #5 = North CQ C8 C2 D2 East
+GameTrick #6 = East D3 D7 D8 DA East
+GameTrick #7 = East -- -- -- -- West
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 20
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  20		1 overtrick"
+Game Score Record = "  40		2 Diamonds made"
+Game Score Record = "  60		3 Clubs made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should continue drawing trumps
+>>>>>>> EAST<<<<<<<<<<
+S:J853  H:65  D:AJT942  C:3
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  5 Likely Winners (1/0/4/0)
+  8 Likely Losers (3/2/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West bids 1C.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F01: Partner, opening in third position, is showing 10.0+ points and 2+ QT's.
+G44: Have 6.0/7.0/7.0 pts with no 4-card major suits, so bid 1 Diamond in preference to raising partner's minor Clubs suit.
+We bid 1D.
+--------------------
+South bids 1S.
+--------------------
+West bids 1NT.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 1 Diamond, and 1 No Trump.
+B4E00: Partner made a rebid of 1NT, showing 12.0-20.5 points with a balanced hand, for a total of 19.0-27.5 pts in the partnership.
+YR2: With With 19.0-27.5 total points and a strong 6-card Diamond suit (holding AJT942), rebid it at 2 Diamonds.
+We bid 2D.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is East; South leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:QJ986532 (Q962/J853)
+  H:AKQ865 (AKQ8/65)
+  D:AJT9742 (7/AJT942)
+  C:KJ863 (KJ86/3)
+Combined hand evaluation:
+  HCPs = 21.0, Distn pts = 1.0;
+  Total pts = 22.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (0/3/1/0)
+  4 Eventual Winners (0/3/1/0)
+  9 Possible Losers (vs. 5 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 2 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:QJ986532 (Q962/J853)
+  H:AKQ865 (AKQ8/65)
+  D:AJT9742 (7/AJT942)
+  C:KJ863 (KJ86/3)
+Combined hand evaluation:
+  HCPs = 21.0, Distn pts = 1.0;
+  Total pts = 22.0.
+  QT's = 3.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Sure Winners (0/3/1/0)
+  4 Eventual Winners (0/3/1/0)
+  9 Possible Losers (vs. 5 allowable)
+PLN10: We have only 4 sure tricks against a requirement of 8 for the 2D contract.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ44: We want to eventualy exit with a Heart.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in hand.
+ Play 2: Cash the Queen of Hearts in dummy.
+ Play 3: Cash the King of Hearts in dummy.
+ Play 4: Cash the Ace of Hearts in dummy.
+ Play 5: Exit with a Heart and throw the opponents into the lead.
+ Play 6: Ruff a Heart in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Club in hand.
+ Play 9: Ruff a Club in hand.
+ Play 10: Lead a low Club from hand and finesse the King in dummy against North.
+ Play 11: Lead a low Spade from hand and finesse the Queen in dummy against North.
+ Play 12: Lead a low Spade from dummy and finesse the Jack in hand against South.
+ Play 13: Cash the Ace of Diamonds in hand.
+PLN95: The planning is complete.
+---------------------------
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the two.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's King, so discard the S3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the four in hand if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the seven in dummy if necessary. <Requires ...>
+ Play 3: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 4: Pull a round of trumps with the ten in hand.
+ Play 5: Pull a round of trumps with the Jack in hand.
+ Play 6: Pull a round of trumps with the Ace in hand.
+ Play 7: Play the SQ from Dummy to try and drop the ST.
+ Play 8: Ruff a Club in hand.
+ Play 9: Ruff a Club in hand.
+ Play 10: Ruff a Club in hand.
+ Play 11: Ruff a Heart in hand.
+ Play 12: Ruff a Heart in hand.
+ Play 13: Lead a low Club from hand and finesse the King in dummy against North.
+ Play 14: Cash the Ace of Hearts in dummy.
+ Play 15: Cash the King of Hearts in dummy.
+ Play 16: Cash the Queen of Hearts in dummy.
+ Play 17: Cash the Queen of Spades in dummy.
+ Play 18: Cash the Jack of Spades in hand.
+ Play 19: Cash the King of Clubs in dummy. <Requires ...>
+ Play 20: Cash the Jack of Clubs in dummy. <Requires ...>
+ Play 21: Cash the Ace of Diamonds in hand.
+ Play 22: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 23: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 24: Cash the Nine of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HA, HK, HQ, SQ, SJ and CK.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (SA)  beats the SQ we were going to play, so skip the cash for now.
+PLCSH53: the card led (SA)  beats the SJ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A2: We don't have a winner in the suit in dummy, so discard the six.
+RCP5A: North is now known to have started with 1 Spade.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's Ace, so discard the S5.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the four in hand if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the seven in dummy if necessary. <Requires ...>
+ Play 3: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 4: Pull a round of trumps with the ten in hand.
+ Play 5: Pull a round of trumps with the Jack in hand.
+ Play 6: Pull a round of trumps with the Ace in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Club in hand.
+ Play 9: Ruff a Club in hand.
+ Play 10: Ruff a Heart in hand.
+ Play 11: Ruff a Heart in hand.
+ Play 12: Lead a low Club from hand and finesse the King in dummy against North.
+ Play 13: Cash the Ace of Hearts in dummy.
+ Play 14: Cash the King of Hearts in dummy.
+ Play 15: Cash the Queen of Hearts in dummy.
+ Play 16: Cash the Queen of Spades in dummy.
+ Play 17: Cash the Jack of Spades in hand.
+ Play 18: Cash the King of Clubs in dummy. <Requires ...>
+ Play 19: Cash the Jack of Clubs in dummy. <Requires ...>
+ Play 20: Cash the Ace of Diamonds in hand.
+ Play 21: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 22: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 23: Cash the Nine of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HA, HK, HQ, SQ, SJ and CK.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in dummy, using default player logic.
+PLDC2A1: We have a winner in the suit in dummy, so play the Queen.
+PLYTRY: No usable plays found for the current situation.
+PLYE23: We can't beat the opponent's five of trumps, so discard the S8.
+PLNADJ: Reviewing play plan for round 4...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the seven in dummy if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 3: Pull a round of trumps with the ten in hand.
+ Play 4: Pull a round of trumps with the Jack in hand.
+ Play 5: Pull a round of trumps with the Ace in hand.
+ Play 6: Ruff a Club in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Ruff a Club in hand.
+ Play 9: Ruff a Heart in hand.
+ Play 10: Ruff a Heart in hand.
+ Play 11: Cash the Ace of Hearts in dummy.
+ Play 12: Cash the King of Hearts in dummy.
+ Play 13: Cash the Queen of Hearts in dummy.
+ Play 14: Cash the Jack of Spades in hand.
+ Play 15: Cash the King of Clubs in dummy.
+ Play 16: Cash the Jack of Clubs in dummy. <Requires ...>
+ Play 17: Cash the Ace of Diamonds in hand.
+ Play 18: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 19: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 20: Cash the Nine of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HA, HK, HQ, SJ, CK and CJ.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (CA)  beats the CK we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2A0: Play our only card in the suit, the three.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLNADJ: Reviewing play plan for round 5...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the seven in dummy if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 3: Pull a round of trumps with the ten in hand.
+ Play 4: Pull a round of trumps with the Jack in hand.
+ Play 5: Pull a round of trumps with the Ace in hand.
+ Play 6: Ruff a Club in hand.
+ Play 7: Ruff a Heart in hand.
+ Play 8: Ruff a Heart in hand.
+ Play 9: Cash the Ace of Hearts in dummy.
+ Play 10: Cash the King of Hearts in dummy.
+ Play 11: Cash the Queen of Hearts in dummy.
+ Play 12: Cash the Jack of Spades in hand.
+ Play 13: Cash the King of Clubs in dummy.
+ Play 14: Cash the Jack of Clubs in dummy. <Requires ...>
+ Play 15: Cash the Ace of Diamonds in hand.
+ Play 16: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 17: Cash the Ten of Diamonds in hand. <Requires ...>
+ Play 18: Cash the Nine of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HA, HK, HQ, SJ, CK and CJ.
+PINTLV: Interleaving plays...
+PLRUF20: We can ruff in the suit led by the opponent.
+PLRUF30: Ruff in hand with the D2.
+PLDM: Playing card from dummy.
+PLRUF77: Complete the ruff by discarding the C8 from hand.
+PLNADJ: Reviewing play plan for round 6...
+PLRV11: We have 7 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the seven in dummy if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 3: Pull a round of trumps with the ten in hand.
+ Play 4: Pull a round of trumps with the Jack in hand.
+ Play 5: Pull a round of trumps with the Ace in hand.
+ Play 6: Play the CK from Dummy to try and drop the CT.
+ Play 7: Ruff a Heart in hand.
+ Play 8: Ruff a Heart in hand.
+ Play 9: Cash the Ace of Hearts in dummy.
+ Play 10: Cash the King of Hearts in dummy.
+ Play 11: Cash the Queen of Hearts in dummy.
+ Play 12: Cash the Jack of Spades in hand.
+ Play 13: Cash the King of Clubs in dummy.
+ Play 14: Cash the Jack of Clubs in dummy.
+ Play 15: Cash the Ace of Diamonds in hand.
+ Play 16: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 17: Cash the Ten of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the HA, HK, HQ, SJ, CK and CJ.
+PINTLV: Interleaving plays...
+PLTRMP12: Lead out the DA from hand to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the D7 on declarer's top Ace of trumps.
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the ten in hand. <Requires ...>
+ Play 3: Pull a round of trumps with the Jack in hand. <Requires ...>
+ Play 4: Play the CK from Dummy to try and drop the CT.
+ Play 5: Ruff a Heart in hand.
+ Play 6: Ruff a Heart in hand.
+ Play 7: Cash the Ace of Hearts in dummy.
+ Play 8: Cash the King of Hearts in dummy.
+ Play 9: Cash the Queen of Hearts in dummy.
+ Play 10: Cash the Jack of Spades in hand.
+ Play 11: Cash the King of Clubs in dummy.
+ Play 12: Cash the Jack of Clubs in dummy.
+ Play 13: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 14: Cash the Ten of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the HA, HK, HQ, SJ, CK and CJ.
+PINTLV: Interleaving plays...
+PLCSH20: Lead a low Heart (the five) from hand in order to cash the Ace in dummy.
+PLDM: Playing card from dummy.
+PLCSH74: Cash the HA from dummy.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+PLRV11: We have 5 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the ten in hand. <Requires ...>
+ Play 2: Pull a round of trumps with the Jack in hand. <Requires ...>
+ Play 3: Play the HK from Dummy to try and drop one or more of the { HJ HT  }.
+ Play 4: Play the HQ from Dummy to try and drop one or more of the { HJ HT  }.
+ Play 5: Play the CK from Dummy to try and drop the CT.
+ Play 6: Ruff a Heart in hand.
+ Play 7: Ruff a Heart in hand.
+ Play 8: Cash the King of Hearts in dummy.
+ Play 9: Cash the Queen of Hearts in dummy.
+ Play 10: Cash the Jack of Spades in hand.
+ Play 11: Cash the King of Clubs in dummy.
+ Play 12: Cash the Jack of Clubs in dummy.
+ Play 13: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 14: Cash the Ten of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the HK, HQ, SJ, CK and CJ.
+PINTLV: Interleaving plays...
+PLCSH30: Cash the CJ from dummy.
+PLCSH72: Our cash of the CJ from dummy is holding, so discard the H6.
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the nine in hand if necessary. <Requires ...>
+ Play 2: Pull a round of trumps with the ten in hand. <Requires ...>
+ Play 3: Pull a round of trumps with the Jack in hand. <Requires ...>
+ Play 4: Play the CK from Dummy to try and drop the CT.
+ Play 5: Ruff a Heart in hand.
+ Play 6: Ruff a Heart in hand.
+ Play 7: Cash the Ace of Hearts in dummy.
+ Play 8: Cash the King of Hearts in dummy.
+ Play 9: Cash the Queen of Hearts in dummy.
+ Play 10: Cash the Jack of Spades in hand.
+ Play 11: Cash the King of Clubs in dummy.
+ Play 12: Cash the Jack of Clubs in dummy.
+ Play 13: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 14: Cash the Ten of Diamonds in hand. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the HA, HK, HQ, SJ, CK and CJ.
+PINTLV: Interleaving plays...
+PLCSH20: Lead a low Heart (the five) from hand in order to cash the Ace in dummy.
+
+

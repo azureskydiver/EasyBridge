@@ -1,0 +1,125 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  03/14/12 21:19:40
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S9 S7 HK C4 
+Current Hand(West) = HT H9 H7 H3 H2 
+Current Hand(North) = SQ D8 D7 D6 CJ 
+Current Hand(East) = SJ S8 CQ C8 C7 
+Original Hand(South) = SK S9 S7 S2 HK H6 H4 DK D9 CA C4 C3 C2 
+Original Hand(West) = ST S5 S4 HA HQ HT H9 H7 H3 H2 DT D5 CK 
+Original Hand(North) = SQ S3 HJ H8 DA D8 D7 D6 D3 D2 CJ C9 C5 
+Original Hand(East) = SA SJ S8 S6 H5 DQ DJ D4 CQ CT C8 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 5
+Declarer = West
+Bidding History = 1C 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = North
+GameTrick #1 = North CA CK C5 C6 South
+GameTrick #2 = South DK D5 D2 D4 South
+GameTrick #3 = South D9 DT DA DJ North
+GameTrick #4 = North C2 S4 C9 CT East
+GameTrick #5 = East H4 HQ H8 H5 West
+GameTrick #6 = West H6 HA HJ S6 West
+GameTrick #7 = West S2 S5 S3 SA East
+GameTrick #8 = East C3 ST D3 DQ ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 60
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  60	2 overtricks"
+Game Score Record = "	  60	2 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why didn't North return Diamonds??
+>>>>>>>>>>>>>NORTH<<<<<<<<<<<
+S:Q3  H:J8  D:A87632  C:J95
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.0; Total pts = 6.0.
+  QT's = 1.0,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  3 Likely Winners (0/0/3/0)
+  10 Likely Losers (2/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+South bids 1C.
+--------------------
+West bids 3H.
+--------------------
+B00 Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+4REVAL21: Adjusting by -1 point(s) for bonus points and 0 points for penalty.
+E44: But we have only 8.0/6.0/5.5 points after RHO preempts, we prefer to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 3 Hearts.
+PLYLD4: Lead the bottom card of partner's Club suit (the five.
+PLDF36: Partner's King is high or we can't beat the highest card, so discard the D2.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's Queen, so play the Ace.
+PLYLDPRF4: Partner has indicated a preference for the Clubs suit, so lead the C9.  <<<<<<<<<<NO Diamond
+RCP5A: West is now known to have started with 1 Club.
+RCP20: Dummy is now out of Hearts.
+PLAYB48: We can't beat West's Queen, so discard the H8.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Jack.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: South is now known to have started with 2 Diamonds.
+PLAYB48: We can't beat East's Queen, so discard the D3.
+
+

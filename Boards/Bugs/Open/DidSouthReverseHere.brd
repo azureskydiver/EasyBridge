@@ -1,0 +1,126 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 25,  2010
+File Date =  01/28/10 20:30:53
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S7 S5 H8 H5 DA DJ DT D7 D5 C9 C5 
+Current Hand(West) = S9 S4 S3 H6 DQ D6 D4 CA CK CQ CJ C8 
+Current Hand(North) = SK ST S8 S6 S2 H3 H2 D9 D3 CT C6 C4 C3 
+Current Hand(East) = SJ HA HQ HJ HT H9 H7 H4 DK D8 D2 C7 C2 
+Original Hand(South) = SA SQ S7 S5 H8 H5 DA DJ DT D7 D5 C9 C5 
+Original Hand(West) = S9 S4 S3 HK H6 DQ D6 D4 CA CK CQ CJ C8 
+Original Hand(North) = SK ST S8 S6 S2 H3 H2 D9 D3 CT C6 C4 C3 
+Original Hand(East) = SJ HA HQ HJ HT H9 H7 H4 DK D8 D2 C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1D 2C Pass 2H 2S 3H 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- HK -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North jumps to 4S with 3 HCPs. Did South reverse bidding at same level with Spades vs going to 3 level with Diamonds??
+>>>>>>>NORTH<<<<
+S:KT862  H:32  D:93  C:T643
+Hand evaluation:
+  HCPs = 3.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 2.0.
+  QT's = 0.5,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  3 Likely Winners (3/0/0/0)
+  10 Likely Losers (2/2/2/4)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South bids 1D.
+--------------------
+West bids 2C.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+F00: Partner is showing 12.0+ points and 2+ QT's.
+F04: But we have only 3.0/2.0/2.0 points against a minor suit bid, so we prefer to pass.
+We pass.
+--------------------
+East bids 2H.
+--------------------
+South bids 2S.
+--------------------
+West bids 3H.
+--------------------
+Rebidding as responder after bids of 1 Diamond, Pass, and 2 Spades.
+B4P0RV: Partner reversed and bid a higher-ranking suit at the 2-level (2 Spades over 1 Diamond) after our jump response, showing 17.0-18.0 points.  <<<< Reverse ???
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Spade trump support including a trump honor & doubletons in Diamonds and Hearts, the hand is revalued for a suit contract as dummy from 2.0 to 9.0 points)
+PKF2: With 5 trumps in partner's second suit (Spades), we prefer to support that suit.
+B4P42: With 3.0/2.0/9.0 points and 5-card support for partner's second suit (Spades, holding KT862) and a total of 26.0-27.0 pts in the partnership we can bid game at 4 Spades.
+We bid 4S.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is South; West leads.
+=======================
+
+

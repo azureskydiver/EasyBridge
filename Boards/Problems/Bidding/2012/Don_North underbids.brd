@@ -1,0 +1,187 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 4, 2012
+File Date =  03/31/12 17:56:39
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HQ H8 H3 H2 D7 D6 CA CK CJ C7 C6 C5 C3 
+Current Hand(West) = SJ S8 S7 S4 HK H7 DJ DT D8 D5 D4 CQ C2 
+Current Hand(North) = SK S6 S3 HA HJ H5 H4 DA DK DQ CT C9 C8 
+Current Hand(East) = SA SQ ST S9 S5 S2 HT H9 H6 D9 D3 D2 
+Original Hand(South) = HQ H8 H3 H2 D7 D6 CA CK CJ C7 C6 C5 C3 
+Original Hand(West) = SJ S8 S7 S4 HK H7 DJ DT D8 D5 D4 CQ C2 
+Original Hand(North) = SK S6 S3 HA HJ H5 H4 DA DK DQ CT C9 C8 
+Original Hand(East) = SA SQ ST S9 S5 S2 HT H9 H6 D9 D3 D2 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 5
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 14
+Declarer = North
+Bidding History = 1C Pass 1H Pass 4H Pass 4NT Pass 5D Pass 5H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- C4 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North really underbids.
+
+North's analysis:
+
+S:K63  H:AJ54  D:AKQ  C:T98
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/2/3/-1)
+  9 Likely Losers (3/2/0/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South bids 1C.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+Partner is showing 12.0-21.0 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Hearts from 17.0 down to 15.0 points)
+Have 17.0/17.0/17.0 pts with an available 4-card major suit in Hearts (AJ54), so bid 1 Heart over partner's minor suit 1 Club bid.
+We bid 1H.
+--------------------
+East passes.
+--------------------
+South bids 4H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 1 Heart, and 4 Hearts.
+Partner made a triple raise of our Heart suit to 4 Hearts, showing 17.0-21.0 points and 4+ trumps.
+With 17.0/17.0/15.0 points in hand, for a total in partnership of 32.0-36.0 points, sign off at partner's game bid of 4 Hearts.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is North; East leads.
+=======================
+
+>>>>>>>>> DEBUG VERSION <<<<<<<<<<
+=====================================
+Received hand:
+  S:K63  H:AJ54  D:AKQ  C:T98
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/2/3/-1)
+  9 Likely Losers (3/2/0/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South bids 1C.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Hearts from 17.0 down to 15.0 points)
+F01a: Have 17.0/17.0/17.0 pts with an available 4-card major suit in Hearts (AJ54), so bid 1 Heart over partner's minor suit 1 Club bid.
+We bid 1H.
+--------------------
+East passes.
+--------------------
+South bids 4H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 1 Heart, and 4 Hearts.
+B4N00: Partner made a triple raise of our Heart suit to 4 Hearts, showing 17.0-21.0 points and 4+ trumps.
+BLKWD: with 17.0/17.0/15.0 points in the hand, for a total of approx. 34.0-38.0 / 32.0-36.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump. The eventual contract in Heart.
+We bid 4NT.
+--------------------
+East passes.
+--------------------
+South bids 5D.
+--------------------
+West passes.
+--------------------
+Rebidding in round 3.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Diamonds, indicating 1 Ace.
+BK34: Oops, we're caught with as few as 32.0 total points, so halt the bidding at the five-level.
+BK38: Without all four aces we can't proceed to a grand slam, so stop at 5 Hearts.   <<<<<< WHY NOT 6 ??????????
+We bid 5H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Hearts.  Declarer is North; East leads.
+=======================
+PLAY: East leads the C4.
+
+
+
+

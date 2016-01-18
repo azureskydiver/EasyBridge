@@ -1,0 +1,130 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  12/15/14 07:11:11
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ HQ H3 DA DK DQ D7 CK CQ C6 
+Current Hand(West) = SJ S9 S4 H7 H4 DJ D6 D3 CJ C9 
+Current Hand(North) = S7 HK HT H8 DT D5 C7 C4 C3 C2 
+Current Hand(East) = H9 H6 D9 D8 D4 D2 CA CT C8 C5 
+Original Hand(South) = SA SQ S3 HQ HJ H3 DA DK DQ D7 CK CQ C6 
+Original Hand(West) = SK SJ S9 S6 S4 HA H7 H4 DJ D6 D3 CJ C9 
+Original Hand(North) = ST S7 S2 HK HT H8 H2 DT D5 C7 C4 C3 C2 
+Original Hand(East) = S8 S5 H9 H6 H5 D9 D8 D4 D2 CA CT C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass Pass Pass 2C Pass 2D Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West S3 S6 ST S5 North
+GameTrick #2 = North HJ HA H2 H5 West
+GameTrick #3 = West SA SK S2 S8 ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 180
+North/South Game 1 Points = 100
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = " 120		4 overtricks"
+Bonus Score Record = "  60		2 overtricks, vulnerable"
+Game Score Record = "  60		2 Spades made"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should not lead SK
+>>>>WEST<<<<<<<<<<
+S:KJ964  H:A74  D:J63  C:J9
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0; Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  4 Likely Winners (3/1/0/0)
+  9 Likely Losers (2/2/3/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 2C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Spades) -- play the S6.
+PLAYB41: Play the Ace to win the trick.
+PLYLD76: Continue developing our Spade suit by playing the SK.  <<<<<<<<<<< NO Small Heart
+
+

@@ -1,0 +1,212 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 23, 2014
+File Date =  06/01/14 14:29:31
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = H4 DK DQ D9 D2 
+Current Hand(West) = HJ HT D8 D5 D3 
+Current Hand(North) = HQ H9 H7 DA DJ 
+Current Hand(East) = DT D7 D6 D4 CT 
+Original Hand(South) = SA SJ S6 HK H4 H2 DK DQ D9 D2 CK C8 C7 
+Original Hand(West) = S9 S8 S7 S2 HA HJ HT H5 D8 D5 D3 C6 C2 
+Original Hand(North) = SK SQ ST S4 HQ H9 H7 H3 DA DJ CA CJ C9 
+Original Hand(East) = S5 S3 H8 H6 DT D7 D6 D4 CQ CT C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass 1NT Pass 4NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East C7 C2 C9 C4 North
+GameTrick #2 = North HK HA H3 H6 West
+GameTrick #3 = West C8 C6 CA C3 North
+GameTrick #4 = North SA S2 S4 S5 South
+GameTrick #5 = South SJ S7 ST S3 South
+GameTrick #6 = South S6 S8 SK H8 North
+GameTrick #7 = North H2 S9 SQ C5 North
+GameTrick #8 = North CK H5 CJ CQ ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 150
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = " 150		Bonus for defeating contract by 3 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Declarer should play North's winners before crossing to South
+>>>>>>>>>>NOrth<<<<<<<<<<<<<
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJT64 (AJ6/KQT4)
+  H:KQ97432 (K42/Q973)
+  D:AKQJ92 (KQ92/AJ)
+  C:AKJ987 (K87/AJ9)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 1.0;   Total pts = 34.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (4/0/4/2)
+  11 Eventual Winners (4/1/4/2)
+  2 Possible Losers (vs. 1 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 6 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJT64 (AJ6/KQT4)
+  H:KQ97432 (K42/Q973)
+  D:AKQJ92 (KQ92/AJ)
+  C:AKJ987 (K87/AJ9)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 1.0;   Total pts = 34.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (4/0/4/2)
+  11 Eventual Winners (4/1/4/2)
+  2 Possible Losers (vs. 1 allowable)
+We have only 11 sure tricks against a requirement of 12 for the 6NT contract.
+The Heart suit looks the most promising for further development.
+Checking play sequencing...
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the nine from hand to finesse against West.
+ Play 2: Lead the Club eight from dummy and finesse it, with the Ace in hand as cover.
+ Play 3: Lead a low Heart from hand and finesse the King in dummy against West.
+ Play 4: Lead a low Heart from dummy and finesse the Queen in hand against East.
+ Play 5: Cash the Ace of Spades in dummy.
+ Play 6: Cash the Jack of Spades in dummy.
+ Play 7: Cash the Queen of Spades in hand.
+ Play 8: Cash the King of Spades in hand.
+ Play 9: Cash the Ace of Clubs in hand.
+ Play 10: Cash the King of Clubs in dummy.
+ Play 11: Cash the Ace of Diamonds in hand.
+ Play 12: Cash the Jack of Diamonds in hand.
+ Play 13: Cash the Queen of Diamonds in dummy.
+ Play 14: Cash the King of Diamonds in dummy.
+The planning is complete.
+---------------------------
+Sluff the C7 from dummy in second position to prep the C9 play.
+Combined hand (Dummy/Hand):
+  S:AKQJT64 (AJ6/KQT4)
+  H:KQ97432 (K42/Q973)
+  D:AKQJ92 (KQ92/AJ)
+  C:AKJ98 (K8/AJ9)
+Combined hand evaluation:
+  HCPs = 33.0, Distn pts = 1.0;   Total pts = 34.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (4/0/4/2)
+  11 Eventual Winners (4/1/4/2)
+  2 Possible Losers (vs. 1 allowable)
+partner played high, so discard the C9.
+Reviewing play plan for round 2...
+We have only 10 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+The Heart suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+Interleaving plays...
+Lead a low Heart (the three) from hand to finesse the King in dummy.
+Playing card from dummy.
+Finesse the HK from dummy.
+Reviewing play plan for round 3...
+We have 11 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+The Spade suit looks the most promising for further development.
+Checking play sequencing...
+Since we have enough cashing tricks (11) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+The opponents led a Club, so cash the Ace now.
+Playing card from dummy.
+the opponents led a Club, so see if we can finish up the cash play here.
+Our cash of the CA from hand is holding, so discard the C8.
+Reviewing play plan for round 4...
+We have 10 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+The Spade suit looks the most promising for further development.
+Checking play sequencing...
+Since we have enough cashing tricks (10) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+Lead a low Spade (the four) from hand in order to cash the Ace in dummy.
+Playing card from dummy.
+Cash the SA from dummy.
+Playing card from dummy.
+Reviewing play plan for round 5...
+We have 9 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+Since we have enough cashing tricks (9) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+Cash the SJ from dummy.
+Our cash of the SJ from dummy is holding, so discard the ST.
+Playing card from dummy.
+Reviewing play plan for round 6...
+We have 8 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+Since we have enough cashing tricks (8) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+Lead a low Spade (the six) from dummy in order to cash the King in hand.
+Cash the SK from hand.
+East is now known to have started with 2 Spades.
+Reviewing play plan for round 7...
+We have 7 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+Since we have enough cashing tricks (7) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+Cash the SQ from hand.
+Playing card from dummy.
+Our cash of the SQ from hand is holding, so discard the H2.
+Reviewing play plan for round 8...
+We have 6 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+Since we have enough cashing tricks (6) to fulfill the contract, we can just proceed with the cashing.
+Interleaving plays...
+Lead a low Club (the Jack) from hand in order to cash the King in dummy.  <<<<<<<<<<< NO take Diamonds first
+West is now known to have started with 2 Clubs.
+
+

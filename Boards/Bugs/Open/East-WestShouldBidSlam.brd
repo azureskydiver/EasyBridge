@@ -1,0 +1,183 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2010
+File Date =  10/28/10 16:35:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S9 S8 S5 S2 HQ H4 DQ D6 CT C9 C8 
+Current Hand(West) = SK S4 HA HK HJ H9 H3 H2 D5 CA CK C7 C5 
+Current Hand(North) = SQ S6 H8 H7 H6 DT D8 D7 D3 D2 CQ CJ 
+Current Hand(East) = S7 HT H5 DA DK DJ D9 D4 C6 C4 C3 C2 
+Original Hand(South) = SJ ST S9 S8 S5 S2 HQ H4 DQ D6 CT C9 C8 
+Original Hand(West) = SK S4 HA HK HJ H9 H3 H2 D5 CA CK C7 C5 
+Original Hand(North) = SQ S6 S3 H8 H7 H6 DT D8 D7 D3 D2 CQ CJ 
+Original Hand(East) = SA S7 HT H5 DA DK DJ D9 D4 C6 C4 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 5
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = Pass 1D 2S 3H Pass 4D Pass 5H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- S3 SA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = "  60		2 Spades made"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W should bid Slam with this
+>>>>>>> WEST<<<<<<<<<<<<<
+S:K4  H:AKJ932  D:5  C:AK75
+Hand evaluation:
+  HCPs = 18.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 19.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  8 Likely Winners (1/5/0/2)
+  5 Likely Losers (1/1/1/2)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+North passes.
+--------------------
+East bids 1D.
+--------------------
+South bids 2S.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+3REVAL7: Adding 3 point(s) for the solid Heart suit.
+F00: Partner is showing 12.0-20.0 points and 2+ QT's.
+F01a: Have 18.0/19.0/19.0 pts with an available 6-card major suit in Hearts (AKJ932), so bid 3 Hearts over partner's minor suit 1 Diamond bid.
+We bid 3H.
+--------------------
+North passes.
+--------------------
+East bids 4D.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 3 Hearts, and 4 Diamonds.
+B4C4: Partner made a minimum rebid of his Diamond suit at 4 Diamonds, showing 12.0-16.0 points and 5+ trump cards.
+REVAL1: Revaluing hand as declarer...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Hearts, declarer's hand is revalued for a suit contract from 19.0 to 22.0 points)
+B4C20: With 31.0-35.0 points in the partnership, we want to explore slam opportunities.
+YR2: With With 31.0-35.0 total points and a powerful 6-card Heart suit (holding AKJ932), jump rebid it at 5 Hearts.
+We bid 5H.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Hearts.  Declarer is West; North leads.
+
+>>>>>>>>>>>>>>>> EAST<<<<<<<<<<<<<<<<<
+S:A7  H:T5  D:AKJ94  C:6432
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  4 Likely Winners (1/0/4/-1)
+  9 Likely Losers (1/2/1/5)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+North passes.
+--------------------
+Opening bid for team.
+E02: Have 12.0 points in high cards and 3.0 quick tricks, so bid 1 Diamond.
+We bid 1D.
+--------------------
+South bids 2S.
+--------------------
+West bids 3H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 3 Hearts.
+B3W00: Partner has made a 2 over 1 bid, Hearts over Diamonds, which shows 9.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 1 point(s) for the solid Diamond suit.
+3REVAL6: Deducting 1 point(s) for the 1 trump(s) short of 3.
+B3W36: With a rebiddable Diamond suit and poor support for partner's Hearts (holding T5), rebid 4 Diamonds.
+We bid 4D.
+--------------------
+South passes.
+--------------------
+West bids 5H.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BXF01: Partner jump rebid his Heart suit at 5 Hearts, indicating 11-18 pts.
+BXG10: At this point, the partnership has 23.0-30.0 total points, but lacks agreement on a suit.  In addition, we are above game level in our own Diamonds suit.  So at this point, we pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Hearts.  Declarer is West; North leads.
+
+

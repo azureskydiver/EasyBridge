@@ -1,0 +1,123 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = June 26, 2014
+File Date =  06/30/14 12:01:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S5 H9 DQ DJ CQ C3 
+Current Hand(West) = S9 DT D9 CA CK CT 
+Current Hand(North) = HA HT H8 C8 C6 C4 
+Current Hand(East) = H4 D7 CJ C7 C5 C2 
+Original Hand(South) = SQ SJ S5 S2 HQ H9 H5 DQ DJ D5 D2 CQ C3 
+Original Hand(West) = SA S9 S8 S7 HJ H7 DT D9 D8 D3 CA CK CT 
+Original Hand(North) = SK ST S6 HA HK HT H8 H6 DA D6 C8 C6 C4 
+Original Hand(East) = S4 S3 H4 H3 H2 DK D7 D4 CJ C9 C7 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 1
+Dealer = North
+Number of Bids Made = 7
+Declarer = South
+Bidding History = 1H Pass 1NT Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West SJ S7 S6 S4 South
+GameTrick #2 = South HQ H7 H6 H2 South
+GameTrick #3 = South H5 HJ HK H3 North
+GameTrick #4 = North D2 D3 DA D4 North
+GameTrick #5 = North D5 D8 D6 DK East
+GameTrick #6 = East S2 SA SK S3 West
+GameTrick #7 = West -- S8 ST C9 ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 60
+East/West Game 1 Points = 120
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 2
+Bonus Score Record = "	  60	2 overtricks"
+Game Score Record = "	 120	4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should take Clubs vs lead Spades
+>>>>>>>>>>WEST<<<<<<<<<<
+====================
+S:A987  H:J7  D:T983  C:AKT
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5; Total pts = 11.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  1 Likely Winners (1/0/-1/1)
+  12 Likely Losers (3/2/5/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+PLAY: Play restarted.
+====================
+S:A987  H:J7  D:T983  C:AKT
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5; Total pts = 11.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  1 Likely Winners (1/0/-1/1)
+  12 Likely Losers (3/2/5/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Spades) -- play the S7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the seven.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the Jack.
+PLAYB48: We can't beat North's Ace, so discard the D3.
+RCP20: Dummy is now out of Diamonds.
+PLAYB47: Partner's King can win the trick, so discard the D8.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's King, so play the Ace.
+PLYLDRT8: Return partner's Spade suit with the eight.
+RCP20: Dummy is now out of Spades.
+RCP5A: East is now known to have started with 2 Spades.
+PLYSIG20: Partner discarded high in the Club suit, indicating a preference for that suit.
+
+

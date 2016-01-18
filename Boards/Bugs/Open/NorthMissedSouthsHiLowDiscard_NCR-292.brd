@@ -1,0 +1,134 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 15,  2010
+File Date =  05/11/10 19:50:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S8 S6 S5 S3 H8 H4 DQ DJ D8 D3 CJ C4 
+Current Hand(West) = SK SQ SJ ST S9 S7 S2 HJ H9 H3 CA CT C7 
+Current Hand(North) = HA HK H6 H5 DK D9 D6 D5 D4 CQ C9 C6 C5 
+Current Hand(East) = S4 HQ HT H7 H2 DA DT D7 D2 CK C8 C3 C2 
+Original Hand(South) = SA S8 S6 S5 S3 H8 H4 DQ DJ D8 D3 CJ C4 
+Original Hand(West) = SK SQ SJ ST S9 S7 S2 HJ H9 H3 CA CT C7 
+Original Hand(North) = HA HK H6 H5 DK D9 D6 D5 D4 CQ C9 C6 C5 
+Original Hand(East) = S4 HQ HT H7 H2 DA DT D7 D2 CK C8 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = 1S Dbl 2D Pass 2S Pass 2NT Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 90
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "  90		3 Hearts made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North missed South's Hi-Low signal in Heart discards
+>>>>>>>NORTH<<<<<<<<<<
+S:T54  H:AK65  D:K9654  C:Q965
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/2/2/1)
+  8 Likely Losers (0/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Hearts.
+====================
+West bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 2-level.
+TKOUT: With 12.0/12.0 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+East bids 2D.
+--------------------
+South passes.
+--------------------
+West bids 2S.
+--------------------
+Rebidding after opening bid of Double and partner's pass.
+TKRb10: After interference from the left-hand opponent, partner passed our takeout.
+B3A20: Partner passed, showing < 6 points, so with 12.0/12.0 points in hand and 12.0-21.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+East bids 2NT.
+--------------------
+South passes.
+--------------------
+West bids 3S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is West; North leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 3 Spades.
+PLYLD15: Lead the HK from the top of the { HA HK } sequence.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+PLYSIG1: Partner discarded low with the four, so consider it a signal that he dislikes the suit.   <<<<<<<<<<<<<< This was a Hi-Low signal 8 then 4
+PLYLDB: With no other clear plays available, lead a card from the unbid Club suit.
+
+

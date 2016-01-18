@@ -1,0 +1,104 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  10/13/14 12:39:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK D9 
+Current Hand(West) = H9 H5 
+Current Hand(North) = HK H8 
+Current Hand(East) = HA 
+Original Hand(South) = SK SQ SJ S7 S4 D9 D5 D3 D2 CK CQ C8 C7 
+Original Hand(West) = S5 S3 H9 H5 H4 H2 DK D6 D4 CA C6 C3 C2 
+Original Hand(North) = SA S8 S2 HK HJ H8 H7 H3 DJ D8 CJ C9 C4 
+Original Hand(East) = ST S9 S6 HA HQ HT H6 DA DQ DT D7 CT C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 1S Pass 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 12
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West SJ S5 S2 S9 South
+GameTrick #2 = South SQ S3 S8 S6 South
+GameTrick #3 = South S4 C3 SA ST North
+GameTrick #4 = North CQ CA C4 C5 West
+GameTrick #5 = West S7 H2 HJ HQ South
+GameTrick #6 = South C7 C2 CJ CT North
+GameTrick #7 = North CK C6 C9 DT South
+GameTrick #8 = South C8 H4 H3 H6 South
+GameTrick #9 = South D2 DK D8 D7 West
+GameTrick #10 = West D3 D4 DJ DQ East
+GameTrick #11 = East D5 D6 H7 DA East
+GameTrick #12 = East -- -- -- HT ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should lead HA
+>>>EAST<<<<<<<
+PL03: Starting play as right-hand defender.
+PLDF37: Partner's five might not win the round, so top it with the nine.
+PLAYB48: We can't beat South's Queen, so discard the S6.
+RCP5A: West is now known to have started with 2 Spades.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the five.
+PLDF40a: Play higher with the Queen.
+RCP5A: South is now known to have started with 0 Hearts.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the DT.
+PLDF2Y: We have no Clubs and no trumps, so discard the DT.
+RCP5A: East is now known to have started with 2 Clubs.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H6.
+PLAYB34: Partner's King is high, so discard the D7.
+RCP20: Dummy is now out of Diamonds.
+PLDF40a: Play higher with the Queen.
+PLYLDRT4: We'd like to return partner's Diamonds suit, but declarer might ruff.
+PLYLDWN4: We'd like to lead the Hearts suit, but declarer might ruff.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Ace
+PLYSIG1: Partner discarded low with the six, so consider it a signal that he dislikes the suit.
+PLYLDWN4: We'd like to lead the Hearts suit, but declarer might ruff.  <<<<<<<<<<<<<BUT HK will win now!!!
+PLYLDD: With no other obvious plays, play HT.
+
+

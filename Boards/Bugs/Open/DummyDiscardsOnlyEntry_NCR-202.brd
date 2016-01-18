@@ -1,0 +1,203 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 17,  2010
+File Date =  01/17/10 20:27:13
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 HJ HT H5 D6 C7 C5 C4 
+Current Hand(West) = SA H8 D9 D8 CA CQ C8 C6 
+Current Hand(North) = S9 S7 S4 H9 H6 CJ C9 C2 
+Current Hand(East) = SK SQ SJ ST S6 S5 S3 CK 
+Original Hand(South) = S8 HA HQ HJ HT H5 DA D6 D5 D2 C7 C5 C4 
+Original Hand(West) = SA HK H8 H7 DK DJ D9 D8 D4 CA CQ C8 C6 
+Original Hand(North) = S9 S7 S4 H9 H6 H4 H2 DT D7 D3 CJ C9 C2 
+Original Hand(East) = SK SQ SJ ST S6 S5 S3 S2 H3 DQ CK CT C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 10
+Declarer = West
+Bidding History = Pass 1H Dbl Pass 4S Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = North
+GameTrick #1 = North HA H7 H2 H3 South
+GameTrick #2 = South DA D4 D3 DQ South
+GameTrick #3 = South HQ HK H4 S2 West
+GameTrick #4 = West D2 DK D7 C3 West
+GameTrick #5 = West D5 DJ DT CT West
+GameTrick #6 = West -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  40		2 overtricks"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy/East discards entry: CK ???
+>>>>>>WEST<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:A  H:K87  D:KJ984  C:AQ86
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 17.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (1/1/3/3)
+  5 Likely Losers (0/2/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJT6532 (KQJT6532/A)
+  H:K873 (3/K87)
+  D:KQJ984 (Q/KJ984)
+  C:AKQT863 (KT3/AQ86)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 13.0;
+  Total pts = 41.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (5/0/0/3)
+  13 Eventual Winners (8/0/2/3)
+  0 Possible Loser (vs. 2 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 5 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJT6532 (KQJT6532/A)
+  H:K873 (3/K87)
+  D:KQJ984 (Q/KJ984)
+  C:AKQT863 (KT3/AQ86)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 13.0;
+  Total pts = 41.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (5/0/0/3)
+  13 Eventual Winners (8/0/2/3)
+  0 Possible Loser (vs. 2 allowable)
+PLN10: We have 13 sure tricks against a requirement of 11 for the 5D contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ44: We want to eventualy exit with a Club.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the King of Clubs in dummy.
+ Play 2: Cash the Queen of Clubs in hand.
+ Play 3: Cash the Ace of Clubs in hand.
+ Play 4: Cash the Ace of Spades in hand.
+ Play 5: Cash the King of Spades in dummy.
+ Play 6: Cash the Queen of Spades in dummy.
+ Play 7: Cash the Jack of Spades in dummy.
+ Play 8: Cash the Ten of Spades in dummy.
+ Play 9: Exit with a Club and throw the opponents into the lead.
+ Play 10: Ruff a Club in dummy.
+ Play 11: Lead a low Club from hand to finesse the ten in dummy against South, with the King as cover.
+ Play 12: Lead a low Heart from dummy and finesse the King in hand against North.
+ Play 13: Cash the King of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PL3FN36: Play low Heart (the three) from dummy to opportunistically finesse the King in hand.
+PL3FN92: RHO has played a higher card (the Ace) than our intended finesse (the King), so skip the play.
+PLEXT99: ExitPlay postponing <Exit with a Club.> because Heart led.
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat South's Ace, so discard the H7.
+PLNADJ: Reviewing play plan for round 2...
+PLRV11: We have 12 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the HK, SA, SK, SQ, SJ, ST, CA, CK and CQ.
+PINTLV: Interleaving plays...
+PLCSH53: the card led (DA)  beats the DK we were going to play, so skip the cash for now.
+PLCSH53: the card led (DA)  beats the DQ we were going to play, so skip the cash for now.
+PLCSH53: the card led (DA)  beats the DJ we were going to play, so skip the cash for now.
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2A2: We don't have a winner in the suit in hand, so discard the four.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLNADJ: Reviewing play plan for round 3...
+PLRV11: We have 11 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the HK, SA, SK, SQ, SJ, ST, CA, CK and CQ.
+PINTLV: Interleaving plays...
+PLCSH55: The opponents led a Heart, so cash the King now.
+PLDM: Playing card from dummy.
+PLCSH80: the opponents led a Heart, so see if we can finish up the cash play here.
+PLCSH92b: Our cash of the HK from hand is holding, so discard the S2.
+PLNADJ: Reviewing play plan for round 4...
+PLRV11: We have 10 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 3 round(s) of trumps, and cashing the SA, SK, SQ, SJ, ST, CA, CK and CQ.
+PINTLV: Interleaving plays...
+PLTRMP12: Lead out the DK from hand to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the C3 on declarer's top King of trumps.
+PLNADJ: Reviewing play plan for round 5...
+PLRV11: We have 9 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the SA, SK, SQ, SJ, ST, CA, CK and CQ.
+PINTLV: Interleaving plays...
+PLTRMP12: Lead out the DJ from hand to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the CT on declarer's top Jack of trumps.
+PLNADJ: Reviewing play plan for round 6...
+PLRV11: We have 10 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the SA, SK, SQ, SJ, ST, CA, CK, CQ and D8.
+PINTLV: Interleaving plays...
+PLTRMP12: Lead out the D8 from hand to pull in a round of trumps.
+RCP5A: North is now known to have started with 3 Diamonds.
+PLDM: Playing card from dummy.
+PLTRMP82a: Discard the CK on declarer's top eight of trumps.   <<<<<<<<<<<<<<<<<<<<<<<<<<< NO this is entry for Spades
+
+

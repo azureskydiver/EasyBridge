@@ -1,0 +1,157 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 14, 2009
+File Date =  09/20/09 15:56:09
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S8 S7 S6 HA HT H9 H8 H5 H4 C7 
+Current Hand(West) = HJ H2 DK DQ D7 D3 D2 CJ CT C9 C5 C4 
+Current Hand(North) = SK S9 S5 S3 S2 H7 DA D8 D5 CK C8 C6 C3 
+Current Hand(East) = SA SQ S4 HK HQ H6 H3 D9 D6 CA CQ C2 
+Original Hand(South) = SJ ST S8 S7 S6 HA HT H9 H8 H5 H4 DT C7 
+Original Hand(West) = HJ H2 DK DQ DJ D7 D3 D2 CJ CT C9 C5 C4 
+Original Hand(North) = SK S9 S5 S3 S2 H7 DA D8 D5 CK C8 C6 C3 
+Original Hand(East) = SA SQ S4 HK HQ H6 H3 D9 D6 D4 CA CQ C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 18
+Declarer = North
+Bidding History = 2H Pass Pass Dbl 2S Pass Pass Dbl Pass 3D Pass Pass 3S Pass 4C Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East DT DJ -- D4 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North bids 4Clubs vs supporting South's Spades?
+>>>>>>>> NORTH<<<<<<<
+S:K9532  H:7  D:A85  C:K863
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  6 Likely Winners (3/0/1/2)
+  7 Likely Losers (2/1/2/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South bids 2H.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Hearts.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.5-10.5 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+RWKT4: We only have 10.0/10.0/10.0 points, for a partnership total of 15.5-20.5 points, which is probably not enough for game.
+RWKT10: And since we don't like partner's Heart suit (holding 7), have no good suit of our own, and hold an imbalanced hand, we have to pass.
+We pass.
+--------------------
+East doubles.
+--------------------
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 2 Hearts, Pass, and 2 Spades.
+B4Z00: Partner made a response which we don't understand; simply pass.  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<???????????
+We pass.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+West bids 3D.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 3S.
+--------------------
+West passes.
+--------------------
+Responding to partner's  bid of 3 Spades.
+REVAL38: (with 5-card Spade trump support including a trump honor & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 10.0 to 17.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+I08: Have 10.0/10.0/17.0 points with 5-card support for partner's Spades (holding K9532), which is too strong for a limit raise, so we have to temporarily shift to Clubs with a bid of 4 Clubs.
+We bid 4C.  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<???????????????
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:KJT9876532 (JT876/K9532)
+  H:AT98754 (AT9854/7)
+  D:A85 (/A85)
+  C:K8763 (7/K863)
+Combined hand evaluation:
+  HCPs = 15.0, Distn pts = 0.0;
+  Total pts = 15.0.
+  QT's = 3.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/1/1/0)
+  5 Eventual Winners (3/1/1/0)
+  8 Possible Losers (vs. 3 allowable)
+
+

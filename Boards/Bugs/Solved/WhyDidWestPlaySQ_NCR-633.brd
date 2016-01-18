@@ -1,0 +1,128 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 19, 2012
+File Date =  05/12/12 17:24:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA H5 H4 DK DJ DT D9 D3 CK CJ C7 
+Current Hand(West) = SJ S7 S2 HJ H9 H8 D7 D5 D4 CA C3 
+Current Hand(North) = SA S8 S6 H7 H2 DA D6 CQ C8 C6 C2 
+Current Hand(East) = HK HQ HT H3 DQ D8 D2 CT C9 C5 C4 
+Original Hand(South) = SK ST HA H5 H4 DK DJ DT D9 D3 CK CJ C7 
+Original Hand(West) = SQ SJ S7 S5 S2 HJ H9 H8 D7 D5 D4 CA C3 
+Original Hand(North) = SA S8 S6 S4 S3 H7 H2 DA D6 CQ C8 C6 C2 
+Original Hand(East) = S9 HK HQ HT H6 H3 DQ D8 D2 CT C9 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1NT Pass 2H Pass 2S Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West ST S5 S3 S9 South
+GameTrick #2 = South SK SQ S4 H6 ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Game Score Record = "  60		2 Hearts made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why did West play SQ on South's SK???
+>>>>>>>>> WEST<<<<<<<
+S:QJ752  H:J98  D:754  C:A3
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5; Total pts = 7.5.
+  QT's = 1.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  3 Likely Winners (3/0/-1/1)
+  10 Likely Losers (2/3/4/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South bids 1NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 7.5 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2H.
+--------------------
+East passes.
+--------------------
+South bids 2S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 4S.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Spades.
+PLYLD4G: We have no 4-card suits other than the trump suit, so lead the 4th best trump -- the S5.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the Queen.  <<<<<<<<<<<<<<<<<<????????????????
+RCP5A: East is now known to have started with 1 Spade.
+
+

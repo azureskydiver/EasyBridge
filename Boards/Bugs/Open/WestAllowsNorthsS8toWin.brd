@@ -1,0 +1,149 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 7, 2009
+File Date =  08/09/09 09:54:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S7 S5 HA HJ H4 H3 DJ D3 CQ CJ CT 
+Current Hand(West) = SK SQ ST S9 S6 S3 S2 HT DK DT CA C7 
+Current Hand(North) = SJ S8 HQ H6 H2 DA DQ D5 D4 C4 C3 C2 
+Current Hand(East) = S4 HK H9 H8 H7 H5 D9 D8 D7 D6 D2 C8 
+Original Hand(South) = SA S7 S5 HA HJ H4 H3 DJ D3 CQ CJ CT C9 
+Original Hand(West) = SK SQ ST S9 S6 S3 S2 HT DK DT CA C7 C6 
+Original Hand(North) = SJ S8 HQ H6 H2 DA DQ D5 D4 C5 C4 C3 C2 
+Original Hand(East) = S4 HK H9 H8 H7 H5 D9 D8 D7 D6 D2 CK C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 7
+Declarer = West
+Bidding History = Pass Pass 1H 4S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = North
+GameTrick #1 = North C9 C6 C5 CK East
+GameTrick #2 = East -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West doesn't play high enough allowing North's S8 to win
+>>>>>>>> WEST <<<<<
+Swapped into a new hand.
+------------------------
+S:KQT9632  H:T  D:KT  C:A76
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  8 Likely Winners (6/0/1/1)
+  5 Likely Losers (1/1/1/2)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KQT96432 (4/KQT9632)
+  H:KT9875 (K9875/T)
+  D:KT98762 (98762/KT)
+  C:AK876 (K8/A76)
+Combined hand evaluation:
+  HCPs = 18.0, Distn pts = 3.0;
+  Total pts = 21.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/0/0/2)
+  3 Eventual Winners (1/0/0/2)
+  10 Possible Losers (vs. 3 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 4 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KQT96432 (4/KQT9632)
+  H:KT9875 (K9875/T)
+  D:KT98762 (98762/KT)
+  C:AK876 (K8/A76)
+Combined hand evaluation:
+  HCPs = 18.0, Distn pts = 3.0;
+  Total pts = 21.0.
+  QT's = 4.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  2 Sure Winners (0/0/0/2)
+  3 Eventual Winners (1/0/0/2)
+  10 Possible Losers (vs. 3 allowable)
+PLN10: We have only 3 sure tricks against a requirement of 10 for the 4S contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ44: We want to eventualy exit with a Club.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the King of Clubs in dummy.
+ Play 2: Cash the Ace of Clubs in hand.
+ Play 3: Exit with a Club and throw the opponents into the lead.
+ Play 4: Ruff a Club in dummy.
+ Play 5: Ruff a Heart in hand.
+ Play 6: Ruff a Heart in hand.
+ Play 7: Ruff a Heart in hand.
+ Play 8: Ruff a Heart in hand.
+ Play 9: Ruff a Diamond in hand.
+ Play 10: Ruff a Diamond in hand.
+ Play 11: Ruff a Diamond in hand.
+ Play 12: Lead a low Heart from hand and finesse the King in dummy against South.
+ Play 13: Lead a low Diamond from dummy and finesse the King in hand against North.
+ Play 14: Cash the King of Spades in hand.
+PLN95: The planning is complete.
+---------------------------
+PLCSH55: The opponents led a Club, so cash the King now.
+PLCSH80: the opponents led a Club, so see if we can finish up the cash play here.
+PLCSH88b: Our cash of the CK from dummy is holding, so discard the C6.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 1 reasonably sure trick left vs. 9 more trick(s) required for the contract.
+seven to winners.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLTRMP28: Lead the S4 up to own hand to pull in a round of trumps.
+PLTRMP82e: Top RHO's five of trumps with the six.  <<<<<<<<< NO
+
+

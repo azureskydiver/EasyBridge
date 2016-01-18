@@ -1,0 +1,210 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 12, 2010
+File Date =  09/14/10 20:23:39
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S4 S2 H4 DK DT D5 CA CJ CT C6 C4 C3 
+Current Hand(West) = S5 HK HJ H9 H8 H7 H6 H3 D9 D3 C9 C8 C7 
+Current Hand(North) = SA SK SQ S9 S8 S7 S3 HA HQ H5 DA D6 D4 
+Current Hand(East) = ST S6 HT H2 DQ DJ D8 D7 D2 CK CQ C5 C2 
+Original Hand(South) = SJ S4 S2 H4 DK DT D5 CA CJ CT C6 C4 C3 
+Original Hand(West) = S5 HK HJ H9 H8 H7 H6 H3 D9 D3 C9 C8 C7 
+Original Hand(North) = SA SK SQ S9 S8 S7 S3 HA HQ H5 DA D6 D4 
+Original Hand(East) = ST S6 HT H2 DQ DJ D8 D7 D2 CK CQ C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = ????
+Bidding History = Pass 2H Dbl Pass 4C Pass 4S Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should look for slam. See second North analysis below
+>>>>>>>> NORTH<<<<
+S:AKQ9873  H:AQ5  D:A64  C:
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 6.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 22.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (7/1/0/0)
+  5 Likely Losers (0/2/3/0)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+South passes.
+--------------------
+West bids 2H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCTK: With 19.0/22.0 points, the hand is too strong for a simple overcall, so start by doubling.
+We bid Dbl.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 3 Clubs.
+TKORb43: Partner has made a minimum response of 3 Clubs, indicating no more than 9 points.
+TKRb49: The total point count in the partnership is therefore 26.0-31.0 pts.
+TKRb90: Partner's forced response of 3 Clubs not withstanding, we can now show the Spade suit that we wanted to overcall with last round by bidding 4 Spades.
+We bid 4S.  <<<<<<<<<<< Close out??? What about an invitaton to slam???
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AKQJ987432 (J42/AKQ9873)
+  H:AQ5 (/AQ5)
+  D:AKT654 (KT5/A64)
+  C:AJT643 (AJT643/)
+Combined hand evaluation:
+  HCPs = 28.0, Distn pts = 9.0;
+  Total pts = 37.0.
+  QT's = 6.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (4/1/2/1)
+  12 Eventual Winners (7/2/2/1)
+  1 Possible Loser (vs. 3 allowable)
+RCP5A: West is now known to have started with 1 Spade.
+RCP5A: East is now known to have started with 2 Hearts.
+PLAYCL: North has claimed the remaining 5 tricks.
+RESULT: North/South made 3 overtricks.
+PLAY: Play restarted.
+====================
+S:AKQ9873  H:AQ5  D:A64  C:---
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 6.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 22.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (7/1/0/0)
+  5 Likely Losers (0/2/3/0)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> North after South jumped in his response <<<<<<<<
+Starting play from restored game.
+------------------------
+S:AKQ9873  H:AQ5  D:A64  C:
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 6.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 22.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (7/1/0/0)
+  5 Likely Losers (0/2/3/0)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+S:AKQ9873  H:AQ5  D:A64  C:---
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 6.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 22.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  8 Likely Winners (7/1/0/0)
+  5 Likely Losers (0/2/3/0)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+West bids 2H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCTK: With 19.0/22.0 points, the hand is too strong for a simple overcall, so start by doubling.
+We bid Dbl.
+--------------------
+East passes.
+--------------------
+South bids 4C.  <<<<<<<<<< NOTE
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of Double and partner's response of 4 Clubs.
+TKORb42: Partner has made a jump/freebid response of 4 Clubs, indicating 10-12 pts and a 4-5 card suit.
+TKRb49: The total point count in the partnership is therefore 31.0-34.0 pts.  <<<<<<<<<<<<<<<<<<<<<<<<<<<< SLAM ???????????????
+TKRb90: Partner's forced response of 4 Clubs not withstanding, we can now show the Spade suit that we wanted to overcall with last round by bidding 4 Spades.
+We bid 4S.
+--------------------
+East passes.
+--------------------
+
+
+

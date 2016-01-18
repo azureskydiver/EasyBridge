@@ -1,0 +1,175 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 19, 2012
+File Date =  04/24/12 17:37:09
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S5 DK DT D9 
+Current Hand(West) = H8 H7 DJ D8 CQ 
+Current Hand(North) = S9 HQ D4 CT C5 
+Current Hand(East) = HJ DA D7 D6 C8 
+Original Hand(South) = SA SJ S8 S5 S3 HA HK DK DQ DT D9 C7 C6 
+Original Hand(West) = S4 H9 H8 H7 H6 H4 DJ D8 D5 CQ CJ C9 C3 
+Original Hand(North) = SK S9 S6 S2 HQ HT H2 D4 D2 CA CK CT C5 
+Original Hand(East) = SQ ST S7 HJ H5 H3 DA D7 D6 D3 C8 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 5
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 15
+Declarer = South
+Bidding History = Pass 1S Pass 2NT Pass 3S Pass 4NT Pass 5H Pass 5S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West HK H9 H2 H5 South
+GameTrick #2 = South S3 S4 SK S7 North
+GameTrick #3 = North SJ C9 S2 ST South
+GameTrick #4 = South SA H4 S6 SQ South
+GameTrick #5 = South HA H6 HT H3 South
+GameTrick #6 = South C6 CJ CK C2 North
+GameTrick #7 = North DQ D5 D2 D3 South
+GameTrick #8 = South C7 C3 CA C4 North
+GameTrick #9 = North -- -- -- -- South
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East must play DA. Will be ruffed next time
+>>>>>>>>>>> EAST<<<<<<<<<<<<
+S:QT7  H:J53  D:A763  C:842
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5; Total pts = 6.5.
+  QT's = 1.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  0 Likely Winners (0/0/1/-1)
+  13 Likely Losers (3/3/3/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+North bids 4S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is South; West leads.
+=======================
+S:QT7  H:J53  D:A763  C:842
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5; Total pts = 6.5.
+  QT's = 1.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  0 Likely Winners (0/0/1/-1)
+  13 Likely Losers (3/3/3/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+South bids 1S.
+--------------------
+West passes.
+--------------------
+North bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 3S.
+--------------------
+West passes.
+--------------------
+North bids 4NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South bids 5H.
+--------------------
+West passes.
+--------------------
+North bids 5S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Spades.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the five.
+PLDF36: Partner's nine is high or we can't beat the highest card, so discard the H5.
+PLAYB48: We can't beat North's King, so discard the S7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the ten.
+RCP5A: West is now known to have started with 1 Spade.
+PLAYB48: We can't beat South's Ace, so discard the H3.
+PLAYB48: We can't beat North's King, so discard the C2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the three.
+PLAYB48: We can't beat North's Ace, so discard the C4.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+RCP20: Dummy is now out of Diamonds. <<<<<<<<<<<<<<<<<<<<<NOTE!!!! Ace will be ruffed
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+
+
+
+

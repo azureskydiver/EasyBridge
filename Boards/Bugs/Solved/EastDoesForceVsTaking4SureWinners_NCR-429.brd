@@ -1,0 +1,112 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 27, 2010
+File Date =  12/01/10 12:06:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HT DT D5 D4 
+Current Hand(West) = DA DK DQ CT 
+Current Hand(North) = ST H5 H4 D9 
+Current Hand(East) = S9 S7 DJ D8 
+Original Hand(South) = SQ S5 HK HT H7 H2 DT D5 D4 D3 CK CQ C6 
+Original Hand(West) = SA S4 HA DA DK DQ D7 D6 D2 CT C8 C7 C2 
+Original Hand(North) = ST S8 S6 S2 HJ H9 H8 H5 H4 D9 C9 C4 C3 
+Original Hand(East) = SK SJ S9 S7 S3 HQ H6 H3 DJ D8 CA CJ C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 10
+Declarer = East
+Bidding History = 1C Pass 2D Pass 3NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 6
+Lead Player for Current Game = South
+GameTrick #1 = South CK C2 C4 C5 South
+GameTrick #2 = South H2 HA H9 H3 West
+GameTrick #3 = West CQ C7 C9 CJ South
+GameTrick #4 = South HK D2 H8 H6 South
+GameTrick #5 = South H7 D6 HJ HQ East
+GameTrick #6 = East S5 SA S2 S3 West
+GameTrick #7 = West SQ S4 S6 SK East
+GameTrick #8 = East C6 D7 S8 SJ East
+GameTrick #9 = East D3 C8 C3 CA East
+GameTrick #10 = East -- -- -- -- ????
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East plays Force play when West has 4 sure tricks ???
+>>>>>>>>>> EAST<<<<<
+PLNADJ: Reviewing play plan for round 10...
+PLRV10: We have only 4 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Seven of Spades to force out the opponents' ten.
+PLNDEV31: This will promote the seven to a winner.
+PLNDEV91: One forcing play has been found, which will promote 1 lower card.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 1 in Clubs, plus 3 in Diamonds.
+PLNCSH30: A total of 5 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 7 plays and approx. 7+ possible tricks including 4 sure tricks (vs. 12 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the Seven of Spades from hand to force out the opponents' Ten.
+ Play 2: Cash the Seven of Spades in hand. <Requires ...>
+ Play 3: Cash the Nine of Spades in hand. <Requires ...>
+ Play 4: Cash the Ten of Clubs in dummy.
+ Play 5: Cash the Ace of Diamonds in dummy.
+ Play 6: Cash the King of Diamonds in dummy.
+ Play 7: Cash the Queen of Diamonds in dummy.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Play the Seven of Spades from hand to force out the opponents' Ten.  <<<<<<<<<<<< NO, dummy has 4 sure winners!!!
+ Play 2: Cash the Seven of Spades in hand.
+ Play 3: Cash the Nine of Spades in hand.
+ Play 4: Cash the Ten of Clubs in dummy.
+ Play 5: Cash the Ace of Diamonds in dummy.
+ Play 6: Cash the King of Diamonds in dummy.
+ Play 7: Cash the Queen of Diamonds in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLFRC04: Play the S9 from hand to force out the opponents' Ten.
+PLAY: We lead the S9.
+
+
+
+

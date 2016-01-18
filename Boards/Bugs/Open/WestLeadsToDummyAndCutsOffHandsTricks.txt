@@ -1,0 +1,69 @@
+Starting play from restored game.
+------------------------
+S:T  H:AK8762  D:QJ5  C:AK8
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 18.0.
+  QT's = 4.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/5/1/2)
+  5 Likely Losers (1/1/2/1)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+PLNADJ: Reviewing play plan for round 7...
+PLRV11: We have 4 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+
+PLNFNS0: Looking for possible finesses...
+PSFNS31: Can finesse the Jack of Diamonds by leading it from hand against North.
+PSFNS31: Can finesse the Queen of Diamonds by leading it from hand against North.
+PLNFNS90: A total of 2 possible finesses exist.
+PLNCNT0: Skipping using finesses because of possiblity of losing control.
+
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Clubs, plus 1 in Diamonds, plus 4 in Hearts.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available.
+
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 6 plays and approx. 6+ possible tricks including 4 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Clubs in dummy.
+ Play 2: Cash the Queen of Diamonds in hand. <Requires ...>
+ Play 3: Cash the Ace of Hearts in hand.   
+ Play 4: Cash the King of Hearts in hand.
+ Play 5: Cash the Jack of Hearts in dummy.
+ Play 6: Cash the Eight of Hearts in hand. <Requires ...>
+
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV70: Try to cross over to dummy with the [HJ Cash] when possible to use the [CJ Cash].
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Jack of Hearts in dummy. 
+ Play 2: Cash the Jack of Clubs in dummy.
+ Play 3: Cash the Queen of Diamonds in hand.  <<<<<<<<<<< NO!!!   Ace & King are out??????
+ Play 4: Cash the Ace of Hearts in hand.
+ Play 5: Cash the King of Hearts in hand.
+ Play 6: Cash the Eight of Hearts in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH20: Lead a low Heart (the six) from hand in order to cash the Jack in dummy.
+PLAY: We lead the H6.
+PLAY: North plays the H5.
+PLDM: Playing card from dummy.
+PLCSH74: Cash the HJ from dummy.
+PLAY: East plays the HJ.
+PLAY: South plays the H4.
+

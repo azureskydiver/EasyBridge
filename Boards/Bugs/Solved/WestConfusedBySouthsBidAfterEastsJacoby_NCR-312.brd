@@ -1,0 +1,222 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 15, 2010
+File Date =  09/18/10 19:50:28
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ SJ S5 S2 HQ HT H4 D8 CJ CT C9 C5 
+Current Hand(West) = S9 S6 S4 HK H3 DQ DJ D9 D4 D2 CA CK CQ 
+Current Hand(North) = SK S8 S3 H8 H6 DA DT D6 D5 C8 C7 C6 C3 
+Current Hand(East) = ST S7 HA HJ H9 H7 H5 H2 DK D7 D3 C4 C2 
+Original Hand(South) = SA SQ SJ S5 S2 HQ HT H4 D8 CJ CT C9 C5 
+Original Hand(West) = S9 S6 S4 HK H3 DQ DJ D9 D4 D2 CA CK CQ 
+Original Hand(North) = SK S8 S3 H8 H6 DA DT D6 D5 C8 C7 C6 C3 
+Original Hand(East) = ST S7 HA HJ H9 H7 H5 H2 DK D7 D3 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West gets confused about East's jacoby Xfer
+>>>>>>>> EAST<<<<<<<<<<<<<<<<<
+S:T7  H:AJ9752  D:K73  C:42
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  4 Likely Winners (0/4/0/0)
+  9 Likely Losers (2/2/3/2)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+West bids 1NT.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 No Trump.
+JAC0: With a 6-card major in Hearts, use Jacoby to transfer by bidding 2 Diamonds.  <<<<<<<<<< NOTE<
+We bid 2D.
+--------------------
+South bids 2S.
+--------------------
+West bids 5D.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 No Trump, 2 Diamonds, and 5 Diamonds.
+JC30: Partner did not reply properly to our Jacoby Transfer, bidding 5 Diamonds instead of the asked-for 2 Hearts. Treat this as a simple rebid.
+B4N00: Partner made a triple raise of our Diamond suit to 5 Diamonds, showing 17.0-21.0 points and 4+ trumps.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 9.0 down to 6.0 points)
+B4N12: With 8.0/9.0/6.0 points in hand, for a total in partnership of 23.0-27.0 points, sign off at partner's bid of 5 Diamonds.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is East; South leads.
+=======================
+
+
+>>>>>>>>>>>>>>> WEST<<<<<<<<<<<<<<
+S:964  H:K3  D:QJ942  C:AKQ
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (-1/1/3/3)
+  7 Likely Losers (4/1/2/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+A00: Have 15.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+We bid 1NT.
+--------------------
+North passes.
+--------------------
+East bids 2D.  <<<<<<<<< Jacoby
+--------------------
+South bids 2S.
+--------------------
+Rebidding after opening bid of 1 No Trump and partner's response of 2 Diamonds.
+B3W00: Partner has made a 2 over 1 bid, Diamonds over No Trump, which shows 9.5-17.5 points and is forcing for one round.  <<<<<<<<<<<<< WAS JACOBY Xfer <<<<<<<<<<
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL38: (with 5-card Diamond trump support including a trump honor & a doubleton in Hearts, the hand is revalued for a suit contract as dummy from 15.0 to 19.0 points)
+B3W44: With 5-card support for partner's Diamonds (holding QJ942) and 15.0/15.0/19.0 points (for a total of 28.5-36.5 points in the partnership), raise to 5 Diamonds.
+We bid 5D.  
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is East; South leads.
+=======================
+
+>>>>>>>> WEST When South passes<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:964  H:K3  D:QJ942  C:AKQ
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (-1/1/3/3)
+  7 Likely Losers (4/1/2/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+S:964  H:K3  D:QJ942  C:AKQ
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (-1/1/3/3)
+  7 Likely Losers (4/1/2/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+Opening bid for team.
+A00: Have 15.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+We bid 1NT.
+--------------------
+North passes.
+--------------------
+East bids 2D.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 No Trump and partner's response of 2 Diamonds.
+JC12: Playing Simple Jacoby Transfers, partner is asking to transfer to Hearts.
+JC24: Respond to the requested Heart transfer suit with a 2 Hearts bid.
+We bid 2H.
+--------------------
+North passes.
+--------------------
+East bids 4H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BXB30: Partner has bid game in the Heart suit, and with only 23.0-37.0 pts in the partnership, we don't want to raise further, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is West; North leads.
+
+
+
+

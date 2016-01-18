@@ -1,0 +1,124 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = November 17, 2013
+File Date =  03/05/14 11:26:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA DA DK DT D7 D2 CA CJ C7 C6 C5 C4 C2 
+Current Hand(West) = S3 HK HJ H8 H7 H5 H4 H3 DQ D9 D4 C8 C3 
+Current Hand(North) = SQ SJ ST S7 S6 S5 S4 HA HQ D6 CK CQ C9 
+Current Hand(East) = SK S9 S8 S2 HT H9 H6 H2 DJ D8 D5 D3 CT 
+Original Hand(South) = SA DA DK DT D7 D2 CA CJ C7 C6 C5 C4 C2 
+Original Hand(West) = S3 HK HJ H8 H7 H5 H4 H3 DQ D9 D4 C8 C3 
+Original Hand(North) = SQ SJ ST S7 S6 S5 S4 HA HQ D6 CK CQ C9 
+Original Hand(East) = SK S9 S8 S2 HT H9 H6 H2 DJ D8 D5 D3 CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 3
+Declarer = ????
+Bidding History = 3H Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  90		3 overtricks"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should bid 5C
+>>>>>>>>>>NORTH<<<<<<<<<<<
+S:QJT7654  H:AQ  D:6  C:KQ9
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0; Total pts = 14.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (5/1/0/1)
+  6 Likely Losers (2/1/1/2)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+West bids 3H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 4C.
+--------------------
+West passes.
+--------------------
+B00 Responding to partner's opening bid of 4 Clubs.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 4.
+2REVAL70: Dummy's hand is revalued for a suit contract from 14.0 down to 13.5 points.
+<<Error>> -- ZA0: fell out of decision loop.  Partner's bid was 4 Clubs; points are 14.0/14.0/13.5, preferred suit is Spade (holding QJT7654).  Returning PASS  <<<<<<<<<<<<<<<<<<<<<< NOTE
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is South; West leads.
+=======================
+RCP5A: East is now known to have started with 1 Club.
+RCP5A: South is now known to have started with 1 Spade.
+RCP5A: West is now known to have started with 1 Spade.
+RCP20: Dummy is now out of Diamonds.
+RCP20: Dummy is now out of Clubs.
+PLAYCL: South has claimed the remaining 4 tricks.
+RESULT: North/South made 3 overtricks.
+

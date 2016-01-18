@@ -1,0 +1,91 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 19, 2012
+File Date =  04/26/12 16:29:12
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S5 S3 HA H4 CA CT C5 
+Current Hand(West) = HT H9 H7 H6 H3 H2 DQ C8 C2 
+Current Hand(North) = HK HQ H8 DK D6 CK C9 C7 C6 C3 
+Current Hand(East) = S6 S4 S2 HJ H5 DJ D9 CQ CJ C4 
+Original Hand(South) = SA SQ SJ ST S5 S3 HA H4 DA D2 CA CT C5 
+Original Hand(West) = SK S9 HT H9 H7 H6 H3 H2 DQ D8 D3 C8 C2 
+Original Hand(North) = S7 HK HQ H8 DK DT D6 D4 CK C9 C7 C6 C3 
+Original Hand(East) = S8 S6 S4 S2 HJ H5 DJ D9 D7 D5 CQ CJ C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 13
+Declarer = North
+Bidding History = Pass 1S Pass 2C Pass 3S Pass 3NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East D2 D8 DT D5 North
+GameTrick #2 = North SQ SK S7 S8 West
+GameTrick #3 = West DA D3 D4 D7 South
+GameTrick #4 = South SA S9 -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Should NOT discard low Heart.  It will pay under Ace
+>>>>>>>>>>>>>N<<<<<<<<<<<
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=11 vs SureTricks=9 vs NumWinners=11, m_numTricksShort=1
+PLRV10: We have only 9 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH30: Cash the SA from dummy.
+PLCSH72: Our cash of the SA from dummy is holding, so discard the H8.  <<<<<<<<<<<<<No
+
+

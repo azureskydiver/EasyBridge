@@ -1,0 +1,193 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2011
+File Date =  07/13/11 21:28:38
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S9 S8 S7 S2 H8 H4 D3 CA CK CQ C8 C7 
+Current Hand(West) = SQ HQ H7 H3 DA DK DQ D7 D6 D5 D2 CJ C2 
+Current Hand(North) = SJ ST S6 S5 S4 S3 HK HJ HT H9 H5 H2 C5 
+Current Hand(East) = SK HA H6 DJ DT D9 D8 D4 CT C9 C6 C4 C3 
+Original Hand(South) = SA S9 S8 S7 S2 H8 H4 D3 CA CK CQ C8 C7 
+Original Hand(West) = SQ HQ H7 H3 DA DK DQ D7 D6 D5 D2 CJ C2 
+Original Hand(North) = SJ ST S6 S5 S4 S3 HK HJ HT H9 H5 H2 C5 
+Original Hand(East) = SK HA H6 DJ DT D9 D8 D4 CT C9 C6 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 1
+Declarer = ????
+Bidding History = Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Should North bid with 6 Hearts
+>>>>>>>> NORTH>>>>>>>>>>>>>
+S:JT6543  H:KJT952  D:QJT983  C:5
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 6.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 0.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  7 Likely Winners (3/4/0/0)
+  6 Likely Losers (3/2/0/1)
+Playing five-card majors, both majors qualify for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+East passes.
+--------------------
+South bids 1S.
+--------------------
+West bids 2D.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 6-card Spade trump support including a trump honor & a singleton in Clubs,  & a void in Diamonds, the hand is revalued for a suit contract as dummy from 5.0 to 18.0 points)
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Hearts, declarer's hand is revalued for a suit contract from 5.0 to 10.0 points)
+I08: Have 5.0/5.0/18.0 points with 6-card support for partner's Spades (holding JT6543), which is too strong for a limit raise, so we have to temporarily shift to Hearts with a bid of 2 Hearts.
+We bid 2H.
+--------------------
+East bids 3D.
+--------------------
+S:JT6543  H:KJT952  D:QJT983  C:5
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 6.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 0.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  7 Likely Winners (3/4/0/0)
+  6 Likely Losers (3/2/0/1)
+Playing five-card majors, both majors qualify for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+***Bidding restarted***
+East passes.
+--------------------
+South bids 1C.
+--------------------
+West bids 1D.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Hearts, declarer's hand is revalued for a suit contract from 5.0 to 10.0 points)
+F02: But we have only 5.0/5.0/5.0 points with weak trump support, so we have to pass.
+We pass.
+--------------------
+East bids 2D.
+--------------------
+South bids 2S.
+--------------------
+West bids 3D.
+--------------------
+Rebidding as responder after bids of 1 Club, Pass, and 2 Spades.
+B4P04: Partner bid another suit (third suit in partnership) at 2 Spades after our Pass response, showing 12.0-18.0 points.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 6-card Spade trump support including a trump honor & a singleton in Clubs,  & a void in Diamonds, the hand is revalued for a suit contract as dummy from 5.0 to 18.0 points)
+PKF2: With 6 trumps in partner's second suit (Spades), we prefer to support that suit.
+B4P42: With 5.0/5.0/18.0 points and 6-card support for partner's second suit (Spades, holding JT6543) and a total of 30.0-36.0 pts in the partnership we can bid game at 4 Spades.
+We bid 4S.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is South; West leads.
+=======================
+RCP5A: North is now known to have started with 0 Diamonds.
+RCP25: Dummy is shown to be void in Diamonds.
+RCP20: Dummy is now out of Clubs.
+RCP5A: West is now known to have started with 2 Clubs.
+RCP5A: East is now known to have started with 2 Hearts.
+RCP5A: South is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+PLAYCL: South has claimed the remaining 4 tricks.
+RESULT: North/South made 2 overtricks.
+S:JT6543  H:KJT952  D:---  C:5
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 6.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 0.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  7 Likely Winners (3/4/0/0)
+  6 Likely Losers (3/2/0/1)
+Playing five-card majors, both majors qualify for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+***Bidding restarted***
+East passes.
+--------------------
+
+

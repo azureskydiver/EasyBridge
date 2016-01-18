@@ -1,0 +1,133 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 12, 2010
+File Date =  08/13/10 13:46:48
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S6 S5 H9 DT D9 D8 D5 D3 
+Current Hand(West) = ST S9 S8 S4 HJ CA CK CJ CT 
+Current Hand(North) = S2 H4 DJ D4 C8 C7 C3 C2 
+Current Hand(East) = SK SQ S7 HQ HT DA D7 C5 
+Original Hand(South) = SJ S6 S5 H9 H6 H5 DK DT D9 D8 D5 D3 C6 
+Original Hand(West) = ST S9 S8 S4 HJ H8 H7 DQ CA CK CJ CT C9 
+Original Hand(North) = SA S2 HA HK H4 DJ D4 D2 CQ C8 C7 C3 C2 
+Original Hand(East) = SK SQ S7 S3 HQ HT H3 H2 DA D7 D6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 9
+Declarer = East
+Bidding History = Pass 1C 1NT 2S 3D 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South C6 C9 CQ C4 North
+GameTrick #2 = North DK DQ D2 D6 South
+GameTrick #3 = South H5 H7 HK H2 North
+GameTrick #4 = North H6 H8 HA H3 North
+GameTrick #5 = North -- -- SA S3 North
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should lead a Club, South could be void
+>>>>>>>NORTH<<<<<<<<<<
+S:A2  H:AK4  D:J42  C:Q8732
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Likely Winners (1/1/0/2)
+  9 Likely Losers (1/2/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South passes.
+--------------------
+West bids 1C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6: But we don't have a sufficiently strong overcall suit.
+A00: Have 14.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+We bid 1NT.
+--------------------
+East bids 2S.
+--------------------
+South bids 3D.
+--------------------
+West bids 3S.
+--------------------
+Rebidding after opening bid of 1 No Trump and partner's response of 3 Diamonds.
+B3W00a: Partner has made a 2 over 1 bid following an earlier pass, Diamonds over No Trump, which shows 9.0-11.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+2REVAL38: (with 3-card Diamond trump support including a trump honor & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 13.5 to 16.0 points)
+B3W14: With a balanced distribution, approx. 23.0-25.0 HCPs in the partnership, and  a balanced distribution, bid 2 No Trump in preference to partner's minor.
+But our bid (2 No Trump) is too low vs. the last bid of of 3 Spades, so we have to pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is East; South leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF40: Play high with the Queen.   <<<<<<<<<<<<<<<<<<<<<<<<<  Pard lead Club here!!!
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLD33: Partner has bid the Diamonds suit, so lead the D2.
+RCP20: Dummy is now out of Diamonds.
+PLDF40a: Play higher with the King.
+PLYLDRT8: Return partner's Heart suit with the Ace.
+PLYSIG1: Partner discarded low with the six, so consider it a signal that he dislikes the suit.
+PLYLDPRF1: Partner likes the Diamond suit, but dummy can ruff, so skip this suit for now.
+PLYLDA: With no other obvious plays, cash a winner with the SA.  <<<<<<<<<<<<<<<<<<<< NO Lead back partner's last lead _ Club
+
+

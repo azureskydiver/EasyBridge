@@ -1,0 +1,174 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 6, 2009
+File Date =  06/07/09 10:59:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ ST H6 H5 DK D9 D5 D2 CA C9 C2 
+Current Hand(West) = SQ HT H9 H7 H3 DT D4 D3 CT C5 C4 C3 
+Current Hand(North) = S8 S4 S3 HA HQ H4 H2 DQ D8 D6 CK C7 
+Current Hand(East) = S6 S5 HK HJ H8 DA DJ D7 CQ CJ C8 C6 
+Original Hand(South) = SA SJ ST S9 H6 H5 DK D9 D5 D2 CA C9 C2 
+Original Hand(West) = SQ S7 HT H9 H7 H3 DT D4 D3 CT C5 C4 C3 
+Original Hand(North) = S8 S4 S3 S2 HA HQ H4 H2 DQ D8 D6 CK C7 
+Original Hand(East) = SK S6 S5 HK HJ H8 DA DJ D7 CQ CJ C8 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 4
+Declarer = East
+Bidding History = 1NT Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = South
+GameTrick #1 = South S9 S7 S2 SK East
+GameTrick #2 = East -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		3 overtricks"
+Game Score Record = "  60		2 Spades made"
+Game Score Record = "  40		2 Clubs made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East leads low spade towards singletonSQ in dummy.
+Contract is 1NT.  E-W have 8 clubs
+>>> EAST <<<
+S:K65  H:KJ8  D:AJ7  C:QJ86
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 15.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Likely Winners (1/1/1/2)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+A00: Have 15.0 HCP's with a balanced hand.
+A08: This meet the rqmts for the 1NT opening range (15-17), so bid 1NT.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 1 No Trump.  Declarer is East; South leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KQ765 (Q7/K65)
+  H:KJT9873 (T973/KJ8)
+  D:AJT743 (T43/AJ7)
+  C:QJT86543 (T543/QJ86)
+Combined hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0;
+  Total pts = 17.0.
+  QT's = 2.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  1 Sure Winner (0/0/1/0)
+  4 Eventual Winners (1/1/1/1)
+  9 Possible Losers (vs. 6 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 1 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KQ765 (Q7/K65)
+  H:KJT9873 (T973/KJ8)
+  D:AJT743 (T43/AJ7)
+  C:QJT86543 (T543/QJ86)
+Combined hand evaluation:
+  HCPs = 17.0, Distn pts = 0.0;
+  Total pts = 17.0.
+  QT's = 2.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  1 Sure Winner (0/0/1/0)
+  4 Eventual Winners (1/1/1/1)
+  9 Possible Losers (vs. 6 allowable)
+PLN10: We have only 4 sure tricks against a requirement of 7 for the 1NT contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Cash the King of Spades in hand.
+ Play 2: Lead a low Club from dummy and finesse the Jack in hand against South.
+ Play 3: Lead a low Club from dummy and finesse the Queen in hand against South.
+ Play 4: Lead a low Spade from hand and finesse the Queen in dummy against North.
+ Play 5: Lead a low Spade from dummy and finesse the King in hand against South.
+ Play 6: Lead a low Heart from dummy and finesse the King in hand against South.
+ Play 7: Lead a low Diamond from dummy to finesse the Jack in hand against South, with the Ace as cover.
+ Play 8: Play the Jack of Clubs from hand to force out the opponents' Ace.
+ Play 9: Play the Jack of Clubs from hand to force out the opponents' King.
+ Play 10: Play the Jack of Clubs from hand to force out the opponents' Nine.
+ Play 11: Cash the Eight of Clubs in hand.
+ Play 12: Cash the King of Spades in hand.
+ Play 13: Cash the Queen of Clubs in hand.
+ Play 14: Cash the Ace of Diamonds in hand.
+ Play 15: Cash the King of Hearts in hand.
+PLN95: The planning is complete.
+---------------------------
+PLCSH56: Discard a Spade from dummy in anticipation of cashing the King in hand.
+PLCSH80: the opponents led a Spade, so see if we can finish up the cash play here.
+PLCSH86: Cash the SK from hand.
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 1 reasonably sure trick left vs. 6 more trick(s) required for the contract.
+eight to winners.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PL3FN12: Lead a low Spade (the five) from hand to finesse the Queen in dummy.
+??? Can't finesse a singleton???
+

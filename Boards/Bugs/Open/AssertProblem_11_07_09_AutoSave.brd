@@ -1,0 +1,104 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 25, 2009
+File Date =  11/07/09 10:07:15
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ S9 S2 HQ HJ H6 H3 D9 CK CT C5 C4 
+Current Hand(West) = SK S5 S3 HA H5 DQ DT D3 CA C9 C8 C3 C2 
+Current Hand(North) = S8 S7 S6 S4 H9 H8 H7 H2 DK DJ D5 D4 D2 
+Current Hand(East) = SJ ST HK HT H4 DA D8 D7 D6 CQ CJ C7 C6 
+Original Hand(South) = SA SQ S9 S2 HQ HJ H6 H3 D9 CK CT C5 C4 
+Original Hand(West) = SK S5 S3 HA H5 DQ DT D3 CA C9 C8 C3 C2 
+Original Hand(North) = S8 S7 S6 S4 H9 H8 H7 H2 DK DJ D5 D4 D2 
+Original Hand(East) = SJ ST HK HT H4 DA D8 D7 D6 CQ CJ C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Happened after hands shifted
+>>>>>>>>>> CALL STACK <<<<<<<<<<<<<<<
+>	EasyBridge.exe!CCard::DecrementHandIndex()  Line 116 + 0x18 bytes	C++
+ 	EasyBridge.exe!CCombinedHoldings::RemoveByIndex(const int nIndex=-1)  Line 330 + 0xf bytes  <<<<<<<<<<<<<<<<<<<<<<<
+ 	EasyBridge.exe!CCardList::Remove(const CCard * pCard=0x00f533a0)  Line 300	C++
+ 	EasyBridge.exe!CDeclarerPlayEngine::RecordCardPlay(int nPos=2, CCard * pCard=0x00f533a0)  Line 390	C++
+ 	EasyBridge.exe!CPlayer::RecordCardPlay(int nPos=2, CCard * pCard=0x00f533a0)  Line 295 + 0x25 bytes	C++
+ 	EasyBridge.exe!CEasyBDoc::EnterCardPlay(Position nPos=NORTH, CCard * pCard=0x00f533a0)  Line 2084 + 0x1a bytes	C++
+ 	EasyBridge.exe!CEasyBView::ThrowCard(Position nPos=NORTH, CCard * pCard=0x00f533a0)  Line 523	C++
+ 	EasyBridge.exe!CEasyBView::HandleCardPlay(CCard * pCard=0x00f533a0)  Line 2305	C++
+ 	EasyBridge.exe!CEasyBView::OnLButtonDown(unsigned int nFlags=1, CPoint point={...})  Line 1298	C++
+ 	MFC42D.DLL!CWnd::OnWndMsg(unsigned int message=513, unsigned int wParam=1, long lParam=5243461, long * pResult=0x0012fcc4)  Line 1964	C++
+ 	MFC42D.DLL!CWnd::WindowProc(unsigned int message=513, unsigned int wParam=1, long lParam=5243461)  Line 1585 + 0x1e bytes	C++
+ 	MFC42D.DLL!AfxCallWndProc(CWnd * pWnd=0x00f45bf8, HWND__ * hWnd=0x00040290, unsigned int nMsg=513, unsigned int wParam=1, long lParam=5243461)  Line 215 + 0x1a bytes	C++
+ 	MFC42D.DLL!AfxWndProc(HWND__ * hWnd=0x00040290, unsigned int nMsg=513, unsigned int wParam=1, long lParam=5243461)  Line 368	C++
+ 	MFC42D.DLL!AfxWndProcBase(HWND__ * hWnd=0x00040290, unsigned int nMsg=513, unsigned int wParam=1, long lParam=5243461)  Line 220 + 0x15 bytes	C++
+ 	user32.dll!7e418734() 	
+ 	[Frames below may be incorrect and/or missing, no symbols loaded for user32.dll]	
+ 	user32.dll!7e418816() 	
+ 	user32.dll!7e4189cd() 	
+ 	user32.dll!7e4196c7() 	
+ 	MFC42D.DLL!CWinThread::PumpMessage()  Line 846	C++
+ 	MFC42D.DLL!CWinThread::Run()  Line 480 + 0xb bytes	C++
+ 	MFC42D.DLL!CWinApp::Run()  Line 400	C++
+ 	MFC42D.DLL!AfxWinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x001423bb, int nCmdShow=1)  Line 49 + 0xb bytes	C++
+ 	EasyBridge.exe!WinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x001423bb, int nCmdShow=1)  Line 30	C++
+ 	EasyBridge.exe!WinMainCRTStartup()  Line 330 + 0x36 bytes	C
+ 	kernel32.dll!7c817067() 	

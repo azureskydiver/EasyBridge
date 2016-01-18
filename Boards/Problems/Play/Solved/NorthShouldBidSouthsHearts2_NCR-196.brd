@@ -1,0 +1,125 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 12,  2010
+File Date =  01/12/10 11:49:15
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK S7 HK HQ H7 H5 H3 D4 D2 CA CJ CT C6 
+Current Hand(West) = SA SQ SJ S9 S8 S3 H8 DA DT D8 D5 C9 C7 
+Current Hand(North) = ST S5 S4 HA HJ HT H6 DQ D9 D6 CK C8 C2 
+Current Hand(East) = S2 H9 H4 H2 DK DJ D7 D3 CQ C5 C4 C3 
+Original Hand(South) = SK S7 HK HQ H7 H5 H3 D4 D2 CA CJ CT C6 
+Original Hand(West) = SA SQ SJ S9 S8 S3 H8 DA DT D8 D5 C9 C7 
+Original Hand(North) = ST S5 S4 HA HJ HT H6 DQ D9 D6 CK C8 C2 
+Original Hand(East) = S6 S2 H9 H4 H2 DK DJ D7 D3 CQ C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass 1H 1S 2C Pass 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- S6 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should bid South's Hearts with HAJT6
+>>>>>>>> NORTH<<<<<<<<<<<
+S:T54  H:AJT6  D:Q96  C:K82
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (0/2/1/1)
+  9 Likely Losers (3/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+East passes.
+--------------------
+South bids 1H.
+--------------------
+West bids 1S.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Heart trump support including a trump honor, the hand is revalued for a suit contract as dummy from 10.0 to 12.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+I08: Have 10.0/10.0/12.0 points with 4-card support for partner's Hearts (holding AJT6), which is too strong for a limit raise, so we have to temporarily shift to Clubs with a bid of 2 Clubs.
+We bid 2C.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 2 Clubs, and 3 Clubs.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract from 10.0 down to 6.0 points)
+B4H14: Partner made a single raise of our 2 Clubs bid to 3 Clubs, showing 12.0 -20.0 points and 3+ trump cards.
+B4H30: With only 10.0/10.0/6.0 pts in hand, for a total in the partnership of 18.0-26.0 points, a game is unlikely, so pass.  <<<<<<<< NO GO BAD TO HEARTS
+We pass.  
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is North; East leads.
+=======================
+
+

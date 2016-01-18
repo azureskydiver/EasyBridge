@@ -1,0 +1,134 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 1,  2010
+File Date =  01/09/10 15:54:58
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S5 HK HJ H7 DJ DT D8 D4 D3 CA C8 C2 
+Current Hand(West) = SK SQ S6 S4 S2 HA HT DK D9 D5 D2 CK C7 
+Current Hand(North) = SJ S9 S7 S3 HQ H9 H6 H5 DA D7 D6 C6 C3 
+Current Hand(East) = ST S8 H8 H4 H3 H2 DQ CQ CJ CT C9 C5 C4 
+Original Hand(South) = SA S5 HK HJ H7 DJ DT D8 D4 D3 CA C8 C2 
+Original Hand(West) = SK SQ S6 S4 S2 HA HT DK D9 D5 D2 CK C7 
+Original Hand(North) = SJ S9 S7 S3 HQ H9 H6 H5 DA D7 D6 C6 C3 
+Original Hand(East) = ST S8 H8 H4 H3 H2 DQ CQ CJ CT C9 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North does not understand that South is responding to his Negative double
+>>>>>>>>> NORTH<<<<
+S:J973  H:Q965  D:A76  C:63
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  4 Likely Winners (1/2/1/0)
+  9 Likely Losers (3/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Hearts, Spades
+The best suit is Hearts.
+====================
+South bids 1D.
+--------------------
+West bids 1S.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+2REVAL38: (with 3-card Diamond trump support including a trump honor & a doubleton in Clubs, the hand is revalued for a suit contract as dummy from 7.0 to 9.0 points)
+NEGDBL1: With 7.0/7.0 points and 4 cards in the unbid majors, bid a negative double.
+We bid Dbl.
+--------------------
+East passes.
+--------------------
+South bids 2H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, Double, and 2 Hearts.
+B4P03: Partner bid a second suit after our negative double, showing 12.0-18.0 points.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Heart trump support including a trump honor & a doubleton in Clubs, the hand is revalued for a suit contract as dummy from 7.0 to 10.0 points)
+PKF2: With 4 trumps in partner's second suit (Hearts), we prefer to support that suit.  <<<<<<<<<<<<<< ?????? Negative double forced this!!!!
+YN1: With 22.0-28.0 points in the partnership and 4-card support for partner's major Heart suit (holding Q965), raise to 3 Hearts.
+We bid 3H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+RCP5A: West is now known to have started with 2 Hearts.
+RCP5A: East is now known to have started with 1 Diamond.
+RCP20: Dummy is now out of Clubs.
+RCP20: Dummy is now out of Diamonds.
+RCP5A: South is now known to have started with 2 Spades.
+RCP20: Dummy is now out of Spades.
+RCP20: Dummy is now out of Hearts.
+RESULT: North/South were set 2 tricks.
+P
+

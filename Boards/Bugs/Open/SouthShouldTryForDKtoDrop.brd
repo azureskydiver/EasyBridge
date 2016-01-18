@@ -1,0 +1,146 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 1,  2010
+File Date =  02/07/10 12:58:50
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S5 S4 HQ H5 H4 DA DJ D8 D6 D4 C6 
+Current Hand(West) = SK ST S7 S3 S2 H9 DK CA CT C9 C7 C2 
+Current Hand(North) = SQ S9 HA HK HJ H8 DQ DT D9 D5 D3 CQ 
+Current Hand(East) = SJ S8 S6 HT H7 H6 H3 H2 D7 D2 CJ C3 
+Original Hand(South) = SA S5 S4 HQ H5 H4 DA DJ D8 D6 D4 CK C6 
+Original Hand(West) = SK ST S7 S3 S2 H9 DK CA CT C9 C8 C7 C2 
+Original Hand(North) = SQ S9 HA HK HJ H8 DQ DT D9 D5 D3 CQ C4 
+Original Hand(East) = SJ S8 S6 HT H7 H6 H3 H2 D7 D2 CJ C5 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1D Pass 2NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West CK C8 C4 C5 South
+GameTrick #2 = South -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 20
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  20		1 overtrick"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N-S should play for drop of DK with 10 diamonds !!!!!!!!!
+>>>>>>>> SOUTH<<<<
+PLNADJ: Reviewing play plan for round 2...
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PSFNS30: Can finesse the Queen of Clubs by leading it from dummy against East.  <<<<<<<<<<<<<<< Can NOT finesse a Singleton !!!!!!!!!!!!!!!!!!!!!!
+PSFNS30: Can finesse the Queen of Spades by leading it from dummy against East.
+PSFNS11: Can finesse the Jack of Diamonds in hand with the Ace as the potential cover card.
+PSFNS30: Can finesse the Queen of Diamonds by leading it from dummy against East.
+PLNFNS90: A total of 4 possible finesses exist.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Jack of Diamonds to force out the opponents' King.
+PLNDEV31: This will promote the Jack, ten to winners.
+nine to a winner.
+PLNDEV91: One forcing play has been found, which will promote 3 lower cards.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Spades, plus 1 in Diamonds, plus 4 in Hearts, plus.
+PLNCSH30: A total of 6 maximum cashing tricks are immediately available.
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 14 plays and approx. 10+ possible tricks including 6 sure tricks (vs. 9 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Lead a low Club from hand and finesse the Queen in dummy against East.
+ Play 2: Lead a low Spade from hand and finesse the Queen in dummy against East.
+ Play 3: Lead a low Diamond from dummy to finesse the Jack in hand against West, with the Ace as cover.
+ Play 4: Lead a low Diamond from hand and finesse the Queen in dummy against East.
+ Play 5: Play the Jack of Diamonds from hand to force out the opponents' King.
+ Play 6: Cash the Jack of Diamonds in hand. <Requires ...>
+ Play 7: Cash the Ten of Diamonds in dummy. <Requires ...>
+ Play 8: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 9: Cash the Ace of Spades in hand.
+ Play 10: Cash the Ace of Diamonds in hand.
+ Play 11: Cash the Ace of Hearts in dummy.
+ Play 12: Cash the King of Hearts in dummy.
+ Play 13: Cash the Queen of Hearts in hand.
+ Play 14: Cash the Jack of Hearts in dummy.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Lead a low Club from hand and finesse the Queen in dummy against East.
+ Play 2: Lead a low Spade from hand and finesse the Queen in dummy against East.
+ Play 3: Lead a low Diamond from dummy to finesse the Jack in hand against West, with the Ace as cover.
+ Play 4: Lead a low Diamond from hand and finesse the Queen in dummy against East.
+ Play 5: Play the Jack of Diamonds from hand to force out the opponents' King.
+ Play 6: Cash the Jack of Diamonds in hand.
+ Play 7: Cash the Ten of Diamonds in dummy.
+ Play 8: Cash the Nine of Diamonds in dummy.
+ Play 9: Cash the Ace of Spades in hand.
+ Play 10: Cash the Ace of Diamonds in hand.
+ Play 11: Cash the Queen of Hearts in hand.
+ Play 12: Cash the King of Hearts in dummy.
+ Play 13: Cash the Ace of Hearts in dummy.
+ Play 14: Cash the Jack of Hearts in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLYTRY4: Removed plan <CQ Finesse> (abandoned)
+PL3FN12: Lead a low Spade (the four) from hand to finesse the Queen in dummy.
+
+

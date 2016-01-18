@@ -1,0 +1,107 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 11, 2009
+File Date =  07/11/09 16:38:07
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST HK HQ HJ HT H7 D9 CJ C2 
+Current Hand(West) = H8 H5 DK DT D4 CQ C9 C6 C5 
+Current Hand(North) = S5 S3 S2 H4 DA DJ D8 CA C7 C4 
+Current Hand(East) = SK SQ S8 D6 D2 CK CT C8 C3 
+Original Hand(South) = ST S9 S4 HK HQ HJ HT H7 H6 D9 D7 CJ C2 
+Original Hand(West) = S6 HA H8 H5 H2 DK DT D4 D3 CQ C9 C6 C5 
+Original Hand(North) = SA S5 S3 S2 H9 H4 DA DJ D8 D5 CA C7 C4 
+Original Hand(East) = SK SQ SJ S8 S7 H3 DQ D6 D2 CK CT C8 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 2H Pass 3H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 4
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S4 S6 SA S7 North
+GameTrick #2 = North H6 HA H9 H3 West
+GameTrick #3 = West D7 D3 D5 DQ East
+GameTrick #4 = East S9 H2 -- SJ West
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West trumps East's good SJ
+>>>>>>>> WEST <<<<<<<<
+S:6  H:A852  D:KT43  C:Q965
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  6 Likely Winners (0/2/2/2)
+  7 Likely Losers (1/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+South bids 2H.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 3-level.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Hearts.
+PLYLD4: Lead the singleton S6.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+PLAYB41: Play the Ace to win the trick.
+PLDF55: With no cards in Spades, trump with the H2.
+RCP5A: West is now known to have started with 1 Spade.
+PLDF55: With no cards in Spades, trump with the H2.  <<<<<<< Dummy on LH has S532 ???
+
+
+

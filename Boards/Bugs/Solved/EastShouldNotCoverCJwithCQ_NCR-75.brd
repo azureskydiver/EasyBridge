@@ -1,0 +1,144 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 6, 2009
+File Date =  09/06/09 11:57:09
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S6 S3 H5 H4 H2 CK CT C9 C8 C5 
+Current Hand(West) = SQ ST S7 S4 S2 HA H9 DQ DJ DT D5 
+Current Hand(North) = SA SK S8 HK HQ HJ H3 D8 D7 D4 CJ 
+Current Hand(East) = S9 S5 HT H7 H6 D9 D6 CQ C7 C6 C3 
+Original Hand(South) = SJ S6 S3 H5 H4 H2 D2 CK CT C9 C8 C5 C4 
+Original Hand(West) = SQ ST S7 S4 S2 HA H9 H8 DK DQ DJ DT D5 
+Original Hand(North) = SA SK S8 HK HQ HJ H3 DA D8 D7 D4 CA CJ 
+Original Hand(East) = S9 S5 HT H7 H6 D9 D6 D3 CQ C7 C6 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = 1S Dbl Pass 4C Pass 5C Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West D2 DK DA D3 North
+GameTrick #2 = North C4 H8 CA C2 North
+GameTrick #3 = North -- -- -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 100
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = " 100		Bonus for defeating contract by 2 tricks"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should save CQ since Dummy is now void. OK to save CQ if East has CT.
+>>>>>>>> EAST <<<<<<<<
+Starting play from restored game.
+------------------------
+S:95  H:T76  D:963  C:Q7632
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  3 Likely Winners (0/0/0/3)
+  10 Likely Losers (2/3/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+S:95  H:T76  D:963  C:Q7632
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  3 Likely Winners (0/0/0/3)
+  10 Likely Losers (2/3/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+West bids 1S.
+--------------------
+North doubles.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+F00: Partner is showing 12.0+ points and 2+ QT's.
+F03: But we have only 2.0/1.0/1.0 points, so we have to pass.
+We pass.
+--------------------
+South bids 4C.
+--------------------
+West passes.
+--------------------
+North bids 5C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the three.
+PLDF48: We can't beat North's Ace, so discard the D3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+RCP5A: West is now known to have started with 0 Clubs.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: North led an honor (the Jack), so cover it with our Queen.  <<<<<<<<<<<<<<<<<< NO<<<<<<<,
+RCP20: Dummy is now out of Clubs.
+
+

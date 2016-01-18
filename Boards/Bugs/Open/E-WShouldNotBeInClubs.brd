@@ -1,0 +1,224 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 24, 2010
+File Date =  11/25/10 16:42:23
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ ST S9 S7 S6 S4 H4 DA DK CJ C9 C4 C2 
+Current Hand(West) = S8 S5 HA HT H8 H7 D6 D5 D4 D3 CA CQ C3 
+Current Hand(North) = S3 S2 H6 H3 H2 DJ DT D9 D8 D7 D2 C8 C6 
+Current Hand(East) = SA SK SJ HK HQ HJ H9 H5 DQ CK CT C7 C5 
+Original Hand(South) = SQ ST S9 S7 S6 S4 H4 DA DK CJ C9 C4 C2 
+Original Hand(West) = S8 S5 HA HT H8 H7 D6 D5 D4 D3 CA CQ C3 
+Original Hand(North) = S3 S2 H6 H3 H2 DJ DT D9 D8 D7 D2 C8 C6 
+Original Hand(East) = SA SK SJ HK HQ HJ H9 H5 DQ CK CT C7 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 5
+Declarer = ????
+Bidding History = 1H Pass 2C Pass 5C 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W should NOT be in Clubs
+>>>>>>>> EAST<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AKJ  H:KQJ95  D:Q  C:KT75
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 18.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (2/4/0/1)
+  6 Likely Losers (1/1/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+The contract is 5 Clubs by West.
+North leads.
+====================
+PLAY: North leads the S3.
+PLAY: We play the SJ.
+PLAY: South plays the SQ.
+PLAY: West plays the S5.
+PLAY: South wins the round.
+--------
+PLAY: South leads the S4.
+PLAY: West plays the S8.
+PLAY: North plays the S2.
+PLAY4: Playing fourth, using default player logic.
+PLAYB34: Partner's eight is high, so discard the SK.
+PLAY: We play the SK.
+PLAY: East wins the round.
+--------
+PLAY: We lead the SA.
+RCP20: Dummy is now out of Spades.
+PLAY: South plays the S6.
+PLAY: West plays the D3.
+RCP10: West shows out of Spades.
+RCP5A: West is now known to have started with 2 Spades.
+PLAY: North plays the C6.
+RCP10: North shows out of Spades.
+RCP5A: North is now known to have started with 2 Spades.
+PLAY: North wins the round.
+--------
+PLAY: North leads the DJ.
+PLAY: We play the DQ.
+RCP20: Dummy is now out of Diamonds.
+PLAY: South plays the DK.
+PLAY: West plays the D4.
+PLAY: South wins the round.
+--------
+PLAY: South leads the S7.
+PLAY: West plays the C3.
+PLAY: North plays the H2.
+PLAY: We play the H5.
+PLAY: West wins the round.
+--------
+PLAY: West leads the CA.
+PLAY: North plays the C8.
+PLAY: We play the C5.
+PLAY: South plays the C2.
+PLAY: West wins the round.
+--------
+PLAY: West leads the D5.
+PLAY: North plays the D7.
+PLAY: We play the C7.
+PLAY: South plays the DA.
+PLAY: East wins the round.
+--------
+PLAY: We lead the CK.
+PLAY: South plays the C4.
+PLAY: West plays the CQ.
+PLAY: North plays the H3.
+RCP10: North shows out of Clubs.
+RCP1A: North is now known to have started with  2 Clubs and 2 Spades.
+PLAY: East wins the round.
+--------
+PLAY: We lead the HK.
+PLAY: South plays the H4.
+PLAY: West plays the H7.
+PLAY: North plays the H6.
+PLAY: East wins the round.
+--------
+PLAY: We lead the H9.
+PLAY: South plays the C9.
+RCP10: South shows out of Hearts.
+RCP5A: South is now known to have started with 1 Heart.
+PLAY: West plays the H8.
+PLAY: North plays the D2.
+RCP10: North shows out of Hearts.
+RCP1A: North is now known to have started with  2 Clubs and 3 Hearts and 2 Spades.
+RCP1B: Therefore, North started with 6 Diamonds and has 3 left.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CJ.
+PLAY: West plays the HT.
+RCP10: West shows out of Clubs.
+RCP1A: West is now known to have started with  3 Clubs and 2 Spades.
+PLAY: North plays the D8.
+PLAY4: Playing fourth, using default player logic.
+PLAY: We play the CT.
+RCP20: Dummy is now out of Clubs.
+PLAY: South wins the round.
+--------
+PLAY: South leads the S9.
+PLAY: West plays the D6.
+PLAY: North plays the D9.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the HJ.
+PLAY: We play the HJ.
+PLAY: South wins the round.
+--------
+PLAY: South leads the ST.
+PLAY: West plays the HA.
+PLAY: North plays the DT.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the HQ.
+PLAY: We play the HQ.
+PLAY: South wins the round.
+--------
+RESULT: East/West were set 5 tricks.
+=====================================
+Received hand:
+  S:AKJ  H:KQJ95  D:Q  C:KT75
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 18.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  7 Likely Winners (2/4/0/1)
+  6 Likely Losers (1/1/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+Opening bid for team.
+E01: Have 19.0 points in high cards, so bid 1 Heart.
+We bid 1H.
+--------------------
+South passes.
+--------------------
+West bids 2C.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 2 Clubs.
+B3W00: Partner has made a 2 over 1 bid, Clubs over Hearts, which shows 9.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by -1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Club trump support including a trump honor & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 18.0 to 20.0 points)
+B3W44: With 4-card support for partner's Clubs (holding KT75) and 19.0/18.0/20.0 points (for a total of 29.0-37.0 points in the partnership), raise to 5 Clubs.
+We bid 5C.  <<<<<<<<<<<<< NO, bid hearts again
+--------------------
+
+
+
+

@@ -1,0 +1,197 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = October 21, 2012
+File Date =  01/14/13 10:27:25
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 S3 HQ H9 H8 H3 H2 DA DQ D7 CK C6 C4 
+Current Hand(West) = S8 S6 S5 H6 H4 DK DT D9 D8 D5 C7 C3 C2 
+Current Hand(North) = S4 HK H5 DJ D6 D4 D2 CJ CT C9 C8 C5 
+Current Hand(East) = SA SK SQ SJ ST S9 S2 HA HJ HT CA CQ 
+Original Hand(South) = S7 S3 HQ H9 H8 H3 H2 DA DQ D7 CK C6 C4 
+Original Hand(West) = S8 S6 S5 H6 H4 DK DT D9 D8 D5 C7 C3 C2 
+Original Hand(North) = S4 HK H5 DJ D6 D4 D3 D2 CJ CT C9 C8 C5 
+Original Hand(East) = SA SK SQ SJ ST S9 S2 HA HJ HT H7 CA CQ 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 7
+Declarer = West
+Bidding History = Pass 2H Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- D3 H7 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 50
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East ??? Why didn't he bid Spades?
+========================
+East analysis
+=========
+S:AKQJT92  H:AJT7  D:JT952  C:AQ
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 24.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  10 Likely Winners (7/2/0/1)
+  3 Likely Losers (0/2/0/1)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+North passes.
+--------------------
+Opening bid for team.
+Have a solid Spade suit with 10 playing tricks and 4.5 quick tricks, so bid a strong 2 Hearts. <<<========* * * * * * *
+We bid 2H.
+--------------------
+South passes.
+--------------------
+West bids 2NT.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's response of 2 No Trump.
+After our strong 2 Hearts opening bid, partner's 2NT bid is a negative response, denying slam values (less than 1 Quick Trick).
+With a good second suit in Spades, show it in a rebid of 3 Spades.
+With no other good suits, pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is West; North leads.
+=======================
+East is now known to have started with 0 Diamonds.
+Dummy is shown to be void in Diamonds.
+North is now known to have started with 1 Spade.
+South is now known to have started with 2 Spades.
+West is now known to have started with 3 Spades.
+Dummy is now out of Spades.
+With no other clear plays available, lead a card from the unbid Club suit.
+Dummy is now out of Clubs.
+With no cards in the suit led and no trumps, we discard the HT.
+Dummy is now out of Hearts.
+East/West made 2 overtricks.
+Play restarted.
+====================
+S:AKQJT92  H:AJT7  D:---  C:AQ
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 24.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  10 Likely Winners (7/2/0/1)
+  3 Likely Losers (0/2/0/1)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+Play restarted.
+====================
+S:AKQJT92  H:AJT7  D:---  C:AQ
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 24.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  10 Likely Winners (7/2/0/1)
+  3 Likely Losers (0/2/0/1)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+
+>>>>>>>>>>> DEBUG<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:AKQJT92  H:AJT7  D:  C:AQ
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0; Total pts = 24.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  10 Likely Winners (7/2/0/1)
+  3 Likely Losers (0/2/0/1)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+Opening bid for team.
+STR2C12: Have a solid Spade suit with 10 playing tricks and 4.5 quick tricks, so bid a strong 2 Hearts.
+We bid 2H.  <<<<<<<<<<<<<??????????? vs 2 Spades
+--------------------
+South passes.
+--------------------
+West bids 2NT.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's response of 2 No Trump.
+S2RB0: After our strong 2 Hearts opening bid, partner's 2NT bid is a negative response, denying slam values (less than 1 Quick Trick).
+S2RB4: With a good second suit in Spades, show it in a rebid of 3 Spades.
+S2RB12: With no other good suits, pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is West; North leads.
+
+

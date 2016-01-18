@@ -1,0 +1,150 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 14, 2010
+File Date =  12/16/10 08:46:40
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ HJ H7 H6 DA DK D8 C6 
+Current Hand(West) = SK S8 HT DJ D9 D7 D2 C8 
+Current Hand(North) = SJ S4 S3 HA HK HQ H4 DQ 
+Current Hand(East) = ST S9 S7 H9 H8 H5 H3 D5 
+Original Hand(South) = SA SQ HJ H7 H6 DA DK D8 D3 CA CQ C9 C6 
+Original Hand(West) = SK S8 S5 HT DJ D9 D7 D6 D2 C8 C7 C5 C4 
+Original Hand(North) = SJ S4 S3 S2 HA HK HQ H4 H2 DQ DT CJ CT 
+Original Hand(East) = ST S9 S7 S6 H9 H8 H5 H3 D5 D4 CK C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 2NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West D3 D6 DT D4 North
+GameTrick #2 = North CA C4 CJ CK South
+GameTrick #3 = South SA S5 S2 S6 South
+GameTrick #4 = South CQ C5 CT C2 South
+GameTrick #5 = South C9 C7 H2 C3 South
+GameTrick #6 = South -- -- -- -- South
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South Plays the DA taking dummy's DQ ??? Should lead a low Diamond
+>>>>>>>>>>>> SOUTH<<<<<<<<<
+PLNADJ: Reviewing play plan for round 6...
+PLRV11: We have 7 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the Ace of Diamonds in hand to try and drop the opponents' Jack.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV30: We can play the Queen of Spades to force out the opponents' King.
+PLNDEV31: This will promote the Jack and four to winners.
+PLNDEV91: One forcing play has been found, which will promote 2 lower cards.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Spades, plus 3 in Diamonds, plus 4 in Hearts.
+PLNCSH30: A total of 9 maximum cashing tricks are immediately available. 2 require cards to have been played
+PLYSCN: Reviewing available plays...
+PLTSTB: Checking logic of selected plays against bidding history...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNNT90A: We have 13 plays and approx. 12+ possible tricks including 7 sure tricks (vs. 12 required) accounted for in the plan.
+PLNPRI: The Spade suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the DA from hand to try and drop the DJ.
+ Play 2: Play the Queen of Spades from hand to force out the opponents' King.
+ Play 3: Cash the Jack of Spades in dummy. <Requires ...>
+ Play 4: Cash the Four of Spades in dummy. <Requires ...>
+ Play 5: Cash the Queen of Spades in hand. <Requires ...>
+ Play 6: Cash the Jack of Spades in dummy. <Requires ...>
+ Play 7: Cash the Ace of Diamonds in hand.
+ Play 8: Cash the King of Diamonds in hand.
+ Play 9: Cash the Queen of Diamonds in dummy.
+ Play 10: Cash the Ace of Hearts in dummy.
+ Play 11: Cash the King of Hearts in dummy.
+ Play 12: Cash the Queen of Hearts in dummy.
+ Play 13: Cash the Jack of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ1: Since we have enough cashing tricks (8) to fulfill the contract, we can just proceed with the cashing.
+PLSEQ3: Since we have enough sure tricks (7) to fulfill the contract, we moved 7 cash plays forward
+PINTLV: Interleaving plays...
+PINTLV10: Postpone the [HA Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HK Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [HQ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [SJ Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PINTLV10: Postpone the [S4 Cash] so the suit winners in hand are cashed first, to avoid possible stranding.
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Ace of Diamonds in hand.
+ Play 2: Cash the King of Diamonds in hand.
+ Play 3: Cash the Queen of Diamonds in dummy.
+ Play 4: Cash the Jack of Hearts in hand.
+ Play 5: Cash the Queen of Hearts in dummy.
+ Play 6: Cash the King of Hearts in dummy.
+ Play 7: Cash the Ace of Hearts in dummy.
+ Play 8: Play the DA from hand to try and drop the DJ.
+ Play 9: Play the Queen of Spades from hand to force out the opponents' King.
+ Play 10: Cash the Queen of Spades in hand.
+ Play 11: Cash the Four of Spades in dummy.
+ Play 12: Cash the Jack of Spades in dummy.
+ Play 13: Cash the Jack of Spades in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH10: Cash the DA from hand.   <<<<<<<<<< NO, dummy has singleton DQ !!!!!!!!
+PLAY: We lead the DA.
+PLAY: West plays the D2.
+PLAY: North plays the DQ.
+PLAY: East plays the D5.
+
+
+
+
+

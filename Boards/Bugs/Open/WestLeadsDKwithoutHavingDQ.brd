@@ -1,0 +1,168 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 15, 2010
+File Date =  09/20/10 20:16:59
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HA H5 H3 DQ DT D7 C3 C2 
+Current Hand(West) = ST HT H6 DJ D8 CT C7 C6 
+Current Hand(North) = SQ SJ S8 S7 HJ H8 H7 CK 
+Current Hand(East) = HK HQ H9 H2 D3 CQ C9 C8 
+Original Hand(South) = SA SK HA H5 H3 DA DQ DT D7 D6 CJ C3 C2 
+Original Hand(West) = ST S9 S3 HT H6 DK DJ D8 D5 CA CT C7 C6 
+Original Hand(North) = SQ SJ S8 S7 S6 S5 HJ H8 H7 H4 D9 CK C4 
+Original Hand(East) = S4 S2 HK HQ H9 H2 D4 D3 D2 CQ C9 C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = Pass Pass Pass 1D Pass 1S Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West D6 D5 D9 D2 North
+GameTrick #2 = North SK S3 S5 S2 South
+GameTrick #3 = South SA S9 S6 S4 South
+GameTrick #4 = South CJ CA C4 C5 West
+GameTrick #5 = West DA DK H4 D4 South
+GameTrick #6 = South -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads the DK which loses????
+>>>>>>> WEST <<<<<<<<
+=====================================
+Received hand:
+  S:T93  H:T6  D:KJ85  C:AT76
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  2 Likely Winners (-1/0/2/1)
+  11 Likely Losers (4/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Diamonds.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 1D.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 1S.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as West against a contract of 2 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D5.
+PLAY: We lead the D5.
+PLAY: North plays the D9.
+RCP20: Dummy is now out of Diamonds.
+RCP25: Dummy is shown to be void in Diamonds.
+PLAY: East plays the D2.
+PLYSIG1: Partner discarded low with the two, so consider it a signal that he dislikes the suit.
+PLAY: South plays the D6.
+PLAY: North wins the round.
+--------
+PLAY: North leads the S5.
+PLAY: East plays the S2.
+PLAY: South plays the SK.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's King, so discard the S3.
+PLAY: We play the S3.
+PLAY: South wins the round.
+--------
+PLAY: South leads the SA.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+PLAY: We play the S9.
+PLAY: North plays the S6.
+PLAY: East plays the S4.
+PLAY: South wins the round.
+--------
+PLAY: South leads the CJ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the Jack), so cover it with our Ace.
+PLAY: We play the CA.
+PLAY: North plays the C4.
+PLAY: East plays the C5.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLD76: Continue developing our Diamond suit by playing the DK.  <<<<<<<<<<<<<<< NO <<<<<<<<
+PLAY: We lead the DK.
+PLAY: North plays the H4.
+PLAY: East plays the D4.
+PLAY: South plays the DA.
+PLAY: South wins the round.
+--------
+
+

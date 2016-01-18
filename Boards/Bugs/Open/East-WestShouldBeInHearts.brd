@@ -1,0 +1,243 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 12, 2010
+File Date =  09/13/10 18:10:48
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK SJ ST S7 S6 S4 HQ DK D7 CQ C5 C4 
+Current Hand(West) = S8 S5 HT H9 H4 H2 DA DQ D4 CA CT C7 C3 
+Current Hand(North) = S2 H7 H6 DJ DT D9 D8 D6 D5 D3 CJ C2 
+Current Hand(East) = S3 HA HK HJ H8 H5 H3 D2 CK C9 C8 C6 
+Original Hand(South) = SA SK SJ ST S7 S6 S4 HQ DK D7 CQ C5 C4 
+Original Hand(West) = S8 S5 HT H9 H4 H2 DA DQ D4 CA CT C7 C3 
+Original Hand(North) = S9 S2 H7 H6 DJ DT D9 D8 D6 D5 D3 CJ C2 
+Original Hand(East) = SQ S3 HA HK HJ H8 H5 H3 D2 CK C9 C8 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = West
+Bidding History = Pass Pass 1H 1S 2C Pass 5C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- S9 SQ ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+E-W should be in Heart contract NOT Clubs???
+>>>>>>>>>>> EAST<<<<<<<<<<<<<
+S:Q3  H:AKJ853  D:2  C:K986
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 13.0.
+  QT's = 2.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  6 Likely Winners (0/5/0/1)
+  7 Likely Losers (2/1/1/3)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+E01: Have 13.0 points in high cards, so bid 1 Heart.
+We bid 1H.
+--------------------
+South bids 1S.
+--------------------
+West bids 2C.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 2 Clubs.
+B3W00a: Partner has made a 2 over 1 bid following an earlier pass, Clubs over Hearts, which shows 9.0-11.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+3REVAL7: Adding 3 point(s) for the solid Heart suit.
+2REVAL38: (with 4-card Club trump support including a trump honor & a doubleton in Spades,  & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 13.0 to 19.0 points)
+B3W44: With 4-card support for partner's Clubs (holding K986) and 13.0/13.0/19.0 points (for a total of 28.0-30.0 points in the partnership), raise to 5 Clubs.
+We bid 5C.  <<<<<<<<<<<<<<<<<< WHAT HAPPENED to the 6 card Heart Suit???????  Bid 3H ????
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is West; North leads.
+=======================
+
+>>>>>>>>>>>>>>>> WEST<<<<<<<<<<<<<<<
+S:85  H:T942  D:AQ4  C:AT73
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.5,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  1 Likely Winners (0/-1/1/1)
+  12 Likely Losers (2/5/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 1H.
+--------------------
+South bids 1S.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Heart trump support & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 10.0 to 12.0 points)
+F01: Partner, opening in third position, is showing 10.0-21.0 points and 2+ QT's.
+I08: Have 10.0/10.0/12.0 points with 4-card support for partner's Hearts (holding T942), which is too strong for a limit raise, so we have to temporarily shift to Clubs with a bid of 2 Clubs.
+We bid 2C.   <<<<<<<<<<<<<<< Too Strong For limit raise ??????????
+--------------------
+North passes.
+--------------------
+East bids 5C.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 2 Clubs, and 5 Clubs.
+B4N00: Partner made a triple raise of our Club suit to 5 Clubs, showing 17.0-21.0 points and 4+ trumps.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Clubs from 10.0 down to 9.0 points)
+B4N12: With 10.0/10.0/9.0 points in hand, for a total in partnership of 26.0-30.0 points, sign off at partner's bid of 5 Clubs.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 5 Clubs.  Declarer is West; North leads.
+=======================
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:Q853 (Q3/85)
+  H:AKJT985432 (AKJ853/T942)
+  D:AQ42 (2/AQ4)
+  C:AKT98763 (K986/AT73)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 5.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/2/1/2)
+  8 Eventual Winners (0/5/1/2)
+  5 Possible Losers (vs. 2 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 5 Clubs.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:Q853 (Q3/85)
+  H:AKJT985432 (AKJ853/T942)
+  D:AQ42 (2/AQ4)
+  C:AKT98763 (K986/AT73)
+Combined hand evaluation:
+  HCPs = 23.0, Distn pts = 5.0;
+  Total pts = 28.0.
+  QT's = 5.5,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  5 Sure Winners (0/2/1/2)
+  8 Eventual Winners (0/5/1/2)
+  5 Possible Losers (vs. 2 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 11 for the 5C contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ44: We want to eventualy exit with a Heart.
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the Ace in hand.
+ Play 2: Pull a round of trumps with the King in dummy.
+ Play 3: Cash the Nine of Hearts in hand.
+ Play 4: Cash the Ten of Hearts in hand.
+ Play 5: Cash the Jack of Hearts in dummy.
+ Play 6: Cash the King of Hearts in dummy.
+ Play 7: Cash the Ace of Hearts in dummy.
+ Play 8: Exit with a Heart and throw the opponents into the lead.
+ Play 9: Play the HA from Dummy to try and drop the HQ.
+ Play 10: Ruff a Heart in hand.
+ Play 11: Ruff a Diamond in dummy.
+ Play 12: Ruff a Diamond in dummy.
+ Play 13: Lead a low Spade from hand and finesse the Queen in dummy against South.
+ Play 14: Opportunistically play the Queen from dummy to finesse against North.
+ Play 15: Lead a low Heart from hand to finesse the eight in dummy against South, with the { HA HK  } as possible cover cards.
+ Play 16: Lead a low Heart from hand to finesse the Jack in dummy against South, with the { HA HK  } as possible cover cards.
+ Play 17: Lead the Heart ten from hand and finesses it, with the { HA HK  } in dummy as possible cover cards.
+ Play 18: Lead a low Diamond from dummy to finesse the Queen in hand against North, with the Ace as cover.
+ Play 19: Cash the Ace of Diamonds in hand.
+ Play 20: Cash the Ace of Clubs in hand.
+ Play 21: Cash the King of Clubs in dummy.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the SQ from dummy in second position against South.
+
+
+

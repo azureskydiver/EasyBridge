@@ -1,0 +1,130 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = February 22,  2010
+File Date =  03/05/10 20:04:06
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S2 HA DA D9 D6 D4 CJ CT 
+Current Hand(West) = S8 S6 S4 HT H9 DQ DT D5 
+Current Hand(North) = SA SK SJ ST H6 DK DJ C9 
+Current Hand(East) = SQ S9 S7 S5 D8 D3 D2 C8 
+Original Hand(South) = S2 HA HK H8 DA D9 D6 D4 CJ CT C7 C4 C3 
+Original Hand(West) = S8 S6 S4 S3 HJ HT H9 H7 H5 DQ DT D7 D5 
+Original Hand(North) = SA SK SJ ST H6 H4 H3 DK DJ CA C9 C6 C2 
+Original Hand(East) = SQ S9 S7 S5 HQ H2 D8 D3 D2 CK CQ C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1C Pass 1S Pass 1NT Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West HK HJ H3 H2 South
+GameTrick #2 = South C3 D7 CA C5 North
+GameTrick #3 = North C4 H5 C2 CQ East
+GameTrick #4 = East H8 H7 H4 HQ East
+GameTrick #5 = East C7 S3 C6 CK East
+GameTrick #6 = East -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East led Diamond into dummy's tenace:  KJ
+>>>>>>> EAST<<<<<<<<<<
+S:Q975  H:Q2  D:832  C:KQ85
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  5 Likely Winners (2/0/0/3)
+  8 Likely Losers (2/2/3/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South bids 1C.
+--------------------
+West passes.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 2-level.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 1NT.
+--------------------
+West passes.
+--------------------
+North bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDF36A: Partner's card is same as our's so play H2.
+RCP5A: West is now known to have started with 0 Clubs.
+PLAYB48: We can't beat North's Ace, so discard the C5.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G3: We can beat top outstanding card and still guard dummy so play Queen.
+PLYLD76: Continue developing partner's Heart suit by playing the HQ.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+PLCSW9: With no other good options, cash a winner in the Club suit, the King
+PLYLD84: With no other obvious plays, cash a winner with the CK.
+PLYLDB: With no other clear plays available, lead a card from the unbid Diamond suit.  <<<<<<<<<<< NO dummy  has tenace: KJ
+
+

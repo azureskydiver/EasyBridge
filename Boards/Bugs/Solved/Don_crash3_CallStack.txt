@@ -1,0 +1,24 @@
+>	EasyBridge.exe!CEasyBView::ClearTable()  Line 730 + 0x1d bytes	C++
+ 	EasyBridge.exe!CEasyBView::OnLButtonDown(unsigned int nFlags=1, CPoint point={...})  Line 1196	C++
+ 	mfc80d.dll!CWnd::OnWndMsg(unsigned int message=513, unsigned int wParam=1, long lParam=14221600, long * pResult=0x0012fc4c)  Line 2169	C++
+ 	mfc80d.dll!CWnd::WindowProc(unsigned int message=513, unsigned int wParam=1, long lParam=14221600)  Line 1741 + 0x20 bytes	C++
+ 	mfc80d.dll!AfxCallWndProc(CWnd * pWnd=0x0208a110, HWND__ * hWnd=0x00030966, unsigned int nMsg=513, unsigned int wParam=1, long lParam=14221600)  Line 240 + 0x1c bytes	C++
+ 	mfc80d.dll!AfxWndProc(HWND__ * hWnd=0x00030966, unsigned int nMsg=513, unsigned int wParam=1, long lParam=14221600)  Line 389	C++
+ 	mfc80d.dll!AfxWndProcBase(HWND__ * hWnd=0x00030966, unsigned int nMsg=513, unsigned int wParam=1, long lParam=14221600)  Line 411 + 0x15 bytes	C++
+ 	user32.dll!77b8c4e7() 	
+ 	[Frames below may be incorrect and/or missing, no symbols loaded for user32.dll]	
+ 	user32.dll!77b8c5e7() 	
+ 	user32.dll!77b8c590() 	
+ 	user32.dll!77b8cc19() 	
+ 	user32.dll!77b82e41() 	
+ 	mfc80d.dll!AfxInternalPumpMessage()  Line 183	C++
+ 	mfc80d.dll!CWinThread::PumpMessage()  Line 896	C++
+ 	mfc80d.dll!CWinThread::Run()  Line 625 + 0xd bytes	C++
+ 	mfc80d.dll!CWinApp::Run()  Line 924	C++
+ 	mfc80d.dll!AfxWinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x002237e0, int nCmdShow=1)  Line 47 + 0xd bytes	C++
+ 	EasyBridge.exe!WinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x002237e0, int nCmdShow=1)  Line 33	C++
+ 	EasyBridge.exe!__tmainCRTStartup()  Line 589 + 0x35 bytes	C
+ 	EasyBridge.exe!WinMainCRTStartup()  Line 414	C
+ 	kernel32.dll!7757ee1c() 	
+ 	ntdll.dll!77ca37eb() 	
+ 	ntdll.dll!77ca37be() 	

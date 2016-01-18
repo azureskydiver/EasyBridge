@@ -1,0 +1,197 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 18, 2011
+File Date =  01/30/11 19:26:33
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SQ CA C4 C3 
+Current Hand(West) = SK SJ S9 CK C5 
+Current Hand(North) = S5 DQ D8 CT C7 
+Current Hand(East) = DJ DT CQ CJ C8 
+Original Hand(South) = SA SQ S3 HA HQ H9 H7 H4 DA D2 CA C4 C3 
+Original Hand(West) = SK SJ S9 S8 S6 H8 H6 H5 H2 DK D6 CK C5 
+Original Hand(North) = ST S5 HJ HT H3 DQ D8 D7 D4 CT C7 C6 C2 
+Original Hand(East) = S7 S4 S2 HK DJ DT D9 D5 D3 CQ CJ C9 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = South
+Bidding History = Pass Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West S3 S8 ST S4 North
+GameTrick #2 = North HA H2 HJ HK South
+GameTrick #3 = South H4 H5 HT D5 North
+GameTrick #4 = North HQ H6 H3 C9 South
+GameTrick #5 = South H9 H8 C2 S2 South
+GameTrick #6 = South H7 S6 C6 S7 South
+GameTrick #7 = South DA D6 D4 D3 South
+GameTrick #8 = South D2 DK D7 D9 West
+GameTrick #9 = West -- -- -- -- South
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 30
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = "  40		1 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West's SK lead gives South a trick
+>>>>>>>>>> WEST<<<<<<<<<
+=====================================
+Received hand:
+  S:KJ986  H:8652  D:K6  C:K5
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 9.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  4 Likely Winners (3/-1/1/1)
+  9 Likely Losers (2/5/1/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 2NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 9.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLAY1: Leading card, using default player logic.
+PLYLEAD: Making opening lead as West against a contract of 2 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Spades) -- play the S8.
+PLAY: We lead the S8.
+PLAY: North plays the ST.
+PLAY: East plays the S4.
+PLAY: South plays the S3.
+PLAY: North wins the round.
+--------
+PLAY: North leads the HJ.
+PLAY: East plays the HK.
+PLAY: South plays the HA.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's Ace, so discard the H2.
+PLAY: We play the H2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the five.
+PLAY: We play the H5.
+PLAY: North plays the HT.
+PLAY: East plays the D5.
+RCP10: East shows out of Hearts.
+RCP5A: East is now known to have started with 1 Heart.
+PLAY: North wins the round.
+--------
+PLAY: North leads the H3.
+RCP20: Dummy is now out of Hearts.
+PLAY: East plays the C9.
+PLAY: South plays the HQ.
+PLAY4: Playing fourth, using default player logic.
+PLAYB48: We can't beat South's Queen, so discard the H6.
+PLAY: We play the H6.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the eight.
+PLAY: We play the H8.
+PLAY: North plays the C2.
+PLAY: East plays the S2.
+PLAY: South wins the round.
+--------
+PLAY: South leads the H7.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the S6.
+PLAY: We play the S6.
+RCP10: West shows out of Hearts.
+RCP5A: West is now known to have started with 4 Hearts.
+PLAY: North plays the C6.
+PLAY: East plays the S7.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DA.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the six.
+PLAY: We play the D6.
+PLAY: North plays the D4.
+PLAY: East plays the D3.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the King.
+PLAY: We play the DK.
+PLAY: North plays the D7.
+PLAY: East plays the D9.
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLD76: Continue developing our Spade suit by playing the SK.   <<<<<<<<<<<<<<<<< Gives South SQ
+PLAY: We lead the SK.
+PLAY: North plays the S5.
+RCP20: Dummy is now out of Spades.
+PLAY: East plays the C8.
+RCP10: East shows out of Spades.
+RCP1A: East is now known to have started with  1 Hearts and 3 Spades.
+PLAY: South plays the SA.
+PLAY: South wins the round.
+
+

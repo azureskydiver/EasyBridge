@@ -1,0 +1,188 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 21, 2010
+File Date =  11/22/10 17:39:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S7 S5 HT H9 H4 DJ DT D2 CK CQ CJ C2 
+Current Hand(West) = SK SJ S3 HK HQ H6 DK DQ D8 D3 CA C7 C6 
+Current Hand(North) = SA ST S8 S6 H3 H2 DA D4 C9 C5 C4 C3 
+Current Hand(East) = S9 S4 S2 HA HJ H8 H7 H5 D9 D7 D6 D5 
+Original Hand(South) = SQ S7 S5 HT H9 H4 DJ DT D2 CK CQ CJ C2 
+Original Hand(West) = SK SJ S3 HK HQ H6 DK DQ D8 D3 CA C7 C6 
+Original Hand(North) = SA ST S8 S6 H3 H2 DA D4 CT C9 C5 C4 C3 
+Original Hand(East) = S9 S4 S2 HA HJ H8 H7 H5 D9 D7 D6 D5 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 35
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = 1D Pass 1H Pass 2NT Pass 3D Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- CT C8 ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Should E-W be in 4H vs 5D  Or in 3NT ????
+>>>>>>> WEST<<<<<<<<<<
+Received hand:
+  S:KJ3  H:KQ6  D:KQ83  C:A76
+Hand evaluation:
+  HCPs = 18.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 18.0.
+  QT's = 3.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (1/1/2/0)
+  9 Likely Losers (2/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+Opening bid for team.
+A00: Have 18.0 HCP's with a balanced hand.
+A10: This exceeds the max pts for a 1NT opening (17), but is less than min pts for 2NT (20).  So bid the lowest openable suit of 1 Diamond for now, then try for a jump shift to 2NT later.
+We bid 1D.
+--------------------
+North passes.
+--------------------
+East bids 1H.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 1 Heart.
+B3U00: Partner has made a 1 over 1 bid, Hearts over Diamonds, which shows 5.0-17.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Heart trump support including a trump honor, the hand is revalued for a suit contract as dummy from 18.0 to 19.0 points)
+B3U78: With a balanced hand and approx. 23.0-35.0 HCPs in the partnership, we can bid 2 No Trump.
+We bid 2NT.
+--------------------
+North passes.
+--------------------
+East bids 3D.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BXC00: Partner has returned to our first suit, raising it to 3 Diamonds.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 18.0 down to 16.0 points)
+BXC06: And with 4 trump cards and 21.0-33.0 team points, push on to a minor game at 5 Diamonds.
+We bid 5D.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is West; North leads.
+
+
+>>>>>>>>>>>> EAST<<<<<<<<<<<<<<
+Received hand:
+  S:942  H:AJ875  D:9765  C:8
+Hand evaluation:
+  HCPs = 5.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  1 Likely Winners (-1/3/-1/0)
+  12 Likely Losers (4/2/5/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+West bids 1D.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL38: (with 4-card Diamond trump support & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 5.0 to 9.0 points)
+F00: Partner is showing 12.0-20.0 points and 2+ QT's.
+F01a: Have 5.0/5.0/9.0 pts with an available 5-card major suit in Hearts (AJ875), so bid 1 Heart over partner's minor suit 1 Diamond bid.
+We bid 1H.
+--------------------
+South passes.
+--------------------
+West bids 2NT.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Heart, and 2 No Trump.
+NT42: Partner's jump shift from our 1 Heart bid to 2 No Trump indicates a balanced hand and 17.0+ points, for a total of 22.0+ points in the partnership, and is forcing to game.
+YN1: With 22.0-24.0 points in the partnership and 4-card support for partner's  Diamond suit (holding 9765), raise to 3 Diamonds.
+We bid 3D.
+--------------------
+South passes.
+--------------------
+West bids 5D.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 5.
+3REVAL8: Since the trump suit is only topped by a nine, deduct 4 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 5.0 down to 1.0 points)
+BXL05: Partner has bid yet another suit, Diamonds.
+BXL25: Partner jump shifted his Diamond suit at 5 Diamonds, indicating 11-18 pts.
+BXL36: Without the strength to push further at 18.0-20.0 total team points, pass and accept the contract of 5 Diamonds.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is West; North leads.
+=======================
+PLAY: North leads the CT.
+PLAY: We play the C8.
+RCP20: Dummy is now out of Clubs.
+RCP25: Dummy is shown to be void in Clubs.
+
+
+
+
+

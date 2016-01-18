@@ -1,0 +1,242 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 2, 2012
+File Date =  04/04/12 09:37:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S6 S5 HK HJ HT DQ DJ DT D9 D7 D3 CT C7 
+Current Hand(West) = SQ ST S4 S3 HQ H9 H8 DA D8 D4 D2 C9 C8 
+Current Hand(North) = SK S9 S8 S2 H6 H5 H4 H2 D6 CJ C4 C3 
+Current Hand(East) = SA SJ S7 H3 DK D5 CA CK CQ C6 C5 C2 
+Original Hand(South) = S6 S5 HK HJ HT DQ DJ DT D9 D7 D3 CT C7 
+Original Hand(West) = SQ ST S4 S3 HQ H9 H8 DA D8 D4 D2 C9 C8 
+Original Hand(North) = SK S9 S8 S2 H7 H6 H5 H4 H2 D6 CJ C4 C3 
+Original Hand(East) = SA SJ S7 HA H3 DK D5 CA CK CQ C6 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 12
+Declarer = West
+Bidding History = Pass Pass 2C Pass 3NT Pass 4C Pass 4D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- H7 HA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  40		2 overtricks"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Shouldn't stay in new unbit suit, I suspect.. but haven't seen it lay down...
+West analysis
+++++++++++++++++++++
+S:QT43  H:Q98  D:A842  C:98
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  2 Likely Winners (1/0/1/0)
+  11 Likely Losers (3/3/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East bids 2C.
+--------------------
+South passes.
+--------------------
+B00 Responding to partner's opening bid of 2 Clubs.
+Partner made a strong 2-bid, showing a very good suit or two solid suits, 9+ playing tricks, and 4+ quick tricks.  We have to respond positively if interested in slam, or negatively otherwise.
+We have 1.0 QT's, so we can make a positive response.
+But we lack good support for partner's Club suit (holding 98) with a balanced hand, so jump to 3 No Trump.
+We bid 3NT.
+--------------------
+North passes.
+--------------------
+East bids 4C.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 2 Clubs, 3 No Trump, and 4 Clubs.
+Partner made a minimum rebid of his Club suit at 4 Clubs after his initial strong 2 Clubs opening, showing 21.0+ points and 5+ trump cards.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+With 29.0-29.0 points in the partnership, we want to explore slam opportunities.
+Rebid the best suit of Diamonds in a bid of 4 Diamonds.
+We have 8.0/8.0 pts in hand and 29.0-29.0 pts in the partnership, but have no good fit with partner and no rebiddable suit, so we have no choice but to shift to yet another suit.
+We bid 4D.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Diamonds.  Declarer is West; North leads.
+=======================
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AQJT743 (AJ7/QT43)
+  H:AQ983 (A3/Q98)
+  D:AK8542 (K5/A842)
+  C:AKQ98652 (AKQ652/98)
+Combined hand evaluation:
+  HCPs = 29.0, Distn pts = 4.0;
+  Total pts = 33.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (1/1/2/3)
+  9 Eventual Winners (3/1/2/3)
+  4 Possible Losers (vs. 3 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 4 Diamonds.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AQJT743 (AJ7/QT43)
+  H:AQ983 (A3/Q98)
+  D:AK8542 (K5/A842)
+  C:AKQ98652 (AKQ652/98)
+Combined hand evaluation:
+  HCPs = 29.0, Distn pts = 4.0;
+  Total pts = 33.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  7 Sure Winners (1/1/2/3)
+  9 Eventual Winners (3/1/2/3)
+  4 Possible Losers (vs. 3 allowable)
+We have only 9 sure tricks against a requirement of 10 for the 4D contract.
+The Club suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Club suit first, so move its plays up to the front if possible.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the King in dummy.
+ Play 2: Play the CA from Dummy to try and drop one or more of the { CJ CT  }.
+ Play 3: Play the CK from Dummy to try and drop one or more of the { CJ CT  }.
+ Play 4: Ruff a Club in hand.
+ Play 5: Ruff a Club in hand.
+ Play 6: Cash the Ace of Clubs in dummy.
+ Play 7: Cash the King of Clubs in dummy.
+ Play 8: Cash the Queen of Clubs in dummy.
+ Play 9: Ruff a Spade in dummy.
+ Play 10: Ruff a Heart in dummy.
+ Play 11: Lead a low Spade from hand to finesse the Jack in dummy against South, with the Ace as cover.
+ Play 12: Lead the Spade Queen from hand and finesse it, with the Ace in dummy as cover.
+ Play 13: Play the Queen of Spades from hand to force out the opponents' King.
+ Play 14: Cash the Ace of Hearts in dummy.
+ Play 15: Cash the Ace of Spades in dummy.
+ Play 16: Cash the King of Diamonds in dummy.
+ Play 17: Cash the Ace of Diamonds in hand.
+The planning is complete.
+---------------------------
+The opponents led a Heart, so cash the Ace now.
+
+++++++++++++++++++++++++
+East Analysis
+S:AJ7  H:A3  D:K5  C:AKQ652
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 22.0.
+  QT's = 4.5,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  9 Likely Winners (1/1/1/6)
+  4 Likely Losers (2/1/1/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Clubs.
+Preferred suit is Clubs.
+====================
+West passes.
+--------------------
+North passes.
+--------------------
+Opening bid for team.
+Have a solid Club suit with 9 playing tricks and 4.5 quick tricks, so bid a strong 2 Clubs.
+We bid 2C.
+--------------------
+South passes.
+--------------------
+West bids 3NT.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 2 Clubs and partner's response of 3 No Trump.
+After our strong 2 Clubs opening bid, partner's 3 No Trump bid was a positive response, indicating 1+ Quick Tricks.
+But we don't like partner's No Trump suit (holding ), so bid our own Clubs suit at 4 Clubs.
+We bid 4C.
+--------------------
+South passes.
+--------------------
+West bids 4D.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+With no agreement in suits, 24.0-40.0 / 25.0-41.0 partnership points, and no good alternatives, pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Diamonds.  Declarer is West; North leads.
+=======================
+
+

@@ -1,0 +1,144 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  01/04/15 08:40:21
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = DA D5 D2 C7 C6 
+Current Hand(West) = S6 DK D9 D8 
+Current Hand(North) = SQ H9 H8 D4 
+Current Hand(East) = HQ HJ DQ DJ 
+Original Hand(South) = SA SK HA HK DA D5 D2 CA CK C7 C6 C5 C2 
+Original Hand(West) = S7 S6 S5 S3 HT H3 DK D9 D8 CJ C9 C8 C4 
+Original Hand(North) = SQ SJ ST S9 S2 H9 H8 H5 H4 H2 D4 D3 C3 
+Original Hand(East) = S8 S4 HQ HJ H7 H6 DQ DJ DT D7 D6 CQ CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 12
+Declarer = South
+Bidding History = 2C Pass 2D Pass 3C Pass 3D Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West CK C4 C3 CQ South
+GameTrick #2 = South SK S3 S2 S4 South
+GameTrick #3 = South SA S5 S9 S8 South
+GameTrick #4 = South HA H3 H2 H6 South
+GameTrick #5 = South HK HT H4 H7 South
+GameTrick #6 = South CA C8 D3 CT South
+GameTrick #7 = South C2 C9 H5 D6 West
+GameTrick #8 = West C5 CJ ST D7 West
+GameTrick #9 = West -- S7 SJ DT ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should not lead Spades -> gives dummy 2 tricks
+>>>>>>WEST<<<<<<<<<<<<
+S:7653  H:T3  D:K98  C:J984
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0; Total pts = 3.0.
+  QT's = 0.5,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  2 Likely Winners (0/0/1/1)
+  11 Likely Losers (4/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+South bids 2C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 3.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 2D.
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 3D.
+--------------------
+East passes.
+--------------------
+South bids 3NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C4.
+RCP20: Dummy is now out of Clubs.
+RCP25: Dummy is shown to be void in Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the five.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the ten.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the eight.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the nine.
+RCP5A: East is now known to have started with 2 Clubs.
+PLCSW9: With no other good options, cash a winner in the Club suit, the Jack
+PLYLD84: With no other obvious plays, cash a winner with the CJ.
+PLYLDE: With no other obvious plays, play S7.
+
+

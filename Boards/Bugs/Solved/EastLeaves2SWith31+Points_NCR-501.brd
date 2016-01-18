@@ -1,0 +1,294 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 3, 2011
+File Date =  01/18/11 09:44:30
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S5 HQ DJ DT D6 D5 D4 CA CJ C8 C5 C4 C3 
+Current Hand(West) = SK S3 HA HJ H4 DK DQ D9 D8 D3 CT C9 C6 
+Current Hand(North) = ST S9 S4 HT H9 H8 H7 H5 H3 H2 D7 C7 C2 
+Current Hand(East) = SA SQ SJ S8 S7 S6 S2 HK H6 DA D2 CK CQ 
+Original Hand(South) = S5 HQ DJ DT D6 D5 D4 CA CJ C8 C5 C4 C3 
+Original Hand(West) = SK S3 HA HJ H4 DK DQ D9 D8 D3 CT C9 C6 
+Original Hand(North) = ST S9 S4 HT H9 H8 H7 H5 H3 H2 D7 C7 C2 
+Original Hand(East) = SA SQ SJ S8 S7 S6 S2 HK H6 DA D2 CK CQ 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 10
+Declarer = East
+Bidding History = 1NT Pass 2C Dbl 2D Pass 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East's bidding is unforgivably bad!
+With 19 HCP opposite an opening 1NT he MUST bid to at least game. He ends in 2S and the partnership takes 13 tricks.
+
+East:
+S:AQJ8762  H:K6  D:A2  C:KQ
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 8.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 24.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  9 Likely Winners (6/1/1/1)
+  4 Likely Losers (1/1/1/1)
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+West bids 1NT.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 No Trump.
+Have 19.0/24.0 points and at least one 4+ card major suit, so bid 2 Clubs (Stayman).
+We bid 2C.
+--------------------
+South doubles.
+--------------------
+West bids 2D.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 No Trump, 2 Clubs, and 2 Diamonds.
+Partner replied 2 Diamonds to our Stayman query, indicating no 4-card majors.
+Partner has no 4-card major suit, but with a 7-card Spade suit and an unbalanced hand, invite towards a contract in Spades with a bid of 2 Spades.  <<<<<<<<<<<<<<<<<<<<<< SHOULD bid 3 Spades to show strength !!!!!!!!!
+We bid 2S.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is East; South leads.
+=======================
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJ87632 (K3/AQJ8762)
+  H:AKJ64 (AJ4/K6)
+  D:AKQ9832 (KQ983/A2)
+  C:KQT96 (T96/KQ)
+Combined hand evaluation:
+  HCPs = 32.0, Distn pts = 10.0;
+  Total pts = 42.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (4/3/3/0)
+  14 Eventual Winners (7/3/3/1)
+  0 Possible Loser (vs. 5 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 2 Spades.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJ87632 (K3/AQJ8762)
+  H:AKJ64 (AJ4/K6)
+  D:AKQ9832 (KQ983/A2)
+  C:KQT96 (T96/KQ)
+Combined hand evaluation:
+  HCPs = 32.0, Distn pts = 10.0;
+  Total pts = 42.0.
+  QT's = 7.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  10 Sure Winners (4/3/3/0)
+  14 Eventual Winners (7/3/3/1)
+  0 Possible Loser (vs. 5 allowable)
+We have 14 sure tricks against a requirement of 8 for the 2S contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the CK, DA, DK, DQ, HA, HK, HJ, S8, S7 and S6.
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Pull a round of trumps with the King in dummy.
+ Play 2: Pull a round of trumps with the Ace in hand.
+ Play 3: Pull a round of trumps with the Queen in hand if necessary.
+ Play 4: Pull a round of trumps with the Jack in hand if necessary.
+ Play 5: Ruff a Diamond in hand.
+ Play 6: Ruff a Diamond in hand.
+ Play 7: Ruff a Club in hand.
+ Play 8: Cash the King of Clubs in hand.
+ Play 9: Cash the Ace of Diamonds in hand.
+ Play 10: Cash the King of Diamonds in dummy.
+ Play 11: Cash the Queen of Diamonds in dummy.
+ Play 12: Cash the King of Hearts in hand.
+ Play 13: Cash the Ace of Hearts in dummy.
+ Play 14: Cash the Jack of Hearts in dummy.
+ Play 15: Cash the King of Spades in dummy.
+ Play 16: Cash the Ace of Spades in hand.
+ Play 17: Cash the Queen of Spades in hand.
+ Play 18: Cash the Jack of Spades in hand.
+ Play 19: Cash the Eight of Spades in hand.
+ Play 20: Cash the Seven of Spades in hand.
+ Play 21: Cash the Six of Spades in hand.
+ Play 22: Play the DA from hand to try and drop one or more of the { DJ DT  }.
+ Play 23: Lead a low Club from dummy and finesse the King in hand against South.
+ Play 24: Play the King of Clubs from hand to force out the opponents' Ace.
+ Play 25: Play the King of Clubs from hand to force out the opponents' Jack.
+The planning is complete.
+---------------------------
+Discard a Heart from dummy in anticipation of cashing the King in hand.
+the opponents led a Heart, so see if we can finish up the cash play here.
+Cash the HK from hand.
+Reviewing play plan for round 2...
+We have 9 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by pulling 4 round(s) of trumps, and cashing the CK, CQ, DA, DK, DQ, HA, HJ, S8 and S7.
+Interleaving plays...
+Lead out the SA from hand to pull in a round of trumps.
+Playing card from dummy.
+Discard the S3 on declarer's top Ace of trumps.
+Reviewing play plan for round 3...
+We have 8 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by pulling 2 round(s) of trumps, and cashing the CK, CQ, DA, DK, DQ, HA, HJ and SK.
+Interleaving plays...
+Lead out the S2 from hand to pull in a round of trumps.
+South is now known to have started with 1 Spade.
+Playing card from dummy.
+Since LHO may hold the trump ten, we have to play the King from dummy.
+Playing card from dummy.
+Reviewing play plan for round 4...
+We have 7 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the CK, CQ, DA, DK, DQ, HA and HJ.
+Interleaving plays...
+Lead a low Diamond (the three) from dummy in order to cash the Ace in hand.
+Cash the DA from hand.
+Reviewing play plan for round 5...
+We have 6 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+The Club suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the CK, CQ, DK, DQ, HA and HJ.
+Interleaving plays...
+Lead out the SJ from hand to pull in a round of trumps.
+Playing card from dummy.
+Discard the C6 on declarer's top Jack of trumps.
+Reviewing play plan for round 6...
+We have 8 reasonably sure tricks left vs. 3 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by cashing the CK, DK, DQ, HA and HJ.
+Interleaving plays...
+Lead a low Heart (the six) from hand in order to cash the Jack in dummy.
+Playing card from dummy.
+Cash the HJ from dummy.
+Playing card from dummy.
+Reviewing play plan for round 7...
+We have 7 reasonably sure tricks left vs. 2 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by cashing the CK, DK, DQ and HA.
+Interleaving plays...
+Cash the DQ from dummy.
+North is now known to have started with 1 Diamond.
+Our cash of the DQ from dummy is holding, so discard the D2.
+Playing card from dummy.
+Reviewing play plan for round 8...
+We have 6 reasonably sure tricks left vs. 1 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by cashing the CK, DK and HA.
+Interleaving plays...
+Cash the HA from dummy.
+Use this opportunity to discard the CQ.
+Our cash of the HA from dummy is holding, so discard the CQ.
+Playing card from dummy.
+Reviewing play plan for round 9...
+We have 5 sure tricks left, though the contract has been fulfilled.
+The Club suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by cashing the CK and DK.
+Interleaving plays...
+Cash the DK from dummy.
+Use this opportunity to discard the CK.
+Our cash of the DK from dummy is holding, so discard the CK.
+Playing card from dummy.
+Reviewing play plan for round 10...
+We have 4 sure tricks left, though the contract has been fulfilled.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by .
+Interleaving plays...
+Lead a low Club (the nine) from dummy to ruff in hand.
+Ruff in hand with the S6.
+Reviewing play plan for round 11...
+We have 3 sure tricks left, though the contract has been fulfilled.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by .
+Interleaving plays...
+No usable plays found for the current situation.
+With no other obvious plays, play S7.
+Playing card from dummy.
+No usable plays found for the current situation.
+With no cards in the suit led and no trumps, we discard the D8.
+Reviewing play plan for round 12...
+We have 2 sure tricks left, though the contract has been fulfilled.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+Interleaving plays...
+With no other obvious plays, play S8.
+Playing card from dummy.
+With no cards in the suit led and no trumps, we discard the CT.
+Reviewing play plan for round 13...
+We have 2 sure tricks left, though the contract has been fulfilled.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We can fulfill the contract by cashing the D9 and .
+Interleaving plays...
+No usable plays found for the current situation.
+With no other obvious plays, play SQ.
+Playing card from dummy.
+With no cards in the suit led and no trumps, we discard the D9.
+East/West made 5 overtricks.
+
+
+
+

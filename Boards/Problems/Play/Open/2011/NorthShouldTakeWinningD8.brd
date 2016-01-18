@@ -1,0 +1,100 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 3, 2011
+File Date =  07/11/11 20:11:58
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST CT C9 
+Current Hand(West) = SA S5 H7 D5 
+Current Hand(North) = SK S8 HQ D8 
+Current Hand(East) = S9 S3 HK HT 
+Original Hand(South) = SJ ST S7 HJ H5 D9 D7 D4 CJ CT C9 C7 C5 
+Original Hand(West) = SA S5 S4 HA H8 H7 DQ DJ D5 D3 CA CQ C2 
+Original Hand(North) = SK S8 S6 HQ H6 H2 DA DK D8 D6 CK C8 C4 
+Original Hand(East) = SQ S9 S3 S2 HK HT H9 H4 H3 DT D2 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 1
+Contract Modifier = 1
+Dealer = West
+Number of Bids Made = 5
+Declarer = West
+Bidding History = 1NT Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = North
+GameTrick #1 = North D9 DJ D6 D2 West
+GameTrick #2 = West S7 S4 S6 SQ East
+GameTrick #3 = East H5 HA H2 H3 West
+GameTrick #4 = West C5 CA C4 C3 West
+GameTrick #5 = West HJ H8 H6 H4 South
+GameTrick #6 = South D4 DQ DK DT North
+GameTrick #7 = North D7 D3 DA C6 North
+GameTrick #8 = North C7 C2 CK S2 North
+GameTrick #9 = North CJ CQ C8 H9 ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 20
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  20		1 overtrick"
+Game Score Record = " 100		5 Diamonds made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should cash winning Diamond 8
+>>>>>>>> NORTH<<<<<<<<<<
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as North against a contract of 1 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D6.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the six.
+PLAYB48: We can't beat West's Ace, so discard the H2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the four.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the six.
+PLDF38B: Play high to win with the King.
+RCP20: Dummy is now out of Diamonds.
+PLYLDRT8: Return partner's Diamond suit with the Ace.
+PLCSW9: With no other good options, cash a winner in the Club suit, the King
+PLYLD84: With no other obvious plays, cash a winner with the CK.
+PLYSIG0: Partner discarded high with the seven, so consider it a suit preference signal.
+PLYLDPRF8: Partner has indicated a preference for the Clubs suit, so lead the C8.   <<<<<<<<<< No Take D8 First <<<<<<<<<<<,
+
+

@@ -1,0 +1,103 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 28,  2010
+File Date =  03/28/10 14:19:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S5 HK D6 
+Current Hand(West) = HA H2 D8 
+Current Hand(North) = SA S9 S8 
+Current Hand(East) = SJ ST S2 
+Original Hand(South) = S5 S3 HK HJ H8 DQ D6 D5 D3 CA CT C8 C6 
+Original Hand(West) = S4 HA HQ H7 H6 H2 D8 D7 D4 D2 C9 C7 C4 
+Original Hand(North) = SA SQ S9 S8 S7 S6 HT H9 DA DK CK CQ C2 
+Original Hand(East) = SK SJ ST S2 H5 H4 H3 DJ DT D9 CJ C5 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 18
+Declarer = South
+Bidding History = 2C Pass 3C Pass 3S Pass 4NT Pass 5H Pass 5NT Pass 6H Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H8 H6 H9 H3 North
+GameTrick #2 = North D3 D2 DK D9 North
+GameTrick #3 = North D5 D4 DA DT North
+GameTrick #4 = North C6 C4 CK C3 North
+GameTrick #5 = North C8 C7 CQ C5 North
+GameTrick #6 = North CA C9 C2 CJ South
+GameTrick #7 = South CT H7 S6 H4 South
+GameTrick #8 = South DQ D7 S7 DJ South
+GameTrick #9 = South S3 S4 SQ SK East
+GameTrick #10 = East HJ HQ HT H5 West
+GameTrick #11 = West -- -- -- -- ????
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West leads H2 instead of HA when only 1 Heart left out
+>>>>>WEST<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:4  H:AQ762  D:8742  C:974
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 5.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  4 Likely Winners (0/4/0/0)
+  9 Likely Losers (1/1/4/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 6 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Hearts) -- play the H6.
+PLYSIG1: Partner discarded low with the three, so consider it a signal that he dislikes the suit.
+PLAYB48: We can't beat North's King, so discard the D2.
+RCP20: Dummy is now out of Diamonds.
+PLAYB48: We can't beat North's Ace, so discard the D4.
+PLAYB48: We can't beat North's King, so discard the C4.
+PLAYB48: We can't beat North's Queen, so discard the C7.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H7.
+PLDF2Ya: We have no Clubs, so discard the H7.
+RCP5A: West is now known to have started with 3 Clubs.
+RCP5A: East is now known to have started with 3 Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A2: Play high card in the suit, the seven to promote neighbor.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the four.
+PLDF38B: Play high to win with the Queen.
+RCP20: Dummy is now out of Hearts.
+PLYLD76: Continue developing our Heart suit by playing the H2.  <<<<<<<<<<<<<<<<<<<<<NO only HK left, lead the HA
+
+

@@ -1,0 +1,127 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = February 25, 2015
+File Date =  03/03/15 13:08:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S4 S2 HQ H7 
+Current Hand(West) = SQ S6 S3 D9 D8 D2 
+Current Hand(North) = S8 S7 HT H4 CK C5 
+Current Hand(East) = SA SK S5 H8 D7 D6 
+Original Hand(South) = SJ ST S4 S2 HA HQ H7 H5 DA DJ CQ C9 C3 
+Original Hand(West) = SQ S6 S3 HK HJ DQ D9 D8 D3 D2 CT C8 C2 
+Original Hand(North) = S8 S7 HT H9 H4 H3 DT D5 CA CK CJ C5 C4 
+Original Hand(East) = SA SK S9 S5 H8 H6 H2 DK D7 D6 D4 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = South
+Bidding History = 1C Pass 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West DA D3 DT DK South
+GameTrick #2 = South CQ C2 C4 C6 South
+GameTrick #3 = South C3 C8 CJ C7 North
+GameTrick #4 = North C9 CT CA S9 North
+GameTrick #5 = North H5 HJ H9 H2 West
+GameTrick #6 = West DJ DQ D5 D4 West
+GameTrick #7 = West HA HK H3 H6 ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 50
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why did West lead HK?
+>>>>>WEST<<<<<<<<<<
+S:Q63  H:KJ  D:Q9832  C:T82
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0; Total pts = 7.0.
+  QT's = 0.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  3 Likely Winners (0/1/2/0)
+  10 Likely Losers (3/1/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+South bids 1C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 7.0 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 3C.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Clubs.
+PLYLD4A: Lead the fourth card from our best suit (Diamonds) -- play the D3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the eight.
+RCP5A: East is now known to have started with 2 Clubs.
+PLYSIG20: Partner discarded high in the Spade suit, indicating a preference for that suit.
+PLAYB41: Play the Jack to win the trick.
+PLCSW9: With no other good options, cash a winner in the Diamond suit, the Queen
+RCP20: Dummy is now out of Diamonds.
+PLYSIG1: Partner discarded low with the four, so consider it a signal that he dislikes the suit.
+PLYLDWN2: We'd like to lead the Diamonds suit, but dummy might ruff.
+PLYLD43: With no good card to lead, lead the HK since dummy is not void in the Heart suit (we don't know about declarer, though).
+PLYSIG1: Partner discarded low with the six, so consider it a signal that he dislikes the suit.
+
+

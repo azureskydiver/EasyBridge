@@ -1,0 +1,120 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 11,  2009
+File Date =  11/11/09 14:23:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = H9 C5 
+Current Hand(West) = DQ DT 
+Current Hand(North) = DJ D9 
+Current Hand(East) = DK CK 
+Original Hand(South) = SA SK S4 HK HQ HJ HT H9 H2 CA CJ C9 C5 
+Original Hand(West) = SQ S8 S6 S5 S2 H8 H7 DQ DT D8 D7 D6 CQ 
+Original Hand(North) = SJ S3 HA H4 DA DJ D9 D4 D2 C7 C4 C3 C2 
+Original Hand(East) = ST S9 S7 H6 H5 H3 DK D5 D3 CK CT C8 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 16
+Declarer = North
+Bidding History = Pass Pass 2C Pass 3D Pass 3H Pass 4NT Pass 5H Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 11
+# of Tricks won in Game by N/S = 10
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East C9 CQ C2 C6 West
+GameTrick #2 = West H2 H8 HA H3 North
+GameTrick #3 = North S4 D6 DA D3 North
+GameTrick #4 = North CJ H7 C3 C8 South
+GameTrick #5 = South CA D7 C4 CT South
+GameTrick #6 = South SA S2 S3 S7 South
+GameTrick #7 = South SK S5 SJ S9 South
+GameTrick #8 = South HK S6 H4 H5 South
+GameTrick #9 = South HQ S8 C7 H6 South
+GameTrick #10 = South HJ D8 D2 ST South
+GameTrick #11 = South HT SQ D4 D5 South
+GameTrick #12 = South -- -- -- -- ????
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 60
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "	  60	3 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East guards suit South is void in.
+>>>>>>> EAST<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:T97  H:653  D:K53  C:KT86
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  3 Likely Winners (0/0/1/2)
+  10 Likely Losers (3/3/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 6 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Clubs) -- play the C6.
+RCP25: Dummy is shown to be void in Diamonds. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the three.
+PLDF48: We can't beat North's Ace, so discard the H3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the eight.
+RCP5A: West is now known to have started with 1 Club.
+PLAYB48: We can't beat South's Ace, so discard the CT.
+PLAYB48: We can't beat South's Ace, so discard the S7.
+RCP20: Dummy is now out of Spades.
+PLAYB48: We can't beat South's King, so discard the S9.
+PLAYB48: We can't beat South's King, so discard the H5.
+RCP5A: North is now known to have started with 2 Hearts.
+PLAYB48: We can't beat South's Queen, so discard the H6.
+PLAYB56: With no cards in the suit led and no trumps, we discard the ST.
+RCP5A: East is now known to have started with 3 Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D5.
+RCP20: Dummy is now out of Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the CK.   <<<<<<<<<<< NO, save, South is void in Diamonds
+
+

@@ -1,0 +1,149 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = April 23, 2014
+File Date =  04/28/14 14:34:37
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S4 HK HQ H9 H6 H5 DA D9 D5 D3 CQ CJ 
+Current Hand(West) = S9 HA H8 H7 H3 DQ D8 C8 C4 C3 C2 
+Current Hand(North) = ST S8 S6 S3 S2 H4 CK CT C9 C7 C6 
+Current Hand(East) = SA SK SQ SJ S7 DK DJ DT D4 CA C5 
+Original Hand(South) = S4 HK HQ H9 H6 H5 H2 DA D9 D5 D3 CQ CJ 
+Original Hand(West) = S9 HA HJ H8 H7 H3 DQ D8 D2 C8 C4 C3 C2 
+Original Hand(North) = ST S8 S6 S3 S2 HT H4 D6 CK CT C9 C7 C6 
+Original Hand(East) = SA SK SQ SJ S7 S5 DK DJ DT D7 D4 CA C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = Pass 2C 2H 3H Pass 3S Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = North
+GameTrick #1 = North H2 HJ HT S5 West
+GameTrick #2 = West -- D2 D6 D7 ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  90		3 overtricks"
+Game Score Record = "  60		2 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should play higher to force Ace
+>>>>WEST<<<<<<<
+Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:AKQJ975 (AKQJ75/9)
+  H:AJ873 (/AJ873)
+  D:KQJT8742 (KJT74/Q82)
+  C:A85432 (A5/8432)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 7.0;   Total pts = 32.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (4/1/0/1)
+  9 Eventual Winners (4/1/3/1)
+  4 Possible Losers (vs. 4 allowable)
+Dummy's hand has been laid down; now planning the play with a contract of 3 No Trump.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:AKQJ975 (AKQJ75/9)
+  H:AJ873 (/AJ873)
+  D:KQJT8742 (KJT74/Q82)
+  C:A85432 (A5/8432)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 7.0;   Total pts = 32.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  6 Sure Winners (4/1/0/1)
+  9 Eventual Winners (4/1/3/1)
+  4 Possible Losers (vs. 4 allowable)
+We have 9 sure tricks against a requirement of 9 for the 3NT contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+Interleaving plays...
+The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the Jack from hand to finesse against South.
+ Play 2: Cash the Ace of Clubs in dummy.
+ Play 3: Play the SA from Dummy to try and drop the ST.
+ Play 4: Cash the Ace of Spades in dummy.
+ Play 5: Play the King of Diamonds from dummy to force out the opponents' Ace.
+ Play 6: Play the King of Diamonds from dummy to force out the opponents' Nine.
+ Play 7: Cash the Eight of Diamonds in hand.
+ Play 8: Cash the Ten of Diamonds in dummy.
+ Play 9: Cash the Jack of Diamonds in dummy.
+ Play 10: Lead a low Diamond from hand and finesse the King in dummy against South.
+ Play 11: Lead a low Diamond from dummy and finesse the Queen in hand against North.
+ Play 12: Cash the Ace of Hearts in hand.
+ Play 13: Cash the Ace of Spades in dummy.
+ Play 14: Cash the King of Spades in dummy.
+ Play 15: Cash the Queen of Spades in dummy.
+ Play 16: Cash the Jack of Spades in dummy.
+The planning is complete.
+---------------------------
+Sluff the S5 from dummy in second position to prep the HJ play.
+The finesse worked; win with the HJ.
+Reviewing play plan for round 2...
+We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+The Diamond suit looks the most promising for further development.
+Checking play sequencing...
+We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+Interleaving plays...
+Cash the HA from hand.
+Playing card from dummy.
+Our cash of the HA from hand is holding, so discard the S7.
+Playing card from dummy.
+Our cash of the D2 from hand is not holding, so cover with the D7.   <<<<<<<<<<<<NO Higher Have KQJT9
+
+

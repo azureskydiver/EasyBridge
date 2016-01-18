@@ -1,0 +1,168 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = February 25, 2015
+File Date =  03/03/15 08:22:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S9 DA DQ DJ 
+Current Hand(West) = SA S6 S5 HK HJ 
+Current Hand(North) = S8 S3 DT CQ CJ 
+Current Hand(East) = SK SQ SJ S7 HQ 
+Original Hand(South) = ST S9 S4 H8 H5 H4 DA DQ DJ D7 D6 D5 D3 
+Original Hand(West) = SA S6 S5 HA HK HJ HT H3 D2 CK C7 C5 C2 
+Original Hand(North) = S8 S3 H6 DK DT D9 D8 CA CQ CJ CT C8 C4 
+Original Hand(East) = SK SQ SJ S7 S2 HQ H9 H7 H2 D4 C9 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = 1H 2C 3H 4D 4H 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West H4 HA H6 H2 West
+GameTrick #2 = West D3 D2 DK D4 North
+GameTrick #3 = North D5 C2 C4 C3 South
+GameTrick #4 = South H5 H3 D8 H7 North
+GameTrick #5 = North D6 C5 C8 C6 South
+GameTrick #6 = South H8 HT D9 H9 North
+GameTrick #7 = North S4 C7 CA C9 North
+GameTrick #8 = North D7 CK CT S2 South
+GameTrick #9 = South -- -- -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 40
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  60		3 overtricks"
+Game Score Record = "  40		2 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should Ruff high to save entry to North
+>>>>SOUTH<<
+Combined hand (Dummy/Hand):
+  S:T9843 (83/T94)
+  H:854 (/854)
+  D:AKQJT987653 (KT98/AQJ7653)
+  C:AQJT84 (AQJT84/)
+Combined hand evaluation:
+  HCPs = 17.0, Distn pts = 10.0;   Total pts = 27.0.
+  QT's = 3.5,
+  Stoppers in: D, C
+  Probable Stoppers in:
+  8 Sure Winners (0/0/7/1)
+  10 Eventual Winners (0/0/7/3)
+  0 Possible Loser (vs. 2 allowable)
+PLYE48: We can't beat West's Ace, so discard the H4.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=11 vs SureTricks=8 vs NumWinners=11, m_numTricksShort=3
+PLRV10: We have only 8 reasonably sure tricks left vs. 11 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH55: The opponents led a Diamond, so cash the King now.
+PLCSH80: the opponents led a Diamond, so see if we can finish up the cash play here.
+PLCSH88b: Our cash of the DK from dummy is holding, so discard the D3.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=10 vs SureTricks=7 vs NumWinners=10, m_numTricksShort=3
+PLRV10: We have only 7 reasonably sure tricks left vs. 10 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF14: Lead a low Club (the four) from dummy to ruff in hand.
+PLRUF60: Ruff in hand with the D5.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=9 vs SureTricks=6 vs NumWinners=9, m_numTricksShort=3
+PLRV10: We have only 6 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF04: Lead a low Heart (the five) from hand to ruff in dummy.
+PLDM: Playing card from dummy.
+PLRUF74: Ruff in dummy with the D8.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 5...
+DEBUG1: NumMaxWinners=9 vs SureTricks=6 vs NumWinners=9, m_numTricksShort=2
+PLRV10: We have only 6 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF14: Lead a low Club (the eight) from dummy to ruff in hand.
+PLRUF60: Ruff in hand with the D6.
+PLNADJ: Reviewing play plan for round 6...
+DEBUG1: NumMaxWinners=7 vs SureTricks=5 vs NumWinners=7, m_numTricksShort=2
+PLRV10: We have only 5 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF04: Lead a low Heart (the eight) from hand to ruff in dummy.
+PLDM: Playing card from dummy.
+PLRUF74: Ruff in dummy with the D9.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+DEBUG1: NumMaxWinners=7 vs SureTricks=5 vs NumWinners=7, m_numTricksShort=1
+PLRV10: We have only 5 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLCSH30: Cash the CA from dummy.
+PLCSH72: Our cash of the CA from dummy is holding, so discard the S4.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 8...
+DEBUG1: NumMaxWinners=6 vs SureTricks=4 vs NumWinners=6, m_numTricksShort=1
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNPRI: The Club suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRUF14: Lead a low Club (the ten) from dummy to ruff in hand.
+RCP5A: East is now known to have started with 3 Clubs.
+PLRUF60: Ruff in hand with the D7.   <<<<<<<<<<<NO D7 is entry to North
+
+

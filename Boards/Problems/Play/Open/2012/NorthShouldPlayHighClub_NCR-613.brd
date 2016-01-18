@@ -1,0 +1,151 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 21, 2012
+File Date =  01/25/12 12:15:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S7 HA HK HJ HT H8 DT D5 D3 CT C7 
+Current Hand(West) = SJ S6 S4 S3 HQ H9 H4 H2 DA DQ 
+Current Hand(North) = H7 H5 DJ D9 CA CK C9 C8 C5 C4 C3 
+Current Hand(East) = H6 H3 DK D8 D7 D6 D4 D2 CQ CJ C2 
+Original Hand(South) = SK S7 S5 HA HK HJ HT H8 DT D5 D3 CT C7 
+Original Hand(West) = SA SQ SJ S6 S4 S3 HQ H9 H4 H2 DA DQ C6 
+Original Hand(North) = ST S2 H7 H5 DJ D9 CA CK C9 C8 C5 C4 C3 
+Original Hand(East) = S9 S8 H6 H3 DK D8 D7 D6 D4 D2 CQ CJ C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 5
+Declarer = North
+Bidding History = 1S 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East SK SA S2 S9 West
+GameTrick #2 = West S5 SQ ST S8 West
+GameTrick #3 = West -- C6 -- -- ????
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should pull trumps
+>>>>>>>>>>>>>>NORTH<<<<<<<<<<<<<<<
+PLDM: Playing card from dummy.
+Combined hand (Dummy/Hand):
+  S:KT752 (K75/T2)
+  H:AKJT875 (AKJT8/75)
+  D:JT953 (T53/J9)
+  C:AKT987543 (T7/AK98543)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 7.0;   Total pts = 26.0.
+  QT's = 4.5,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Sure Winners (0/2/0/2)
+  8 Eventual Winners (0/3/0/5)
+  5 Possible Losers (vs. 4 allowable)
+PLN00: Dummy's hand has been laid down; now planning the play with a contract of 3 Clubs.
+---------------------------
+Planning the play...
+Combined hand (Dummy/Hand):
+  S:KT752 (K75/T2)
+  H:AKJT875 (AKJT8/75)
+  D:JT953 (T53/J9)
+  C:AKT987543 (T7/AK98543)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 7.0;   Total pts = 26.0.
+  QT's = 4.5,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Sure Winners (0/2/0/2)
+  8 Eventual Winners (0/3/0/5)
+  5 Possible Losers (vs. 4 allowable)
+PLN10: We have only 8 sure tricks against a requirement of 9 for the 3C contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLN90: The tentative list of available plays is as follows:
+------>
+ Play 1: Opportunistically play the King from dummy to finesse against East.
+ Play 2: Pull a round of trumps with the Ace in hand.
+ Play 3: Pull a round of trumps with the King in hand.
+ Play 4: Pull a round of trumps with the nine in hand if necessary.
+ Play 5: Ruff a Heart in hand.
+ Play 6: Ruff a Heart in hand.
+ Play 7: Ruff a Spade in hand.
+ Play 8: Ruff a Diamond in hand.
+ Play 9: Lead a low Spade from hand and finesse the King in dummy against West.
+ Play 10: Lead a low Heart from hand to finesse the ten in dummy against West, with the { HA HK  } as possible cover cards.
+ Play 11: Lead a low Heart from hand to finesse the Jack in dummy against West, with the { HA HK  } as possible cover cards.
+ Play 12: Cash the Ace of Hearts in dummy.
+ Play 13: Cash the King of Hearts in dummy.
+ Play 14: Cash the Ace of Clubs in hand.
+ Play 15: Cash the King of Clubs in hand.
+PLN95: The planning is complete.
+---------------------------
+PLAFN54: Opportunistically finesse the SK from dummy in second position against West.
+Combined hand (Dummy/Hand):
+  S:T752 (75/T2)
+  H:AKJT875 (AKJT8/75)
+  D:JT953 (T53/J9)
+  C:AKT987543 (T7/AK98543)
+Combined hand evaluation:
+  HCPs = 16.0, Distn pts = 7.0;   Total pts = 23.0.
+  QT's = 4.0,
+  Stoppers in: H, C
+  Probable Stoppers in:
+  4 Sure Winners (0/2/0/2)
+  8 Eventual Winners (0/3/0/5)
+  5 Possible Losers (vs. 4 allowable)
+PLAFN77: The finesse failed, so abandon the play
+PLYTRY: No usable plays found for the current situation.
+PLYE48: We can't beat West's Ace, so discard the S2.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+
+
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=10 vs SureTricks=4 vs NumWinners=10, m_numTricksShort=5
+PLRV10: We have only 4 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLNPRI: The Heart suit looks the most promising for further development.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Heart suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2A1: We have a winner in the suit in hand, so play the eight.  <<<<<<<<<<<<<<<?????
+
+

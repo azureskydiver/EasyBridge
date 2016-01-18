@@ -1,0 +1,118 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2010
+File Date =  11/05/10 12:07:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 H8 H7 
+Current Hand(West) = SQ S4 CJ 
+Current Hand(North) = S7 HJ D7 
+Current Hand(East) = CK CQ CT 
+Original Hand(South) = SA S9 S6 HA H8 H7 H5 H2 D9 D8 D5 C8 C7 
+Original Hand(West) = SQ S8 S4 S3 H6 H3 DT D6 D4 D3 CJ C3 C2 
+Original Hand(North) = SK S7 S2 HQ HJ H9 H4 DK DQ DJ D7 D2 CA 
+Original Hand(East) = SJ ST S5 HK HT DA CK CQ CT C9 C6 C5 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1D 2C 2H Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 8
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West C7 C2 CA C9 North
+GameTrick #2 = North HA H3 H4 HT South
+GameTrick #3 = South H2 H6 HQ HK East
+GameTrick #4 = East SA S8 S2 S5 South
+GameTrick #5 = South C8 C3 H9 C4 North
+GameTrick #6 = North D5 D3 DK DA East
+GameTrick #7 = East S6 S3 SK ST North
+GameTrick #8 = North D8 D4 DJ SJ North
+GameTrick #9 = North D9 D6 DQ C5 North
+GameTrick #10 = North H5 DT D2 C6 South
+GameTrick #11 = South -- -- -- -- ????
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South should lead Heart to Dummy to sluff losing Spade on Dummy's Diamond
+>>>>>>>>>> SOUTH<<<<<<<<
+
+PLNADJ: Reviewing play plan for round 11...
+PLRV11: We have 3 reasonably sure tricks left vs. 2 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF4: No immediate ruffing tricks are available.
+
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Diamonds.
+
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps and up to 0 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 1 possible plays and approx. 1+ possible tricks including 1 sure tricks (vs. 10 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Cash the Seven of Diamonds in dummy.  <<<<<<<<<<<<<<<<<<<<<<< YES, need to go to dummy
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the Seven of Diamonds in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLCSH22: Oops, we wanted to cash a Diamond in dummy, but we have no Diamonds in hand to lead, so we have to abandon that play.  <<<<<< Use Trumps!!!
+PLYTRY4: Removed plan <D7 Cash> (abandoned)
+PLYTRY: No usable plays found for the current situation.
+PLAY1: Leading card, using default player logic.
+PLYLDB: With no other clear plays available, lead a card from the unbid Spade suit.
+
+

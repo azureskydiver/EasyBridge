@@ -1,0 +1,215 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 17, 2013
+File Date =  08/19/13 10:28:01
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S7 S5 HT H4 H2 DA DJ D9 D2 CK CT C5 
+Current Hand(West) = SJ S6 S3 H5 H3 DK DT D7 D6 D5 D3 C9 C2 
+Current Hand(North) = ST S9 S4 S2 D8 CA CQ CJ C8 C6 C4 C3 
+Current Hand(East) = SA SK SQ HK HQ HJ H9 H7 H6 DQ D4 C7 
+Original Hand(South) = S8 S7 S5 HT H4 H2 DA DJ D9 D2 CK CT C5 
+Original Hand(West) = SJ S6 S3 H5 H3 DK DT D7 D6 D5 D3 C9 C2 
+Original Hand(North) = ST S9 S4 S2 H8 D8 CA CQ CJ C8 C6 C4 C3 
+Original Hand(East) = SA SK SQ HA HK HQ HJ H9 H7 H6 DQ D4 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 13
+Declarer = West
+Bidding History = Pass Pass 3C Dbl Pass 3D Pass 4H Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- H8 HA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should bid 5Hearts
+>>>>EAST<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:AKQ  H:AKQJ976  D:Q4  C:7
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 6.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 23.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  10 Likely Winners (3/7/0/0)
+  3 Likely Losers (0/0/2/1)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+The contract is 5 Diamonds by West.
+North leads.
+====================
+=====================================
+Received hand:
+  S:AKQ  H:AKQJ976  D:Q4  C:7
+Hand evaluation:
+  HCPs = 21.0, Distn pts = 6.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 23.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  10 Likely Winners (3/7/0/0)
+  3 Likely Losers (0/0/2/1)
+Playing five-card majors, Hearts can be opened.
+Have a powerful suit in Hearts.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+West passes.
+--------------------
+North bids 3C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+TKOUT: With 21.0/23.0 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 3D.
+--------------------
+North passes.
+--------------------
+Rebidding in round 2.
+TKORb43: Partner has made a minimum response of 3 Diamonds, indicating no more than 9 points.
+TKRb49: The total point count in the partnership is therefore 25.0-32.0 pts.
+TKRb91: Without clear suit agreement, we bid our 7-card Heart suit at 4 Hearts.
+We bid 4H.
+--------------------
+South passes.
+--------------------
+West bids 5D.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 3 Diamonds, 4 Hearts, and 5 Diamonds.
+TKRc45 With a total of 25.0-32.0 pts in the partnership, partner has gone to game in his suit at 5 Diamonds, so pass.
+We pass.    <<<<<<<<<< NO Hearts are too strong
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is West; North leads.
+=======================
+
+>>>>>>>>>WEST<<<<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:J63  H:53  D:KT7653  C:92
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 2.5.
+  QT's = 0.5,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  3 Likely Winners (0/0/3/0)
+  10 Likely Losers (3/2/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+The contract is 5 Diamonds by West.
+North leads.
+====================
+=====================================
+Received hand:
+  S:J63  H:53  D:KT7653  C:92
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 2.5.
+  QT's = 0.5,
+  Sure Stoppers in: D
+  Probable Stoppers in:
+  3 Likely Winners (0/0/3/0)
+  10 Likely Losers (3/2/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+***Bidding restarted***
+South passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 3C.
+--------------------
+East doubles.
+--------------------
+South passes.
+--------------------
+A10: Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKOTR8: Partner's takeout indicates 12.5+ HCPs, for a total in the partnership of 15.0-24.0 points.
+TKOTR22: With 4.0/2.5 pts, respond with our longest suit of Diamonds at a bid of 3 Diamonds.
+We bid 3D.
+--------------------
+North passes.
+--------------------
+East bids 4H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+TKOTRx: Partner bid 4 Hearts after his takeout and our 3 Diamonds response.
+REVAL1: Revaluing hand as dummy for Heart contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+2REVAL70: Dummy's hand is revalued for a suit contract from 2.5 to 3.5 points.
+TKOTR60: Partner shifted to a new suit after our response of 3 Diamonds to his takeout, indicating that he has 19.0+ pts, for a total in the partnership of 22.5-25.0 points.
+YR2: With With 22.5-25.0 total points and a openable 6-card Diamond suit (holding KT7653), rebid it at 5 Diamonds.
+We bid 5D.   <<<<<<<<<< NO Pass. East has bid game
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is West; North leads.
+

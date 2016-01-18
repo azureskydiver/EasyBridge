@@ -1,0 +1,119 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 1, 2010
+File Date =  06/18/10 09:53:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = DT D4 CQ 
+Current Hand(West) = HJ DJ CA 
+Current Hand(North) = S8 S7 C6 
+Current Hand(East) = SJ ST H9 
+Original Hand(South) = HT H5 H2 DA DQ DT D4 D2 CQ C8 C7 C5 C2 
+Original Hand(West) = S5 HA HJ H7 H4 DJ D8 D5 D3 CA CJ CT C9 
+Original Hand(North) = SA SQ S8 S7 S4 S3 HK H3 D9 CK C6 C4 C3 
+Original Hand(East) = SK SJ ST S9 S6 S2 HQ H9 H8 H6 DK D7 D6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = North
+Bidding History = Pass Pass 1S Pass 2D Pass 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 10
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = East
+GameTrick #1 = East H2 HA H3 H6 West
+GameTrick #2 = West H5 H4 HK H8 North
+GameTrick #3 = North DQ D3 D9 D6 South
+GameTrick #4 = South DA D5 C3 D7 South
+GameTrick #5 = South C2 C9 CK S2 East
+GameTrick #6 = East HT H7 S3 HQ North
+GameTrick #7 = North C5 CT C4 S6 East
+GameTrick #8 = East D2 D8 S4 DK North
+GameTrick #9 = North C7 S5 SA S9 North
+GameTrick #10 = North C8 CJ SQ SK East
+GameTrick #11 = East -- -- -- -- ????
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should draw North's trumps first
+>>>>>>>>> EAST<<<<<<<
+Starting play from restored game.
+------------------------
+S:KJT962  H:Q986  D:K76  C:
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 9.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  5 Likely Winners (4/1/0/0)
+  8 Likely Losers (2/3/3/0)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 2 Spades.
+PLYLD4E: We don't want to lead from the trump suit, so lead the 4th best from the Heart suit -- the H6.
+RCP25: Dummy is shown to be void in Spades.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the eight.
+PLDF48: We can't beat North's King, so discard the H8.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the six.
+RCP5A: North is now known to have started with 1 Diamond.
+PLAYB48: We can't beat South's Ace, so discard the D7.
+PLAYB55: With no cards in Clubs, trump with the S2.
+RCP5A: East is now known to have started with 0 Clubs.
+PLYLDA: With no other obvious plays, cash a winner with the HQ.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2J2: Since there is at least one higher card outstanding in the Club suit than the one led (the four), partner could still have it and win the round.
+PLDF2N4: We don't think partner will win the round, so trump with the six.
+PLYLDD: With no other obvious plays, play DK.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the nine.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E2: North led an honor (the Queen), our cards surround it, so play King.
+RCP5A: West is now known to have started with 1 Spade.
+PLYLDD: With no other obvious plays, play H9.   <<<<<<<<<<<<<<<<<<<<<<<<<<<<< NO Draw North's trump first
+
+
+

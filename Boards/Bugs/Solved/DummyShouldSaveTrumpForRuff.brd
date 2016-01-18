@@ -1,0 +1,168 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 1, 2010
+File Date =  12/05/10 17:08:10
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HJ H9 CK CQ C7 C6 C5 
+Current Hand(West) = SK SQ ST H4 D5 D2 C4 
+Current Hand(North) = SJ S8 S7 S4 HA HQ H7 
+Current Hand(East) = HT H8 H6 D8 CJ CT C9 
+Original Hand(South) = S6 HJ H9 H2 DQ D9 D3 CK CQ C7 C6 C5 C2 
+Original Hand(West) = SK SQ ST S5 H4 H3 DA DK DT D5 D2 C4 C3 
+Original Hand(North) = SJ S9 S8 S7 S4 S3 S2 HA HQ H7 H5 D4 CA 
+Original Hand(East) = SA HK HT H8 H6 DJ D8 D7 D6 CJ CT C9 C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 6
+Declarer = West
+Bidding History = 1D 3S 4D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 5
+Lead Player for Current Game = North
+GameTrick #1 = North C2 C3 CA C8 North
+GameTrick #2 = North D9 DT D4 D6 West
+GameTrick #3 = West D3 DK S9 D7 West
+GameTrick #4 = West DQ DA S2 DJ West
+GameTrick #5 = West H2 H3 H5 HK East
+GameTrick #6 = East S6 S5 S3 SA East
+GameTrick #7 = East -- -- -- -- ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Dummy should save Trumps for ruffing Spade
+>>>>>>>>> WEST<<<<<<
+Starting play from restored game.
+------------------------
+=====================================
+Received hand:
+  S:KQT5  H:43  D:AKT52  C:43
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  5 Likely Winners (2/0/3/0)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+The contract is 4 Hearts by East.
+South leads.
+====================
+=====================================
+Received hand:
+  S:KQT5  H:43  D:AKT52  C:43
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, D
+  Probable Stoppers in:
+  5 Likely Winners (2/0/3/0)
+  8 Likely Losers (2/2/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP1: Can play the King of Spades in hand to try and drop the opponents' Jack.
+PLNDRP5: One drop play is available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Clubs in hand.
+PLNRF1: We can potentially ruff up to 1 Spade in dummy.
+PLNRF1: We can potentially ruff up to 0 Heart in hand after discarding the 1 loser from hand.
+PLNRF5: Up to 3 ruffs can be used (1 in dummy/2 in hand) out of a total of 6 available, but require 1 discard(s) first.
+PLNRF8: This consists of the { H4 } from hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 2 cards in Spades 1 in Clubs.
+PLNCSH30: A total of 3 maximum cashing tricks are immediately available.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps and up to 3 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 7 possible plays and approx. 6+ possible tricks including 2 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRI: The Club suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Play the SK from hand to try and drop the SJ.
+ Play 2: Ruff a Club in hand.
+ Play 3: Ruff a Club in hand.
+ Play 4: Ruff a Spade in dummy.
+ Play 5: Cash the King of Spades in hand.
+ Play 6: Cash the Queen of Spades in hand.
+ Play 7: Cash the Jack of Clubs in dummy. <Requires ...>
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Club suit first, so move its plays up to the front if possible.
+PLSEQ6a: moved up 3 plays.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Club in hand.
+ Play 2: Ruff a Club in hand.
+ Play 3: Cash the Jack of Clubs in dummy.
+ Play 4: Play the SK from hand to try and drop the SJ.
+ Play 5: Ruff a Spade in dummy.
+ Play 6: Cash the King of Spades in hand.
+ Play 7: Cash the Queen of Spades in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLRUF13: Can't ruff Club in hand, hand is not void.
+PLRUF13: Can't ruff Club in hand, hand is not void.
+PLYTST8: The play <CJ Cash> is not yet viable as the card [King] is still outstanding.
+PLDRP10A: No card to lead from this hand
+PLRUF12: Can't lead from dummy and ruff in dummy at the same time.
+PLCSH42: Oops, we wanted to cash a Spade in hand, but we have no Spades in dummy to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <SK Cash> (abandoned)
+PLCSH42: Oops, we wanted to cash a Spade in hand, but we have no Spades in dummy to lead, so we have to abandon that play.
+PLYTRY4: Removed plan <SQ Cash> (abandoned)
+PLYTRY: No usable plays found for the current situation.
+PLAY: East leads the D8.
+
+
+
+
+

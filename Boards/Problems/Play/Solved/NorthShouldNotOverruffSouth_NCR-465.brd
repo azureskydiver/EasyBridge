@@ -1,0 +1,111 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2010
+File Date =  12/21/10 13:16:18
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = H6 
+Current Hand(West) = SA 
+Current Hand(North) = HK C9 
+Current Hand(East) = S8 
+Original Hand(South) = SJ H8 H6 H4 DA DK DJ D8 D3 CK CJ C3 C2 
+Original Hand(West) = SA S7 S3 S2 HT H7 H3 DT D7 D2 C8 C5 C4 
+Original Hand(North) = SQ ST S9 S6 HK HQ H5 DQ D4 CA C9 C7 C6 
+Original Hand(East) = SK S8 S5 S4 HA HJ H9 H2 D9 D6 D5 CQ CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 5
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 11
+Declarer = North
+Bidding History = Pass 1D Pass 2C Pass 4C Pass 5C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 12
+# of Tricks won in Game by N/S = 9
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = East
+GameTrick #1 = East H4 HT HQ H2 North
+GameTrick #2 = North CJ C4 C6 CT South
+GameTrick #3 = South C2 C8 CA CQ North
+GameTrick #4 = North D3 D2 DQ D5 North
+GameTrick #5 = North DA D7 D4 D6 South
+GameTrick #6 = South CK C5 C7 D9 South
+GameTrick #7 = South DK DT S6 H9 South
+GameTrick #8 = South DJ H3 S9 HJ South
+GameTrick #9 = South D8 H7 ST S4 South
+GameTrick #10 = South H8 S2 H5 HA East
+GameTrick #11 = East SJ S3 SQ SK East
+GameTrick #12 = East C3 S7 -- S5 ????
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should NOT over ruff South's ruff???
+>>>>>>>>> NORTH<<<<<<<
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 12...
+PLRV11: We have 2 reasonably sure tricks left vs. 2 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 1 Spade in dummy.
+PLNRF1: We can potentially ruff up to 1 Spade in hand.
+PLNRF5: Up to 2 ruffs can be used (1 in dummy/1 in hand) out of a total of 2 available.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 1 card in Hearts.
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP5: We can safely play up to 1 round of trumps without endangering the contract.
+PLNTRMP6: However, we only need to pull a maximum of 0 rounds to collect all the outstanding trumps.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps and up to 2 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 3 possible plays and approx. 3+ possible tricks including 2 sure tricks (vs. 11 required) accounted for in the plan.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Spade in dummy.
+ Play 2: Ruff a Spade in hand.
+ Play 3: Cash the King of Hearts in hand.
+PLSEQ: Checking play sequencing...
+PLSEQ3: Since we have enough sure tricks (2) to fulfill the contract, we moved 1 cash plays forward
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Cash the King of Hearts in hand.
+ Play 2: Ruff a Spade in dummy.
+ Play 3: Ruff a Spade in hand.
+PLRV95: The play plan review is complete.
+---------------------------
+PLRUF20: We can ruff in the suit led by the opponent.
+PLRUF40: Ruff in dummy with the C3.
+PLAY: South plays the C3.
+PLAY: West plays the S7.
+PLRUF63: Complete the ruff by discarding the C9 from hand.  <<<<<<<<<<<Clubs are Trumps ????
+
+

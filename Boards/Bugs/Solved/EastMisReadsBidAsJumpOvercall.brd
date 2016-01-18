@@ -1,0 +1,124 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = July 17, 2009
+File Date =  07/18/09 20:26:34
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S8 S6 S3 HK H9 H8 H7 H6 H2 DQ CJ CT C6 
+Current Hand(West) = SA S7 S5 S2 DA DK D9 D8 D6 C9 C4 C3 C2 
+Current Hand(North) = SK SJ ST S4 HA H5 H3 DJ D4 D3 CA CQ C7 
+Current Hand(East) = SQ S9 HQ HJ HT H4 DT D7 D5 D2 CK C8 C5 
+Original Hand(South) = S8 S6 S3 HK H9 H8 H7 H6 H2 DQ CJ CT C6 
+Original Hand(West) = SA S7 S5 S2 DA DK D9 D8 D6 C9 C4 C3 C2 
+Original Hand(North) = SK SJ ST S4 HA H5 H3 DJ D4 D3 CA CQ C7 
+Original Hand(East) = SQ S9 HQ HJ HT H4 DT D7 D5 D2 CK C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = ????
+Bidding History = 1NT Pass Pass 2D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 20
+North/South Game 1 Points = 120
+North/South Game 2 Points = 60
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 430
+East/West Game 1 Points = 60
+East/West Game 2 Points = 40
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	 100	Bonus for defeating contract by 2 tricks"
+Bonus Score Record = "	  30	1 overtrick"
+Bonus Score Record = "	 300	Bonus for defeating vulnerable contract by 3 tricks"
+Bonus Score Record = "  20		1 overtrick, vulnerable"
+Game Score Record = "	  60	2 Hearts made"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = "	  40	1 No Trump made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East thinks West did a Jump when he only overcalled.  See ROVRC3:
+>>>>>> EAST <<<<<<<<
+S:Q9  H:QJT4  D:T752  C:K85
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 6.0.
+  QT's = 0.5,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  3 Likely Winners (0/2/0/1)
+  10 Likely Losers (2/2/4/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Hearts.
+====================
+North bids 1NT.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West bids 2D.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 2 Diamonds.
+REVAL38: (with 4-card Diamond trump support & a doubleton in Spades, the hand is revalued for a suit contract as dummy from 6.0 to 9.0 points)
+ROVRC3: Partner made a weak jump overcall of 2 Diamonds, indicating 5.0-9.0 pts and a good 6+ card Diamond suit.
+ROVRC8: The total point count in the partnership is therefore 14.0-18.0 points.
+ROVRC20: This is insufficient to raise partner, so pass.
+We pass.
+--------------------
+
+
+
+

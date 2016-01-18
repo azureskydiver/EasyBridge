@@ -1,0 +1,122 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 29, 2009
+File Date =  08/31/09 20:02:55
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S8 DK DT D9 D6 CJ C9 C7 C4 
+Current Hand(West) = SA SK S6 S2 DJ D8 CA CQ CT C3 
+Current Hand(North) = ST S4 HQ H9 H8 H5 D5 D3 CK C6 
+Current Hand(East) = HJ HT DA DQ D7 D4 D2 C8 C5 C2 
+Original Hand(South) = S9 S8 S7 H6 H4 DK DT D9 D6 CJ C9 C7 C4 
+Original Hand(West) = SA SK SJ S6 S5 S2 H7 DJ D8 CA CQ CT C3 
+Original Hand(North) = SQ ST S4 HA HQ H9 H8 H5 H2 D5 D3 CK C6 
+Original Hand(East) = S3 HK HJ HT H3 DA DQ D7 D4 D2 C8 C5 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = North
+Bidding History = Pass 1S 2H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East S7 SJ SQ S3 North
+GameTrick #2 = North H4 H7 HA H3 North
+GameTrick #3 = North H6 S5 H2 HK East
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East played a high Heart when lower would have won - dummy on left
+>>>>>>>> EAST <<<<<<<<
+S:3  H:KJT3  D:AQ742  C:852
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  6 Likely Winners (0/2/4/0)
+  7 Likely Losers (1/2/1/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Hearts
+The best suit is Diamonds.
+====================
+South passes.
+--------------------
+West bids 1S.
+--------------------
+North bids 2H.
+--------------------
+Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+F00: Partner is showing 12.0+ points and 2+ QT's.
+G32: Have 10.0/10.0/10.0 points with poor support for partner's Spade suit (holding 3; bid the preferred Diamond suit 2/1 at 2 Diamonds.
+But our bid (2 Diamonds) is too low vs. the last bid of of 2 Hearts, so we have to pass.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 2 Hearts.
+PLYLD4: Lead the singleton S3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H5: Cover with the winner King.  <<<<<<<<< HT would win with DUMMY ON LEFT
+PLDF2H3: Cover with the King.
+RCP20: Dummy is now out of Hearts.
+
+

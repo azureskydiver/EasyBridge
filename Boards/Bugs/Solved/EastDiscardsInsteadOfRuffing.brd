@@ -1,0 +1,86 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = May 29, 2009
+File Date =  05/29/09 20:30:54
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK S7 H9 H6 DT 
+Current Hand(West) = ST S8 S5 HK H4 D9 
+Current Hand(North) = HJ HT H8 H5 H3 CJ 
+Current Hand(East) = S9 HA HQ H7 H2 CT 
+Original Hand(South) = SA SK SJ S7 S2 H9 H6 DK DQ DT D4 C9 C5 
+Original Hand(West) = SQ ST S8 S5 HK H4 DA D9 D7 D2 CA CQ C6 
+Original Hand(North) = S6 S3 HJ HT H8 H5 H3 D6 D5 CJ C7 C4 C3 
+Original Hand(East) = S9 S4 HA HQ H7 H2 DJ D8 D3 CK CT C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = 1S 1NT Pass 2C 2S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 4
+Lead Player for Current Game = West
+GameTrick #1 = West C5 CA C3 C8 West
+GameTrick #2 = West C9 C6 C4 CK East
+GameTrick #3 = East S2 CQ C7 C2 South
+GameTrick #4 = South DQ DA D5 D3 West
+GameTrick #5 = West DK D7 D6 D8 South
+GameTrick #6 = South D4 D2 S3 DJ North
+GameTrick #7 = North SJ SQ S6 S4 West
+GameTrick #8 = West -- -- -- -- South
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 80
+North/South Game 1 Points = 160
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 100
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	  50	Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  40		2 Clubs made"
+Game Score Record = " 120		4 Spades made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East discards when West's lead is NOT highest card out.
+PLDF54: Although we could trump this hand, pard's D9 is high so discard the CT.
+

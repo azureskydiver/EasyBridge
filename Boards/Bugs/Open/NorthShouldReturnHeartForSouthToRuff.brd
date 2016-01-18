@@ -1,0 +1,123 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 12, 2009
+File Date =  10/13/09 10:15:38
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ S8 HA HT DT D8 D4 D2 C9 C7 C6 C2 
+Current Hand(West) = SA S9 S7 S2 H8 H6 H5 H4 DQ DJ D6 CJ C4 
+Current Hand(North) = HK HJ H9 H7 H3 DA D9 D5 CA CQ CT C8 C5 
+Current Hand(East) = SK ST S6 S5 S4 S3 HQ H2 DK D7 D3 CK C3 
+Original Hand(South) = SQ SJ S8 HA HT DT D8 D4 D2 C9 C7 C6 C2 
+Original Hand(West) = SA S9 S7 S2 H8 H6 H5 H4 DQ DJ D6 CJ C4 
+Original Hand(North) = HK HJ H9 H7 H3 DA D9 D5 CA CQ CT C8 C5 
+Original Hand(East) = SK ST S6 S5 S4 S3 HQ H2 DK D7 D3 CK C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 2
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 7
+Declarer = East
+Bidding History = Pass Pass 1H 2S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should play Hearts which South has shown out of
+>>>>>>>> NORTH <<<<<<<<<,
+S:  H:KJ973  D:A95  C:AQT85
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 14.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  8 Likely Winners (0/3/1/4)
+  5 Likely Losers (0/2/2/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Clubs.
+====================
+South passes.
+--------------------
+West passes.
+--------------------
+Opening bid for team.
+E01: Have 14.0 points in high cards, so bid 1 Heart.
+We bid 1H.
+--------------------
+East bids 2S.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 14.0/14.0 points in hand and 14.0-19.0 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+Bidding finished; contract is 2 Spades.  Declarer is East; South leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS2: Since we can win the next round of Hearts, we want to signal by discarding high in the suit.
+PLDIS8: Begin the high-low signal with the seven.
+PLDF47: Partner's Ace can win the trick, so discard the H7.
+PLDF37: Partner's ten might not win the round, so top it with the King.
+PLYLDRT8: Return partner's Heart suit with the Jack.
+RCP5A: East is now known to have started with 2 Hearts.
+RCP5A: South is now known to have started with 2 Hearts.   
+PLDF40a: Play higher with the Ace.
+PLYLDRT8: Return partner's Club suit with the five.  <<<<<<<<<<<<<<<<<<<<<<<<< NO PLAY Another Heart for South to Ruff<<<<<<
+
+

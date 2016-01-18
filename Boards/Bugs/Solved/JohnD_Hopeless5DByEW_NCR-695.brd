@@ -1,0 +1,240 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 10, 2013
+File Date =  08/16/13 17:24:46
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S3 HK HJ HT H2 D7 D4 D3 D2 CJ C6 C4 
+Current Hand(West) = SK SJ ST S8 S6 S4 S2 H7 H5 D9 D5 C9 C2 
+Current Hand(North) = SA S7 S5 HA H8 H6 H3 DT CA CT C8 C5 C3 
+Current Hand(East) = S9 HQ H9 H4 DA DK DQ DJ D8 D6 CK CQ C7 
+Original Hand(South) = SQ S3 HK HJ HT H2 D7 D4 D3 D2 CJ C6 C4 
+Original Hand(West) = SK SJ ST S8 S6 S4 S2 H7 H5 D9 D5 C9 C2 
+Original Hand(North) = SA S7 S5 HA H8 H6 H3 DT CA CT C8 C5 C3 
+Original Hand(East) = S9 HQ H9 H4 DA DK DQ DJ D8 D6 CK CQ C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 5
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 12
+Declarer = East
+Bidding History = 1D Pass 1S Dbl 3D 3H 4D Pass 5D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Significant misunderstanding between E and W's bidding.
+W raises 3D to 4D with 2-card support and 4 points, while E analysis says "With a single raise, partner is showing 10.0-18.0 points and decent (3-4 card) support for our Diamond suit."
+The final contract (5D) is hopeless and goes 3 down.
+
+East:
+S:9  H:Q94  D:AKQJ86  C:KQ7
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 5.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 20.0.
+  QT's = 3.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  7 Likely Winners (0/0/6/1)
+  6 Likely Losers (1/3/0/2)
+Have a powerful suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+Opening bid for team.
+Have 17.0 points in high cards, so bid 1 Diamond.
+We bid 1D.
+--------------------
+South passes.
+--------------------
+West bids 1S.
+--------------------
+North doubles.
+--------------------
+Rebidding after opening bid of 1 Diamond and partner's response of 1 Spade.
+Partner has made a 1 over 1 bid, Spades over Diamonds, which shows 6.0-18.0 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL7: Adding 3 point(s) for the solid Diamond suit.
+3REVAL6: Deducting 3 point(s) for the 3 trump(s) short of 4.
+We have 26.0- pts in the partnership, but don't like partner's suit, don't have a good second suit, and NT is not a good option, so jump rebid the Diamond suit at 3 Diamonds.
+We bid 3D.
+--------------------
+South bids 3H.
+--------------------
+West bids 4D.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+With a single raise, partner is showing 10.0-18.0 points and decent (3-4 card) support for our Diamond suit.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Diamonds, declarer's hand is revalued for a suit contract from 20.0 to 22.0 points)
+We have a total of 32.0-40.0 points in the partnership for a minor suit, so bid game at 5 Diamonds.
+We bid 5D.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is East; South leads.
+=======================
+West:
+S:KJT8642  H:75  D:95  C:92
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 8.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 0.5,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  5 Likely Winners (5/0/0/0)
+  8 Likely Losers (2/2/2/2)
+Preferred suit is Spades.
+====================
+East bids 1D.
+--------------------
+South passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 4.
+Partner is showing 12.0-22.0 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+2REVAL10: (with a 7-card trump suit in Spades, declarer's hand is revalued for a suit contract from 8.0 to 11.0 points)
+Have 4.0/8.0/8.0 pts with an available 7-card major suit in Spades (KJT8642), so bid 1 Spade over partner's minor suit 1 Diamond bid.
+We bid 1S.
+--------------------
+North doubles.
+--------------------
+East bids 3D.
+--------------------
+South bids 3H.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Spade, and 3 Diamonds.
+Partner made a jump rebid of his Diamond suit to 3 Diamonds, showing 17.0-22.0 points.
+With 25.0-30.0 points in the partnership and 2-card support for partner's  Diamond suit (holding 95), raise to 4 Diamonds.
+We bid 4D.
+--------------------
+North passes.
+--------------------
+East bids 5D.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 4.
+3REVAL8: Since the trump suit is only topped by a nine, deduct 4 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 8.0 down to -2.0 points)
+We've reached agreement in suits, but with only 15.0-20.0 total points we can't raise partner's 5 Diamonds bid any further, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is East; 
+
+>>>>>>> DEBUG WEST<<<<<<<,
+=====================================
+Received hand:
+  S:KJT8642  H:75  D:95  C:92
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 8.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 0.5,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  5 Likely Winners (5/0/0/0)
+  8 Likely Losers (2/2/2/2)
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+East bids 1D.
+--------------------
+South passes.
+--------------------
+B00 Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy for Diamond contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 4.
+F00: Partner is showing 12.0-21.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Spade contract...
+3REVAL5: Adding 5 point(s) for the 3 extra trump(s).
+2REVAL10: (with a 7-card trump suit in Spades, declarer's hand is revalued for a suit contract from 8.0 to 11.0 points)
+F01a: Have 4.0/8.0/8.0 pts with an available 7-card major suit in Spades (KJT8642), so bid 1 Spade over partner's minor suit 1 Diamond bid.
+We bid 1S.
+--------------------
+North doubles.
+--------------------
+East bids 3D.
+--------------------
+South bids 3H.
+--------------------
+Rebidding as responder after bids of 1 Diamond, 1 Spade, and 3 Diamonds.
+B4D0: Partner made a jump rebid of his Diamond suit to 3 Diamonds, showing 17.0-21.5 points.
+YN1: With 25.0-29.5 points in the partnership and 2-card support for partner's  Diamond suit (holding 95), raise to 4 Diamonds.
+We bid 4D.
+--------------------
+North passes.
+--------------------
+East bids 5D.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+REVAL1: Revaluing hand as declarer for Diamond contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 4.
+3REVAL8: Since the trump suit is only topped by a nine, deduct 4 points.
+2REVAL18: Declarer's hand is revalued for a suit contract in Diamonds from 8.0 down to -2.0 points)
+BXM81: We've reached agreement in suits, but with only 15.0-19.5 total points we can't raise partner's 5 Diamonds bid any further, so pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is East; South leads.
+=======================
+
+
+
+
+
+
+

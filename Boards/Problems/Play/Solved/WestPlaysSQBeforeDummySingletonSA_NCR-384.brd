@@ -1,0 +1,108 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 5, 2010
+File Date =  10/06/10 16:46:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S9 S8 S7 S6 S5 S3 CA C2 
+Current Hand(West) = SK SQ S4 S2 HT H7 D7 D6 C6 C3 
+Current Hand(North) = SA DA DK DT D9 D8 D4 D2 CK C9 
+Current Hand(East) = HA HK H2 DQ DJ D5 D3 CT C8 C5 
+Original Hand(South) = SJ ST S9 S8 S7 S6 S5 S3 H9 H8 CA CQ C2 
+Original Hand(West) = SK SQ S4 S2 HJ HT H7 H4 D7 D6 C6 C4 C3 
+Original Hand(North) = SA H6 H5 DA DK DT D9 D8 D4 D2 CK C9 C7 
+Original Hand(East) = HA HK HQ H3 H2 DQ DJ D5 D3 CJ CT C8 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 5
+Declarer = South
+Bidding History = 1H 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 3
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H8 HJ H5 H3 West
+GameTrick #2 = West H9 H4 H6 HQ East
+GameTrick #3 = East CQ C4 C7 CJ South
+GameTrick #4 = South -- -- -- -- ????
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West plays SQ with singleton SA in dummy on Left hand.  Hand was shifted CCW
+>>>>>>>>>> WEST <<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:KQ42  H:JT74  D:76  C:643
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 5.0.
+  QT's = 1.0,
+  Sure Stoppers in: S
+  Probable Stoppers in:
+  2 Likely Winners (2/1/0/-1)
+  11 Likely Losers (2/3/2/4)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Spades.
+PLYLD15: Lead the HJ from the top of the { HJ HT } sequence.
+PLYLDPRF4: Partner has indicated a preference for the Hearts suit, so lead the H4.
+RCP20: Dummy is now out of Hearts.
+PLDIS12: We do not have a winner in the Club suit, so discard low with the four.
+PLDF48: We can't beat South's Queen, so discard the C4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A2: Play high card in the suit, the Queen to promote neighbor.
+RCP20: Dummy is now out of Spades.
+RCP5A: East is now known to have started with 0 Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A2: Play high card in the suit, the Queen to promote neighbor.  <<<<<<<<<<<<<<<<<<<<<<< NO <<<<<<<<<<<<<<
+RCP20: Dummy is now out of Spades.
+
+

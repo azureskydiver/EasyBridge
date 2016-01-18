@@ -1,0 +1,155 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = March 11,  2010
+File Date =  03/13/10 17:34:02
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ DA D9 D6 
+Current Hand(West) = H9 H6 DT D8 
+Current Hand(North) = SA DK D7 D4 
+Current Hand(East) = ST DQ DJ D5 
+Original Hand(South) = SK SQ S9 HJ H8 H7 DA D9 D6 D2 CK CT C5 
+Original Hand(West) = S4 S3 HT H9 H6 H3 H2 DT D8 D3 CA C9 C4 
+Original Hand(North) = SA SJ S5 HA HK HQ DK D7 D4 CQ CJ C8 C6 
+Original Hand(East) = ST S8 S7 S6 S2 H5 H4 DQ DJ D5 C7 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 6
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 9
+Declarer = North
+Bidding History = Pass 2NT Pass 5NT Pass 6NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 9
+# of Tricks won in Game by N/S = 7
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East S9 S4 S5 S6 South
+GameTrick #2 = South SK S3 SJ S2 South
+GameTrick #3 = South H7 HT HQ H4 North
+GameTrick #4 = North H8 H2 HK H5 North
+GameTrick #5 = North CT CA C6 C2 West
+GameTrick #6 = West HJ H3 HA S7 North
+GameTrick #7 = North CK C4 C8 C3 South
+GameTrick #8 = South C5 C9 CQ C7 North
+GameTrick #9 = North D2 D3 CJ S8 ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should not discard a Diamond. His hearts are orphans
+>>>>>>>>> WEST<<<<<<<<
+S:43  H:T9632  D:T83  C:A94
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 4.0.
+  QT's = 1.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  2 Likely Winners (0/1/0/1)
+  11 Likely Losers (2/4/3/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+North bids 5NT.
+--------------------
+East passes.
+--------------------
+S:43  H:T9632  D:T83  C:A94
+Hand evaluation:
+  HCPs = 4.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 4.0.
+  QT's = 1.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  2 Likely Winners (0/1/0/1)
+  11 Likely Losers (2/4/3/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+South bids 5NT.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+North bids 6NT.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 6 No Trump.  Declarer is North; East leads.
+=======================
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Spade suit, so discard low with the four.
+PLDF48: We can't beat South's King, so discard the S4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the three.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H3.
+PLDF2Ya: We have no Spades, so discard the H3.
+RCP5A: West is now known to have started with 2 Spades.
+PLAYB48: We can't beat North's Ace, so discard the H2.
+PLAYB48: We can't beat North's King, so discard the H6.
+RCP5A: East is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+PLAYB48: We can't beat North's Queen, so discard the H9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A1: Play a high card in the suit, the ten.
+PLAYB48: We can't beat North's King, so discard the H2.
+PLAYB41: Play the Ace to win the trick.
+PLYLDB: With no other clear plays available, lead a card from the unbid Heart suit.
+RCP5A: East is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+PLAYB48: We can't beat North's Queen, so discard the C4.
+RCP20: Dummy is now out of Clubs.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Spades, so discard the D3.  <<<<<<<<<<<<<<< NO the Hearts are orphans, Save the Diamonds!!!!
+
+

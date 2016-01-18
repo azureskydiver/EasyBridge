@@ -1,0 +1,95 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 31, 2014
+File Date =  11/19/14 11:06:05
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST S8 HK H4 DK DQ D6 
+Current Hand(West) = S6 S4 HQ H8 D4 D2 
+Current Hand(North) = HJ HT H7 H6 DT D8 CK 
+Current Hand(East) = SJ S9 H9 H5 H3 D9 D7 
+Original Hand(South) = SK ST S8 S5 HK H4 DK DQ DJ D6 CA CQ CJ 
+Original Hand(West) = S6 S4 S3 S2 HA HQ H8 DA D4 D2 C6 C4 C2 
+Original Hand(North) = S7 HJ HT H7 H6 H2 DT D8 D3 CK C9 C5 C3 
+Original Hand(East) = SA SQ SJ S9 H9 H5 H3 D9 D7 D5 CT C8 C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 6
+Declarer = South
+Bidding History = Pass Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S5 S2 S7 SA East
+GameTrick #2 = East SK S3 H2 SQ South
+GameTrick #3 = South CA C2 C3 C7 South
+GameTrick #4 = South CQ C4 C5 C8 South
+GameTrick #5 = South CJ C6 C9 CT South
+GameTrick #6 = South DJ DA D3 D5 West
+GameTrick #7 = West -- HA -- -- ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 80
+North/South Game 1 Points = 100
+North/South Game 2 Points = 40
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Bonus Score Record = "  20		1 overtrick, vulnerable"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+Game Score Record = "  40		2 Diamonds made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should not lead HA
+>>>>>>>WEST<<<<<<<<
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the four.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the six.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the Jack), so cover it with our Ace.
+PLCSW9: With no other good options, cash a winner in the Heart suit, the Ace
+PLYLD84: With no other obvious plays, cash a winner with the HA.
+
+

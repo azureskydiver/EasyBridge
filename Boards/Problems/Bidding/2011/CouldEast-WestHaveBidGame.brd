@@ -1,0 +1,193 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 18, 2011
+File Date =  01/24/11 16:54:14
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ ST S3 S2 HJ H9 H8 H5 DA C9 C8 C2 
+Current Hand(West) = SK HA HK HT H6 H4 DQ DJ D8 D3 CJ C5 C4 
+Current Hand(North) = S9 S8 S7 S6 S5 HQ H7 H3 H2 DK DT D6 D5 
+Current Hand(East) = SA S4 D9 D7 D4 D2 CA CK CQ CT C7 C6 C3 
+Original Hand(South) = SQ SJ ST S3 S2 HJ H9 H8 H5 DA C9 C8 C2 
+Original Hand(West) = SK HA HK HT H6 H4 DQ DJ D8 D3 CJ C5 C4 
+Original Hand(North) = S9 S8 S7 S6 S5 HQ H7 H3 H2 DK DT D6 D5 
+Original Hand(East) = SA S4 D9 D7 D4 D2 CA CK CQ CT C7 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Clubs
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 9
+Declarer = East
+Bidding History = Pass 1C 1S 2H Pass 3C Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Two opening hands should have bid game
+>>>>>>>>> EAST<<<<<<<
+North passes.
+--------------------
+Opening bid for team.
+E02: Have 13.0 points in high cards and 3.0 quick tricks, so bid 1 Club.
+We bid 1C.
+--------------------
+North bids 1S.
+--------------------
+Opening bid for team.
+E02: Have 13.0 points in high cards and 3.0 quick tricks, so bid 1 Club.
+But our bid (1 Club) is too low vs. the last bid of of 1 Spade, so we have to pass.
+We pass.
+--------------------
+=====================================
+Received hand:
+  S:A4  H:---  D:9742  C:AKQT763
+Hand evaluation:
+  HCPs = 13.0, Distn pts = 7.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 16.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  7 Likely Winners (1/0/-1/7)
+  6 Likely Losers (1/0/5/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a powerful suit in Clubs.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+Opening bid for team.
+E02: Have 13.0 points in high cards and 3.0 quick tricks, so bid 1 Club.
+We bid 1C.
+--------------------
+South bids 1S.
+--------------------
+West bids 2H.
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of 1 Club and partner's response of 2 Hearts.
+B3W00: Partner has made a 2 over 1 bid, Hearts over Clubs, which shows 9.5-17.5 points and is forcing for one round.
+REVAL1: Revaluing hand as dummy...
+3REVAL7: Adding 5 point(s) for the solid Club suit.
+3REVAL6: Deducting 1 point(s) for the 3 trump(s) short of 3.
+B3W36: With a rebiddable Club suit and poor support for partner's Hearts (holding void), rebid 3 Clubs.
+We bid 3C.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is East; South leads.
+=======================
+
+>>>>>>>>>> WEST<<<<<<<<<<<<
+North passes.
+--------------------
+East bids 1C.
+--------------------
+North bids 1S.
+--------------------
+East passes.
+--------------------
+=====================================
+Received hand:
+  S:K  H:AKT64  D:QJ83  C:J54
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-2.0;
+Total pts = 12.0.
+  QT's = 2.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  5 Likely Winners (0/3/2/0)
+  8 Likely Losers (1/2/2/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+***Bidding restarted***
+North passes.
+--------------------
+East bids 1C.
+--------------------
+South bids 1S.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by -2 point(s) for bonus points and 0 points for penalty.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+F01a: Have 14.0/12.0/10.5 pts with an available 5-card major suit in Hearts (AKT64), so bid 2 Hearts over partner's minor suit 1 Club bid.
+We bid 2H.
+--------------------
+North passes.
+--------------------
+East bids 3C.
+--------------------
+South passes.
+--------------------
+Rebidding as responder after bids of 1 Club, 2 Hearts, and 3 Clubs.
+B4C4: Partner made a minimum rebid of his Club suit at 3 Clubs, showing 12.0-16.0 points and 5+ trump cards.
+>>>>>>>>>>>>>>>> WHAT ABOUT as DUMMY????
+REVAL1: Revaluing hand as declarer...
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 12.0 to 14.0 points)
+B4C18: with a total of 22.5-26.5 pts in the partnership and no clear direction in the bidding, pass.
+We pass.
+--------------------
+North passes.
+--------------------
+Bidding finished; contract is 3 Clubs.  Declarer is East; South leads.
+=======================
+
+

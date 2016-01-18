@@ -1,0 +1,95 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 27, 2012
+File Date =  02/05/12 17:28:19
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = HJ H7 DA DQ CT C7 C5 C4 
+Current Hand(West) = S7 S3 H8 H3 D8 D7 D3 D2 
+Current Hand(North) = SK SQ SJ S6 S4 DT D9 CK 
+Current Hand(East) = S9 S8 DK DJ D5 CJ C8 C3 
+Original Hand(South) = S2 HK HJ H7 H5 H2 DA DQ CQ CT C7 C5 C4 
+Original Hand(West) = SA S7 S3 HA HQ H8 H6 H3 D8 D7 D3 D2 C9 
+Original Hand(North) = SK SQ SJ ST S6 S4 HT DT D9 D6 D4 CK C2 
+Original Hand(East) = S9 S8 S5 H9 H4 DK DJ D5 CA CJ C8 C6 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 13
+Declarer = South
+Bidding History = Pass 1H Pass 1S Pass 2C Pass 2S Pass 2NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West H2 H6 HT H4 North
+GameTrick #2 = North S2 SA ST S5 West
+GameTrick #3 = West H5 HA D4 H9 West
+GameTrick #4 = West HK HQ D6 C6 South
+GameTrick #5 = South CQ C9 C2 CA ????
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 200
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	 200	Bonus for defeating vulnerable contract by 2 tricks"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should NOT play CA - Gives outh entry to board
+>>>>>>>>>>>>>>>>EAST<<<<<<<<<<<<<<<<<<<
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PL03: Starting play as right-hand defender.
+PLDIS12: We do not have a winner in the Heart suit, so discard low with the four.
+PLDF48: We can't beat North's HT, so discard the H4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the five.
+PLDF25: Play our only card in the suit, the nine.
+PLDIS40: Indicate a preference for the Club by discarding high with the C6.
+PLDF60: With no cards in the suit led , we discard the C6.
+RCP5A: East is now known to have started with 2 Hearts.
+PLAYB41: Play the Ace to win the trick.  <<<<<<<<<<<<<<<<<NO gives South entry CK
+
+

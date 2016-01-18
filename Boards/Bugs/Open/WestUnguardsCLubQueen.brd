@@ -1,0 +1,117 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 18,  2009
+File Date =  12/19/09 15:20:20
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = H7 D8 C7 C6 C2 
+Current Hand(West) = SK SQ CQ CJ C5 
+Current Hand(North) = SJ D9 CA CK CT 
+Current Hand(East) = DJ DT C9 C8 C4 
+Original Hand(South) = SA S3 HK H7 H6 H5 H3 DA DK D8 C7 C6 C2 
+Original Hand(West) = SK SQ S9 S6 S5 S4 H8 H2 D4 D3 CQ CJ C5 
+Original Hand(North) = SJ S7 S2 HA HT H4 D9 D6 D5 D2 CA CK CT 
+Original Hand(East) = ST S8 HQ HJ H9 DQ DJ DT D7 C9 C8 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 9
+Declarer = South
+Bidding History = Pass 1H 2S 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S3 S6 S2 ST East
+GameTrick #2 = East SA S9 S7 S8 South
+GameTrick #3 = South HK H2 H4 H9 South
+GameTrick #4 = South H3 H8 HT HJ East
+GameTrick #5 = East DK D4 D2 DQ South
+GameTrick #6 = South H5 S4 HA HQ North
+GameTrick #7 = North DA D3 D5 D7 South
+GameTrick #8 = South H6 S5 D6 C3 South
+GameTrick #9 = South -- -- -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West unguards CQ vs discarding SQ
+>>>>>>>> WEST<<<<<<<<<
+Swapped into a new hand.
+------------------------
+S:KQ9654  H:82  D:43  C:QJ5
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  6 Likely Winners (5/0/0/1)
+  7 Likely Losers (1/2/2/2)
+Playing five-card majors, Spades can be opened.
+Have a strong suit in Spades.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 No Trump.
+PLYLD4A: Lead the fourth card from our best suit (Spades) -- play the S6.
+PLDIS2: Since we can win the next round of Spades, we want to signal by discarding high in the suit.
+PLDIS8: Begin the high-low signal with the nine.
+PLDF48: We can't beat South's Ace, so discard the S9.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the eight.
+PLDIS12: We do not have a winner in the Diamond suit, so discard low with the four.
+PLDF48: We can't beat South's King, so discard the D4.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Spade by discarding high with the S4.
+PLDF2Ya: We have no Hearts, so discard the S4.
+RCP5A: West is now known to have started with 2 Hearts.
+RCP20: Dummy is now out of Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the S5.
+RCP5A: East is now known to have started with 3 Hearts.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Hearts, so discard the C5.    <<<<<<<<<<<<<<<<<<<NO NEED it to guard CQ
+
+

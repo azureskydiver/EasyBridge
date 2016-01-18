@@ -1,0 +1,133 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 24, 2015
+File Date =  02/15/15 16:32:57
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S5 DA D9 D3 CQ C8 
+Current Hand(West) = HA HT H6 CT C6 C3 C2 
+Current Hand(North) = S6 H3 DQ D8 C9 C5 C4 
+Current Hand(East) = SK S8 S7 CA CK CJ C7 
+Original Hand(South) = SA SJ S9 S5 HJ H8 DA DK DJ D9 D3 CQ C8 
+Original Hand(West) = ST HA HQ HT H9 H6 H5 D5 D4 CT C6 C3 C2 
+Original Hand(North) = S6 S4 S2 HK H3 H2 DQ D8 D7 D2 C9 C5 C4 
+Original Hand(East) = SK SQ S8 S7 S3 H7 H4 DT D6 CA CK CJ C7 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 2
+Contract Modifier = 0
+Dealer = East
+Number of Bids Made = 5
+Declarer = South
+Bidding History = 1S 2D Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 6
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West SA ST S2 SQ South
+GameTrick #2 = South DJ D4 D2 D6 South
+GameTrick #3 = South DK D5 D7 DT South
+GameTrick #4 = South HJ HQ HK H4 North
+GameTrick #5 = North S9 H9 S4 S3 South
+GameTrick #6 = South H8 H5 H2 H7 South
+GameTrick #7 = South -- -- -- -- ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 40
+North/South Game 1 Points = 130
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 400
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  40		2 overtricks"
+Bonus Score Record = "	 300	Bonus for defeating vulnerable contract by 3 tricks"
+Bonus Score Record = "	 100	Bonus for defeating vulnerable contract by 1 trick"
+Game Score Record = "  60		3 Diamonds made"
+Game Score Record = "  70		2 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should cover
+>>>WEST<<<<<<<
+S:T  H:AQT965  D:54  C:T632
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 4.0, Bonus/Penalty = 0.0/0.0; Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  4 Likely Winners (0/4/0/0)
+  9 Likely Losers (1/2/2/4)
+Playing five-card majors, Hearts can be opened.
+Have a strong suit in Hearts.
+Preferred suit is Hearts.
+====================
+East bids 1S.
+--------------------
+South bids 2D.
+--------------------
+B00 Responding to partner's opening bid of 1 Spade.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 3.
+2REVAL70: Dummy's hand is revalued for a suit contract from 7.0 down to 5.0 points.
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+REVAL1: Revaluing hand as declarer for Heart contract...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+2REVAL10: (with a 6-card trump suit in Hearts, declarer's hand is revalued for a suit contract from 7.0 to 10.0 points)
+F02: But we have only 6.0/7.0/5.0 points with weak trump support, so we have to pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 2 Diamonds.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 2 Diamonds.
+PLYLD4: Lead the singleton ST.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the four.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the five.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E2: South led an honor (the Jack), our cards surround it, so play Queen.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H9.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H9.
+RCP5A: West is now known to have started with 1 Spade.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the five.   <<<<<<<<<<<<NO West has all Higher cards
+
+

@@ -1,0 +1,204 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 14, 2010
+File Date =  12/15/10 14:01:11
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 HJ H8 H3 DQ DT 
+Current Hand(West) = ST S8 DK DJ D9 D4 
+Current Hand(North) = H9 H5 H4 D6 CT C5 
+Current Hand(East) = SJ S7 HK HQ D5 D3 
+Original Hand(South) = SA S9 S6 HA HJ H8 H3 DQ DT D8 CA CK CQ 
+Original Hand(West) = SQ ST S8 S2 HT DK DJ D9 D4 D2 CJ C7 C2 
+Original Hand(North) = S3 H9 H7 H5 H4 H2 D7 D6 CT C8 C5 C4 C3 
+Original Hand(East) = SK SJ S7 S5 S4 HK HQ H6 DA D5 D3 C9 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 1
+Dealer = West
+Number of Bids Made = 11
+Declarer = East
+Bidding History = Pass Pass 1S Dbl 3S Pass 4S Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 4
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = South
+GameTrick #1 = South CK C2 C8 C6 South
+GameTrick #2 = South CA C7 C3 C9 South
+GameTrick #3 = South CQ CJ C4 S4 East
+GameTrick #4 = East SA S2 S3 SK South
+GameTrick #5 = South HA HT H7 H6 South
+GameTrick #6 = South S6 SQ H2 S5 West
+GameTrick #7 = West D8 D2 D7 DA East
+GameTrick #8 = East -- -- -- -- ????
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should finesse Diamonds vs playing High in dummy
+>>> EAST<<<<<<<<<<<<,
+
+
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 5 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Diamonds in hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 3 cards in Diamonds, plus 2 in Hearts, plus 2 in Spades.
+PLNCSH30: A total of 7 maximum cashing tricks are immediately available. 2 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 5 cashing tricks in the side suits, and up to 2 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 9 possible plays and approx. 9+ possible tricks including 5 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Diamond in hand.
+ Play 2: Ruff a Diamond in hand.
+ Play 3: Cash the King of Diamonds in dummy.
+ Play 4: Cash the Jack of Diamonds in dummy. <Requires ...>
+ Play 5: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 6: Cash the King of Hearts in hand.
+ Play 7: Cash the Queen of Hearts in hand.
+ Play 8: Cash the Jack of Spades in hand.
+ Play 9: Cash the Ten of Spades in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Diamond in hand.
+ Play 2: Ruff a Diamond in hand.
+ Play 3: Cash the King of Diamonds in dummy.
+ Play 4: Cash the Jack of Diamonds in dummy.
+ Play 5: Cash the Nine of Diamonds in dummy.
+ Play 6: Cash the King of Hearts in hand.
+ Play 7: Cash the Queen of Hearts in hand.
+ Play 8: Cash the Jack of Spades in hand.
+ Play 9: Cash the Ten of Spades in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLRUF02: Can't ruff dummy's Diamond in hand when leading.
+PLRUF02: Can't ruff dummy's Diamond in hand when leading.
+PLCSH20: Lead a low Diamond (the three) from hand in order to cash the King in dummy.
+PLAY: We lead the D3.
+PLAY: South plays the DT.
+PLDM: Playing card from dummy.
+PLCSH74: Cash the DK from dummy.
+PLAY: West plays the DK.
+PLAY: North plays the D6.
+PLAY: West wins the round.
+
+>>>>> Second version <<<<<<<<<<
+PLNADJ: Reviewing play plan for round 8...
+PLRV10: We have only 5 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLNDRP1: Looking at the hand for drop plays...
+PLNDRP5: No drop plays are available.
+PLNFNS0: Looking for possible finesses...
+PLNFNS95: No immediate finesses have been found.
+PLNDEV0: Looking for ways to force out enemy top cards and promote our own......
+PLNDEV95: No suit development plays have been found.
+PLNRF0: Looking for ruffing tricks...
+PLNRF1: We can potentially ruff up to 2 Diamonds in hand.
+PLNCSH1: Looking at the hand for cashes...
+PLNCSH3: We can cash 3 cards in Diamonds, plus 2 in Hearts, plus 2 in Spades.
+PLNCSH30: A total of 7 maximum cashing tricks are immediately available. 2 require cards to have been played
+PLNTRMP: Evaluating the trumps situation...
+PLNTRMP4: We cannot safely play any trumps without endangering the contract.
+PLNTRMP9: This will result in (up to) 0 rounds of trumps, 5 cashing tricks in the side suits, and up to 2 ruffing tricks.
+PLYSCN: Reviewing available plays...
+PLTSTP: Checking logic of selected plays against play history...
+PLNF1: Done examining plays...
+>>>>>>>>>>>>>>>>>>>>
+PLNST90A: We have 9 possible plays and approx. 9+ possible tricks including 5 sure tricks (vs. 10 required) accounted for in the plan.
+PLNPRI: The Diamond suit looks the most promising for further development.
+PLN00: The unsorted list of available plays is as follows:
+------>
+ Play 1: Ruff a Diamond in hand.
+ Play 2: Ruff a Diamond in hand.
+ Play 3: Cash the King of Diamonds in dummy.
+ Play 4: Cash the Jack of Diamonds in dummy. <Requires ...>
+ Play 5: Cash the Nine of Diamonds in dummy. <Requires ...>
+ Play 6: Cash the King of Hearts in hand.
+ Play 7: Cash the Queen of Hearts in hand.
+ Play 8: Cash the Jack of Spades in hand.
+ Play 9: Cash the Ten of Spades in dummy.
+PLSEQ: Checking play sequencing...
+PLSEQ6: We want to work on developing the Diamond suit first, so move its plays up to the front if possible.
+PINTLV: Interleaving plays...
+PLRV90: The revised list of available plays is as follows:
+------>
+ Play 1: Ruff a Diamond in hand.
+ Play 2: Ruff a Diamond in hand.
+ Play 3: Cash the King of Diamonds in dummy.
+ Play 4: Cash the Jack of Diamonds in dummy.
+ Play 5: Cash the Nine of Diamonds in dummy.
+ Play 6: Cash the King of Hearts in hand.
+ Play 7: Cash the Queen of Hearts in hand.
+ Play 8: Cash the Jack of Spades in hand.
+ Play 9: Cash the Ten of Spades in dummy.
+PLRV95: The play plan review is complete.
+---------------------------
+PLRUF02: Can't ruff dummy's Diamond in hand when leading.
+PLRUF02: Can't ruff dummy's Diamond in hand when leading.
+PLCSH20: Lead a low Diamond (the three) from hand in order to cash the King in dummy.
+PLAY: We lead the D3.
+
+
+
+
+

@@ -1,0 +1,137 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 18, 2009
+File Date =  10/19/09 13:51:47
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = DK DQ D8 D7 D5 D4 C9 C2 
+Current Hand(West) = S6 HA HQ H5 CA CK C6 C5 
+Current Hand(North) = HK HT H9 DJ CQ C7 C4 C3 
+Current Hand(East) = SJ ST HJ H8 H7 CJ CT C8 
+Original Hand(South) = S8 S7 H6 DK DQ D8 D7 D5 D4 D3 D2 C9 C2 
+Original Hand(West) = SA SK S6 S5 HA HQ H5 H2 D9 CA CK C6 C5 
+Original Hand(North) = SQ S9 HK HT H9 H3 DA DJ DT CQ C7 C4 C3 
+Original Hand(East) = SJ ST S4 S3 S2 HJ H8 H7 H4 D6 CJ CT C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 4
+Contract Modifier = 1
+Dealer = South
+Number of Bids Made = 9
+Declarer = South
+Bidding History = 3D Dbl Pass 3S 4D Dbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 5
+# of Tricks won in Game by N/S = 3
+# of Tricks won in Game by E/W = 2
+Lead Player for Current Game = West
+GameTrick #1 = West S7 SA S9 S2 West
+GameTrick #2 = West S8 SK SQ S3 West
+GameTrick #3 = West H6 S5 DT S4 North
+GameTrick #4 = North D2 D9 DA D6 North
+GameTrick #5 = North D3 H2 H3 H4 South
+GameTrick #6 = South -- -- -- -- ????
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West lets South make contract by NOT playing CAK
+>>>>>>>> WEST <<<<<<<<<
+S:AK65  H:AQ52  D:9  C:AK65
+Hand evaluation:
+  HCPs = 20.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 20.0.
+  QT's = 5.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  9 Likely Winners (3/3/0/3)
+  4 Likely Losers (1/1/1/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts, Spades
+The best suit is Spades.
+====================
+South bids 3D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+TKOUT: With 20.0/20.0 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+North passes.
+--------------------
+East bids 3S.
+--------------------
+South bids 4D.
+--------------------
+Rebidding after opening bid of Double and partner's response of 3 Spades.
+TKORb43: Partner has made a minimum response of 3 Spades, indicating no more than 9 points.
+TKRb49: The total point count in the partnership is therefore 22.0-29.0 pts.
+TKRb51: The right-hand opponent has bid after partner's response, interfering with our communication.
+TKRb72: With a total of 22.0-29.0 points in the partnership, we have insufficient strength to raise partner's 3 Spades bid, so we have to pass.
+TSTDBL4: But upon reconsideration, we have at least 5 likely tricks in the hand, so we can double for penalties.
+We bid Dbl.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Diamonds (doubled).  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 4 Diamonds.
+PLYLD4: Lead the Ace of partner's Spade.
+PLYLDPRF4: Partner has indicated a preference for the Spades suit, so lead the SK.
+RCP20: Dummy is now out of Spades.
+PLYLDPRF1: Partner likes the Spade suit, but dummy can ruff, so skip this suit for now.
+PLYLD33: Partner has bid the Spades suit, so lead the S5.
+RCP5A: South is now known to have started with 2 Spades.
+PLAYB48: We can't beat North's Ace, so discard the D9.
+PLAYB23: We can't beat the opponent's three of trumps, so discard the H2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H2: As second hand, play the lowest card we have in the suit, the five.   <<<<<<<<<<<<< NO TAKE CA and CK to set contract
+PLAYB34: Partner's ten is high, so discard the C6.
+PLAYCL: South has claimed the remaining 6 tricks.
+RESULT: North/South made the contract.
+
+

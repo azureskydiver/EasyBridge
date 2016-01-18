@@ -1,0 +1,171 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 8, 2010
+File Date =  11/15/10 15:56:29
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ S4 HJ HT H9 H8 H5 H3 D2 CK CQ C3 
+Current Hand(West) = SK S9 S5 HA DA D7 D5 D4 CA CJ CT C5 
+Current Hand(North) = SA S8 S7 S3 HK H7 H6 H2 DK DQ D9 D3 
+Current Hand(East) = SQ ST S6 S2 HQ H4 DJ DT D8 D6 C8 C7 
+Original Hand(South) = SJ S4 HJ HT H9 H8 H5 H3 D2 CK CQ C9 C3 
+Original Hand(West) = SK S9 S5 HA DA D7 D5 D4 CA CJ CT C6 C5 
+Original Hand(North) = SA S8 S7 S3 HK H7 H6 H2 DK DQ D9 D3 C4 
+Original Hand(East) = SQ ST S6 S2 HQ H4 DJ DT D8 D6 C8 C7 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 2H Dbl 2NT Pass 3C Dbl 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West C9 C6 C4 C2 South
+GameTrick #2 = South -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 150
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 40
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "	  40	2 overtricks"
+Game Score Record = "  90		3 Hearts made"
+Game Score Record = "	  60	3 Clubs made"
+Game Score Record = "  60		2 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+South's Hint did NOT understand North's 2NT response to South's weak 2 opening
+>>>>>>>> SOUTH<<<<<<<<
+S:J4  H:JT9853  D:2  C:KQ93
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 5.5.
+  QT's = 1.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  5 Likely Winners (0/3/0/2)
+  8 Likely Losers (2/3/1/2)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+We bid 2H.
+--------------------
+West doubles.
+--------------------
+North bids 2NT.
+--------------------
+East passes.
+--------------------
+Rebidding after opening bid of 2 Hearts and partner's response of 2 No Trump.   <<<<<<<<<< This is asking for feature. See below
+B3Z00: Partner made a response which we don't understand; simply pass.
+We bid 3C.
+--------------------
+West doubles.
+--------------------
+North bids 3H.
+--------------------
+East passes.
+--------------------
+We pass.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+
+
+>>>>>>>>>> NORTH<<<<<<<<<<<
+S:A873  H:K762  D:KQ93  C:4
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Likely Winners (1/1/2/0)
+  9 Likely Losers (3/3/2/1)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Spades
+The best suit is Diamonds.
+====================
+South bids 2H.
+--------------------
+West doubles.
+--------------------
+Responding to partner's opening bid of 2 Hearts.
+REVAL1: Revaluing hand as dummy...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Heart trump support including a trump honor & a singleton in Clubs, the hand is revalued for a suit contract as dummy from 12.0 to 17.0 points)
+RWKT: Partner made a weak 2-bid, showing a a 6+ card suit with 5.0-10.0 points, less than 4 cards in the other major, no voids, and no more than one singleton.
+We have 12.0/12.0/12.0 points, for a partnership total of 17.0-22.0 points, so we are interested in game if a good fit can be found.
+RWKT21: And we like partner's Heart suit (holding K762 support), but with only 17.0-22.0 total pts we don't quite have enough for a direct game bid, so invite partner to show an outside Ace or King with a bid of 2NT.    <<<<<<<<<<<<<<< NOTE Asking for feature
+We bid 2NT.  
+--------------------
+East passes.
+--------------------
+South bids 3C.
+--------------------
+West doubles.
+--------------------
+Rebidding as responder after bids of 2 Hearts, 2 No Trump, and 3 Clubs.
+RWKT2B2: Partner has shown an outside Ace or King in the Club suit, but with a total of 17.0-22.0 pts in the partnership we lack the strength to raise further, so return to partner's suit at 3 Hearts.
+We bid 3H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+RCP20: Dummy is now out of Clubs.
+RCP25: Dummy is shown to be void in Clubs.
+
+

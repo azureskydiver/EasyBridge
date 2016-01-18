@@ -1,0 +1,72 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 14, 2010
+File Date =  12/16/10 13:00:41
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = ST DK D9 D3 D2 
+Current Hand(West) = HJ D7 D5 C7 C6 
+Current Hand(North) = D8 CJ CT C8 C5 
+Current Hand(East) = H7 DA DQ DJ DT 
+Original Hand(South) = SA SQ ST S9 S2 HA HQ DK D9 D3 D2 CA C9 
+Original Hand(West) = SK SJ S3 HK HJ H5 H4 D7 D5 CQ C7 C6 C3 
+Original Hand(North) = S8 S6 H9 H8 D8 D6 D4 CJ CT C8 C5 C4 C2 
+Original Hand(East) = S7 S5 S4 HT H7 H6 H3 H2 DA DQ DJ DT CK 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 4
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 15
+Declarer = South
+Bidding History = Pass Pass 1H Dbl 3H Pass Pass Dbl Pass 4C Pass 4S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 8
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 3
+Lead Player for Current Game = West
+GameTrick #1 = West HQ H4 H8 HT South
+GameTrick #2 = South SA S3 S6 S4 South
+GameTrick #3 = South SQ SK S8 S5 West
+GameTrick #4 = West HA H5 H9 H6 South
+GameTrick #5 = South CA C3 C2 CK South
+GameTrick #6 = South S2 SJ D4 S7 West
+GameTrick #7 = West S9 HK D6 H2 South
+GameTrick #8 = South C9 CQ C4 H3 West
+GameTrick #9 = West -- -- -- -- ????
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should NOT lead Clubs - Dummy is all winners
+>>>>>>>>> WEST<<<<<<<<<
+PLAY: West wins the round.
+--------
+PLAY1: Leading card, using default player logic.
+PLYLD32: Partner is void in Clubs and may still have some trumps, so lead the C6.   <<<<<<<< Only 1 trump out, it will win no matter what
+PLAY: We lead the C6.
+
+

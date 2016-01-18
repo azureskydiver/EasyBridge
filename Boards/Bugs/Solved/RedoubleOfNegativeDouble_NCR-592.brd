@@ -1,0 +1,165 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = December 20, 2011
+File Date =  12/27/11 16:43:16
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ S8 S4 S2 HQ H8 H3 D9 D8 D7 D2 CJ C3 
+Current Hand(West) = SA HJ DK DJ DT D6 D5 CK CT C7 C6 C5 C4 
+Current Hand(North) = SK ST S9 S5 S3 HK HT H9 H5 DA D4 D3 CQ 
+Current Hand(East) = SJ S7 S6 HA H7 H6 H4 H2 DQ C9 C8 C2 
+Original Hand(South) = SQ S8 S4 S2 HQ H8 H3 D9 D8 D7 D2 CJ C3 
+Original Hand(West) = SA HJ DK DJ DT D6 D5 CK CT C7 C6 C5 C4 
+Original Hand(North) = SK ST S9 S5 S3 HK HT H9 H5 DA D4 D3 CQ 
+Original Hand(East) = SJ S7 S6 HA H7 H6 H4 H2 DQ CA C9 C8 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 1
+Contract Modifier = 2
+Dealer = West
+Number of Bids Made = 7
+Declarer = North
+Bidding History = 1C 1S Dbl Redbl Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East -- -- -- CA ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 40
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "	  40	2 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+The bidding here was a normal 1C opening by West, normal overcall of 1S by North, and a normal negative double by East. 
+ At this point as South I threw in an unjustified redouble (I do not expect EasyBridge to understand Rosenkranz redoubles). 
+ West decides he has no good bid, so passes (maybe he should bid 2C), North doesn’t understand the redouble, so passes.  
+At this point East gets amnesia, he forgets that West opened the bidding and figures West has less than 6 points so he passes ! 
+ (Of course, he should simply bid 2C with 4 clubs to the ace, since East didn’t get excited by the promised Heart suit.) 
+ North/South have stolen a game at 1Sxx (which was a minor scramble to make).
+ 
+I think the major problem this shows is that East got amnesia during the bidding.
+
+>>>>>>>>>> EAST<<<<<<<<<<<<
+
+S:J76  H:A7642  D:Q  C:A982
+Hand evaluation:
+  HCPs = 11.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 9.5.
+  QT's = 2.0,
+  Sure Stoppers in: H, C
+  Probable Stoppers in:
+  3 Likely Winners (0/2/0/1)
+  10 Likely Losers (3/3/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+***Bidding restarted***
+West bids 1C.
+--------------------
+North bids 1S.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy for Club contract...
+3REVAL5: Adding 1 point(s) for the 1 extra trump(s).
+4REVAL21: Adjusting by -1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 4-card Club trump support including a trump honor & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 9.5 to 11.5 points)
+NEGDBL1: With 9.5/9.5 points and 4 cards in the unbid majors, bid a negative double.
+We bid Dbl.
+--------------------
+South redoubles.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+Rebidding in round 2.
+BXPNTp: Partner has passed, so we pass also.  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ????  WEST Opened ????
+We pass.
+--------------------
+Bidding finished; contract is 1 Spade (redoubled).  Declarer is North; East leads.
+
+>>>>>>>>WEST<<<<<<<<<<<<<<<<<<
+S:A  H:J  D:KJT65  C:KT7654
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 4.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 11.5.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (1/0/3/3)
+  6 Likely Losers (0/1/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Clubs.
+====================
+***Bidding restarted***
+Opening bid for team.
+E02: Have 12.0 points in high cards and 2.0 quick tricks, so bid 1 Club.
+We bid 1C.
+--------------------
+North bids 1S.
+--------------------
+East doubles.
+--------------------
+South redoubles.
+--------------------
+Rebidding after opening bid of 1 Club and partner's response of Double.
+NEGDR: Partner has bid a negative double, indicating 4+ cards in the unbid majors (Hearts).
+NEGDR8: Partner's negative double indicates 5.0-18.0 points, for a total in the partnership of 16.5-29.5 points.
+NEGDTR36: With a total of 16.5-29.5 pts in the partnership, we cannot safely bid further, so pass. <<<<<<<<<<<<<<<<<<???
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 1 Spade (redoubled).  Declarer is North; East leads.
+=======================
+
+

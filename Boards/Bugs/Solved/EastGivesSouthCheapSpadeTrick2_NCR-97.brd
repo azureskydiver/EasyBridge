@@ -1,0 +1,122 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = October 02, 2009
+File Date =  10/02/09 19:34:54
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S2 H8 H7 H4 DA DQ DJ DT D5 CJ C3 
+Current Hand(West) = HJ H9 H6 H3 D7 D6 D2 CK CQ C9 C8 C7 
+Current Hand(North) = SA SK S7 S5 HA HQ HT D9 D3 CA C5 C4 
+Current Hand(East) = SQ SJ ST HK H5 H2 DK D8 D4 CT C6 C2 
+Original Hand(South) = S9 S8 S2 H8 H7 H4 DA DQ DJ DT D5 CJ C3 
+Original Hand(West) = S6 HJ H9 H6 H3 D7 D6 D2 CK CQ C9 C8 C7 
+Original Hand(North) = SA SK S7 S5 S3 HA HQ HT D9 D3 CA C5 C4 
+Original Hand(East) = SQ SJ ST S4 HK H5 H2 DK D8 D4 CT C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 8
+Declarer = North
+Bidding History = 1S Pass 2S Pass 3S Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 1
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = East
+GameTrick #1 = East S8 S6 S3 S4 South
+GameTrick #2 = South -- -- -- -- ????
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 80
+North/South Game 1 Points = 60
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "  30		1 overtrick"
+Game Score Record = "  60		2 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East gives South a cheap trick by leading away from SQJT
+>>>>>>> EAST <<<<<<<
+S:QJT4  H:K52  D:K84  C:T62
+Hand evaluation:
+  HCPs = 9.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 8.0.
+  QT's = 1.0,
+  Sure Stoppers in: S, H, D
+  Probable Stoppers in:
+  4 Likely Winners (2/1/1/0)
+  9 Likely Losers (2/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+====================
+North bids 1S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 2S.
+--------------------
+West passes.
+--------------------
+North bids 3S.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 3 Spades.  Declarer is North; East leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as East against a contract of 3 Spades.
+PLYLD4G: We have no 4-card suits other than the trump suit, so lead the 4th best trump -- the S4.   <<<<<<<<< ?????????????
+PLYSIG1: Partner discarded low with the six, so consider it a signal that he dislikes the suit.
+
+

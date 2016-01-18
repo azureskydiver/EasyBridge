@@ -1,0 +1,139 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 21, 2010
+File Date =  09/27/10 11:15:36
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S3 H7 D6 D5 D3 D2 CK C6 C5 C4 
+Current Hand(West) = SA SQ S7 S6 HA HQ HJ H5 DQ C9 C2 
+Current Hand(North) = ST S8 S5 HT H9 H4 H3 CQ CT C8 C7 
+Current Hand(East) = SK SJ S4 S2 HK H8 H6 H2 CA CJ C3 
+Original Hand(South) = S9 S3 H7 DA DK D6 D5 D3 D2 CK C6 C5 C4 
+Original Hand(West) = SA SQ S7 S6 HA HQ HJ H5 DQ DT D7 C9 C2 
+Original Hand(North) = ST S8 S5 HT H9 H4 H3 D8 D4 CQ CT C8 C7 
+Original Hand(East) = SK SJ S4 S2 HK H8 H6 H2 DJ D9 CA CJ C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 11
+Declarer = West
+Bidding History = Pass 1C 1D 1H Pass 2H Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 2
+# of Tricks won in Game by N/S = 2
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North DK D7 D8 D9 South
+GameTrick #2 = South DA DT D4 DJ South
+GameTrick #3 = South -- -- -- -- East
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 50
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 90
+East/West Game 1 Points = 60
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Bonus Score Record = "  50		Bonus for defeating contract by 1 trick"
+Bonus Score Record = "	  90	3 overtricks"
+Game Score Record = "	  60	2 Spades made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+N should play his H10 to force over trump by dummy of his HK. N played his low H3.
+==S:T85  H:T943  D:84  C:QT87
+Hand evaluation:
+  HCPs = 2.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 1.0.
+  QT's = 0.0,
+  Sure Stoppers in: C
+  Probable Stoppers in:
+  -1 Likely Winners (-1/-1/0/1)
+  14 Likely Losers (4/5/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1C.
+--------------------
+South bids 1D.
+--------------------
+West bids 1H.
+--------------------
+Responding to partner's opening bid of 1 Diamond.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+Partner overcalled at the 1-level, indicating a good 5+ card Diamond suit, 8-15 points, and probably 5+ playing tricks.
+The total point count in the partnership is therefore 8.5-15.5 points.
+This is not enough to bid any higher, so pass.
+We pass.
+--------------------
+East bids 2H.
+--------------------
+South passes.
+--------------------
+West bids 4H.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is West; North leads.
+=======================
+Starting play as left-hand defender.
+Making opening lead as North against a contract of 4 Hearts.
+Lead the top card of partner's Diamond suit (the eight.
+Play our only card in the suit, the four.
+Dummy is now out of Diamonds.
+With no cards in Diamonds, trump with the H3.
+North is now known to have started with 2 Diamonds.
+=====================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>> FROM MY VeRSION <<<<<<<<<<<<<<<<<<<<<<,
+PLAYB48: We can't beat East's King, so discard the H4.   <<<<<<<<<<<<<< vs H9 to force HK <<<<<<
+PLDF55: With no cards in Diamonds, trump with the H3.
+
+

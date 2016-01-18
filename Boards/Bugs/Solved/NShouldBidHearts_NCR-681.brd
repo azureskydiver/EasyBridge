@@ -1,0 +1,154 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = June 30, 2013
+File Date =  07/12/13 16:28:17
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SJ ST S4 HA HJ H8 H6 D9 CQ CT C9 C4 
+Current Hand(West) = SK S9 S2 HT H4 DJ D8 D6 D5 CJ C8 C7 C6 
+Current Hand(North) = S8 S3 HK H9 H7 H5 DQ DT D4 CK C5 C3 C2 
+Current Hand(East) = SQ S7 S6 S5 HQ H3 H2 DA DK D7 D3 D2 CA 
+Original Hand(South) = SA SJ ST S4 HA HJ H8 H6 D9 CQ CT C9 C4 
+Original Hand(West) = SK S9 S2 HT H4 DJ D8 D6 D5 CJ C8 C7 C6 
+Original Hand(North) = S8 S3 HK H9 H7 H5 DQ DT D4 CK C5 C3 C2 
+Original Hand(East) = SQ S7 S6 S5 HQ H3 H2 DA DK D7 D3 D2 CA 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 7
+Declarer = ????
+Bidding History = Pass Pass 1D Dbl Pass 1NT Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 60
+East/West Game 1 Points = 120
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 1
+Current Game = 2
+Bonus Score Record = "	  60	2 overtricks"
+Game Score Record = "	 120	4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Why didn't North Bid 1 Heart???
+================
+North Analysis
+S:83  H:K975  D:QT4  C:K532
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0;
+Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Likely Winners (0/1/0/1)
+  11 Likely Losers (2/3/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1D.
+--------------------
+South doubles.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening double.
+Partner has doubled for takeout.
+Partner's takeout indicates 11.5+ HCPs, for a total in the partnership of 18.5-28.5 points.
+With 8.0 HCPs and a balanced hand, respond with 1 No Trump.
+We bid 1NT.
+--------------------
+East passes.
+--------------------
+
+>>>DEBUG NORTH<<<<<<<<<<
+S:83  H:K975  D:QT4  C:K532
+Hand evaluation:
+  HCPs = 8.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.0; Total pts = 7.0.
+  QT's = 1.0,
+  Sure Stoppers in: H, D, C
+  Probable Stoppers in:
+  2 Likely Winners (0/1/0/1)
+  11 Likely Losers (2/3/3/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+West passes.
+--------------------
+Opening bid for team.
+Z00: Hand is insufficient for any opening, so pass.
+We pass.
+--------------------
+East bids 1D.
+--------------------
+South doubles.
+--------------------
+West passes.
+--------------------
+A10: Responding to partner's opening double.
+TKOTR: Partner has doubled for takeout.
+TKOTR8: Partner's takeout indicates 11.5+ HCPs, for a total in the partnership of 18.5-28.5 points.
+TKOTR20: With 8.0 HCPs and a balanced hand, respond with 1 No Trump.
+We bid 1NT.
+--------------------
+East passes.
+--------------------
+
+
+
+
+

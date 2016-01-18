@@ -1,0 +1,223 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = May 21, 2010
+File Date =  05/27/10 17:35:15
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S9 S6 S4 H9 H8 H5 DK D8 D5 CJ CT C5 C4 
+Current Hand(West) = SK S8 S3 HA HJ H6 H4 H2 DT CA C9 C3 C2 
+Current Hand(North) = SJ S7 S5 S2 H7 H3 DJ D9 D7 D6 D4 D3 CK 
+Current Hand(East) = SA SQ ST HK HQ HT DA DQ D2 CQ C8 C7 C6 
+Original Hand(South) = S9 S6 S4 H9 H8 H5 DK D8 D5 CJ CT C5 C4 
+Original Hand(West) = SK S8 S3 HA HJ H6 H4 H2 DT CA C9 C3 C2 
+Original Hand(North) = SJ S7 S5 S2 H7 H3 DJ D9 D7 D6 D4 D3 CK 
+Original Hand(East) = SA SQ ST HK HQ HT DA DQ D2 CQ C8 C7 C6 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 6
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 16
+Declarer = East
+Bidding History = 1H Pass 2S Pass 3S Pass 4S Pass 4NT Pass 5H Pass 6S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East-West  should not be in 6 Spades with only 6
+>>>>>>>>>>WEST<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:K83  H:AJ642  D:T  C:A932
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Likely Winners (0/3/0/1)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+S:K83  H:AJ642  D:T  C:A932
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.5,
+  Sure Stoppers in: S, H, C
+  Probable Stoppers in:
+  4 Likely Winners (0/3/0/1)
+  9 Likely Losers (3/2/1/3)
+Playing five-card majors, Hearts can be opened.
+Preferred suits are  Clubs, Hearts
+The best suit is Hearts.
+====================
+***Bidding restarted***
+Opening bid for team.
+E02: Have 12.0 points in high cards and 2.5 quick tricks, so bid 1 Heart.
+We bid 1H.
+--------------------
+North passes.
+--------------------
+East bids 2S.
+--------------------
+South passes.
+--------------------
+Rebidding after opening bid of 1 Heart and partner's response of 2 Spades.
+B3Y00: Partner has made a jump shift to 2 Spades after our opening 1 Heart bid, which indicates 18.0+ points and is forcing to game (and points to a possible slam).
+REVAL1: Revaluing hand as dummy...
+2REVAL38: (with 3-card Spade trump support including a trump honor & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 12.0 to 15.0 points)
+B3Y40: With a total of 33.0-36.0 pts in the partnership, move towards slam in partner's Spade suit by raising to 3 Spades.
+We bid 3S.
+--------------------
+North passes.
+--------------------
+East bids 4S.
+--------------------
+South passes.
+--------------------
+Rebidding in round 3.
+BLKWD: with 12.0/12.0/12.0 points in the hand, for a total of approx. 30.0-33.0 / 33.0-36.0 pts in the partnership, explore slam possibilities with Blackwood at 4 No Trump.
+We bid 4NT.
+--------------------
+North passes.
+--------------------
+East bids 5H.
+--------------------
+South passes.
+--------------------
+Rebidding in round 4.
+BK20: Partner responded to our 4NT Blackwood inquiry with 5 Hearts, indicating 2 Aces.
+BK32: Our team holds all four aces, but with an estimated 33.0-36.0 total partnership points, we lack the points for a grand slam, so settle for a contract of 6 Spades.
+We bid 6S.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 6 Spades.  Declarer is East; South leads.
+=======================
+
+>>>>>>>>>>>>EAST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:AQT  H:KQT  D:AQ2  C:Q876
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 19.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (1/1/1/1)
+  9 Likely Losers (2/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+S:AQT  H:KQT  D:AQ2  C:Q876
+Hand evaluation:
+  HCPs = 19.0, Distn pts = 0.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 19.0.
+  QT's = 4.0,
+  Sure Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  4 Likely Winners (1/1/1/1)
+  9 Likely Losers (2/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+***Bidding restarted***
+West bids 1H.
+--------------------
+North passes.
+--------------------
+Responding to partner's opening bid of 1 Heart.
+REVAL1: Revaluing hand as dummy...
+2REVAL38: (with 3-card Heart trump support including a trump honor, the hand is revalued for a suit contract as dummy from 19.0 to 20.0 points)
+F00: Partner is showing 12.0+ points and 2+ QT's.
+J10: Have 19.0/19.0/20.0 points; show strength by jump shifting to 2 Spades.
+We bid 2S.
+--------------------
+South passes.
+--------------------
+West bids 3S.
+--------------------
+North passes.
+--------------------
+Rebidding as responder after bids of 1 Heart, 2 Spades, and 3 Spades.
+B4H01: Partner raised our Spades after our jump shift, so stick with that suit.
+REVAL1: Revaluing hand as declarer...
+3REVAL6: Deducting 4 point(s) for the 2 trump(s) short of 5.
+2REVAL18: Declarer's hand is revalued for a suit contract in Spades from 19.0 down to 15.0 points)
+B4H04: Now with 27.0-35.0 pts in the partnership, raise partner to game at a bid of 4 Spades.
+We bid 4S.
+--------------------
+South passes.
+--------------------
+West bids 4NT.
+--------------------
+North passes.
+--------------------
+Rebidding in round 3.
+BK10: With 2 Aces, respond to partner's Blackwood inquiry with 5 Hearts.
+We bid 5H.
+--------------------
+South passes.
+--------------------
+West bids 6S.
+--------------------
+North passes.
+--------------------
+Rebidding in round 4.
+BK13: Partner appears to have bailed out, so we'll pass.
+We pass.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 6 Spades.  Declarer is East; South leads.
+=======================
+
+
+
+
+

@@ -1,0 +1,104 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 2
+Program Build Number = 0
+Program Build Date = March 21, 2001
+File Date =  10/19/09 19:34:35
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ S9 S7 S4 S3 H5 D9 D6 D3 C8 C7 C6 
+Current Hand(West) = SA ST S8 S5 HQ H9 H8 H7 H4 DJ D2 CA CQ 
+Current Hand(North) = SK S2 HJ H6 H2 DT D8 D4 CK CT C9 C5 C3 
+Current Hand(East) = S6 HA HK HT H3 DA DK DQ D7 D5 CJ C4 C2 
+Original Hand(South) = SQ SJ S9 S7 S4 S3 H5 D9 D6 D3 C8 C7 C6 
+Original Hand(West) = SA ST S8 S5 HQ H9 H8 H7 H4 DJ D2 CA CQ 
+Original Hand(North) = SK S2 HJ H6 H2 DT D8 D4 CK CT C9 C5 C3 
+Original Hand(East) = S6 HA HK HT H3 DA DK DQ D7 D5 CJ C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = No
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 6
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 19
+Declarer = West
+Bidding History = 2S Pass 3S Dbl Pass 4H Pass 4NT Pass 5H Pass 5NT Pass 6C Pass 6H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = North
+GameTrick #1 = North -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East sees messup bidding if bidding done manually
+>>>>>>>> EAST <<<<<<<<<<
+S:6  H:AKT3  D:AKQ75  C:J42
+Hand evaluation:
+  HCPs = 17.0, Distn pts = 2.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 16.5.
+  QT's = 4.0,
+  Sure Stoppers in: H, D
+  Probable Stoppers in:
+  8 Likely Winners (0/3/5/0)
+  5 Likely Losers (1/1/0/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Have a strong suit in Diamonds.
+Preferred suit is Diamonds.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+North bids 3S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+TKOUT: With 17.0/16.5 points and support for all unbid suits, bid a takeout double.
+We bid Dbl.
+--------------------
+South passes.
+--------------------
+West bids 5H.   <<<<<<<<<<<<<<<< THIS was done manually!!!
+--------------------
+North passes.
+--------------------
+Rebidding after opening bid of Double and partner's pass.  <<<<<<<<<< NO< Partner bid 5H
+TKRb10: After interference from the left-hand opponent, partner passed our takeout.  ?????????? ???????????????????????????
+B3A20: Partner passed, showing < 6 points, so with 17.0/16.5 points in hand and 16.5-21.5 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+
+
+
+

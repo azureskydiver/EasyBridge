@@ -1,0 +1,167 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 28, 2010
+File Date =  09/30/10 09:45:08
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ SJ S9 S6 S4 DK CT 
+Current Hand(West) = SK S8 D3 CQ CJ C7 C4 
+Current Hand(North) = H6 H5 H4 H2 DT D9 CK 
+Current Hand(East) = ST S7 DJ D5 D4 CA C8 
+Original Hand(South) = SQ SJ S9 S6 S4 S2 H3 DK DQ CT C6 C5 C2 
+Original Hand(West) = SK S8 S5 DA D8 D3 D2 CQ CJ C9 C7 C4 C3 
+Original Hand(North) = SA HA HK HQ HJ H6 H5 H4 H2 DT D9 D6 CK 
+Original Hand(East) = ST S7 S3 HT H9 H8 H7 DJ D7 D5 D4 CA C8 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 4
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 6
+Declarer = North
+Bidding History = 2S Pass 4H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 6
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = East
+GameTrick #1 = East H3 C9 HJ HT North
+GameTrick #2 = North C2 C3 HQ H7 North
+GameTrick #3 = North C5 D8 HK H8 North
+GameTrick #4 = North C6 D2 HA H9 North
+GameTrick #5 = North S2 S5 SA S3 North
+GameTrick #6 = North DQ DA D6 D7 West
+GameTrick #7 = West -- -- -- -- ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+The SK lead steps up Dummy's Spades
+>>>>>>> WEST <<<<<<<<<<
+S:K85  H:  D:A832  C:QJ9743
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/1/4)
+  8 Likely Losers (3/0/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Clubs.
+====================
+South bids 2S.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL6a: But we don't have a suit strong enough to overcall with at the 3-level.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+North bids 4H.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 4 Hearts.  Declarer is North; East leads.
+=======================
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PL03: Starting play as right-hand defender.
+PLDIS40: Indicate a preference for the Club by discarding high with the C9.
+PLDF60: With no cards in the suit led and no trumps, we discard the C9.
+RCP5A: West is now known to have started with 0 Hearts.
+PLAYB48: We can't beat North's Ace, so discard the S5.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C3.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the D8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S8.
+PLAYB41: Play the Ace to win the trick.
+PLCSW9: With no other good options, cash a winner in the Spade suit, the King
+RCP5A: North is now known to have started with 1 Spade.
+RCP20: Dummy is now out of Diamonds.
+PLAYB48: We can't beat South's King, so discard the D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Spades and no trumps, so discard the D3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Spades and no trumps, so discard the C4.
+RCP5A: East is now known to have started with 3 Spades.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E3: South led an honor (the ten), we want to save the Queen, so play the seven.
+PLAYCL: North has claimed the remaining 2 tricks.
+RESULT: North/South made 2 overtricks.
+PLAY: Play restarted.
+====================
+S:K85  H:---  D:A832  C:QJ9743
+Hand evaluation:
+  HCPs = 10.0, Distn pts = 3.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 10.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (0/0/1/4)
+  8 Likely Losers (3/0/3/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Clubs, Diamonds
+The best suit is Clubs.
+====================
+RCP20: Dummy is now out of Hearts.
+RCP25: Dummy is shown to be void in Hearts.
+PL03: Starting play as right-hand defender.
+PLDIS40: Indicate a preference for the Club by discarding high with the C9.
+PLDF60: With no cards in the suit led and no trumps, we discard the C9.
+RCP5A: West is now known to have started with 0 Hearts.
+PLAYB56: With no cards in the suit led and no trumps, we discard the C3.
+PLDIS40: Indicate a preference for the Diamond by discarding high with the D8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D8.
+PLAYB56: With no cards in the suit led and no trumps, we discard the D2.
+PLAYB48: We can't beat North's Ace, so discard the S5.
+PLAYB41: Play the Ace to win the trick.
+PLCSW9: With no other good options, cash a winner in the Spade suit, the King  <<<<<<<<<<<<<<<<<NO Sets up the boards Spades
+RCP5A: North is now known to have started with 1 Spade.
+
+

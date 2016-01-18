@@ -1,0 +1,215 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = August 9, 2009
+File Date =  08/09/09 15:03:31
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK S4 HA H4 H2 DK DQ DJ DT D9 D7 C2 
+Current Hand(West) = SQ SJ ST S8 S7 S3 HJ DA D5 D2 CA CQ C5 
+Current Hand(North) = S6 S2 HT H9 H7 H6 H5 D6 D4 CK C9 C7 C6 
+Current Hand(East) = S9 S5 HK HQ H8 H3 D8 D3 CJ CT C8 C4 C3 
+Original Hand(South) = SA SK S4 HA H4 H2 DK DQ DJ DT D9 D7 C2 
+Original Hand(West) = SQ SJ ST S8 S7 S3 HJ DA D5 D2 CA CQ C5 
+Original Hand(North) = S6 S2 HT H9 H7 H6 H5 D6 D4 CK C9 C7 C6 
+Original Hand(East) = S9 S5 HK HQ H8 H3 D8 D3 CJ CT C8 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 30
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Diamonds
+Contract Level = 3
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 8
+Declarer = South
+Bidding History = 1D 1S Pass Pass 3D Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West led a low spade allowing S6 to win???
+>>>> WEST <<<<<<<<
+S:QJT873  H:J  D:A52  C:AQ5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/1/2)
+  6 Likely Losers (2/1/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+South bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVERCL8: Have a good 6-card Spade suit with 13.5/13.5 points and 7 playing tricks, so overcall the opponents' 1 Diamond with a bid of 1 Spade.
+We bid 1S.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South bids 3D.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's pass.
+We pass.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Diamonds.  Declarer is South; West leads.
+=======================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Diamonds.
+PLYLD15: Lead the SQ from the top of the { SQ SJ ST } sequence.
+PLYSIG0: Partner discarded high with the nine, so consider it a suit preference signal.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G1: Since there are no more outstanding cards in the suit, win with the seven.
+RCP5A: East is now known to have started with 2 Spades.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's King, so play the Ace.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLDWN2: We'd like to lead the Spades suit, but dummy might ruff.
+PLYLD43: With no good card to lead, lead the HJ since dummy is not void in the Heart suit (we don't know about declarer, though).
+PLYSIG0: Partner discarded high with the eight, so consider it a suit preference signal.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the King), so cover it with our Ace.
+RCP20: Dummy is now out of Diamonds.
+PLYLD44: With no other obvious plays, lead a low trump D2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the five.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Diamonds and no trumps, so discard the S8.
+RCP5A: West is now known to have started with 3 Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the ST.
+PLDF52: With no cards in the suit led and no trumps, we discard the SJ.
+PLAYCL: South has claimed the remaining 2 tricks.
+RESULT: North/South were set 1 trick.
+PLAY: Play restarted.
+====================
+S:QJT873  H:J  D:A52  C:AQ5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/1/2)
+  6 Likely Losers (2/1/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PLAY: Play restarted.
+====================
+S:QJT873  H:J  D:A52  C:AQ5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/1/2)
+  6 Likely Losers (2/1/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+PL02: Starting play as left-hand defender.
+PLYLEAD: Making opening lead as West against a contract of 3 Diamonds.
+PLYLD15: Lead the SQ from the top of the { SQ SJ ST } sequence.
+PLYSIG0: Partner discarded high with the nine, so consider it a suit preference signal.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the three.
+RCP20: Dummy is now out of Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2G1: Since there are no more outstanding cards in the suit, win with the seven.
+RCP5A: East is now known to have started with 2 Spades.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2H1: Play second hand low with the two.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2E: South led an honor (the Jack), so cover it with our Ace.
+RCP20: Dummy is now out of Diamonds.
+PLYLDPRF4: Partner has indicated a preference for the Spades suit, so lead the S3. <<<<<<<<<<<< ?????
+RCP20: Dummy is now out of Spades.
+PLAYB48: We can't beat South's Ace, so discard the HJ.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the five.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Y: We have no Hearts and no trumps, so discard the S7.
+RCP5A: West is now known to have started with 1 Heart.
+PLDF52: With no cards in the suit led and no trumps, we discard the S8.
+PLDF38A: Playing third ahead of dummy, we need to beat dummy's King, so play the Ace.
+PLYLDRT2: We'd like to return partner's Clubs suit, but dummy will most likely win.
+PLYLDRT4: We'd like to return partner's Clubs suit, but declarer might ruff.
+PLYLDPRF4: Partner has indicated a preference for the Spades suit, so lead the ST.
+PLAYCL: South has claimed the remaining 3 tricks.
+RESULT: North/South made the contract.
+PLAY: Play restarted.
+====================
+S:QJT873  H:J  D:A52  C:AQ5
+Hand evaluation:
+  HCPs = 14.0, Distn pts = 0.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 13.5.
+  QT's = 2.5,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  7 Likely Winners (4/0/1/2)
+  6 Likely Losers (2/1/2/1)
+Playing five-card majors, Spades can be opened.
+Preferred suit is Spades.
+====================
+
+

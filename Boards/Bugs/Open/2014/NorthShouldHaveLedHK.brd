@@ -1,0 +1,136 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = January 24, 2015
+File Date =  02/18/15 14:23:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SK ST CK CT C7 C4 
+Current Hand(West) = SJ DQ DJ D8 D4 C6 
+Current Hand(North) = HK H8 DT D9 D7 D6 
+Current Hand(East) = DK D5 CQ CJ C9 C5 
+Original Hand(South) = SK ST S8 S6 S4 S3 HQ H2 CK CT C7 C4 C3 
+Original Hand(West) = SJ S7 S2 HT H9 H3 DQ DJ D8 D4 D2 C8 C6 
+Original Hand(North) = SA SQ HA HK H8 H7 H5 DT D9 D7 D6 D3 C2 
+Original Hand(East) = S9 S5 HJ H6 H4 DA DK D5 CA CQ CJ C9 C5 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 40
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Spades
+Contract Level = 3
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 10
+Declarer = South
+Bidding History = 1H 2C 2S Pass 3D Pass 3S Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 7
+# of Tricks won in Game by N/S = 5
+# of Tricks won in Game by E/W = 1
+Lead Player for Current Game = West
+GameTrick #1 = West C3 C8 C2 CA East
+GameTrick #2 = East S3 D2 D3 DA South
+GameTrick #3 = South S4 S2 SQ S5 North
+GameTrick #4 = North HQ H3 H5 H6 South
+GameTrick #5 = South H2 H9 HA H4 North
+GameTrick #6 = North S6 S7 SA S9 North
+GameTrick #7 = North S8 HT H7 HJ ????
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 530
+North/South Game 1 Points = 190
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  30		1 overtrick"
+Bonus Score Record = " 500		Small slam contract"
+Game Score Record = " 190		6 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should have lead HK vs H7
+>>>>>SOUTH<<<<<,,
+PLYE48: We can't beat East's Ace, so discard the C3.
+PLNADJ: Reviewing play plan for round 2...
+DEBUG1: NumMaxWinners=12 vs SureTricks=7 vs NumWinners=12, m_numTricksShort=2
+PLRV10: We have only 7 reasonably sure tricks left vs. 9 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLYTRY: No usable plays found for the current situation.
+PLAYDC2: Playing second in hand, using default player logic.
+PLDC2B4: We don't have a winner in ths suit in dummy, so trump here with the three.
+PLDM: Playing card from dummy.
+PLYTRY: No usable plays found for the current situation.
+PLNADJ: Reviewing play plan for round 3...
+DEBUG1: NumMaxWinners=10 vs SureTricks=7 vs NumWinners=10, m_numTricksShort=1
+PLRV10: We have only 7 reasonably sure tricks left vs. 8 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLTRMP18: Lead the S4 up to dummy to pull in a round of trumps.
+PLDM: Playing card from dummy.
+PLTRMP82b: Since LHO may hold the trump Jack, we have to play the Queen from dummy.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 4...
+DEBUG1: NumMaxWinners=9 vs SureTricks=6 vs NumWinners=9, m_numTricksShort=1
+PLRV10: We have only 6 reasonably sure tricks left vs. 7 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLDRP11: Lead low with the H5 from dummy up to the Queen in hand to try and drop one or more of the { HJ HT  }.
+PLDRP61: East did not drop a desired card (one or more of the { HJ HT  }), but perhaps West might, so continue and play the HQ from hand and hope West drops one or more of the { HJ HT  }.
+PLNADJ: Reviewing play plan for round 5...
+DEBUG1: NumMaxWinners=8 vs SureTricks=5 vs NumWinners=8, m_numTricksShort=1
+PLRV10: We have only 5 reasonably sure tricks left vs. 6 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLDRP11: Lead low with the H2 from hand up to the Ace in dummy to try and drop one or more of the { HJ HT  }.
+PLDM: Playing card from dummy.
+PLDRP61: West did not drop a desired card (one or more of the { HJ HT  }), but perhaps East might, so continue and play the HA from dummy and hope East drops one or more of the { HJ HT  }.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 6...
+DEBUG1: NumMaxWinners=8 vs SureTricks=4 vs NumWinners=8, m_numTricksShort=1
+PLRV10: We have only 4 reasonably sure tricks left vs. 5 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PINTLV: Interleaving plays...
+PLTRMP22: Lead out the SA from dummy to pull in a round of trumps.
+PLTRMP82A: Discard the S6 on dummy's top Ace of trumps.
+PLDM: Playing card from dummy.
+PLNADJ: Reviewing play plan for round 7...
+DEBUG1: NumMaxWinners=8 vs SureTricks=5 vs NumWinners=8, m_numTricksShort=-1
+PLRV11: We have 5 reasonably sure tricks left vs. 4 more trick(s) required for the contract.
+PLSEQ: Checking play sequencing...
+PLSEQ20: We can fulfill the contract by pulling 1 round(s) of trumps, and cashing the ST, S8 and HK.
+PINTLV: Interleaving plays...
+PLRUF14: Lead a low Heart (the seven) from dummy to ruff in hand.  <<<<<<<<< No Isolates HK
+PLRUF60: Ruff in hand with the S8.
+
+

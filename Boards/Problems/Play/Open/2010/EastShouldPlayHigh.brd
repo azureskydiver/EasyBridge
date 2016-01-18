@@ -1,0 +1,275 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = April 4,  2010
+File Date =  04/07/10 16:53:45
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SQ ST S2 HK H3 DA DK DJ DT D8 D7 C8 C5 
+Current Hand(West) = SA SJ S7 S4 HQ H5 H2 DQ D6 D2 CQ C9 C7 
+Current Hand(North) = S6 S5 S3 HJ H6 D9 CA CK CJ CT C6 C3 C2 
+Current Hand(East) = SK S9 S8 HA HT H9 H8 H7 H4 D5 D4 D3 C4 
+Original Hand(South) = SQ ST S2 HK H3 DA DK DJ DT D8 D7 C8 C5 
+Original Hand(West) = SA SJ S7 S4 HQ H5 H2 DQ D6 D2 CQ C9 C7 
+Original Hand(North) = S6 S5 S3 HJ H6 D9 CA CK CJ CT C6 C3 C2 
+Original Hand(East) = SK S9 S8 HA HT H9 H8 H7 H4 D5 D4 D3 C4 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 50
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 7
+Declarer = South
+Bidding History = Pass 3C Pass 3NT Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 60
+North/South Game 1 Points = 120
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  60		2 overtricks"
+Game Score Record = " 120		4 Hearts made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+East should play high then return Spade
+>>EAST<<<<<<<<<<
+=====================================
+Received hand:
+  S:K98  H:AT9874  D:543  C:4
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  2 Likely Winners (0/3/-1/0)
+  11 Likely Losers (3/3/4/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+West passes.
+--------------------
+North bids 3C.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+South bids 3NT.
+--------------------
+West passes.
+--------------------
+North passes.
+--------------------
+We passed and partner passed, so pass again.
+We pass.
+--------------------
+Bidding finished; contract is 3 No Trump.  Declarer is South; West leads.
+=======================
+PLAY: West leads the S4.
+PLAY: North plays the S3.
+PL03: Starting play as right-hand defender.
+PLDF35: Try to force a higher card by playing S8.
+PLAY: We play the S8.
+PLAY: South plays the ST.
+PLAY: South wins the round.
+--------
+PLAY: South leads the C5.
+PLAY: West plays the C7.
+PLAY: North plays the CJ.
+PLAY4: Playing fourth, using default player logic.
+PLAY: We play the C4.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CA.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H7.
+PLDF2Ya: We have no Clubs, so discard the H7.
+PLAY: We play the H7.
+RCP10: East shows out of Clubs.
+RCP5A: East is now known to have started with 1 Club.
+PLAY: South plays the C8.
+PLAY: West plays the C9.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CK.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H8.
+PLDF2Ya: We have no Clubs, so discard the H8.
+PLAY: We play the H8.
+PLAY: South plays the D7.
+RCP10: South shows out of Clubs.
+RCP5A: South is now known to have started with 2 Clubs.
+PLAY: West plays the CQ.
+PLAY: North wins the round.
+--------
+PLAY: North leads the CT.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the H9.
+PLDF2Ya: We have no Clubs, so discard the H9.
+PLAY: We play the H9.
+PLAY: South plays the S2.
+PLAY: West plays the SJ.
+RCP10: West shows out of Clubs.
+RCP5A: West is now known to have started with 3 Clubs.
+PLAY: North wins the round.
+--------
+PLAY: North leads the C2.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDIS40: Indicate a preference for the Heart by discarding high with the HT.
+PLDF2Ya: We have no Clubs, so discard the HT.
+PLAY: We play the HT.
+PLAY: South plays the SQ.
+PLAY: West plays the S7.
+PLAY: North wins the round.
+--------
+PLAY: North leads the C3.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Clubs, so discard the D3.
+PLAY: We play the D3.
+PLAY: South plays the H3.
+PLAY: West plays the H2.
+PLAY: North wins the round.
+--------
+PLAY: North leads the C6.
+RCP20: Dummy is now out of Clubs.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2Ya: We have no Clubs, so discard the D4.
+PLAY: We play the D4.
+PLAY: South plays the HK.
+PLAY: West plays the D2.
+PLAY: North wins the round.
+--------
+PLAY: North leads the D9.
+RCP20: Dummy is now out of Diamonds.
+PLAYDF2: Playing second as defender, using default player logic.
+PLDF2A: Play our only card in the suit, the five.
+PLAY: We play the D5.
+PLAY: South plays the DK.
+PLAY: West plays the D6.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DA.
+PLAY: West plays the DQ.
+PLAY: North plays the S5.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the H4.
+PLAY: We play the H4.
+RCP10: East shows out of Diamonds.
+RCP1A: East is now known to have started with  1 Clubs and 3 Diamonds.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DJ.
+PLAY: West plays the H5.
+RCP10: West shows out of Diamonds.
+RCP1A: West is now known to have started with  3 Clubs and 3 Diamonds.
+PLAY: North plays the S6.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the S9.
+PLAY: We play the S9.
+PLAY: South wins the round.
+--------
+PLAY: South leads the DT.
+PLAY: West plays the SA.
+PLAY: North plays the H6.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the SK.
+PLAY: We play the SK.
+PLAY: South wins the round.
+--------
+PLAY: South leads the D8.
+PLAY: West plays the HQ.
+PLAY: North plays the HJ.
+PLAY4: Playing fourth, using default player logic.
+PLAYB56: With no cards in the suit led and no trumps, we discard the HA.
+PLAY: We play the HA.
+PLAY: South wins the round.
+--------
+RESULT: North/South made 4 overtricks.
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:K98  H:AT9874  D:543  C:4
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  2 Likely Winners (0/3/-1/0)
+  11 Likely Losers (3/3/4/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+PLAY: Play restarted.
+====================
+=====================================
+Received hand:
+  S:K98  H:AT9874  D:543  C:4
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 7.0.
+  QT's = 1.5,
+  Sure Stoppers in: S, H
+  Probable Stoppers in:
+  2 Likely Winners (0/3/-1/0)
+  11 Likely Losers (3/3/4/1)
+Playing five-card majors, Hearts can be opened.
+Preferred suit is Hearts.
+====================
+PLAY: West leads the S4.
+PLAY: North plays the S3.
+PL03: Starting play as right-hand defender.
+PLDF35: Try to force a higher card by playing S8.  <<<<<<<<<<<<<< NO play the SK
+PLAY: We play the S8.
+
+

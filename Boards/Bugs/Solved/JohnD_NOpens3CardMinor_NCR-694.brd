@@ -1,0 +1,100 @@
+[[File Information]]
+Program ID = New Improved Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 4
+Program Build Number = 0
+Program Build Date = August 10, 2013
+File Date =  08/16/13 09:13:33
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA S3 HA HJ H7 H6 DQ DJ D8 CJ C9 C8 C6 
+Current Hand(West) = S8 S7 S5 S2 HQ HT H8 H5 H4 DT CT C7 C2 
+Current Hand(North) = SK SJ S9 S4 H9 H2 DK D9 D5 D3 CA CK CQ 
+Current Hand(East) = SQ ST S6 HK H3 DA D7 D6 D4 D2 C5 C4 C3 
+Original Hand(South) = SA S3 HA HJ H7 H6 DQ DJ D8 CJ C9 C8 C6 
+Original Hand(West) = S8 S7 S5 S2 HQ HT H8 H5 H4 DT CT C7 C2 
+Original Hand(North) = SK SJ S9 S4 H9 H2 DK D9 D5 D3 CA CK CQ 
+Original Hand(East) = SQ ST S6 HK H3 DA D7 D6 D4 D2 C5 C4 C3 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = No
+Is Game in Progress? = No
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Misc Information]]
+Automatically Show File Comments = Yes
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+Something wrong with N's logic here:
+"Opening bid for team.
+Have 16.0 HCP's with a balanced hand.
+But with an openable 4-card Spade suit, prefer to open in the major instead of in No Trump.
+Have 16.0 points in high cards, so bid 1 Club."
+
+It's just wrong to open a 3 card minor in preference to a 4 card major in ACOL (I have 4 card majors selected in bidding options).
+
+>>>>>>>>>>NORTH with 4card Major<<<<<<<<<<
+Starting play from restored game.
+------------------------
+S:KJ94  H:92  D:K953  C:AKQ
+Hand evaluation:
+  HCPs = 16.0, Distn pts = 1.0, Bonus/Penalty = 0.0/0.0; Total pts = 16.0.
+  QT's = 3.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  6 Likely Winners (2/0/1/3)
+  7 Likely Losers (2/2/3/0)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Spades.
+===================
+West passes.
+--------------------
+Opening bid for team.
+A00: Have 16.0 HCP's with a balanced hand.
+A04: But with an openable 4-card Spade suit, prefer to open in the major instead of in No Trump.
+E01: Have 16.0 points in high cards, so bid 1 Club.  <<<<  Major vs Clubs????
+We bid 1C.
+--------------------
+East passes.
+--------------------
+***Bidding Cancelled***
+
+
+
+

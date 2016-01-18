@@ -1,0 +1,266 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = June 6, 2009
+File Date =  06/07/09 20:24:44
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = S5 S2 H9 H8 H4 DQ D5 CQ CJ C8 C7 C6 C3 
+Current Hand(West) = S9 S7 S6 H7 H3 H2 DA D8 D6 D2 CK C5 C4 
+Current Hand(North) = SA SK SQ SJ ST S8 S4 HJ H5 DT CA C9 C2 
+Current Hand(East) = S3 HA HK HQ HT H6 DK DJ D9 D7 D4 D3 CT 
+Original Hand(South) = S5 S2 H9 H8 H4 DQ D5 CQ CJ C8 C7 C6 C3 
+Original Hand(West) = S9 S7 S6 H7 H3 H2 DA D8 D6 D2 CK C5 C4 
+Original Hand(North) = SA SK SQ SJ ST S8 S4 HJ H5 DT CA C9 C2 
+Original Hand(East) = S3 HA HK HQ HT H6 DK DJ D9 D7 D4 D3 CT 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 2
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 5
+Declarer = East
+Bidding History = 1S 2H Pass Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = South
+GameTrick #1 = South -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 90
+North/South Game 1 Points = 100
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 1
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 2
+Bonus Score Record = "  90		3 overtricks"
+Game Score Record = " 100		3 No Trump made"
+Game Score Record = "----------------------------------------------------------------------------------------------------------------"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North passes East's 2H with 8 sure tricks with Spades
+>>> NORTH<<<
+S:AKQJT84  H:J5  D:T  C:A92
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 17.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  8 Likely Winners (7/0/0/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+Opening bid for team.
+E01: Have 15.0 points in high cards, so bid 1 Spade.
+--------------------
+East bids 2H.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 3 Clubs.
+B3Y00: Partner has made a jump shift to 3 Clubs after our opening 1 Spade bid, which indicates 18.0+ points and is forcing to game (and points to a possible slam).
+REVAL38: (with 3-card Club trump support including a trump honor & a doubleton in Hearts,  & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 17.5 to 23.5 points)
+B3Y40: With a total of 41.5-42.5 pts in the partnership, move towards slam in partner's Club suit by raising to 4 Clubs.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Bidding finished; contract is 4 Clubs.  Declarer is South; West leads.
+=======================
+RCP20: Dummy is now out of Hearts.
+RCP20: Dummy is now out of Diamonds.
+RCP20: Dummy is now out of Clubs.
+RCP5A: East is now known to have started with 1 Club.
+RCP5A: West is now known to have started with 3 Clubs.
+PLAYCL: South has claimed the remaining 3 tricks.
+RESULT: North/South were set 1 trick.
+S:AKQJT84  H:J5  D:T  C:A92
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 17.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  8 Likely Winners (7/0/0/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+Opening bid for team.
+E01: Have 15.0 points in high cards, so bid 1 Spade.
+--------------------
+East bids 2H.
+--------------------
+South bids 4S.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 4 Spades.
+Q00: With a triple raise, partner is showing 5 trumps and 6.0-9.0 HCPs, and expects us to sign off at game.
+REVAL1: Revaluing hand as declarer...
+3REVAL5: Adding 3 point(s) for the 2 extra trump(s).
+3REVAL8: Since the trump suit is only topped by a Ace, deduct 0 points.
+Q10: With 23.5-26.5 total partnership points, we have to agree and pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 Spades.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AKQJT8542 (52/AKQJT84)
+  H:J9854 (984/J5)
+  D:QT5 (Q5/T)
+  C:AQ987632 (Q8763/A92)
+Combined hand evaluation:
+  HCPs = 19.0, Distn pts = 3.0;
+  Total pts = 22.0.
+  QT's = 3.5,
+  Stoppers in: S, D, C
+  Probable Stoppers in:
+  6 Sure Winners (5/0/0/1)
+  9 Eventual Winners (7/0/0/2)
+  4 Possible Losers (vs. 3 allowable)
+RCP5A: East is now known to have started with 1 Spade.
+RCP5A: West is now known to have started with 3 Clubs.
+PLAYCL: North has claimed the remaining 4 tricks.
+RESULT: North/South made 3 overtricks.
+S:AKQJT84  H:J5  D:T  C:A92
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 17.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  8 Likely Winners (7/0/0/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+Opening bid for team.
+E01: Have 15.0 points in high cards, so bid 1 Spade.
+--------------------
+East bids 2H.
+--------------------
+South bids 3C.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's response of 3 Clubs.
+B3Y00: Partner has made a jump shift to 3 Clubs after our opening 1 Spade bid, which indicates 18.0+ points and is forcing to game (and points to a possible slam).
+REVAL38: (with 3-card Club trump support including a trump honor & a doubleton in Hearts,  & a singleton in Diamonds, the hand is revalued for a suit contract as dummy from 17.5 to 23.5 points)
+B3Y40: With a total of 41.5-42.5 pts in the partnership, move towards slam in partner's Club suit by raising to 4 Clubs.
+--------------------
+East passes.
+--------------------
+S:AKQJT84  H:J5  D:T  C:A92
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 17.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  8 Likely Winners (7/0/0/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+Opening bid for team.
+E01: Have 15.0 points in high cards, so bid 1 Spade.
+--------------------
+East bids 2H.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 15.0/17.5 points in hand and 17.5-22.5 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is East; South leads.
+=======================
+S:AKQJT84  H:J5  D:T  C:A92
+Hand evaluation:
+  HCPs = 15.0, Distn pts = 3.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 17.5.
+  QT's = 3.0,
+  Sure Stoppers in: S, C
+  Probable Stoppers in:
+  8 Likely Winners (7/0/0/1)
+  5 Likely Losers (0/2/1/2)
+Playing five-card majors, Spades can be opened.
+Have a powerful suit in Spades.
+Preferred suit is Spades.
+====================
+***Bidding restarted***
+Opening bid for team.
+E01: Have 15.0 points in high cards, so bid 1 Spade.
+--------------------
+East bids 2H.
+--------------------
+South passes.
+--------------------
+West passes.
+--------------------
+Rebidding after opening bid of 1 Spade and partner's pass.
+B3A20: Partner passed, showing < 6 points, so with 15.0/17.5 points in hand and 17.5-22.5 total partnership points, we have no choice but to pass.
+We pass.
+--------------------
+Bidding finished; contract is 2 Hearts.  Declarer is East; South leads.
+=======================
+
+

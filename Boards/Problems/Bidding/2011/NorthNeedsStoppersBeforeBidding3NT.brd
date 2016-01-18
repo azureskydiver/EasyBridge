@@ -1,0 +1,222 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = November 22, 2011
+File Date =  11/25/11 14:19:58
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK SQ S9 S8 S5 S3 HK H4 DQ CA CK C7 
+Current Hand(West) = ST HT H9 H8 H7 H6 H5 H3 DK D8 D4 D3 CJ 
+Current Hand(North) = SJ S7 HA HQ H2 D9 D6 D5 D2 C9 C6 C5 C3 
+Current Hand(East) = S6 S4 S2 HJ DA DJ DT D7 CQ CT C8 C4 C2 
+Original Hand(South) = SA SK SQ S9 S8 S5 S3 HK H4 DQ CA CK C7 
+Original Hand(West) = ST HT H9 H8 H7 H6 H5 H3 DK D8 D4 D3 CJ 
+Original Hand(North) = SJ S7 HA HQ H2 D9 D6 D5 D2 C9 C6 C5 C3 
+Original Hand(East) = S6 S4 S2 HJ DA DJ DT D7 CQ CT C8 C4 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = South
+Number of Bids Made = 0
+Declarer = ????
+Bidding History = 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should not have bid 3NT without stoppers in other suits
+=======================================
+North analysis
+S:J7  H:AQ2  D:9652  C:9653
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 6.5.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  -1 Likely Winners (0/1/-1/-1)
+  14 Likely Losers (2/2/5/5)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Clubs
+The best suit is Hearts.
+====================
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+Partner made a strong 2-bid, showing a very good suit or two solid suits, 9+ playing tricks, and 4+ quick tricks.  We have to respond positively if interested in slam, or negatively otherwise.
+We have 1.5 QT's, so we can make a positive response.
+But we lack good support for partner's Spade suit (holding J7) with a balanced hand, so jump to 3 No Trump.
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South bids 7NT.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 2 Spades, 3 No Trump, and 7 No Trump.
+Partner's raise from our 3 No Trump to 7 No Trump indicates a balanced hand and 29.0-33.0 HCPs, for a total of 36.0+ HCPs in the partnership.
+With 36.0+ total partnership points, sign off on partner's slam bid of 7 No Trump and pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 7 No Trump.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AKQJ98753 (AKQ9853/J7)
+  H:AKQ42 (K4/AQ2)
+  D:9652 (/9652)
+  C:AK97653 (AK7/9653)
+Combined hand evaluation:
+  HCPs = 26.0, Distn pts = 7.0;
+  Total pts = 33.0.
+  QT's = 6.0,
+  Stoppers in: S, H, C
+  Probable Stoppers in:
+  9 Sure Winners (4/3/0/2)
+  12 Eventual Winners (7/3/0/2)
+  1 Possible Loser (vs. 0 allowable)
+S:J7  H:AQ2  D:9652  C:9653
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 6.5.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  -1 Likely Winners (0/1/-1/-1)
+  14 Likely Losers (2/2/5/5)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Clubs
+The best suit is Hearts.
+====================
+***Bidding restarted***
+South bids 2S.
+--------------------
+West passes.
+--------------------
+Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy for Spade contract...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+Partner made a strong 2-bid, showing a very good suit or two solid suits, 9+ playing tricks, and 4+ quick tricks.  We have to respond positively if interested in slam, or negatively otherwise.
+We have 1.5 QT's, so we can make a positive response.
+But we lack good support for partner's Spade suit (holding J7) with a balanced hand, so jump to 3 No Trump.
+We bid 3NT.
+--------------------
+East passes.
+--------------------
+South bids 4NT.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 2 Spades, 3 No Trump, and 4 No Trump.
+Partner's raise from our 3 No Trump to 4 No Trump indicates a balanced hand and 23.0-24.0 HCPs, for a total of 30.0+ HCPs in the partnership and is invitational to slam.
+With 30.0-31.0 total HCPs in the partnership, we don't have quite enough for a slam, so we have to decline partner's invitation and pass.
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 4 No Trump.  Declarer is North; East leads.
+=======================
+Combined hand (Dummy/Hand):
+  S:AKQJ98753 (AKQ9853/J7)
+  H:AKQ42 (K4/AQ2)
+  D:Q9652 (Q/9652)
+  C:A97653 (A7/9653)
+Combined hand evaluation:
+  HCPs = 25.0, Distn pts = 7.0;
+  Total pts = 32.0.
+  QT's = 5.0,
+  Stoppers in: S, H, D, C
+  Probable Stoppers in:
+  8 Sure Winners (4/3/0/1)
+  11 Eventual Winners (7/3/0/1)
+  2 Possible Losers (vs. 3 allowable)
+West is now known to have started with 1 Club.
+East is now known to have started with 1 Heart.
+North/South made 2 overtricks.
+Play restarted.
+====================
+S:J7  H:AQ2  D:9652  C:9653
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 6.5.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  -1 Likely Winners (0/1/-1/-1)
+  14 Likely Losers (2/2/5/5)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Clubs
+The best suit is Hearts.
+====================
+S:J7  H:AQ2  D:9652  C:9653
+Hand evaluation:
+  HCPs = 7.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-0.5;
+Total pts = 6.5.
+  QT's = 1.5,
+  Sure Stoppers in: H
+  Probable Stoppers in:
+  -1 Likely Winners (0/1/-1/-1)
+  14 Likely Losers (2/2/5/5)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suits are  Diamonds, Clubs
+The best suit is Hearts.
+====================
+***Bidding restarted***
+
+

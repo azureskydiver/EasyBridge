@@ -1,0 +1,131 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = January 18, 2011
+File Date =  02/07/11 16:49:16
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SJ ST S3 HA HQ HT H7 H5 H4 H2 DK CT C9 
+Current Hand(West) = SK S8 S5 S2 H3 DQ DJ DT D9 D3 CA CQ C4 
+Current Hand(North) = S9 S7 S4 HJ H9 H8 H6 DA D7 D5 D4 CJ C5 
+Current Hand(East) = SA SQ S6 HK D8 D6 D2 CK C8 C7 C6 C3 C2 
+Original Hand(South) = SJ ST S3 HA HQ HT H7 H5 H4 H2 DK CT C9 
+Original Hand(West) = SK S8 S5 S2 H3 DQ DJ DT D9 D3 CA CQ C4 
+Original Hand(North) = S9 S7 S4 HJ H9 H8 H6 DA D7 D5 D4 CJ C5 
+Original Hand(East) = SA SQ S6 HK D8 D6 D2 CK C8 C7 C6 C3 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 140
+Is Rubber In Progress? = Yes
+Is Game in Progress? = No
+Is Bidding in Progress? = Yes
+Was Hand Dealt? = Yes
+Contract Suit = No Trump
+Contract Level = 0
+Contract Modifier = 0
+Dealer = North
+Number of Bids Made = 2
+Declarer = ????
+Bidding History = Pass 1C 
+
+[[Game Record]]
+Number of Tricks Played in Game = 0
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = ????
+GameTrick #1 = ???? -- -- -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 80
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+Game Score Record = "  80		4 Clubs made"
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+West should support East's Clubs
+>>>>>>>>>>> WEST<<<<<<<<<
+S:K852  H:3  D:QJT93  C:AQ4
+Hand evaluation:
+  HCPs = 12.0, Distn pts = 2.0, Bonus/Penalty = 0.0/0.0;
+Total pts = 12.0.
+  QT's = 2.0,
+  Sure Stoppers in: S, D, C
+  Probable Stoppers in:
+  5 Likely Winners (1/0/3/1)
+  8 Likely Losers (3/1/2/2)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Diamonds.
+====================
+North passes.
+--------------------
+East bids 1C.
+--------------------
+South bids 2H.
+--------------------
+Responding to partner's opening bid of 1 Club.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Club trump support including a trump honor & a singleton in Hearts, the hand is revalued for a suit contract as dummy from 12.0 to 13.0 points)
+F00: Partner is showing 12.0-20.5 points and 2+ QT's.
+I14: Have 12.0/12.0/13.0 points but we prefer to shift instead of raising a minor Club suit, so show our own Diamond suit by bidding 3 Diamonds.
+We bid 3D.
+--------------------
+North passes.
+--------------------
+East bids 4C.
+--------------------
+South bids 4H.
+--------------------
+Rebidding as responder after bids of 1 Club, 3 Diamonds, and 4 Clubs.
+B4C4: Partner made a minimum rebid of his Club suit at 4 Clubs, showing 12.0-16.0 points and 5+ trump cards.
+REVAL1: Revaluing hand as declarer...
+3REVAL8: Since the trump suit is only topped by a Queen, deduct 1 points.
+2REVAL16: (after re-evaluation for distribution, declarer's hand is revalued for a suit contract from 12.0 to 13.0 points)
+YR2: With With 25.0-29.0 total points and a openable 5-card Diamond suit (holding QJT93), rebid it at 5 Diamonds.  <<<<<<<<<<<<< NO Support pard's Clubs
+We bid 5D.
+--------------------
+North passes.
+--------------------
+East passes.
+--------------------
+South passes.
+--------------------
+Bidding finished; contract is 5 Diamonds.  Declarer is West; North leads.
+
+RESULT: East/West were set 1 trick.
+
+
+

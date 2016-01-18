@@ -1,0 +1,133 @@
+[[File Information]]
+Program ID = Easy Bridge
+Program Major Version = 4
+Program Minor Version = 0
+Program Incremental Version = 3
+Program Build Number = 0
+Program Build Date = September 12, 2010
+File Date =  09/14/10 21:44:22
+
+[[File Description]]
+
+[[Hand Information]]
+Current Hand(South) = SA SK ST S9 S8 S6 HA HQ H8 H7 H2 D2 C3 
+Current Hand(West) = HK HT H5 DA DK D9 D6 D5 D3 CJ C7 C4 
+Current Hand(North) = SJ S4 S2 H9 H3 DQ DJ D4 CQ CT C9 C8 C5 
+Current Hand(East) = SQ S7 S3 HJ H6 H4 DT D8 D7 CA CK C6 C2 
+Original Hand(South) = SA SK ST S9 S8 S6 HA HQ H8 H7 H2 D2 C3 
+Original Hand(West) = S5 HK HT H5 DA DK D9 D6 D5 D3 CJ C7 C4 
+Original Hand(North) = SJ S4 S2 H9 H3 DQ DJ D4 CQ CT C9 C8 C5 
+Original Hand(East) = SQ S7 S3 HJ H6 H4 DT D8 D7 CA CK C6 C2 
+
+[[Round Information]]
+
+[[Game Information]]
+Game Status Code = 20
+Is Rubber In Progress? = Yes
+Is Game in Progress? = Yes
+Is Bidding in Progress? = No
+Was Hand Dealt? = Yes
+Contract Suit = Hearts
+Contract Level = 3
+Contract Modifier = 0
+Dealer = West
+Number of Bids Made = 11
+Declarer = South
+Bidding History = 1D Pass 2C 2S 3D Pass Pass 3H Pass Pass Pass 
+
+[[Game Record]]
+Number of Tricks Played in Game = 1
+# of Tricks won in Game by N/S = 0
+# of Tricks won in Game by E/W = 0
+Lead Player for Current Game = West
+GameTrick #1 = West -- S5 -- -- ????
+GameTrick #2 = 
+GameTrick #3 = 
+GameTrick #4 = 
+GameTrick #5 = 
+GameTrick #6 = 
+GameTrick #7 = 
+GameTrick #8 = 
+GameTrick #9 = 
+GameTrick #10 = 
+GameTrick #11 = 
+GameTrick #12 = 
+GameTrick #13 = 
+
+[[Match Information]]
+North/South Bonus Points = 0
+North/South Game 1 Points = 0
+North/South Game 2 Points = 0
+North/South Game 3 Points = 0
+North/South Games Won = 0
+East/West Bonus Points = 0
+East/West Game 1 Points = 0
+East/West Game 2 Points = 0
+East/West Game 3 Points = 0
+East/West Games Won = 0
+Current Game = 1
+
+[[Misc Information]]
+Automatically Show File Comments = No
+Automatically Show Bidding History = No
+Automatically Show Play History = No
+Automatically Show Analysis Dialogs = No
+
+[[File Comments]]
+North should bid South's first suit: Spades
+>>>>>>>>>>  NORTH<<<<<<<<<<<<
+S:J42  H:93  D:QJ4  C:QT985
+Hand evaluation:
+  HCPs = 6.0, Distn pts = 1.0, Bonus/Penalty = 0.0/-1.5;
+Total pts = 4.5.
+  QT's = 0.0,
+  Sure Stoppers in: D, C
+  Probable Stoppers in:
+  3 Likely Winners (0/0/1/2)
+  10 Likely Losers (3/2/2/3)
+Playing five-card majors, neither major suit qualifies for opening.
+Preferred suit is Clubs.
+====================
+West bids 1D.
+--------------------
+Opening bid for team.
+OVRCL0: Opponents have opened the bidding; see if we can overcall.
+OVRCL3: But we lack the strength with 4.5 pts for a simple overcall.
+B00: We cannot overcall and the hand is not appropriate for any other bid, so pass.
+We pass.
+--------------------
+East bids 2C.
+--------------------
+South bids 2S.
+--------------------
+West bids 3D.
+--------------------
+Responding to partner's opening bid of 2 Spades.
+REVAL1: Revaluing hand as dummy...
+4REVAL21: Adjusting by 1 point(s) for bonus points and 0 points for penalty.
+2REVAL38: (with 3-card Spade trump support including a trump honor & a doubleton in Hearts, the hand is revalued for a suit contract as dummy from 4.5 to 7.0 points)
+ROVRC5: Partner overcalled at the 2-level, indicating a good 5+ card Spade suit, 9.0-14.0 points, and probably 6+ playing tricks.
+ROVRC8: The total point count in the partnership is therefore 16.0-21.0 points.
+ROVRC10: This is not enough to bid any higher, so pass.
+We pass.
+--------------------
+East passes.
+--------------------
+South bids 3H.
+--------------------
+West passes.
+--------------------
+Rebidding as responder after bids of 2 Spades, Pass, and 3 Hearts.
+B4P04: Partner bid another suit (third suit in partnership) at 3 Hearts after our Pass response, showing 12.0-18.0 points.
+REVAL1: Revaluing hand as dummy...
+3REVAL6: Deducting 2 point(s) for the 1 trump(s) short of 3.
+PKF4: Without a compelling suit of our own, we prefer to support partner's first suit of Spades.  <<<<<<<<<<<<<<<<<< YES <<<<<<<<<
+B4P14: With 6.0/4.5 points in hand, for a total in the partnership of 16.5-22.5 points, and a preference for partner's second suit, we pass.  ??????????????
+We pass.
+--------------------
+East passes.
+--------------------
+Bidding finished; contract is 3 Hearts.  Declarer is South; West leads.
+=======================
+
+
