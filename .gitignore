@@ -26,3 +26,12 @@
 *.exe
 *.out
 *.app
+
+# Build targets
+Build/**
+
+# Visual Studio state files
+*.suo
+*.sdf
+*.user
+*.VC.opendb
