@@ -52,7 +52,7 @@ END_MESSAGE_MAP()
 LRESULT CMyStatusBar::OnSetText(WPARAM wParam, LPARAM lParam) 
 { 
 	if (!m_bIgnoreSetText) 
-		return CStatusBar::OnSetText( wParam, lParam ); 
+		return CStatusBar::OnSetText(reinterpret_cast<LPCTSTR>(lParam));
 	return 0;  // Same as CStatusBar::OnSetText success 
 } 
 
