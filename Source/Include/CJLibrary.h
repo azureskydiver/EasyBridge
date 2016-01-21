@@ -110,7 +110,7 @@
 #include <afxpriv.h>
 #endif
 
-#include <..\src\afximpl.h>
+#include <..\src\mfc\afximpl.h>
 
 #ifndef __CJBROWSEEDIT_H__
 #include "CJBrowseEdit.h"
