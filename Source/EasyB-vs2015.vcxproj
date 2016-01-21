@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>EasyB</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{19A5B39D-D37F-4BBD-95A0-8182AA584208}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Bin\Release\</OutDir>
+    <IntDir>.\Bin\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Build\Bin\$(Configuration)\</OutDir>
+    <IntDir>..\Build\objs\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>Utils;Wizards;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Bin\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Bin\Release\Easyb.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Bin\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Bin\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Bin\Release\Easyb.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Bin\Release\Easyb.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>Bin\Release/EasyBridge.exe</OutputFile>
+      <AdditionalLibraryDirectories>Lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;winmm.lib;EasyBUtils.lib;EasyBWizards.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions> /SUBSYSTEM:windows,4.0</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>Utils;Wizards;Include;Help;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>..\Build\objs\$(TargetName)\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>..\Build\objs\$(TargetName)\Debug\Easyb.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>..\Build\objs\$(TargetName)\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>..\Build\objs\$(TargetName)\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Bin\Debug\Easyb.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Bin\Debug\Easyb.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>..\Build\Bin\$(Configuration)\EasyBridge.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Build\Lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;winmm.lib;EasyBUtilsD.lib;EasyBWizardsD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions> /SUBSYSTEM:windows,4.0</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="4thSuitForcingConvention.cpp" />
+    <ClCompile Include="AnalysisDialog.cpp" />
+    <ClCompile Include="Artificial2ClubConvention.cpp" />
+    <ClCompile Include="AutoHintDialog.cpp" />
+    <ClCompile Include="BidDialog.cpp" />
+    <ClCompile Include="BiddingFinishedDialog.cpp" />
+    <ClCompile Include="BiddingGeneral.cpp" />
+    <ClCompile Include="BiddingOpen.cpp" />
+    <ClCompile Include="BiddingRebid.cpp" />
+    <ClCompile Include="BiddingRebid2.cpp" />
+    <ClCompile Include="BiddingRebidExtended.cpp" />
+    <ClCompile Include="BiddingResponse.cpp" />
+    <ClCompile Include="BidDlgLarge.cpp" />
+    <ClCompile Include="BidDlgSmall.cpp" />
+    <ClCompile Include="BidEngine.cpp" />
+    <ClCompile Include="BlackwoodConvention.cpp" />
+    <ClCompile Include="card.cpp" />
+    <ClCompile Include="CardHoldings.cpp" />
+    <ClCompile Include="CardLayout.cpp" />
+    <ClCompile Include="CardList.cpp" />
+    <ClCompile Include="CardLocation.cpp" />
+    <ClCompile Include="Cash.cpp" />
+    <ClCompile Include="CombinedHoldings.cpp" />
+    <ClCompile Include="CombinedSuitHoldings.cpp" />
+    <ClCompile Include="ConfigData.cpp" />
+    <ClCompile Include="Convention.cpp" />
+    <ClCompile Include="ConventionSet.cpp" />
+    <ClCompile Include="CueBidConvention.cpp" />
+    <ClCompile Include="deal.cpp" />
+    <ClCompile Include="DealNumberDialog.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="DeclarerPlayEngine.cpp" />
+    <ClCompile Include="DefenderPlayEngine.cpp" />
+    <ClCompile Include="Discard.cpp" />
+    <ClCompile Include="DisplayHoldings.cpp" />
+    <ClCompile Include="drawhand.cpp" />
+    <ClCompile Include="DrawParameters.cpp" />
+    <ClCompile Include="Drop.cpp" />
+    <ClCompile Include="DruryConvention.cpp" />
+    <ClCompile Include="DummyPlayEngine.cpp" />
+    <ClCompile Include="EasyB.cpp" />
+    <ClCompile Include="EasyBdoc.cpp" />
+    <ClCompile Include="EasyBvw.cpp" />
+    <ClCompile Include="EasyBVw2.cpp" />
+    <ClCompile Include="editdlg.cpp" />
+    <ClCompile Include="EventProcessor.cpp" />
+    <ClCompile Include="ExitPlay.cpp" />
+    <ClCompile Include="FileComments.cpp" />
+    <ClCompile Include="FilePropertiesDialog.cpp" />
+    <ClCompile Include="Finesse.cpp" />
+    <ClCompile Include="Force.cpp" />
+    <ClCompile Include="Gambling3NTConvention.cpp" />
+    <ClCompile Include="GameRecord.cpp" />
+    <ClCompile Include="GameReviewDialog.cpp" />
+    <ClCompile Include="GerberConvention.cpp" />
+    <ClCompile Include="GIB.cpp" />
+    <ClCompile Include="GIBDialog.cpp" />
+    <ClCompile Include="GIBMonitorThread.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="GuessedCard.CPP" />
+    <ClCompile Include="GuessedCardHoldings.cpp" />
+    <ClCompile Include="GuessedHandHoldings.cpp" />
+    <ClCompile Include="GuessedSuitHoldings.cpp" />
+    <ClCompile Include="HandHoldings.cpp" />
+    <ClCompile Include="HistoryWnd.cpp" />
+    <ClCompile Include="HoldUp.cpp" />
+    <ClCompile Include="Jacoby2NTConvention.cpp" />
+    <ClCompile Include="JacobyTransferConvention.cpp" />
+    <ClCompile Include="mainfrm.cpp" />
+    <ClCompile Include="MichaelsCueBidConvention.cpp" />
+    <ClCompile Include="MyCustomDialog.cpp" />
+    <ClCompile Include="myfildlg.cpp" />
+    <ClCompile Include="NegativeDoublesConvention.cpp" />
+    <ClCompile Include="NNetAutotrainStatusDlg.cpp" />
+    <ClCompile Include="NNetConfigDialog.cpp" />
+    <ClCompile Include="NNetOutputDialog.cpp" />
+    <ClCompile Include="OvercallsConvention.cpp" />
+    <ClCompile Include="PassedHandDialog.cpp" />
+    <ClCompile Include="PassedHandSimpleDialog.cpp" />
+    <ClCompile Include="Play.cpp" />
+    <ClCompile Include="PlayEngine.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="PlayerStatusDialog.CPP" />
+    <ClCompile Include="PlayList.cpp" />
+    <ClCompile Include="print.cpp" />
+    <ClCompile Include="rdfile.cpp" />
+    <ClCompile Include="RdFilePBN.cpp" />
+    <ClCompile Include="RoundFinishedDialog.cpp" />
+    <ClCompile Include="Ruff.cpp" />
+    <ClCompile Include="saveopts.cpp" />
+    <ClCompile Include="ScoreDialog.cpp" />
+    <ClCompile Include="ScreenSizeWarningDlg.cpp" />
+    <ClCompile Include="SelectHandDialog.cpp" />
+    <ClCompile Include="ShutoutBidsConvention.cpp" />
+    <ClCompile Include="SlamConvention.cpp" />
+    <ClCompile Include="SplinterBidsConvention.cpp" />
+    <ClCompile Include="StatusAnalysesPage.cpp" />
+    <ClCompile Include="StatusCardLocationsPage.cpp" />
+    <ClCompile Include="StatusFeedbackPage.cpp" />
+    <ClCompile Include="StatusGIBMonitorPage.cpp" />
+    <ClCompile Include="StatusHoldingsPage.cpp" />
+    <ClCompile Include="StatusPlayPlanPage.cpp" />
+    <ClCompile Include="StatusSheet.cpp" />
+    <ClCompile Include="StatusWnd.cpp" />
+    <ClCompile Include="StaymanConvention.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="StrongTwoBidsConvention.cpp" />
+    <ClCompile Include="subclass.cpp" />
+    <ClCompile Include="SuitHoldings.cpp" />
+    <ClCompile Include="TakeoutDoublesConvention.cpp" />
+    <ClCompile Include="TestPlayDialog.cpp" />
+    <ClCompile Include="TrumpPull.cpp" />
+    <ClCompile Include="Type1Finesse.cpp" />
+    <ClCompile Include="Type2Finesse.cpp" />
+    <ClCompile Include="Type3Finesse.cpp" />
+    <ClCompile Include="TypeAFinesse.cpp" />
+    <ClCompile Include="TypeBFinesse.cpp" />
+    <ClCompile Include="UnusualNTConvention.cpp" />
+    <ClCompile Include="WeakTwoBidsConvention.cpp" />
+    <ClCompile Include="wrfile.cpp" />
+    <ClCompile Include="WrFilePBN.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EasyB.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="4thSuitForcingConvention.h" />
+    <ClInclude Include="AnalysisDialog.h" />
+    <ClInclude Include="Artificial2ClubConvention.h" />
+    <ClInclude Include="AutoHintDialog.h" />
+    <ClInclude Include="BidDialog.h" />
+    <ClInclude Include="BiddingFinishedDialog.h" />
+    <ClInclude Include="BidDlgLarge.h" />
+    <ClInclude Include="BidDlgSmall.h" />
+    <ClInclude Include="BidEngine.H" />
+    <ClInclude Include="Bidopts.h" />
+    <ClInclude Include="Bidparams.H" />
+    <ClInclude Include="BlackwoodConvention.h" />
+    <ClInclude Include="CARD.H" />
+    <ClInclude Include="CardHoldings.H" />
+    <ClInclude Include="CardLayout.h" />
+    <ClInclude Include="CardList.H" />
+    <ClInclude Include="CardLocation.H" />
+    <ClInclude Include="cardopts.h" />
+    <ClInclude Include="Cash.h" />
+    <ClInclude Include="CombinedHoldings.H" />
+    <ClInclude Include="CombinedSuitHoldings.H" />
+    <ClInclude Include="ConfigData.h" />
+    <ClInclude Include="ConvCodes.h" />
+    <ClInclude Include="Convention.h" />
+    <ClInclude Include="ConventionSet.h" />
+    <ClInclude Include="CueBidConvention.h" />
+    <ClInclude Include="DealNumberDialog.h" />
+    <ClInclude Include="DEALPARM.H" />
+    <ClInclude Include="Deck.H" />
+    <ClInclude Include="deckopts.h" />
+    <ClInclude Include="DeclarerPlayEngine.H" />
+    <ClInclude Include="DefenderPlayEngine.H" />
+    <ClInclude Include="DEFINES.H" />
+    <ClInclude Include="DialogInfo.h" />
+    <ClInclude Include="Discard.h" />
+    <ClInclude Include="DisplayHoldings.H" />
+    <ClInclude Include="docopts.h" />
+    <ClInclude Include="DrawParameters.h" />
+    <ClInclude Include="Drop.h" />
+    <ClInclude Include="DruryConvention.h" />
+    <ClInclude Include="DummyPlayEngine.H" />
+    <ClInclude Include="EasyB.h" />
+    <ClInclude Include="EasyBdoc.h" />
+    <ClInclude Include="EasyBvw.h" />
+    <ClInclude Include="editdlg.h" />
+    <ClInclude Include="EventProcessor.h" />
+    <ClInclude Include="ExitPlay.h" />
+    <ClInclude Include="FEEDBACK.H" />
+    <ClInclude Include="FILECODE.H" />
+    <ClInclude Include="FileCodePBN.H" />
+    <ClInclude Include="FileComments.h" />
+    <ClInclude Include="FilePropertiesDialog.h" />
+    <ClInclude Include="Finesse.h" />
+    <ClInclude Include="Force.h" />
+    <ClInclude Include="Gambling3NTConvention.h" />
+    <ClInclude Include="GameRecord.h" />
+    <ClInclude Include="GameReviewDialog.h" />
+    <ClInclude Include="GerberConvention.h" />
+    <ClInclude Include="GIB.h" />
+    <ClInclude Include="GIBDialog.h" />
+    <ClInclude Include="GIBMonitorThread.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="GuessedCard.H" />
+    <ClInclude Include="GuessedCardHoldings.H" />
+    <ClInclude Include="GuessedHandHoldings.H" />
+    <ClInclude Include="GuessedSuitHoldings.H" />
+    <ClInclude Include="HandHoldings.H" />
+    <ClInclude Include="Handopts.h" />
+    <ClInclude Include="HistoryWnd.h" />
+    <ClInclude Include="HoldUp.h" />
+    <ClInclude Include="Jacoby2NTConvention.h" />
+    <ClInclude Include="JacobyTransferConvention.h" />
+    <ClInclude Include="MainFrameopts.h" />
+    <ClInclude Include="mainfrm.h" />
+    <ClInclude Include="MichaelsCueBidConvention.h" />
+    <ClInclude Include="MyCustomDialog.h" />
+    <ClInclude Include="MyException.h" />
+    <ClInclude Include="MYFILDLG.H" />
+    <ClInclude Include="NegativeDoublesConvention.h" />
+    <ClInclude Include="NNetAutotrainStatusDlg.h" />
+    <ClInclude Include="NNetConfigDialog.h" />
+    <ClInclude Include="NNetOutputDialog.h" />
+    <ClInclude Include="ObjectWithProperties.h" />
+    <ClInclude Include="OptimizerThread.h" />
+    <ClInclude Include="OvercallsConvention.h" />
+    <ClInclude Include="PassedHandDialog.h" />
+    <ClInclude Include="PassedHandSimpleDialog.h" />
+    <ClInclude Include="Play.h" />
+    <ClInclude Include="PlayEngine.H" />
+    <ClInclude Include="PLAYER.H" />
+    <ClInclude Include="playeropts.h" />
+    <ClInclude Include="PlayerStatusDialog.H" />
+    <ClInclude Include="PlayList.h" />
+    <ClInclude Include="progopts.h" />
+    <ClInclude Include="roundfinisheddialog.h" />
+    <ClInclude Include="Ruff.h" />
+    <ClInclude Include="saveopts.h" />
+    <ClInclude Include="ScoreDialog.h" />
+    <ClInclude Include="ScreenSizeWarningDlg.h" />
+    <ClInclude Include="SelectHandDialog.h" />
+    <ClInclude Include="ShutoutBidsConvention.h" />
+    <ClInclude Include="SlamConvention.h" />
+    <ClInclude Include="Sluff.h" />
+    <ClInclude Include="SplinterBidsConvention.h" />
+    <ClInclude Include="StatusAnalysesPage.h" />
+    <ClInclude Include="StatusCardLocationsPage.h" />
+    <ClInclude Include="StatusFeedbackPage.h" />
+    <ClInclude Include="StatusGIBMonitorPage.h" />
+    <ClInclude Include="StatusHoldingsPage.h" />
+    <ClInclude Include="StatusPlayPlanPage.h" />
+    <ClInclude Include="StatusSheet.h" />
+    <ClInclude Include="StatusWnd.h" />
+    <ClInclude Include="StaymanConvention.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StrongTwoBidsConvention.h" />
+    <ClInclude Include="SUBCLASS.H" />
+    <ClInclude Include="SuitHoldings.H" />
+    <ClInclude Include="TakeoutDoublesConvention.h" />
+    <ClInclude Include="TestPlayDialog.h" />
+    <ClInclude Include="TrumpPull.h" />
+    <ClInclude Include="Type1Finesse.h" />
+    <ClInclude Include="Type2Finesse.h" />
+    <ClInclude Include="Type3Finesse.h" />
+    <ClInclude Include="TypeAFinesse.h" />
+    <ClInclude Include="TypeBFinesse.h" />
+    <ClInclude Include="UnusualNTConvention.h" />
+    <ClInclude Include="viewopts.h" />
+    <ClInclude Include="WeakTwoBidsConvention.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="78.bmp" />
+    <Image Include="Res\1.BMP" />
+    <Image Include="Res\10.BMP" />
+    <Image Include="Res\11.bmp" />
+    <Image Include="Res\12.BMP" />
+    <Image Include="Res\13.BMP" />
+    <Image Include="Res\14.BMP" />
+    <Image Include="Res\15.BMP" />
+    <Image Include="Res\16.BMP" />
+    <Image Include="Res\17.BMP" />
+    <Image Include="Res\18.BMP" />
+    <Image Include="Res\19.BMP" />
+    <Image Include="Res\2.BMP" />
+    <Image Include="Res\20.BMP" />
+    <Image Include="Res\21.BMP" />
+    <Image Include="Res\22.BMP" />
+    <Image Include="Res\23.BMP" />
+    <Image Include="Res\24.bmp" />
+    <Image Include="Res\25.BMP" />
+    <Image Include="Res\26.BMP" />
+    <Image Include="Res\27.BMP" />
+    <Image Include="Res\28.BMP" />
+    <Image Include="Res\29.BMP" />
+    <Image Include="Res\3.BMP" />
+    <Image Include="Res\30.BMP" />
+    <Image Include="Res\31.BMP" />
+    <Image Include="Res\32.BMP" />
+    <Image Include="Res\33.BMP" />
+    <Image Include="Res\34.BMP" />
+    <Image Include="Res\35.BMP" />
+    <Image Include="Res\36.BMP" />
+    <Image Include="Res\37.BMP" />
+    <Image Include="Res\38.BMP" />
+    <Image Include="Res\39.BMP" />
+    <Image Include="Res\4.BMP" />
+    <Image Include="Res\40.BMP" />
+    <Image Include="Res\41.BMP" />
+    <Image Include="Res\42.BMP" />
+    <Image Include="Res\43.BMP" />
+    <Image Include="Res\44.BMP" />
+    <Image Include="Res\45.BMP" />
+    <Image Include="Res\46.BMP" />
+    <Image Include="Res\47.BMP" />
+    <Image Include="Res\48.BMP" />
+    <Image Include="Res\49.BMP" />
+    <Image Include="Res\5.BMP" />
+    <Image Include="Res\50.BMP" />
+    <Image Include="Res\51.BMP" />
+    <Image Include="Res\52.BMP" />
+    <Image Include="Res\6.BMP" />
+    <Image Include="Res\7.BMP" />
+    <Image Include="Res\8.BMP" />
+    <Image Include="Res\9.BMP" />
+    <Image Include="Res\about_pr.bmp" />
+    <Image Include="Res\about_pr2.bmp" />
+    <Image Include="Res\alert.ico" />
+    <Image Include="Res\analysis_small.ico" />
+    <Image Include="Res\bcardback14.bmp" />
+    <Image Include="Res\BITMAP1.BMP" />
+    <Image Include="Res\bitmap3.bmp" />
+    <Image Include="Res\bitmap4.bmp" />
+    <Image Include="Res\bmp00001.bmp" />
+    <Image Include="Res\bmp00036.bmp" />
+    <Image Include="Res\BridgeScene.bmp" />
+    <Image Include="Res\BridgeScene2.bmp" />
+    <Image Include="Res\BridgeSceneGG.bmp" />
+    <Image Include="Res\CARDBACK.BMP" />
+    <Image Include="Res\cardback0.bmp" />
+    <Image Include="Res\cardback1.bmp" />
+    <Image Include="Res\cardback10.bmp" />
+    <Image Include="Res\cardback11.bmp" />
+    <Image Include="Res\cardback12.bmp" />
+    <Image Include="Res\cardback13.bmp" />
+    <Image Include="Res\cardback14.bmp" />
+    <Image Include="Res\cardback15.bmp" />
+    <Image Include="Res\cardback16.bmp" />
+    <Image Include="Res\cardback17.bmp" />
+    <Image Include="Res\cardback18.bmp" />
+    <Image Include="Res\cardback19.bmp" />
+    <Image Include="Res\cardback2.bmp" />
+    <Image Include="Res\cardback20.bmp" />
+    <Image Include="Res\cardback21.bmp" />
+    <Image Include="Res\cardback22.bmp" />
+    <Image Include="Res\cardback23.bmp" />
+    <Image Include="Res\cardback3.bmp" />
+    <Image Include="Res\cardback4.bmp" />
+    <Image Include="Res\cardback5.bmp" />
+    <Image Include="Res\cardback6.bmp" />
+    <Image Include="Res\cardback7.bmp" />
+    <Image Include="Res\cardback8.bmp" />
+    <Image Include="Res\cardback9.bmp" />
+    <Image Include="Res\cardbacks.bmp" />
+    <Image Include="Res\CARDMASK.BMP" />
+    <Image Include="Res\cardmask_s.bmp" />
+    <Image Include="Res\ComputerBidPrompt.ico" />
+    <Image Include="Res\contract.ico" />
+    <Image Include="Res\ctl_imag.bmp" />
+    <Image Include="Res\default_background.bmp" />
+    <Image Include="Res\EASYB.ICO" />
+    <Image Include="Res\expand1.ico" />
+    <Image Include="Res\hidden_toolbar.bmp" />
+    <Image Include="Res\ICO00001.ICO">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00002.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00003.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00004.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00005.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00006.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00007.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00008.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00009.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00010.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00011.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00012.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00013.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00014.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00015.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00016.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00017.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00018.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00019.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00020.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Image>
+    <Image Include="Res\ico00021.ico" />
+    <Image Include="Res\ico00022.ico" />
+    <Image Include="Res\ico00023.ico" />
+    <Image Include="Res\ico00024.ico" />
+    <Image Include="Res\ico00025.ico" />
+    <Image Include="Res\ico00026.ico" />
+    <Image Include="Res\ico00027.ico" />
+    <Image Include="Res\ico00028.ico" />
+    <Image Include="Res\ico00029.ico" />
+    <Image Include="Res\ico00030.ico" />
+    <Image Include="Res\ico00031.ico" />
+    <Image Include="Res\ico00032.ico" />
+    <Image Include="Res\ico00033.ico" />
+    <Image Include="Res\ico00034.ico" />
+    <Image Include="Res\ico00035.ico" />
+    <Image Include="Res\ico00036.ico" />
+    <Image Include="Res\ico00037.ico" />
+    <Image Include="Res\ico00038.ico" />
+    <Image Include="Res\ico00039.ico" />
+    <Image Include="Res\ico00040.ico" />
+    <Image Include="Res\ico00041.ico" />
+    <Image Include="Res\ICON1.ICO" />
+    <Image Include="Res\ico_1c.ico" />
+    <Image Include="Res\ico_1d.ico" />
+    <Image Include="Res\ico_1h.ico" />
+    <Image Include="Res\ico_1nt.ico" />
+    <Image Include="Res\ico_1s.ico" />
+    <Image Include="Res\ico_2c.ico" />
+    <Image Include="Res\ico_2d.ico" />
+    <Image Include="Res\ico_2h.ico" />
+    <Image Include="Res\ico_2nt.ico" />
+    <Image Include="Res\ico_2s.ico" />
+    <Image Include="Res\ico_3c.ico" />
+    <Image Include="Res\ico_3d.ico" />
+    <Image Include="Res\ico_3h.ico" />
+    <Image Include="Res\ico_3nt.ico" />
+    <Image Include="Res\ico_3s.ico" />
+    <Image Include="Res\ico_4c.ico" />
+    <Image Include="Res\ico_4d.ico" />
+    <Image Include="Res\ico_4h.ico" />
+    <Image Include="Res\ico_4nt.ico" />
+    <Image Include="Res\ico_4s.ico" />
+    <Image Include="Res\ico_5c.ico" />
+    <Image Include="Res\ico_5d.ico" />
+    <Image Include="Res\ico_5h.ico" />
+    <Image Include="Res\ico_5nt.ico" />
+    <Image Include="Res\ico_5s.ico" />
+    <Image Include="Res\ico_6c.ico" />
+    <Image Include="Res\ico_6d.ico" />
+    <Image Include="Res\ico_6h.ico" />
+    <Image Include="Res\ico_6nt.ico" />
+    <Image Include="Res\ico_6s.ico" />
+    <Image Include="Res\ico_7c.ico" />
+    <Image Include="Res\ico_7d.ico" />
+    <Image Include="Res\ico_7h.ico" />
+    <Image Include="Res\ico_7nt.ico" />
+    <Image Include="Res\ico_7s.ico" />
+    <Image Include="Res\ico_collapse.ico" />
+    <Image Include="Res\ico_expand.ico" />
+    <Image Include="Res\ico_play_history.ico" />
+    <Image Include="Res\idbs_car.bmp" />
+    <Image Include="Res\idr_clos.ico" />
+    <Image Include="Res\IDR_MAIN.ICO" />
+    <Image Include="Res\IDR_PLAY.ICO" />
+    <Image Include="Res\information.ico" />
+    <Image Include="Res\introduction.bmp" />
+    <Image Include="Res\level_1.ico" />
+    <Image Include="Res\level_2.ico" />
+    <Image Include="Res\level_3.ico" />
+    <Image Include="Res\level_4.ico" />
+    <Image Include="Res\level_5.ico" />
+    <Image Include="Res\level_6.ico" />
+    <Image Include="Res\level_7.ico" />
+    <Image Include="Res\losers.bmp" />
+    <Image Include="Res\losers_small.bmp" />
+    <Image Include="Res\mainfram.bmp" />
+    <Image Include="Res\mainframe_toolbar.bmp" />
+    <Image Include="Res\PlayerBidPrompt.ico" />
+    <Image Include="Res\play_too.bmp" />
+    <Image Include="Res\play_toolbar.bmp" />
+    <Image Include="Res\Portrait.bmp" />
+    <Image Include="Res\ProgramTitle.bmp" />
+    <Image Include="Res\review_f.ico" />
+    <Image Include="Res\review_first.ico" />
+    <Image Include="Res\review_first_game.ico" />
+    <Image Include="Res\review_l.ico" />
+    <Image Include="Res\review_last.ico" />
+    <Image Include="Res\review_last_game.ico" />
+    <Image Include="Res\review_n.ico" />
+    <Image Include="Res\review_next.ico" />
+    <Image Include="Res\review_next_game.ico" />
+    <Image Include="Res\review_p.ico" />
+    <Image Include="Res\review_prev.ico" />
+    <Image Include="Res\review_prev_game.ico" />
+    <Image Include="Res\sc1.bmp" />
+    <Image Include="Res\sc10.bmp" />
+    <Image Include="Res\sc11.bmp" />
+    <Image Include="Res\sc12.bmp" />
+    <Image Include="Res\sc13.bmp" />
+    <Image Include="Res\sc2.bmp" />
+    <Image Include="Res\sc3.bmp" />
+    <Image Include="Res\sc4.bmp" />
+    <Image Include="Res\sc5.bmp" />
+    <Image Include="Res\sc6.bmp" />
+    <Image Include="Res\sc7.bmp" />
+    <Image Include="Res\sc8.bmp" />
+    <Image Include="Res\sc9.bmp" />
+    <Image Include="Res\sd1.bmp" />
+    <Image Include="Res\sd10.bmp" />
+    <Image Include="Res\sd11.bmp" />
+    <Image Include="Res\sd12.bmp" />
+    <Image Include="Res\sd13.bmp" />
+    <Image Include="Res\sd2.bmp" />
+    <Image Include="Res\sd3.bmp" />
+    <Image Include="Res\sd4.bmp" />
+    <Image Include="Res\sd5.bmp" />
+    <Image Include="Res\sd6.bmp" />
+    <Image Include="Res\sd7.bmp" />
+    <Image Include="Res\sd8.bmp" />
+    <Image Include="Res\sd9.bmp" />
+    <Image Include="Res\secondary_toolbar.bmp" />
+    <Image Include="Res\sh1.bmp" />
+    <Image Include="Res\sh10.bmp" />
+    <Image Include="Res\sh11.bmp" />
+    <Image Include="Res\sh12.bmp" />
+    <Image Include="Res\sh13.bmp" />
+    <Image Include="Res\sh2.bmp" />
+    <Image Include="Res\sh3.bmp" />
+    <Image Include="Res\sh4.bmp" />
+    <Image Include="Res\sh5.bmp" />
+    <Image Include="Res\sh6.bmp" />
+    <Image Include="Res\sh7.bmp" />
+    <Image Include="Res\sh8.bmp" />
+    <Image Include="Res\sh9.bmp" />
+    <Image Include="Res\SPLASH.BMP" />
+    <Image Include="Res\Splash16.bmp" />
+    <Image Include="Res\ss1.bmp" />
+    <Image Include="Res\ss10.bmp" />
+    <Image Include="Res\ss11.bmp" />
+    <Image Include="Res\ss12.bmp" />
+    <Image Include="Res\ss13.bmp" />
+    <Image Include="Res\ss2.bmp" />
+    <Image Include="Res\ss3.bmp" />
+    <Image Include="Res\ss4.bmp" />
+    <Image Include="Res\ss5.bmp" />
+    <Image Include="Res\ss6.bmp" />
+    <Image Include="Res\ss7.bmp" />
+    <Image Include="Res\ss8.bmp" />
+    <Image Include="Res\ss9.bmp" />
+    <Image Include="Res\suits.bmp" />
+    <Image Include="Res\suit_club.ico" />
+    <Image Include="Res\suit_diamond.ico" />
+    <Image Include="Res\suit_heart.ico" />
+    <Image Include="Res\suit_nt.ico" />
+    <Image Include="Res\suit_spade.ico" />
+    <Image Include="Res\swap_car.bmp" />
+    <Image Include="Res\s_cardback0.bmp" />
+    <Image Include="Res\s_cardback1.bmp" />
+    <Image Include="Res\s_cardback2.bmp" />
+    <Image Include="Res\title.bmp" />
+    <Image Include="Res\TOOLBAR.BMP" />
+    <Image Include="Res\toolbar1.bmp" />
+    <Image Include="Res\toolbar_.bmp" />
+    <Image Include="Res\winners.bmp" />
+    <Image Include="Res\winners_small.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Res\click_mouse.cur" />
+    <CustomBuild Include="Res\CUR00001.CUR" />
+    <CustomBuild Include="Res\CUR00002.CUR" />
+    <CustomBuild Include="Res\CUR00003.CUR" />
+    <CustomBuild Include="Res\CUR00004.CUR" />
+    <CustomBuild Include="Res\CUR00005.CUR" />
+    <CustomBuild Include="Res\CURSOR1.CUR" />
+    <CustomBuild Include="Res\CURSOR_E.CUR" />
+    <CustomBuild Include="Res\cursor_exchange.cur" />
+    <CustomBuild Include="Res\cursor_e_invalid.cur" />
+    <CustomBuild Include="Res\cursor_grab.cur" />
+    <CustomBuild Include="Res\cursor_h.cur" />
+    <CustomBuild Include="Res\cursor_hand.cur" />
+    <CustomBuild Include="Res\cursor_hand_illegal.cur" />
+    <CustomBuild Include="Res\cursor_hand_open.cur" />
+    <CustomBuild Include="Res\CURSOR_N.CUR" />
+    <CustomBuild Include="Res\cursor_n_invalid.cur" />
+    <CustomBuild Include="Res\CURSOR_S.CUR" />
+    <CustomBuild Include="Res\cursor_s_invalid.cur" />
+    <CustomBuild Include="Res\CURSOR_W.CUR" />
+    <CustomBuild Include="Res\cursor_w_invalid.cur" />
+    <CustomBuild Include="Res\EASYB.RC2" />
+    <CustomBuild Include="Res\H_point.cur" />
+    <CustomBuild Include="Res\H_pointOpen.cur" />
+    <CustomBuild Include="Res\play_east.cur" />
+    <CustomBuild Include="Res\play_north.cur" />
+    <CustomBuild Include="Res\play_south.cur" />
+    <CustomBuild Include="Res\play_west.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Utils\EasyBUtils-vs2015.vcxproj">
+      <Project>{8c82484c-6f41-4948-a49d-1e2f3a2a9594}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Wizards\EasyBWizards-vs2015.vcxproj">
+      <Project>{b78ad923-6cd9-4f1a-bd16-6bfa60e6ba00}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

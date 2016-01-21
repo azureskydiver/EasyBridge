@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{B78AD923-6CD9-4F1A-BD16-6BFA60E6BA00}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\Bin\Release\</OutDir>
+    <IntDir>.\..\Bin\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\Build\Bin\$(Configuration)\</OutDir>
+    <IntDir>..\..\Build\objs\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..;..\Help;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\Bin\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\Bin\Release\EasyBWizards.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\Bin\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\Bin\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\Bin\Release\EasyBWizards.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\Bin\Release\EasyBWizards.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\EasyBWizards.def</ModuleDefinitionFile>
+      <OutputFile>.\..\Bin\Release\EasyBWizards.dll</OutputFile>
+      <ImportLibrary>..\lib\Release\EasyBWizards.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\Lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..;..\Help;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>..\..\Build\objs\$(TargetName)\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>..\..\Build\objs\$(TargetName)\Debug\EasyBWizards.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>..\..\Build\objs\$(TargetName)\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(TargetName)\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\Bin\Debug\EasyBWizards.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\Bin\Debug\EasyBWizards.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\EasyBWizards.def</ModuleDefinitionFile>
+      <OutputFile>..\..\Build\Bin\$(Configuration)\EasyBWizards.dll</OutputFile>
+      <ImportLibrary>..\..\Build\Lib\$(Configuration)\EasyBWizardsD.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\Build\Lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Globals.cpp" />
+    <ClCompile Include="BidOptionsPropSheet.cpp" />
+    <ClCompile Include="BidOptsConfigPage.cpp" />
+    <ClCompile Include="BidOptsGeneralPage.cpp" />
+    <ClCompile Include="BidOptsMiscPage.cpp" />
+    <ClCompile Include="BidOptsNoTrumpsPage.cpp" />
+    <ClCompile Include="BidOptsOpenPage.cpp" />
+    <ClCompile Include="BidOptsParamsPage.cpp" />
+    <ClCompile Include="BidOptsTwoBidsPage.cpp" />
+    <ClCompile Include="DealOptionsPropSheet.cpp" />
+    <ClCompile Include="DealOptsMajorsPage.cpp" />
+    <ClCompile Include="DealOptsMinorsPage.cpp" />
+    <ClCompile Include="DealOptsMiscPage.cpp" />
+    <ClCompile Include="DealOptsNTPage.cpp" />
+    <ClCompile Include="DealOptsPointsPage.cpp" />
+    <ClCompile Include="DealOptsSlamPage.cpp" />
+    <ClCompile Include="DispOptionsPropSheet.cpp" />
+    <ClCompile Include="DispOptsCardBacksPage.cpp" />
+    <ClCompile Include="DispOptsCardsPage.cpp" />
+    <ClCompile Include="DispOptsDialogsPage.cpp" />
+    <ClCompile Include="DispOptsFontsPage.cpp" />
+    <ClCompile Include="DispOptsMiscPage.cpp" />
+    <ClCompile Include="DispOptsSuitsPage.cpp" />
+    <ClCompile Include="EasyBWizards.cpp" />
+    <ClCompile Include="GameOptionsPropSheet.cpp" />
+    <ClCompile Include="GameOptsCountingPage.cpp" />
+    <ClCompile Include="GameOptsFilesPage.cpp" />
+    <ClCompile Include="GameOptsGIBPage.cpp" />
+    <ClCompile Include="GameOptsInterfacePage.cpp" />
+    <ClCompile Include="GameOptsMechanicsPage.cpp" />
+    <ClCompile Include="GameOptsScoringPage.cpp" />
+    <ClCompile Include="ProgConfigBiddingPage.cpp" />
+    <ClCompile Include="ProgConfigFinishPage.cpp" />
+    <ClCompile Include="ProgConfigGameMechanicsPage.cpp" />
+    <ClCompile Include="ProgConfigHelpLevelPage.cpp" />
+    <ClCompile Include="ProgConfigIntroPage.cpp" />
+    <ClCompile Include="ProgConfigPausesPage.cpp" />
+    <ClCompile Include="ProgConfigSuitsDisplayPage.cpp" />
+    <ClCompile Include="ProgConfigViewSettingsPage.cpp" />
+    <ClCompile Include="ProgConfigWizardData.cpp" />
+    <ClCompile Include="ProgramConfigWizard.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="EasyBWizards.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="res\EasyBWizards.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EasyBWizards.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BidOptionsPropSheet.h" />
+    <ClInclude Include="BidOptsConfigPage.h" />
+    <ClInclude Include="BidOptsGeneralPage.h" />
+    <ClInclude Include="BidOptsMiscPage.h" />
+    <ClInclude Include="BidOptsNoTrumpsPage.h" />
+    <ClInclude Include="BidOptsOpenPage.h" />
+    <ClInclude Include="BidOptsParamsPage.h" />
+    <ClInclude Include="BidOptsTwoBidsPage.h" />
+    <ClInclude Include="DealOptionsPropSheet.h" />
+    <ClInclude Include="DealOptsMajorsPage.h" />
+    <ClInclude Include="DealOptsMinorsPage.h" />
+    <ClInclude Include="DealOptsMiscPage.h" />
+    <ClInclude Include="DealOptsNTPage.h" />
+    <ClInclude Include="DealOptsPointsPage.h" />
+    <ClInclude Include="DealOptsSlamPage.h" />
+    <ClInclude Include="DispOptionsPropSheet.h" />
+    <ClInclude Include="DispOptsCardBacksPage.h" />
+    <ClInclude Include="DispOptsCardsPage.h" />
+    <ClInclude Include="DispOptsDialogsPage.h" />
+    <ClInclude Include="DispOptsFontsPage.h" />
+    <ClInclude Include="DispOptsMiscPage.h" />
+    <ClInclude Include="DispOptsSuitsPage.h" />
+    <ClInclude Include="GameOptionsPropSheet.h" />
+    <ClInclude Include="GameOptsCountingPage.h" />
+    <ClInclude Include="GameOptsFilesPage.h" />
+    <ClInclude Include="GameOptsGIBPage.h" />
+    <ClInclude Include="GameOptsInterfacePage.h" />
+    <ClInclude Include="GameOptsMechanicsPage.h" />
+    <ClInclude Include="GameOptsScoringPage.h" />
+    <ClInclude Include="ProgConfigBiddingPage.h" />
+    <ClInclude Include="ProgConfigFinishPage.h" />
+    <ClInclude Include="ProgConfigGameMechanicsPage.h" />
+    <ClInclude Include="ProgConfigHelpLevelPage.h" />
+    <ClInclude Include="ProgConfigIntroPage.h" />
+    <ClInclude Include="ProgConfigPausesPage.h" />
+    <ClInclude Include="ProgConfigSuitsDisplayPage.h" />
+    <ClInclude Include="ProgConfigViewSettingsPage.h" />
+    <ClInclude Include="ProgConfigWizardData.h" />
+    <ClInclude Include="ProgramConfigWizard.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\bitmap1.bmp" />
+    <Image Include="Res\bmp00001.bmp" />
+    <Image Include="Res\bmp00002.bmp" />
+    <Image Include="Res\bmp00003.bmp" />
+    <Image Include="res\BridgeSceneBB1.bmp" />
+    <Image Include="res\BridgeSceneBB2.bmp" />
+    <Image Include="res\BridgeSceneBB3.bmp" />
+    <Image Include="res\BridgeSceneBB4.bmp" />
+    <Image Include="res\BridgeSceneBB5.bmp" />
+    <Image Include="Res\BridgeSceneBB6.bmp" />
+    <Image Include="res\BridgeSceneGG.bmp" />
+    <Image Include="res\BridgeSceneGG1.bmp" />
+    <Image Include="res\BridgeSceneGG2.bmp" />
+    <Image Include="res\BridgeSceneGG3.bmp" />
+    <Image Include="res\BridgeSceneGG4.bmp" />
+    <Image Include="res\BridgeSceneGG5.bmp" />
+    <Image Include="res\BridgeSceneGG6.bmp" />
+    <Image Include="res\BridgeSceneGG7.bmp" />
+    <Image Include="res\BridgeSceneGG8.bmp" />
+    <Image Include="res\BridgeSceneGG9.bmp" />
+    <Image Include="Res\suit_ord.bmp" />
+    <Image Include="Res\Suit_Order_1.bmp" />
+    <Image Include="Res\Suit_Order_2.bmp" />
+    <Image Include="Res\Suit_Order_3.bmp" />
+    <Image Include="Res\Suit_Order_4.bmp" />
+    <Image Include="Res\Suit_Order_5.bmp" />
+    <Image Include="Res\Welcome Screen.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

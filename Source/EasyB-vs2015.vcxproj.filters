@@ -1,0 +1,1719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0dc247bc-3d61-49fd-8f24-c7dcb193cc22}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{30b3e3ed-635d-4974-85eb-93244ae9f2d7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{14bd8500-657a-4551-9a02-f4755d85a848}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="4thSuitForcingConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Artificial2ClubConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoHintDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BidDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingFinishedDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingGeneral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingOpen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingRebid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingRebid2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingRebidExtended.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BiddingResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BidDlgLarge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BidDlgSmall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BidEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackwoodConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CardHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CardLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CardList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CardLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinedHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinedSuitHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Convention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConventionSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CueBidConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DealNumberDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeclarerPlayEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DefenderPlayEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Discard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drawhand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Drop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DruryConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyPlayEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyBdoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyBvw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyBVw2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitPlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileComments.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePropertiesDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Finesse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Force.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gambling3NTConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameReviewDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GerberConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GIB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GIBDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GIBMonitorThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuessedCard.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuessedCardHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuessedHandHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuessedSuitHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HandHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HoldUp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jacoby2NTConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JacobyTransferConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainfrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MichaelsCueBidConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCustomDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myfildlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NegativeDoublesConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NNetAutotrainStatusDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NNetConfigDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NNetOutputDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OvercallsConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassedHandDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassedHandSimpleDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Play.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStatusDialog.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="print.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RdFilePBN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundFinishedDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ruff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saveopts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenSizeWarningDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectHandDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShutoutBidsConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SlamConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplinterBidsConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusAnalysesPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusCardLocationsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusFeedbackPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusGIBMonitorPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusHoldingsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusPlayPlanPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StaymanConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StrongTwoBidsConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SuitHoldings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TakeoutDoublesConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrumpPull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Type1Finesse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Type2Finesse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Type3Finesse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeAFinesse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeBFinesse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnusualNTConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WeakTwoBidsConvention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wrfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WrFilePBN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EasyB.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="4thSuitForcingConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Artificial2ClubConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoHintDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BidDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BiddingFinishedDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BidDlgLarge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BidDlgSmall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BidEngine.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bidopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bidparams.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackwoodConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CARD.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardList.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardLocation.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cardopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CombinedHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CombinedSuitHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Convention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConventionSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CueBidConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DealNumberDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DEALPARM.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deckopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeclarerPlayEngine.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefenderPlayEngine.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DEFINES.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Discard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="docopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Drop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DruryConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyPlayEngine.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyBdoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyBvw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitPlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FEEDBACK.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FILECODE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCodePBN.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileComments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePropertiesDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Finesse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Force.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gambling3NTConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameReviewDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GerberConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GIB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GIBDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GIBMonitorThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessedCard.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessedCardHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessedHandHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessedSuitHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HandHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Handopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HoldUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Jacoby2NTConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JacobyTransferConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrameopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainfrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MichaelsCueBidConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCustomDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYFILDLG.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NegativeDoublesConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NNetAutotrainStatusDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NNetConfigDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NNetOutputDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectWithProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizerThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OvercallsConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassedHandDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassedHandSimpleDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Play.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayEngine.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PLAYER.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playeropts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStatusDialog.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="progopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="roundfinisheddialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ruff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="saveopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenSizeWarningDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectHandDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShutoutBidsConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SlamConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sluff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SplinterBidsConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusAnalysesPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusCardLocationsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusFeedbackPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusGIBMonitorPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusHoldingsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusPlayPlanPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusSheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaymanConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrongTwoBidsConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SUBCLASS.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SuitHoldings.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TakeoutDoublesConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestPlayDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrumpPull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Type1Finesse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Type2Finesse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Type3Finesse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeAFinesse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeBFinesse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnusualNTConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="viewopts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WeakTwoBidsConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\1.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\10.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\12.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\13.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\14.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\15.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\16.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\17.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\18.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\19.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\2.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\20.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\21.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\22.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\23.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\25.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\26.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\27.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\28.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\29.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\3.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\30.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\31.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\32.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\33.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\34.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\35.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\36.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\37.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\38.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\39.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\4.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\40.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\41.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\42.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\43.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\44.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\45.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\46.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\47.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\48.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\49.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\5.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\50.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\51.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\52.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\6.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\7.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="78.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\8.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\9.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\about_pr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\about_pr2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\alert.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\analysis_small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\bcardback14.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BITMAP1.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\bitmap4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\bmp00036.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BridgeScene.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BridgeScene2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BridgeSceneGG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\CARDBACK.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback14.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback15.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback17.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback18.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback19.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback21.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback22.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback23.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardback9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardbacks.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\CARDMASK.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardmask_s.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ComputerBidPrompt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\contract.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ctl_imag.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\default_background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\EASYB.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\expand1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\hidden_toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ICO00001.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00002.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00003.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00004.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00005.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00006.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00007.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00008.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00009.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00010.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00011.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00012.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00013.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00014.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00015.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00016.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00017.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00018.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00019.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00020.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00021.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00022.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00023.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00024.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00025.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00026.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00027.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00028.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00029.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00030.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00031.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00032.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00033.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00034.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00035.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00036.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00037.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00038.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00039.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00040.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico00041.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_1c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_1d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_1h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_1nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_1s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_2c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_2d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_2h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_2nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_2s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_3c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_3d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_3h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_3nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_3s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_4c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_4d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_4h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_4nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_4s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_5c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_5d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_5h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_5nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_5s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_6c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_6d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_6h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_6nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_6s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_7c.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_7d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_7h.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_7nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_7s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_collapse.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_expand.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ico_play_history.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ICON1.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idbs_car.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idr_clos.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\IDR_MAIN.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\IDR_PLAY.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\information.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\introduction.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_5.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_6.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\level_7.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\losers.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\losers_small.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\mainframe_toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\play_too.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\play_toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\PlayerBidPrompt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Portrait.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ProgramTitle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_f.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_first.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_first_game.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_l.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_last.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_last_game.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_n.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_next.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_next_game.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_p.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_prev.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\review_prev_game.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\s_cardback0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\s_cardback1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\s_cardback2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sc9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sd9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\secondary_toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\sh9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SPLASH.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Splash16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ss9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\suit_club.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\suit_diamond.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\suit_heart.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\suit_nt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\suit_spade.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\suits.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\swap_car.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\title.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\TOOLBAR.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\toolbar_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\winners.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\winners_small.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Res\click_mouse.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CUR00001.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CUR00002.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CUR00003.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CUR00004.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CUR00005.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CURSOR1.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CURSOR_E.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_e_invalid.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_exchange.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_grab.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_h.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_hand.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_hand_illegal.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_hand_open.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CURSOR_N.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_n_invalid.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CURSOR_S.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_s_invalid.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\CURSOR_W.CUR">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cursor_w_invalid.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\EASYB.RC2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\H_point.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\H_pointOpen.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\play_east.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\play_north.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\play_south.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\play_west.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
