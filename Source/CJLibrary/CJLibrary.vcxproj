@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00B3D432-6557-4893-8D45-E2431302812B}</ProjectGuid>
+    <RootNamespace>CJLibrary</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\Build\Bin\$(Configuration)\</OutDir>
+    <IntDir>..\..\Build\objs\$(Configuration)\CJLibrary\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\Bin\Release\</OutDir>
+    <IntDir>.\..\Bin\Release\CJLibrary\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <AssemblerListingLocation>..\..\Build\objs\$(TargetName)\$(Configuration)\</AssemblerListingLocation>
+      <ObjectFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\..\Build\Lib\$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <AssemblerOutput />
+      <AssemblerListingLocation>.\..\Bin\Release/CJLibrary/</AssemblerListingLocation>
+      <ObjectFileName>.\..\Bin\Release/CJLibrary/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\Bin\Release/CJLibrary/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>./../Lib/Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CJBrowseEdit.cpp" />
+    <ClCompile Include="Source\CJCaption.cpp" />
+    <ClCompile Include="Source\CJCaptionPopupWnd.cpp" />
+    <ClCompile Include="Source\CJColorPicker.cpp" />
+    <ClCompile Include="Source\CJColorPopup.cpp" />
+    <ClCompile Include="Source\CJComboBoxEx.cpp" />
+    <ClCompile Include="Source\CJControlBar.cpp" />
+    <ClCompile Include="Source\CJDateTimeCtrl.cpp" />
+    <ClCompile Include="Source\CJDockBar.cpp" />
+    <ClCompile Include="Source\CJDockContext.cpp" />
+    <ClCompile Include="Source\CJExplorerBar.cpp" />
+    <ClCompile Include="Source\CJFlatButton.cpp" />
+    <ClCompile Include="Source\CJFlatComboBox.cpp" />
+    <ClCompile Include="Source\CJFlatHeaderCtrl.cpp" />
+    <ClCompile Include="Source\CJFlatSplitterWnd.cpp" />
+    <ClCompile Include="Source\CJFlatTabCtrl.cpp" />
+    <ClCompile Include="Source\CJFontCombo.cpp" />
+    <ClCompile Include="Source\CJFrameWnd.cpp" />
+    <ClCompile Include="Source\CJHexEdit.cpp" />
+    <ClCompile Include="Source\CJHtmlView.cpp" />
+    <ClCompile Include="Source\CJHyperLink.cpp" />
+    <ClCompile Include="Source\CJListBox.cpp" />
+    <ClCompile Include="Source\CJListCtrl.cpp" />
+    <ClCompile Include="Source\CJListView.cpp" />
+    <ClCompile Include="Source\CJLogoPane.cpp" />
+    <ClCompile Include="Source\CJMaskEdit.cpp" />
+    <ClCompile Include="Source\CJMDIChildWnd.cpp" />
+    <ClCompile Include="Source\CJMDIFrameWnd.cpp" />
+    <ClCompile Include="Source\CJMemFile.cpp" />
+    <ClCompile Include="Source\CJMenu.cpp" />
+    <ClCompile Include="Source\CJMenuBar.cpp" />
+    <ClCompile Include="Source\CJMetaFileButton.cpp" />
+    <ClCompile Include="Source\CJMiniDockFrameWnd.cpp" />
+    <ClCompile Include="Source\CJOutlookBar.cpp" />
+    <ClCompile Include="Source\CJPagerCtrl.cpp" />
+    <ClCompile Include="Source\CJReBar.cpp" />
+    <ClCompile Include="Source\CJReBarCtrl.cpp" />
+    <ClCompile Include="Source\CJShell.cpp" />
+    <ClCompile Include="Source\CJShellList.cpp" />
+    <ClCompile Include="Source\CJShellTree.cpp" />
+    <ClCompile Include="Source\CJSizeDockBar.cpp" />
+    <ClCompile Include="Source\CJSortClass.cpp" />
+    <ClCompile Include="Source\CJStatusBar.cpp" />
+    <ClCompile Include="Source\CJTabCtrl.cpp" />
+    <ClCompile Include="Source\CJTabCtrlBar.cpp" />
+    <ClCompile Include="Source\CJTabView.cpp" />
+    <ClCompile Include="Source\CJThemeHelper.cpp" />
+    <ClCompile Include="Source\CJToolBar.cpp" />
+    <ClCompile Include="Source\CJToolBarBase.cpp" />
+    <ClCompile Include="Source\CJToolBarCtrl.cpp" />
+    <ClCompile Include="Source\CJTreeCtrl.cpp" />
+    <ClCompile Include="Source\CJWindowPlacement.cpp" />
+    <ClCompile Include="Source\GfxGroupEdit.cpp" />
+    <ClCompile Include="Source\GfxOutBarCtrl.cpp" />
+    <ClCompile Include="Source\GfxSplitterWnd.cpp" />
+    <ClCompile Include="Source\StdAfx.cpp" />
+    <ClCompile Include="Source\Subclass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Source\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\StdAfx.h" />
+    <ClInclude Include="Include\CJBrowseEdit.h" />
+    <ClInclude Include="Include\CJCaption.h" />
+    <ClInclude Include="Include\CJCaptionPopupWnd.h" />
+    <ClInclude Include="Include\CJColorPicker.h" />
+    <ClInclude Include="Include\CJColorPopup.h" />
+    <ClInclude Include="Include\CJComboBoxEx.h" />
+    <ClInclude Include="Include\CJControlBar.h" />
+    <ClInclude Include="Include\CJDateTimeCtrl.h" />
+    <ClInclude Include="Include\CJDockBar.h" />
+    <ClInclude Include="Include\CJDockContext.h" />
+    <ClInclude Include="Include\CJExplorerBar.h" />
+    <ClInclude Include="Include\CJFlatButton.h" />
+    <ClInclude Include="Include\CJFlatComboBox.h" />
+    <ClInclude Include="Include\CJFlatHeaderCtrl.h" />
+    <ClInclude Include="Include\CJFlatSplitterWnd.h" />
+    <ClInclude Include="Include\CJFlatTabCtrl.h" />
+    <ClInclude Include="Include\CJFontCombo.h" />
+    <ClInclude Include="Include\CJFrameWnd.h" />
+    <ClInclude Include="Include\CJHexEdit.h" />
+    <ClInclude Include="Include\CJHtmlView.h" />
+    <ClInclude Include="Include\CJHyperLink.h" />
+    <ClInclude Include="Include\CJLibrary.h" />
+    <ClInclude Include="Include\CJListBox.h" />
+    <ClInclude Include="Include\CJListCtrl.h" />
+    <ClInclude Include="Include\CJListView.h" />
+    <ClInclude Include="Include\CJLogoPane.h" />
+    <ClInclude Include="Include\CJMaskEdit.h" />
+    <ClInclude Include="Include\CJMDIChildWnd.h" />
+    <ClInclude Include="Include\CJMDIFrameWnd.h" />
+    <ClInclude Include="Include\CJMemFile.h" />
+    <ClInclude Include="Include\CJMenu.h" />
+    <ClInclude Include="Include\CJMenuBar.h" />
+    <ClInclude Include="Include\CJMetaFileButton.h" />
+    <ClInclude Include="Include\CJMiniDockFrameWnd.h" />
+    <ClInclude Include="Include\CJOutlookBar.h" />
+    <ClInclude Include="Include\CJPagerCtrl.h" />
+    <ClInclude Include="Include\CJReBar.h" />
+    <ClInclude Include="Include\CJReBarCtrl.h" />
+    <ClInclude Include="Include\CJResource.h" />
+    <ClInclude Include="Include\CJShell.h" />
+    <ClInclude Include="Include\CJShellList.h" />
+    <ClInclude Include="Include\CJShellTree.h" />
+    <ClInclude Include="Include\CJSizeDockBar.h" />
+    <ClInclude Include="Include\CJSortClass.h" />
+    <ClInclude Include="Include\CJStatusBar.h" />
+    <ClInclude Include="Include\CJTabCtrl.h" />
+    <ClInclude Include="Include\CJTabCtrlBar.h" />
+    <ClInclude Include="Include\CJTabView.h" />
+    <ClInclude Include="Include\CJThemeHelper.h" />
+    <ClInclude Include="Include\CJToolBar.h" />
+    <ClInclude Include="Include\CJToolBarBase.h" />
+    <ClInclude Include="Include\CJToolBarCtrl.h" />
+    <ClInclude Include="Include\CJTreeCtrl.h" />
+    <ClInclude Include="Include\CJWindowPlacement.h" />
+    <ClInclude Include="Include\GfxGroupEdit.h" />
+    <ClInclude Include="Include\GfxOutBarCtrl.h" />
+    <ClInclude Include="Include\GfxSplitterWnd.h" />
+    <ClInclude Include="Include\Subclass.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -118,12 +118,12 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>..;..\Help;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>..\..\Build\objs\$(TargetName)\Debug\</AssemblerListingLocation>
-      <PrecompiledHeaderOutputFile>..\..\Build\objs\$(TargetName)\Debug\EasyBWizards.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\Build\objs\$(TargetName)\$(Configuration)\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>..\..\Build\objs\$(TargetName)\$(Configuration)\EasyBWizards.pch</PrecompiledHeaderOutputFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <ObjectFileName>..\..\Build\objs\$(TargetName)\Debug\</ObjectFileName>
-      <ProgramDataBaseFileName>..\..\Build\objs\$(TargetName)\Debug\</ProgramDataBaseFileName>
+      <ObjectFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <Midl>
