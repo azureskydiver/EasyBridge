@@ -18,7 +18,7 @@
 //
 
 // Comment this if you don't want use CMemDC class
-#define ST_USE_MEMDC
+// #define ST_USE_MEMDC
 
 /////////////////////////////////////////////////////////////////////////////
 // CFlatButton window

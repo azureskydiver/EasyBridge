@@ -25,6 +25,7 @@
 #include <afxext.h>         // MFC extensions
 #include <afxcmn.h>			// MFC support for Windows Common Controls
 #include <afxtempl.h>		// MFC support for Windows Common Controls
+#include <afxglobals.h>
 
 /*
 #include <afxole.h>         // MFC OLE classes
