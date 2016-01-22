@@ -28,7 +28,7 @@ static char THIS_FILE[] = __FILE__;
 //
 // Round()
 //
-inline int Round(float fValue)
+static inline int Round(float fValue)
 {
 	if ( ((int)(fValue + 0.5f)) > ((int) fValue) )
 		return ((int) fValue) + 1;
