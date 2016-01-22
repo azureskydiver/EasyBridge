@@ -54,13 +54,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\..\Bin\Release\</OutDir>
-    <IntDir>.\..\Bin\Release\</IntDir>
+    <OutDir>..\..\Build\Bin\$(Configuration)\</OutDir>
+    <IntDir>..\..\Build\objs\$(TargetName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\..\Build\Bin\$(Configuration)\</OutDir>
-    <IntDir>..\..\Build\objs\$(Configuration)\</IntDir>
+    <IntDir>..\..\Build\objs\$(TargetName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -73,18 +73,18 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>..;..\Help;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>.\..\Bin\Release\</AssemblerListingLocation>
-      <PrecompiledHeaderOutputFile>.\..\Bin\Release\EasyBWizards.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>..\..\Build\objs\$(Configuration)\$(TargetName)\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>..\..\Build\objs\$(Configuration)\$(TargetName)\EasyBWizards.pch</PrecompiledHeaderOutputFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <ObjectFileName>.\..\Bin\Release\</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\Bin\Release\</ProgramDataBaseFileName>
+      <ObjectFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ProgramDataBaseFileName>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <TypeLibraryName>.\..\Bin\Release\EasyBWizards.tlb</TypeLibraryName>
+      <TypeLibraryName>..\..\Build\Lib\$(Configuration)\EasyBWizards.tlb</TypeLibraryName>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
     </Midl>
@@ -94,16 +94,16 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\..\Bin\Release\EasyBWizards.bsc</OutputFile>
+      <OutputFile>..\..\Build\Bin\$(Configuration)\EasyBWizards.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\EasyBWizards.def</ModuleDefinitionFile>
-      <OutputFile>.\..\Bin\Release\EasyBWizards.dll</OutputFile>
-      <ImportLibrary>..\lib\Release\EasyBWizards.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\Lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>..\..\Build\Bin\$(Configuration)\EasyBWizards.dll</OutputFile>
+      <ImportLibrary>..\..\Build\Lib\$(Configuration)\EasyBWizards.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\Build\Lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -118,18 +118,18 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>..;..\Help;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>..\..\Build\objs\$(TargetName)\$(Configuration)\</AssemblerListingLocation>
-      <PrecompiledHeaderOutputFile>..\..\Build\objs\$(TargetName)\$(Configuration)\EasyBWizards.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\Build\objs\$(Configuration)\$(TargetName)\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>..\..\Build\objs\$(Configuration)\$(TargetName)\EasyBWizards.pch</PrecompiledHeaderOutputFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <ObjectFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ObjectFileName>
-      <ProgramDataBaseFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ProgramDataBaseFileName>
+      <ObjectFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <TypeLibraryName>.\..\Bin\Debug\EasyBWizards.tlb</TypeLibraryName>
+      <TypeLibraryName>..\..\Build\Lib\$(Configuration)\EasyBWizards.tlb</TypeLibraryName>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
     </Midl>
@@ -139,7 +139,7 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\..\Bin\Debug\EasyBWizards.bsc</OutputFile>
+      <OutputFile>..\..\Build\Bin\$(Configuration)\EasyBWizards.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>

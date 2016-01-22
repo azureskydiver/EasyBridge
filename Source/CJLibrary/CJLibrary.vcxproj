@@ -14,11 +14,12 @@
     <ProjectGuid>{00B3D432-6557-4893-8D45-E2431302812B}</ProjectGuid>
     <RootNamespace>CJLibrary</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -44,11 +45,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\..\Build\Bin\$(Configuration)\</OutDir>
-    <IntDir>..\..\Build\objs\$(Configuration)\CJLibrary\</IntDir>
+    <IntDir>..\..\Build\objs\$(Configuration)\$(TargetName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\..\Bin\Release\</OutDir>
-    <IntDir>.\..\Bin\Release\CJLibrary\</IntDir>
+    <OutDir>..\..\Build\Bin\$(Configuration)\</OutDir>
+    <IntDir>..\..\Build\objs\$(TargetName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -58,11 +59,11 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader>Create</PrecompiledHeader>
-      <AssemblerListingLocation>..\..\Build\objs\$(TargetName)\$(Configuration)\</AssemblerListingLocation>
-      <ObjectFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ObjectFileName>
-      <ProgramDataBaseFileName>..\..\Build\objs\$(TargetName)\$(Configuration)\</ProgramDataBaseFileName>
+      <AssemblerListingLocation>..\..\Build\objs\$(Configuration)\$(TargetName)\</AssemblerListingLocation>
+      <ObjectFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Lib>
       <OutputFile>..\..\Build\Lib\$(Configuration)\$(ProjectName).lib</OutputFile>
@@ -72,19 +73,18 @@
     <ClCompile>
       <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <AssemblerOutput />
-      <AssemblerListingLocation>.\..\Bin\Release/CJLibrary/</AssemblerListingLocation>
-      <ObjectFileName>.\..\Bin\Release/CJLibrary/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\Bin\Release/CJLibrary/</ProgramDataBaseFileName>
+      <AssemblerListingLocation>..\..\Build\objs\$(Configuration)\$(TargetName)\</AssemblerListingLocation>
+      <ObjectFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Lib>
-      <OutputFile>./../Lib/Release\$(ProjectName).lib</OutputFile>
+      <OutputFile>..\..\Build\Lib\$(Configuration)\$(ProjectName).lib</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
