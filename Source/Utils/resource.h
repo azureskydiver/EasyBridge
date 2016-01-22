@@ -1,14 +1,5 @@
-//----------------------------------------------------------------------------------------
-//
-// This file and all other Easy Bridge source files are copyright (C) 2002 by Steven Han.
-// Use of this file is governed by the GNU General Public License.
-// See the files COPYING and COPYRIGHT for details.
-//
-//----------------------------------------------------------------------------------------
-
-//
 //{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
+// Microsoft Visual C++ generated include file.
 // Used by EasyBUtils.rc
 //
 #define ID_NEXT                         2

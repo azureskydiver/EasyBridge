@@ -1,4 +1,4 @@
-//Microsoft Developer Studio generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -13,13 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -27,18 +25,18 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE DISCARDABLE 
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE DISCARDABLE 
+2 TEXTINCLUDE 
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE DISCARDABLE 
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
     "#define _AFX_NO_OLE_RESOURCES\r\n"
@@ -58,79 +56,31 @@ END
 #endif    // APSTUDIO_INVOKED
 
 
-#ifndef _MAC
-/////////////////////////////////////////////////////////////////////////////
-//
-// Version
-//
-
-VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
- FILEFLAGSMASK 0x3fL
-#ifdef _DEBUG
- FILEFLAGS 0x1L
-#else
- FILEFLAGS 0x0L
-#endif
- FILEOS 0x4L
- FILETYPE 0x2L
- FILESUBTYPE 0x0L
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "040904b0"
-        BEGIN
-            VALUE "Comments", "\0"
-            VALUE "CompanyName", "\0"
-            VALUE "FileDescription", "EasyBUtils DLL\0"
-            VALUE "FileVersion", "1, 0, 0, 1\0"
-            VALUE "InternalName", "EasyBUtils\0"
-            VALUE "LegalCopyright", "Copyright ©1997-2002 by Steven Han\0"
-            VALUE "LegalTrademarks", "\0"
-            VALUE "OriginalFilename", "EasyBUtils.DLL\0"
-            VALUE "PrivateBuild", "\0"
-            VALUE "ProductName", "EasyBUtils Dynamic Link Library\0"
-            VALUE "ProductVersion", "1, 0, 0, 1\0"
-            VALUE "SpecialBuild", "\0"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x409, 1200
-    END
-END
-
-#endif    // !_MAC
-
-
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
 //
 
-IDD_TIP_OF_THE_DAY DIALOG DISCARDABLE  0, 0, 279, 157
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_TIP_OF_THE_DAY DIALOG 0, 0, 279, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Tip of the Day"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "Close",IDOK,221,136,50,14
     PUSHBUTTON      "Next Tip",ID_NEXT,166,136,50,14
-    CONTROL         "Show tips at startup",IDC_SHOW_AT_STARTUP,"Button",
-                    BS_AUTOCHECKBOX | WS_TABSTOP,8,138,78,10
+    CONTROL         "Show tips at startup",IDC_SHOW_AT_STARTUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,138,78,10
     PUSHBUTTON      "Previous Tip",ID_PREV,111,136,50,14
-    CONTROL         "",IDC_MESSAGE,"Static",SS_GRAYFRAME | SS_SUNKEN,8,6,263,
-                    122
+    CONTROL         "",IDC_MESSAGE,"Static",SS_GRAYFRAME | SS_SUNKEN,8,6,263,122
 END
 
-IDD_SPLASH DIALOG DISCARDABLE  0, 0, 104, 61
-STYLE WS_POPUP
+IDD_SPLASH DIALOG 0, 0, 104, 61
+STYLE DS_SETFONT | WS_POPUP
 FONT 8, "MS Sans Serif"
 BEGIN
 END
 
-IDD_WELCOME DIALOG DISCARDABLE  0, 0, 180, 80
-STYLE WS_POPUP
+IDD_WELCOME DIALOG 0, 0, 180, 80
+STYLE DS_SETFONT | WS_POPUP
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,60,56,60,15,NOT WS_VISIBLE
@@ -143,7 +93,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO DISCARDABLE 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_TIP_OF_THE_DAY, DIALOG
     BEGIN
@@ -177,24 +127,29 @@ END
 // Bitmap
 //
 
-IDB_TIP_LEFT_PANE       BITMAP  DISCARDABLE     "res\\tip_left.bmp"
-IDB_SPLASH16            BITMAP  DISCARDABLE     "Res\\Splash16.bmp"
-IDB_SPLASH              BITMAP  DISCARDABLE     "res\\splash.bmp"
-IDB_WELCOME_BITMAP_16   BITMAP  DISCARDABLE     "res\\Welcome Scene 16.bmp"
-IDB_WELCOME_BITMAP      BITMAP  DISCARDABLE     "Res\\Welcome Screen.bmp"
+IDB_TIP_LEFT_PANE       BITMAP                  "res\\tip_left.bmp"
+
+IDB_SPLASH16            BITMAP                  "Res\\Splash16.bmp"
+
+IDB_SPLASH              BITMAP                  "res\\splash.bmp"
+
+IDB_WELCOME_BITMAP_16   BITMAP                  "res\\Welcome Scene 16.bmp"
+
+IDB_WELCOME_BITMAP      BITMAP                  "Res\\Welcome Screen.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // String Table
 //
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_TIP_START           "30000"
     IDS_TIP_END             "30200"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30000         "! ------------  Introductory Tips ------------"
     IDS_STRING30001         "You can get help on the program's features at any time by pressing F1."
@@ -214,7 +169,7 @@ BEGIN
     IDS_STRING30015         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30016         "! ------------  Display Tips ------------"
     IDS_STRING30017         "You can choose to automatically show or hide the bidding and play history dialog window during bidding and cardplay.  Click on the ""Options/Display Options"" menu item and select the ""Dialogs"" tab to set the desired behavior."
@@ -234,12 +189,12 @@ BEGIN
     IDS_STRING30031         "When a hand is passed out, Easy Bridge will show you all the cards face up and let you rebid the hand if you wish.  If you want to keep from seeing the other hands before you rebid, you can turn off the exposure option.  Simply click on the ""Options/Game Options"" menu item and choose the desired behavior."
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_TIPS_SKIP           "50"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30032         " "
     IDS_STRING30033         "You can copy the text in the bidding and and history windows to the Windows clipboard by pressing the right mouse button and selecting ""Copy Text"" from the popup menu."
@@ -259,7 +214,7 @@ BEGIN
     IDS_STRING30047         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30048         "! ------------  Play Tips ------------"
     IDS_STRING30049         "You can always back up to the start of bidding by pressing <F3>, or to the start of play with <F4>.  This works even when the bidding dialog is open."
@@ -279,7 +234,7 @@ BEGIN
     IDS_STRING30063         "You can click the ""Manual Bidding"" button on the secondary toolbar (or select the ""Special/Manual Bidding"" option from the menu) to enter bids for all players."
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30064         "! ------------  Bidding Tips ------------"
     IDS_STRING30065         "Easy Bridge's bidding style prefers major and notrump contracts over minors.  So if you open 1 in a minor suit, Easy Bridge will generally not raise without outstanding suit support.  You might therefore have to bid the minor suit twice if you really want to play in the suit."
@@ -299,7 +254,7 @@ BEGIN
     IDS_STRING30079         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30080         "! ------------  I/O Tips ------------"
     IDS_STRING30081         "You can save the current hands in human-readable format by clicking on the ""File/Save As"" menu command and selecting ""Text"" as the file format."
@@ -319,7 +274,7 @@ BEGIN
     IDS_STRING30095         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30096         " "
     IDS_STRING30097         " "
@@ -339,7 +294,7 @@ BEGIN
     IDS_STRING30111         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30112         " "
     IDS_STRING30113         " "
@@ -359,7 +314,7 @@ BEGIN
     IDS_STRING30127         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30128         " "
     IDS_STRING30129         " "
@@ -379,7 +334,7 @@ BEGIN
     IDS_STRING30143         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30144         " "
     IDS_STRING30145         " "
@@ -399,7 +354,7 @@ BEGIN
     IDS_STRING30159         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30160         " "
     IDS_STRING30161         " "
@@ -419,7 +374,7 @@ BEGIN
     IDS_STRING30175         " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30176         " "
     IDS_STRING30177         " "
@@ -439,7 +394,7 @@ BEGIN
     IDS_STRING30191         "The four main ingredients in beer are barley, hops, malt, and yeast.  But then you already knew that, didn't you?"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDS_STRING30192         "The best beer in the world is Newcastle's Brown Ale."
     IDS_STRING30193         "You can't get truly good deep dish pizza outside of Chicago."
@@ -452,7 +407,7 @@ BEGIN
     IDS_STRING30200         "The answer is 42."
 END
 
-#endif    // English (U.S.) resources
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
