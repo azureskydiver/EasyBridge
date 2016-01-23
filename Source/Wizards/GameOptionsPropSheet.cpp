@@ -10,7 +10,6 @@
 // GameOptionsPropSheet.cpp : implementation file
 //
 #include "stdafx.h"
-#include "resource.h"
 #include "GameOptsMechanicsPage.h"
 #include "GameOptsInterfacePage.h"
 #include "GameOptsCountingPage.h"

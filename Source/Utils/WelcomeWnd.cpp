@@ -11,7 +11,6 @@
 //
 #include "stdafx.h"
 #include "WelcomeWnd.h"
-#include "resource.h"
 #include "..\help\helpcode.h"
 
 #ifdef _DEBUG

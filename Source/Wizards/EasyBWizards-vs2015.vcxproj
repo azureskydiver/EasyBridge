@@ -258,8 +258,8 @@
     <ClInclude Include="ProgConfigViewSettingsPage.h" />
     <ClInclude Include="ProgConfigWizardData.h" />
     <ClInclude Include="ProgramConfigWizard.h" />
-    <ClInclude Include="Resource.h" />
     <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Wizards_resource.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Res\bitmap1.bmp" />

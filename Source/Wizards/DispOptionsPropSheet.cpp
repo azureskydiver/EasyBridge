@@ -11,7 +11,6 @@
 //
 
 #include "stdafx.h"
-#include "resource.h"
 #include "DispOptsSuitsPage.h"
 #include "DispOptsCardsPage.h"
 #include "DispOptsMiscPage.h"

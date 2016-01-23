@@ -11,7 +11,6 @@
 //
 
 #include "stdafx.h"
-#include "resource.h"
 #include "DealOptsPointsPage.h"
 #include "DealOptsMinorsPage.h"
 #include "DealOptsMajorsPage.h"

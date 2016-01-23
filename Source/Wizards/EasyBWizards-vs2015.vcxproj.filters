@@ -265,10 +265,10 @@
     <ClInclude Include="ProgramConfigWizard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
+    <ClInclude Include="StdAfx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StdAfx.h">
+    <ClInclude Include="Wizards_resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

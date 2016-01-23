@@ -11,7 +11,6 @@
 //
 
 #include "stdafx.h"
-#include "resource.h"
 #include "ProgConfigIntroPage.h"
 #include "ProgramConfigWizard.h"
 

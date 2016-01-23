@@ -11,7 +11,6 @@
 //
 
 #include "stdafx.h"
-#include "resource.h"
 #include "ProgramConfigWizard.h"
 #include "ProgConfigGameMechanicsPage.h"
 #include "ProgConfigWizardData.h"

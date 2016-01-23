@@ -29,4 +29,7 @@
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
+#include "Wizards_resource.h"
+
+
 #endif // !defined(AFX_STDAFX_H__89D8643F_D747_11D2_9096_00609777FAF1__INCLUDED_)

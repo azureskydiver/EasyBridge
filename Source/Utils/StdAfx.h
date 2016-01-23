@@ -37,4 +37,6 @@
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Developer Studio will insert additional declarations immediately before the previous line.
 
+#include "Utils_resource.h"
+
 #endif // !defined(AFX_STDAFX_H__543D8439_2671_11D2_8F5F_00609777FAF1__INCLUDED_)

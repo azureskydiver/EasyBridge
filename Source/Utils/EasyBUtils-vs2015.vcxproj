@@ -190,9 +190,9 @@
     <ClInclude Include="MyBitmap.h" />
     <ClInclude Include="MyStatusBar.h" />
     <ClInclude Include="MyToolTipWnd.h" />
-    <ClInclude Include="Resource.h" />
     <ClInclude Include="SplashWnd.h" />
     <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Utils_resource.h" />
     <ClInclude Include="WelcomeWnd.h" />
   </ItemGroup>
   <ItemGroup>

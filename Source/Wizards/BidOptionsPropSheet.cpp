@@ -11,7 +11,6 @@
 //
 
 #include "stdafx.h"
-#include "resource.h"
 //#include "BidOptsParamsPage.h"
 #include "BidOptsConfigPage.h"
 #include "BidOptsGeneralPage.h"
