@@ -298,8 +298,8 @@
 #define IDC_PLAY_PAUSE_2                22330
 #define IDC_PLAY_PAUSE_3                22331
 #define IDC_PLAY_PAUSE_4                22332
-#define IDB_WELCOME_BITMAP              26000
-#define IDD_WELCOME                     26001
+#define IDB_WELCOME_BITMAP              29110
+#define IDD_WELCOME                     29111
 
 // Next default values for new objects
 // 
