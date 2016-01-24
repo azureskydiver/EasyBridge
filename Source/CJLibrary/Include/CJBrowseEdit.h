@@ -71,7 +71,7 @@
 #endif // _MSC_VER >= 1000
 
 // holds the current search style for the control.
-typedef enum BROWSE_TYPE {
+enum BROWSE_TYPE {
 	BT_DIRECTORY = 1,
 	BT_FILE		 = 2,
 	BT_POPUPMENU = 3

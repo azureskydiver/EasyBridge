@@ -68,7 +68,7 @@ protected:
    virtual LRESULT WindowProc(UINT msg, WPARAM wp, LPARAM lp);
 };
 
-typedef enum TRACKINGSTATE { // menubar has three states:
+enum TRACKINGSTATE { // menubar has three states:
 	TRACK_NONE = 0,   // * normal, not tracking anything
 	TRACK_BUTTON,     // * tracking buttons (F10/Alt mode)
 	TRACK_POPUP       // * tracking popups

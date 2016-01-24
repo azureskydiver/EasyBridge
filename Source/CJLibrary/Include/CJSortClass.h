@@ -35,7 +35,7 @@
 #endif // _MSC_VER > 1000
 
 // enumeration data type for sorting
-typedef enum DATA_TYPE
+enum DATA_TYPE
 {
 	DT_INT = 1,		// sort type int
 	DT_STRING,		// sort type string
