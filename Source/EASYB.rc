@@ -48,7 +48,9 @@ BEGIN
     "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
     "\r\n"
     "#include ""CJResource.rc""\r\n"
+    "#include ""undefine_resource.h""\r\n"
     "#include ""EasyBUtils.rc""\r\n"
+    "#include ""undefine_resource.h""\r\n"
     "#include ""EasyBWizards.rc""\0"
 END
 
@@ -2367,7 +2369,9 @@ END
 #include "afxprint.rc"	// printing/print preview resources
 
 #include "CJResource.rc"
+#include "undefine_resource.h"
 #include "EasyBUtils.rc"
+#include "undefine_resource.h"
 #include "EasyBWizards.rc"
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
