@@ -319,7 +319,7 @@ void CCard::Draw(CDC* pDC)
 	   || (m_nDeckValue == 21)  // show Diamond 10
 	   ) 
 	{  // NCR DEBUG CODE
-		printf("X=%d, Y=%d for card=%s, dv=%d\n", m_nPosX, m_nPosY, m_strFullName, m_nDeckValue);
+		printf("X=%d, Y=%d for card=%s, dv=%d\n", m_nPosX, m_nPosY, LPCTSTR(m_strFullName), m_nDeckValue);
 	}
 	if((m_nPosX == 507) && (m_nDeckValue == 21)) {  // Trap DT
 		printf("misplaced DT\n");
