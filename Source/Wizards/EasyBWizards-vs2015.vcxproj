@@ -160,7 +160,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Globals.cpp" />
     <ClCompile Include="BidOptionsPropSheet.cpp" />
     <ClCompile Include="BidOptsConfigPage.cpp" />
     <ClCompile Include="BidOptsGeneralPage.cpp" />
