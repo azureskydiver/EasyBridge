@@ -152,8 +152,11 @@ ColorTableEntry CCJColorPopup::m_crColors[] =
 //  This shows how you use the multi-monitor functions
 //  to do the same thing.
 //
+#ifdef NEVER
+// Disable this since the color popup is never used anyway.
 #define COMPILE_MULTIMON_STUBS
 #include <multimon.h>
+#endif
 
 #define MONITOR_CENTER   0x0001        // center rect to monitor
 #define MONITOR_CLIP     0x0000        // clip rect to monitor
