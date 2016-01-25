@@ -612,7 +612,7 @@ next:		if (nRtnCode == EOF)
 	if (!bFileInfoFound)
 	{
 		AfxMessageBox("This is not a proper Easy Bridge game file.");
-		AfxThrowFileException(CFileException::generic);
+		AfxThrowFileException(CFileException::genericException);
 	}
 
 	//

@@ -165,7 +165,7 @@ BOOL CEasyBDoc::ReadFilePBN(CArchive& ar)
 			if (m_nLineNumber == 0)
 			{
 				AfxMessageBox("This is not a proper PBN format file.");
-				AfxThrowFileException(CFileException::generic);
+				AfxThrowFileException(CFileException::genericException);
 			}
 			continue;
 		}
@@ -617,11 +617,11 @@ int CEasyBDoc::PreloadPBNFile(CArchive& ar, CStringArray& strLines)
 
 	// read in the file
 	CString strBuf;
-	int nSize = ar.GetFile()->GetLength();
-	PBYTE pBuf = (PBYTE) strBuf.GetBuffer(nSize);
-	int numBytesRead = ar.Read(pBuf, nSize);
-	ASSERT(numBytesRead == nSize);
-	strBuf.ReleaseBuffer(nSize);
+	DWORD dwSize = DWORD(ar.GetFile()->GetLength());
+	PBYTE pBuf = (PBYTE) strBuf.GetBuffer(dwSize);
+	int numBytesRead = ar.Read(pBuf, dwSize);
+	ASSERT(numBytesRead == dwSize);
+	strBuf.ReleaseBuffer(dwSize);
 
 	// check for export tag
 	int nPos = strBuf.Find(_T("% EXPORT"));
@@ -835,7 +835,7 @@ void CEasyBDoc::AssignCardsPBN(const CString& str)
 			ClearAllInfo();
 			pVIEW->Notify(WM_COMMAND, WMS_REFRESH_DISPLAY);
 			AfxMessageBox("Invalid deal string!");
-			AfxThrowFileException(CFileException::generic);
+			AfxThrowFileException(CFileException::genericException);
 		}
 		//
 		nPlayer = GetNextPlayer(nPlayer);
@@ -903,15 +903,15 @@ BOOL CEasyBDoc::ReadFilePLL(CArchive& ar)
 	const int DealDataLen = 772;   // number of bytes for a deal
 	// read in the file
 	CString strBuf;
-	int nSize = ar.GetFile()->GetLength();
-	PBYTE pBuf = (PBYTE) strBuf.GetBuffer(nSize);
-	int numBytesRead = ar.Read(pBuf, nSize);
-	ASSERT(numBytesRead == nSize);
+	DWORD dwSize = DWORD(ar.GetFile()->GetLength());
+	PBYTE pBuf = (PBYTE) strBuf.GetBuffer(dwSize);
+	int numBytesRead = ar.Read(pBuf, dwSize);
+	ASSERT(numBytesRead == dwSize);
 
     // Check first 2 bytes
 	if(pBuf[0] != 0x01 || pBuf[1] != 0x04) {
 		AfxMessageBox("The File is not in PLL format.");
-		AfxThrowFileException(CFileException::generic);
+		AfxThrowFileException(CFileException::genericException);
 	}
 
 	int nbrDeals = numBytesRead / DealDataLen;
