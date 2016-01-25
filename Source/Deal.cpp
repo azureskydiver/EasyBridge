@@ -43,7 +43,7 @@ const int MAX_SPECIAL_DEAL_ITERATIONS	= 200;
 //			  1 = Small Slam
 //			  2 = Grand Slam
 //
-void CEasyBDoc::DealSpecial(int nGameCode, int nSuitCode, int nSlamCode, int nTeam, int nDealNumber) 
+void CEasyBDoc::DealSpecial(int nGameCode, int nSuitCode, int nSlamCode, int nTeam, time_t nDealNumber) 
 {
 	CString strFeedback;
 

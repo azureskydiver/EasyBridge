@@ -40,7 +40,7 @@ public:
 	//
 	void	Clear();
 	void	ClearCardBackgrounds();
-	int		Shuffle(int nSeed=0, bool bSuppressSeed=false);
+	time_t	Shuffle(time_t nSeed=0, bool bSuppressSeed=false);
 	//
 	CCard*	GetCard(int nDeckValue);
 	CCard*	GetCard(LPCTSTR pszName);
@@ -77,7 +77,7 @@ private:
 	int			m_nCurrCardBack;
 	int 		m_nDeckIndex[4][15];
 	BOOL		m_bInitialized;
-	int			m_nPrevTime;
+	time_t		m_nPrevTime;
 	
 // routines
 public:

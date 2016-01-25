@@ -395,7 +395,7 @@ void CAnalysisDialog::OnPaint()
 	if (IsIconic()) 
 	{
 		// Erase the icon background when placed over other app window 
-		DefWindowProc(WM_ICONERASEBKGND, (WORD)dc.m_hDC, 0L); 
+		DefWindowProc(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc.m_hDC), 0L); 
 		// Center the icon 
 		CRect rc; 
 		GetClientRect(&rc); 

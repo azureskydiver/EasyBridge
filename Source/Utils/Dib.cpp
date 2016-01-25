@@ -182,7 +182,7 @@ BOOL CDIB::Load(const CString& strFile)
 		return FALSE;
 
     // Get the current file position.
-    DWORD dwFileStart = file.GetPosition();
+    ULONGLONG ullFileStart = file.GetPosition();
 
     // Read the file header to get the file size and to
     // find out where the bits start in the file.
@@ -227,7 +227,7 @@ BOOL CDIB::Load(const CString& strFile)
 
         // Back up the file pointer and read the BITMAPCOREHEADER
         // and create the BITMAPINFOHEADER from it.
-        file.Seek(dwFileStart + sizeof(BITMAPFILEHEADER), CFile::begin);
+        file.Seek(ullFileStart + sizeof(BITMAPFILEHEADER), CFile::begin);
         BITMAPCOREHEADER BmpCoreHdr;
         iBytes = file.Read(&BmpCoreHdr, sizeof(BmpCoreHdr)); 
         if (iBytes != sizeof(BmpCoreHdr)) 
@@ -327,7 +327,7 @@ BOOL CDIB::Load(const CString& strFile)
     }
 
     // Seek to the bits in the file.
-    file.Seek(dwFileStart + BmpFileHdr.bfOffBits, CFile::begin);
+    file.Seek(ullFileStart + BmpFileHdr.bfOffBits, CFile::begin);
 
     // read the bits
     iBytes = file.Read(pBits, iBitsSize);

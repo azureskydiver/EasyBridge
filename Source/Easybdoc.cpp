@@ -3637,9 +3637,9 @@ void CEasyBDoc::UpdatePlayHistory()
 // called only from th DealSpecial() routine
 // shuffles the deck and assigns the cards to the players
 //
-int CEasyBDoc::DealCards() 
+time_t CEasyBDoc::DealCards() 
 {
-	int newDealNumber = deck.Shuffle(0, true);
+	time_t newDealNumber = deck.Shuffle(0, true);
 
 	// 
 	InitializeVulnerability();

@@ -2041,7 +2041,8 @@ void CCJMenu::SynchronizeMenu(void)
 	CTypedPtrArray<CPtrArray, CCJMenuData*> temp;
 	CCJMenuData *mdata;
 	CString string;
-	UINT submenu,nID=0,state,j;
+    UINT submenu, nID = 0, state;
+    INT j;
 	
 	InitializeMenuList(0);
 	for(j=0;j<GetMenuItemCount();++j){

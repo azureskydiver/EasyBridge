@@ -6974,7 +6974,7 @@ int CDeclarerPlayEngine::FindSuitDevelopmentPlays(CPlayList& forcePlayList, CPla
 											pForceCard);
 				// NCR-707 Compute play's Quality - number of probable tricks after Force played
 				double quality = (nLongHand - numOutstandingCards) + 0.5*(nLongHand - (numOutstandingCards+1)/2);
-				pForce->SetQuality(quality);  //  NCR-707 save the quality
+				pForce->SetQuality(int(quality));  //  NCR-707 save the quality
 
 				forcePlayList << pForce;
 				status << "5PLNDEV30! We can play the " & pForceCard->GetFullName() &
@@ -7206,7 +7206,7 @@ int CDeclarerPlayEngine::FindDropPlays(CPlayList& playList)
 			int numOSCardsAfter = numOutstandingCards - numSuitTopCards;
 			int numLongCardsAfter = suit.GetMaxLength() - numSuitTopCards;
 			double quality = (numLongCardsAfter - numOSCardsAfter) + 0.5*(numLongCardsAfter - (numOSCardsAfter+1)/2);
-			pDrop->SetQuality(quality);  //  NCR-707 save the quality
+			pDrop->SetQuality(int(quality));  //  NCR-707 save the quality
 
 			// NCR-760 See if there could be a blocking problem
 			if((nTargetHand == CPlay::IN_DUMMY) && (m_numDummyEntries == 1)

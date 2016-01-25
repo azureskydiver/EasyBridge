@@ -49,7 +49,7 @@ public:
 	void ClearFileParameters();
 	void InitNewMatch();
 	void InitNewHand(BOOL bRestarting=FALSE);
-	int  DealCards();
+	time_t DealCards();
 	void DealHands(BOOL bUseDealNumber=FALSE, int nDealNumber=0);
 	void InitGameReview();
 	void LoadGameRecord(const CGameRecord& game);
@@ -243,7 +243,7 @@ private:
 	BOOL		m_bExposeDummy;		// dummy show flag
 	int			m_nTrumpSuit;		//
 	//
-	int			m_nDealNumber;				// hand seed number
+	time_t		m_nDealNumber;				// hand seed number
 	int			m_nSpecialDealCode;
 	BOOL		m_bDealNumberAvailable;		// hand seed avaialble?
 	// game (play) info
@@ -321,7 +321,7 @@ private:
 	void DisplayDuplicateScore();
 
 	//
-	void DealSpecial(int nGameCode, int nSuitCode, int nSlamCode, int nTeam=NORTH_SOUTH, int nDealNumber=0);
+	void DealSpecial(int nGameCode, int nSuitCode, int nSlamCode, int nTeam=NORTH_SOUTH, time_t nDealNumber=0);
 	void DealSpecial(int nDealNumber, int nSpecialDealCode);
 	double SwapPoints(int nDest, int nSource, double fMax, int nGameCode, int nSuitCode, int nSlamCode);
 	BOOL SwapPlayersCards(int nPlayer1, int nPlayer2,int nSuit1, int nSuit2,int nCard1, int nCard2, BOOL bResetCounts=FALSE);

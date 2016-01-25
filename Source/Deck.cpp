@@ -263,7 +263,7 @@ void CDeck::Terminate()
 
 
 //
-int CDeck::Shuffle(int nSeed, bool bSuppressSeed) 
+time_t CDeck::Shuffle(time_t nSeed, bool bSuppressSeed) 
 {
 	// copy from the ordered deck if deal numbering is enabled
 	// else leave shuffled
@@ -290,8 +290,8 @@ int CDeck::Shuffle(int nSeed, bool bSuppressSeed)
 		//
 		struct _timeb timebuffer;
 		_ftime(&timebuffer);
-		int nElapsedTime = timebuffer.time - m_nPrevTime;
-		int nLeft = timebuffer.time << 16;
+		time_t nElapsedTime = timebuffer.time - m_nPrevTime;
+		time_t nLeft = timebuffer.time << 16;
 		int nRight = (timebuffer.millitm << 6) | (nElapsedTime & 0x00FF);
 		nSeed = nLeft | nRight;
 		//
@@ -299,7 +299,7 @@ int CDeck::Shuffle(int nSeed, bool bSuppressSeed)
 	}
 	//
 	if (!bSuppressSeed)
-		srand(nSeed);
+		srand(static_cast<unsigned int>(nSeed));
 
 	//
 	int nRand,nTempSuit,nTempVal;
