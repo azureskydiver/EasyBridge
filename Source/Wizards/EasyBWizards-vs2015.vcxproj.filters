@@ -81,9 +81,6 @@
     <ClCompile Include="DispOptsSuitsPage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EasyBWizards.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GameOptionsPropSheet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -353,9 +350,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="EasyBWizards.def">
-      <Filter>Source Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="res\EasyBWizards.rc2">
       <Filter>Resource Files</Filter>
     </CustomBuild>

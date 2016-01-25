@@ -185,7 +185,6 @@
     <ClCompile Include="DispOptsFontsPage.cpp" />
     <ClCompile Include="DispOptsMiscPage.cpp" />
     <ClCompile Include="DispOptsSuitsPage.cpp" />
-    <ClCompile Include="EasyBWizards.cpp" />
     <ClCompile Include="GameOptionsPropSheet.cpp" />
     <ClCompile Include="GameOptsCountingPage.cpp" />
     <ClCompile Include="GameOptsFilesPage.cpp" />
@@ -211,10 +210,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="EasyBWizards.def">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </CustomBuild>
     <CustomBuild Include="res\EasyBWizards.rc2" />
   </ItemGroup>
   <ItemGroup>

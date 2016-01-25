@@ -164,7 +164,6 @@
   <ItemGroup>
     <ClCompile Include="DailyTipDialog.cpp" />
     <ClCompile Include="Dib.cpp" />
-    <ClCompile Include="EasyBUtils.cpp" />
     <ClCompile Include="FlatButton.cpp" />
     <ClCompile Include="MyBitmap.cpp" />
     <ClCompile Include="MyStatusBar.cpp" />
@@ -179,10 +178,6 @@
     <ClCompile Include="WelcomeWnd.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="EasyBUtils.def">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </CustomBuild>
     <CustomBuild Include="res\EasyBUtils.rc2" />
   </ItemGroup>
   <ItemGroup>
