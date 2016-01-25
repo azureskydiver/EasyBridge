@@ -58,7 +58,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <AssemblerListingLocation>..\..\Build\objs\$(Configuration)\$(TargetName)\</AssemblerListingLocation>
       <ObjectFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ObjectFileName>
       <ProgramDataBaseFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ProgramDataBaseFileName>
@@ -76,7 +76,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <AssemblerOutput />
       <AssemblerListingLocation>..\..\Build\objs\$(Configuration)\$(TargetName)\</AssemblerListingLocation>
       <ObjectFileName>..\..\Build\objs\$(Configuration)\$(TargetName)\</ObjectFileName>
@@ -89,6 +89,7 @@
     <Lib>
       <OutputFile>..\..\Build\Lib\$(Configuration)\$(ProjectName).lib</OutputFile>
       <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -147,7 +148,10 @@
     <ClCompile Include="Source\GfxGroupEdit.cpp" />
     <ClCompile Include="Source\GfxOutBarCtrl.cpp" />
     <ClCompile Include="Source\GfxSplitterWnd.cpp" />
-    <ClCompile Include="Source\StdAfx.cpp" />
+    <ClCompile Include="Source\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="Source\Subclass.cpp" />
   </ItemGroup>
   <ItemGroup>
