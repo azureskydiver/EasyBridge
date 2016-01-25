@@ -1618,7 +1618,6 @@ BOOL CEasyBApp::InitInstance()
 #endif
     } 
 	//
-	Enable3dControls();
 
 	// load main program settings from the registry
 	Initialize();
