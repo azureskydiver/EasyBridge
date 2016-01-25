@@ -163,7 +163,7 @@ void CBidDialogSmall::InitBiddingSequence()
 //
 void CBidDialogSmall::EnableButtonImages(BOOL bEnable)
 {
-	if ((bEnable) && (theApp.GetValue(tnWindowsMajorVersion) >= 4))
+	if (bEnable)
 	{
 /*
 		// set level button icons

@@ -67,8 +67,7 @@ CGfxSplitterWnd::CGfxSplitterWnd()
 	m_cxSplitterGap = m_cySplitterGap = 2 + 2;
 
 
-	DWORD dwVersion = ::GetVersion();
-	BOOL bWin4 = (BYTE)dwVersion >= 4;
+	BOOL bWin4 = TRUE;
 	bNotWin4 = 1 - bWin4;   // for convenience
 
 	m_upBorder = 5;

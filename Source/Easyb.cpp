@@ -717,14 +717,6 @@ LPVOID CEasyBApp::GetValuePV(int nItem, int nIndex1, int nIndex2, int nIndex3)
 		case tbShowScreenSizeWarning:
 			return (LPVOID) m_bShowScreenSizeWarning;
 		//
-		case tnWindowsBuildNumber:
-			return (LPVOID) m_nWinBuildNum;
-		case tnWindowsMajorVersion:
-			return (LPVOID) m_nWinMajorVer;
-		case tnWindowsMinorVersion:
-			return (LPVOID) m_nWinMinorVer;
-		case tbWin32:
-			return (LPVOID) m_bWin32;
 		case tnSplashTime:
 			return (LPVOID) m_dwSplashTime;
 		case tnumConventionSets:
@@ -773,8 +765,6 @@ LPVOID CEasyBApp::GetValuePV(int nItem, int nIndex1, int nIndex2, int nIndex3)
 			return (LPVOID) m_nSuitSequence[nIndex1];
 		case tnDummySuitSequence:
 			return (LPVOID) m_nDummySuitSequence[nIndex1];
-		case tnWindowsSystemMode:
-			return (LPVOID) m_nWinMode;
 		case tpvActiveDocument:
 			return (LPVOID) m_pActiveDocument;
 		case tpvSplashWindow:
@@ -1101,14 +1091,6 @@ int CEasyBApp::SetValuePV(int nItem, LPVOID value, int nIndex1, int nIndex2, int
 			m_bShowScreenSizeWarning = bVal;
 			break;
 		//
-		case tnWindowsBuildNumber:
-			break;
-		case tnWindowsMajorVersion:
-			break;
-		case tnWindowsMinorVersion:
-			break;
-		case tbWin32:
-			break;
 		case tnSplashTime:
 			m_dwSplashTime = nVal;
 			break;
@@ -1179,8 +1161,6 @@ int CEasyBApp::SetValuePV(int nItem, LPVOID value, int nIndex1, int nIndex2, int
 			break;
 		case tbShowDummyTrumpsOnLeft:
 			m_bShowDummyTrumpsOnLeft = bVal;
-			break;
-		case tnWindowsSystemMode:
 			break;
 		case tpvActiveDocument:
 			m_pActiveDocument = (CDocument*) value;
@@ -1517,38 +1497,6 @@ void CEasyBApp::SetCardsFaceUp(BOOL bFaceUp)
 
 BOOL CEasyBApp::InitInstance()
 {
-	// Obtain operating system version info
-	OSVERSIONINFO versionInfo;
-	versionInfo.dwOSVersionInfoSize = sizeof(versionInfo);
-	GetVersionEx(&versionInfo);
-	m_nWinMajorVer = versionInfo.dwMajorVersion;
-	m_nWinMinorVer = versionInfo.dwMinorVersion;
-	m_nWinBuildNum = versionInfo.dwBuildNumber;
-	// set platform code -- 0 = NT, 1 = Chicago, 2 = Win32s
-	if (versionInfo.dwPlatformId == VER_PLATFORM_WIN32_NT) 
-	{
-		// Windows NT
-		m_nWinMode = 0;
-		m_bWin32 = TRUE;
-	} 
-	else if (versionInfo.dwPlatformId == VER_PLATFORM_WIN32s) 
-	{
-		// Win32s
-		m_nWinMode = 9;
-		m_bWin32 = FALSE;
-		SetHandleCount(100);
-	} 
-	else 
-	{
-		// Windows 95 or 98
-		if ((m_nWinMajorVer == 4) && (m_nWinMinorVer == 1))
-			m_nWinMode = 2;	// version 4.1 = Win98
-		else
-			m_nWinMode = 1;	// version 4.0 = Win95
-		m_bWin32 = TRUE;
-		AfxEnableWin40Compatibility( );
-	}
-
 	// obtain program version info
 	LPTSTR szProgPath = m_strProgPath.GetBuffer(1024);
 	GetModuleFileName(m_hInstance, szProgPath, 1023);
@@ -1600,7 +1548,6 @@ BOOL CEasyBApp::InitInstance()
 
 
 	// set registry info
-	if (m_bWin32) { // NCR added {}
 #ifdef RDEBUG
 		SetRegistryKey("Steve's Software (RDebug)");	// ReleaseDebug
 #elif defined _DEBUG
@@ -1616,7 +1563,6 @@ BOOL CEasyBApp::InitInstance()
 		SetRegistryKey(regKey);				// Release
 //		AfxMessageBox("Regkey is " + regKey); // DEBUG >>>>>>>>>><<<
 #endif
-    } 
 	//
 
 	// load main program settings from the registry
@@ -2063,25 +2009,6 @@ BOOL CAboutDlg::OnInitDialog()
 	// show misc info
 	strTemp.Format("Build Date: %s", theApp.GetValueString(tstrProgramBuildDate));
 	SetDlgItemText(IDC_STATIC_DATE, (LPCTSTR)strTemp);	
-
-	// show platform info
-	if (theApp.GetValue(tnWindowsSystemMode) == 0)
-		strTemp.Format("Platform: Windows NT version %d.%d",
-						   theApp.GetValue(tnWindowsMajorVersion),
-						   theApp.GetValue(tnWindowsMinorVersion));
-	else if (theApp.GetValue(tnWindowsSystemMode) == 1)
-		strTemp.Format("Platform: Windows 95");
-//						   theApp.GetValue(tnWindowsMajorVersion),
-//						   theApp.GetValue(tnWindowsMinorVersion));
-	else if (theApp.GetValue(tnWindowsSystemMode) == 2)
-		strTemp.Format("Platform: Windows 98");
-//						   theApp.GetValue(tnWindowsMajorVersion),
-//						   theApp.GetValue(tnWindowsMinorVersion));
-	else if (theApp.GetValue(tnWindowsSystemMode) == 9)
-		strTemp.Format("Platform: Win32s version %d.%d",
-						   theApp.GetValue(tnWindowsMajorVersion),
-						   theApp.GetValue(tnWindowsMinorVersion));
-	SetDlgItemText(IDC_STATIC_PLATFORM, strTemp);	
 
 	// show e-mail address
 	m_strEmailAddress.LoadString(IDS_AUTHOR_EMAIL);

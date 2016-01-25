@@ -1576,18 +1576,6 @@ void CMainFrame::RestoreAllDialogs()
 
 
 //
-void CMainFrame::SetNonBoldDialogFont(CDialog* pDialog)
-{
-	//
-	if ((!pDialog) || (theApp.GetValue(tbWin32)))
-		return;
-	// Send WM_SETFONT message to child controls 
-	pDialog->SendMessageToDescendants(WM_SETFONT, (UINT) m_dialogFont.m_hObject, 0L, FALSE); 
-}
-
-
-
-//
 void CMainFrame::DisplayTricks(BOOL bClear)
 {
 /*

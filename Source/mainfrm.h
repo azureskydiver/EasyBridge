@@ -188,7 +188,6 @@ private:
 private:
 	void MakeStatusDialogVisible();
 	void ShowCommentsDialog(BOOL bShow=TRUE);
-	void SetNonBoldDialogFont(CDialog* pDialog);
 	void OnUpdatePane(CCmdUI* pCmdUI);
  
 // Overrides

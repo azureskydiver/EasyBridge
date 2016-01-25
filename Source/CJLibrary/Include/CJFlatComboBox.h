@@ -158,8 +158,6 @@ protected:
 	COLORREF	m_clrNormal;		// set to ::GetSysColor(COLOR_BTNFACE)
 
 public:
-	BOOL IsWin95();
-
 	// Call this member function to enable auto completion.
 	//
 	virtual void EnableAutoCompletion(BOOL bEnable=TRUE);

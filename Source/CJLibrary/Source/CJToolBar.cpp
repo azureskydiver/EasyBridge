@@ -2151,7 +2151,7 @@ void CCJToolBar::AssertValid() const
 		( afxData.bWin95 || ::GetObjectType(m_hbmImageWell) == OBJ_BITMAP));
 #else
 	ASSERT(m_hbmImageWell == NULL ||
-		( (::GetVersion() & 0x80000000) >= 4 || ::GetObjectType(m_hbmImageWell) == OBJ_BITMAP));
+		( ::GetObjectType(m_hbmImageWell) == OBJ_BITMAP));
 #endif   // _MFC_VER
 
 	if (m_hInstImageWell != NULL && m_hbmImageWell != NULL)

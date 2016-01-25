@@ -267,14 +267,6 @@ private:
 	BOOL	m_bShowGIBOutput;
 
 	//
-	// Platform info
-	//
-	int		m_nWinMajorVer; // Windows Platform Major Version #
-	int		m_nWinMinorVer; // Windows Platform Minor Version #
-	int		m_nWinBuildNum; // Windows Platform Build #
-	int		m_nWinMode;		// 0 = NT, 1 = Chicago, 2 = Win32s
-	BOOL	m_bWin32;		// Win32 flag
-	//
 	CSplashWnd*	m_pSplash;
 	DWORD 		m_dwSplashTime;
 

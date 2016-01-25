@@ -320,22 +320,6 @@ void CCJFlatComboBox::OnKillFocus()
 
 BOOL CCJFlatComboBox::PreTranslateMessage(MSG* pMsg) 
 {
-	if(IsWin95()) // alexander Golde [alex@viona.de]
-	{
-		// Make sure that the keystrokes continue to the appropriate handlers
-		if (pMsg->message == WM_KEYDOWN || pMsg->message==WM_KEYUP)
-		{
-			::TranslateMessage(pMsg);
-			::DispatchMessage(pMsg);
-			return TRUE;
-		}
-		
-		// Catch the Alt key so we don't choke if focus 
-		// is going to an owner drawn button
-		if (pMsg->message == WM_SYSCHAR)
-			return TRUE;
-	}
-		
 	return CComboBox::PreTranslateMessage(pMsg);
 }
 
@@ -369,14 +353,6 @@ void CCJFlatComboBox::OnEditUpdate()
 		SetEditSel(dStart, dEnd);
 	else
 		SetEditSel(nLength, -1);
-}
-
-BOOL CCJFlatComboBox::IsWin95()
-{
-	OSVERSIONINFO info;
-	info.dwOSVersionInfoSize = sizeof(info);
-	GetVersionEx( &info );
-	return ((VER_PLATFORM_WIN32_WINDOWS == info.dwPlatformId) && (info.dwMinorVersion == 0));
 }
 
 void CCJFlatComboBox::OnSysColorChange() 

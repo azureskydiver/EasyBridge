@@ -168,7 +168,6 @@ BOOL CBidDialog::OnInitDialog()
 	CDialog::OnInitDialog();
 
 	//
-//	pMAINFRAME->SetNonBoldDialogFont(this);
 	//
 //	CenterWindow();
 	InitBiddingSequence();

@@ -50,18 +50,8 @@ CMyFileDialog::CMyFileDialog(BOOL bOpenFileDialog,
 	
 	// customize the dialog appropriately
 	m_ofn.Flags |= OFN_ENABLETEMPLATE;
-	if (theApp.GetValue(tnWindowsMajorVersion) < 4)
-	{
-		// old-style customization
-		m_ofn.Flags &= ~OFN_EXPLORER;
-		m_ofn.lpTemplateName = MAKEINTRESOURCE(IDD_FILE_MYOPEN);
-	}
-	else
-	{
-		// Win95-style customization
-		m_ofn.Flags |= OFN_EXPLORER;
-		m_ofn.lpTemplateName = MAKEINTRESOURCE(IDD_COMMOPEN_EXTENSION);
-	}
+	m_ofn.Flags |= OFN_EXPLORER;
+	m_ofn.lpTemplateName = MAKEINTRESOURCE(IDD_COMMOPEN_EXTENSION);
 	if (bOpenFileDialog)
 		m_bIsSaving = FALSE;
 	else
